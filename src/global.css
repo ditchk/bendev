@@ -1,0 +1,153 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+ 
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+ 
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+ 
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+ 
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+ 
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+ 
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+ 
+    --radius: 0.5rem;
+  }
+
+
+  @layer utilities {
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 3px;
+      height: 3px;
+      border-radius: 2px;
+    }
+  
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: transparent;
+    }
+  
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: transparent;
+      border-radius: 10px;
+    }
+  
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+      background: transparent;
+    }
+  }
+ 
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+ 
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+ 
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+ 
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+ 
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+ 
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+ 
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+ 
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+ 
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+  }
+}
+ 
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-gradient-to-tl from-white text-foreground;
+  }
+}
+
+.outline_btn {
+  @apply bg-transparent shadow shadow-slate-400 border border-cyan-300 font-serif font-medium text-slate-600 hover:bg-cyan-100 hover:text-black h-12 duration-1000
+}
+.link_side {
+  @apply justify-center items-center bg-white
+}
+.social_icons {
+  @apply text-white bg-slate-950 text-3xl p-2 rounded-md cursor-pointer hover:bg-gradient-to-l from-cyan-300 via-neutral-50 to-teal-100 hover:text-cyan-600 shadow-inner outline outline-2 outline-cyan-500 shadow-black duration-700
+}
+.tittl_name {
+  @apply text-2xl font-extrabold font-serif text-transparent bg-clip-text bg-gradient-to-l from-cyan-900 via-neutral-500 to-teal-900
+}
+
+.primary_text {
+  @apply text-slate-600 text-lg font-serif text-start
+}
+
+.paragraph_text {
+  @apply text-base font-serif text-start text-slate-600
+}
+
+.titlle_text {
+  @apply text-start text-xl font-serif text-slate-600
+}
+.form_inp {
+  @apply focus-visible:outline-none shadow-inner shadow-slate-400 p-[25px] outline outline-1 outline-cyan-100
+}
+
+.subs_btn {
+  @apply outline outline-1 outline-cyan-300 text-center text-slate-600 px-8 py-[27px] shadow shadow-slate-400 hover:text-white hover:bg-black duration-700 bg-cyan-100
+}
+
+.submit {
+  @apply outline outline-1 outline-cyan-100 text-center bg-white w-fit p-6 text-black rounded-xl shadow shadow-slate-500
+}
+
+.links_footer {
+  @apply text-base text-slate-600 font-serif hover:text-cyan-600 hover:translate-x-5 duration-300
+}
+
+.default_container {
+  @apply flex flex-col justify-center items-center h-full px-2 mb-auto
+}
+.welcome_text {
+  @apply hidden font-serif md:flex shadow rounded-md shadow-slate-300 h-fit p-2 text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-cyan-300 via-black
+}
+
+.icon_pack {
+  @apply text-4xl text-white rounded-md outline outline-2 outline-cyan-100 shadow shadow-slate-900 p-1 bg-gradient-to-br from-cyan-300 to-black
+}
+
+.upload_container {
+  @apply flex flex-col justify-center items-center
+}
