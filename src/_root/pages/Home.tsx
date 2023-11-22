@@ -23,7 +23,6 @@ const Home = () => {
                     </Link>
                       <Socials />
                     </div>
-                    
                       <Skills />
                   </li>
                     <img 
@@ -31,8 +30,7 @@ const Home = () => {
                       alt="homepage-image" 
                       width={400}
                       className="object-contain rounded-e-full rounded-t-full border-b-2 border-cyan-400"
-                    />
-                    
+                    />   
               </div>
             )
           })}
