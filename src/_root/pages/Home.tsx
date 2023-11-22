@@ -27,15 +27,14 @@ const Home = () => {
                       width={400}
                       className="object-contain rounded-e-full rounded-t-full border-b-2 border-cyan-400"
                     />
+                    <div className="flex md:hidden">
+                      <Socials />
+                    </div>
               </div>
             )
           })}
         </ul>
-        <div className="flex md:hidden">
-          <Socials />
-        </div>
       </div>
-      
     </div>
     
   )
