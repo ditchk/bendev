@@ -142,7 +142,7 @@
 }
 
 .default_Contactcontainer {
-  @apply flex flex-1 m-5
+  @apply flex flex-1 m-5 md:justify-center
 }
 
 .welcome_text {
