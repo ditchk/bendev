@@ -73,9 +73,9 @@ const Footer = () => {
                 <ul className="flex flex-col list-disc">
                   {moreFooterLinks.map((link: myMoreFooterLinks) => {
                     return (
-                      <li key={link.label} className="links_footer">
+                      <li key={link.name} className="links_footer">
                         <Link to={link.route}
-                        >{link.label}</Link>
+                        >{link.name}</Link>
                       </li>
                     )
                   })}

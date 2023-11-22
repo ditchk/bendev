@@ -61,19 +61,19 @@ export const footerLinks = [
 
 export const moreFooterLinks = [
     {
-        label: 'Privacy Policy',
+        name: 'Privacy Policy',
         route: '/privacy-policy'
     },
     {
-        label: 'Terms of Service',
+        name: 'Terms of Service',
         route: '/terms-use'
     },
     {
-        label: 'about us',
+        name: 'about us',
         route: '/about'
     },
     {
-        label: 'where are we located',
+        name: 'where are we located',
         route: '/contact'
     }
 ];
