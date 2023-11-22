@@ -18,7 +18,7 @@ const Home = () => {
                     <h2 className="primary_text">{link.subTitle}</h2>
                     <h3 className="paragraph_text">I have aquired skills that will help your business scale up in this technology era.Using my expertise i will design stunning <br /> for your busines using the latest technology</h3>
                     <Button className="outline_btn font-serif hidden md:flex">Continue reading</Button>
-                    <div className="flex flex-col md:hidden justify-center items-center">
+                    <div className="flex flex-col md:hidden justify-center items-start">
                       <Link to={'/contact'} className="outline_btn rounded-md p-3 mt-10 my-10 font-serif">
                       Let's talk 
                     </Link>
