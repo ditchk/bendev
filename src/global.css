@@ -134,12 +134,17 @@
 }
 
 .links_footer {
-  @apply text-base text-slate-600 font-serif hover:text-cyan-600 hover:translate-x-5 duration-300
+  @apply text-sm text-start w-full text-slate-600 font-serif hover:text-cyan-600 hover:translate-x-5 duration-300
 }
 
 .default_container {
   @apply flex flex-col justify-center items-center h-full px-2 my-32 md:my-0
 }
+
+.default_Contactcontainer {
+  @apply flex flex-1 m-5
+}
+
 .welcome_text {
   @apply hidden font-serif md:flex shadow rounded-md shadow-slate-300 h-fit p-2 text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-cyan-300 via-black
 }

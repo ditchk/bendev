@@ -42,8 +42,8 @@ const Contact = () => {
     }
     
   return (
-    <div className="default_container">
-      <div className="flex flex-col md:flex-row justify-between gap-52 px-10 shadow shadow-slate-400 p-5 rounded-xl bg-gradient-to-t from-cyan-100 via-white to-white">
+    <div className="default_Contactcontainer">
+      <div className="flex flex-col md:flex-row justify-between items-center md:gap-52 px-10 shadow shadow-slate-400 p-5 rounded-xl bg-gradient-to-t from-cyan-100 via-white to-white">
         <div className="flex flex-col w-fit">
               <h3 className="primary_text">LETS TALK!</h3>
               <Form {...form}>
@@ -112,12 +112,12 @@ const Contact = () => {
                 </form>
               </Form>
             </div>
-            <div className="flex flex-col gap-5">
+            <div className="flex flex-col gap-5 w-full">
               <h1 className="primary_text">CONTACT INFORMATION</h1>
               <ul className="flex flex-col justify-center items-start gap-2">
                 {contactInformation.map((link: contactInfo) => (
-                  <li className="flex flex-row gap-5">
-                    <img src={link.imageURL} alt="" width={30} className="bg-black p-1 rounded-md outline outline-2 outline-cyan-100 shadow shadow-slate-600"/>
+                  <li className="flex flex-1 gap-5">
+                    <img src={link.imageURL} alt="" width={30} height={30} className="bg-black p-1 rounded-md outline outline-2 object-contain outline-cyan-100 shadow shadow-slate-600"/>
                     <h2 className="links_footer">{link.content}</h2>
                   </li>
                 ))}
