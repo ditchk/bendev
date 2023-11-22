@@ -1,6 +1,5 @@
 import Skills from "@/components/shared/Skills"
 import Socials from "@/components/shared/Socials"
-import { Button } from "@/components/ui/button"
 import { welcomeMessage } from "@/constants"
 import { myWelcomeMessage } from "@/types"
 import { Link } from "react-router-dom"
