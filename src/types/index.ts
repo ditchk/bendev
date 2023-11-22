@@ -14,7 +14,7 @@ export type myFooterLinks = {
 };
 
 export type myMoreFooterLinks = {
-  name: string;
+  label: string;
   route: string;
 }
 

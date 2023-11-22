@@ -6,11 +6,11 @@ import { myWelcomeMessage } from "@/types"
 const Home = () => {
   return (
     <div className="default_container">
-      <div className="flex flex-col justify-center items-start gap-10 mt-5 bg-gradient-to-t from-cyan-100 via-white to-white rounded-xl">
-        <ul className="shadow-slate-500 h-fit p-5 m-0 w-full shadow rounded-xl">
+      <div className="flex flex-col justify-center items-start gap-10 mt-5 bg-gradient-to-t from-cyan-100 via-white to-white rounded-xl w-full">
+        <ul className="flex flex-1 shadow-slate-500 h-fit p-5 m-0 w-full shadow rounded-xl">
           {welcomeMessage.map((link: myWelcomeMessage) => {
             return (
-              <div className="flex flex-grow">
+              <div className="flex flex-col md:flex-row w-fit gap-5 md:gap-0">
                   <li key={link.title} >
                     <h1 className="tittl_name">{link.title}</h1>
                     <h2 className="primary_text">{link.subTitle}</h2>

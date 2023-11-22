@@ -9,7 +9,7 @@ import { SiBlender, SiThreedotjs, SiFramer } from "react-icons/si";
 const Skills = () => {
 
   return (
-    <div className="flex flex-col gap-2 mt-24">
+    <div className="flex flex-col gap-2 mt-5 md:mt-24">
         <h1 className="mb-5 text-xl font-serif font-medium">Featured skills</h1>
       <div className="flex flex-grow gap-2">
         <FaReact className="icon_pack" />
