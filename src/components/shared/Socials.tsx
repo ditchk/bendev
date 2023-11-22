@@ -13,7 +13,7 @@ const Socials = () => {
       <Link to={'https://benkigochi5.slack.com/archives/C04SPHHHN4F'}>
         <FaSlack className="social_icons" />
       </Link>
-      <Link to={}>
+      <Link to={'https://www.instagram.com/_blackdollar_/'}>
         <RiInstagramFill className="social_icons" />
       </Link>
       <Link to={'https://www.linkedin.com/in/BensonKigoci'}>
