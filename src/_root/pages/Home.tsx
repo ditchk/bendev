@@ -3,6 +3,7 @@ import Socials from "@/components/shared/Socials"
 import { Button } from "@/components/ui/button"
 import { welcomeMessage } from "@/constants"
 import { myWelcomeMessage } from "@/types"
+import { Link } from "react-router-dom"
 
 const Home = () => {
   return (
@@ -16,10 +17,14 @@ const Home = () => {
                     <h1 className="tittl_name">{link.title}</h1>
                     <h2 className="primary_text">{link.subTitle}</h2>
                     <h3 className="paragraph_text">Welcome, my name is Benson Kigoci.I have aquired skills that will help your business scale up in this technology era.Using my expertise i will design stunning <br /> for your busines using the latest technology</h3>
-                    <Button className="outline_btn mt-2 font-serif">
-                      continue reading
-                    </Button>
-                    <Skills />
+                    <div className="flex flex-col justify-center items-center">
+                      <Link to={'/contact'} className="outline_btn rounded-md p-3 mt-10 my-10 font-serif">
+                      Let's talk 
+                    </Link>
+                      <Socials />
+                    </div>
+                    
+                      <Skills />
                   </li>
                     <img 
                       src="/assets/images/homepage.jpg" 
@@ -27,9 +32,7 @@ const Home = () => {
                       width={400}
                       className="object-contain rounded-e-full rounded-t-full border-b-2 border-cyan-400"
                     />
-                    <div className="flex md:hidden">
-                      <Socials />
-                    </div>
+                    
               </div>
             )
           })}
