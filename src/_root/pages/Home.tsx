@@ -31,10 +31,11 @@ const Home = () => {
             )
           })}
         </ul>
+        <div className="flex md:hidden">
+          <Socials />
+        </div>
       </div>
-      <div className="flex md:hidden">
-        <Socials />
-      </div>
+      
     </div>
     
   )
