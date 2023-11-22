@@ -1,4 +1,5 @@
 import Skills from "@/components/shared/Skills"
+import Socials from "@/components/shared/Socials"
 import { Button } from "@/components/ui/button"
 import { welcomeMessage } from "@/constants"
 import { myWelcomeMessage } from "@/types"
@@ -27,10 +28,12 @@ const Home = () => {
                       className="object-contain rounded-e-full rounded-t-full border-b-2 border-cyan-400"
                     />
               </div>
-              
             )
           })}
         </ul>
+      </div>
+      <div className="flex md:hidden">
+        <Socials />
       </div>
     </div>
     
