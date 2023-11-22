@@ -1,10 +1,6 @@
-import  Sidebar  from './Sidebar'
 import { Button } from '../ui/button';
 import Socials from './Socials';
 import { HiOutlineMenuAlt1 } from "react-icons/hi";
-import { sideBarLinks } from '@/constants';
-import { MyNavLink } from '@/types';
-import { NavLink, useLocation } from 'react-router-dom';
 
 
 const Navbar = () => {
