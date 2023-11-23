@@ -97,6 +97,20 @@
   }
 }
 
+
+/* common styles */
+
+.custom_container {
+  @apply flex flex-col flex-1 items-center overflow-scroll py-10 px-5 md:px-8 lg:p-14 custom-scrollbar scroll-smooth
+}
+
+.default_Container {
+  @apply flex flex-1 h-screen w-full
+}
+
+
+/* Navbar/sidebar */
+
 .outline_btn {
   @apply bg-transparent shadow shadow-slate-400 border border-cyan-300 font-serif font-medium text-slate-600 hover:bg-cyan-100 hover:text-black h-12 duration-1000
 }
@@ -137,12 +151,8 @@
   @apply text-sm text-start w-full text-slate-600 font-serif hover:text-cyan-600 hover:translate-x-5 duration-300
 }
 
-.default_container {
-  @apply flex flex-1 md:justify-center m-2
-}
-
 .default_Contactcontainer {
-  @apply flex flex-1 m-5 md:justify-center
+  @apply flex flex-1 m-5 md:justify-center items-center
 }
 
 .welcome_text {
@@ -155,4 +165,50 @@
 
 .upload_container {
   @apply flex flex-col justify-center items-center
+}
+
+/* project upload page */
+
+.project_Upload {
+  @apply flex flex-1 flex-row justify-center items-center gap-5
+}
+
+.text2 {
+  @apply text-black font-serif text-lg font-semibold
+}
+
+.project_Uploader {
+  @apply flex flex-1 justify-center items-center bg-gradient-to-t from-cyan-100 to-white w-max mt-10 p-1 md:p-2 w-full shadow shadow-slate-400 rounded-xl
+}
+
+.image_accordion-container {
+  @apply flex flex-1 p-2 justify-center items-center w-fit h-fit
+} 
+
+.special-button {
+  @apply hidden md:flex
+}
+
+.special-button2 {
+  @apply flex md:hidden
+}
+
+.Formlablel {
+  @apply text-base text-center font-serif
+}
+
+.file-container {
+  @apply flex flex-1 w-full h-full justify-center items-center
+}
+
+.post_upload {
+  @apply object-cover
+}
+
+.Uploader {
+  @apply flex flex-col justify-center items-center
+}
+
+.form-message {
+  @apply text-blue-400
 }

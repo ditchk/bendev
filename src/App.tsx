@@ -12,7 +12,7 @@ import AddProject from './_root/pages/AddProject'
 
 function App() {
   return (
-    <main className="flex flex-1 custom-scrollbar">
+    <main className="flex flex-1">
       <Routes>
         <Route element={<RootLayout/>}>
           <Route index element={<Home />} />

@@ -30,57 +30,56 @@ const ProjectForm = ({ post }: postFormProps) => {
         console.log(values)
       }
 
-  return (
-    <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="w-full px-0 md:px-10 space-y-8">
-        <FormField
-          control={form.control}
-          name="projectName"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>Caption</FormLabel>
-              <FormControl>
-                <Input type="text" className="inpuutArea" {...field} />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-        <FormField
-          control={form.control}
-          name="file"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>Add media</FormLabel>
-              <FormControl>
-                <FileUploader 
-                  fieldChange={field.onChange}
-                  mediaUrl={post?.imageUrl}
-                />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-        <FormField
-          control={form.control}
-          name="projectInfo"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel className="locationLabel">Add Location</FormLabel>
-              <FormControl>
-                <Textarea className="texxtInput" {...field} />
-              </FormControl>
-              <FormMessage className="form-message" />
-            </FormItem>
-          )}
-        />
-         <div className=" flex flex-row justify-end gap-3">
-            <Button type="submit" className="bg-[#a1e2eb] text-white w-fit">Cancel</Button>
-            <Button type="submit" className="bg-black text-white w-fit">Submit</Button>
-         </div>
-      </form>
+return (
+  <div className="project_Uploader">
+      <Form {...form}>
+        <form onSubmit={form.handleSubmit(onSubmit)} className="w-full px-0 md:px-10 space-y-8">
+          <FormField
+            control={form.control}
+            name="projectName"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel className="Formlablel">Project title</FormLabel>
+                <FormControl>
+                  <Input type="text" className="form_inp" {...field} />
+                </FormControl>
+              </FormItem>
+            )}
+          />
+          <FormField
+            control={form.control}
+            name="file"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel className="Formlablel">Add images & videos</FormLabel>
+                <FormControl>
+                  <FileUploader 
+                    fieldChange={field.onChange}
+                    mediaUrl={post?.imageUrl}
+                  />
+                </FormControl>
+              </FormItem>
+            )}
+          />
+          <FormField
+            control={form.control}
+            name="projectInfo"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel className="Formlablel">Add a project description</FormLabel>
+                <FormControl>
+                  <Textarea className="form_inp" placeholder="write a detailed project description" {...field} />
+                </FormControl>
+              </FormItem>
+            )}
+          />
+          <div className=" flex flex-row justify-end gap-3">
+              <Button type="submit" className="bg-[#a1e2eb] text-white w-fit">Cancel</Button>
+              <Button type="submit" className="bg-black text-white w-fit">Submit</Button>
+          </div>
+        </form>
     </Form>
+  </div>
   )
 }
 

@@ -91,4 +91,12 @@ export const contactInformation = [
         imageURL: '/assets/images/outgoing-call.png',
         content: '+254712941987'
     }
+];
+
+export const myProjects = [
+    {
+        imageURL: '/assets/images/placeholder.png',
+        title: 'Project 1',
+        description: 'This is a description of project 1'
+    },
 ]
