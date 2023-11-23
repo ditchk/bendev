@@ -170,7 +170,7 @@
 /* project upload page */
 
 .project_Upload {
-  @apply flex flex-1 flex-row justify-center items-center gap-5
+  @apply flex flex-1 flex-row justify-center items-center gap-5 mt-2
 }
 
 .text2 {
