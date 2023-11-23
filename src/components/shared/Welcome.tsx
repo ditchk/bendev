@@ -8,7 +8,7 @@ import { Link } from "react-router-dom"
 const Welcome = () => {
   return (
     <div className="project_Uploader">
-      <ul className="flex flex-1 h-fit m-0 w-full">
+      <ul className="flex flex-1 h-fit m-3 w-full">
           {welcomeMessage.map((link: myWelcomeMessage) => {
             return (
               <div className="flex flex-col md:flex-row w-fit gap-5 md:gap-0">

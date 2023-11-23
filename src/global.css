@@ -101,7 +101,7 @@
 /* common styles */
 
 .custom_container {
-  @apply flex flex-col flex-1 items-center overflow-scroll py-10 px-5 md:px-8 lg:p-14 custom-scrollbar scroll-smooth
+  @apply flex flex-col flex-1 items-center overflow-scroll md:px-2 custom-scrollbar scroll-smooth
 }
 
 .default_Container {
@@ -178,7 +178,7 @@
 }
 
 .project_Uploader {
-  @apply flex flex-1 justify-center items-center bg-gradient-to-t from-cyan-100 to-white w-max mt-10 p-1 md:p-2 w-full shadow shadow-slate-400 rounded-xl
+  @apply flex flex-1 justify-center items-center bg-gradient-to-t from-cyan-100 to-white md:mt-10 md:p-2 w-full md:shadow shadow-slate-400 md:rounded-xl
 }
 
 .image_accordion-container {

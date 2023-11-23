@@ -9,12 +9,11 @@ const RootLayout = () => {
   return (
     <div className="w-full md:flex flex-col">
       <Navbar />
-      <section className="flex flex-col gap-5 h-screen w-full">
+      <section className="flex flex-col h-screen w-full">
         <Sidebar />
         <Outlet />
-        <Footer />
       </section>
-      
+       <Footer />
     </div>
   )
 }
