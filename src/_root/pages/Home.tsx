@@ -5,7 +5,7 @@ import Welcome from "@/components/shared/Welcome"
 const Home = () => {
   return (
     <div className="default_Container">
-      <div className="custom_container2">
+      <div className="custom_container">
         <Welcome />
       </div> 
     </div>
