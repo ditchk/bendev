@@ -42,7 +42,7 @@ const FileUploader = ({fieldChange}: FileUploaderProps) => {
           </>
         ) : (
             <div className="Uploader">
-                <img src="/assets/images/upload.svg" alt="" width={40} />
+                <img src="/assets/images/file-plus.svg" alt="" width={50} />
                 <h3 className="text-base font-serif ">Drag and drop photos here</h3>
                 <p className="text-base font-serif font-thin">PNG,SVG,JPG</p>
                 <Button className="special-button">

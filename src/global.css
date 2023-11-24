@@ -101,13 +101,20 @@
 /* common styles */
 
 .custom_container {
-  @apply flex flex-col flex-1 items-center overflow-scroll md:px-2 custom-scrollbar scroll-smooth
+  @apply flex flex-col flex-1 items-center overflow-scroll md:px-2 custom-scrollbar scroll-smooth mx-6 p-2
+}
+
+.custom_container2 {
+  @apply flex flex-col flex-1 items-center md:px-2
 }
 
 .default_Container {
   @apply flex flex-1 h-screen w-full
 }
 
+.Home_Container {
+  @apply flex flex-1 justify-center items-center bg-gradient-to-t from-cyan-100 to-white md:mt-10 md:p-2 w-full p-2 md:shadow shadow-slate-400 md:rounded-xl
+}
 
 /* Navbar/sidebar */
 
@@ -136,7 +143,7 @@
   @apply text-start text-xl font-serif text-slate-600
 }
 .form_inp {
-  @apply focus-visible:outline-none shadow-inner shadow-slate-400 p-[25px] outline outline-1 outline-cyan-100
+  @apply focus-visible:outline-none shadow-inner shadow-slate-400 p-[25px] outline outline-2 outline-cyan-100 !important
 }
 
 .subs_btn {
@@ -178,7 +185,7 @@
 }
 
 .project_Uploader {
-  @apply flex flex-1 justify-center items-center bg-gradient-to-t from-cyan-100 to-white md:mt-10 md:p-2 w-full md:shadow shadow-slate-400 md:rounded-xl
+  @apply flex flex-1 justify-center items-center bg-gradient-to-t from-cyan-100 to-white md:mt-10 p-5 md:p-2 w-full mb-32 md:mb-10 mt-2 md:w-[50%] shadow shadow-slate-400 rounded-xl
 }
 
 .image_accordion-container {
@@ -211,4 +218,8 @@
 
 .form-message {
   @apply text-blue-400
+}
+
+.formMes {
+  @apply h-36 rounded-xl border-none focus-visible:ring-1 focus-visible:ring-offset-1 !important;
 }

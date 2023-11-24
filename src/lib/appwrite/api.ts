@@ -35,7 +35,7 @@ export async function signInAccount(user: {name: string; password:string}) {
     }
 }
 
-export async function createPost(project: myNewProject) {
+export async function createProject(project: myNewProject) {
     try {
       // Upload file to appwrite storage
       const uploadedFile = await uploadFile(project.file[0]);
@@ -116,15 +116,15 @@ export async function createPost(project: myNewProject) {
   }
 
   export async function getRecentPosts(){
-    const posts = await databases.listDocuments(
+    const projects = await databases.listDocuments(
       myConfig.databaseId,
       myConfig.projectCollectionId,
       [Query.orderDesc('$createdAt'), Query.limit(20)]
     )
 
-    if(!posts) throw Error;
+    if(!projects) throw Error;
 
-    return posts
+    return projects
   }
 
   

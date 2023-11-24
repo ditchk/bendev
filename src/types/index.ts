@@ -46,7 +46,7 @@ export type IUser = {
 };
 
 export type myNewProject = {
-  projectName: '[Symbol.iterator](string)',
+  projectName: string;
   file: File[];
-  ProjectInfo: '[Symbol.iterator]()',
+  ProjectInfo: string;
 }

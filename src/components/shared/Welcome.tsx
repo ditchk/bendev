@@ -7,7 +7,7 @@ import { Link } from "react-router-dom"
 
 const Welcome = () => {
   return (
-    <div className="project_Uploader">
+    <div className="Home_Container">
       <ul className="flex flex-1 h-fit m-3 w-full">
           {welcomeMessage.map((link: myWelcomeMessage) => {
             return (
