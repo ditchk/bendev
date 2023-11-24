@@ -113,7 +113,7 @@
 }
 
 .Home_Container {
-  @apply flex flex-1 justify-center items-center bg-gradient-to-t from-cyan-100 to-white md:mt-10 md:p-2 w-full p-2 md:shadow shadow-slate-400 md:rounded-xl
+  @apply flex flex-1 justify-center items-center bg-gradient-to-t from-cyan-100 to-white md:mt-10 md:p-2 w-full p-2 shadow shadow-slate-400 rounded-xl
 }
 
 /* Navbar/sidebar */
