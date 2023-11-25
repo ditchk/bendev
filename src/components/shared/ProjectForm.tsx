@@ -11,6 +11,7 @@ import FileUploader from "./FileUploader"
 import { projectValidation } from "@/lib/validation"
 import { Models } from "appwrite"
 import { useCreateProject } from "@/lib/Queries/QueriesAndMutations"
+import { Loader } from "lucide-react"
 // import { myConfig } from "@/lib/appwrite/config"
 
 type projectFormProps = {
@@ -18,7 +19,7 @@ type projectFormProps = {
 }
 
 const ProjectForm = ({ project }: projectFormProps) => {
-    const { mutateAsync: createProject, isPending: /*isLoadingCreate*/ } = useCreateProject()
+    const { mutateAsync: createProject, isPending: isLoadingCreate } = useCreateProject()
 
     const form = useForm<z.infer<typeof projectValidation>>({
         resolver: zodResolver(projectValidation),
@@ -85,7 +86,17 @@ return (
           />
           <div className="flex flex-row justify-end gap-3">
               <Button type="submit" className="bg-[#a1e2eb] text-white w-fit">Cancel</Button>
-              <Button type="submit" className="bg-black text-white w-fit">Submit</Button>
+              <Button type="submit" className="bg-black text-white w-fit">
+                {isLoadingCreate ? (
+                  <div>
+                    <Loader />
+                  </div>
+                ): (
+                  <div>
+                    Create
+                  </div>
+                )}
+              </Button>
           </div>
         </form>
     </Form>
