@@ -1,6 +1,6 @@
 
 import { zodResolver } from "@hookform/resolvers/zod"
-import { set, useForm } from "react-hook-form"
+import { useForm } from "react-hook-form"
 import * as z from "zod"
 
 import { Button } from "@/components/ui/button"
@@ -18,7 +18,7 @@ type projectFormProps = {
 }
 
 const ProjectForm = ({ project }: projectFormProps) => {
-    const { mutateAsync: createProject, isPending: isLoadingCreate } = useCreateProject()
+    const { mutateAsync: createProject, isPending: /*isLoadingCreate*/ } = useCreateProject()
 
     const form = useForm<z.infer<typeof projectValidation>>({
         resolver: zodResolver(projectValidation),

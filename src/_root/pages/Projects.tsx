@@ -4,7 +4,7 @@ import { useGetRecentProjects } from "@/lib/Queries/QueriesAndMutations";
 import { Models } from "appwrite";
 
 const Projects = () => {
-const { data: projects , isPending: isProjectloading, isError: isProjectError } = useGetRecentProjects();
+const { data: projects , isPending: isProjectloading, /*isError: isProjectError*/ } = useGetRecentProjects();
 
   return (
     <div className="default_Container">

@@ -7,7 +7,7 @@ import { Button } from '../ui/button';
     mediaUrl: string;
   };
 
-const FileUploader = ({fieldChange, mediaUrl}: FileUploaderProps) => {
+const FileUploader = ({fieldChange, /*mediaUrl*/ }: FileUploaderProps) => {
 
     const [file, setFile] = useState<File[]>([])
     const [FileUrl, setFileUrl] = useState('');
