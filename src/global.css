@@ -121,6 +121,19 @@
   @apply flex flex-1 justify-center items-center bg-gradient-to-t from-cyan-100 to-white md:mt-10 md:p-2 w-full p-2 shadow shadow-slate-400 rounded-xl
 }
 
+/* mobile menu */
+.MobileMenu {
+  @apply flex flex-1 z-20 p-2
+}
+
+.menubar {
+  @apply grid grid-cols-4 shadow-lg shadow-slate-500 justify-center items-center absolute top-[78px] w-fit h-fit rounded-b-xl border-double border-b-zinc-700 outline-cyan-400 p-5 right-0 left-0 gap-10 bg-gradient-to-t from-white to-cyan-200
+ }
+
+.links {
+  @apply block w-fit
+}
+
 /* Navbar/sidebar */
 
 .outline_btn {
@@ -242,3 +255,4 @@
 .project_paragraph {
   @apply box-border border border-slate-400 text-base font-serif text-cyan-950 p-2 my-1 rounded-md shadow-inner shadow-slate-400
 }
+

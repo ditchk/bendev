@@ -50,3 +50,7 @@ export type myNewProject = {
   file: File[];
   projectInfo: string;
 }
+
+export type Player = {
+  name: string;
+}

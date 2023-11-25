@@ -5,6 +5,9 @@
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "module": "ESNext",
     "skipLibCheck": true,
+    "sourceMap": true,
+    "outDir": "./dist",
+    "esModuleInterop": true,
 
     /* Bundler mode */
     "moduleResolution": "bundler",
@@ -32,3 +35,6 @@
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
+
+// video Compliler
+

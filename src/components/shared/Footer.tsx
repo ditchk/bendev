@@ -37,8 +37,8 @@ const Footer = () => {
     console.log(values)
   }
   return (
-    <footer className="flex flex-col shadow shadow-slate-100 md:shadow-slate-600 mt-0 md:mt-24 bg-gradient-to-l from-cyan-200 via-neutral-50 to-teal-50">
-      <div className="flex flex-col md:flex-row justify-between gap-5 m-2 md:m-10 p-2 md:p-10 items-center shadow-inner shadow-gray-400 rounded-lg outline outline-2 outline-cyan-300 bottom-0 sticky">
+    <footer className="flex flex-col shadow shadow-slate-100 md:shadow-slate-600 mt-0 md:mt-24 bg-gradient-to-l from-cyan-200 via-neutral-50 to-teal-50 z-0">
+      <div className="flex flex-col md:flex-row justify-between gap-5 m-2 md:m-10 p-2 md:p-10 items-center shadow-inner shadow-gray-400 rounded-lg outline outline-2 outline-cyan-300">
           <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-col md:flex-row gap-2 md:gap-3 space-y-8 w-fit p-0 md:p-5">
             <FormField
