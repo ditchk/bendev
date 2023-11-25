@@ -3,11 +3,13 @@ import { BrowserRouter }  from 'react-router-dom'
 
 import App from './App.tsx'
 import './global.css'
-// import { QueryProvider } from './lib/queries/QueryProvider.tsx'
+import { QueryProvider } from './lib/Queries/QueryProvider.tsx'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
     <BrowserRouter>
-      <App />
+      <QueryProvider>
+        <App />
+      </QueryProvider>
     </BrowserRouter>
   
 )

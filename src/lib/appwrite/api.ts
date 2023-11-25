@@ -37,7 +37,7 @@ export async function signInAccount(user: {name: string; password:string}) {
 
 export async function createProject(project: myNewProject) {
     try {
-      // Upload file to appwrite storage
+      
       const uploadedFile = await uploadFile(project.file[0]);
   
       if (!uploadedFile) throw Error;
@@ -55,8 +55,10 @@ export async function createProject(project: myNewProject) {
         myConfig.projectCollectionId,
         ID.unique(),
         {
+          projectInfo: project.projectInfo,
+          ProjectName: project.ProjectName,
           imageUrl: fileUrl,
-          imageId: uploadedFile.$id,
+          ImageId: uploadedFile.$id,
         }
       );
   
@@ -115,7 +117,7 @@ export async function createProject(project: myNewProject) {
     }
   }
 
-  export async function getRecentPosts(){
+  export async function getRecentProjects(){
     const projects = await databases.listDocuments(
       myConfig.databaseId,
       myConfig.projectCollectionId,

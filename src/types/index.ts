@@ -14,8 +14,8 @@ export type myFooterLinks = {
 };
 
 export type myMoreFooterLinks = {
-  name: string;
-  route: string;
+  name2: string;
+  route2: string;
 }
 
 export type contactInfo = {
@@ -46,7 +46,7 @@ export type IUser = {
 };
 
 export type myNewProject = {
-  projectName: string;
+  ProjectName: string;
   file: File[];
-  ProjectInfo: string;
+  projectInfo: string;
 }

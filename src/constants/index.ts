@@ -61,20 +61,20 @@ export const footerLinks = [
 
 export const moreFooterLinks = [
     {
-        name: 'Privacy Policy',
-        route: '/privacy-policy'
+        name2: 'Privacy Policy',
+        route2: '/privacy-policy'
     },
     {
-        name: 'Terms of Service',
-        route: '/terms-use'
+        name2: 'Terms of Service',
+        route2: '/terms-use'
     },
     {
-        name: 'about us',
-        route: '/about'
+        name2: 'about us',
+        route2: '/about'
     },
     {
-        name: 'where are we located',
-        route: '/contact'
+        name2: 'where are we located',
+        route2: '/contact'
     }
 ];
 

@@ -13,7 +13,7 @@ export const SigninValidation = z.object({
   })
 
 export const projectValidation = z.object({
-    projectName: z.string().min(5).max(2200),
+    ProjectName: z.string().min(5).max(115, { message: "Cannot exceed 115 characters" }),
     file: z.custom<File[]>(),
-    projectInfo: z.string().min(2).max(100),
+    projectInfo: z.string().min(2).max(200, { message: "Cannot exceed 200 characters" }),
   })

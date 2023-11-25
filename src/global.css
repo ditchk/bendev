@@ -101,8 +101,13 @@
 /* common styles */
 
 .custom_container {
-  @apply flex flex-col flex-1 items-center overflow-scroll md:px-2 custom-scrollbar scroll-smooth mx-6 p-2
+  @apply flex flex-col flex-1 items-center overflow-scroll bg-transparent lg:px-2 custom-scrollbar scroll-smooth lg:mx-6 p-2
 }
+
+.custom_container3 {
+  @apply flex flex-col flex-1 items-center overflow-scroll bg-transparent md:px-2 custom-scrollbar scroll-smooth md:mx-6 p-2
+}
+
 
 .custom_container2 {
   @apply flex flex-col flex-1 items-center md:px-2
@@ -222,4 +227,18 @@
 
 .formMes {
   @apply h-36 rounded-xl border-none focus-visible:ring-1 focus-visible:ring-offset-1 !important;
+}
+
+/* Project page */
+
+.project_container {
+  @apply flex flex-1 justify-center items-center bg-gradient-to-t from-cyan-200 to-white shadow hover:shadow-lg h-full w-full shadow-slate-600 hover:outline outline-2 outline-slate-400 rounded-lg duration-1000
+}
+
+.primary-projecttext {
+  @apply text-sm font-bold text-transparent bg-clip-text bg-gradient-to-l from-cyan-900 via-neutral-500 to-teal-900
+}
+
+.project_paragraph {
+  @apply box-border border border-slate-400 text-base font-serif text-cyan-950 p-2 my-1 rounded-md shadow-inner shadow-slate-400
 }

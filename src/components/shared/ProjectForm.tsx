@@ -1,6 +1,6 @@
 
 import { zodResolver } from "@hookform/resolvers/zod"
-import { useForm } from "react-hook-form"
+import { set, useForm } from "react-hook-form"
 import * as z from "zod"
 
 import { Button } from "@/components/ui/button"
@@ -10,7 +10,7 @@ import { Textarea } from "../ui/textarea"
 import FileUploader from "./FileUploader"
 import { projectValidation } from "@/lib/validation"
 import { Models } from "appwrite"
-// import { useCreateProject } from "@/lib/Queries/QueriesAndMutations"
+import { useCreateProject } from "@/lib/Queries/QueriesAndMutations"
 // import { myConfig } from "@/lib/appwrite/config"
 
 type projectFormProps = {
@@ -18,20 +18,26 @@ type projectFormProps = {
 }
 
 const ProjectForm = ({ project }: projectFormProps) => {
-    // const { mutateAsync: createProject, isPending: isLoadingCreate } = useCreateProject()
+    const { mutateAsync: createProject, isPending: isLoadingCreate } = useCreateProject()
 
     const form = useForm<z.infer<typeof projectValidation>>({
         resolver: zodResolver(projectValidation),
         defaultValues: {
-         projectName: project? project?.projectName: "",
+         ProjectName: project? project?.ProjectName: "",
          projectInfo: project? project?.projectInfo: "",
          file: [],
         },
       })
      
       async function onSubmit(values: z.infer<typeof projectValidation>) {
-      console.log(values)
-
+        const newProject = await createProject({
+            ProjectName: values.ProjectName,
+            projectInfo: values.projectInfo,
+            file: values.file,
+        })
+        
+        // set isLoadingCreate = true
+        return newProject
       }
 return (
   <div className="project_Uploader">
@@ -39,7 +45,7 @@ return (
         <form onSubmit={form.handleSubmit(onSubmit)} className="w-full px-5 space-y-5">
           <FormField
             control={form.control}
-            name="projectName"
+            name="ProjectName"
             render={({ field }) => (
               <FormItem>
                 <FormLabel className="Formlablel">Project title</FormLabel>
@@ -58,7 +64,7 @@ return (
                 <FormControl>
                   <FileUploader 
                     fieldChange={field.onChange}
-                    mediaUrl={project?.imageUrl}
+                    mediaUrl={project?.ImageUrl}
                   />
                 </FormControl>
               </FormItem>

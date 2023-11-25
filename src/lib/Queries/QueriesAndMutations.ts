@@ -1,10 +1,11 @@
 import { 
     // useQuery,
     useMutation,
+    useQuery,
     useQueryClient,
     // useInfiniteQuery,
  } from '@tanstack/react-query';
-import { createProject } from '../appwrite/api';
+import { createProject, getRecentProjects } from '../appwrite/api';
 import { myNewProject } from '@/types';
 import { QUERY_KEYS } from './queryKeys';
 
@@ -29,3 +30,10 @@ import { QUERY_KEYS } from './queryKeys';
             }
         })
     }
+
+export const useGetRecentProjects = () => {
+    return useQuery({
+        queryKey: [QUERY_KEYS.GET_RECENT_PROJECTS],
+        queryFn: getRecentProjects
+    })
+}

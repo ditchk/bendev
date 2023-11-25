@@ -29,7 +29,7 @@ const Welcome = () => {
                       src="/assets/images/homepage.jpg" 
                       alt="homepage-image" 
                       width={400}
-                      className="object-contain rounded-e-full rounded-t-full border-b-2 border-cyan-400"
+                      className="object-contain h-fit rounded-e-full justify-end rounded-t-full border-b-2 border-cyan-400"
                     />   
               </div>
             )
