@@ -105,7 +105,7 @@
 }
 
 .custom_container3 {
-  @apply flex flex-col flex-1 items-center overflow-scroll bg-transparent md:px-2 custom-scrollbar scroll-smooth md:mx-6 md:p-2
+  @apply flex flex-col flex-1 items-center overflow-scroll bg-transparent px-10 custom-scrollbar scroll-smooth md:mx-6 p-2
 }
 
 

@@ -15,8 +15,7 @@ const Navbar = () => {
         <Socials />
         <Button className="outline_btn">
           LEARN MORE
-        </Button>
-        
+        </Button>  
       </div>
       <div className="flex justify-center items-center md:hidden p-0 m-0 w-fit">
         <MobileMenu />
