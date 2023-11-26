@@ -5,7 +5,7 @@ waveform.register()
 
 const ProjectLoder = () => {
   return (
-    <div className='flex fle-1 justify-center items-center h-screen w-full bg-transparent backdrop-blur-md'>
+    <div className='flex flex-1 justify-center items-center h-screen w-full bg-transparent backdrop-blur-md'>
       <l-waveform
       size="50"
       speed="1" 
