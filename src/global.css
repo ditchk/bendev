@@ -245,7 +245,7 @@
 /* Project page */
 
 .project_container {
-  @apply flex flex-1 justify-center items-center bg-gradient-to-t from-cyan-200 to-white md:shadow-inner h-full w-full shadow-black rounded-md duration-500
+  @apply flex flex-1 justify-center items-center bg-gradient-to-t from-cyan-200 to-white shadow h-full w-full shadow-slate-400 rounded-md duration-500
 }
 
 .primary-projecttext {
@@ -253,7 +253,7 @@
 }
 
 .project_paragraph {
-  @apply box-border min-h-[150px] border border-slate-400 text-sm md:text-base font-serif text-cyan-950 p-2 my-1 rounded-md shadow-inner shadow-slate-500
+  @apply box-border min-h-[150px] text-sm md:text-base font-serif text-cyan-500 p-2 my-1 rounded-md shadow-inner shadow-cyan-800 bg-white outline outline-2 outline-cyan-200
 }
 
 .custom_button {
