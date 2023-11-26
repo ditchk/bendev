@@ -6,7 +6,7 @@ import { sideBarLinks } from "@/constants";
 const Sidebar = () => {
     const { pathname } = useLocation();
   return (
-    <nav className="hidden lg:flex flex-row justify-between items-center mt-3 px-5 py-5 bg-white h-fit outline  w-full outline-1 outline-slate-300">
+    <nav className="hidden md:flex flex-row md:justify-end lg:justify-between items-center mt-3 px-5 py-5 bg-white h-fit outline  w-full outline-1 outline-slate-300">
        <h1 className="welcome_text">WELCOME TO MY WORKSPACE</h1>
         <ul className="flex flex-row gap-[15px] w-fit">
         {sideBarLinks.map((link: MyNavLink) => {

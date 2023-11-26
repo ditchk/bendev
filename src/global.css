@@ -93,7 +93,7 @@
     @apply border-border;
   }
   body {
-    @apply bg-gradient-to-t from-cyan-300 to-white text-foreground;
+    @apply bg-gradient-to-t from-cyan-100 to-white text-foreground;
   }
 }
 
@@ -105,7 +105,7 @@
 }
 
 .custom_container3 {
-  @apply flex flex-col flex-1 items-center overflow-scroll bg-transparent px-2 custom-scrollbar scroll-smooth md:mx-6 p-2
+  @apply flex flex-col flex-1 items-center overflow-scroll bg-transparent px-2 md:mx-6 p-2 pb-10
 }
 
 
@@ -127,7 +127,7 @@
 }
 
 .menubar {
-  @apply flex flex-col p-2 gap-2 justify-start items-center border-t border-cyan-700 fixed  w-full h-[80%] rounded-b-xl shadow-xl shadow-slate-500 outline-cyan-400 right-0 left-0 bg-gradient-to-t from-white via-cyan-200 to-white
+  @apply flex flex-col pt-3 gap-2 justify-start items-center border-t border-cyan-700 fixed  w-full h-[65%] rounded-b-xl shadow-xl shadow-slate-500 outline-cyan-400 right-0 left-0 bg-gradient-to-t from-white via-cyan-200 to-white
  }
 
 .links {
@@ -181,7 +181,7 @@
 }
 
 .welcome_text {
-  @apply hidden font-serif md:flex shadow rounded-md shadow-slate-300 h-fit p-2 text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-cyan-300 via-black
+  @apply hidden font-serif lg:flex shadow rounded-md shadow-slate-300 h-fit p-2 md:text-base lg:text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-cyan-300 via-black
 }
 
 .icon_pack {
