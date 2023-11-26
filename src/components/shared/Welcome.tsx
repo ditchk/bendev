@@ -1,9 +1,7 @@
 import Skills from "@/components/shared/Skills"
-import Socials from "@/components/shared/Socials"
 import { Button } from "@/components/ui/button"
 import { welcomeMessage } from "@/constants"
 import { myWelcomeMessage } from "@/types"
-import { Link } from "react-router-dom"
 
 const Welcome = () => {
   return (
@@ -17,12 +15,6 @@ const Welcome = () => {
                     <h2 className="primary_text">{link.subTitle}</h2>
                     <h3 className="paragraph_text">I have aquired skills that will help your business scale up in this technology era.Using my expertise i will design stunning landing pages/website and even design your ad campaigns <br /> for your business using the latest technology <br /> Click the button below to talk to me (❁´◡`❁)</h3>
                     <Button className="outline_btn font-serif hidden md:flex">Continue reading</Button>
-                    <div className="flex flex-col md:hidden justify-center items-start">
-                      <Link to={'/contact'} className="outline_btn rounded-md p-3 mt-10 my-10 font-serif">
-                      Let's talk 
-                    </Link>
-                      <Socials />
-                    </div>
                       <Skills />
                   </li>
                     <img 
