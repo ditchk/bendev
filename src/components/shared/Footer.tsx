@@ -37,16 +37,16 @@ const Footer = () => {
     console.log(values)
   }
   return (
-    <footer className="flex flex-col shadow shadow-slate-100 md:shadow-slate-600 mt-0 md:mt-24 bg-gradient-to-l from-cyan-200 via-neutral-50 to-teal-50 z-0">
-      <div className="flex flex-col md:flex-row justify-between gap-5 m-2 md:m-10 p-2 md:p-10 items-center shadow-inner shadow-gray-400 rounded-lg outline outline-2 outline-cyan-300">
+    <footer className="flex flex-col shadow shadow-slate-100 md:shadow-slate-600 bg-gradient-to-l from-cyan-200 via-neutral-50 to-teal-50 z-0">
+      <div className="flex flex-col md:flex-row justify-between m-3 md:m-10 p-2 md:p-10 items-center rounded-lg outline outline-1 outline-cyan-300">
           <Form {...form}>
-          <form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-col md:flex-row gap-2 md:gap-3 space-y-8 w-fit p-0 md:p-5">
+          <form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-row justify-center items-center gap-2 md:gap-3 space-y-8 w-fit p-5">
             <FormField
               control={form.control}
               name="email"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel className="titlle_text">Subscribe to my newsletter</FormLabel>
+                  <FormLabel className="titlle_text">Subscribe</FormLabel>
                   <FormControl>
                     <Input placeholder="Enter your email" {...field} className="form_inp" />
                   </FormControl>
@@ -57,10 +57,10 @@ const Footer = () => {
             <Button type="submit" className="subs_btn">Subscribe now!</Button>
           </form>
         </Form>
-        <div className="flex flex-col justify-start gap-5">
+        <div className="flex flex-col justify-start gap-2">
           <h1 className="titlle_text">Quick links</h1>
             <div className="flex flex-row justify-between gap-10" >
-                <ul className="flex flex-col list-disc list-inside">
+                <ul className="flex flex-col justify-start list-disc list-inside">
                   {footerLinks.map((link: myFooterLinks) => {
                     return (
                       <li key={link.route} className="links_footer">

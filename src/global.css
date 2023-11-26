@@ -101,11 +101,11 @@
 /* common styles */
 
 .custom_container {
-  @apply flex flex-col flex-1 items-center overflow-scroll bg-transparent lg:px-2 custom-scrollbar scroll-smooth lg:mx-6 p-2
+  @apply flex flex-col flex-1 items-center bg-transparent lg:px-2 lg:mx-6 p-2
 }
 
 .custom_container3 {
-  @apply flex flex-col flex-1 items-center overflow-scroll bg-transparent px-10 custom-scrollbar scroll-smooth md:mx-6 p-2
+  @apply flex flex-col flex-1 items-center overflow-scroll bg-transparent px-2 custom-scrollbar scroll-smooth md:mx-6 p-2
 }
 
 
@@ -127,7 +127,7 @@
 }
 
 .menubar {
-  @apply flex flex-col p-1 gap-2 justify-start items-center border-t border-cyan-700 fixed  w-full h-[70%] rounded-b-xl shadow-xl shadow-slate-500 outline-cyan-400 right-0 left-0 bg-gradient-to-t from-white via-cyan-200 to-white
+  @apply flex flex-col p-2 gap-2 justify-start items-center border-t border-cyan-700 fixed  w-full h-[80%] rounded-b-xl shadow-xl shadow-slate-500 outline-cyan-400 right-0 left-0 bg-gradient-to-t from-white via-cyan-200 to-white
  }
 
 .links {
@@ -165,7 +165,7 @@
 }
 
 .subs_btn {
-  @apply outline outline-1 outline-cyan-300 text-center w-fit  text-slate-600 md:px-8 py-[27px] shadow shadow-slate-400 hover:text-white hover:bg-black duration-700 bg-cyan-100
+  @apply outline outline-1 outline-cyan-300 text-center w-fit  text-slate-600 md:px-8 mt-10 py-[27px] shadow shadow-slate-400 hover:text-white hover:bg-black duration-700 bg-cyan-100
 }
 
 .submit {
@@ -245,14 +245,17 @@
 /* Project page */
 
 .project_container {
-  @apply flex flex-1 justify-center items-center bg-gradient-to-t from-cyan-200 to-white shadow hover:shadow-lg h-full w-full shadow-slate-600 hover:outline outline-2 outline-slate-400 rounded-lg duration-1000
+  @apply flex flex-1 justify-center items-center bg-gradient-to-t from-cyan-200 to-white md:shadow hover:shadow-lg h-full w-full shadow-slate-600 hover:outline outline outline-2 outline-slate-400 rounded-lg duration-1000
 }
 
 .primary-projecttext {
-  @apply text-sm font-bold text-transparent bg-clip-text bg-gradient-to-l from-cyan-900 via-neutral-500 to-teal-900
+  @apply text-[10px] md:text-sm font-semibold font-serif text-transparent bg-clip-text bg-gradient-to-l from-cyan-900 via-neutral-500 to-teal-900
 }
 
 .project_paragraph {
-  @apply box-border border border-slate-400 text-base font-serif text-cyan-950 p-2 my-1 rounded-md shadow-inner shadow-slate-400
+  @apply box-border border border-slate-400 text-sm md:text-sm font-serif text-cyan-950 p-2 my-1 rounded-md outline-1 outline-slate-400
 }
 
+.custom_button {
+  @apply w-fit bg-gradient-to-l from-slate-400 via-cyan-400 to-slate-400 outline-2 outline-cyan-200 shadow shadow-slate-500
+}

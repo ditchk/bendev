@@ -6,7 +6,7 @@ const Navbar = () => {
 
 
   return (
-    <nav className="flex flex-row justify-between w-full h-max md:bg-transparent lg:backdrop-blur top-0 sticky shadow-md shadow-slate-400 py-2 px-4 bg-white md:bg-opacity-5">
+    <nav className="z-50 flex flex-row justify-between w-full h-max md:bg-transparent lg:backdrop-blur top-0 sticky shadow-md shadow-slate-400 py-2 px-4 bg-white md:bg-opacity-5">
       <Link to={'/'} >
         <img src="/assets/images/benswsp.png" alt="" width={200}/>
       </Link>
