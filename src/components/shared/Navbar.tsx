@@ -2,8 +2,6 @@ import { Link } from 'react-router-dom';
 import { Button } from '../ui/button';
 import Socials from './Socials';
 import MobileMenu from './MobileMenu';
-
-
 const Navbar = () => {
 
 

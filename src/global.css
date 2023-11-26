@@ -127,7 +127,7 @@
 }
 
 .menubar {
-  @apply grid grid-cols-4 shadow-lg shadow-slate-500 justify-center items-center absolute top-[78px] w-fit h-fit rounded-b-xl border-double border-b-zinc-700 outline-cyan-400 p-5 right-0 left-0 gap-10 bg-gradient-to-t from-white to-cyan-200
+  @apply grid grid-cols-1 shadow-lg shadow-slate-500 justify-center items-center fixed duration-1000 top-[78px] w-full h-screen rounded-b-xl border-double border-b-zinc-700 outline-cyan-400 p-5 right-0 left-0 gap-10 bg-gradient-to-t from-white to-cyan-200
  }
 
 .links {

@@ -3,6 +3,8 @@ import { sideBarLinks } from '@/constants';
 import { MyNavLink } from '@/types';
 import { NavLink, useLocation } from 'react-router-dom';
 import { HiOutlineMenuAlt1 } from 'react-icons/hi';
+import { motion } from 'framer-motion';
+import { MdOutlineClose } from "react-icons/md";
 
 
 
@@ -17,10 +19,18 @@ const MobileMenu: React.FC = () => {
  return (
     <nav className="MobileMenu">
       <button onClick={toggleMenu}>
-            <HiOutlineMenuAlt1 className="text-5xl text-slate-900 bg-gradient-to-t from-cyan-300 via-white rounded-full p-1 shadow-inner shadow-black outline outline-2 outline-cyan-200" />
-          </button>
+            {!menuOpen ? (
+              <HiOutlineMenuAlt1 className="text-5xl text-slate-900 bg-gradient-to-t from-cyan-300 via-white rounded-xl p-1 shadow-inner shadow-black outline outline-2 outline-cyan-200" />
+            ) : (
+              <MdOutlineClose className="text-5xl text-violet-900 bg-gradient-to-t from-cyan-300 via-white rounded-xl p-1 shadow-inner shadow-black outline outline-2 outline-cyan-200" />
+            )}
+        </button>
       {menuOpen && (
-       <ul className="menubar">
+       <motion.ul
+        animate={{ y: 1 }}
+        transition={{ delay: 0 }} 
+        className="menubar"
+       >
        {sideBarLinks.map((link: MyNavLink) => {
 
          const isActive = pathname === link.route;
@@ -35,7 +45,7 @@ const MobileMenu: React.FC = () => {
            </li>
          )
        })}
-     </ul>
+     </motion.ul>
       )}
     </nav>
  );

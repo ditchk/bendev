@@ -83,7 +83,7 @@ const Footer = () => {
             </div>
         </div>
       </div>
-      <div className="flex flex-1 justify-center items-center border-t border-slate-300 shadow shadow-slate-500 backdrop-blur-sm">
+      <div className="flex flex-1 justify-center items-center border-t border-slate-300 shadow shadow-slate-500">
         <h1 className="flex flex-row gap-3 justify-center items-center font-serif text-violet-700 text-sm font-semibold"><img src="/assets/images/benswsp.png" alt="footer-logo" width={150} /> &#169; 2023</h1>
       </div>
     </footer>
