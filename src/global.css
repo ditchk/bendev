@@ -127,11 +127,14 @@
 
 /* mobile menu */
 .MobileMenu {
-  @apply flex flex-1 z-20 p-1 w-full
+  @apply flex flex-1 z-20 p-1 w-full top-0
 }
 
 .menubar {
-  @apply flex flex-col pt-3 gap-2 justify-start items-center border-t border-cyan-700 fixed  w-full h-[70%] rounded-b-xl shadow-xl shadow-slate-500 outline-cyan-400 right-0 left-0 bg-gradient-to-t from-white via-cyan-200 to-white
+  @apply flex flex-col pt-3 gap-2 justify-start items-center border-t border-cyan-700 fixed  
+  w-full h-[70%] rounded-b-xl shadow-xl 
+  shadow-slate-500 outline-cyan-400 right-0 left-0 bg-gradient-to-t from-white via-cyan-200 to-white
+  duration-100
  }
 
 .links {

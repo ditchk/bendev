@@ -10,7 +10,7 @@ const Skills = () => {
 
   return (
     <div className="flex flex-col mt-3 md:mt-10">
-        <h1 className="mb-5 text-cyan-700 underline underline-offset-2 text-2xl font-serif font-bold">Featured skills</h1>
+        <h1 className="mb-5 text-cyan-700 underline underline-offset-2 text-2xl font-mono">Featured skills</h1>
       <div className="flex flex-grow gap-2">
         <FaReact className="icon_pack" />
         <TbBrandNextjs className="icon_pack" />
