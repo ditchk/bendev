@@ -150,7 +150,7 @@
   @apply text-white bg-slate-950 text-3xl p-2 rounded-md cursor-pointer hover:bg-gradient-to-l from-cyan-300 via-neutral-50 to-teal-100 hover:text-cyan-600 shadow-inner outline outline-2 outline-cyan-500 shadow-black duration-700
 }
 .tittl_name {
-  @apply text-sm md:text-2xl font-extrabold font-serif text-transparent bg-clip-text bg-gradient-to-l from-cyan-900 via-neutral-500 to-teal-900
+  @apply animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-white pr-5 text-white font-bold text-base md:text-2xl font-serif text-transparent bg-clip-text bg-gradient-to-l from-cyan-900 via-neutral-500 to-teal-900
 }
 
 .primary_text {
