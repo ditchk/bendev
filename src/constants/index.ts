@@ -11,18 +11,18 @@ export const sideBarLinks = [
         label:'Contact',
         route: '/contact'
     },
-    // {
-    //     label: 'About',
-    //     route: '/about'
-    // },
-    // {
-    //     label: 'Gallery',
-    //     route: 'media'
-    // },
-    // {
-    //     label:'shop',
-    //     route: '/shop'
-    // },
+    {
+        label: 'About',
+        route: '/about'
+    },
+    {
+        label: 'Gallery',
+        route: 'media'
+    },
+    {
+        label:'shop',
+        route: '/shop'
+    },
     {
         label: 'upload',
         route: '/upload/projects'

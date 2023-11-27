@@ -38,9 +38,9 @@
 
   @layer utilities {
     .custom-scrollbar::-webkit-scrollbar {
-      width: 3px;
-      height: 3px;
-      border-radius: 2px;
+      width: 1px;
+      height: 1px;
+      border-radius: 1px;
     }
   
     .custom-scrollbar::-webkit-scrollbar-track {
@@ -101,11 +101,11 @@
 /* common styles */
 
 .custom_container {
-  @apply flex flex-col flex-1 items-center bg-transparent lg:px-2 lg:mx-6 p-2
+  @apply flex flex-col flex-1 justify-center items-center custom-scrollbar overflow-scroll bg-transparent lg:px-2 lg:mx-6 px-2 py-2
 }
 
 .custom_container3 {
-  @apply flex flex-col flex-1 items-center bg-transparent px-2 md:mx-6 p-2 pb-10
+  @apply flex flex-col flex-1 items-center bg-transparent px-2 mx-2 mb-32 md:mx-6 p-2 md:pb-10
 }
 
 
@@ -121,13 +121,17 @@
   @apply flex flex-1 justify-center items-center bg-gradient-to-t from-cyan-100 to-white md:mt-10 md:p-2 w-full p-2 shadow shadow-slate-400 rounded-xl
 }
 
+.largeTexts {
+  @apply text-4xl text-white font-serif font-bold
+}
+
 /* mobile menu */
 .MobileMenu {
   @apply flex flex-1 z-20 p-1 w-full
 }
 
 .menubar {
-  @apply flex flex-col pt-3 gap-2 justify-start items-center border-t border-cyan-700 fixed  w-full h-[65%] rounded-b-xl shadow-xl shadow-slate-500 outline-cyan-400 right-0 left-0 bg-gradient-to-t from-white via-cyan-200 to-white
+  @apply flex flex-col pt-3 gap-2 justify-start items-center border-t border-cyan-700 fixed  w-full h-[70%] rounded-b-xl shadow-xl shadow-slate-500 outline-cyan-400 right-0 left-0 bg-gradient-to-t from-white via-cyan-200 to-white
  }
 
 .links {
@@ -146,15 +150,15 @@
   @apply text-white bg-slate-950 text-3xl p-2 rounded-md cursor-pointer hover:bg-gradient-to-l from-cyan-300 via-neutral-50 to-teal-100 hover:text-cyan-600 shadow-inner outline outline-2 outline-cyan-500 shadow-black duration-700
 }
 .tittl_name {
-  @apply text-2xl font-extrabold font-serif text-transparent bg-clip-text bg-gradient-to-l from-cyan-900 via-neutral-500 to-teal-900
+  @apply text-sm md:text-2xl font-extrabold font-serif text-transparent bg-clip-text bg-gradient-to-l from-cyan-900 via-neutral-500 to-teal-900
 }
 
 .primary_text {
-  @apply text-slate-600 text-lg font-serif text-start
+  @apply text-slate-600 text-sm md:text-lg font-serif text-start
 }
 
 .paragraph_text {
-  @apply text-base font-serif text-start text-slate-600
+  @apply text-sm md:text-base font-serif text-start text-slate-600
 }
 
 .titlle_text {
@@ -185,7 +189,7 @@
 }
 
 .icon_pack {
-  @apply text-4xl text-white rounded-md outline outline-2 outline-cyan-100 shadow shadow-slate-900 p-1 bg-gradient-to-br from-cyan-300 to-black
+  @apply text-xl md:text-4xl text-white rounded-md outline outline-2 outline-cyan-100 shadow shadow-slate-900 p-1 bg-gradient-to-br from-cyan-300 to-black
 }
 
 .upload_container {
@@ -245,17 +249,23 @@
 /* Project page */
 
 .project_container {
-  @apply flex flex-1 justify-center items-center bg-gradient-to-t from-cyan-200 to-white shadow h-full w-full shadow-slate-400 rounded-md duration-500
+  @apply flex flex-1 justify-center items-center bg-gradient-to-t from-cyan-200 to-cyan-50 outline outline-2 outline-cyan-300 shadow-md h-full w-full shadow-slate-600 rounded-br-2xl rounded-tl-2xl duration-700
 }
 
 .primary-projecttext {
-  @apply box-border min-h-[70px] text-[10px] md:text-sm font-semibold font-mono text-transparent bg-clip-text bg-gradient-to-l from-cyan-900 via-neutral-500 to-teal-900
+  @apply box-border min-h-[60px] text-sm md:text-[12px] font-bold font-sans text-transparent bg-clip-text bg-gradient-to-l from-cyan-900 via-neutral-700 to-teal-900
 }
 
 .project_paragraph {
-  @apply box-border min-h-[150px] text-sm md:text-base font-serif text-cyan-500 p-2 my-1 rounded-md shadow-inner shadow-cyan-800 bg-white outline outline-2 outline-cyan-200
+  @apply flex flex-col justify-between gap-2 box-border md:min-h-[150px] text-sm md:text-sm font-serif text-black p-2 my-1 rounded-tl-2xl rounded-br-2xl shadow-inner shadow-cyan-600 bg-gradient-to-br from-cyan-300 to-slate-400 outline outline-2 outline-cyan-200
 }
 
 .custom_button {
-  @apply w-fit bg-gradient-to-l from-slate-400 via-cyan-400 to-slate-400 outline-2 outline-cyan-200 shadow shadow-slate-500
+  @apply w-fit bg-gradient-to-br from-cyan-200 to-black outline outline-2 outline-cyan-300 shadow duration-1000 hover:shadow-2xl shadow-slate-500
+}
+
+/* Coming soon box */
+
+.ComingSoon_box {
+  @apply flex p-5 rounded-bl-2xl rounded-tr-2xl
 }
