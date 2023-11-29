@@ -5,7 +5,7 @@ import { NavLink, useLocation, } from 'react-router-dom';
 import { HiOutlineMenuAlt1 } from 'react-icons/hi';
 import { motion } from 'framer-motion';
 import { MdOutlineClose } from "react-icons/md";
-import Socials from './Socials';
+// import Socials from './Socials';
 
 
 
@@ -94,8 +94,8 @@ const toggleMenu = () => {
            </motion.li>
          )
        })}
-       {/* <h1 className='text-xl font-medium text-violet-950 font-serif'>Find me on social media</h1> */}
-       {/* <Socials /> */}
+       {/* <h1 className='text-xl font-medium text-violet-950 font-serif'>Find me on social media</h1>
+       <Socials /> */}
      </motion.ul>
       )}
       
