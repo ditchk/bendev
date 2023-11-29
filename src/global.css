@@ -191,7 +191,8 @@
 }
 
 .welcome_text {
-  @apply hidden font-serif lg:flex shadow rounded-md shadow-slate-300 h-fit p-2 md:text-base lg:text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-cyan-300 via-black
+  @apply hidden font-serif lg:flex shadow rounded-md shadow-slate-300 h-fit p-2 md:text-base lg:text-2xl font-extrabold 
+  text-transparent bg-clip-text bg-gradient-to-br from-cyan-300 via-black
 }
 
 .icon_pack {
