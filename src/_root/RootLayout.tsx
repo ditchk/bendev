@@ -7,7 +7,7 @@ import { Outlet } from 'react-router'
 
 const RootLayout = () => {
   return (
-    <div className="w-full h-screen md:flex flex-col">
+    <div className="w-full h-full md:flex flex-col">
       <Navbar />
       <section className="flex h-full flex-col">
         <Sidebar />
