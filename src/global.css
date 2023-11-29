@@ -136,7 +136,7 @@
 
 .menubar {
   @apply grid grid-cols-3 pt-3 gap-2 justify-start items-start border-t border-cyan-700 fixed  
-  w-full h-fit rounded-b-xl shadow p-3
+  w-full h-fit rounded-b-xl drop-shadow-lg p-3
   shadow-slate-500 outline-cyan-400 right-0 left-0 bg-gradient-to-t from-white via-cyan-200 to-white
  }
 
