@@ -122,7 +122,7 @@
 }
 
 .Home_Container {
-  @apply flex flex-1 justify-center items-center bg-gradient-to-t from-cyan-100 to-white h-fit md:p-2 w-full p-2 outline outline-1 outline-purple-300 rounded-xl
+  @apply flex flex-1 justify-center items-center bg-gradient-to-t from-cyan-100 to-white h-fit md:p-2 w-full p-2 mb-5 md:mb-1 outline outline-1 outline-purple-300 rounded-xl
 }
 
 .largeTexts {
