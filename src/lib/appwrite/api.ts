@@ -2,7 +2,6 @@ import { myConfig, storage } from "./config";
 import { ID, Query } from "appwrite";
 import { databases, account, } from "./config";
 import { myNewProject } from "@/types";
-import FeaturedProjects from "@/components/shared/FeaturedProject";
 
 
 export async function saveMessageToDB(messages: {
