@@ -12,20 +12,33 @@ import Socials from './Socials';
 const MobileMenu: React.FC = () => {
  const [menuOpen, setMenuOpen] = useState(false);
  const { pathname } = useLocation();
- const [showNavbar, setShowNavbar] = useState(true);
+ const [navbarHidden, setNavbarHidden] = useState(false);
 
- useEffect(() => {
-  if (showNavbar) {
-    const timer = setTimeout(() => {
-      setShowNavbar(false);
-    }, 3000);
-    return () => clearTimeout(timer);
-  }
-}, [showNavbar]);
+
+ const hideNavbar = () => {
+  setNavbarHidden(true);
+};
+
+useEffect(() => {
+  const handleResize = () => {
+    if (window.innerWidth <= 768) {
+      setNavbarHidden(true);
+    } else {
+      setNavbarHidden(false);
+    }
+  };
+
+  window.addEventListener('resize', handleResize);
+
+  return () => {
+    window.removeEventListener('resize', handleResize);
+  };
+}, []);
 
 const toggleMenu = () => {
     setMenuOpen(!menuOpen);
  };
+
 
  const variants = {
   open: {
@@ -45,7 +58,7 @@ const toggleMenu = () => {
 };
 
  return (
-    <nav className="MobileMenu">
+    <nav className="MobileMenu" onClick={hideNavbar}>
       <button onClick={toggleMenu}>
             {!menuOpen ? (
               <HiOutlineMenuAlt1 className="text-5xl text-slate-900 bg-gradient-to-t from-cyan-300 via-white rounded-xl p-1 shadow shadow-slate-400 outline outline-1 outline-cyan-200" />
@@ -57,7 +70,7 @@ const toggleMenu = () => {
        <motion.ul
         animate={{ y: 62 }}
         transition={{ delay: 0 }} 
-        className={`menubar ${showNavbar ? '' : 'hidden'}`}
+        className={`menubar ${navbarHidden ? 'navbar hidden' : 'hidden'}`}
        >
        {sideBarLinks.map((link: MyNavLink) => {
 
@@ -70,17 +83,19 @@ const toggleMenu = () => {
            whileHover={{ scale: 1.1 }}
            whileTap={{ scale: 0.95 }} 
            className="links"
+           onClick={hideNavbar}
            >
                <NavLink 
                to={link.route}
-               className={`flex flex-row gap-3 w-52 text-slate-600 outline outline-1 outline-cyan-200 p-2 text-base font-serif shadow-inner bg-white shadow-slate-400 rounded-md ${isActive && "outline-double outline-2 outline-cyan-300"}`}>
+               onClick={hideNavbar}
+               className={`w-24 text-slate-600 outline outline-1 outline-cyan-200 p-1 text-base font-serif shadow-inner bg-white shadow-slate-400 rounded-md ${isActive && "outline-double outline-2 outline-cyan-300"}`}>
                  {link.label}
              </NavLink>
            </motion.li>
          )
        })}
-       <h1 className='text-xl font-medium text-violet-950 font-serif'>Find me on social media</h1>
-       <Socials />
+       {/* <h1 className='text-xl font-medium text-violet-950 font-serif'>Find me on social media</h1> */}
+       {/* <Socials /> */}
      </motion.ul>
       )}
       

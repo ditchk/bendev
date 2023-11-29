@@ -131,18 +131,17 @@
 
 /* mobile menu */
 .MobileMenu {
-  @apply flex flex-1 z-20 p-1 w-full top-0
+  @apply flex flex-1 z-20 p-1 w-fit
 }
 
 .menubar {
-  @apply flex flex-col pt-3 gap-2 justify-start items-center border-t border-cyan-700 fixed  
-  w-full h-[70%] rounded-b-xl shadow-xl 
+  @apply grid grid-cols-3 pt-3 gap-2 justify-start items-start border-t border-cyan-700 fixed  
+  w-full h-fit rounded-b-xl shadow p-3
   shadow-slate-500 outline-cyan-400 right-0 left-0 bg-gradient-to-t from-white via-cyan-200 to-white
-  duration-100
  }
 
 .links {
-  @apply flex justify-center items-center w-full
+  @apply flex justify-center items-start w-fit h-fit
 }
 
 /* Navbar/sidebar */
