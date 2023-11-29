@@ -54,3 +54,8 @@ export type myNewProject = {
 export type Player = {
   name: string;
 }
+export type MyAboutLinks = {
+  Icon: string;
+  skill: string;
+  info: string;
+}

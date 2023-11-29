@@ -99,4 +99,27 @@ export const myProjects = [
         title: 'Project 1',
         description: 'This is a description of project 1'
     },
+];
+
+export const AboutLinks = [
+    {
+        Icon: '/assets/',
+        skill: 'React/Nextjs/Angular',
+        info: 'Always upgrading my skills in react to create stunning fronted designs for your business'
+    },
+    {
+        Icon: '/assets/',
+        skill: 'Graphic design',
+        info: 'Lets create more attractive graphics for your product. visit https://benpwspace.com/shop/'
+    },
+    {
+        Icon: '/assets/',
+        skill: 'UX design',
+        info: 'I will deliver the best 2D/3D mockup designs either for you product/website or Your app using the most latest technology'
+    },
+    {
+        Icon: '/assets/',
+        skill: 'Mobile app development',
+        info: 'Using latest tools like Flutter dev i will deliver to you a beatiful user friendly mobile app for your user to connect with your business easily'
+    }
 ]

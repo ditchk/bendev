@@ -37,3 +37,10 @@ export const useGetRecentProjects = () => {
         queryFn: getRecentProjects
     })
 }
+
+export const useGetFeaturedProjects = () => {
+    return useQuery ({
+        queryKey: [QUERY_KEYS.GET_FEATURED_PROJECTS],
+        queryFn: getRecentProjects
+    })
+}

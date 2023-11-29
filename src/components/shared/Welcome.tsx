@@ -6,7 +6,7 @@ import { myWelcomeMessage } from "@/types"
 const Welcome = () => {
   return (
     <div className="Home_Container">
-      <ul className="flex flex-1 h-full w-full">
+      <ul className="flex flex-1 h-fit w-full">
           {welcomeMessage.map((link: myWelcomeMessage) => {
             return (
               <div className="flex flex-col md:flex-row w-fit gap-5 md:gap-0">
@@ -27,9 +27,9 @@ const Welcome = () => {
                     <img 
                       src="/assets/images/homepage.jpg" 
                       alt="homepage-image" 
-                      width={400}
+                      // width={400}
                       loading="lazy"
-                      className="hidden md:flex object-contain h-full rounded-e-full justify-end rounded-t-full border-b-2 border-cyan-400"
+                      className="hidden md:flex object-contain h-full md:w-[300px] lg:w-[400px] rounded-e-full justify-end rounded-t-full border-b-2 border-cyan-400"
                     />   
               </div>
             )

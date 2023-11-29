@@ -13,7 +13,6 @@ const ProjectContainer = ({ project }: projectCardProps) => {
           <img src={project.imageUrl} alt={project.imageUrl} className="h-10 w-10 object-contain rounded-lg hover:shadow shadow-violet-950 outline-double outline-2 outline-cyan-700" />
           <h1 className="primary-projecttext">{project.ProjectName}</h1>
         </div>
- 
         <p className="project_paragraph">{project.projectInfo}
           <Button className="custom_button">
             learn more

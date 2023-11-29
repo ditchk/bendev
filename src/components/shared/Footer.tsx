@@ -48,7 +48,7 @@ const Footer = () => {
                 <FormItem>
                   <FormLabel className="titlle_text">Subscribe</FormLabel>
                   <FormControl>
-                    <Input placeholder="Enter your email" {...field} className="form_inp" />
+                    <Input placeholder="Enter your email" {...field} className="form_inp2" />
                   </FormControl>
                   <FormMessage />
                 </FormItem>

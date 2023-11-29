@@ -2,6 +2,7 @@ import { myConfig, storage } from "./config";
 import { ID, Query } from "appwrite";
 import { databases, account, } from "./config";
 import { myNewProject } from "@/types";
+import FeaturedProjects from "@/components/shared/FeaturedProject";
 
 
 export async function saveMessageToDB(messages: {
@@ -129,4 +130,14 @@ export async function createProject(project: myNewProject) {
     return projects
   }
 
+  export async function getFeaturedProjects() {
+    const FeaturedProjects = await databases.listDocuments(
+      myConfig.databaseId,
+      myConfig.projectCollectionId,
+      [Query.orderDesc('$createdAt'), Query.limit(3)]
+    )
+    if(!FeaturedProjects) throw Error;
+
+    return FeaturedProjects
+  }
   
