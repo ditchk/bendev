@@ -1,5 +1,5 @@
 // import VideoPlayer from "@/components/shared/VideoPlayer"
-import Experience from "@/components/shared/Experience"
+// import Experience from "@/components/shared/Experience"
 import FeaturedProject from "@/components/shared/FeaturedProject"
 import Welcome from "@/components/shared/Welcome"
 import { useGetFeaturedProjects } from "@/lib/Queries/QueriesAndMutations"
@@ -53,7 +53,7 @@ const Home = () => {
               </motion.li>
           ))}
         </motion.ul>
-        <Experience />
+        {/* <Experience /> */}
       </div> 
     </div>
   )

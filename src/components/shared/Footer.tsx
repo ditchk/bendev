@@ -10,7 +10,6 @@ import {
   FormField,
   FormItem,
   FormLabel,
-  FormMessage,
 } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
 import { myFooterLinks, myMoreFooterLinks } from "@/types"
@@ -18,7 +17,7 @@ import { footerLinks, moreFooterLinks } from "@/constants"
 import { Link } from "react-router-dom"
 
 const formSchema = z.object({
-  email: z.string().min(2).max(50),
+  email: z.string().min(2, {message: ''}).max(50),
 })
 
 const Footer = () => {
@@ -32,8 +31,6 @@ const Footer = () => {
   })
 
   function onSubmit(values: z.infer<typeof formSchema>) {
-    // Do something with the form values.
-    // ✅ This will be type-safe and validated.
     console.log(values)
   }
   return (
@@ -50,7 +47,7 @@ const Footer = () => {
                   <FormControl>
                     <Input placeholder="Enter your email" {...field} className="form_inp2" />
                   </FormControl>
-                  <FormMessage />
+                  {/* <FormMessage /> */}
                 </FormItem>
               )}
             />
