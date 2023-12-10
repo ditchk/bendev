@@ -39,7 +39,7 @@ const Home = () => {
         {/* <VideoPlayer src="https://cloud.appwrite.io/v1/storage/buckets/655777900bd1083e6876/files/6561e25fea7de27f352d/view?project=655773f801147821ba93&mode=admin" /> */}
         <Welcome />
         <motion.ul 
-          className="md:grid grid-cols-1 gap-4 md:grid-cols-2 hidden mt-10 p-5 rounded-md shadow shadow-slate-300"
+          className="md:grid grid-cols-1 gap-4 md:grid-cols-2 hidden my-8 p-5 rounded-md shadow shadow-slate-300"
           variants={container}
           initial="hidden"
           animate="visible"
