@@ -2,7 +2,6 @@
 import Experience from "@/components/shared/Experience"
 import FeaturedProject from "@/components/shared/FeaturedProject"
 import Welcome from "@/components/shared/Welcome"
-import { Button } from "@/components/ui/button"
 import { useGetFeaturedProjects } from "@/lib/Queries/QueriesAndMutations"
 import { Models } from "appwrite"
 import { motion } from 'framer-motion'
