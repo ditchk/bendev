@@ -280,7 +280,7 @@
 /* Featured */
 
 .Featuredcontainer {
-  @apply flex flex-row justify-start relative items-center gap-5 rounded-bl-3xl rounded-tr-3xl shadow-inner shadow-slate-400 w-full h-24 p-2 md:p-5 
+  @apply flex flex-row justify-start relative items-center gap-5 rounded-bl-3xl rounded-tr-3xl outline outline-1 outline-violet-600 w-full h-24 p-2 md:p-5 
   bg-gradient-to-br from-cyan-300 to-slate-400 cursor-pointer
 }
 
