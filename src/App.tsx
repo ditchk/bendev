@@ -9,6 +9,7 @@ import Shop from './_root/pages/Shop'
 import About from './_root/pages/About'
 import Gallery from './_root/pages/Gallery'
 import AddProject from './_root/pages/AddProject'
+import CarricullumV from './components/shared/CarricullumV'
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/media" element={<Gallery />} />
           <Route path="/shop" element={<Shop />} />
           <Route path="/upload/projects" element={<AddProject/>} />
+          <Route path="/mycv" element={<CarricullumV/>} />
         </Route>
       </Routes>
     </main>

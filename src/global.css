@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;900&family=Manrope:wght@200;400;500;600;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -146,6 +148,11 @@
 
 /* Navbar/sidebar */
 
+
+.Linkme {
+  @apply bg-gradient-to-tl from-sky-900 text-xs via-black to-cyan-600 text-white text-center rounded-md h-12 p-4
+}
+
 .outline_btn {
   @apply bg-transparent shadow shadow-slate-400 border border-cyan-300 font-serif font-medium text-slate-600 hover:bg-cyan-100 hover:text-black h-12 duration-1000
 }
@@ -290,4 +297,22 @@
 
 .main_ft {
   @apply flex flex-1 p-2 rounded-md
+}
+
+/* CV */
+
+.text_prim {
+  @apply shadow-sm shadow-slate-400 outline outline-1 outline-white p-5 my-3 rounded-bl-3xl rounded-tr-3xl text-center text-xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-l from-sky-900 via-cyan-300 to-violet-900
+}
+
+.text_sec {
+  @apply text-center text-xl font-serif font-semibold text-white
+}
+
+.text_title {
+  @apply text-lg md:text-2xl mb-5 font-bold font-sans border-b-2 border-black text-transparent bg-clip-text bg-gradient-to-l from-blue-700 via-black to-cyan-800
+}
+
+.text-li {
+  @apply text-start font-bold text-lg
 }

@@ -44,7 +44,7 @@ const Contact = () => {
   return (
     <div className="default_Container">
       <div className="flex flex-col justify-center items-start md:flex-row md:mx-10 lg:mx-52 w-full md:gap-10 md:shadow shadow-slate-400 p-5 md:my-5 md:rounded-xl bg-gradient-to-t from-cyan-100 via-white to-white">
-        <div className="flex flex-col w-full">
+        <div className="flex flex-col w-full mb-10">
               <h3 className="primary_text">LETS TALK!</h3>
               <Form {...form}>
                 <form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-col gap-1 space-y-8 p-2">
