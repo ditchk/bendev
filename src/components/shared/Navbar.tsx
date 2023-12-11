@@ -17,7 +17,7 @@ const Navbar = () => {
       <div className="hidden md:flex flex-row">
         <h1 className="text-center text-black text-xl p-3 font-serif">lets talk!</h1>
         <Socials />
-        <Link to={'/mycv'} className="Linkme">
+        <Link to={'/mycv'} className="Linkme md:hidden">
           LEARN MORE
         </Link>  
       </div>
