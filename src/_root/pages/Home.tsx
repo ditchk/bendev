@@ -20,7 +20,7 @@ const Home = () => {
       scale: 1,
       transition: {
         delayChildren: 1,
-        staggerChildren: 0.2
+        staggerChildren: 0.5
       }
     }
   };
@@ -38,21 +38,24 @@ const Home = () => {
       <div className="custom_Homecontainer h-full">
         {/* <VideoPlayer src="https://cloud.appwrite.io/v1/storage/buckets/655777900bd1083e6876/files/6561e25fea7de27f352d/view?project=655773f801147821ba93&mode=admin" /> */}
         <Welcome />
-        <motion.ul 
-          className="md:grid grid-cols-1 gap-4 md:grid-cols-2 hidden my-8 p-5 rounded-md shadow shadow-slate-300"
-          variants={container}
-          initial="hidden"
-          animate="visible"
-        >
-          {FeaturedProjects?.documents.map((project: Models.Document) => (
-              <motion.li
-               key={project.projectInfo}
-               variants={item}
-              >
-                <FeaturedProject featured={project} key={project.ProjectName} />
-              </motion.li>
-          ))}
-        </motion.ul>
+        <div className="flex flex-1 min-h-[500px] min-w-[100px]">
+          <motion.ul 
+            className="md:grid grid-cols-1 gap-4 md:grid-cols-2 hidden my-8 p-5"
+            variants={container}
+            initial="hidden"
+            whileInView="animate"
+            animate="visible"
+          >
+            {FeaturedProjects?.documents.map((project: Models.Document) => (
+                <motion.li
+                key={project.projectInfo}
+                variants={item}
+                >
+                  <FeaturedProject featured={project} key={project.ProjectName} />
+                </motion.li>
+            ))}
+          </motion.ul>
+        </div>
         {/* <Experience /> */}
       </div> 
     </div>

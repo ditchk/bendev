@@ -16,7 +16,7 @@ const FeaturedProject = ({featured}: FreaturedProjectProps) => {
         >
           <img src={featured.imageUrl} alt="" width={50} className="h-fit rounded-full object-cover shadow shadow-slate-400" />
           <h1 className="featuredText">{featured.ProjectName}</h1>
-          <Button>read more</Button>
+          <Button className="custom_button">read more</Button>
         </Link>
     </div>
   )
