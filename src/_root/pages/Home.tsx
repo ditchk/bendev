@@ -38,7 +38,7 @@ const Home = () => {
       <div className="custom_Homecontainer h-full">
         {/* <VideoPlayer src="https://cloud.appwrite.io/v1/storage/buckets/655777900bd1083e6876/files/6561e25fea7de27f352d/view?project=655773f801147821ba93&mode=admin" /> */}
         <Welcome />
-        <div className="flex flex-1 min-h-[500px] min-w-[100px]">
+        <div className="md:flex flex-1 min-h-[500px] min-w-[100px] hidden">
           <motion.ul 
             className="md:grid grid-cols-1 gap-4 md:grid-cols-2 hidden my-8 p-5"
             variants={container}
