@@ -1,11 +1,22 @@
 import { Link } from 'react-router-dom';
 import Socials from './Socials';
 import MobileMenu from './MobileMenu';
+
+
 const Navbar = () => {
 
+  // changeNavbarColor.ts
+
+  window.onscroll = function (): void {
+    if (document.documentElement.scrollTop > 50) {
+      (document.getElementById("navbar") as HTMLElement).classList.add("scrolled");
+    } else {
+      (document.getElementById("navbar") as HTMLElement).classList.remove("scrolled");
+    }
+  };
 
   return (
-    <nav className="z-50 flex flex-row justify-between gap-10 w-full h-max md:bg-transparent md:backdrop-blur top-0 sticky shadow-md shadow-slate-400 py-2 px-4 bg-white md:bg-opacity-5">
+    <nav id='navbar' className="z-50 flex flex-row justify-between gap-10 w-full shadow-sm shadow-slate-400 h-max md:bg-transparent md:backdrop-blur top-0 sticky py-2 px-4 bg-white md:bg-opacity-5">
       <Link 
       to={'/'}
       className="flex flex-row justify-center items-center gap-2" 

@@ -153,6 +153,13 @@
   @apply bg-gradient-to-tl from-sky-900 text-xs via-black to-cyan-600 text-white text-center rounded-md h-12 p-4
 }
 
+
+nav.scrolled {
+  background-color: white;
+  box-shadow: 3px 1.5px 3px slategrey;
+  transition-duration: 2s;
+}
+
 .Linkme2 {
   @apply flex md:hidden bg-gradient-to-tl w-fit from-sky-900 text-xs via-black to-cyan-600 text-white text-center rounded-md h-12 p-4 mb-24
 }
