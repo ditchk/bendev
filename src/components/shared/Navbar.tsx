@@ -16,11 +16,10 @@ const Navbar = () => {
   };
 
   return (
-    <nav id='navbar' className="z-50 flex flex-row justify-between gap-10 w-full shadow-sm shadow-slate-400 h-max md:bg-transparent md:backdrop-blur top-0 sticky py-2 px-4 bg-white md:bg-opacity-5">
+    <nav id='navbar' className="z-50 flex flex-row justify-between gap-10 w-full shadow-md shadow-slate-400 animate-in slide-in-from-bottom-10 h-max md:bg-transparent md:backdrop-blur top-0 sticky py-2 px-4 bg-white md:bg-opacity-5 duration-1000">
       <Link 
       to={'/'}
       className="flex flex-row justify-center items-center gap-2" 
-      
       >
         <img src="/assets/images/benpwspace.png" alt="" width={50}/>
         <h1 className="text-center text-xl font-extrabold font-serif text-transparent bg-clip-text bg-gradient-to-br from-black via-cyan-800 to-violet-700">BENSWORKSPACE</h1>

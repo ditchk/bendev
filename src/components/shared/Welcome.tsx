@@ -25,7 +25,7 @@ const Welcome = () => {
                           alt="homepage-image" 
                           width={400}
                           loading="lazy"
-                          className="md:hidden object-contain bg-transparent h-fit mb-4 rounded-e-full justify-end rounded-t-full border-b-2 border-slate-700"
+                          className="md:hidden object-contain bg-transparent h-fit mb-4 rounded-e-full justify-end rounded-t-full border-b-2 animate-in slide-in-from-right-24 duration-1000 border-slate-700"
                         />  
                       )}
                     </div> 
