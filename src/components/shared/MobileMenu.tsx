@@ -88,7 +88,7 @@ const toggleMenu = () => {
                <NavLink 
                to={link.route}
                onClick={hideNavbar}
-               className={`w-24 text-slate-600 outline outline-1 outline-cyan-200 p-1 text-base font-serif shadow-inner bg-white shadow-slate-400 rounded-md ${isActive && "outline-double outline-2 outline-cyan-300"}`}>
+               className={`w-24 text-white outline outline-1 outline-cyan-200 p-1 text-base text-center font-serif shadow-inner bg-gradient-to-l from-sky-800 via-slate-700 to-violet-950 shadow-slate-400 rounded-md ${isActive && "outline-double outline-2 outline-cyan-300"}`}>
                  {link.label}
              </NavLink>
            </motion.li>
