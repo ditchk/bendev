@@ -156,7 +156,7 @@
 
 nav.scrolled {
   background-color: white;
-  transition-duration: 2s;
+  transition-duration: 3s;
   @apply shadow-md shadow-slate-400
 }
 
