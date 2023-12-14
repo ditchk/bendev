@@ -58,7 +58,7 @@ const toggleMenu = () => {
 };
 
  return (
-    <nav className="MobileMenu" onClick={hideNavbar}>
+    <nav className="MobileMenu" onClick={hideNavbar} onScroll={hideNavbar}>
       <button onClick={toggleMenu}>
             {!menuOpen ? (
               <HiOutlineMenuAlt1 className="text-5xl text-slate-900 bg-gradient-to-t from-cyan-300 via-white rounded-xl p-1 shadow shadow-slate-400 outline outline-1 outline-cyan-200" />
@@ -88,7 +88,7 @@ const toggleMenu = () => {
                <NavLink 
                to={link.route}
                onClick={hideNavbar}
-               className={`w-24 text-white outline outline-1 outline-cyan-200 p-1 text-base text-center font-serif shadow-inner bg-gradient-to-l from-sky-800 via-slate-700 to-violet-950 shadow-slate-400 rounded-md ${isActive && "outline-double outline-2 outline-cyan-300"}`}>
+               className={`w-24 text-white outline outline-1 outline-cyan-200 p-1 text-base text-center font-serif shadow-inner bg-gradient-to-l from-cyan-950 via-black to-sky-950 shadow-slate-400 rounded-md ${isActive && "outline-double outline-2 outline-cyan-300"}`}>
                  {link.label}
              </NavLink>
            </motion.li>

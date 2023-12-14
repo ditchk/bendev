@@ -15,6 +15,7 @@ import { Input } from "@/components/ui/input"
 import { myFooterLinks, myMoreFooterLinks } from "@/types"
 import { footerLinks, moreFooterLinks } from "@/constants"
 import { Link } from "react-router-dom"
+import Socials from "./Socials"
 
 const formSchema = z.object({
   email: z.string().min(2, {message: ''}).max(50),
@@ -34,8 +35,8 @@ const Footer = () => {
     console.log(values)
   }
   return (
-    <footer className="flex flex-col w-full shadow shadow-slate-100 md:shadow-slate-600 bg-gradient-to-l from-cyan-200 via-neutral-50 to-teal-50 z-0">
-      <div className="flex flex-col md:flex-row justify-between m-3 md:m-10 p-2 md:p-10 items-center rounded-lg outline outline-1 outline-cyan-300">
+    <footer className="flex flex-col w-full shadow shadow-slate-100 md:shadow-slate-600 border-t border-slate-200 bg-gradient-to-bl from-cyan-950 via-black to-cyan-950 z-0">
+      <div className="flex flex-col justify-start items-start md:flex-row md:justify-between m-3 md:m-10 p-2 md:p-10 md:items-center rounded-lg outline outline-1 outline-cyan-300">
           <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-row justify-center items-center gap-2 md:gap-3 space-y-8 w-fit p-5">
             <FormField
@@ -54,7 +55,7 @@ const Footer = () => {
             <Button type="submit" className="subs_btn">Subscribe now!</Button>
           </form>
         </Form>
-        <div className="flex flex-col justify-start gap-2">
+        <div className="flex flex-col justify-start gap-2 p-5">
           <h1 className="titlle_text">Quick links</h1>
             <div className="flex flex-row justify-between gap-10" >
                 <ul className="flex flex-col justify-start list-disc list-inside">
@@ -77,10 +78,10 @@ const Footer = () => {
                     )
                   })}
                 </ul>
-            </div>
+            </div><Socials/>
         </div>
       </div>
-      <div className="flex flex-1 justify-center items-center border-t border-slate-300">
+      <div className="flex flex-col justify-center items-center border-t border-slate-300">
         <h1 className="flex flex-row gap-3 justify-center items-center font-serif text-violet-700 text-sm font-semibold"><img src="/assets/images/benswsp.png" alt="footer-logo" width={150} /> &#169; 2023</h1>
       </div>
     </footer>

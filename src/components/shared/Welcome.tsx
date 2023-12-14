@@ -14,7 +14,7 @@ const Welcome = () => {
       <ul className="flex flex-1 h-fit w-full">
           {welcomeMessage.map((link: myWelcomeMessage) => {
             return (
-              <div className="flex flex-col md:flex-row w-fit gap-5 md:gap-0">
+              <div className="flex flex-col md:flex-row w-fit gap-5 md:gap-0 md:p-5 animate-in slide-in-from-up-40 duration-500">
                   <li key={link.title} >
                     <h1 className="tittl_name">{link.title}</h1>
                     <h2 className="primary_text">{link.subTitle}</h2>

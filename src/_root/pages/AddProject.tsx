@@ -4,12 +4,12 @@ const AddProject = () => {
   return (
     <div className="default_Container">
       <div className="custom_container">
-        <div className="project_Upload">
+        <div className="project_Upload bg-white p-2 rounded-full">
           <img src="/assets/images/add-post.png"
           width={36}
           height={40} 
           alt="" />
-          <h2 className="text2">Create a project</h2>
+          <h1 className="text2">SHARE YOUR IDEA WITH OTHERS</h1>
         </div>
         <ProjectForm />
       </div>

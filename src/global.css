@@ -95,7 +95,7 @@
     @apply border-border;
   }
   body {
-    @apply bg-gradient-to-t from-cyan-100 to-white text-foreground;
+    @apply bg-gradient-to-t from-cyan-950 via-black to-cyan-950 text-foreground;
   }
 }
 
@@ -124,7 +124,7 @@
 }
 
 .Home_Container {
-  @apply flex flex-1 justify-center items-center bg-gradient-to-t from-cyan-100 to-white h-fit md:p-2 w-full p-2 mb-5 md:mb-1 rounded-xl shadow shadow-slate-400 animate-in slide-in-from-bottom-10 duration-1000
+  @apply flex flex-1 justify-center items-center h-fit md:p-2 w-full p-2 mb-5 md:mb-1 rounded-xl outline outline-1 outline-slate-400 animate-in slide-in-from-bottom-10 duration-1000
 }
 
 .largeTexts {
@@ -139,7 +139,7 @@
 .menubar {
   @apply grid grid-cols-3 pt-3 gap-2 justify-start items-start border-t border-cyan-700 fixed  
   w-full h-fit rounded-b-xl drop-shadow-lg p-3
-  shadow-slate-500 outline-cyan-400 right-0 left-0 bg-gradient-to-t from-white via-cyan-200 to-white
+  shadow-slate-500 outline outline-1 outline-cyan-400 right-0 left-0 bg-cyan-950
  }
 
 .links {
@@ -150,46 +150,50 @@
 
 
 .Linkme {
-  @apply bg-gradient-to-tl from-sky-900 text-xs via-black to-cyan-600 text-white text-center rounded-md h-12 p-4
+  @apply bg-gradient-to-tl from-sky-900 text-xs via-black to-cyan-600 text-white outline outline-1 outline-white text-center rounded-md h-12 p-4
 }
 
 
 nav.scrolled {
   background-color: white;
-  transition-duration: 3s;
-  @apply shadow-md shadow-slate-400
+  transition-duration: 1s;
 }
 
 .Linkme2 {
   @apply flex md:hidden bg-gradient-to-tl w-fit from-sky-900 text-xs via-black to-cyan-600 text-white text-center rounded-md h-12 p-4 mb-24
 }
 
+.Linkme3 {
+  @apply flex bg-gradient-to-tl w-fit from-sky-900 text-xs via-black to-cyan-600 text-white text-center rounded-md h-12 p-4 mb-24
+}
+
+
 .outline_btn {
   @apply bg-transparent shadow shadow-slate-400 border border-cyan-300 font-serif font-medium text-slate-600 hover:bg-cyan-100 hover:text-black h-12 duration-1000
 }
 .link_side {
-  @apply justify-center items-center bg-white
+  @apply justify-center items-center bg-white rounded-md outline outline-1 outline-white
 }
 .social_icons {
   @apply text-white bg-slate-950 text-3xl p-2 rounded-md cursor-pointer hover:bg-gradient-to-l from-cyan-300 via-neutral-50 to-teal-100 hover:text-cyan-600 shadow-inner outline outline-2 outline-cyan-500 shadow-black duration-700
 }
 .tittl_name {
-  @apply animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-white pr-5 text-white font-bold text-base md:text-2xl font-serif text-transparent bg-clip-text bg-gradient-to-l from-cyan-900 via-neutral-500 to-teal-900
+  @apply animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-transparent pr-5 font-bold text-base md:text-3xl font-serif text-transparent bg-clip-text bg-gradient-to-l from-white via-violet-600 to-white
 }
 
 .primary_text {
-  @apply text-slate-600 text-sm md:text-lg font-serif text-start
+  @apply text-white text-sm md:text-lg font-serif text-start
 }
 
 .paragraph_text {
-  @apply text-sm md:text-base font-serif text-start text-slate-600 mb-5
+  @apply text-sm md:text-base font-serif text-start text-white mb-5
 }
 
 .titlle_text {
-  @apply text-start text-xl font-serif text-slate-600
+  @apply text-start text-xl font-serif text-white
 }
 .form_inp {
-  @apply focus-visible:outline-none shadow-inner shadow-slate-400 p-[25px] outline outline-2 outline-cyan-100 !important
+  @apply focus-visible:outline-none shadow-inner shadow-slate-400 bg-white p-[25px] outline outline-2 outline-cyan-100 !important
 }
 
 .subs_btn {
@@ -201,7 +205,7 @@ nav.scrolled {
 }
 
 .links_footer {
-  @apply text-sm text-start w-full text-slate-600 font-serif hover:text-cyan-600 hover:translate-x-5 duration-300
+  @apply text-sm text-start w-full text-white font-serif hover:text-cyan-600 hover:translate-x-5 duration-300
 }
 
 .default_Contactcontainer {
@@ -210,7 +214,7 @@ nav.scrolled {
 
 .welcome_text {
   @apply hidden font-serif lg:flex shadow rounded-md shadow-slate-300 h-fit p-2 md:text-base lg:text-2xl font-extrabold 
-  text-transparent bg-clip-text bg-gradient-to-br from-cyan-300 via-black
+  text-transparent bg-clip-text bg-gradient-to-br from-cyan-200 via-white
 }
 
 .icon_pack {
@@ -228,11 +232,11 @@ nav.scrolled {
 }
 
 .text2 {
-  @apply text-black font-serif text-lg font-semibold
+  @apply text-black font-serif text-sm md:text-lg font-semibold
 }
 
 .project_Uploader {
-  @apply flex flex-1 justify-center items-center bg-gradient-to-t from-cyan-100 to-white md:mt-10 p-5 md:p-2 w-full mb-32 md:mb-10 mt-2 md:w-[50%] shadow shadow-slate-400 rounded-xl
+  @apply flex flex-1 justify-center items-center outline outline-1 outline-white bg-transparent md:mt-10 p-5 md:p-2 w-full mb-32 md:mb-10 mt-2 md:w-[50%] rounded-xl
 }
 
 .image_accordion-container {
@@ -248,7 +252,7 @@ nav.scrolled {
 }
 
 .Formlablel {
-  @apply text-base text-center font-serif
+  @apply text-base text-center font-serif text-white
 }
 
 .file-container {
@@ -321,9 +325,15 @@ nav.scrolled {
 }
 
 .text_title {
-  @apply text-lg md:text-2xl mb-5 font-bold font-sans border-b-2 border-black text-transparent bg-clip-text bg-gradient-to-l from-blue-700 via-black to-cyan-800
+  @apply text-lg md:text-2xl mb-5 font-bold font-sans border-b-2 border-white text-transparent bg-clip-text bg-gradient-to-l from-blue-700 via-white to-cyan-800
 }
 
 .text-li {
   @apply text-start font-bold text-lg
+}
+
+/* Experience section styles */
+
+.experience-container {
+  @apply flex flex-col md:flex-row justify-center items-center
 }

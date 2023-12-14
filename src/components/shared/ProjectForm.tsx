@@ -86,7 +86,7 @@ return (
           />
           <div className="flex flex-row justify-end gap-3">
               {/* <Button type="submit" className="bg-[#a1e2eb] text-white w-fit">Cancel</Button> */}
-              <Button type="submit" className="bg-black text-white w-fit">
+              <Button type="submit" className="bg-black text-white w-fit outline outline-1 outline-white">
                 {isLoadingCreate ? (
                   <UploadLoader />
                 ) : (
