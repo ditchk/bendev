@@ -139,7 +139,7 @@
 .menubar {
   @apply grid grid-cols-3 pt-3 gap-2 justify-start items-start border-t border-cyan-700 fixed  
   w-full h-fit rounded-b-xl drop-shadow-lg p-3
-  shadow-slate-500 outline outline-1 outline-cyan-400 right-0 left-0 bg-cyan-950 bg-opacity-10 backdrop-blur-md
+  shadow-slate-500 outline outline-1 outline-cyan-400 right-0 left-0 bg-cyan-950 bg-opacity-50 backdrop-blur-md
  }
 
 .links {
