@@ -32,7 +32,7 @@
       ]
     }
   },
-  "include": ["src"],
+  "include": ["src", "sitemap.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
 
