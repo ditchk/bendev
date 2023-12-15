@@ -124,7 +124,7 @@
 }
 
 .Home_Container {
-  @apply flex flex-1 justify-center items-center h-fit md:p-2 w-full p-1 mb-5 md:mb-1 rounded-xl outline outline-1 outline-slate-400 animate-in slide-in-from-bottom-10 duration-1000
+  @apply flex flex-1 justify-center items-center h-fit md:p-2 w-full p-2 mb-5 md:mb-1 rounded-xl outline outline-1 outline-slate-400 animate-in slide-in-from-bottom-10 duration-1000
 }
 
 .largeTexts {
