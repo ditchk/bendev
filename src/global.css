@@ -107,7 +107,7 @@
 }
 
 .custom_Homecontainer {
-  @apply gap-5 h-full items-center mx-2 pt-2 px-2 
+  @apply gap-5 h-full items-center mx-2 pt-2 
 }
 
 .custom_container3 {
@@ -124,7 +124,7 @@
 }
 
 .Home_Container {
-  @apply flex flex-1 justify-center items-center h-fit md:p-2 w-full p-2 mb-5 md:mb-1 rounded-xl outline outline-1 outline-slate-400 animate-in slide-in-from-bottom-10 duration-1000
+  @apply flex flex-1 justify-center items-center h-fit md:p-2 w-full p-1 mb-5 md:mb-1 rounded-xl outline outline-1 outline-slate-400 animate-in slide-in-from-bottom-10 duration-1000
 }
 
 .largeTexts {
@@ -160,11 +160,11 @@ nav.scrolled {
 }
 
 .Linkme2 {
-  @apply flex md:hidden bg-gradient-to-tl w-fit from-sky-900 text-xs via-black to-cyan-600 text-white text-center rounded-md h-12 p-4 mb-24
+  @apply flex md:hidden bg-gradient-to-tl w-fit from-sky-900 text-xs via-black outline outline-1 outline-white to-cyan-600 text-white text-center rounded-md h-12 p-4 mb-24
 }
 
 .Linkme3 {
-  @apply flex bg-gradient-to-tl w-fit from-sky-900 text-xs via-black to-cyan-600 text-white text-center rounded-md h-12 p-4 mb-24
+  @apply flex bg-gradient-to-tl w-fit from-sky-900 text-xs via-black outline outline-1 outline-white to-cyan-600 text-white text-center rounded-md h-12 p-4 mb-24
 }
 
 
@@ -182,11 +182,11 @@ nav.scrolled {
 }
 
 .primary_text {
-  @apply text-white text-sm md:text-lg font-serif text-start
+  @apply text-white text-sm md:text-lg font-sans font-light text-start
 }
 
 .paragraph_text {
-  @apply text-sm md:text-base font-serif text-start text-white mb-5
+  @apply text-sm md:text-base font-sans text-start text-white mb-5 font-light
 }
 
 .titlle_text {
@@ -218,7 +218,7 @@ nav.scrolled {
 }
 
 .icon_pack {
-  @apply text-3xl md:text-4xl text-white rounded-md outline outline-2 outline-cyan-100 shadow shadow-slate-900 p-1 bg-gradient-to-br from-cyan-300 to-black
+  @apply text-3xl md:text-4xl text-white rounded-md outline outline-2 outline-cyan-100 shadow shadow-slate-900 p-1 bg-gradient-to-t from-cyan-300 via-cyan-950 to-white
 }
 
 .upload_container {

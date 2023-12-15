@@ -1,0 +1,4 @@
+Sitemap: https://bensworkspace.app/sitemap.xml
+
+User-agent: *
+Disallow: /api

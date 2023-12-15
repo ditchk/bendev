@@ -21,11 +21,11 @@ const Welcome = () => {
                     <div>
                       {isloading && (
                         <img 
-                          src="/assets/images/homepage.jpg" 
+                          src="/assets/images/homepage.png" 
                           alt="homepage-image" 
                           width={400}
                           loading="lazy"
-                          className="md:hidden object-contain bg-transparent h-fit mb-4 rounded-e-full justify-end rounded-t-full border-b-2 animate-in slide-in-from-right-24 duration-1000 border-slate-700"
+                          className="md:hidden object-contain bg-transparent h-fit mb-4 rounded-e-full justify-end rounded-t-full border-b-2 overflow-hidden animate-in slide-in-from-right-24 duration-1000 border-cyan-200"
                         />  
                       )}
                     </div> 
@@ -37,11 +37,11 @@ const Welcome = () => {
                       <Skills />
                   </li>
                     <img 
-                      src="/assets/images/homepage.jpg" 
+                      src="/assets/images/homepage.png" 
                       alt="homepage-image" 
                       // width={400}
                       loading="lazy"
-                      className="hidden md:flex object-contain h-full md:w-[300px] lg:w-[400px] rounded-e-full justify-end rounded-t-full border-b-2 border-cyan-400"
+                      className="hidden md:flex object-contain h-full md:w-[300px] lg:w-[400px] rounded-e-full justify-end rounded-t-full border-b-2 border-l-2 border-cyan-400"
                     />   
               </div>
             )
