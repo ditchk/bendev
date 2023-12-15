@@ -95,7 +95,7 @@
     @apply border-border;
   }
   body {
-    @apply bg-gradient-to-t from-cyan-950 via-black to-cyan-950 text-foreground;
+    @apply bg-cyan-950 bg-opacity-20 text-black
   }
 }
 
@@ -124,11 +124,11 @@
 }
 
 .Home_Container {
-  @apply flex flex-1 justify-center items-center h-fit md:p-2 w-full p-2 mb-5 md:mb-1 rounded-xl outline outline-1 outline-slate-400 animate-in slide-in-from-bottom-10 duration-1000
+  @apply flex flex-1 justify-center items-center h-fit md:p-2 w-full p-2 mb-5 md:mb-1 bg-cyan-950 bg-opacity-10 rounded-xl outline outline-1 outline-slate-200 animate-in slide-in-from-bottom-10 duration-1000
 }
 
 .largeTexts {
-  @apply text-4xl text-white font-serif font-bold
+  @apply text-4xl text-black font-serif font-bold
 }
 
 /* mobile menu */
@@ -155,8 +155,8 @@
 
 
 nav.scrolled {
-  background-color: white;
   transition-duration: 1s;
+  box-shadow: 5px 2px 5px rgb(190, 190, 190);
 }
 
 .Linkme2 {
@@ -169,7 +169,7 @@ nav.scrolled {
 
 
 .outline_btn {
-  @apply bg-transparent shadow shadow-slate-400 border border-cyan-300 font-serif font-medium text-slate-600 hover:bg-cyan-100 hover:text-black h-12 duration-1000
+  @apply bg-transparent shadow shadow-slate-400 border border-cyan-300 font-serif font-medium text-white hover:bg-cyan-100 hover:text-black h-12 duration-1000
 }
 .link_side {
   @apply justify-center items-center bg-white rounded-md outline outline-1 outline-white
@@ -178,19 +178,19 @@ nav.scrolled {
   @apply text-white bg-slate-950 text-3xl p-2 rounded-md cursor-pointer hover:bg-gradient-to-l from-cyan-300 via-neutral-50 to-teal-100 hover:text-cyan-600 shadow-inner outline outline-2 outline-cyan-500 shadow-black duration-700
 }
 .tittl_name {
-  @apply animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-transparent pr-5 font-bold text-base md:text-3xl font-serif text-transparent bg-clip-text bg-gradient-to-l from-white via-violet-600 to-white
+  @apply animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-transparent pr-5 font-bold text-base md:text-3xl font-serif text-transparent bg-clip-text bg-gradient-to-br from-cyan-500 via-black to-cyan-950
 }
 
 .primary_text {
-  @apply text-white text-sm md:text-lg font-sans font-light text-start
+  @apply text-black text-sm md:text-lg font-sans font-light text-start
 }
 
 .paragraph_text {
-  @apply text-sm md:text-base font-sans text-start text-white mb-5 font-light
+  @apply text-sm md:text-base font-sans text-start text-black mb-5 font-light
 }
 
 .titlle_text {
-  @apply text-start text-xl font-serif text-white
+  @apply text-start text-xl font-serif text-black
 }
 .form_inp {
   @apply focus-visible:outline-none shadow-inner shadow-slate-400 bg-white p-[25px] outline outline-2 outline-cyan-100 !important
@@ -213,8 +213,8 @@ nav.scrolled {
 }
 
 .welcome_text {
-  @apply hidden font-serif lg:flex shadow rounded-md shadow-slate-300 h-fit p-2 md:text-base lg:text-2xl font-extrabold 
-  text-transparent bg-clip-text bg-gradient-to-br from-cyan-200 via-white
+  @apply hidden font-serif lg:flex shadow rounded-md shadow-slate-300 border border-slate-200 h-fit p-2 md:text-base lg:text-2xl font-extrabold 
+  text-transparent bg-clip-text bg-gradient-to-br from-cyan-500 via-black to-cyan-950
 }
 
 .icon_pack {
@@ -236,7 +236,7 @@ nav.scrolled {
 }
 
 .project_Uploader {
-  @apply flex flex-1 justify-center items-center outline outline-1 outline-white bg-transparent md:mt-10 p-5 md:p-2 w-full mb-32 md:mb-10 mt-2 md:w-[50%] rounded-xl
+  @apply flex flex-1 justify-center items-center outline outline-1 outline-white bg-cyan-950 bg-opacity-10 md:mt-10 p-5 md:p-2 w-full mb-32 md:mb-10 mt-2 md:w-[50%] rounded-xl
 }
 
 .image_accordion-container {
@@ -278,7 +278,7 @@ nav.scrolled {
 /* Project page */
 
 .project_container {
-  @apply flex flex-1 justify-center items-center bg-gradient-to-t from-cyan-200 to-cyan-50 outline outline-2 outline-cyan-300 shadow-md h-full w-full shadow-slate-600 rounded-br-2xl rounded-tl-2xl duration-700
+  @apply flex flex-1 justify-center items-center bg-cyan-950 bg-opacity-10 outline outline-1 outline-slate-50 shadow-md h-full w-full shadow-slate-400 rounded-br-2xl rounded-tl-2xl duration-700
 }
 
 .primary-projecttext {
@@ -286,7 +286,7 @@ nav.scrolled {
 }
 
 .project_paragraph {
-  @apply flex flex-col justify-between gap-2 box-border md:min-h-[150px] text-sm md:text-sm font-serif text-black p-2 my-1 rounded-tl-2xl rounded-br-2xl shadow-inner shadow-cyan-600 bg-gradient-to-br from-cyan-300 to-slate-400 outline outline-2 outline-cyan-200
+  @apply flex flex-col justify-between gap-2 box-border md:min-h-[150px] text-sm md:text-sm font-serif text-slate-800 p-2 my-1 rounded-tl-2xl rounded-br-2xl shadow-inner shadow-cyan-600 bg-cyan-950 bg-opacity-10 outline outline-1 outline-cyan-200
 }
 
 .custom_button {
@@ -325,7 +325,7 @@ nav.scrolled {
 }
 
 .text_title {
-  @apply text-lg md:text-2xl mb-5 font-bold font-sans border-b-2 border-white text-transparent bg-clip-text bg-gradient-to-l from-blue-700 via-white to-cyan-800
+  @apply text-lg md:text-2xl mb-5 font-bold font-sans border-b-2 border-white text-transparent bg-clip-text bg-gradient-to-l from-blue-700 via-black to-cyan-800
 }
 
 .text-li {

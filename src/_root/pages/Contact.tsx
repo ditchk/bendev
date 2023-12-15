@@ -43,7 +43,7 @@ const Contact = () => {
     
   return (
     <div className="default_Container">
-      <div className="flex flex-col justify-center items-start md:flex-row p-5 m-5 rounded-xl md:mx-10 lg:mx-52 w-full md:gap-10 md:shadow shadow-slate-400 md:my-5 md:rounded-xl outline outline-1 outline-white">
+      <div className="flex flex-col justify-center items-start md:flex-row p-5 m-5 rounded-xl md:mx-10 lg:mx-52 w-full md:gap-10 bg-cyan-950 bg-opacity-10 md:shadow shadow-slate-400 md:my-5 md:rounded-xl outline outline-1 outline-white">
         <div className="flex flex-col w-full mb-10">
               <h3 className="primary_text">LETS TALK!</h3>
               <Form {...form}>

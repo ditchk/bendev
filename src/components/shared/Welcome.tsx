@@ -41,7 +41,7 @@ const Welcome = () => {
                       alt="homepage-image" 
                       // width={400}
                       loading="lazy"
-                      className="hidden md:flex object-contain h-full md:w-[300px] lg:w-[400px] rounded-e-full justify-end rounded-t-full border-b-2 border-l-2 border-cyan-400"
+                      className="hidden md:flex object-contain h-full md:w-[300px] lg:w-[400px] rounded-e-full justify-end rounded-t-full border-b-2 border-slate-300"
                     />   
               </div>
             )
