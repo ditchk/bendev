@@ -168,14 +168,14 @@ export async function createProject(project: myNewProject) {
     return RecentProducts
   }
 
-  export async function getAllProducts() {
-    const AllProducts = await databases.listDocuments(
+  export async function getALLServices() {
+    const AllServices = await databases.listDocuments(
       myConfig.databaseId,
       myConfig.productCollectionId,
-      [Query.orderAsc(''), Query.limit(40)]
+      [Query.orderDesc(''), Query.limit(1)]
     )
 
-    if(!AllProducts) throw Error;
+    if(!AllServices) throw Error;
 
-    return AllProducts
+    return AllServices
   }

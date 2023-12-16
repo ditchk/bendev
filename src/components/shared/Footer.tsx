@@ -37,8 +37,9 @@ const Footer = () => {
   return (
     <footer className="flex flex-col w-full shadow shadow-slate-100 md:shadow-slate-600 border-t border-slate-400 bg-cyan-950 bg-opacity-10 z-0">
       <div className="flex flex-col justify-start items-start md:flex-row md:justify-between m-3 md:m-10 p-2 md:p-10 md:items-center rounded-lg outline outline-1 outline-slate-300">
-          <Form {...form}>
-          <form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-row justify-center items-center gap-2 md:gap-3 space-y-8 w-fit p-5">
+          <img src="/assets/images/logo.png" alt="logo" width={100} />
+        <Form {...form}>
+          <form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-row justify-center items-center gap-2 md:gap-3 space-y-8 w-full p-5">
             <FormField
               control={form.control}
               name="email"
@@ -52,7 +53,7 @@ const Footer = () => {
                 </FormItem>
               )}
             />
-            <Button type="submit" className="subs_btn">Subscribe now!</Button>
+            <Button type="submit" className="common_btn">Subscribe now!</Button>
           </form>
         </Form>
         <div className="flex flex-col justify-start gap-2 p-5">

@@ -13,7 +13,8 @@ export enum QUERY_KEYS {
     GET_RECENT_PROJECTS = "getRecentProjects",
     GET_POST_BY_ID = "getPostById",
     GET_FEATURED_PROJECTS = "getFeaturedProjects",
-    GET_RECENT_PRODUCTS = "getRecentProducts"
+    GET_RECENT_PRODUCTS = "getRecentProducts",
+    GET_ALL_SERVICES = "getALLServices"
     // GET_USER_POSTS = "getUserPosts",
     // GET_FILE_PREVIEW = "getFilePreview",
   
