@@ -16,7 +16,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav id='navbar' className="z-50 flex flex-row justify-between gap-16 w-full border-b border-slate-400 animate-in slide-in-from-bottom-10 h-max bg-cyan-950 backdrop-blur top-0 sticky py-2 px-4 bg-opacity-10 duration-1000">
+    <nav id='navbar' className="z-50 flex flex-row justify-between gap-16 w-full border-b shadow-md shadow-slate-600 border-slate-400 animate-in slide-in-from-bottom-10 h-max bg-cyan-950 backdrop-blur top-0 sticky py-2 px-4 bg-opacity-10 duration-1000">
       <Link 
       to={'/'}
       className="flex flex-row justify-center items-center gap-2" 

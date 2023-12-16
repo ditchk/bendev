@@ -1,8 +1,24 @@
 import { myConfig, storage } from "./config";
 import { ID, Query } from "appwrite";
 import { databases, account, } from "./config";
-import { myNewProject } from "@/types";
+import { TypeNewUser, myNewProject } from "@/types";
 
+
+export async function CreateUserAccount(user: TypeNewUser) {
+  try {
+    const newUser = await account.create(
+      ID.unique(),
+      user.name,
+      user.email,
+      user.password,
+    )
+
+    return newUser;
+  } catch (error) {
+    console.log(error)
+    return error
+  }
+}
 
 export async function saveMessageToDB(messages: {
     email: string;
@@ -139,4 +155,27 @@ export async function createProject(project: myNewProject) {
 
     return FeaturedProjects
   }
-  
+
+  export async function getRecentProducts() {
+    const RecentProducts = await databases.listDocuments(
+      myConfig.databaseId,
+      myConfig.productCollectionId,
+      [Query.orderAsc(''), Query.limit(1)]
+    )
+
+    if(!RecentProducts) throw Error;
+
+    return RecentProducts
+  }
+
+  export async function getAllProducts() {
+    const AllProducts = await databases.listDocuments(
+      myConfig.databaseId,
+      myConfig.productCollectionId,
+      [Query.orderAsc(''), Query.limit(40)]
+    )
+
+    if(!AllProducts) throw Error;
+
+    return AllProducts
+  }

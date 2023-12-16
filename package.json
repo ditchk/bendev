@@ -25,6 +25,7 @@
     "ldrs": "^1.0.1",
     "lucide-react": "^0.292.0",
     "react": "^18.2.0",
+    "react-auth-kit": "^3.0.0-alpha.44",
     "react-dom": "^18.2.0",
     "react-dropzone": "^14.2.3",
     "react-hook-form": "^7.48.2",

@@ -5,7 +5,7 @@ import {
     useQueryClient,
     // useInfiniteQuery,
  } from '@tanstack/react-query';
-import { createProject, getRecentProjects } from '../appwrite/api';
+import { createProject, getRecentProducts, getRecentProjects } from '../appwrite/api';
 import { myNewProject } from '@/types';
 import { QUERY_KEYS } from './queryKeys';
 
@@ -42,5 +42,12 @@ export const useGetFeaturedProjects = () => {
     return useQuery ({
         queryKey: [QUERY_KEYS.GET_FEATURED_PROJECTS],
         queryFn: getRecentProjects
+    })
+}
+
+export const useGetRecentProducts = () => {
+    return useQuery({
+        queryKey: [QUERY_KEYS.GET_RECENT_PRODUCTS],
+        queryFn: getRecentProducts
     })
 }

@@ -45,6 +45,13 @@ export type IUser = {
   email: string;
 };
 
+export type TypeNewUser = {
+  name: string;
+  email: string;
+  username: string;
+  password: string;
+}
+
 export type myNewProject = {
   ProjectName: string;
   file: File[];

@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Calque_1" x="0px" y="0px" style="enable-background:new 0 0 33.5 33.5;" xml:space="preserve" viewBox="0.08 0.07 33.4 33.4">
+<style type="text/css">
+	.st0{fill:none;}
+	.st1{fill:#0A0A0D;stroke:#9A9A9A;}
+	
+		.st2{clip-path:url(#SVGID_00000173880133134305435570000004843986419777143439_);fill:url(#SVGID_00000075847432597918981560000003263793783430182540_);}
+	
+		.st3{clip-path:url(#SVGID_00000027599723091505728490000007132141217988862129_);fill:url(#SVGID_00000066505159644836732850000001168520376220427708_);}
+	
+		.st4{clip-path:url(#SVGID_00000062901894869559409180000000485137328828473771_);fill:url(#SVGID_00000168795865752175299910000010787309530703129243_);}
+</style>
+<g id="Groupe_509" transform="translate(7.012 -231.058)">
+	<g id="Ellipse_6" transform="translate(7.567 248.125)">
+		<circle class="st0" cx="2.2" cy="-0.3" r="16.7"/>
+		<circle class="st1" cx="2.2" cy="-0.3" r="16.2"/>
+	</g>
+	<g>
+		<g>
+			<defs>
+				<polygon id="SVGID_1_" points="6.7,251.8 5.1,255.3 18.6,255.3 18.6,255.3 16.9,251.8 12.8,251.8     "/>
+			</defs>
+			<clipPath id="SVGID_00000042010967999896969110000006081940858454924171_">
+				<use xlink:href="#SVGID_1_" style="overflow:visible;"/>
+			</clipPath>
+			
+				<linearGradient id="SVGID_00000055705901509177052460000006136443854833845933_" gradientUnits="userSpaceOnUse" x1="-305.7449" y1="639.4761" x2="-305.0966" y2="639.4761" gradientTransform="matrix(-20.7384 0 0 20.7384 -6322.0898 -13008.1748)">
+				<stop offset="0" style="stop-color:#FFFFFF"/>
+				<stop offset="0.3433" style="stop-color:#FFFFFF"/>
+				<stop offset="0.4554" style="stop-color:#FAFAFA"/>
+				<stop offset="0.5949" style="stop-color:#EAEBEB"/>
+				<stop offset="0.7489" style="stop-color:#D1D2D3"/>
+				<stop offset="0.9123" style="stop-color:#AEB0B2"/>
+				<stop offset="1" style="stop-color:#989B9D"/>
+			</linearGradient>
+			
+				<rect x="5.1" y="251.8" style="clip-path:url(#SVGID_00000042010967999896969110000006081940858454924171_);fill:url(#SVGID_00000055705901509177052460000006136443854833845933_);" width="13.4" height="3.5"/>
+		</g>
+		<g>
+			<defs>
+				<polygon id="SVGID_00000146492770819744125980000005949699420787124151_" points="2.6,251.8 0.9,255.3 5.1,255.3 6.7,251.8       9.8,245.1 7.8,240.7     "/>
+			</defs>
+			<clipPath id="SVGID_00000167367579995175088300000002040548908911711134_">
+				<use xlink:href="#SVGID_00000146492770819744125980000005949699420787124151_" style="overflow:visible;"/>
+			</clipPath>
+			
+				<linearGradient id="SVGID_00000119828706766837777780000007778321786050705568_" gradientUnits="userSpaceOnUse" x1="-286.9028" y1="643.9309" x2="-286.2546" y2="643.9309" gradientTransform="matrix(25.3398 0 0 -25.3398 7270.9927 16565.1426)">
+				<stop offset="0" style="stop-color:#FFFFFF"/>
+				<stop offset="2.476220e-03" style="stop-color:#FFFFFF"/>
+				<stop offset="0.3042" style="stop-color:#FFFFFF"/>
+				<stop offset="0.5586" style="stop-color:#A8AAAC"/>
+				<stop offset="0.6034" style="stop-color:#989B9D"/>
+				<stop offset="1" style="stop-color:#989B9D"/>
+			</linearGradient>
+			
+				<rect x="0.9" y="240.7" style="clip-path:url(#SVGID_00000167367579995175088300000002040548908911711134_);fill:url(#SVGID_00000119828706766837777780000007778321786050705568_);" width="8.8" height="14.6"/>
+		</g>
+		<g>
+			<defs>
+				<polygon id="SVGID_00000064327972725593023850000014195217976456160697_" points="7.8,240.7 9.8,245.1 12.8,251.8 16.9,251.8       11.7,240.7 9.8,236.5     "/>
+			</defs>
+			<clipPath id="SVGID_00000163035555007333627430000007684044481254085813_">
+				<use xlink:href="#SVGID_00000064327972725593023850000014195217976456160697_" style="overflow:visible;"/>
+			</clipPath>
+			
+				<linearGradient id="SVGID_00000097469939398268507470000016540830083043521983_" gradientUnits="userSpaceOnUse" x1="-292.5312" y1="644.5447" x2="-291.883" y2="644.5447" gradientTransform="matrix(50.3814 29.0877 29.0877 -50.3814 -4023.7673 41211.3086)">
+				<stop offset="0" style="stop-color:#FFFFFF"/>
+				<stop offset="2.476220e-03" style="stop-color:#FFFFFF"/>
+				<stop offset="0.7458" style="stop-color:#FFFFFF"/>
+				<stop offset="0.7881" style="stop-color:#F9F9F9"/>
+				<stop offset="0.8439" style="stop-color:#E9E9EA"/>
+				<stop offset="0.9073" style="stop-color:#CDCFD0"/>
+				<stop offset="0.9758" style="stop-color:#A7AAAB"/>
+				<stop offset="1" style="stop-color:#989B9D"/>
+			</linearGradient>
+			
+				<polygon style="clip-path:url(#SVGID_00000163035555007333627430000007684044481254085813_);fill:url(#SVGID_00000097469939398268507470000016540830083043521983_);" points="     10.1,232.5 23.5,240.3 14.6,255.7 1.1,248    "/>
+		</g>
+	</g>
+</g>
+</svg>

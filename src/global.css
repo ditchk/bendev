@@ -337,3 +337,13 @@ nav.scrolled {
 .experience-container {
   @apply flex flex-col md:flex-row justify-center items-center
 }
+
+.product_cooursel {
+  @apply grid grid-cols-1 md:grid-cols-1 justify-center items-center md:gap-5 overflow-scroll custom-scrollbar
+}
+
+/* BRANDS STYLESS */
+
+.icon_pack2 {
+  @apply inline-block md:h-10 md:w-10 w-8 h-8 fill-current text-white bg-black rounded-lg p-1 outline-1 outline outline-cyan-300 shadow-md shadow-slate-300
+}
