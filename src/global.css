@@ -317,11 +317,11 @@ nav.scrolled {
 /* CV */
 
 .text_prim {
-  @apply shadow-sm shadow-slate-400 outline outline-1 outline-white p-5 my-3 rounded-bl-3xl rounded-tr-3xl text-center text-xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-l from-sky-900 via-cyan-300 to-violet-900
+  @apply shadow-sm shadow-slate-400 outline outline-1 outline-white mx-10 p-2 my-2 rounded-bl-3xl rounded-tr-3xl text-center text-xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-l from-sky-900 via-slate-800 to-cyan-500
 }
 
 .text_sec {
-  @apply text-center text-xl font-serif font-semibold text-white
+  @apply text-center text-base md:text-xl font-serif font-semibold text-slate-500
 }
 
 .text_title {

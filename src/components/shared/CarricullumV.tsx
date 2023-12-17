@@ -1,22 +1,41 @@
+import { motion, useInView } from "framer-motion"
+
 import { FaLocationPin, FaPhone } from "react-icons/fa6"
 import Socials from "./Socials"
+import { useEffect, useRef } from "react"
 
 const CarricullumV = () => {
+
+    const ref = useRef(null)
+    const isInView = useInView(ref)
+
+    useEffect(() => {
+        
+      }, [isInView])
+
   return (
-    <div className="flex flex-col justify-center items-center md:mx-10  outline outline-1 outline-slate-300 my-10">
-      <div className="flex flex-col outline outline-1 md:rounded-bl-full outline-slate-300 md:px-24 md:pb-5 mb-10 m-5 p-2 bg-gradient-to-tl from-sky-900 text-xs via-black to-cyan-600 animate-in slide-in-from-right-40 duration-500">
-        <h1 className="text_prim">BENSON KIGOCI</h1>
-        <h2 className="text_sec mb-5">Full Stack Developer && UI/UX DESIGNER</h2>
-        <div className="flex flex-col justify-center items-center">
-            <h1 className="flex flex-row justify-center text-center text-white gap-2 font-sans font-thin text-base font-semibold mb-1"><FaLocationPin className="bg-black p-1 text-white outline outline-2 outline-cyan-400 rounded-md text-center text-2xl" />242 Union st, Rocland MA, United States</h1>
-            <h1 className="flex flex-row justify-center text-center text-white gap-2 font-sans font-thin text-base font-semibold mb-6"><FaPhone className="bg-black p-1 text-white outline outline-2 outline-cyan-400 rounded-md text-center text-2xl" />{'+254712941987'}</h1>
+    <div className="flex flex-col justify-center items-center md:mx-10  outline outline-1 outline-slate-200 my-10">
+      <div className="flex flex-col outline outline-1 md:rounded-b-full outline-slate-300 m-5 p-5 md:px-24 md:pb-5 mb-10 bg-cyan-950 bg-opacity-10 animate-in slide-in-from-right-40 duration-500">
+        <motion.h1 
+            style={{
+                transform: isInView ? "none" : "translateX(-200px)",
+                opacity: isInView ? 1 : 0,
+                transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+                }}
+            ref={ref} 
+            className="text_prim">BENSON KIGOCI</motion.h1>
+        <h2 className="text_sec mb-5">Full Stack Developer && UI/UX Designer</h2>
             <h3 className="text_sec">
                 Find me on social platforms
             </h3>
             <Socials />
+        <div className="flex flex-col justify-center items-center">
+            <h1 className="flex flex-row justify-center text-center text-slate-400 gap-2 font-sans font-normal text-xs mb-1"><FaLocationPin className="bg-black p-1 text-white outline outline-2 outline-cyan-400 rounded-md text-center text-2xl" />242 Union st, Rocland MA, United States</h1>
+            <h1 className="flex flex-row justify-center text-center text-slate-400 font-normal gap-2 font-sans text-xs mb-6"><FaPhone className="bg-black p-1 text-white outline outline-2 outline-cyan-400 rounded-md text-center text-2xl" />{'+254712941987'}</h1>
+            
         </div>
       </div>
-      <section className="flex flex-1 w-full h-fit outline outline-1 outline-slate-300 py-10 md:px-24 p-5">
+      <section className="flex flex-1 w-full h-full outline outline-1 outline-slate-100 py-10 md:px-24 p-5">
         <div className="flex flex-col justify-start items-start">
             <h1 className="text_title">PROFFESSIONAL ROADMAP</h1>
             <p className="text-base text-slate-700 font-normal font-serif mb-5">
@@ -27,7 +46,7 @@ const CarricullumV = () => {
             </p>
         </div>
       </section>
-      <section className="flex flex-1 w-full h-fit py-10 md:px-24 p-5">
+      <section className="flex flex-1 w-full h-full py-10 md:px-24 p-5">
         <div className="flex flex-col justify-start items-start">
             <h1 className="text_title mb-5">QUALIFICATIONS && CERTIFICATIONS</h1>
             <p className="text-base text-slate-700 font-normal md:ml-5">
@@ -88,7 +107,6 @@ const CarricullumV = () => {
                 {'I can play great role in making sure a company scales even higher without having to overpay in resources since i can work with no supervison remotely and be productive to the nd of our agreed contract'}
             </p>
         </div>
-       
       </section>
     </div>
   )
