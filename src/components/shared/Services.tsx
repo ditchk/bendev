@@ -8,11 +8,11 @@ const Services = () => {
   const { data: products, isPending: isLoading } = useGetAllServices();
 
   return (
-    <div className="hidden md:flex flex-1 justify-center items-center">
+    <div className="flex flex-1 justify-center items-center">
       {isLoading && !products ? (
         <ServiceLoader />
       ) : (
-        <ul className="grid grid-cols-2 md:grid-cols-3 justify-center items-center">
+        <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center">
           {products?.documents.map((service: Models.Document) => (
             <li>
               <ServicesBox service={service} key={service.productTitle} />
