@@ -32,6 +32,9 @@ const Companies = () => {
         <img src="/assets/images/AdulttimeOriginals.svg" alt="" width={40} className="rounded-lg w-8 md:w-10 bg-black p-1 outline outline-2 outline-cyan-200 shadow-md shadow-slate-400" />
       </div>
       <div>
+        <img src="/assets/images/bensworkspace.png" alt="" width={40} className="rounded-lg w-8 md:w-10 bg-black p-1 outline outline-2 outline-cyan-200 shadow-md shadow-slate-400" />
+      </div>
+      <div>
         <SiAppwrite className="icon_pack2"/>
       </div>
       <div>
