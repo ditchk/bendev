@@ -38,11 +38,11 @@ window.onscroll = function() {toggleNavbar()};
         <img src="/assets/images/logo.png" alt="" width={50} className='ml-3'/>
         <h1 className="text-center text-xl font-extrabold font-serif text-transparent bg-clip-text bg-gradient-to-br from-cyan-500 via-black to-cyan-950">BENSWORKSPACE</h1>
       </Link>
-      <div className="hidden md:flex flex-row">
-        <h1 className="text-center text-black text-xl p-3 font-serif">lets talk!</h1>
+      <div className="hidden md:flex flex-row justify-center items-center">
+        <h1 className="text-end text-black text-base w-full lg:text-lg p-3 font-serif">lets talk!</h1>
         <Socials />
         <Link to={'/mycv'} className="Linkme">
-          LEARN MORE
+          Explore
         </Link>  
       </div>
       <div className="flex justify-center items-center md:hidden p-0 m-0 w-fit">

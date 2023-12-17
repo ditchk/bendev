@@ -150,7 +150,7 @@
 
 
 .Linkme {
-  @apply bg-gradient-to-tl from-sky-900 text-xs via-black to-cyan-600 text-white outline outline-1 outline-white text-center rounded-md h-12 p-4
+  @apply bg-gradient-to-tl from-sky-900 text-sm via-black to-cyan-600 text-white outline outline-1 outline-white justify-evenly rounded-md px-5 p-3 text-justify
 }
 
 
