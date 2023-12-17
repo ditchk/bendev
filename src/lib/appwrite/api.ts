@@ -172,7 +172,7 @@ export async function createProject(project: myNewProject) {
     const AllServices = await databases.listDocuments(
       myConfig.databaseId,
       myConfig.productCollectionId,
-      [Query.orderDesc(''), Query.limit(1)]
+      [Query.orderDesc(''), Query.limit(6)]
     )
 
     if(!AllServices) throw Error;

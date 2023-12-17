@@ -1,30 +1,49 @@
 import { Models } from "appwrite"
+import { Button } from "../ui/button"
+
+import { motion, useInView } from 'framer-motion'
+import { useEffect, useRef } from "react"
 
 type ServiceBoxProps = {
     service: Models.Document
 }
 
 const ServicesBox = ({service} : ServiceBoxProps ) => {
+    const ref = useRef(null)
+    const isInView = useInView(ref)
+
+    useEffect(() => {
+        console.log("Element is in view: ", isInView)
+      }, [isInView])
   return (
-    <div className="flex flex-row justify-center items-center p-5">
-        <div className="flex flex-col justify-end items-end">
-            <h1 className="text_title">
-                Get work done like a pro. Hire my services to day and get 100% satisfcation.
-            </h1>
-            <p className="text-lg text-violet-400">
-                {'Get your project running with my dedicated project management service'}
+    <motion.div 
+    style={{
+        transform: isInView ? "none" : "translateX(-200px)",
+        opacity: isInView ? 1 : 0,
+        transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+      }}
+      ref={ref}
+    className="flex flex-col justify-center items-center p-5">
+        <div className="flex flex-col bg-cyan-950 bg-opacity-10 outline-1 outline outline-slate-100 p-2 min-h-[450px] rounded-tr-3xl">
+            <img src={service.imageUrl} alt={"project Management"} className=" w-auto h-60 rounded-tr-3xl overflow-hidden rounded-bl-3xl"/>
+            <p className=" box-border min-h-[100px] text-sm text-slate-500 font-normal p-2 m-2 outline-sky-50 outline outline-1">
+                {service.ProductDescription}
             </p>
-            <ul className="flex list-disc list-inside">
-                <li className="text_title">
-                    Product management && All in one online Tookit pack
-                </li>
-            </ul>
+            <div className="flex flex-row justify-start items-center">
+                <Button className="custom_button ml-2">
+                    Get this service
+                </Button>
+                <Button className="custom_button ml-2">
+                    {'Starting at 200$'}
+                </Button>
+            </div>
         </div>
-        <div className="">
-            <img src={service.imageUrl} alt="" width={500} className="object-contain rounded-b-full rounded-l-full shadow-inner shadow-slate-300" />
+        <div>
+            <h1 className="text_project">
+                {service.productTitle}
+            </h1>
         </div>
-        
-    </div>
+    </motion.div>
   )
 }
 

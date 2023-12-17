@@ -124,7 +124,7 @@
 }
 
 .Home_Container {
-  @apply flex flex-1 justify-center items-center h-fit md:p-2 w-full p-2 mb-5 md:mb-1 bg-cyan-950 bg-opacity-10 rounded-xl outline outline-1 outline-slate-200 animate-in slide-in-from-bottom-10 duration-1000
+  @apply flex flex-1 justify-center items-center h-fit md:p-2 w-full p-2 mb-5 md:mb-1 bg-cyan-950 bg-opacity-10 rounded-xl outline outline-1 outline-slate-200
 }
 
 .largeTexts {
@@ -346,4 +346,8 @@ nav.scrolled {
 
 .icon_pack2 {
   @apply inline-block md:h-10 md:w-10 w-8 h-8 fill-current text-white bg-black rounded-lg p-1 outline-1 outline outline-cyan-300 shadow-md shadow-slate-300
+}
+
+.text_project {
+  @apply text-gray-500 text-xs italic mb-6
 }

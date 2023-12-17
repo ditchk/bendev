@@ -1,3 +1,5 @@
+import { motion } from "framer-motion"
+
 import Skills from "@/components/shared/Skills"
 import { welcomeMessage } from "@/constants"
 import { myWelcomeMessage } from "@/types"
@@ -10,7 +12,15 @@ const Welcome = () => {
   const isloading = useState(false);
 
   return (
-    <div className="Home_Container">
+    <motion.div 
+    initial={{ opacity: 0, scale: 0.5 }}
+    animate={{ opacity: 1, scale: 1 }}
+    transition={{
+      duration: 0.8,
+      delay: 0.5,
+      ease: [0, 0.71, 0.2, 1.01]
+    }}
+      className="Home_Container">
       <ul className="flex flex-1 h-fit w-full">
           {welcomeMessage.map((link: myWelcomeMessage) => {
             return (
@@ -47,7 +57,7 @@ const Welcome = () => {
             )
           })}
         </ul>
-    </div>
+    </motion.div>
   )
 }
 

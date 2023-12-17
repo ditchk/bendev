@@ -12,7 +12,7 @@ const Services = () => {
       {isLoading && !products ? (
         <ServiceLoader />
       ) : (
-        <ul className="flex flex-1 justify-center items-center">
+        <ul className="grid grid-cols-2 md:grid-cols-3 justify-center items-center">
           {products?.documents.map((service: Models.Document) => (
             <li>
               <ServicesBox service={service} key={service.productTitle} />
