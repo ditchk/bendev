@@ -83,7 +83,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="flex flex-col justify-center items-center border-t border-slate-300">
-        <h1 className="flex flex-row gap-3 justify-center items-center font-serif text-violet-700 text-sm font-semibold"><img src="/assets/images/benswsp.png" alt="footer-logo" width={150} /> &#169; 2023</h1>
+        <h1 className="flex flex-row gap-3 justify-center items-center font-sans text-slate-800 text-sm font-bold"> &#169; 2023<img src="/assets/images/footer.banner.png" alt="footer-logo" width={150} /></h1>
       </div>
     </footer>
   )

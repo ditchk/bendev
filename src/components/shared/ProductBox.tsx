@@ -1,7 +1,7 @@
 import { Models } from 'appwrite'
 import { Button } from '../ui/button'
 import { Link } from 'react-router-dom'
-import { useInView } from 'framer-motion'
+import { motion, useInView } from 'framer-motion'
 import { useEffect, useRef } from 'react'
 
 
@@ -20,7 +20,7 @@ const ProductBox = ({ product } : ProductCardProps) => {
     }, [isInView])
 
   return (
-    <section 
+    <motion.section 
     style={{
       transform: isInView ? "none" : "translateY(200px)",
       opacity: isInView ? 1 : 0,
@@ -46,7 +46,7 @@ const ProductBox = ({ product } : ProductCardProps) => {
           </div>
         </div>
     </div>
-  </section>
+  </motion.section>
   )
 }
 

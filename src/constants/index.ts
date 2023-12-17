@@ -17,7 +17,7 @@ export const sideBarLinks = [
     },
     {
         label: 'Gallery',
-        route: 'media'
+        route: '/media'
     },
     {
         label:'shop',

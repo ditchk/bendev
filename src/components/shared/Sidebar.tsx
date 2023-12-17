@@ -17,7 +17,7 @@ const Sidebar = () => {
             <li key={link.label} className="link_side">
                 <NavLink 
                 to={link.route}
-                className={`flex flex-row gap-3 text-white bg-gradient-to-tl from-sky-900 via-black to-cyan-600 p-2 text-base font-serif rounded-md w-full ${isActive && "outline-double outline-2 outline-cyan-300"}`}>
+                className={`flex flex-row gap-3 text-slate-700 bg-cyan-950 bg-opacity-40 p-2 text-base font-serif rounded-md w-full ${isActive && "outline-double outline-2 outline-cyan-300"}`}>
                   {link.label}
               </NavLink>
             </li>
