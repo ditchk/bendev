@@ -39,7 +39,7 @@ const Footer = () => {
       <div className="flex flex-col justify-start items-start md:flex-row md:justify-between m-3 md:m-10 p-2 md:p-10 md:items-center rounded-lg outline outline-1 outline-slate-300">
           <img src="/assets/images/logo.png" alt="logo" width={100} />
         <Form {...form}>
-          <form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-row justify-center items-center gap-2 md:gap-3 space-y-8 w-full p-5">
+          <form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-row justify-start items-start md:justify-center md:items-center gap-2 md:gap-3 space-y-8 w-full p-5">
             <FormField
               control={form.control}
               name="email"

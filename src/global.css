@@ -278,7 +278,7 @@ nav.scrolled {
 /* Project page */
 
 .project_container {
-  @apply flex flex-1 justify-center items-center bg-cyan-950 bg-opacity-10 outline outline-1 outline-slate-50 shadow-md h-full w-full shadow-slate-400 rounded-br-2xl rounded-tl-2xl duration-700
+  @apply flex flex-1 justify-center items-center bg-cyan-950 bg-opacity-10 backdrop-blur-lg outline outline-1 outline-cyan-200 shadow-md h-full w-full shadow-slate-400 rounded-br-2xl rounded-tl-2xl duration-700
 }
 
 .primary-projecttext {
