@@ -1,19 +1,11 @@
 import { Models } from "appwrite"
 import { Button } from "../ui/button"
-import { useState } from "react"
 
 type projectCardProps = {
     project: Models.Document
 }
 
 const ProjectContainer = ({ project }: projectCardProps) => {
-
-  const [ openContainer, setOpeneContainer ] = useState(false);
-
-  const handleClick = () => {
-    setOpeneContainer(!openContainer);
-  }
-
 
   return (
     <div className="project_container cursor-pointer">
