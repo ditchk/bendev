@@ -365,5 +365,5 @@ nav.scrolled {
 }
 
 .headText {
-  @apply text-lg md:text-2xl mb-5 font-bold font-sans text-transparent bg-clip-text bg-gradient-to-l from-blue-700 via-black to-cyan-800
+  @apply text-xl md:text-3xl text-center mb-5 font-bold font-mono text-transparent bg-clip-text bg-gradient-to-l from-blue-700 via-black to-cyan-800
 }

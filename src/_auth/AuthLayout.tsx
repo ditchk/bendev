@@ -13,8 +13,8 @@ const AuthLayout = () => {
           <h1 className="text-center text-xl font-extrabold font-serif text-transparent bg-clip-text bg-gradient-to-br from-cyan-500 via-black to-cyan-950">BENSWORKSPACE</h1>
         </Link>
       </nav>
-      <div className="flex flex-1 justify-center items-center w-full h-fit">
-      <Outlet />
+      <div className="flex flex-1 justify-center items-start mt-24 md:mt-0 md:items-center w-full h-fit">
+        <Outlet />
       </div>
     </div>
   )
