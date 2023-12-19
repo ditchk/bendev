@@ -55,8 +55,8 @@ const SigninForm = () => {
           }}
           ref={ref} 
         onSubmit={form.handleSubmit(onSubmit)} 
-        className="flex flex-col justify-start items-center h-fit px-9 md:px-16 shadow-lg py-8 shadow-cyan-950 bg-cyan-950 bg-opacity-10 w-auto space-y-3 rounded-md outline outline-1 outline-slate-200">
-         <h1 className="headText no-underline">WELCOME BACK</h1>
+        className="flex flex-col justify-start items-center h-fit px-10 md:px-16 shadow-lg py-8 shadow-cyan-950 bg-cyan-950 bg-opacity-10 w-auto space-y-3 rounded-md outline outline-1 outline-slate-200">
+         <h1 className="headText no-underline">WELCOME BACK BENSON</h1>
         <FormField
           control={form.control}
           name="email"

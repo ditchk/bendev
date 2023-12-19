@@ -361,7 +361,7 @@ nav.scrolled {
 }
 
 .form_item {
-  @apply w-fit md:w-80
+  @apply w-64 md:w-80
 }
 
 .headText {
