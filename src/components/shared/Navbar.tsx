@@ -43,7 +43,7 @@ window.onscroll = function() {toggleNavbar()};
         <Socials />
         <Link to={'/mycv'} className="Linkme">
           Explore
-        </Link>  
+        </Link>
       </div>
       <div className="flex justify-center items-center md:hidden p-0 m-0 w-fit">
         <MobileMenu />
