@@ -14,7 +14,7 @@ const { data: projects , isPending: isProjectloading, /*isError: isProjectError*
       scale: 1,
       transition: {
         delayChildren: 0.8,
-        staggerChildren: 0.5
+        staggerChildren: 0.1
       }
     }
   };
