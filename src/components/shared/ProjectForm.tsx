@@ -1,4 +1,4 @@
-
+import { motion, useInView } from "framer-motion"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 import * as z from "zod"
@@ -12,6 +12,7 @@ import { projectValidation } from "@/lib/validation"
 import { Models } from "appwrite"
 import { useCreateProject } from "@/lib/Queries/QueriesAndMutations"
 import UploadLoader from "./UploadLoader"
+import { useEffect, useRef } from "react"
 // import { myConfig } from "@/lib/appwrite/config"
 
 type projectFormProps = {
@@ -19,6 +20,7 @@ type projectFormProps = {
 }
 
 const ProjectForm = ({ project }: projectFormProps) => {
+  
 const { mutateAsync: createProject, isPending: isLoadingCreate } = useCreateProject()
 
     const form = useForm<z.infer<typeof projectValidation>>({
@@ -40,8 +42,22 @@ const { mutateAsync: createProject, isPending: isLoadingCreate } = useCreateProj
         // set isLoadingCreate = true
         return newProject
       }
+
+      const ref = useRef(null)
+      const isInView = useInView(ref)
+  
+      useEffect(() => {
+          console.log("Element is in view: ", isInView)
+        }, [isInView])
 return (
-  <div className="project_Uploader">
+  <motion.div 
+    style={{
+      transform: isInView ? "none" : "translateX(200px)",
+      opacity: isInView ? 1 : 0,
+      transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+    }}
+    ref={ref}
+    className="project_Uploader">
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="w-full px-5 space-y-5">
           <FormField
@@ -87,7 +103,7 @@ return (
           <div className="flex flex-row justify-end gap-3">
               {/* <Button type="submit" className="bg-[#a1e2eb] text-white w-fit">Cancel</Button> */}
               <Button type="submit" className="bg-black text-white w-fit outline outline-1 outline-white">
-                {isLoadingCreate ? (
+              {isLoadingCreate ? (
                   <UploadLoader />
                 ) : (
                   "Save Project"
@@ -96,7 +112,7 @@ return (
           </div>
         </form>
     </Form>
-  </div>
+  </motion.div>
   )
 }
 

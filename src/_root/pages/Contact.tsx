@@ -1,3 +1,5 @@
+import { motion, useInView } from "framer-motion"
+
 import * as z from "zod"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
@@ -16,7 +18,7 @@ import { contactInfo } from "@/types"
 import { contactInformation } from "@/constants"
 import { messageValidation } from "@/lib/validation"
 import { saveMessageToDB } from "@/lib/appwrite/api"
-import { useState } from "react"
+import { useEffect, useRef, useState } from "react"
 import { hourglass } from 'ldrs'
 
 
@@ -40,11 +42,25 @@ const Contact = () => {
       setLoading(true);
       return newMessage
     }
+
+    const ref = useRef(null)
+    const isInView = useInView(ref)
+
+    useEffect(() => {
+        console.log("Element is in view: ", isInView)
+      }, [isInView])
     
   return (
     <div className="default_Container">
-      <div className="flex flex-col justify-center items-start md:flex-row p-5 m-5 rounded-xl md:mx-10 lg:mx-52 w-full md:gap-10 bg-cyan-950 bg-opacity-10 md:shadow shadow-slate-400 md:my-5 md:rounded-xl outline outline-1 outline-white">
-        <div className="flex flex-col w-full mb-10">
+      <motion.div 
+        style={{
+          transform: isInView ? "none" : "translateX(200px)",
+          opacity: isInView ? 1 : 0,
+          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+        }}
+        ref={ref}
+        className="flex flex-col justify-center items-start md:flex-row p-5 m-5 rounded-xl md:mx-10 lg:mx-52 w-full md:gap-10 bg-cyan-950 bg-opacity-10 md:shadow-sm shadow-slate-400 md:my-5 md:rounded-xl outline outline-1 outline-white">
+          <div className="flex flex-col w-full mb-10">
               <h3 className="primary_text">LETS TALK!</h3>
               <Form {...form}>
                 <form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-col gap-1 space-y-8 p-2">
@@ -123,7 +139,7 @@ const Contact = () => {
                 ))}
               </ul>
             </div>
-      </div>
+      </motion.div>
     </div>
   )
 }

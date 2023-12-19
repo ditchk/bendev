@@ -13,7 +13,7 @@ const { data: projects , isPending: isProjectloading, /*isError: isProjectError*
       opacity: 1,
       scale: 1,
       transition: {
-        delayChildren: 1,
+        delayChildren: 0.8,
         staggerChildren: 0.5
       }
     }
@@ -44,7 +44,7 @@ const { data: projects , isPending: isProjectloading, /*isError: isProjectError*
             {projects?.documents.map((project: Models.Document) => (
               <motion.li 
                 variants={item}
-                className="duration-1000"
+                className="duration-500"
                 >
                   <ProjectContainer project={project} key={project.ProjectName}  />
               </motion.li>

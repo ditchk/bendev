@@ -1,19 +1,19 @@
 import { myConfig, storage } from "./config";
 import { ID, Query } from "appwrite";
 import { databases, account, } from "./config";
-import { TypeNewUser, myNewProject } from "@/types";
+import { NewUser, myNewProject } from "@/types";
 
 
-export async function CreateUserAccount(user: TypeNewUser) {
+export async function CreateUserAccount(user: NewUser) {
   try {
-    const newUser = await account.create(
+    const newAccount = await account.create(
       ID.unique(),
       user.name,
       user.email,
       user.password,
     )
 
-    return newUser;
+    return newAccount;
   } catch (error) {
     console.log(error)
     return error
@@ -38,16 +38,6 @@ export async function saveMessageToDB(messages: {
         return newNmessage
     } catch (error) {
         console.log(error);
-    }
-}
-
-export async function signInAccount(user: {name: string; password:string}) {
-    try {
-        const session = await account.createEmailSession(user.name, user.password);
-        
-        return session;
-    } catch(error) {
-        console.log(error)
     }
 }
 
@@ -179,3 +169,32 @@ export async function createProject(project: myNewProject) {
 
     return AllServices
   }
+
+  export async function signInAccount(user: {email:string; password:string}) {
+    try {
+        const session = await account.createEmailSession(user.email, user.password);
+        
+        return session;
+    } catch(error) {
+        console.log(error)
+    }
+}
+
+export async function getCurrentUser() {
+  try {
+      const currentAccount = await account.get();
+
+      if(!currentAccount) throw Error;
+
+      const currentUser = await databases.listDocuments(
+          myConfig.databaseId,
+          myConfig.userCollectionId,
+          [Query.equal('accountId', currentAccount.$id)]
+      )
+      if(!currentUser) throw Error;
+
+      return currentUser.documents[0];
+  } catch(error) {
+      console.log(error)
+  }
+}

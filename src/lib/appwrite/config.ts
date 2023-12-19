@@ -9,6 +9,7 @@ export const myConfig = {
     productCollectionId: import.meta.env.VITE_APPWRITE_PRODUCT_COLLECTION_ID,
     messageCollectionId: import.meta.env.VITE_APPWRITE_MESSAGE_COLLECTION_ID,
     projectCollectionId: import.meta.env.VITE_APPWRITE_PROJECT_COLLECTION_ID,
+    userCollectionId:import.meta.env.VITE_APPWRITE_USER_COLLECTION_ID,
     ProductId:import.meta.env.VITE_APPWRITE_PRODUCT_ID
 };
 

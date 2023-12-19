@@ -30,26 +30,10 @@ export type INewMessage = {
   message: string;
 }
 
-export type IContextType = {
-  user: IUser;
-  isLoading: boolean;
-  setUser: React.Dispatch<React.SetStateAction<IUser>>;
-  isAuthenticated: boolean;
-  setIsAuthenticated: React.Dispatch<React.SetStateAction<boolean>>;
-  checkAuthUser: () => Promise<boolean>;
-};
-
-export type IUser = {
-  id: string;
+export type NewUser = {
   name: string;
   email: string;
-};
-
-export type TypeNewUser = {
-  name: string;
-  email: string;
-  username: string;
-  password: string;
+  password: string;  
 }
 
 export type myNewProject = {

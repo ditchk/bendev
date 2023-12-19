@@ -10,21 +10,35 @@ import About from './_root/pages/About'
 import Gallery from './_root/pages/Gallery'
 import AddProject from './_root/pages/AddProject'
 import CarricullumV from './components/shared/CarricullumV'
+import PrivateRoutes from './lib/utils/PrivateRoutes'
+import SigninForm from './_auth/forms/SigninForm'
+import AuthLayout from './_auth/AuthLayout'
 
 function App() {
   return (
     <main className="flex flex-1">
       <Routes>
-        <Route element={<RootLayout/>}>
-          <Route index element={<Home />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/media" element={<Gallery />} />
-          <Route path="/shop" element={<Shop />} />
-          <Route path="/upload/projects" element={<AddProject/>} />
-          <Route path="/mycv" element={<CarricullumV/>} />
-        </Route>
+          <Route element={<RootLayout/>}>
+            <Route index element={<Home />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/media" element={<Gallery />} />
+            <Route path="/shop" element={<Shop />} />
+          </Route>
+
+          {/* Login routes */}
+          <Route element={<AuthLayout />}>
+            <Route path="/auth/signin" element={<SigninForm/>} />
+            {/* <Route path="/signup" element={<SignupForm/>} /> */}
+          </Route>
+          
+          
+          {/* Protected pages */}
+          <Route element={<PrivateRoutes />}>
+            <Route path="/mycv" element={<CarricullumV/>} />
+            <Route path="/upload/projects" element={<AddProject/>} />
+          </Route>
       </Routes>
     </main>
   )

@@ -193,7 +193,7 @@ nav.scrolled {
   @apply text-start text-xl font-serif text-black
 }
 .form_inp {
-  @apply focus-visible:outline-none shadow-inner shadow-slate-400 bg-white p-[25px] outline outline-2 outline-cyan-100 !important
+  @apply focus-visible:outline-none shadow-inner shadow-slate-100 bg-white p-[25px] outline outline-1 outline-cyan-100 !important
 }
 
 .subs_btn {
@@ -286,7 +286,7 @@ nav.scrolled {
 }
 
 .project_paragraph {
-  @apply flex flex-col justify-between gap-2 box-border md:min-h-[150px] text-sm md:text-sm font-serif text-slate-800 p-2 my-1 rounded-tl-2xl rounded-br-2xl shadow-inner shadow-cyan-600 bg-cyan-950 bg-opacity-10 outline outline-1 outline-cyan-200
+  @apply flex flex-col justify-between gap-2 box-border md:min-h-[150px] text-sm md:text-sm font-serif text-slate-800 p-2 my-1 rounded-tl-2xl rounded-br-2xl bg-cyan-950 bg-opacity-10 outline outline-1 outline-cyan-200
 }
 
 .custom_button {
@@ -350,4 +350,20 @@ nav.scrolled {
 
 .text_project {
   @apply text-gray-500 text-xs italic mb-6
+}
+
+/* AUTH LAYOUT STYLES */
+
+/* Forms */
+
+.inputBox {
+  @apply bg-white text-start text-slate-200 p-6 focus-visible:outline-none w-full outline outline-1 outline-slate-400
+}
+
+.form_item {
+  @apply w-fit md:w-80
+}
+
+.headText {
+  @apply text-lg md:text-2xl mb-5 font-bold font-sans text-transparent bg-clip-text bg-gradient-to-l from-blue-700 via-black to-cyan-800
 }

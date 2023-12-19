@@ -23,15 +23,9 @@ const ProjectContainer = ({ project }: projectCardProps) => {
           <h1 className="primary-projecttext">{project.ProjectName}</h1>
         </div>
         <p className="project_paragraph">{project.projectInfo}
-          <Button className="custom_button" onClick={handleClick}>
-            {openContainer ? 'learn more' : 'learn more'}
+          <Button className="custom_button">
+            View Project
           </Button>
-          {openContainer && (
-            <div className="flex flex-col h-fit absolute w-fit z-50">
-              <p className="flex flex-1 bg-black text-teal-500 p-5">share your project with friends
-              </p>
-            </div>
-          )}
         </p>
       </div>
      
