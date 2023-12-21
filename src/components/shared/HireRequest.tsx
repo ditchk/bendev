@@ -14,8 +14,6 @@ import { Checkbox } from "../ui/checkbox"
 import { useState } from "react"
 import { savInquireToDB } from "@/lib/appwrite/api"
 import { Input } from "../ui/input"
-import { error } from "console"
-import ServiceLoader from "./ServiceLoader"
 
 
 
