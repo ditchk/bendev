@@ -367,3 +367,21 @@ nav.scrolled {
 .headText {
   @apply text-xl md:text-3xl text-center mb-5 font-bold font-mono text-transparent bg-clip-text bg-gradient-to-l from-blue-700 via-black to-cyan-800
 }
+
+/* Hire request */
+
+.hireBox {
+  @apply flex flex-col justify-center items-center bg-cyan-950 bg-opacity-20 rounded-bl-3xl rounded-tr-3xl
+}
+
+.container {
+  @apply bg-white bg-opacity-70 backdrop-blur-md flex justify-center p-10 rounded-tr-xl right-0 left-0 mb-[24.4rem] md:mb-80 h-full absolute z-40 w-full overflow-scroll custom-scrollbar animate-in slide-in-from-left-20 ease-in duration-1000
+}
+
+.inputBox2 {
+  @apply bg-transparent text-sm text-black p-2 w-44 shadow-inner placeholder:text-xs
+}
+
+.inputBox3 {
+  @apply bg-transparent p-2 text-cyan-950 w-44 shadow-inner placeholder:text-xs
+}

@@ -3,7 +3,6 @@ import { ID, Query } from "appwrite";
 import { databases, account, } from "./config";
 import { NewUser, myNewProject } from "@/types";
 
-
 export async function CreateUserAccount(user: NewUser) {
   try {
     const newAccount = await account.create(
@@ -39,6 +38,26 @@ export async function saveMessageToDB(messages: {
     } catch (error) {
         console.log(error);
     }
+}
+
+
+export async function savInquireToDB (quotes: {
+  quote: string;
+  Email: string;
+  domain: string;
+}) {
+  try {
+    const newQuote = await databases.createDocument (
+      myConfig.databaseId,
+      myConfig.quoteCollectionId,
+      ID.unique(),
+      quotes
+    )
+
+    return newQuote
+  } catch(error) {
+    console.log(error)
+  }
 }
 
 export async function createProject(project: myNewProject) {

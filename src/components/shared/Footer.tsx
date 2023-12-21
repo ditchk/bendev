@@ -17,11 +17,11 @@ import { footerLinks, moreFooterLinks } from "@/constants"
 import { Link } from "react-router-dom"
 import Socials from "./Socials"
 
-const formSchema = z.object({
-  email: z.string().min(2, {message: ''}).max(50),
-})
 
 const Footer = () => {
+  const formSchema = z.object({
+    email: z.string().min(2, {message: ''}).max(50),
+  })
 
   // 1. Define your form.
   const form = useForm<z.infer<typeof formSchema>>({
