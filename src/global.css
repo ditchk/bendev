@@ -379,9 +379,9 @@ nav.scrolled {
 }
 
 .inputBox2 {
-  @apply bg-transparent text-sm text-black p-2 w-44 shadow-inner placeholder:text-xs
+  @apply bg-transparent text-sm text-black p-2 w-44 shadow-inner placeholder:text-xs placeholder:text-white
 }
 
 .inputBox3 {
-  @apply bg-transparent p-2 text-cyan-950 w-44 shadow-inner placeholder:text-xs
+  @apply bg-transparent p-2 text-cyan-950 w-44 shadow-inner placeholder:text-xs placeholder:text-white
 }
