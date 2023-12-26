@@ -62,7 +62,7 @@ const toggleMenu = () => {
             {!menuOpen ? (
               <HiOutlineMenuAlt1 className="text-4xl text-slate-700 bg-transparent rounded-xl p-1 outline outline-1 outline-slate-200 duration-1000" onClick={toggleMenu}/>
             ) : (
-              <MdOutlineClose className="text-4xl text-white bg-cyan-200 bg-opacity-40 rounded-xl p-1 outline outline-1 outline-slate-200 duration-1000" onClick={toggleMenu}/>
+              <MdOutlineClose className="text-4xl text-slate-700 bg-transparent bg-opacity-40 rounded-xl p-1 outline outline-1 outline-slate-200 duration-1000" onClick={toggleMenu}/>
             )}
       {menuOpen && (
        <motion.ul
