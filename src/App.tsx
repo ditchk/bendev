@@ -25,6 +25,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/media" element={<Gallery />} />
             <Route path="/shop" element={<Shop />} />
+            <Route path="/mycv" element={<CarricullumV/>} />
           </Route>
 
           {/* Login routes */}
@@ -36,7 +37,7 @@ function App() {
           
           {/* Protected pages */}
           <Route element={<PrivateRoutes />}>
-            <Route path="/mycv" element={<CarricullumV/>} />
+            
             <Route path="/upload/projects" element={<AddProject/>} />
           </Route>
       </Routes>
