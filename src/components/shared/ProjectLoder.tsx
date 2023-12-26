@@ -6,8 +6,8 @@ const ProjectLoder = () => {
   return (
     <div className='flex flex-1 justify-center items-center min-h-[500px] w-full bg-transparent z-0'>
       <l-tail-chase
-      size="50"
-      speed="1" 
+      size="40"
+      speed="1.5" 
       color="#027d8b"
     ></l-tail-chase>
   </div>
