@@ -25,7 +25,7 @@ const Socials = () => {
       <Link to={'https://twitter.com/BKigoci32396'}>
         <FaXTwitter className="social_icons" />
       </Link>
-      <Link to={'mailto:bensonkigoci@gmail.com?subject=I%20would%20like%20to%20schedule%20a%20zoom%20meeting&body=Hello%20there%20Benson%2C%20bensonkigoci@gmail.com'}>
+      <Link to={'mailto:bensonkigoci@gmail.com?subject=I%20would%20like%20to%20schedule%20a%20zoom%20meeting&body=Hello%20there%20Benson%2C%20'}>
         <SiGmail className="social_icons" />
       </Link>
     </div>
