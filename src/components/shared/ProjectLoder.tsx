@@ -1,16 +1,15 @@
-import { grid } from 'ldrs'
+import { tailChase } from 'ldrs'
 
-grid.register()
-
+tailChase.register()
 
 const ProjectLoder = () => {
   return (
     <div className='flex flex-1 justify-center items-center min-h-[500px] w-full bg-transparent z-0'>
-      <l-grid
+      <l-tail-chase
       size="50"
       speed="1" 
       color="#027d8b"
-    ></l-grid>
+    ></l-tail-chase>
   </div>
   )
 }

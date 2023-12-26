@@ -44,7 +44,7 @@ const { data: projects , isPending: isProjectloading, /*isError: isProjectError*
             {projects?.documents.map((project: Models.Document) => (
               <motion.li 
                 variants={item}
-                className="duration-500"
+                className="duration-1000"
                 >
                   <ProjectContainer project={project} key={project.ProjectName}  />
               </motion.li>
