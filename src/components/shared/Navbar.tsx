@@ -8,26 +8,26 @@ const Navbar = () => {
 
   // changeNavbarColor.ts
 
-  window.onscroll = function (): void {
-    if (document.documentElement.scrollTop > 50) {
-      (document.getElementById("navbar") as HTMLElement).classList.add("scrolled");
-    } else {
-      (document.getElementById("navbar") as HTMLElement).classList.remove("scrolled");
-    }
-  };
-  function toggleNavbar() {
-    var navbar = document.getElementById("navbar");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.style.transition = "0.5s";
-        navbar.style.transform = "translateY(-100%)";
-    } else {
-        navbar.style.transition = "0.5s";
-        navbar.style.transform = "translateY(0%)";
-    }
-}
+  // window.onscroll = function (): void {
+  //   if (document.documentElement.scrollTop > 50) {
+  //     (document.getElementById("navbar") as HTMLElement).classList.add("scrolled");
+  //   } else {
+  //     (document.getElementById("navbar") as HTMLElement).classList.remove("scrolled");
+  //   }
+  // };
+//   function toggleNavbar() {
+//     var navbar = document.getElementById("navbar");
+//     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+//         navbar.style.transition = "0.5s";
+//         navbar.style.transform = "translateY(-100%)";
+//     } else {
+//         navbar.style.transition = "0.5s";
+//         navbar.style.transform = "translateY(0%)";
+//     }
+// }
 
-// When the user scrolls the page, execute the function
-window.onscroll = function() {toggleNavbar()};
+// // When the user scrolls the page, execute the function
+// window.onscroll = function() {toggleNavbar()};
 
   return (
     <nav id='navbar' className="z-50 flex flex-row justify-between gap-16 w-full border-b shadow-sm shadow-slate-600 border-slate-400 animate-in slide-in-from-bottom-10 h-max bg-cyan-950 backdrop-blur top-0 sticky py-2 px-4 bg-opacity-10 duration-1000">
