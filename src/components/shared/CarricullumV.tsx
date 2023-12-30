@@ -15,7 +15,7 @@ const CarricullumV = () => {
 
   return (
     <div className="flex flex-col justify-center items-center md:mx-10  outline outline-1 outline-slate-200 my-10">
-      <div className="flex flex-col outline outline-1 md:rounded-b-full outline-slate-300 m-5 p-5 md:px-24 md:pb-5 mb-10 bg-cyan-950 bg-opacity-10 animate-in slide-in-from-right-40 duration-500">
+      <div className="flex flex-col justify-center items-center outline outline-1 rounded-b-full outline-slate-50 shadow-lg shadow-slate-400 m-5 p-5 md:px-24 md:pb-5 mb-10 bg-cyan-950 bg-opacity-10 animate-in slide-in-from-right-40 duration-500">
         <motion.h1 
             style={{
                 transform: isInView ? "none" : "translateX(-200px)",
@@ -53,12 +53,12 @@ const CarricullumV = () => {
                 <h1 className="font-bold">{'LEARNING HISTORY'}</h1>
                 <ul className="list-disc list-inside">
                     <li>{'2021 - 2022'}
-                        <div className="flex flex-col p-2 md:p-5 bg-white shadow shadow-slate-300 rounded-xl">
+                        <div className="flex flex-col p-2 md:p-5 bg-white shadow-md shadow-slate-300 rounded-xl mt-5">
                             <h1 className="text-li">
                                 {'Certified full Stack Web Developer'}
                             </h1>
                             <p className="md:px-10 text-base font-serif">
-                                {'Having completed a full course at alx africa learning platform. '}
+                                {'Having completed a full computer science course through google certifcation platform (Coursera). '}
                                 {'I can confidently solve and manage an assigned responsibilities in an organization. '} 
                                 {'This course enabled me to jumpstart my career as web developer and has inspred me to lern even ondemand skills like...'}
                                 <ul className="px-10 list-disc list-inside text-violet-800 font-sans font-semibold">
