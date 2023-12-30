@@ -43,7 +43,7 @@ const ServicesBox = ({service} : ServiceBoxProps ) => {
                 </Button>
                 {openWindow && (
                     <div className="container">
-                        <MdClose onClick={handleClick} className="flex absolute justify-end text-end right-0 top-0 text-white text-4xl bg-cyan-950 bg-opacity-40 rounded-bl-xl cursor-pointer" />
+                        <MdClose onClick={handleClick} className="flex absolute hover:bg-red-400 justify-end text-end right-0 top-0 text-white text-3xl bg-cyan-950 bg-opacity-40 rounded-bl-xl cursor-pointer" />
                         <HireRequest />
                     </div>
                 )}

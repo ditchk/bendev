@@ -62,7 +62,7 @@ const HireRequest = () => {
               render={({ field }) => (
                 <FormItem>
                   <FormControl>
-                    <Input placeholder="leave empty if you don't have one yet" {...field} className="inputBox2" />
+                    <Input placeholder="website" {...field} className="inputBox2" />
                   </FormControl>
                   {/* <FormMessage /> */}
                 </FormItem>
@@ -81,10 +81,10 @@ const HireRequest = () => {
               )}
             />
             <div className="flex flex-row justify-start items-start gap-2">
-                <Checkbox id="selection" />
+                <Checkbox id="selection" className="text-green-400 outline-2 outline outline-slate-100 border-transparent" />
                 <label
                 htmlFor="selection"
-                className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 text-white"
                 >
                     Treat with urgency?
                 </label>
