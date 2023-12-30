@@ -47,7 +47,7 @@ const { mutateAsync: createProject, isPending: isLoadingCreate } = useCreateProj
       const isInView = useInView(ref)
   
       useEffect(() => {
-          console.log("Element is in view: ", isInView)
+          
         }, [isInView])
 return (
   <motion.div 
