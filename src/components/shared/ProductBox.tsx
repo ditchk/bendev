@@ -16,7 +16,7 @@ const ProductBox = ({ product } : ProductCardProps) => {
   const isInView = useInView(ref)
 
   useEffect(() => {
-      console.log("Element is in view: ", isInView)
+  
     }, [isInView])
 
   return (

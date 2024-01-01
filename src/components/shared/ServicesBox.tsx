@@ -34,7 +34,7 @@ const ServicesBox = ({service} : ServiceBoxProps ) => {
     className="flex flex-col justify-center items-center p-5">
         <div className="flex flex-col bg-cyan-950 bg-opacity-10 relative outline-1 outline outline-slate-100 p-2 min-h-[450px] rounded-tr-3xl">
             <img src={service.imageUrl} alt={"project Management"} className=" w-auto h-60 rounded-tr-3xl overflow-hidden rounded-bl-3xl"/>
-            <p className=" box-border min-h-[100px] text-sm text-slate-500 font-normal p-2 m-2 outline-sky-50 outline outline-1">
+            <p className=" box-border min-h-[120px] text-sm text-slate-800 font-normal p-2 m-2 border-t border-slate-100 border-l rounded-tl-xl">
                 {service.ProductDescription}
             </p>
             <div className="flex flex-row justify-start items-center">

@@ -15,7 +15,7 @@ const CarricullumV = () => {
 
   return (
     <div className="flex flex-col justify-center items-center md:mx-10  outline outline-1 outline-slate-200 my-10">
-      <div className="flex flex-col justify-center items-center outline outline-1 rounded-b-full outline-slate-50 shadow-lg shadow-slate-400 m-5 p-5 md:px-24 md:pb-5 mb-10 bg-cyan-950 bg-opacity-10 animate-in slide-in-from-right-40 duration-500">
+      <div className="flex flex-col justify-center items-center outline outline-1 rounded-b-full outline-slate-50 shadow-md shadow-slate-400 m-5 p-5 md:px-24 md:pb-5 mb-10 bg-cyan-950 bg-opacity-10 animate-in slide-in-from-right-40 duration-500">
         <motion.h1 
             style={{
                 transform: isInView ? "none" : "translateX(-200px)",
@@ -30,8 +30,8 @@ const CarricullumV = () => {
             </h3>
             <Socials />
         <div className="flex flex-col justify-center items-center">
-            <h1 className="flex flex-row justify-center text-center text-slate-400 gap-2 font-sans font-normal text-xs mb-1"><FaLocationPin className="bg-black p-1 text-white outline outline-2 outline-cyan-400 rounded-md text-center text-2xl" />242 Union st, Rocland MA, United States</h1>
-            <h1 className="flex flex-row justify-center text-center text-slate-400 font-normal gap-2 font-sans text-xs mb-6"><FaPhone className="bg-black p-1 text-white outline outline-2 outline-cyan-400 rounded-md text-center text-2xl" />{'+254712941987'}</h1>
+            <h1 className="flex flex-row justify-center text-center text-cyan-950 gap-2 font-sans font-normal text-xs mb-1"><FaLocationPin className="bg-black p-1 text-white outline outline-2 outline-cyan-400 rounded-md text-center text-2xl" />242 Union st, Rocland MA, United States</h1>
+            <h1 className="flex flex-row justify-center text-center text-cyan-950 font-normal gap-2 font-sans text-xs mb-6"><FaPhone className="bg-black p-1 text-white outline outline-2 outline-cyan-400 rounded-md text-center text-2xl" />{'+254712941987'}</h1>
             
         </div>
       </div>
@@ -53,7 +53,7 @@ const CarricullumV = () => {
                 <h1 className="font-bold">{'LEARNING HISTORY'}</h1>
                 <ul className="list-disc list-inside">
                     <li>{'2021 - 2022'}
-                        <div className="flex flex-col p-2 md:p-5 bg-white shadow-md shadow-slate-300 rounded-xl mt-5">
+                        <div className="flex flex-col p-2 md:p-5 bg-white bg-opacity-30 backdrop-blur-md shadow-md shadow-slate-300 rounded-xl mt-5">
                             <h1 className="text-li">
                                 {'Certified full Stack Web Developer'}
                             </h1>

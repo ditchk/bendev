@@ -182,11 +182,11 @@ nav.scrolled {
 }
 
 .primary_text {
-  @apply text-black text-sm md:text-lg font-sans font-light text-start
+  @apply text-transparent bg-clip-text bg-gradient-to-r from-cyan-800 via-black to-cyan-950 text-sm md:text-lg font-sans font-light md:font-normal text-start
 }
 
 .paragraph_text {
-  @apply text-sm md:text-base font-sans text-start text-black mb-5 font-light
+  @apply text-sm md:text-base font-sans text-start mb-5 font-light md:font-normal text-transparent bg-clip-text bg-gradient-to-r from-cyan-800 via-black to-cyan-950
 }
 
 .titlle_text {
@@ -326,6 +326,10 @@ nav.scrolled {
 
 .text_title {
   @apply text-lg md:text-2xl mb-5 font-bold font-sans border-b-2 border-white text-transparent bg-clip-text bg-gradient-to-l from-blue-700 via-black to-cyan-800
+}
+
+.text_title2 {
+  @apply text-lg md:text-2xl rounded-full font-bold font-sans border-2 p-2 border-slate-100 text-transparent bg-clip-text bg-gradient-to-l from-blue-700 via-black to-cyan-800
 }
 
 .text-li {

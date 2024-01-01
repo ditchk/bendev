@@ -2,13 +2,21 @@ import { useGetAllServices } from "@/lib/Queries/QueriesAndMutations";
 import ServicesBox from "./ServicesBox";
 import ServiceLoader from "./ServiceLoader";
 import { Models } from "appwrite";
+import { ImArrowDown } from "react-icons/im";
 
 const Services = () => {
 
   const { data: products, isPending: isLoading } = useGetAllServices();
 
   return (
-    <div className="flex flex-1 justify-center items-center">
+    <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col justify-center items-center">
+        <h1 className="text_title2">Hire my expertice today!</h1>
+        <div className="bg-slate-100 w-[1px] h-11 rounded-t-full" />
+        <h1 className="text_title2">Get more than just a landing page</h1>
+        <div className="bg-slate-100 w-[1px] h-11 rounded-t-full" />
+        <ImArrowDown  className="text-3xl text-slate-50" />
+      </div>
       {isLoading && !products ? (
         <ServiceLoader />
       ) : (
