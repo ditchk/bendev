@@ -12,9 +12,9 @@ const Services = () => {
     <div className="flex flex-col justify-center items-center">
       <div className="flex flex-col justify-center items-center">
         <h1 className="text_title2">Hire my expertise today!</h1>
-        <div className="bg-slate-100 w-[1px] h-11 rounded-t-full" />
+        <div className="bg-slate-100 w-[1.5px] h-11 rounded-t-full" />
         <h1 className="text_title2">Get more than just a landing page</h1>
-        <div className="bg-slate-100 w-[1px] h-11 rounded-t-full" />
+        <div className="bg-slate-100 w-[1.5px] h-11 rounded-t-full" />
         <ImArrowDown  className="text-3xl text-slate-50" />
       </div>
       {isLoading && !products ? (

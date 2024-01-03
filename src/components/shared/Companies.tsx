@@ -21,7 +21,7 @@ const Companies = () => {
       transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
     }}
     ref={ref}
-      className="flex flex-row justify-center items-center gap-3 md:gap-10">
+      className="flex flex-row justify-center items-center gap-4 md:gap-10">
       <div>
          <img src="/assets/images/Seedbox-Technologies.jpg" alt="" className="rounded-lg outline outline-2 w-8 md:w-10 outline-cyan-200 shadow-md shadow-slate-400" width={40} />
       </div>
