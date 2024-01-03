@@ -5,10 +5,11 @@ import App from './App.tsx'
 import './global.css'
 import { QueryProvider } from './lib/Queries/QueryProvider.tsx'
 
+
 ReactDOM.createRoot(document.getElementById('root')!).render(
     <BrowserRouter>
       <QueryProvider>
-        <App />
+          <App />
       </QueryProvider>
     </BrowserRouter>
   

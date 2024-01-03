@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router-dom'
+import { Route, Routes} from 'react-router-dom'
 
 import Home from './_root/pages/Home'
 import './global.css'
@@ -16,32 +16,32 @@ import AuthLayout from './_auth/AuthLayout'
 
 function App() {
   return (
-    <main className="flex flex-1">
-      <Routes>
-          <Route element={<RootLayout/>}>
-            <Route index element={<Home />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/media" element={<Gallery />} />
-            <Route path="/shop" element={<Shop />} />
-            <Route path="/mycv" element={<CarricullumV/>} />
-          </Route>
+      <main className="flex flex-1">
+        <Routes>
+            <Route element={<RootLayout/>}>
+                <Route index element={<Home />} />
+                <Route path="/projects" element={<Projects />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/media" element={<Gallery />} />
+                <Route path="/shop" element={<Shop />} />
+                <Route path="/mycv" element={<CarricullumV/>} />
+            </Route>
 
-          {/* Login routes */}
-          <Route element={<AuthLayout />}>
-            <Route path="/auth/signin" element={<SigninForm/>} />
-            {/* <Route path="/signup" element={<SignupForm/>} /> */}
-          </Route>
-          
-          
-          {/* Protected pages */}
-          <Route element={<PrivateRoutes />}>
+            {/* Login routes */}
+            <Route element={<AuthLayout />}>
+              <Route path="/auth/signin" element={<SigninForm/>} />
+              {/* <Route path="/signup" element={<SignupForm/>} /> */}
+            </Route>
             
-            <Route path="/upload/projects" element={<AddProject/>} />
-          </Route>
-      </Routes>
-    </main>
+            
+            {/* Protected pages */}
+            <Route element={<PrivateRoutes />}>
+              
+              <Route path="/upload/projects" element={<AddProject/>} />
+            </Route>
+        </Routes>
+      </main> 
   )
 }
 

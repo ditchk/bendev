@@ -5,7 +5,6 @@ import { NavLink, useLocation, } from 'react-router-dom';
 import { HiOutlineMenuAlt1 } from 'react-icons/hi';
 import { motion } from 'framer-motion';
 import { MdOutlineClose } from "react-icons/md";
-// import Socials from './Socials';
 
 
 
@@ -60,13 +59,13 @@ const toggleMenu = () => {
  return (
     <nav className="MobileMenu" onClick={hideNavbar} onScroll={hideNavbar}>
             {!menuOpen ? (
-              <HiOutlineMenuAlt1 className="text-5xl text-slate-700 bg-transparent rounded-xl p-1 outline outline-1 outline-slate-50 transition-transform" onClick={toggleMenu}/>
+              <HiOutlineMenuAlt1 className="text-4xl text-slate-700 bg-transparent rounded-md p-1 outline outline-1 outline-slate-50 transition-transform" onClick={toggleMenu}/>
             ) : (
-              <MdOutlineClose className="text-5xl text-slate-700 bg-transparent bg-opacity-40 rounded-xl p-1 outline outline-1 outline-slate-50 transition-transform" onClick={toggleMenu}/>
+              <MdOutlineClose className="text-4xl text-slate-700 bg-transparent bg-opacity-40 rounded-md p-1 outline outline-1 outline-slate-50 transition-transform" onClick={toggleMenu}/>
             )}
       {menuOpen && (
        <motion.ul
-        animate={{ y: 60 }}
+        animate={{ y: 52 }}
         transition={{ delay: 0 }} 
         className={`menubar ${navbarHidden ? 'navbar hidden' : 'hidden'}`}
        >
@@ -85,8 +84,8 @@ const toggleMenu = () => {
            >
                <NavLink 
                to={link.route}
-               onClick={hideNavbar}
-               className={`w-24 text-white outline outline-1 outline-cyan-200 p-1 text-base text-center font-serif shadow-inner bg-gradient-to-tl from-cyan-900 via-black to-sky-950 shadow-slate-400 rounded-md ${isActive && "outline-double outline-2 outline-cyan-300"}`}>
+               onClick={toggleMenu}
+               className={`w-20 text-white outline outline-1 outline-cyan-50 p-1 text-xs text-center bg-opacity-80 bg-cyan-950 rounded-md ${isActive && "bg-cyan-950 text-sm"}`}>
                  {link.label}
              </NavLink>
            </motion.li>
