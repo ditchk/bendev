@@ -11,7 +11,7 @@ const Skills = () => {
   return (
     <div className="flex flex-col justify-center items-baseline mt-5 mb-5 md:mt-10 w-full">
         <h1 className="mb-5 text-white underline underline-offset-2 text-2xl font-serif">Featured skills</h1>
-      <div className="flex flex-grow gap-2 animate-bounce">
+      <div className="flex flex-grow gap-2">
         <FaReact className="icon_pack" />
         <TbBrandNextjs className="icon_pack" />
         <FaPhp className="icon_pack" />

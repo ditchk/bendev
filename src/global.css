@@ -186,7 +186,7 @@ nav.scrolled {
 }
 
 .paragraph_text {
-  @apply text-sm md:text-base font-sans text-start mb-5 font-light md:font-normal text-transparent bg-clip-text bg-gradient-to-r from-cyan-800 via-black to-cyan-950
+  @apply text-xs box-border md:text-base w-56 md:w-full font-sans outline outline-1 outline-slate-50 rounded-tl-3xl rounded-br-3xl p-5 text-start mb-5 font-light md:font-normal md:text-transparent md:bg-clip-text md:bg-gradient-to-r from-cyan-800 via-black to-cyan-950
 }
 
 .titlle_text {
@@ -197,7 +197,7 @@ nav.scrolled {
 }
 
 .subs_btn {
-  @apply outline outline-1 outline-cyan-300 text-center w-fit  text-slate-600 md:px-8 mt-10 shadow shadow-slate-400 hover:text-white hover:bg-black duration-700 bg-cyan-100
+  @apply outline outline-1 outline-cyan-300 text-center w-fit text-slate-600 md:px-8 mt-10 shadow shadow-slate-400 hover:text-white hover:bg-black duration-700 bg-cyan-100
 }
 
 .submit {

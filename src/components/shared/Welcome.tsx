@@ -18,7 +18,7 @@ const Welcome = () => {
       <ul className="flex flex-1 h-fit w-full">
           {welcomeMessage.map((link: myWelcomeMessage) => {
             return (
-              <div className="flex flex-col md:flex-row w-fit gap-5 md:gap-0 md:p-5 animate-in slide-in-from-up-40 duration-500">
+              <div className="flex flex-col md:flex-row w-fit gap-5 md:gap-0 md:p-5 animate-in slide-in-from-up-40 duration-500 overflow-hidden">
                   <li key={link.title} >
                     <h1 className="tittl_name">{link.title}</h1>
                     <h2 className="primary_text">{link.subTitle}</h2>
@@ -26,16 +26,18 @@ const Welcome = () => {
                         <img 
                           src="/assets/images/homepage.png" 
                           alt="homepage-image" 
-                          width={300}
+                          width={400}
                           loading="lazy"
-                          className="md:hidden object-contain bg-transparent h-fit mb-4 rounded-e-full justify-end rounded-t-full border-b-2 overflow-hidden animate-in slide-in-from-right-24 duration-1000 border-cyan-200"
+                          className="md:hidden object-contain bg-transparent h-fit mb-4 rounded-e-full justify-end rounded-t-full border-b-2 overflow-hidden animate-in slide-in-from-right-24 duration-1000 border-slate-50"
                         /> 
                     </div> 
-                    <h3 className="paragraph_text">I have aquired skills that will help your business scale up in this technology era.Using my expertise i will design stunning landing pages/website and even design your ad campaigns for your business using the latest technology <br /> Click the button below to talk to me (❁´◡`❁)</h3>
-                    <Link className="custom_button p-3 rounded-lg text-white font-serif hidden md:flex" to={'/mycv'}>Continue reading</Link>
-                    <Link to={'/mycv'} className="Linkme2">
-                      LEARN MORE
-                    </Link>
+                    <div className="flex flex-row justify-center items-center mt-5">
+                      <div className="flex w-[25px] md:w-[32px] justify-center rounded-full bg-gradient-to-tl from-cyan-950 via-cyan-500 to-black outline outline-1 outline-white h-[25px]" />
+                      <div className="flex w-9 sm:w-72 justify-center bg-white h-[1px]" />
+                      <h3 className="paragraph_text">I have aquired skills that will help your business scale up in this technology era.Using my expertise i will design stunning landing pages/website and even design your ad campaignsfor your business using the latest technology <br /> Click the button below to talk to me (❁´◡`❁)<Link className="custom_button p-2 mt-5 rounded-lg text-white font-serif flex" to={'/mycv'}>Continue reading</Link></h3>
+                    </div>
+                    
+                   
                       <Skills />
                   </li>
                     <img 
@@ -43,7 +45,7 @@ const Welcome = () => {
                       alt="homepage-image" 
                       // width={400}
                       loading="lazy"
-                      className="hidden md:flex object-contain h-full md:w-[200px] lg:w-[400px] rounded-e-full justify-end rounded-t-full border-b-2 border-slate-300"
+                      className="hidden md:flex object-contain h-full md:w-[500px] lg:w-[500px] rounded-e-full justify-end rounded-t-full border-b-2 border-slate-300"
                     />   
               </div>
             )
