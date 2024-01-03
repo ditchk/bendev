@@ -26,12 +26,12 @@ const Welcome = () => {
                         <img 
                           src="/assets/images/homepage.png" 
                           alt="homepage-image" 
-                          width={400}
+                          width={300}
                           loading="lazy"
                           className="md:hidden object-contain bg-transparent h-fit mb-4 rounded-e-full justify-end rounded-t-full border-b-2 overflow-hidden animate-in slide-in-from-right-24 duration-1000 border-cyan-200"
                         /> 
                     </div> 
-                    <h3 className="paragraph_text">I have aquired skills that will help your business scale up in this technology era.Using my expertise i will design stunning landing pages/website and even design your ad campaigns <br /> for your business using the latest technology <br /> Click the button below to talk to me (❁´◡`❁)</h3>
+                    <h3 className="paragraph_text">I have aquired skills that will help your business scale up in this technology era.Using my expertise i will design stunning landing pages/website and even design your ad campaigns for your business using the latest technology <br /> Click the button below to talk to me (❁´◡`❁)</h3>
                     <Link className="custom_button p-3 rounded-lg text-white font-serif hidden md:flex" to={'/mycv'}>Continue reading</Link>
                     <Link to={'/mycv'} className="Linkme2">
                       LEARN MORE

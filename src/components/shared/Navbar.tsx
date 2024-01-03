@@ -30,12 +30,12 @@ const Navbar = () => {
 // window.onscroll = function() {toggleNavbar()};
 
   return (
-    <nav id='navbar' className="z-50 flex flex-row justify-between gap-16 w-full border-b shadow-sm shadow-slate-600 border-slate-400 animate-in slide-in-from-bottom-10 h-max bg-cyan-950 backdrop-blur top-0 sticky py-2 px-5 bg-opacity-10 duration-1000">
+    <nav id='navbar' className="z-50 flex flex-row justify-between gap-16 w-full border-b shadow-sm shadow-slate-600 border-slate-400 animate-in slide-in-from-bottom-10 h-max bg-cyan-950 backdrop-blur top-0 sticky py-1 px-3 bg-opacity-10 duration-1000">
       <Link 
       to={'/'}
       className="flex flex-row justify-center items-center gap-2" 
       >
-        <img src="/assets/images/logo.png" alt="" width={50} className='ml-3'/>
+        <img src="/assets/images/logo.png" alt="" width={50} className='ml-1'/>
         <h1 className="text-center text-lg md:text-xl font-extrabold font-serif text-transparent bg-clip-text bg-gradient-to-br from-cyan-500 via-black to-cyan-950">BENSWORKSPACE</h1>
       </Link>
       <div className="hidden md:flex flex-row justify-center items-center">
