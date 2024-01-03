@@ -1,9 +1,9 @@
-import { motion, useInView } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { NavLink,useLocation } from 'react-router-dom';
 
 import { MyNavLink } from "@/types";
 import { sideBarLinks } from "@/constants";
-import { useEffect, useRef, useState } from 'react';
+import { useState } from 'react';
 import { TbLayoutSidebarLeftExpandFilled, TbLayoutSidebarRightExpandFilled } from 'react-icons/tb';
 
 const Sidebar = () => {
