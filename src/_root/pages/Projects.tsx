@@ -35,7 +35,7 @@ const { data: projects , isPending: isProjectloading, /*isError: isProjectError*
           <ProjectLoder />
         ) : (
           <motion.ul 
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 w-full"
+            className="grid  sp:grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3 w-full"
             variants={container}
             initial="hidden"
             whileInView="animate"

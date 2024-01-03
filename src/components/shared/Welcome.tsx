@@ -32,8 +32,8 @@ const Welcome = () => {
                         /> 
                     </div> 
                     <div className="flex flex-row justify-center items-center mt-5">
-                      <div className="flex w-[25px] md:w-[32px] justify-center rounded-full bg-gradient-to-tl from-cyan-950 via-cyan-500 to-black outline outline-1 outline-white h-[25px]" />
-                      <div className="flex w-9 sm:w-72 justify-center bg-white h-[1px]" />
+                      <div className="flex w-[25px] md:w-[32px] justify-center rounded-full bg-gradient-to-tl from-cyan-950 to-cyan-400 outline outline-1 outline-white h-[25px]" />
+                      <div className="flex w-20 sm:w-72 justify-center bg-white h-[1px]" />
                       <h3 className="paragraph_text">I have aquired skills that will help your business scale up in this technology era.Using my expertise i will design stunning landing pages/website and even design your ad campaignsfor your business using the latest technology <br /> Click the button below to talk to me (❁´◡`❁)<Link className="custom_button p-2 mt-5 rounded-lg text-white font-serif flex" to={'/mycv'}>Continue reading</Link></h3>
                     </div>
                     

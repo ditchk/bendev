@@ -107,7 +107,7 @@
 }
 
 .custom_Homecontainer {
-  @apply gap-5 h-full items-center mx-2 pt-2 
+  @apply gap-5 h-full items-center mx-2 pt-2 md:px-5
 }
 
 .custom_container3 {
@@ -137,7 +137,7 @@
 }
 
 .menubar {
-  @apply grid grid-cols-4 pt-2 gap-2 justify-start items-start border-t border-cyan-700 fixed  
+  @apply grid grid-cols-3 pt-2 gap-2 justify-start items-start border-t border-cyan-700 fixed  
   w-full h-fit rounded-b-xl drop-shadow-xl shadow-lg p-2
   shadow-slate-500 outline outline-1 outline-cyan-50 right-0 left-0 bg-cyan-950 bg-opacity-60 backdrop-blur-md
  }
@@ -164,7 +164,7 @@ nav.scrolled {
 }
 
 .Linkme3 {
-  @apply flex bg-gradient-to-tl w-fit from-sky-900 text-xs via-black outline outline-1 outline-white to-cyan-600 text-white text-center rounded-md h-12 p-4 mb-24
+  @apply flex bg-gradient-to-tl w-fit from-sky-900 text-xs via-black outline outline-1 outline-white to-cyan-600 text-white text-center rounded-md h-12 p-4
 }
 
 
@@ -282,11 +282,11 @@ nav.scrolled {
 }
 
 .primary-projecttext {
-  @apply box-border min-h-[60px] text-sm md:text-[12px] font-bold font-sans text-transparent bg-clip-text bg-gradient-to-l from-cyan-900 via-neutral-700 to-teal-900
+  @apply box-border min-h-[40px] text-xs md:text-sm md:text-[12px] font-bold font-sans text-transparent bg-clip-text bg-gradient-to-l text-ellipsis overflow-hidden from-cyan-900 via-neutral-700 to-teal-900
 }
 
 .project_paragraph {
-  @apply flex flex-col justify-between gap-2 box-border md:min-h-[150px] text-sm md:text-sm font-serif text-slate-800 p-2 my-1 rounded-tl-2xl rounded-br-2xl bg-cyan-950 bg-opacity-10 outline outline-1 outline-cyan-200
+  @apply flex flex-col justify-between gap-2 box-border sm:min-h-[180px] text-sm md:text-sm font-serif text-slate-800 p-2 my-1 rounded-tl-2xl rounded-br-2xl bg-cyan-950 bg-opacity-10 outline outline-1 outline-cyan-200
 }
 
 .custom_button {
@@ -329,7 +329,7 @@ nav.scrolled {
 }
 
 .text_title2 {
-  @apply text-lg md:text-2xl rounded-full font-bold font-sans border-2 p-2 border-slate-100 text-transparent bg-clip-text bg-gradient-to-l from-blue-700 via-black to-cyan-800
+  @apply text-lg md:text-xl rounded-full font-bold font-sans border-2 p-2 border-slate-100 text-transparent bg-clip-text bg-gradient-to-l from-blue-700 via-black to-cyan-800
 }
 
 .text-li {
@@ -379,13 +379,13 @@ nav.scrolled {
 }
 
 .container {
-  @apply bg-white bg-opacity-70 backdrop-blur-lg shadow-xl shadow-slate-300 flex justify-center p-10 rounded-tr-xl outline outline-1 outline-slate-100 right-0 left-0 mb-[21rem] md:mb-80 h-full absolute z-40 w-full overflow-scroll custom-scrollbar animate-in slide-in-from-left-20 ease-in duration-500
+  @apply bg-white bg-opacity-70 backdrop-blur-lg shadow-md shadow-cyan-700 flex justify-center items-start p-10 rounded-tr-xl outline outline-1 outline-slate-100 right-0 left-0 h-full top-0 absolute z-40 w-full animate-in fade-in-40 ease-in duration-500
 }
 
 .inputBox2 {
-  @apply bg-transparent text-sm text-black p-2 w-44 shadow-inner placeholder:text-xs placeholder:text-white
+  @apply bg-white text-sm text-black p-2 w-56 shadow-inner placeholder:text-xs placeholder:text-gray-800
 }
 
 .inputBox3 {
-  @apply bg-transparent p-2 text-cyan-950 w-44 shadow-inner placeholder:text-xs placeholder:text-white
+  @apply bg-white p-2 text-cyan-950 w-56 h-20 shadow-inner placeholder:text-xs placeholder:text-gray-800
 }

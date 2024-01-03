@@ -43,7 +43,7 @@ const HireRequest = () => {
   return (
     <div className="hireBox">
       <Form {...form}>
-          <form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-col justify-start items-center md:justify-center md:items-center gap-2 md:gap-3 space-y-3 w-full p-8">
+          <form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-col justify-start items-center md:justify-center md:items-center gap-2 md:gap-3 space-y-3 w-full p-5">
           <FormField
               control={form.control}
               name="Email"
