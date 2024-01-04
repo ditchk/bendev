@@ -9,13 +9,11 @@ const RootLayout = () => {
   return (
     <div className="w-full h-full md:flex flex-col slide-down-fade">
       <Navbar />
-      <section className="flex flex-row h-full overflow-scroll custom-scrollbar scroll-smooth">
+      <section className="flex flex-col h-full">
         <Sidebar />
         <Outlet />
       </section>
-      <section>
         <Footer />
-      </section> 
     </div>
   )
 }

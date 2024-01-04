@@ -65,7 +65,7 @@ const toggleMenu = () => {
             )}
       {menuOpen && (
        <motion.ul
-        animate={{ y: 50 }}
+        animate={{ y: 53 }}
         transition={{ delay: 0 }} 
         className={`menubar ${navbarHidden ? 'navbar hidden' : 'hidden'}`}
        >
