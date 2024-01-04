@@ -1,12 +1,9 @@
 import { motion } from 'framer-motion';
 import { NavLink,useLocation } from 'react-router-dom';
-
 import { MyNavLink } from "@/types";
 import { sideBarLinks } from "@/constants";
 import { useState } from 'react';
-import { TbLayoutSidebarRightExpandFilled } from 'react-icons/tb';
 import { CgMenuGridR } from "react-icons/cg";
-import Animante from './Animante';
 import { MdClose } from 'react-icons/md';
 
 
