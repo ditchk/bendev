@@ -37,7 +37,6 @@ function App() {
             
             {/* Protected pages */}
             <Route element={<PrivateRoutes />}>
-              
               <Route path="/upload/projects" element={<AddProject/>} />
             </Route>
         </Routes>

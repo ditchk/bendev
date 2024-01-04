@@ -172,7 +172,7 @@ nav.scrolled {
   @apply bg-transparent shadow shadow-slate-400 border border-cyan-300 font-serif font-medium text-white hover:bg-cyan-100 hover:text-black h-12 duration-1000
 }
 .link_side {
-  @apply justify-center items-center bg-white rounded-md outline outline-1 outline-white
+  @apply justify-center items-center bg-white rounded-md
 }
 .social_icons {
   @apply text-3xl p-2 rounded-md cursor-pointer bg-gradient-to-l from-cyan-300 via-neutral-50 to-teal-100 text-cyan-600 shadow-inner outline outline-2 outline-cyan-500 shadow-black duration-700
