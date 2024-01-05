@@ -15,7 +15,7 @@ const Welcome = () => {
       ease: [0, 0.71, 0.2, 1.01]
     }}
       className="Home_Container">
-      <ul className="flex flex-1 h-fit w-full">
+      <ul className="flex h-fit w-fit">
           {welcomeMessage.map((link: myWelcomeMessage) => {
             return (
               <div className="flex flex-col md:flex-row w-fit gap-5 md:gap-0 md:p-5 animate-in slide-in-from-up-40 duration-500 overflow-hidden">

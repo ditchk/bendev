@@ -8,7 +8,7 @@ const Experience = () => {
   const { data: products, isPending: isProductsLoading } = useGetRecentProducts();
 
   return (
-    <section 
+    <div 
       className="flex flex-col justify-center items-center my-10">
       <div className="flex felx-1 justify-start md:justify-center items-start md:items-center h-fit rounded-t-xl">
        {isProductsLoading && !products ? (
@@ -26,7 +26,7 @@ const Experience = () => {
         </div>
        )}
     </div>
-  </section>
+  </div>
   )
 }
 
