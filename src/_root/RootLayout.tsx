@@ -13,7 +13,7 @@ const RootLayout = () => {
         <Sidebar />
         <Outlet />
       </section>
-        <Footer />
+      <Footer />
     </div>
   )
 }

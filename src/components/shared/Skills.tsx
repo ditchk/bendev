@@ -18,8 +18,8 @@ const Skills = () => {
         <SiFramer className="icon_pack" />
         <BsDatabaseSlash className="icon_pack" />
         <SiBlender className="icon_pack" />
-        <SiThreedotjs className="icon_pack" />
-        <SiPrisma className="icon_pack" />
+        {/* <SiThreedotjs className="icon_pack" />
+        <SiPrisma className="icon_pack" /> */}
       </div>
     </div>
   )
