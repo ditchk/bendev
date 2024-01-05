@@ -2,7 +2,7 @@ import { FaReact } from "react-icons/fa";
 import { TbBrandNextjs } from "react-icons/tb";
 import { FaPhp } from "react-icons/fa6";
 import { BsDatabaseSlash } from "react-icons/bs";
-import { SiBlender, SiThreedotjs, SiFramer, SiPrisma } from "react-icons/si";
+import { SiBlender, SiFramer} from "react-icons/si";
 
 
 
