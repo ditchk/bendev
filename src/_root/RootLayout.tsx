@@ -13,7 +13,9 @@ const RootLayout = () => {
         <Sidebar />
         <Outlet />
       </section>
-      <Footer />
+      <section className="flex flex-1 relative">
+        <Footer />
+      </section>
     </div>
   )
 }
