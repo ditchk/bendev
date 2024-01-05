@@ -164,7 +164,7 @@ nav.scrolled {
 }
 
 .Linkme3 {
-  @apply flex bg-gradient-to-tl w-fit from-sky-900 text-xs via-black outline outline-1 outline-white to-cyan-600 text-white text-center rounded-md h-12 p-4
+  @apply flex bg-gradient-to-tl w-fit from-sky-900 text-xs via-black outline outline-1 outline-white to-cyan-600 text-white text-center rounded-md h-9 p-2
 }
 
 
