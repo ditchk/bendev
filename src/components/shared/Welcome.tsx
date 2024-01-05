@@ -21,7 +21,7 @@ const Welcome = () => {
               <div className="flex flex-col md:flex-row w-fit gap-5 md:gap-0 md:p-5 animate-in slide-in-from-up-40 duration-500 overflow-hidden">
                   <li key={link.title} >
                     <h1 className="tittl_name">{link.title}</h1>
-                    <div className="flex w-full justify-center">
+                    <div className="flex w-fit justify-center">
                         <img 
                           src="/assets/images/homepage.png" 
                           alt="homepage-image" 
