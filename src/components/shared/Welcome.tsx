@@ -25,7 +25,7 @@ const Welcome = () => {
                         <img 
                           src="/assets/images/homepage.png" 
                           alt="homepage-image" 
-                          width={300}
+                          width={250}
                           loading="lazy"
                           className="md:hidden object-contain bg-transparent h-fit rounded-e-full justify-end rounded-t-full border-b-2 overflow-hidden animate-in slide-in-from-right-24 duration-1000 border-slate-50"
                         />
