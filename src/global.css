@@ -186,7 +186,7 @@ nav.scrolled {
 }
 
 .paragraph_text {
-  @apply text-xs box-border md:text-base w-full md:w-full font-sans outline outline-1 outline-slate-50 bg-cyan-950 bg-opacity-10 rounded-tl-3xl rounded-br-3xl p-5 text-start mb-5 font-light md:font-normal
+  @apply text-xs box-border md:text-base w-fit sm:w-full md:w-full font-sans outline outline-1 outline-slate-50 bg-cyan-950 bg-opacity-10 rounded-tl-3xl rounded-br-3xl p-5 text-start mb-5 font-light md:font-normal
 }
 
 .titlle_text {

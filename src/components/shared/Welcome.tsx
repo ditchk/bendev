@@ -25,7 +25,7 @@ const Welcome = () => {
                         <img 
                           src="/assets/images/homepage.png" 
                           alt="homepage-image" 
-                          width={250}
+                          width={300}
                           loading="lazy"
                           className="md:hidden object-contain bg-transparent h-fit rounded-e-full justify-end rounded-t-full border-b-2 overflow-hidden animate-in slide-in-from-right-24 duration-1000 border-slate-50"
                         />
@@ -33,7 +33,7 @@ const Welcome = () => {
                       <div className="flex flex-row justify-center items-center mt-5">
                         <h2 className="paragraph_text">{link.subTitle}</h2>
                         <div className="flex w-20 sm:w-72  shadow-sm shadow-slate-400 justify-center bg-white h-[1px]" />
-                      <div className="flex w-[25px]  shadow-sm shadow-slate-400 md:w-[35px] justify-center rounded-full bg-gradient-to-tl from-cyan-950 to-cyan-200 outline outline-1 outline-white h-[20px] md:h-[25px]" />
+                        <div className="flex w-[25px]  shadow-sm shadow-slate-400 md:w-[35px] justify-center rounded-full bg-gradient-to-tl from-cyan-950 to-cyan-200 outline outline-1 outline-white h-[20px] md:h-[25px]" />
                       </div>
                     
                     
