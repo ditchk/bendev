@@ -85,7 +85,7 @@ export const contactInformation = [
     },
     {
         imageURL: '/assets/images/gmail.png',
-        content: 'bensonkigoci@gmail.com'  
+        content: 'benkigochi@bensworkspace.app'  
     },
     {
         imageURL: '/assets/images/outgoing-call.png',
