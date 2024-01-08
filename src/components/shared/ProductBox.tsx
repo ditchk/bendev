@@ -20,13 +20,7 @@ const ProductBox = ({ product } : ProductCardProps) => {
     }, [isInView])
 
   return (
-    <motion.section 
-    style={{
-      transform: isInView ? "none" : "translateY(50px)",
-      opacity: isInView ? 1 : 0,
-      transition: "all 0.2s cubic-bezier(0.1, 0.1, 0.1, 1) 0.3s"
-    }}
-    ref={ref}
+    <motion.section
       className="flex flex-col justify-center items-center my-5">
       <div className="flex md:flex-1 justify-start md:justify-center items-start md:items-center h-fit p-3 rounded-t-xl">
         <div className="experience-container">

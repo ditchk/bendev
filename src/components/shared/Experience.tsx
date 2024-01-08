@@ -9,7 +9,7 @@ const Experience = () => {
 
   return (
     <div 
-      className="flex flex-col justify-center items-center my-10">
+      className="flex flex-col justify-center items-center my-10 shadow-sm shadow-cyan-600">
       <div className="flex felx-1 justify-start md:justify-center items-start md:items-center h-fit rounded-t-xl">
        {isProductsLoading && !products ? (
         <ProductLoader />

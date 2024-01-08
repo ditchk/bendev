@@ -2,7 +2,7 @@ import { FaReact } from "react-icons/fa";
 import { TbBrandNextjs } from "react-icons/tb";
 import { FaPhp } from "react-icons/fa6";
 import { BsDatabaseSlash } from "react-icons/bs";
-import { SiBlender, SiFramer} from "react-icons/si";
+import { SiBlender, SiFramer, SiPrisma, SiThreedotjs} from "react-icons/si";
 
 
 
@@ -18,8 +18,8 @@ const Skills = () => {
         <SiFramer className="icon_pack" />
         <BsDatabaseSlash className="icon_pack" />
         <SiBlender className="icon_pack" />
-        {/* <SiThreedotjs className="icon_pack" />
-        <SiPrisma className="icon_pack" /> */}
+        <SiThreedotjs className="icon_pack" />
+        <SiPrisma className="icon_pack" />
       </div>
     </div>
   )

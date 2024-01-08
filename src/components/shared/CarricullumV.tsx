@@ -15,7 +15,7 @@ const CarricullumV = () => {
 
   return (
     <div className="flex flex-col justify-center items-center md:mx-10  outline outline-1 outline-slate-200 my-10">
-      <div className="flex flex-col justify-center items-center outline outline-1 rounded-b-full outline-slate-50 shadow-md shadow-slate-400 m-5 p-5 md:px-24 md:pb-5 mb-10 bg-cyan-950 bg-opacity-10 animate-in slide-in-from-right-40 duration-500">
+      <div className="flex flex-col justify-center items-center outline outline-1 rounded-b-full outline-slate-50 shadow-sm shadow-cyan-600 m-5 p-5 md:px-24 md:pb-5 mb-10 bg-cyan-950 bg-opacity-10 animate-in slide-in-from-right-40 duration-500">
         <motion.h1 
             style={{
                 transform: isInView ? "none" : "translateX(-200px)",
