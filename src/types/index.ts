@@ -57,3 +57,16 @@ export type IEmailData = {
   subject: string;
   text: string;
 }
+
+export type ToastProps = {
+  type: 'success' | 'error' | 'warning' | 'info' | 'dark';
+  message: string;
+  position?: string;
+  autoClose?: boolean;
+  hideProgressBar?: boolean;
+  closeOnClick?: boolean;
+  pauseOnHover?: boolean;
+  draggable?: boolean;
+  progress?: number;
+  isPaused?: boolean;
+ }

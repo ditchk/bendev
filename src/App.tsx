@@ -16,7 +16,7 @@ import AuthLayout from './_auth/AuthLayout'
 
 function App() {
   return (
-      <main className="flex flex-1">
+      <main className="flex flex-1 relative">
         <Routes>
             <Route element={<RootLayout/>}>
                 <Route index element={<Home />} />
