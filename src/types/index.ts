@@ -50,3 +50,10 @@ export type MyAboutLinks = {
   skill: string;
   info: string;
 }
+
+export type IEmailData = {
+  from: string;
+  to: string;
+  subject: string;
+  text: string;
+}

@@ -1,7 +1,8 @@
 import { myConfig, storage } from "./config";
 import { ID, Query } from "appwrite";
 import { databases, account, } from "./config";
-import { NewUser, myNewProject } from "@/types";
+import { IEmailData, NewUser, myNewProject } from "@/types";
+import axios from 'axios';
 
 export async function CreateUserAccount(user: NewUser) {
   try {
@@ -217,3 +218,21 @@ export async function getCurrentUser() {
       console.log(error)
   }
 }
+
+export const sendNewsletterEmail = async (emailData: IEmailData) => {
+  try {
+    const response = await axios.post(
+      'https://api.mailerlite.com/api/v2/subscribers/newsletter',
+      emailData,
+      {
+        headers: {
+          'X-MailerLite-ApiKey': 'YOUR_API_KEY',
+          'Content-Type': 'application/json',
+        },
+      }
+    );
+    console.log(response.data);
+  } catch (error) {
+    console.error(error);
+  }
+};

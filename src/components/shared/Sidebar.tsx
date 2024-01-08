@@ -36,10 +36,10 @@ const Sidebar = () => {
          {sideBarLinks.map((link: MyNavLink) => {
          const isActive = pathname === link.route;
          return (
-           <li key={link.label} className="link_side">
+           <li key={link.label} className="link_side" onClick={toggleMenu}>
                <NavLink 
                to={link.route}
-               className={`flex flex-row gap-3 p-3 text-xs text-white hover:bg-slate-200 bg-gradient-to-t from-cyan-950 to-cyan-200 rounded-md w-full duration-1000 ${isActive && "bg-cyan-200"}`}>
+               className={`flex flex-row gap-3 p-1 text-xs text-center text-white hover:bg-slate-200 bg-gradient-to-l from-black to-slate-400 shadow-xl outline outline-1 outline-white rounded-md w-full duration-1000 ${isActive && "shadow shadow-cyan-200"}`}>
                  {link.label}
              </NavLink>
            </li>

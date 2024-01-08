@@ -1,10 +1,10 @@
-import Aboutme from "@/components/shared/Aboutme"
+import CarricullumV from "@/components/shared/CarricullumV"
 
 const About = () => {
   return (
     <div className="default_container">
       <div className="custom_container h-full">
-        <Aboutme />
+        <CarricullumV />
       </div>
     </div>
   )
