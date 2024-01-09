@@ -107,7 +107,7 @@
 }
 
 .custom_Homecontainer {
-  @apply gap-5 h-full w-fit sm:w-full items-center pt-2 md:px-5
+  @apply gap-5 h-full w-fit sm:w-full items-center pt-2 px-2 md:px-5
 }
 
 .custom_container3 {
@@ -124,7 +124,7 @@
 }
 
 .Home_Container {
-  @apply flex justify-center items-center h-fit md:p-2 w-full p-5 mb-5 md:mb-1 bg-cyan-950 bg-opacity-10 rounded-md outline outline-1 outline-slate-200
+  @apply flex flex-1 justify-center items-center p-3 h-fit w-full bg-cyan-950 bg-opacity-10 rounded-md outline outline-1 outline-slate-200
 }
 
 .largeTexts {

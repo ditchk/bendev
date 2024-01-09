@@ -13,6 +13,7 @@ import PrivateRoutes from './lib/utils/PrivateRoutes'
 import SigninForm from './_auth/forms/SigninForm'
 import AuthLayout from './_auth/AuthLayout'
 import Blogposts from './_root/pages/Blogposts'
+import Privacypoliy from './components/shared/Privacypoliy'
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
                 <Route path="/blogs" element={<Blogposts />} />
                 <Route path="/shop" element={<Shop />} />
                 <Route path="/mycv" element={<CarricullumV/>} />
+                <Route path="/privacy-policy" element={<Privacypoliy />} />
             </Route>
 
             {/* Login routes */}
