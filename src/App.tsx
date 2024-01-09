@@ -7,12 +7,12 @@ import Projects from './_root/pages/Projects'
 import Contact from './_root/pages/Contact'
 import Shop from './_root/pages/Shop'
 import About from './_root/pages/About'
-import Gallery from './_root/pages/Gallery'
 import AddProject from './_root/pages/AddProject'
 import CarricullumV from './components/shared/CarricullumV'
 import PrivateRoutes from './lib/utils/PrivateRoutes'
 import SigninForm from './_auth/forms/SigninForm'
 import AuthLayout from './_auth/AuthLayout'
+import Blogposts from './_root/pages/Blogposts'
 
 function App() {
   return (
@@ -23,7 +23,7 @@ function App() {
                 <Route path="/projects" element={<Projects />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/about" element={<About />} />
-                <Route path="/media" element={<Gallery />} />
+                <Route path="/blogs" element={<Blogposts />} />
                 <Route path="/shop" element={<Shop />} />
                 <Route path="/mycv" element={<CarricullumV/>} />
             </Route>

@@ -1,6 +1,6 @@
 import ComingSoon from "@/components/shared/ComingSoon"
 
-const Gallery = () => {
+const Blogposts = () => {
   return (
     <div className="default_container">
       <div className="custom_container h-screen">
@@ -10,5 +10,5 @@ const Gallery = () => {
   )
 }
 
-export default Gallery
+export default Blogposts
 

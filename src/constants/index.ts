@@ -16,8 +16,8 @@ export const sideBarLinks = [
         route: '/about'
     },
     {
-        label: 'Gallery',
-        route: '/media'
+        label: 'Blogs',
+        route: '/blogs'
     },
     {
         label:'shop',
