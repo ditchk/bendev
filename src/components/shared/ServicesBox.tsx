@@ -26,9 +26,9 @@ const ServicesBox = ({service} : ServiceBoxProps ) => {
   return (
     <motion.div 
     style={{
-        transform: isInView ? "none" : "translateY(50px)",
+        transform: isInView ? "none" : "translateY(10px)",
         opacity: isInView ? 1 : 0,
-        transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.65, 1) 0.3s"
+        transition: "all 0.1s cubic-bezier(0.17, 0.55, 0.65, 1) 0.3s"
       }}
       ref={ref}
     className="flex flex-col justify-center h-full w-full items-center p-5 outline outline-1 outline-slate-100">

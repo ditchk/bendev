@@ -14,7 +14,7 @@ const Experience = () => {
        {isProductsLoading && !products ? (
         <ProductLoader />
        ) : (
-        <div className="flex flex-col justify-center items-center bg-cyan-950 bg-opacity-10 rounded-lg">
+        <div className="flex flex-col justify-center items-center w-fit bg-cyan-950 bg-opacity-10 rounded-lg">
           <h1 className="text_title pt-10">DEDICATED SERVICE</h1>
           <ul className="product_cooursel">
           {products?.documents.map((product: Models.Document) => (

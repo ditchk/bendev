@@ -23,7 +23,7 @@ const Sidebar = () => {
      };
 
   return (
-    <nav className="hidden md:flex flex-col md:justify-center items-center bg-cyan-950 bg-opacity-70 mt-3 px-2 gap-5 py-2 h-fit w-fit outline outline-1 outline-white rounded-r-lg fixed z-50 animate-in slide-in-from-left-24">
+    <nav className="hidden md:flex flex-col md:justify-center items-center bg-cyan-950 bg-opacity-70 mt-24 px-2 gap-5 py-2 h-fit w-fit outline outline-1 outline-white rounded-r-lg fixed z-50 animate-in slide-in-from-left-24">
        
        {!menuOpen ? (
         <MdClose className="flex justify-end left-10 w-fit bg-gradient-to-t from-red-950 to-cyan-200 p-1 rounded-3xl cursor-pointer text-xl" onClick={toggleMenu} />

@@ -6,6 +6,7 @@ export type MyNavLink = {
 export type myWelcomeMessage = {
   title: string;
   subTitle?: string;
+  slogan:string
 };
 
 export type myFooterLinks = {

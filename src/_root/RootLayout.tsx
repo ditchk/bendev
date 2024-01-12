@@ -7,10 +7,10 @@ import { Outlet } from 'react-router'
 
 const RootLayout = () => {
   return (
-    <div className="w-full h-full md:flex flex-col slide-down-fade">
+    <div className="flex w-full h-full md:flex flex-col slide-down-fade">
       <Navbar />
+      <Sidebar />
       <section className="flex flex-col h-full">
-        <Sidebar />
         <Outlet />
       </section>
       <section className="flex flex-1 relative">

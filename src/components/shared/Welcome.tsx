@@ -6,8 +6,7 @@ import { Link } from "react-router-dom"
 const Welcome = () => {
   return (
     <div
-      className="Home_Container shadow-sm shadow-cyan-500">
-      <div className="flex flex-1">
+      className="flex flex-1 m-2 p-1 bg-cyan-950 bg-opacity-10 rounded-md shadow-sm shadow-cyan-500">
         <ul className="flex h-fit w-fit">
             {welcomeMessage.map((link: myWelcomeMessage) => {
               return (
@@ -23,18 +22,21 @@ const Welcome = () => {
                             className="md:hidden object-contain bg-transparent h-fit rounded-e-full justify-end rounded-t-full border-b-2 overflow-hidden animate-in slide-in-from-right-24 duration-1000 border-slate-50"
                           />
                       </div> 
-                        <div className="flex flex-row justify-center items-center mt-5 animate-in slide-in-from-bottom-20 duration-700 ">
+                        <div className="flex flex-row justify-center items-center mt-5 animate-in slide-in-from-bottom-20 duration-700 m-1">
                           <h2 className="paragraph_text">{link.subTitle}</h2>
-                          <div className="flex w-14 sm:w-72 shadow-sm shadow-cyan-300 justify-center bg-white h-[1px]" />
-                          <div className="flex w-[25px]  shadow-sm shadow-cyan-300 md:w-[35px] justify-center rounded-full bg-gradient-to-tl from-cyan-950 to-cyan-200 outline outline-1 outline-white h-[20px] md:h-[25px]" />
+                          <div className="flex w-14 sm:w-72 justify-center bg-slate-300 h-[2px]" />
+                          <div className="flex w-[25px] md:w-[35px] justify-center rounded-full bg-transparent outline outline-2 outline-slate-300 shadow-md shadow-slate-500 h-[20px] md:h-[25px]" />
                         </div>
-                      <div className="flex flex-row justify-center items-center mt-5 animate-in slide-in-from-bottom-40 duration-700">
-                        <div className="flex w-[25px]  shadow-sm shadow-slate-400 md:w-[35px] justify-center rounded-full bg-gradient-to-tl from-cyan-950 to-cyan-200 outline outline-1 outline-white h-[20px] md:h-[25px]" />
-                        <div className="flex w-14 sm:w-72  shadow-sm shadow-slate-400 justify-center bg-white h-[1px]" />
-                        <h3 className="paragraph_text shadow-sm shadow-slate-400 ">I have aquired skills that will help your business scale up in this technology era.Using my expertise i will design stunning landing pages/website and even design your ad campaignsfor your business using the latest technology <br /> Click the button below to talk to me (❁´◡`❁)<Link className="custom_button p-2 mt-5 rounded-lg text-white font-serif flex" to={'/mycv'}>Continue reading</Link></h3>
+                      <div className="flex flex-row justify-center items-center mt-5 animate-in slide-in-from-bottom-40 duration-700 m-1">
+                        <div className="flex w-[25px] md:w-[35px] justify-center rounded-full bg-transparent outline outline-2 outline-slate-300 shadow-md shadow-slate-500 h-[20px] md:h-[25px]" />
+                        <div className="flex w-14 sm:w-72  shadow-sm shadow-slate-400 justify-center bg-slate-300 h-[2px]" />
+                        <h3 className="paragraph_text shadow-sm shadow-slate-400 ">I have aquired skills that will help your business scale up in this technology era.Using my expertise i will design stunning landing pages/website and even design your ad campaignsfor your business using the latest technology <br /> Click the button below to talk to me (❁´◡`❁)</h3>
                       </div>
-                      
-                    
+                      <div className="flex flex-row justify-center items-center mt-5 animate-in slide-in-from-bottom-20 duration-700 m-1">
+                          <h2 className="paragraph_text">{link.slogan}<Link className="custom_button p-2 mt-5 rounded-lg text-white font-serif flex" to={'/mycv'}>Continue reading</Link></h2>
+                          <div className="flex w-14 sm:w-72 justify-center bg-slate-300 h-[2px]" />
+                          <div className="flex w-[25px] md:w-[35px] justify-center rounded-full bg-transparent outline outline-2 outline-slate-300 shadow-md shadow-slate-500 h-[20px] md:h-[25px]" />
+                        </div>
                         <Skills />
                     </li>
                       <img 
@@ -48,7 +50,6 @@ const Welcome = () => {
               )
             })}
           </ul>
-      </div>
     </div>
   )
 }

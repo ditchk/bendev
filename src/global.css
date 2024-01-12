@@ -120,7 +120,7 @@
 }
 
 .default_Container {
-  @apply flex flex-1 h-screen w-full
+  @apply flex flex-col justify-center items-center h-full w-full md:px-5
 }
 
 .Home_Container {
@@ -186,7 +186,7 @@ nav.scrolled {
 }
 
 .paragraph_text {
-  @apply text-xs box-border md:text-base w-fit sm:w-fit md:w-full font-sans outline outline-1 outline-slate-50 bg-cyan-950 bg-opacity-10 rounded-tl-3xl rounded-br-3xl p-5 text-start mb-5 font-light md:font-normal
+  @apply text-xs box-border md:text-sm w-fit sm:w-fit md:w-full font-mono text-stone-800 shadow-md shadow-slate-600 outline outline-1 outline-slate-300 bg-cyan-950 bg-opacity-10 rounded-tl-3xl rounded-br-3xl p-5 text-start mb-5 font-light md:font-normal
 }
 
 .titlle_text {

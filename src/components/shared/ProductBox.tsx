@@ -41,7 +41,7 @@ const ProductBox = ({ product } : ProductCardProps) => {
               transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
             }}
             ref={ref}
-            className="flex flex-col justify-start items-start w-full md:w-fit h-full md:p-5 p-3 outline outline-1 outline-slate-100 bg-cyan-950 bg-opacity-10 rounded-tr-3xl rounded-bl-3xl md:rounded-e-full"
+            className="flex flex-col justify-start items-start w-full h-full md:p-5 p-3 outline outline-1 outline-slate-100 bg-cyan-950 bg-opacity-10 rounded-tr-3xl rounded-bl-3xl md:rounded-e-full"
           >
             <h2 className="text-base md:text-2xl w-3/4 font-bold text-white text-start md:text-cyan-950 my-2">{product.productTitle}</h2>
             <p className=" w-fit md:w-2/3 text-xs sm:text-base md:text-base lg:w-2/3 text-slate-700 mb-5">

@@ -20,7 +20,7 @@ const Services = () => {
     <div className="flex flex-col justify-center items-center my-5">
       <div className="flex flex-col justify-center items-center"
         style={{
-          transform: isInView ? "none" : "translateX(50px)",
+          transform: isInView ? "none" : "translateY(50px)",
           opacity: isInView ? 1 : 0,
           transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
         }}
