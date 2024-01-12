@@ -59,7 +59,7 @@ const Contact = () => {
           transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
         }}
         ref={ref}
-        className="flex flex-col justify-center items-start md:flex-row p-5 m-5 rounded-xl md:mx-10 lg:mx-52 w-full md:gap-10 bg-cyan-950 bg-opacity-10 md:shadow-sm shadow-slate-400 md:my-5 md:rounded-xl outline outline-1 outline-white">
+        className="flex flex-col justify-center items-start md:flex-row p-5 m-5 rounded-xl w-fit md:gap-10 bg-cyan-950 bg-opacity-10 md:shadow-sm shadow-slate-400 md:my-5 md:rounded-xl outline outline-1 outline-white">
           <div className="flex flex-col w-full mb-10">
               <h3 className="primary_text">LETS TALK!</h3>
               <Form {...form}>

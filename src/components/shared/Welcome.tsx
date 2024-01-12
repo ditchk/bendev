@@ -16,9 +16,9 @@ const Welcome = () => {
                           <img 
                             src="/assets/images/homepage.png" 
                             alt="homepage-image" 
-                            width={250}
+                            width={350}
                             loading="lazy"
-                            className="md:hidden object-contain bg-transparent h-fit rounded-e-full justify-end rounded-t-full border-b-2 overflow-hidden animate-in slide-in-from-right-24 duration-1000 border-slate-50"
+                            className="md:hidden object-cover bg-transparent h-fit rounded-e-full justify-end rounded-t-full border-b-2 overflow-hidden animate-in slide-in-from-right-24 duration-1000 border-slate-50"
                           /> 
                         <div className="flex flex-row justify-center items-center mt-5 animate-in slide-in-from-bottom-20 duration-700 m-1">
                           <h2 className="paragraph_text">{link.subTitle}</h2>
@@ -42,7 +42,7 @@ const Welcome = () => {
                         alt="homepage-image" 
                         // width={400}
                         loading="lazy"
-                        className="hidden md:flex object-contain h-full md:w-[600px] lg:w-[700px] rounded-e-full justify-end rounded-t-full border-b-2 border-slate-300 animate-in slide-in-from-bottom-40 duration-700"
+                        className="hidden md:flex object-cover h-fit md:w-[500px] lg:w-[500px] rounded-e-full justify-end rounded-t-full border-b-2 border-slate-300 animate-in slide-in-from-bottom-40 duration-700"
                       />   
                 </div>
               )
