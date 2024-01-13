@@ -4,20 +4,42 @@ import Sidebar from "@/components/shared/Sidebar"
 
 import { Outlet } from 'react-router'
 
+import React, { useEffect, useState } from 'react';
+import Homepageloader from "@/components/loaders/Homepageloader"
 
-const RootLayout = () => {
+const RootLayout: React.FC = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const loadData = async () => {
+      // Simulate loading data
+      await new Promise((resolve) => setTimeout(resolve, 5000));
+      setIsLoading(false);
+    };
+
+    loadData();
+  }, []);
+
   return (
-    <div className="flex w-full h-full md:flex flex-col slide-down-fade">
-      <Navbar />
-      <Sidebar />
-      <section className="flex flex-col h-full">
-        <Outlet />
-      </section>
-      <section className="flex flex-1 relative">
-        <Footer />
-      </section>
-    </div>
-  )
-}
+    <>
+      {isLoading ? (
+        <div className="flex flex-1 min-h-screen min-w-full justify-center items-center h-full bg-cyan-950 bg-opacity-10">
+          <Homepageloader />
+        </div>
+      ) : (
+      <div className="flex w-full h-full md:flex flex-col slide-down-fade">
+        <Navbar />
+        <Sidebar />
+        <section className="flex flex-col h-full">
+          <Outlet />
+        </section>
+        <section className="flex flex-1 relative">
+          <Footer />
+        </section>
+      </div>
+      )}
+    </>
+  );
+};
 
-export default RootLayout
+export default RootLayout;

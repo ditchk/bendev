@@ -30,7 +30,7 @@ const Services = () => {
         <div className="bg-slate-100 w-[1.5px] h-11 rounded-t-full shadow-sm shadow-cyan-600" />
         <h1 className="text_title2 shadow-sm shadow-cyan-600">Get more than just a landing page</h1>
         <div className="bg-slate-100 w-[1.5px] h-11 rounded-t-full shadow-sm shadow-cyan-600" />
-        <ImArrowDown  className="text-4xl text-cyan-600 filter mb-3 animate-bounce" />
+        <ImArrowDown  className="text-4xl text-slate-100 backdrop-blur-2xl filter mb-3 animate-pulse" />
       </div>
       {isLoading && !products ? (
         <ServiceLoader />

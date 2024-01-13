@@ -131,6 +131,10 @@
   @apply text-4xl text-black font-serif font-bold
 }
 
+.logo-text {
+  @apply text-center text-lg md:text-xl font-extrabold font-family text-transparent bg-clip-text bg-gradient-to-br from-cyan-500 via-slate-900 to-cyan-500
+}
+
 /* mobile menu */
 .MobileMenu {
   @apply flex flex-1 z-20 p-1 w-fit
@@ -375,7 +379,7 @@ nav.scrolled {
 /* Hire request */
 
 .hireBox {
-  @apply flex flex-col justify-center items-center bg-cyan-950 bg-opacity-20 rounded-bl-3xl rounded-tr-3xl
+  @apply flex flex-col justify-center items-center bg-cyan-950 bg-opacity-20 rounded-bl-3xl rounded-tr-3xl w-full
 }
 
 .container {
