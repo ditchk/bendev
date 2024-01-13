@@ -36,10 +36,10 @@ const Navbar = () => {
       className="flex flex-row justify-center items-center gap-2" 
       >
         <img src="/assets/images/logo.png" alt="" width={50} className='ml-1'/>
-        <h1 className="text-center text-lg md:text-xl font-extrabold font-serif text-transparent bg-clip-text bg-gradient-to-br from-cyan-500 via-black to-cyan-950">BENSWORKSPACE</h1>
+        <h1 className="text-center text-lg md:text-xl font-extrabold font-family text-transparent bg-clip-text bg-gradient-to-br from-cyan-500 via-slate-900 to-cyan-500">BENSWORKSPACE</h1>
       </Link>
       <div className="hidden md:flex flex-row justify-center items-center">
-        <h1 className="text-end text-black text-base w-full lg:text-lg p-3 font-serif">lets talk!</h1>
+        <h3 className="text-end text-black text-base w-full lg:text-lg p-3 font-serif">lets talk!</h3>
         <Socials />
         <Link to={'/mycv'} className="Linkme">
           Explore

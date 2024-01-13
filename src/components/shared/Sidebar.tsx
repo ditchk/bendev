@@ -39,7 +39,7 @@ const Sidebar = () => {
            <li key={link.label} className="link_side" onClick={toggleMenu}>
                <NavLink 
                to={link.route}
-               className={`flex flex-row gap-3 p-1 text-xs text-center text-white hover:bg-slate-200 bg-gradient-to-l from-black to-slate-400 shadow-xl outline outline-1 outline-white rounded-md w-full duration-1000 ${isActive && "shadow shadow-cyan-200"}`}>
+               className={`flex flex-row w-full gap-3 p-1 text-xs text-center text-white hover:bg-slate-200 bg-cyan-950 bg-opacity-40 outline outline-1 outline-sky-50 rounded-md duration-1000 ${isActive && "shadow shadow-slate-500"}`}>
                  {link.label}
              </NavLink>
            </li>

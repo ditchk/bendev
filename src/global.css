@@ -186,7 +186,7 @@ nav.scrolled {
 }
 
 .paragraph_text {
-  @apply text-xs box-border md:text-sm w-fit sm:w-fit md:w-full font-mono text-cyan-100 shadow-md shadow-slate-600 outline outline-1 outline-slate-300 bg-cyan-950 bg-opacity-10 rounded-tl-3xl rounded-br-3xl p-5 text-start mb-5 font-light md:font-normal
+  @apply text-xs box-border md:text-sm w-fit sm:w-fit md:w-full font-mono text-cyan-50 shadow-md shadow-slate-500 outline outline-1 outline-slate-300 bg-cyan-950 bg-opacity-10 rounded-tl-3xl rounded-br-3xl p-5 text-start mb-5 font-light md:font-normal
 }
 
 .titlle_text {
@@ -388,4 +388,12 @@ nav.scrolled {
 
 .inputBox3 {
   @apply bg-white p-2 text-cyan-950 w-56 h-20 shadow-inner placeholder:text-xs placeholder:text-gray-800
+}
+
+.text-shadow {
+  text-shadow: 1px 0px 0.1px slategrey;
+}
+
+.font-family {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
