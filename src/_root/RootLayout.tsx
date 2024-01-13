@@ -23,7 +23,7 @@ const RootLayout: React.FC = () => {
   return (
     <>
       {isLoading ? (
-        <div className="flex flex-1 min-h-screen min-w-full justify-center items-center h-full bg-cyan-950 bg-opacity-10">
+        <div className="flex flex-1 min-h-screen min-w-full justify-center items-center h-full bg-cyan-950 bg-opacity-10 animate-out fade-out-100">
           <Homepageloader />
         </div>
       ) : (
