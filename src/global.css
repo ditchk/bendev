@@ -132,7 +132,7 @@
 }
 
 .logo-text {
-  @apply text-center text-lg md:text-xl font-extrabold font-family text-transparent bg-clip-text bg-gradient-to-br from-cyan-500 via-slate-900 to-cyan-500
+  @apply text-center text-lg md:text-2xl font-extrabold font-serif text-transparent bg-clip-text bg-gradient-to-br from-cyan-500 via-slate-900 to-cyan-500
 }
 
 /* mobile menu */
@@ -396,6 +396,10 @@ nav.scrolled {
 
 .text-shadow {
   text-shadow: 1px 0px 0.1px slategrey;
+}
+
+.text-shadow2 {
+  text-shadow: 1px 0px 0.1px teal;
 }
 
 .font-family {

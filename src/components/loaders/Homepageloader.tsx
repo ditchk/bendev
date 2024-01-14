@@ -1,4 +1,5 @@
 import { ring2 } from 'ldrs'
+import Socials from '../shared/Socials'
 
 ring2.register()
 
@@ -17,7 +18,8 @@ const Homepageloader = () => {
             color="teal" 
           ></l-ring-2>
          </div>
-         <h1 className="text_title text-shadow no-underline">Crafting Digital Masterpieces, One Pixel at a Time.</h1>
+         <h1 className="text_title text-shadow">Crafting Digital Masterpieces, One Pixel at a Time.</h1>
+         <Socials />
         </div>
     </div>
     
