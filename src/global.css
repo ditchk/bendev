@@ -409,7 +409,7 @@ nav.scrolled {
 /* featured project sections */
 
 .featured-cont {
-  @apply flex flex-1 relative w-full h-full bg-cyan-950 bg-opacity-10 p-3 rounded-md outline outline-1 outline-white
+  @apply flex flex-1 justify-center items-center relative w-full h-full bg-cyan-950 bg-opacity-10 p-3 shadow-sm shadow-cyan-600 rounded-md outline outline-1 outline-white
 }
 
 .slideleft {
