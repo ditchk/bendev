@@ -156,14 +156,14 @@ export async function createProject(project: myNewProject) {
   }
 
   export async function getFeaturedProjects() {
-    const FeaturedProjects = await databases.listDocuments(
+    const featured = await databases.listDocuments(
       myConfig.databaseId,
-      myConfig.projectCollectionId,
+      myConfig.featuredCollectionId,
       [Query.orderDesc('$createdAt'), Query.limit(3)]
     )
-    if(!FeaturedProjects) throw Error;
+    if(!featured) throw Error;
 
-    return FeaturedProjects
+    return featured
   }
 
   export async function getRecentProducts() {

@@ -329,7 +329,7 @@ nav.scrolled {
 }
 
 .text_title {
-  @apply text-base md:text-2xl mb-5 font-bold font-sans border-b-2 border-white text-transparent bg-clip-text bg-gradient-to-l from-blue-700 via-black to-cyan-800
+  @apply text-base md:text-2xl mb-5 font-bold font-sans border-b-2 border-white text-transparent text-center bg-clip-text bg-gradient-to-l from-blue-700 via-black to-cyan-800
 }
 
 .text_title2 {
@@ -400,4 +400,14 @@ nav.scrolled {
 
 .font-family {
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* featured project sections */
+
+.featured-cont {
+  @apply flex flex-1 relative w-full h-full bg-cyan-950 bg-opacity-10 p-3 rounded-md outline outline-1 outline-white
+}
+
+.slideleft {
+  @apply text-4xl text-white cursor-pointer
 }

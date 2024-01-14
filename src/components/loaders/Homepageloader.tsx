@@ -1,20 +1,23 @@
-import { lineSpinner } from 'ldrs'
+import { ring2 } from 'ldrs'
 
-lineSpinner.register()
+ring2.register()
 
 // Default values shown
 
 const Homepageloader = () => {
   return (
-    <div className='flex flex-col justify-center items-center gap-5 w-fit h-fit rounded-full  m-5 p-5 animate-in fade-in-20 duration-500'>
-        <div className='flex flex-col justify-center items-center gap-3'>
-        <l-line-spinner
-          size="40"
-          stroke="3"
-          speed="2" 
-          color="white" 
-        ></l-line-spinner>
-        <small className='text-base font-sans text-white'>Please wait...</small>
+    <div className='flex flex-col justify-center items-center gap-5 w-fit h-fit m-5 p-10 animate-in fade-in-20 duration-500'>
+        <div className='flex flex-col justify-center items-center gap-1'>
+         <div className="flex relative justify-center items-center">
+          <img src="/assets/images/logo.png" alt="" width={80} className="absolute"/>
+          <l-ring-2
+            size="150"
+            stroke="1"
+            speed="3" 
+            color="teal" 
+          ></l-ring-2>
+         </div>
+         <h1 className="text_title text-shadow no-underline">Crafting Digital Masterpieces, One Pixel at a Time.</h1>
         </div>
     </div>
     

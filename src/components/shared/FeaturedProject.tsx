@@ -9,15 +9,15 @@ type FreaturedProjectProps = {
 const FeaturedProject = ({featured}: FreaturedProjectProps) => {
 
   return (
-    <div className="main_ft">
-        <Link
-          to={'/shop'} 
-          className="Featuredcontainer"
-        >
-          <img src={featured.imageUrl} alt="" width={50} className="h-fit rounded-full object-cover shadow shadow-slate-400" />
-          <h1 className="featuredText">{featured.ProjectName}</h1>
-          <Button className="custom_button">read more</Button>
-        </Link>
+    <div className="featured-cont">
+      <Link
+        to={'/projects'}
+        reloadDocument 
+      >
+        <img src={featured.Imageurl} alt="" className="object-contain rounded-2xl mb-4 shadow shadow-slate-400" />
+        <h1 className="featuredText text-shadow mb-3">{featured.Title}</h1>
+        <Button className="custom_button">read more</Button>
+      </Link>
     </div>
   )
 }
