@@ -137,7 +137,7 @@
 
 /* mobile menu */
 .MobileMenu {
-  @apply flex flex-1 z-20 p-1 w-fit
+  @apply flex z-20 p-1 w-fit
 }
 
 .menubar {
