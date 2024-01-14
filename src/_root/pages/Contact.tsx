@@ -120,7 +120,7 @@ const Contact = () => {
                     </div>
                   ) : (
                     <div>
-                      send us
+                      send message
                     </div>
                   )
                   
