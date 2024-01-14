@@ -30,7 +30,7 @@ const Navbar = () => {
 // window.onscroll = function() {toggleNavbar()};
 
   return (
-    <nav id='navbar' className="z-50 flex flex-row justify-between gap-16 w-full border-b shadow-sm shadow-slate-600 border-slate-400 animate-in slide-in-from-top-10 h-max bg-cyan-950 backdrop-blur top-0 sticky py-2 px-3 bg-opacity-10 duration-1000">
+    <nav id='navbar' className="z-50 flex flex-row justify-between gap-16 w-full border-b shadow-sm shadow-cyan-600 border-slate-400 animate-in slide-in-from-top-10 h-max bg-cyan-950 backdrop-blur top-0 sticky py-2 px-3 bg-opacity-10 duration-1000">
       <Link 
       to={'/'}
       className="flex flex-row justify-center items-center gap-2" 
