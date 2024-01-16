@@ -24,8 +24,8 @@ export const sideBarLinks = [
         route: '/shop'
     },
     {
-        label: 'upload',
-        route: '/upload/projects'
+        label: 'Admin',
+        route: '/admin'
     }
 ];
 

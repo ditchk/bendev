@@ -14,6 +14,7 @@ import SigninForm from './_auth/forms/SigninForm'
 import AuthLayout from './_auth/AuthLayout'
 import Blogposts from './_root/pages/Blogposts'
 import Privacypoliy from './components/shared/Privacypoliy'
+import Adminpanel from './components/admin/Adminpanel'
 
 function App() {
   return (
@@ -32,14 +33,14 @@ function App() {
 
             {/* Login routes */}
             <Route element={<AuthLayout />}>
-              <Route path="/auth/signin" element={<SigninForm/>} />
+              <Route path="/auth/signin" element={<SigninForm />} />
               {/* <Route path="/signup" element={<SignupForm/>} /> */}
             </Route>
             
             
             {/* Protected pages */}
             <Route element={<PrivateRoutes />}>
-              <Route path="/upload/projects" element={<AddProject/>} />
+              <Route path="/admin" element={<Adminpanel />} />
             </Route>
         </Routes>
       </main> 
