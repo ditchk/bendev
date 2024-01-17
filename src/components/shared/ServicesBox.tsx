@@ -33,13 +33,15 @@ const ServicesBox = ({service} : ServiceBoxProps ) => {
       ref={ref}
     className="flex flex-col justify-center h-fit w-full items-center p-5 outline outline-1 outline-slate-100">
         <div>
-            <h1 className="text_title">
+            <h1 className="text_title3 text-shadow">
                 {service.productTitle}
             </h1>
         </div>
-        <div className="flex flex-col bg-cyan-950 bg-opacity-10 relative outline-1 outline outline-slate-100 p-2 rounded-tr-3xl shadow-sm shadow-cyan-600">
-            <img src={service.imageUrl} loading="lazy" alt={"project Management"} className=" w-auto h-auto sm:h-64 md:h-60 rounded-tr-3xl overflow-hidden rounded-bl-3xl"/>
-            <p className=" box-border sm:min-h-[150px] min-h-[150px] text-sm font-serif text-shadow font-thin text-white p-2 m-2 border-t border-slate-100 border-l rounded-tl-xl">
+        <div className="flex flex-col justify-center gap-2 bg-cyan-950 bg-opacity-10 relative outline-1 outline outline-slate-100 p-2 rounded-tr-3xl shadow-sm shadow-cyan-600 hover:shadow-xl duration-1000">
+            <div className="flex flex-1 h-20 w-auto shadow-inner shadow-cyan-600 rounded-tr-3xl overflow-hidden rounded-bl-3xl p-1">
+                <img src={service.imageUrl} loading="lazy" alt={"project Management"} className="object-fill hover:filter hover:grayscale duration-1000 cursor-pointer hover:zoom-in-150 w-auto min-h-[10rem] sm:min-h-[12rem] md:min-h-[14rem] lg:min-h-[16rem] rounded-tr-3xl overflow-hidden rounded-bl-3xl"/>
+            </div>
+            <p className="box-border sm:min-h-[150px] md:min-h-[170px] lg:min-h-[140px] text-sm font-serif text-shadow font-thin text-white p-2 m-2 border-t border-slate-100 border-l rounded-tl-xl">
                 {service.ProductDescription}
             </p>
             <div className="flex flex-row justify-start items-center">

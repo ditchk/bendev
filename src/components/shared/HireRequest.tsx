@@ -43,7 +43,8 @@ const HireRequest = () => {
   return (
     <div className="hireBox">
       <Form {...form}>
-          <form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-col justify-start items-center md:justify-center md:items-center gap-2 md:gap-3 space-y-3 w-full p-5">
+          <form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-col justify-start items-center md:justify-center md:items-center gap-2 md:gap-3 space-y-3 w-full p-1 px-7">
+          <small className="text-shadow">This is a temporaly fix before the shop is deployed</small>
           <FormField
               control={form.control}
               name="Email"
@@ -62,7 +63,7 @@ const HireRequest = () => {
               render={({ field }) => (
                 <FormItem>
                   <FormControl>
-                    <Input placeholder="website" {...field} className="inputBox2" />
+                    <Input placeholder="https://bensworkspace.app" {...field} className="inputBox2" />
                   </FormControl>
                   {/* <FormMessage /> */}
                 </FormItem>

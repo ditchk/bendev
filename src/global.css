@@ -336,6 +336,10 @@ nav.scrolled {
   @apply text-base md:text-xl rounded-full font-bold font-sans border-2 p-2 border-slate-100 text-transparent bg-clip-text bg-gradient-to-l from-blue-700 via-black to-cyan-800
 }
 
+.text_title3 {
+  @apply text-base mb-5 font-bold font-sans border-b-2 border-white text-transparent text-center bg-clip-text bg-gradient-to-l from-blue-700 via-black to-cyan-800
+}
+
 .text-li {
   @apply text-start font-bold text-lg
 }
@@ -387,11 +391,11 @@ nav.scrolled {
 }
 
 .inputBox2 {
-  @apply bg-white text-sm text-black p-2 w-56 shadow-inner placeholder:text-xs placeholder:text-gray-800
+  @apply bg-white text-sm text-black p-2 w-56 shadow-inner placeholder:text-xs placeholder:text-gray-400 italic
 }
 
 .inputBox3 {
-  @apply bg-white p-2 text-cyan-950 w-56 h-20 shadow-inner placeholder:text-xs placeholder:text-gray-800
+  @apply bg-white p-2 text-cyan-950 w-56 h-20 shadow-inner placeholder:text-xs placeholder:text-gray-400 italic
 }
 
 .text-shadow {
