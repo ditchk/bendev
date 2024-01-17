@@ -11,7 +11,7 @@ const Welcome = () => {
             {welcomeMessage.map((link: myWelcomeMessage) => {
               return (
                 <div className="flex flex-col md:flex-row w-fit gap-5 md:gap-0 md:p-5 overflow-hidden">
-                    <li key={link.title} >
+                    <li key={link.title}>
                       <h1 className="tittl_name">{link.title}</h1>
                           <img 
                             src="/assets/images/homepage.png" 
