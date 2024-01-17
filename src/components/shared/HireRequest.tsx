@@ -43,8 +43,8 @@ const HireRequest = () => {
   return (
     <div className="hireBox">
       <Form {...form}>
-          <form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-col justify-start items-center md:justify-center md:items-center gap-2 md:gap-3 space-y-3 w-full p-1 px-7">
-          <small className="text-shadow">This is a temporaly fix before the shop is deployed</small>
+          <form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-col justify-start items-center md:justify-center md:items-center md:gap-3 space-y-3 w-full p-2 px-7">
+          <small className="text_title3 text-shadow text-red-400">This is a temporaly fix before the shop is deployed</small>
           <FormField
               control={form.control}
               name="Email"
