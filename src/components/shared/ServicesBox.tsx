@@ -32,14 +32,19 @@ const ServicesBox = ({service} : ServiceBoxProps ) => {
       }}
       ref={ref}
     className="flex flex-col justify-center h-fit w-full items-center p-5 outline outline-1 outline-slate-100">
-        <div className="flex flex-col bg-cyan-950 bg-opacity-10 relative outline-1 outline outline-slate-100 p-2 min-h-[450px] rounded-tr-3xl shadow-sm shadow-cyan-600">
-            <img src={service.imageUrl} loading="lazy" alt={"project Management"} className="w-auto h-fit sm:h-64 md:h-60 rounded-tr-3xl overflow-hidden rounded-bl-3xl"/>
-            <p className=" box-border sm:min-h-[180px] min-h-[150px] text-sm text-slate-800 font-normal p-2 m-2 border-t border-slate-100 border-l rounded-tl-xl">
+        <div>
+            <h1 className="text_title">
+                {service.productTitle}
+            </h1>
+        </div>
+        <div className="flex flex-col bg-cyan-950 bg-opacity-10 relative outline-1 outline outline-slate-100 p-2 rounded-tr-3xl shadow-sm shadow-cyan-600">
+            <img src={service.imageUrl} loading="lazy" alt={"project Management"} className=" w-auto h-auto sm:h-64 md:h-60 rounded-tr-3xl overflow-hidden rounded-bl-3xl"/>
+            <p className=" box-border sm:min-h-[150px] min-h-[150px] text-sm font-serif text-shadow font-thin text-white p-2 m-2 border-t border-slate-100 border-l rounded-tl-xl">
                 {service.ProductDescription}
             </p>
             <div className="flex flex-row justify-start items-center">
                 <Button className="custom_button ml-2" onClick={handleClick}>
-                    Get this service
+                    <small>Get a quote</small>
                 </Button>
                 {openWindow && (
                     <div className="container">
@@ -48,15 +53,11 @@ const ServicesBox = ({service} : ServiceBoxProps ) => {
                     </div>
                 )}
                 <Button className="custom_button ml-2">
-                    {'Starting at 200$'}
+                    <small className="animate-pulse">Starting at 200$</small>
                 </Button>
             </div>
         </div>
-        <div>
-            <h1 className="text_project">
-                {service.productTitle}
-            </h1>
-        </div>
+        
     </motion.div>
   )
 }
