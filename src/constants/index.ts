@@ -1,14 +1,14 @@
 export const sideBarLinks = [
     {
-        label:'Home',
+        label: 'Home',
         route: '/'
     },
     {
-        label:'Projects',
+        label: 'Projects',
         route: '/projects'
     },
     {
-        label:'Contact',
+        label: 'Contact',
         route: '/contact'
     },
     {
@@ -20,7 +20,7 @@ export const sideBarLinks = [
         route: '/blogs'
     },
     {
-        label:'shop',
+        label: 'shop',
         route: '/shop'
     },
     {
@@ -31,10 +31,10 @@ export const sideBarLinks = [
 
 export const welcomeMessage = [
     {
-        title:"BENSON KIGOCI......",
-        subTitle:"Hi, My name is Benson Kigoci. I can execute alot of tasks like creating a full stack website for your business and that meets your Business need, i have outstanding skills in Nodejs and react to facilitate this and still learning",
-        slogan:"Crafting Digital Masterpieces, One Pixel at a Time.",
-        motive:"Whether you are a startup company or you are just exploring internet world joing me in Zoom or on slack to discuss what your business needs."
+        title: "BENSON KIGOCI......",
+        subTitle: "Hi, My name is Benson Kigoci. I can execute alot of tasks like creating a full stack website for your business and that meets your Business need, i have outstanding skills in Nodejs and react to facilitate this and still learning",
+        slogan: "Crafting Digital Masterpieces, One Pixel at a Time.",
+        motive: "Whether you are a startup company or you are just exploring internet world join me in Zoom or on slack to discuss what your business needs."
     }
 ]
 
@@ -83,11 +83,11 @@ export const moreFooterLinks = [
 export const contactInformation = [
     {
         imageURL: '/assets/images/placeholder.png',
-        content: '242 Union St Rockland MA United states'  
+        content: '242 Union St Rockland MA United states'
     },
     {
         imageURL: '/assets/images/gmail.png',
-        content: 'benkigochi@bensworkspace.app'  
+        content: 'benkigochi@bensworkspace.app'
     },
     {
         imageURL: '/assets/images/outgoing-call.png',
