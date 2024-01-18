@@ -329,7 +329,7 @@ nav.scrolled {
 }
 
 .text_title {
-  @apply text-base md:text-2xl mb-5 font-bold font-sans border-b-2 border-white text-transparent text-center bg-clip-text bg-gradient-to-l from-blue-700 via-black to-cyan-800
+  @apply text-xs sm:text-sm md:text-2xl mb-5 font-bold font-sans border-b-2 border-white text-transparent text-center bg-clip-text bg-gradient-to-l from-blue-700 via-black to-cyan-800
 }
 
 .text_title2 {
@@ -438,7 +438,7 @@ nav.scrolled {
 }
 
 .Homepage-Image {
-  @apply md:hidden object-cover h-full rounded-e-full justify-end rounded-t-full bg-gradient-to-tl from-teal-700 via-teal-900 to-teal-100 outline outline-2 outline-white overflow-hidden animate-in slide-in-from-bottom-28 duration-1000 !important
+  @apply md:hidden object-cover h-full m-1 rounded-e-full justify-end rounded-t-full bg-gradient-to-tl from-teal-700 via-teal-900 to-teal-100 outline outline-2 outline-white overflow-hidden animate-in slide-in-from-bottom-28 duration-1000 !important
 }
 
 
