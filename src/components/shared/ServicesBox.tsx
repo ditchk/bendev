@@ -37,11 +37,11 @@ const ServicesBox = ({service} : ServiceBoxProps ) => {
                 {service.productTitle}
             </h1>
         </div>
-        <div className="flex flex-col justify-center gap-2 bg-cyan-950 bg-opacity-10 relative outline-1 outline outline-slate-100 p-2 rounded-tr-3xl shadow-sm shadow-cyan-600 hover:shadow-xl duration-1000">
-            <div className="flex flex-1 h-20 w-auto shadow-inner shadow-cyan-600 rounded-tr-3xl overflow-hidden rounded-bl-3xl outline outline-2 outline-white">
-                <img src={service.imageUrl} loading="lazy" alt={"project Management"} className="hover:filter hover:grayscale duration-1000 cursor-pointer hover:scale-105 w-auto min-h-[10rem] sm:min-h-[12rem] md:min-h-[14rem] lg:min-h-[16rem] rounded-tr-3xl overflow-hidden rounded-bl-3xl"/>
+        <div className="flex flex-col justify-center gap-2 h-full w-full bg-cyan-950 bg-opacity-10 relative outline-2 outline outline-slate-100 p-2 rounded-tr-3xl shadow-sm shadow-cyan-600 hover:shadow-md hover:shadow-cyan-600 duration-1000">
+            <div className="flex flex-1 justify-center items-center h-20 w-auto shadow-inner shadow-cyan-600 rounded-tr-3xl overflow-hidden rounded-bl-3xl outline outline-2 outline-white !important">
+                <img src={service.imageUrl} loading="lazy" alt={"project Management"} className="flex flex-grow hover:filter hover:grayscale duration-1000 cursor-pointer hover:scale-105 w-auto min-h-[10rem] sm:min-h-[12rem] md:min-h-[14rem] lg:min-h-[15rem] rounded-tr-3xl overflow-hidden rounded-bl-3xl"/>
             </div>
-            <p className="box-border sm:min-h-[150px] md:min-h-[170px] lg:min-h-[140px] text-sm font-serif font-thin text-teal-900 p-2 m-2 border-t border-slate-100 border-l rounded-tl-xl">
+            <p className="box-border sm:min-h-[150px] md:min-h-[170px] lg:min-h-[150px] text-sm font-serif font-thin text-teal-900 p-2 m-2 border-t border-slate-100 border-l rounded-tl-xl">
                 {service.ProductDescription}
             </p>
             <div className="flex flex-row justify-start items-center">

@@ -290,7 +290,7 @@ nav.scrolled {
 }
 
 .project_paragraph {
-  @apply flex flex-col justify-between gap-2 box-border sm:min-h-[180px] text-sm md:text-sm font-serif text-slate-800 p-2 my-1 rounded-tl-2xl rounded-br-2xl bg-cyan-950 bg-opacity-10 outline outline-1 outline-cyan-200
+  @apply flex flex-col justify-between gap-2 box-border sm:min-h-[180px] mb-5 md:mb-0 text-sm md:text-sm font-serif text-slate-800 p-2 my-1 rounded-tl-2xl rounded-br-2xl bg-cyan-950 bg-opacity-10 outline outline-1 outline-cyan-200
 }
 
 .custom_button {
