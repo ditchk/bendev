@@ -190,7 +190,7 @@ nav.scrolled {
 }
 
 .paragraph_text {
-  @apply text-xs box-border md:text-sm font-serif w-fit sm:w-fit md:w-full text-transparent bg-clip-text bg-gradient-to-t from-cyan-950 to-teal-700 shadow-md shadow-cyan-600 outline outline-2 outline-slate-300 rounded-tl-3xl rounded-br-3xl p-2 md:p-3 text-start mb-5 font-light md:font-normal
+  @apply text-xs box-border md:text-sm font-serif w-fit sm:w-fit md:w-full bg-cyan-950 bg-opacity-10 text-teal-950 shadow-md shadow-cyan-600 outline outline-2 outline-slate-300 rounded-tl-3xl rounded-br-3xl p-2 md:p-3 text-start mb-5 font-light md:font-normal
 }
 
 .titlle_text {
@@ -329,7 +329,7 @@ nav.scrolled {
 }
 
 .text_title {
-  @apply text-xs sm:text-sm md:text-2xl mb-5 font-bold font-sans border-b-2 border-white text-transparent text-center bg-clip-text bg-gradient-to-l from-blue-700 via-black to-cyan-800
+  @apply text-[10px] md:text-xl mb-5 font-bold font-mono border-b-2 border-white text-transparent text-center bg-clip-text bg-gradient-to-l from-blue-700 via-black to-cyan-800
 }
 
 .text_title2 {
@@ -447,7 +447,7 @@ nav.scrolled {
 }
 
 .line-style {
-  @apply flex w-14 sm:w-72  shadow-sm shadow-slate-400 justify-center bg-slate-300 h-[2px] !important
+  @apply flex w-14 sm:w-72 justify-center bg-slate-300 h-[2px] !important
 }
 
 .Rounde-style {

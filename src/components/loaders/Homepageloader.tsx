@@ -12,13 +12,13 @@ const Homepageloader = () => {
          <div className="flex relative justify-center items-center">
           <img src="/assets/images/logo.png" alt="" width={80} className="absolute"/>
           <l-ring-2
-            size="150"
+            size="120"
             stroke="1"
             speed="3" 
             color="teal" 
           ></l-ring-2>
          </div>
-         <h1 className="text_title text-shadow">Crafting Digital Masterpieces, One Pixel at a Time.</h1>
+         <small className="text_title text-shadow">Crafting Digital Masterpieces, One Pixel at a Time.</small>
          <Socials />
         </div>
     </div>
