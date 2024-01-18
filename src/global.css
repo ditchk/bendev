@@ -451,7 +451,7 @@ nav.scrolled {
 }
 
 .Rounde-style {
-  @apply flex w-[25px] md:w-[35px] justify-center rounded-full bg-transparent outline outline-2 outline-slate-300 shadow-inner shadow-cyan-600 h-[20px] md:h-[25px] animate-spin !important
+  @apply flex w-[20px] md:w-[35px] justify-center rounded-full bg-transparent outline outline-2 outline-slate-300 shadow-inner shadow-cyan-600 h-[20px] p-3 md:h-[25px] animate-spin !important
 }
 
 .Link-ref {
