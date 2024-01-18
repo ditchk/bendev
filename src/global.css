@@ -182,7 +182,7 @@ nav.scrolled {
   @apply text-3xl p-2 rounded-md cursor-pointer bg-gradient-to-l from-cyan-300 via-neutral-50 to-teal-100 text-teal-600 shadow-inner outline outline-2 outline-teal-500 shadow-black duration-700
 }
 .tittl_name {
-  @apply animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-transparent pr-5 font-bold text-base md:text-xl font-serif text-transparent bg-clip-text bg-gradient-to-br from-cyan-500 via-black to-cyan-950
+  @apply rotate-90 animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-transparent pr-5 font-bold text-sm md:text-xl font-serif text-transparent bg-clip-text bg-gradient-to-br from-cyan-500 via-black to-cyan-950
 }
 
 .primary_text {
@@ -190,7 +190,7 @@ nav.scrolled {
 }
 
 .paragraph_text {
-  @apply text-xs box-border md:text-sm w-fit sm:w-fit md:w-full font-mono text-transparent bg-clip-text bg-gradient-to-t from-cyan-950 to-teal-700 shadow-md shadow-slate-500 outline outline-2 outline-slate-300 rounded-tl-3xl rounded-br-3xl p-5 text-start mb-5 font-light md:font-normal
+  @apply text-xs box-border md:text-sm font-serif w-fit sm:w-fit md:w-full text-transparent bg-clip-text bg-gradient-to-t from-cyan-950 to-teal-700 shadow-md shadow-cyan-600 outline outline-2 outline-slate-300 rounded-tl-3xl rounded-br-3xl p-2 md:p-3 text-start mb-5 font-light md:font-normal
 }
 
 .titlle_text {
@@ -383,7 +383,7 @@ nav.scrolled {
 /* Hire request */
 
 .hireBox {
-  @apply flex flex-col justify-center items-center bg-cyan-950 bg-opacity-20 rounded-bl-3xl rounded-tr-3xl w-full m-10
+  @apply flex flex-col justify-center items-center bg-cyan-950 bg-opacity-20 rounded-bl-3xl rounded-tr-3xl w-full shadow-sm shadow-cyan-600
 }
 
 .container {
@@ -391,11 +391,11 @@ nav.scrolled {
 }
 
 .inputBox2 {
-  @apply bg-white text-sm text-black p-2 w-56 shadow-inner placeholder:text-xs placeholder:text-gray-400 italic
+  @apply bg-white text-sm text-black p-2 w-56 shadow-inner placeholder:text-xs placeholder:text-gray-400
 }
 
 .inputBox3 {
-  @apply bg-white p-2 text-cyan-950 w-56 h-20 shadow-inner placeholder:text-xs placeholder:text-gray-400 italic
+  @apply bg-white p-2 text-cyan-950 w-56 h-20 shadow-inner placeholder:text-xs placeholder:text-gray-400
 }
 
 .text-shadow {
@@ -419,3 +419,123 @@ nav.scrolled {
 .slideleft {
   @apply text-4xl text-white cursor-pointer
 }
+
+
+/* Welcome section Fix on Mac */
+
+
+.MainWel-Box {
+  @apply flex flex-1 m-2 p-1 bg-cyan-950 bg-opacity-10 rounded-md shadow-sm shadow-cyan-500 !important
+}
+
+.main-list {
+  @apply flex h-fit w-fit
+}
+
+
+.list-Cont {
+  @apply flex flex-col md:flex-row w-fit gap-5 md:gap-0 md:p-5 overflow-hidden !important
+}
+
+.Homepage-Image {
+  @apply md:hidden object-cover h-fit rounded-e-full justify-end rounded-tr-full border-b-2 bg-gradient-to-tl from-teal-600 via-cyan-300 to-sky-50 shadow-inner shadow-cyan-600 overflow-hidden animate-in slide-in-from-bottom-28 duration-1000 border-cyan-300 !important
+}
+
+
+.Div-1 {
+  @apply flex flex-row justify-center items-center mt-5 animate-in slide-in-from-bottom-20 duration-700 m-1 !important
+}
+
+.line-style {
+  @apply flex w-14 sm:w-72  shadow-sm shadow-slate-400 justify-center bg-slate-300 h-[2px] !important
+}
+
+.Rounde-style {
+  @apply flex w-[25px] md:w-[35px] justify-center rounded-full bg-transparent outline outline-2 outline-slate-300 shadow-inner shadow-cyan-600 h-[20px] md:h-[25px] animate-spin !important
+}
+
+.Link-ref {
+  @apply custom_button p-2 mt-5 rounded-lg text-white font-serif flex !important
+}
+
+
+/* Style fix Home service section */
+
+.MainServiceBox {
+  @apply flex flex-col justify-center items-center my-5 !important
+}
+
+.primary-Box {
+  @apply flex flex-col justify-center items-center !important
+}
+
+.Styling-Div {
+  @apply bg-slate-100 w-[1.5px] h-11 rounded-t-full shadow-sm shadow-cyan-600 !important
+}
+
+.serviceBox {
+  @apply flex flex-col justify-center h-fit w-full items-center p-5 outline outline-1 outline-slate-100 !important
+}
+
+.BoxText {
+  @apply text_title3 text-shadow
+}
+
+.MainBox {
+  @apply flex flex-1 justify-center items-center h-screen
+}
+
+.Box-listify {
+  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 justify-center items-center w-full h-full
+}
+
+.Icon-Down {
+  @apply text-4xl text-slate-100 backdrop-blur-2xl filter mb-3 animate-pulse
+}
+
+.Line-Down {
+  @apply bg-slate-100 w-[1.5px] h-11 rounded-t-full shadow-sm shadow-cyan-600
+}
+
+.ServiceContainer {
+  @apply flex flex-col justify-center gap-2 h-full w-full bg-cyan-950 bg-opacity-10 relative outline-2 outline outline-slate-100 p-2 rounded-tr-3xl shadow-sm shadow-cyan-600 hover:shadow-md hover:shadow-cyan-600 duration-1000 !important
+}
+
+.Image-Cont {
+  @apply flex flex-1 justify-center items-center h-20 w-auto rounded-tr-3xl overflow-hidden rounded-bl-3xl outline outline-2 outline-white !important
+}
+
+.ImageUrl-sty {
+  @apply flex flex-grow hover:filter hover:grayscale duration-500 cursor-pointer hover:scale-105 w-auto min-h-[10rem] sm:min-h-[12rem] md:min-h-[14rem] lg:min-h-[15rem] rounded-tr-3xl overflow-hidden rounded-bl-3xl !important
+}
+
+.Descript_text {
+  @apply box-border sm:min-h-[150px] md:min-h-[170px] lg:min-h-[150px] text-sm font-serif font-thin text-teal-900 p-2 m-2 border-t border-slate-100 border-l rounded-tl-xl !important
+}
+
+.MDclose {
+  @apply flex absolute justify-end text-end right-0 top-0 text-red-500 text-3xl bg-cyan-950 bg-opacity-40 rounded-bl-xl rounded-tr-xl cursor-pointer !important
+}
+
+.Button_sect {
+  @apply flex flex-row justify-start items-center !important
+}
+
+.Div_form {
+  @apply flex flex-col justify-start items-center md:justify-center md:items-center md:gap-3 space-y-3 w-full py-10 !important
+}
+
+.Checkbox_Div {
+  @apply flex flex-row justify-start items-start gap-2 !important
+}
+
+.CheckBox {
+  @apply text-green-400 outline-2 outline outline-slate-100 border-transparent !important
+}
+
+.Selection {
+  @apply text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 text-white !important
+}
+
+/* Footer Css fixes */
+

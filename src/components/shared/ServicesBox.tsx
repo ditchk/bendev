@@ -28,29 +28,29 @@ const ServicesBox = ({service} : ServiceBoxProps ) => {
     style={{
         transform: isInView ? "none" : "translateY(10px)",
         opacity: isInView ? 1 : 0,
-        transition: "all 0.1s cubic-bezier(0.17, 0.55, 0.65, 1) 0.3s"
+        transition: "all 0.5s cubic-bezier(0.7, 0.55, 0.65, 1) 0.5s"
       }}
       ref={ref}
-    className="flex flex-col justify-center h-fit w-full items-center p-5 outline outline-1 outline-slate-100">
+    className="serviceBox">
         <div>
-            <h1 className="text_title3 text-shadow">
+            <h1 className="BoxText">
                 {service.productTitle}
             </h1>
         </div>
-        <div className="flex flex-col justify-center gap-2 h-full w-full bg-cyan-950 bg-opacity-10 relative outline-2 outline outline-slate-100 p-2 rounded-tr-3xl shadow-sm shadow-cyan-600 hover:shadow-md hover:shadow-cyan-600 duration-1000">
-            <div className="flex flex-1 justify-center items-center h-20 w-auto shadow-inner shadow-cyan-600 rounded-tr-3xl overflow-hidden rounded-bl-3xl outline outline-2 outline-white !important">
-                <img src={service.imageUrl} loading="lazy" alt={"project Management"} className="flex flex-grow hover:filter hover:grayscale duration-1000 cursor-pointer hover:scale-105 w-auto min-h-[10rem] sm:min-h-[12rem] md:min-h-[14rem] lg:min-h-[15rem] rounded-tr-3xl overflow-hidden rounded-bl-3xl"/>
+        <div className="ServiceContainer">
+            <div className="Image-Cont">
+                <img src={service.imageUrl} loading="lazy" alt={"project Management"} className="ImageUrl-sty"/>
             </div>
-            <p className="box-border sm:min-h-[150px] md:min-h-[170px] lg:min-h-[150px] text-sm font-serif font-thin text-teal-900 p-2 m-2 border-t border-slate-100 border-l rounded-tl-xl">
+            <p className="Descript_text">
                 {service.ProductDescription}
             </p>
-            <div className="flex flex-row justify-start items-center">
+            <div className="Button-sect">
                 <Button className="custom_button ml-2" onClick={handleClick}>
                     <small>Get a quote</small>
                 </Button>
                 {openWindow && (
                     <div className="container">
-                        <MdClose onClick={handleClick} className="flex absolute hover:bg-red-400 justify-end text-end right-0 top-0 text-white text-3xl bg-cyan-950 bg-opacity-40 rounded-bl-xl rounded-tr-xl cursor-pointer" />
+                        <MdClose onClick={handleClick} className="MDclose" />
                         <HireRequest />
                     </div>
                 )}

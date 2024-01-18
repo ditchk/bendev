@@ -17,8 +17,8 @@ const Services = () => {
       
     }, [isInView])
   return (
-    <div className="flex flex-col justify-center items-center my-5">
-      <div className="flex flex-col justify-center items-center"
+    <div className="MainServiceBox">
+      <div className="primary-Box"
         style={{
           transform: isInView ? "none" : "translateY(50px)",
           opacity: isInView ? 1 : 0,
@@ -27,21 +27,23 @@ const Services = () => {
         ref={ref}
       >
         <h1 className="text_title2 shadow-sm shadow-cyan-600">Hire my expertise today!</h1>
-        <div className="bg-slate-100 w-[1.5px] h-11 rounded-t-full shadow-sm shadow-cyan-600" />
+        <div className="Styling-Div" />
         <h1 className="text_title2 shadow-sm shadow-cyan-600">Get more than just a landing page</h1>
-        <div className="bg-slate-100 w-[1.5px] h-11 rounded-t-full shadow-sm shadow-cyan-600" />
-        <ImArrowDown  className="text-4xl text-slate-100 backdrop-blur-2xl filter mb-3 animate-pulse" />
+        <div className="Line-Down" />
+        <ImArrowDown  className="Icon-Down" />
       </div>
       {isLoading && !products ? (
         <ServiceLoader />
       ) : (
-        <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 justify-center items-center">
+        <div className="MainBox">
+          <ul className="Box-listify">
           {products?.documents.map((service: Models.Document) => (
             <li>
               <ServicesBox service={service} key={service.productTitle} />
             </li>
           ))}
         </ul>
+        </div>
       )}
     </div>
   )
