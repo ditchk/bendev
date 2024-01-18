@@ -12,7 +12,6 @@ const Welcome = () => {
                 <div className="list-Cont">
                   <li key={link.title}>
                     <div className="flex flex-row justify-center items-center">
-                    <h1 className="tittl_name">{link.title}</h1>
                     <img 
                       src="/assets/images/homepage.png" 
                       alt="homepage-image" 
@@ -20,7 +19,6 @@ const Welcome = () => {
                       loading="lazy"
                       className="Homepage-Image"
                     /> 
-                      
                     </div>
                       <div className="Div-1">
                         <h2 className="paragraph_text">{link.subTitle}</h2>

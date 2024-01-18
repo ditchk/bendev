@@ -141,9 +141,9 @@
 }
 
 .menubar {
-  @apply grid grid-cols-3 pt-2 gap-2 justify-start items-start border-t border-cyan-700 fixed  
-  w-full h-fit rounded-b-xl drop-shadow-xl shadow-md p-2
-  shadow-slate-500 outline outline-1 outline-cyan-50 right-0 left-0 bg-cyan-950 bg-opacity-60 backdrop-blur-md
+  @apply grid grid-cols-1 pt-2 gap-2 justify-start items-start border-t border-cyan-700 fixed  
+  w-fit h-fit rounded-bl-xl shadow-md p-2
+  shadow-slate-500 outline outline-1 outline-cyan-50 right-0 bg-cyan-950 bg-opacity-60 backdrop-blur-md
  }
 
 .links {
@@ -182,7 +182,7 @@ nav.scrolled {
   @apply text-3xl p-2 rounded-md cursor-pointer bg-gradient-to-l from-cyan-300 via-neutral-50 to-teal-100 text-teal-600 shadow-inner outline outline-2 outline-teal-500 shadow-black duration-700
 }
 .tittl_name {
-  @apply -rotate-90 text-shadow animate-typing overflow-hidden whitespace-nowrap pr-5 font-bold text-base md:text-xl font-mono text-transparent bg-clip-text bg-gradient-to-br from-cyan-500 via-black to-cyan-950
+  @apply -rotate-90 md:rotate-0 text-shadow animate-typing overflow-hidden whitespace-nowrap pr-5 font-bold text-base md:text-xl font-mono text-transparent bg-clip-text bg-gradient-to-br from-cyan-500 via-black to-cyan-950
 }
 
 .primary_text {
@@ -451,7 +451,7 @@ nav.scrolled {
 }
 
 .Rounde-style {
-  @apply flex w-[20px] md:w-[35px] justify-center rounded-full bg-transparent outline outline-2 outline-slate-300 shadow-inner shadow-cyan-600 h-[20px] p-3 md:h-[25px] animate-spin !important
+  @apply flex w-[20px] justify-center rounded-full bg-transparent outline outline-2 outline-slate-300 shadow-inner shadow-cyan-600 h-[20px] p-3 animate-spin !important
 }
 
 .Link-ref {

@@ -65,7 +65,7 @@ const toggleMenu = () => {
             )}
       {menuOpen && (
        <motion.ul
-        animate={{ y: 53 }}
+        animate={{ y: 47 }}
         transition={{ delay: 0 }} 
         className={`menubar ${navbarHidden ? 'navbar hidden' : 'hidden'}`}
        >
@@ -86,7 +86,7 @@ const toggleMenu = () => {
                to={link.route}
                onClick={toggleMenu}
                reloadDocument
-               className={`w-20 text-white outline outline-1 outline-cyan-50 p-1 text-xs text-center bg-opacity-80 bg-cyan-950 rounded-md ${isActive && "bg-cyan-950 text-sm"}`}>
+               className={`w-24 text-white outline outline-1 outline-cyan-50 p-1 text-xs text-center bg-opacity-80 bg-cyan-950 rounded-md ${isActive && "bg-cyan-950 text-sm"}`}>
                  {link.label}
              </NavLink>
            </motion.li>
