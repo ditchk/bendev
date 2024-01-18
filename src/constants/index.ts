@@ -31,7 +31,7 @@ export const sideBarLinks = [
 
 export const welcomeMessage = [
     {
-        title:"HI, MY NAME IS BENSON KIGOCI",
+        title:"BENSON KIGOCI......",
         subTitle:"I can execute alot of tasks like creating a nice website for your business and thats not all, i have outstanding skills in Nodejs and react to facilitate this and still learning",
         slogan:"Crafting Digital Masterpieces, One Pixel at a Time."
     }

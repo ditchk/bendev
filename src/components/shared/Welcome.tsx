@@ -12,7 +12,7 @@ const Welcome = () => {
                 <div className="list-Cont">
                   <li key={link.title}>
                     <div className="flex flex-row justify-center items-center">
-                    <h1 className="tittl_name text-shadow">{link.title}</h1>
+                    <h1 className="tittl_name">{link.title}</h1>
                     <img 
                       src="/assets/images/homepage.png" 
                       alt="homepage-image" 

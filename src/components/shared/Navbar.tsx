@@ -10,8 +10,8 @@ const Navbar = () => {
       to={'/'}
       className="flex flex-row justify-center items-center gap-2"
       >
-        <img src="/assets/images/logo.png" alt="" width={50} className='ml-1'/>
-        <h1 className="logo-text text-shadow2">BENSWORKSPACE</h1>
+        <img src="/assets/images/logo.png" alt="" width={40} className='ml-1'/>
+        <h1 className="logo-text">BENSWORKSPACE</h1>
       </Link>
       <div className="hidden md:flex flex-row justify-center items-center">
         <h3 className="text-end text-black text-base w-full lg:text-lg p-3 font-serif">lets talk!</h3>

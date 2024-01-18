@@ -132,7 +132,7 @@
 }
 
 .logo-text {
-  @apply text-center text-lg md:text-2xl font-extrabold font-serif text-transparent bg-clip-text bg-gradient-to-br from-cyan-500 via-slate-900 to-cyan-500
+  @apply text-center text-base md:text-2xl font-extrabold font-serif text-transparent bg-clip-text bg-gradient-to-br from-cyan-500 via-slate-900 to-cyan-500
 }
 
 /* mobile menu */
@@ -182,11 +182,11 @@ nav.scrolled {
   @apply text-3xl p-2 rounded-md cursor-pointer bg-gradient-to-l from-cyan-300 via-neutral-50 to-teal-100 text-teal-600 shadow-inner outline outline-2 outline-teal-500 shadow-black duration-700
 }
 .tittl_name {
-  @apply rotate-90 animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-transparent pr-5 font-bold text-sm md:text-xl font-serif text-transparent bg-clip-text bg-gradient-to-br from-cyan-500 via-black to-cyan-950
+  @apply -rotate-90 text-shadow animate-typing overflow-hidden whitespace-nowrap pr-5 font-bold text-base md:text-xl font-mono text-transparent bg-clip-text bg-gradient-to-br from-cyan-500 via-black to-cyan-950
 }
 
 .primary_text {
-  @apply text-transparent bg-clip-text bg-gradient-to-r from-cyan-800 via-black to-cyan-950 text-sm md:text-lg font-sans font-light md:font-normal text-start
+  @apply text-transparent bg-clip-text bg-gradient-to-r from-cyan-800 via-black to-cyan-950 text-base md:text-lg font-sans font-light md:font-normal text-start
 }
 
 .paragraph_text {
@@ -438,7 +438,7 @@ nav.scrolled {
 }
 
 .Homepage-Image {
-  @apply md:hidden object-cover h-fit rounded-e-full justify-end rounded-tr-full border-b-2 bg-gradient-to-tl from-teal-600 via-cyan-300 to-sky-50 shadow-inner shadow-cyan-600 overflow-hidden animate-in slide-in-from-bottom-28 duration-1000 border-cyan-300 !important
+  @apply md:hidden object-cover h-full rounded-e-full justify-end rounded-t-full border-b-2 bg-gradient-to-tl from-teal-600 via-cyan-300 to-sky-50 shadow-inner shadow-cyan-600 overflow-hidden animate-in slide-in-from-bottom-28 duration-1000 border-cyan-300 !important
 }
 
 
