@@ -15,7 +15,7 @@ const Welcome = () => {
                     <img 
                       src="/assets/images/homepage.png" 
                       alt="homepage-image" 
-                      width={350}
+                      width={300}
                       loading="lazy"
                       className="Homepage-Image"
                     /> 
@@ -26,19 +26,19 @@ const Welcome = () => {
                         <div className="Rounde-style" />
                       </div>
                       <div className="Div-1">
-                          <h2 className="paragraph_text">{link.motive}</h2>
-                          <div className="line-style" />
-                          <div className="Rounde-style" />
-                      </div>
-                      <div className="Div-1">
                         <div className="Rounde-style" />
                         <div className="line-style" />
                         <h3 className="paragraph_text">I have aquired skills that will help your business scale up in this technology era.Using my expertise i will design stunning landing pages/website and even design your ad campaignsfor your business using the latest technology</h3>
                       </div>
                       <div className="Div-1">
-                          <h2 className="paragraph_text">{link.slogan}<Link reloadDocument className="Link-ref" to={'/mycv'}>Continue reading</Link></h2>
-                          <div className="line-style" />
-                          <div className="Rounde-style" />
+                        <h2 className="paragraph_text">{link.motive}</h2>
+                        <div className="line-style" />
+                        <div className="Rounde-style" />
+                      </div>
+                      <div className="Div-1">
+                        <div className="Rounde-style" />
+                        <div className="line-style" />  
+                        <h2 className="paragraph_text">{link.slogan}<Link reloadDocument className="Link-ref" to={'/mycv'}>Continue reading</Link></h2>
                       </div>
                     </li>
                       <img 
