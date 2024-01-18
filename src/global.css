@@ -190,7 +190,7 @@ nav.scrolled {
 }
 
 .paragraph_text {
-  @apply text-xs box-border md:text-sm w-fit sm:w-fit md:w-full font-mono text-transparent bg-clip-text bg-gradient-to-t from-cyan-950 to-teal-700 shadow-inner shadow-slate-500 outline outline-2 outline-slate-300 rounded-tl-3xl rounded-br-3xl p-5 text-start mb-5 font-light md:font-normal
+  @apply text-xs box-border md:text-sm w-fit sm:w-fit md:w-full font-mono text-transparent bg-clip-text bg-gradient-to-t from-cyan-950 to-teal-700 shadow-md shadow-slate-500 outline outline-2 outline-slate-300 rounded-tl-3xl rounded-br-3xl p-5 text-start mb-5 font-light md:font-normal
 }
 
 .titlle_text {
