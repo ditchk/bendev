@@ -32,8 +32,9 @@ export const sideBarLinks = [
 export const welcomeMessage = [
     {
         title:"BENSON KIGOCI......",
-        subTitle:"I can execute alot of tasks like creating a nice website for your business and thats not all, i have outstanding skills in Nodejs and react to facilitate this and still learning",
-        slogan:"Crafting Digital Masterpieces, One Pixel at a Time."
+        subTitle:"Hi, My name is Benson Kigoci. I can execute alot of tasks like creating a full stack website for your business and that meets your Business need, i have outstanding skills in Nodejs and react to facilitate this and still learning",
+        slogan:"Crafting Digital Masterpieces, One Pixel at a Time.",
+        motive:"Whether you are a startup company or you are just exploring internet world joing me in Zoom or on slack to discuss what your business needs."
     }
 ]
 

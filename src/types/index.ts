@@ -7,6 +7,7 @@ export type myWelcomeMessage = {
   title: string;
   subTitle?: string;
   slogan:string
+  motive:string
 };
 
 export type myFooterLinks = {
