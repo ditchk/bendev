@@ -1,25 +1,24 @@
-import { ring2 } from 'ldrs'
-import Socials from '../shared/Socials'
+import { infinity } from 'ldrs'
 
-ring2.register()
+infinity.register()
 
-// Default values shown
 
 const Homepageloader = () => {
   return (
     <div className='flex flex-col justify-center items-center gap-5 w-fit h-fit m-5 p-10 animate-in fade-in-20 duration-500'>
         <div className='flex flex-col justify-center items-center gap-1'>
          <div className="flex relative justify-center items-center">
-          <img src="/assets/images/logo.png" alt="" width={80} className="absolute"/>
-          <l-ring-2
-            size="120"
-            stroke="1"
-            speed="3" 
-            color="teal" 
-          ></l-ring-2>
+          <l-infinity
+          size="55"
+          stroke="4"
+          stroke-length="0.15"
+          bg-opacity="0.1"
+          speed="1.3" 
+          color="teal" 
+        ></l-infinity>
          </div>
-         <small className="text_title text-shadow">Crafting Digital Masterpieces, One Pixel at a Time.</small>
-         <Socials />
+         {/* <small className="text_title text-shadow">Crafting Digital Masterpieces, One Pixel at a Time.</small> */}
+         {/* <Socials /> */}
         </div>
     </div>
     
