@@ -326,7 +326,7 @@ nav.scrolled {
 }
 
 .text_title {
-  @apply text-[10px] md:text-xl mb-5 font-bold font-mono border-b-2 border-white text-transparent text-center bg-clip-text bg-gradient-to-l from-blue-700 via-black to-cyan-800
+  @apply text-base md:text-xl mb-5 font-bold font-mono border-b-2 border-white text-transparent text-center bg-clip-text bg-gradient-to-l from-blue-700 via-black to-cyan-800
 }
 
 .text_title2 {
