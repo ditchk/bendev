@@ -7,7 +7,6 @@ const Home = () => {
   return (
     <div className="default_Container">
       <Welcome />
-      {/* <Featured /> */}
       <Brands />
       <Services />
     </div>

@@ -91,9 +91,6 @@
 }
  
 @layer base {
-  * {
-    @apply border-border;
-  }
   body {
     @apply bg-cyan-950 bg-opacity-20 text-black
   }
@@ -498,11 +495,11 @@ nav.scrolled {
 }
 
 .ServiceContainer {
-  @apply flex flex-col justify-center gap-2 h-full w-full bg-cyan-950 bg-opacity-10 relative outline-2 outline outline-slate-100 p-2 rounded-tr-3xl shadow-sm shadow-cyan-600 hover:shadow-md hover:shadow-cyan-600 duration-1000 !important
+  @apply flex flex-col justify-center gap-2 h-fit w-full bg-cyan-950 bg-opacity-10 relative outline-2 outline outline-slate-100 p-2 rounded-tr-3xl shadow-sm shadow-cyan-600 hover:shadow-md hover:shadow-cyan-600 duration-1000 !important
 }
 
 .Image-Cont {
-  @apply flex flex-1 justify-center items-center h-20 w-auto rounded-tr-3xl overflow-hidden rounded-bl-3xl outline outline-2 outline-white !important
+  @apply flex flex-1 justify-center items-center h-fit w-auto rounded-tr-3xl overflow-hidden rounded-bl-3xl outline outline-2 outline-white !important
 }
 
 .ImageUrl-sty {
@@ -510,7 +507,7 @@ nav.scrolled {
 }
 
 .Descript_text {
-  @apply box-border sm:min-h-[150px] md:min-h-[170px] lg:min-h-[150px] text-sm font-serif font-thin text-teal-900 p-2 m-2 border-t border-slate-100 border-l rounded-tl-xl !important
+  @apply box-border min-h-[150px] sm:min-h-[150px] md:min-h-[170px] lg:min-h-[160px] text-sm font-serif font-thin text-teal-900 p-2 m-2 border-t border-slate-100 border-l rounded-tl-xl !important
 }
 
 .MDclose {

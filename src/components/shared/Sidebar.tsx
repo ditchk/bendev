@@ -33,7 +33,7 @@ const Sidebar = () => {
                <NavLink 
                to={link.route}
                reloadDocument
-               className={`flex flex-row font-sans w-full gap-3 p-1 text-sm text-center text-white hover:bg-slate-200 hover:text-slate-400 bg-cyan-950 bg-opacity-50 outline outline-1 outline-teal-500 rounded-md duration-1000 ${isActive && "shadow shadow-slate-500"}`}>
+               className={`flex flex-row font-sans w-full gap-3 p-1 text-xs text-center text-white hover:bg-slate-200 hover:text-slate-400 bg-cyan-950 bg-opacity-50 outline outline-1 outline-teal-500 rounded-md duration-1000 ${isActive && "shadow shadow-slate-500"}`}>
                  {link.label}
              </NavLink>
            </li>
