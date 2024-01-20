@@ -6,9 +6,8 @@
  
 @layer base {
   :root {
-    color-scheme: light-only;
-    background-blend-mode: hard-light;
-    background-color: wheat;
+    color-scheme: light;
+    background-color: white;
   }
 
 
