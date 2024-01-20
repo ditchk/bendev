@@ -18,26 +18,26 @@ const CarricullumV = () => {
 
 
   return (
-    <div className="flex flex-col justify-center items-center md:mx-10 bg-cyan-950 bg-opacity-5 outline outline-1 outline-slate-200 my-5">
-       
-        
-      <div className="flex flex-col justify-center items-center outline outline-2 rounded-md rounded-tl-3xl rounded-br-3xl md:rounded-b-full outline-slate-50 m-5 p-2 md:p-5 md:px-24 md:pb-5 mb-10 bg-cyan-950 bg-opacity-10 animate-in slide-in-from-right-40 duration-500">
-        <motion.h1 
-            style={{
-                transform: isInView ? "none" : "translateY(50px)",
-                opacity: isInView ? 1 : 0,
-                transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
-                }}
-            ref={ref} 
-            className="text_prim text-shadow">BENSON KIGOCI</motion.h1>
+    <div className="flex flex-col justify-center items-center md:mx-10 bg-white bg-opacity-5 outline outline-1 shadow-2xl outline-slate-200 my-5">
+      <div className="flex flex-col justify-center items-center outline outline-2 rounded-md rounded-tl-3xl rounded-br-3xl outline-slate-50 m-1 md:p-5 md:px-24 md:pb-5 mb-10 bg-cyan-950 bg-opacity-10 animate-in slide-in-from-right-40 duration-500">
+        <div className="flex flex-row justify-center items-center">
+            <img 
+            src="/assets/images/homepage.png" 
+            alt="homepage-image" 
+            width={50}
+            loading="lazy"
+            className="Homepage-Image"
+            /> 
+        </div>
+        <h1 className="text_prim text-shadow">BENSON KIGOCI</h1>
         <h2 className="text_sec mb-5 text-shadow">Full Stack Developer && UI/UX Designer</h2>
             <h3 className="text_sec text-shadow">
                 Find me on social platforms
             </h3>
             <Socials />
-        <div className="flex flex-col justify-center items-start gap-1">
-            <h1 className="flex flex-row justify-center text-center text-cyan-950 gap-2 font-sans font-normal text-xs mb-1 text-shadow"><FaLocationPin className="bg-teal-700 p-1 text-white outline outline-2 outline-white shadow-inner shadow-black rounded-md text-center text-2xl" />242 Union st, Rocland MA, United States</h1>
-            <h1 className="flex flex-row justify-center text-center text-cyan-950 font-normal gap-2 font-sans text-xs mb-6 text-shadow"><FaPhone className="bg-teal-700 p-1 text-white outline outline-2 outline-white shadow-inner shadow-black rounded-md text-center text-2xl" />{'+254712941987'}</h1>
+        <div className="flex flex-col justify-center gap-1">
+            <h1 className="flex flex-row justify-center text-center text-cyan-950 gap-2 font-sans font-normal text-xs mb-1 text-shadow">242 Union st, Rocland MA, United States</h1>
+            <h1 className="flex flex-row justify-center text-center text-cyan-950 font-normal gap-2 font-sans text-xs mb-6 text-shadow">{'+254712941987'}</h1>
             
         </div>
       </div> 

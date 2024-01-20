@@ -11,15 +11,6 @@ const Welcome = () => {
               return (
                 <div className="list-Cont">
                   <li key={link.title}>
-                    <div className="flex flex-row justify-center items-center md:hidden">
-                      <img 
-                        src="/assets/images/homepage.png" 
-                        alt="homepage-image" 
-                        width={300}
-                        loading="lazy"
-                        className="Homepage-Image"
-                      /> 
-                    </div>
                     <div>
                         <h2 className="paragraph_text">{link.subTitle}</h2>
                         <h3 className="paragraph_text">I have aquired skills that will help your business scale up in this technology era.Using my expertise i will design stunning landing pages/website and even design your ad campaignsfor your business using the latest technology</h3>
