@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { sideBarLinks } from '@/constants';
 import { MyNavLink } from '@/types';
 import { NavLink, useLocation, } from 'react-router-dom';
-import { HiOutlineMenuAlt1 } from 'react-icons/hi';
+import { HiOutlineMenuAlt3 } from 'react-icons/hi';
 import { motion } from 'framer-motion';
 import { MdOutlineClose } from "react-icons/md";
 
@@ -57,15 +57,15 @@ const toggleMenu = () => {
 };
 
  return (
-    <nav className="MobileMenu" onClick={hideNavbar} onScroll={hideNavbar}>
+    <nav className="MobileMenu transition-all" onClick={hideNavbar} onScroll={hideNavbar}>
             {!menuOpen ? (
-              <HiOutlineMenuAlt1 className="text-3xl text-teal-800  bg-transparent rounded-md  outline outline-2 outline-teal-50 animate-pulse" onClick={toggleMenu}/>
+              <HiOutlineMenuAlt3 className="text-4xl text-teal-800  bg-transparent rounded-md transition-all duration-1000" onClick={toggleMenu}/>
             ) : (
-              <MdOutlineClose className="text-3xl text-teal-700  bg-transparent bg-opacity-40 rounded-md  outline-dashed outline-2 outline-teal-50 animate-in ease-in-out" onClick={toggleMenu}/>
+              <MdOutlineClose className="text-4xl text-teal-700  bg-transparent bg-opacity-40 rounded-md transition-all duration-1000" onClick={toggleMenu}/>
             )}
       {menuOpen && (
        <motion.ul
-        animate={{ y: 46 }}
+        animate={{ y: 51 }}
         transition={{ delay: 0 }} 
         className={`menubar ${navbarHidden ? 'navbar hidden' : 'hidden'}`}
        >

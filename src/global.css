@@ -88,7 +88,7 @@
 
 .menubar {
   @apply grid grid-cols-1 pt-2 gap-2 justify-start items-start fixed  
-  w-fit h-fit rounded-bl-xl shadow-md p-2 outline-cyan-50 right-0 bg-white backdrop-blur-2xl bg-opacity-90
+  w-fit h-fit rounded-bl-xl p-2 outline-cyan-50 right-0 bg-cyan-950 backdrop-blur-2xl bg-opacity-60 shadow-2xl
  }
 
 .links {
@@ -154,7 +154,11 @@ nav.scrolled {
 }
 
 .links_footer {
-  @apply text-sm text-start w-full text-white font-serif hover:text-cyan-600 hover:translate-x-5 duration-300
+  @apply text-sm text-start w-full text-slate-500 font-serif hover:text-cyan-600 hover:translate-x-5 duration-300
+}
+
+.links_footer2 {
+  @apply text-sm text-start w-full text-slate-500 font-serif hover:text-cyan-600 hover:scale-95 cursor-context-menu duration-300
 }
 
 .default_Contactcontainer {

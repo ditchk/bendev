@@ -1,4 +1,3 @@
-
 import * as z from "zod"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
@@ -12,13 +11,21 @@ import {
   FormLabel,
 } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
-import { myFooterLinks, myMoreFooterLinks } from "@/types"
-import { footerLinks, moreFooterLinks } from "@/constants"
+import { myFaqs, myFooterLinks, myMoreFooterLinks } from "@/types"
+import { footerLinks, freqAsked, moreFooterLinks } from "@/constants"
 import { Link } from "react-router-dom"
 import Socials from "./Socials"
+import { useState } from "react"
 
 
 const Footer = () => {
+
+  const [clicked, setIsclicked] = useState(false)
+
+  const handleClik = () => {
+    setIsclicked(!clicked)
+  }
+
   const formSchema = z.object({
     email: z.string().min(2, {message: ''}).max(50),
   })
@@ -35,29 +42,25 @@ const Footer = () => {
     console.log(values)
   }
   return (
-    <footer className="flex flex-col w-full shadow shadow-slate-100 md:shadow-slate-600 border-t border-slate-400 bg-cyan-950 bg-opacity-10 z-0">
-      <div className="flex flex-col justify-start items-start md:flex-row md:justify-between m-3 md:m-10 p-2 md:p-10 md:items-center rounded-lg outline outline-1 outline-slate-300">
-          <img src="/assets/images/logo.png" alt="logo" width={100} />
-        <Form {...form}>
-          <form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-row justify-start items-center md:justify-center md:items-center gap-2 md:gap-3 space-y-8 w-full p-5">
-            <FormField
-              control={form.control}
-              name="email"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel className="titlle_text">Subscribe</FormLabel>
-                  <FormControl>
-                    <Input placeholder="Enter your email" {...field} className="form_inp2" />
-                  </FormControl>
-                  {/* <FormMessage /> */}
-                </FormItem>
-              )}
-            />
-            <Button type="submit" className="common_btn">Subscribe now!</Button>
-          </form>
-        </Form>
-        <div className="flex flex-col justify-start gap-2 p-5">
-          <h1 className="titlle_text">Quick links</h1>
+    <footer className="flex flex-col w-full shadow-md shadow-slate-100 md:shadow-slate-600 bg-cyan-950 bg-opacity-10 z-0">
+      <div className="flex flex-col justify-start items-start md:flex-row md:justify-between m-3 md:m-10 p-2 md:p-10 md:items-center rounded-lg">
+        <div className="flex flex-col justify-start items-start p-2 rounded-3xl">
+          <h3 className="text_title text-shadow mt-4">FAQs</h3>
+          <ul className="flex flex-col text-slate-700 list-decimal shadow-lg p-5 rounded-2xl">
+            {freqAsked.map((link: myFaqs) => {
+              return (
+                <li key={link.question}
+                  onClick={handleClik}
+                >
+                  <h3 className="links_footer2">{link.question}</h3>
+                  <h3 className=" text-slate-400 text-xs ">{link.answer}</h3>
+                </li>
+              )
+            })}
+          </ul>
+        </div>
+        <div className="flex flex-col justify-start gap-2 ">
+          <h1 className="text_title text-shadow">Quick links</h1>
             <div className="flex flex-row justify-between gap-10" >
                 <ul className="flex flex-col justify-start list-disc list-inside">
                   {footerLinks.map((link: myFooterLinks) => {
@@ -79,7 +82,26 @@ const Footer = () => {
                     )
                   })}
                 </ul>
-            </div><Socials/>
+            </div>
+            <Socials/>
+            <Form {...form}>
+          <form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-row justify-start items-center p-2 md:justify-center md:items-center gap-2 md:gap-3 space-y-8 w-full">
+            <FormField
+              control={form.control}
+              name="email"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel className="text_title text-shadow">Subscribe</FormLabel>
+                  <FormControl>
+                    <Input placeholder="Enter your email" {...field} className="bg-white" />
+                  </FormControl>
+                  {/* <FormMessage /> */}
+                </FormItem>
+              )}
+            />
+            <Button type="submit" className="common_btn">Subscribe now!</Button>
+          </form>
+        </Form>
         </div>
       </div>
       <div className="flex flex-col justify-center items-center border-t border-slate-300">

@@ -15,6 +15,11 @@ export type myFooterLinks = {
   route: string
 };
 
+export type myFaqs = {
+  question: string,
+  answer: string
+}
+
 export type myMoreFooterLinks = {
   name2: string;
   route2: string;
