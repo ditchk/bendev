@@ -278,7 +278,7 @@ nav.scrolled {
 }
 
 .text_title2 {
-  @apply text-base rounded-r-full  md:rounded-full font-bold font-sans border-2 p-2 border-slate-100 text-transparent bg-clip-text bg-gradient-to-l from-blue-700 via-black to-cyan-800
+  @apply text-base rounded-full font-bold font-sans border-2 p-2 border-slate-100 text-transparent bg-clip-text bg-gradient-to-l from-blue-700 via-black to-cyan-800
 }
 
 .text_title3 {
@@ -411,7 +411,7 @@ nav.scrolled {
 }
 
 .primary-Box {
-  @apply flex flex-col md:flex-row justify-start items-start md:justify-center md:items-center md:gap-5 mb-5 !important
+  @apply flex flex-col md:flex-row justify-center items-center md:gap-5 mb-5 !important
 }
 
 .Styling-Div {
