@@ -5,13 +5,13 @@ import MobileMenu from './MobileMenu';
 
 const Navbar = () => {
   return (
-    <nav id='navbar' className="z-50 flex flex-row justify-between gap-16 w-full shadow-md bg-cyan-950 border-b border-white bg-opacity-10 backdrop-blur-lg animate-in slide-in-from-top-10 h-max top-0 sticky py-2 px-3 duration-1000">
+    <nav id='navbar' className="z-50 flex flex-row justify-between gap-16 w-full shadow-sm shadow-slate-400 bg-cyan-950 border-b border-white bg-opacity-10 backdrop-blur-lg animate-in slide-in-from-top-10 h-max top-0 sticky py-1 px-3 duration-1000">
       <Link 
       to={'/'}
       className="flex flex-row justify-center items-center gap-2"
       >
         <img src="/assets/images/logo.png" alt="" width={40} className='ml-1'/>
-        <h1 className="logo-text">bswp</h1>
+        <h1 className="logo-text">Bswp</h1>
       </Link>
       <div className="hidden md:flex flex-row justify-center items-center">
         <Socials />
