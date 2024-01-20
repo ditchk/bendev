@@ -44,9 +44,9 @@ const Footer = () => {
   return (
     <footer className="flex flex-col w-full shadow-md shadow-slate-100 md:shadow-slate-600 bg-cyan-950 bg-opacity-10 z-0">
       <div className="flex flex-col justify-start items-start md:flex-row md:justify-between m-3 md:m-10 p-2 md:p-10 md:items-center rounded-lg">
-        <div className="flex flex-col justify-start items-start p-2 rounded-3xl">
+        <div className="flex flex-col justify-start items-start p-5 shadow-lg rounded-3xl">
           <h3 className="text_title text-shadow mt-4">FAQs</h3>
-          <ul className="flex flex-col text-slate-700 list-decimal shadow-lg p-5 rounded-2xl">
+          <ul className="flex flex-col text-slate-700 list-decimal p-5 rounded-2xl">
             {freqAsked.map((link: myFaqs) => {
               return (
                 <li key={link.question}
