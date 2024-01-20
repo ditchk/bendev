@@ -318,12 +318,12 @@ nav.scrolled {
 /* Forms */
 
 .inputBox {
-  @apply bg-white text-start text-slate-200 p-6 focus-visible:outline-none w-full outline outline-1 outline-slate-400
+  @apply bg-white text-start text-slate-200 focus-visible:outline-none w-full outline outline-1 outline-slate-400
 }
 
-.form_item {
-  @apply w-64 md:w-80
-}
+/* .form_item {
+  @apply w- md:w-80
+} */
 
 .headText {
   @apply text-xl md:text-3xl text-center mb-5 font-bold font-mono text-transparent bg-clip-text bg-gradient-to-l from-blue-700 via-black to-cyan-800
