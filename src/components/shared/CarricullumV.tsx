@@ -1,6 +1,4 @@
-import { motion, useInView } from "framer-motion"
-
-import { FaLocationPin, FaPhone } from "react-icons/fa6"
+import { useInView } from "framer-motion"
 import Socials from "./Socials"
 import { useEffect, useRef } from "react"
 import { Link } from "react-router-dom"
