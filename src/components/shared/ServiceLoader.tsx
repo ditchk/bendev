@@ -9,7 +9,7 @@ const ServiceLoader = () => {
         <l-dot-stream
         size="45"
         speed="2" 
-        color="black" 
+        color="teal" 
         ></l-dot-stream>
     </div>
   )

@@ -124,7 +124,7 @@ nav.scrolled {
   @apply justify-center items-center bg-white rounded-md
 }
 .social_icons {
-  @apply text-2xl p-[3px] rounded-md cursor-pointer outline outline-2 outline-red-50 text-red-50 duration-700
+  @apply text-2xl p-[3px] rounded-md cursor-pointer outline outline-2 outline-slate-500 text-slate-500 hover:scale-105 duration-1000
 }
 .tittl_name {
   @apply -rotate-90 md:rotate-0 text-shadow animate-typing overflow-hidden whitespace-nowrap pr-5 font-bold text-base md:text-xl font-mono text-transparent bg-clip-text bg-gradient-to-br from-cyan-500 via-black to-cyan-950
