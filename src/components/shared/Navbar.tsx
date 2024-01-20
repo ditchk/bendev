@@ -5,7 +5,7 @@ import MobileMenu from './MobileMenu';
 
 const Navbar = () => {
   return (
-    <nav id='navbar' className="z-50 flex flex-row justify-between gap-16 w-full border-b shadow-sm shadow-slate-500 border-slate-400 animate-in slide-in-from-top-10 h-max bg-cyan-950 backdrop-blur top-0 sticky py-2 px-3 bg-opacity-10 duration-1000">
+    <nav id='navbar' className="z-50 flex flex-row justify-between gap-16 w-full shadow-md backdrop-blur-lg animate-in slide-in-from-top-10 h-max top-0 sticky py-2 px-3 duration-1000">
       <Link 
       to={'/'}
       className="flex flex-row justify-center items-center gap-2"
@@ -14,7 +14,6 @@ const Navbar = () => {
         <h1 className="logo-text">BENSWORKSPACE</h1>
       </Link>
       <div className="hidden md:flex flex-row justify-center items-center">
-        <h3 className="text-end text-black text-base w-full lg:text-lg p-3 font-serif">lets talk!</h3>
         <Socials />
         <Link to={'/mycv'} className="Linkme">
           Explore

@@ -17,7 +17,7 @@ const Sidebar = () => {
 
      
   return (
-    <nav className="hidden md:flex flex-col md:justify-center items-center bg-cyan-950 bg-opacity-70 mt-24 px-2 gap-5 py-2 h-fit w-fit outline outline-1 outline-white rounded-r-lg fixed z-50 animate-in slide-in-from-left-24">
+    <nav className="hidden md:flex flex-col md:justify-center items-center bg-transparent mt-24 p-1 gap-5 h-fit w-fit outline outline-1 backdrop-blur-sm outline-slate-400 rounded-r-lg fixed z-50 animate-in slide-in-from-left-24">
        {!menuOpen ? (
         <MdClose className="flex justify-end left-10 w-fit bg-gradient-to-t from-red-950 to-cyan-200 p-1 rounded-3xl cursor-pointer text-xl" onClick={toggleMenu} />
        ) : (
@@ -33,7 +33,7 @@ const Sidebar = () => {
                <NavLink 
                to={link.route}
                reloadDocument
-               className={`flex flex-row font-sans w-full gap-3 p-1 text-xs text-center text-white hover:bg-slate-200 hover:text-slate-400 bg-cyan-950 bg-opacity-50 outline outline-1 outline-teal-500 rounded-md duration-1000 ${isActive && "shadow shadow-slate-500"}`}>
+               className={`flex flex-row font-sans w-full gap-3 p-1 text-xs text-center text-white outline outline-1 outline-cyan-50 bg-opacity-80 bg-black rounded-md ${isActive && "bg-cyan-950 text-sm"}`}>
                  {link.label}
              </NavLink>
            </li>

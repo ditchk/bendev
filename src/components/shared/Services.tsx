@@ -2,9 +2,9 @@ import { useGetAllServices } from "@/lib/Queries/QueriesAndMutations";
 import ServicesBox from "./ServicesBox";
 import ServiceLoader from "./ServiceLoader";
 import { Models } from "appwrite";
-import { ImArrowDown } from "react-icons/im";
 import { useEffect, useRef } from "react";
 import { useInView } from "framer-motion";
+import { Button } from "../ui/button";
 
 const Services = () => {
 
@@ -30,7 +30,11 @@ const Services = () => {
         <div className="Styling-Div" />
         <h1 className="text_title2 shadow-sm shadow-cyan-600">Get more than just a landing page</h1>
         <div className="Line-Down" />
-        <ImArrowDown  className="Icon-Down" />
+        <h1 className="text_title2 shadow-sm shadow-cyan-600">Revamp your online presence with bswp</h1>
+      </div>
+      <div className="flex justify-center w-full h-full mt-24">
+
+        <Button className="custom-button">Choose a service to Get started today!</Button>
       </div>
       {isLoading && !products ? (
         <ServiceLoader />

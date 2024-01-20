@@ -4,6 +4,8 @@ import { FaLocationPin, FaPhone } from "react-icons/fa6"
 import Socials from "./Socials"
 import { useEffect, useRef } from "react"
 import { Link } from "react-router-dom"
+import Welcome from "./Welcome"
+import Brands from "./Brands"
 
 const CarricullumV = () => {
     const ref = useRef(null)
@@ -17,6 +19,8 @@ const CarricullumV = () => {
 
   return (
     <div className="flex flex-col justify-center items-center md:mx-10 bg-cyan-950 bg-opacity-5 outline outline-1 outline-slate-200 my-5">
+       
+        
       <div className="flex flex-col justify-center items-center outline outline-2 rounded-md rounded-tl-3xl rounded-br-3xl md:rounded-b-full outline-slate-50 m-5 p-2 md:p-5 md:px-24 md:pb-5 mb-10 bg-cyan-950 bg-opacity-10 animate-in slide-in-from-right-40 duration-500">
         <motion.h1 
             style={{
@@ -36,7 +40,10 @@ const CarricullumV = () => {
             <h1 className="flex flex-row justify-center text-center text-cyan-950 font-normal gap-2 font-sans text-xs mb-6 text-shadow"><FaPhone className="bg-teal-700 p-1 text-white outline outline-2 outline-white shadow-inner shadow-black rounded-md text-center text-2xl" />{'+254712941987'}</h1>
             
         </div>
-      </div>
+      </div> 
+      <section>
+        <Welcome />
+      </section>
       <section id="roadmap" className="flex flex-1 w-full h-full outline outline-1 outline-slate-100 py-10 md:px-24 p-2">
         <div className="flex flex-col justify-start items-start">
             <h1 className="text_title text-shadow">PROFFESSIONAL ROADMAP</h1>
@@ -102,7 +109,7 @@ const CarricullumV = () => {
             </div>
         </div>
       </section>
-      <section className="flex flex-1 w-full h-fit py-10 md:px-24 p-5 outline outline-1 outline-slate-50">
+      <section className="flex flex-col w-full h-fit py-10 md:px-24 p-5 outline outline-1 outline-slate-50">
         <div className="flex flex-col justify-start items-start">
             <h1 className="text_title mb-5 text-shadow">
                 WHY SHOULD YOU WORK WITH ME?
@@ -113,6 +120,7 @@ const CarricullumV = () => {
                 {'My goal is to satisfy our agreed terms and making it my bsuness to deliver the required milestones in return i ask for a healthy work term to motivate this efforts'}
             </p>
         </div>
+        <Brands />
       </section>
     </div>
   )

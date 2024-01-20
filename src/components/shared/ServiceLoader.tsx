@@ -1,16 +1,16 @@
-import { ping } from 'ldrs'
+import { dotStream } from 'ldrs'
 
-ping.register()
+dotStream.register()
 
 const ServiceLoader = () => {
 
   return (
-    <div>
-        <l-ping
+    <div className="flex  h-screen w-full justify-center items-start mt-5">
+        <l-dot-stream
         size="45"
         speed="2" 
         color="black" 
-        ></l-ping>
+        ></l-dot-stream>
     </div>
   )
 }
