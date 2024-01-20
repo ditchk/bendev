@@ -8,6 +8,7 @@
   :root {
     color-scheme: light;
     background-color: white;
+    color: white;
   }
 
 
@@ -35,7 +36,7 @@
  
 @layer base {
   body {
-    @apply bg-white text-black
+    @apply bg-transparent text-current
   }
 }
 
@@ -410,11 +411,11 @@ nav.scrolled {
 }
 
 .Styling-Div {
-  @apply bg-slate-100 w-[1.5px] h-11 rounded-t-full shadow-sm shadow-cyan-600 !important
+  @apply bg-slate-600 w-[1.5px] h-11 rounded-t-full !important
 }
 
 .serviceBox {
-  @apply flex flex-col justify-center h-fit w-full items-center p-5 outline outline-1 outline-slate-100 !important
+  @apply flex flex-col justify-center h-fit w-full items-center p-5 outline outline-1 outline-white !important
 }
 
 .BoxText {
@@ -430,15 +431,15 @@ nav.scrolled {
 }
 
 .Icon-Down {
-  @apply text-4xl text-slate-100 backdrop-blur-2xl filter mb-3 animate-pulse
+  @apply text-4xl text-slate-600 backdrop-blur-2xl filter mb-3 animate-pulse
 }
 
 .Line-Down {
-  @apply bg-slate-100 w-[1.5px] h-11 rounded-t-full shadow-sm shadow-cyan-600
+  @apply bg-slate-600 w-[1.5px] h-11 rounded-t-full
 }
 
 .ServiceContainer {
-  @apply flex flex-col justify-center gap-2 h-fit w-full bg-cyan-950 bg-opacity-10 relative outline-2 outline outline-slate-100 p-2 rounded-tr-3xl shadow-sm shadow-cyan-600 hover:shadow-md hover:shadow-cyan-600 duration-1000 !important
+  @apply flex flex-col justify-center gap-2 h-fit w-full bg-white relative outline-2 outline outline-slate-100 p-2 rounded-tr-3xl shadow-sm shadow-black hover:shadow-md hover:shadow-slate-600 duration-1000 !important
 }
 
 .Image-Cont {
@@ -450,7 +451,7 @@ nav.scrolled {
 }
 
 .Descript_text {
-  @apply box-border min-h-[150px] sm:min-h-[150px] md:min-h-[170px] lg:min-h-[160px] text-sm font-serif font-thin text-teal-900 p-2 m-2 border-t border-slate-100 border-l rounded-tl-xl !important
+  @apply box-border min-h-[150px] sm:min-h-[150px] md:min-h-[170px] lg:min-h-[160px] text-sm font-serif font-thin text-black p-2 m-2 border-t border-slate-100 border-l rounded-tl-xl !important
 }
 
 .MDclose {
