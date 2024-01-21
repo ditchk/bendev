@@ -329,7 +329,7 @@ nav.scrolled {
 }
 
 .form_item {
-  @apply w-fit h-fit
+  @apply w-full h-fit
 }
 
 .headText {

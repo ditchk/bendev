@@ -77,7 +77,7 @@ const SignupForm = () => {
           }}
           ref={ref} 
         onSubmit={form.handleSubmit(onSubmit)} 
-        className="flex flex-col justify-start items-center h-fit p-5 m-1 md:px-16 bg-white w-full space-y-3">
+        className="flex flex-col justify-start items-center h-fit bg-white w-auto space-y-3">
         <div className="flex flex-col justify-center items-center h-fit w-fit">
           <Link to={'/'}><img src="/assets/images/loader.png" alt="" width={100} /></Link>
           <h1 className="login-text">Join to unlock all features</h1>
@@ -134,7 +134,7 @@ const SignupForm = () => {
             </FormItem>
           )}
         />
-        <Button type="submit" className="w-2/3 md:w-fit">
+        <Button type="submit" className="w-full">
         {isCreatingUser ? (
                   <UploadLoader />
                 ) : (
