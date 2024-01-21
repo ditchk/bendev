@@ -73,7 +73,7 @@ const SigninForm = () => {
         onSubmit={form.handleSubmit(onSubmit)} 
         className="flex flex-col justify-start items-center h-fit bg-white w-auto space-y-3">
         <div className="flex flex-col justify-center items-center h-fit w-fit">
-          <Link to={'/'}><img src="/assets/images/loader.png" alt="" width={50} /></Link>
+          <Link to={'/'}><img src="/assets/images/loader.png" alt="" width={100} /></Link>
           <h1 className="login-text">LOGIN TO USE OUR SITE</h1>
         </div>
         <FormField
