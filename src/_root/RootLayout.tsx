@@ -27,13 +27,13 @@ const RootLayout: React.FC = () => {
           <Homepageloader />
         </div>
       ) : (
-      <div className="flex w-full h-full md:flex flex-col slide-down-fade">
+      <div className="flex flex-col w-full h-full">
         <Navbar />
         <Sidebar />
         <section className="flex flex-col">
           <Outlet />
         </section>
-        <section className="flex flex-1 relative">
+        <section className="flex">
           <Footer />
         </section>
       </div>

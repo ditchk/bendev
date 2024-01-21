@@ -41,7 +41,7 @@
  
 @layer base {
   body {
-    @apply bg-transparent text-current
+    @apply bg-transparent text-current select-none selection:select-none
   }
 }
 
