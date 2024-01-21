@@ -1,16 +1,16 @@
-import { spiral } from 'ldrs'
+import { dotStream } from 'ldrs'
 
-spiral.register()
+dotStream.register()
 
 
 function UploadLoader() {
   return (
     <div className='flex flex-1 justify-center items-center w-10 p-5'>
-        <l-spiral
+        <l-dot-stream
         size="34"
         speed="0.9" 
         color="white" 
-        ></l-spiral>
+        ></l-dot-stream>
     </div>
   )
 }
