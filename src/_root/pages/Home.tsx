@@ -3,7 +3,7 @@ import Services from "@/components/shared/Services"
 
 const Home = () => {
   return (
-    <div className="default_Container">
+    <div className="custom_container">
       <IconDump />
       <Services />
     </div>
