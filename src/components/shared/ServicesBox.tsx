@@ -59,7 +59,6 @@ const ServicesBox = ({service} : ServiceBoxProps ) => {
                 </Button>
             </div>
         </div>
-        
     </motion.div>
   )
 }

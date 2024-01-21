@@ -42,8 +42,8 @@ const Footer = () => {
     console.log(values)
   }
   return (
-    <footer className="flex flex-col w-full shadow-md shadow-slate-100 md:shadow-slate-600 bg-cyan-950 bg-opacity-10 z-0">
-      <div className="flex flex-col justify-start items-start md:flex-row md:justify-between m-3 md:m-10 p-2 md:p-10 md:items-center rounded-lg">
+    <footer className="flex flex-col shadow-md shadow-slate-100 md:shadow-slate-600 bg-cyan-950 bg-opacity-10 z-0">
+      <div className="flex flex-col justify-start items-start md:flex-row md:justify-between p-2 md:p-10 md:items-center rounded-lg">
         <div className="flex flex-col justify-start items-start p-5 shadow-lg rounded-3xl">
           <h3 className="text_title text-shadow mt-4">FAQs</h3>
           <ul className="flex flex-col text-slate-700 list-decimal p-5 rounded-2xl">
@@ -83,25 +83,25 @@ const Footer = () => {
                   })}
                 </ul>
             </div>
-            <Socials/>
             <Form {...form}>
-          <form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-row justify-start items-center p-2 md:justify-center md:items-center gap-2 md:gap-3 space-y-8 w-full">
-            <FormField
-              control={form.control}
-              name="email"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel className="text_title text-shadow">Subscribe</FormLabel>
-                  <FormControl>
-                    <Input placeholder="Enter your email" {...field} className="bg-white" />
-                  </FormControl>
-                  {/* <FormMessage /> */}
-                </FormItem>
-              )}
-            />
-            <Button type="submit" className="common_btn">Subscribe now!</Button>
-          </form>
-        </Form>
+              <form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-row justify-start items-center p-2 md:justify-center md:items-center gap-2 md:gap-3 space-y-8 w-full">
+                <FormField
+                  control={form.control}
+                  name="email"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel className="text_title text-shadow">Subscribe</FormLabel>
+                      <FormControl>
+                        <Input placeholder="Enter your email" {...field} className="bg-white" />
+                      </FormControl>
+                      {/* <FormMessage /> */}
+                    </FormItem>
+                  )}
+                />
+                <Button type="submit" className="common_btn">Subscribe now!</Button>
+              </form>
+            </Form>
+        <Socials/>
         </div>
       </div>
       <div className="flex flex-col justify-center items-center border-t border-slate-300">

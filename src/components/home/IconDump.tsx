@@ -7,7 +7,7 @@ import { SiAdobecreativecloud } from "react-icons/si";
 
 const IconDump = () => {
   return (
-    <section className="flex flex-col w-screen h-full">
+    <section className="flex flex-col w-full h-full">
         <div className="m-2 ">
             <h1 className=" text-lg md:text-2xl text-black font-serif font-bold text-transparent bg-clip-text bg-gradient-to-br from-violet-500 via-emerald-500 to-red-300">Crafting Digital Masterpieces, One Pixel at a Time</h1>
         </div>

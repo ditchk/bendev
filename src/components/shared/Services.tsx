@@ -47,7 +47,7 @@ const Services = () => {
             </li>
           ))}
         </ul>
-        </div>
+      </div>
       )}
     </div>
   )
