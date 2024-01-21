@@ -74,14 +74,14 @@ const SigninForm = () => {
         className="flex flex-col justify-start items-center h-fit bg-white w-auto space-y-3">
         <div className="flex flex-col justify-center items-center h-fit w-fit">
           <Link to={'/'}><img src="/assets/images/loader.png" alt="" width={100} /></Link>
-          <h1 className="login-text">LOGIN TO USE OUR SITE</h1>
+          <h1 className="login-text">Welcome back</h1>
         </div>
         <FormField
           control={form.control}
           name="email"
           render={({ field }) => (
             <FormItem className="form_item">
-              <FormLabel  className="text-slate-500">email</FormLabel>
+              <FormLabel  className="text-slate-500">Email</FormLabel>
               <FormControl>
                 <Input {...field} placeholder="Your email" className="inputBox" type="email"/>
               </FormControl>
@@ -110,9 +110,9 @@ const SigninForm = () => {
                 )}
         </Button>
 
-        <p className="font-serif text-xs text-teal-500 font-normal text-shadow">
+        <p className="font-serif text-xs text-teal-500 font-normal">
             Don't have an accout?
-          <Link to={'/signup'} className="text-red-500 ml-1 text-xs">
+          <Link to={'/signup'} className="text-red-500 ml-1 text-xs underline underline-offset-1">
                 Register here!
           </Link>
         </p>
