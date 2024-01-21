@@ -30,7 +30,7 @@ const RootLayout: React.FC = () => {
       <div className="flex flex-col w-full h-full">
         <Navbar />
         <Sidebar />
-        <section className="flex flex-col">
+        <section className="flex flex-col h-full">
           <Outlet />
         </section>
         <section className="flex">
