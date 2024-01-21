@@ -5,11 +5,18 @@ import {
     useQueryClient,
     // useInfiniteQuery,
  } from '@tanstack/react-query';
-import { createProject, getALLServices, getFeaturedProjects, getRecentProducts, getRecentProjects, signInAccount } from '../appwrite/api';
-import { myNewProject } from '@/types';
+import { CreateUserAccount, createProject, getALLServices, getFeaturedProjects, getRecentProducts, getRecentProjects, signInAccount } from '../appwrite/api';
+import { NewUser, myNewProject } from '@/types';
 import { QUERY_KEYS } from './queryKeys';
 
- export const useCreateProject = () => {
+
+export const useCreateUserAccount = () => {
+    return useMutation({
+        mutationFn: (user: NewUser) => CreateUserAccount(user)
+    })
+}
+
+export const useCreateProject = () => {
     const queryClient = useQueryClient();
     
         return useMutation({

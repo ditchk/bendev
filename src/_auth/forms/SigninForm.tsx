@@ -17,11 +17,13 @@ import { useForm } from "react-hook-form"
 import { SigninValidation} from "@/lib/validation"
 import { useEffect, useRef } from "react";
 import UploadLoader from "@/components/shared/UploadLoader";
-import { signInAccount } from "@/lib/appwrite/api";
+import { Link, useNavigate } from "react-router-dom";
+import { useSignInAccount } from "@/lib/Queries/QueriesAndMutations";
 
 
 const SigninForm = () => {
-  const isLoading = false
+  const { mutateAsync: signInAccount, isPending: isSigningIn } = useSignInAccount()
+  const navigate  = useNavigate()
   const form = useForm<z.infer<typeof SigninValidation>>({
     resolver: zodResolver(SigninValidation),
     defaultValues: {
@@ -31,9 +33,11 @@ const SigninForm = () => {
   })
 
   async function onSubmit(values: z.infer<typeof SigninValidation>) {
-    const user = await signInAccount(values) 
+    const user = await signInAccount(values)
 
-    return(user)
+    if(user) {
+      navigate ('/')
+    }
   }
 
   const ref = useRef(null)
@@ -55,8 +59,11 @@ const SigninForm = () => {
           }}
           ref={ref} 
         onSubmit={form.handleSubmit(onSubmit)} 
-        className="flex flex-col justify-start items-center h-fit px-10 md:px-16 shadow-lg py-8 shadow-cyan-950 bg-cyan-950 bg-opacity-10 w-auto space-y-3 rounded-md outline outline-1 outline-slate-200">
-         <h1 className="headText no-underline text-shadow">ADMIN LOGIN</h1>
+        className="flex flex-col justify-start items-center h-fit p-2 px-10 md:p-10 shadow-lg shadow-cyan-950 bg-cyan-950 bg-opacity-10 w-auto space-y-3 rounded-md outline outline-1 outline-slate-200">
+        <div className="flex flex-col justify-center items-center h-fit w-fit p-5">
+          <Link to={'/'}><img src="/assets/images/loader.png" alt="" width={50} /></Link>
+          <h1 className="login-text">LOGIN TO USE OUR SITE</h1>
+        </div>
         <FormField
           control={form.control}
           name="email"
@@ -83,20 +90,20 @@ const SigninForm = () => {
             </FormItem>
           )}
         />
-        <Button type="submit" className="Linkme mt-10">
-        {isLoading ? (
+        <Button type="submit" className="w-2/3">
+        {isSigningIn ? (
                   <UploadLoader />
                 ) : (
                   "Login"
                 )}
         </Button>
 
-        {/* <p className="font-bold">
+        <p className="font-serif text-xs text-teal-500 font-normal text-shadow">
             Don't have an accout?
-          <Link to={'/signup'} className="text-cyan-800 font-bold ml-1 text-sm">
+          <Link to={'/signup'} className="text-red-500 ml-1 text-xs">
                 Register here!
           </Link>
-        </p> */}
+        </p>
       </motion.form>
     </Form>
     </div>

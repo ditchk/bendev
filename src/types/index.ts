@@ -10,6 +10,16 @@ export type myWelcomeMessage = {
   motive:string
 };
 
+
+export type IContextType = {
+  user: IUser;
+  isLoading: boolean;
+  setUser: React.Dispatch<React.SetStateAction<IUser>>;
+  isAuthenticated: boolean;
+  setIsAuthenticated: React.Dispatch<React.SetStateAction<boolean>>;
+  checkAuthUser: () => Promise<boolean>;
+};
+
 export type myFooterLinks = {
   name: string;
   route: string
@@ -39,9 +49,19 @@ export type INewMessage = {
 
 export type NewUser = {
   name: string;
+  username: string;
   email: string;
   password: string;  
 }
+
+export type IUser = {
+  id: string;
+  name: string;
+  username: string;
+  email: string;
+  imageUrl: string;
+  bio: string;
+};
 
 export type myNewProject = {
   ProjectName: string;

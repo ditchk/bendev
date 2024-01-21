@@ -49,7 +49,7 @@ const toggleMenu = () => {
   },
   closed: {
     y: 50,
-    opacity: 0,
+    opacity: 1,
     transition: {
       y: { stiffness: 1000 }
     }
@@ -66,7 +66,7 @@ const toggleMenu = () => {
       {menuOpen && (
        <motion.ul
         animate={{ y: 47 }}
-        transition={{ delay: 0 }} 
+        transition={{type: "spring", delay: 0 }} 
         className={`menubar ${navbarHidden ? 'navbar hidden' : 'hidden'}`}
        >
        {sideBarLinks.map((link: MyNavLink) => {
@@ -92,8 +92,6 @@ const toggleMenu = () => {
            </motion.li>
          )
        })}
-       {/* <h1 className='text-xl font-medium text-violet-950 font-serif'>Find me on social media</h1>
-       <Socials /> */}
      </motion.ul>
       )}
       

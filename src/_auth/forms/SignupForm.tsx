@@ -14,28 +14,49 @@ import {
 import { Input } from "@/components/ui/input"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
+import { useToast } from "@/components/ui/use-toast";
 import { SignupValidation } from "@/lib/validation"
 import { useEffect, useRef } from "react";
 import UploadLoader from "@/components/shared/UploadLoader";
 import { Link } from "react-router-dom";
-import { CreateUserAccount } from "@/lib/appwrite/api";
+import { useCreateUserAccount, useSignInAccount } from "@/lib/Queries/QueriesAndMutations";
 
 
 const SignupForm = () => {
-  const isLoading = false
+  const { toast } = useToast()
+  const { mutateAsync: CreateUserAccount, isPending: isCreatingUser } = useCreateUserAccount()
+  const { mutateAsync: signInAccount } = useSignInAccount()
+
   const form = useForm<z.infer<typeof SignupValidation>>({
     resolver: zodResolver(SignupValidation),
     defaultValues: {
-      name:"",
-      email: "",
-      password: ""
+      name: '',
+      username: '',
+      email: '',
+      password: '',
     },
   })
 
   async function onSubmit(values: z.infer<typeof SignupValidation>) {
     const newUser = await CreateUserAccount(values) 
+    
+    if(!newUser) {
+      return toast({
+        title: "SignUp failed, Please try again later!",
+      })
+    }
 
-    return(newUser)
+
+    const session = await signInAccount({
+      email: values.email,
+      password: values.password
+    })
+
+    if(!session) {
+      return toast({
+        title: "Email/username is already taken.",
+      })
+    }
   }
 
   const ref = useRef(null)
@@ -56,14 +77,30 @@ const SignupForm = () => {
           }}
           ref={ref} 
         onSubmit={form.handleSubmit(onSubmit)} 
-        className="flex flex-col justify-start items-center h-fit p-3 md:px-16 shadow-lg shadow-cyan-950 bg-cyan-950 bg-opacity-10 w-auto space-y-3 rounded-md outline outline-1 outline-slate-200">
-         <h1 className="headText no-underline">JOIN OUR COMMUNITY TODAY</h1>
+        className="flex flex-col justify-start items-center h-fit p-1 px-10 md:px-16 shadow-lg shadow-cyan-950 bg-cyan-950 bg-opacity-10 w-auto space-y-3 rounded-md outline outline-1 outline-slate-200">
+        <div className="flex flex-col justify-center items-center h-fit w-fit">
+          <Link to={'/'}><img src="/assets/images/loader.png" alt="" width={50} /></Link>
+          <h1 className="login-text">Join to unlock all features</h1>
+        </div>
         <FormField
           control={form.control}
           name="name"
           render={({ field }) => (
             <FormItem className="form_item">
               <FormLabel className="text-slate-500">Name</FormLabel>
+              <FormControl>
+                <Input {...field} className="inputBox" type="name"/>
+              </FormControl>
+              {/* <FormMessage /> */}
+            </FormItem>
+          )}
+        />
+        <FormField
+          control={form.control}
+          name="username"
+          render={({ field }) => (
+            <FormItem className="form_item">
+              <FormLabel className="text-slate-500">username</FormLabel>
               <FormControl>
                 <Input {...field} className="inputBox" type="name"/>
               </FormControl>
@@ -97,17 +134,17 @@ const SignupForm = () => {
             </FormItem>
           )}
         />
-        <Button type="submit" className="Linkme">
-        {isLoading ? (
+        <Button type="submit" className="w-2/3">
+        {isCreatingUser ? (
                   <UploadLoader />
                 ) : (
                   "Sign Up"
                 )}
         </Button>
 
-        <p className="font-bold">
+        <p className="font-serif text-xs text-teal-500 font-normal text-shadow">
           Already have an account?
-          <Link to={'/auth/signin'} className="text-cyan-800 font-bold ml-1 text-sm">
+          <Link to={'/auth/signin'} className="text-red-500 ml-1 text-xs">
                 Login here!
           </Link>
         </p>

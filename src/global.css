@@ -87,7 +87,7 @@
 }
 
 .menubar {
-  @apply flex flex-col pt-2 gap-2 justify-start items-start fixed  
+  @apply flex flex-col pt-2 gap-2 justify-end items-end fixed  
   w-fit h-fit rounded-bl-xl p-2 outline-cyan-50 right-0 bg-cyan-950 backdrop-blur-2xl bg-opacity-60 shadow-2xl
  }
 
@@ -242,9 +242,16 @@ nav.scrolled {
   @apply flex flex-col justify-between gap-2 box-border sm:min-h-[180px] mb-5 md:mb-0 text-sm md:text-sm font-serif text-slate-800 p-2 my-1 rounded-tl-2xl rounded-br-2xl bg-cyan-950 bg-opacity-10 outline outline-1 outline-cyan-200
 }
 
+/* Buttons */
+
 .custom_button {
   @apply w-fit bg-gradient-to-br from-black to-teal-500 text-sm text-center text-white outline outline-2 outline-white shadow hover:shadow-2xl shadow-slate-500
 }
+
+.Signup_button {
+  @apply w-fit text-xs font-mono bg-teal-800 h-fit
+}
+
 
 /* Coming soon box */
 
@@ -321,12 +328,16 @@ nav.scrolled {
   @apply bg-white text-start text-slate-200 focus-visible:outline-none w-full outline outline-1 outline-slate-400
 }
 
-/* .form_item {
-  @apply w- md:w-80
-} */
+.form_item {
+  @apply w-fit 
+}
 
 .headText {
-  @apply text-xl md:text-3xl text-center mb-5 font-bold font-mono text-transparent bg-clip-text bg-gradient-to-l from-blue-700 via-black to-cyan-800
+  @apply text-sm md:text-xl text-center mb-5 font-bold font-mono text-transparent bg-clip-text bg-gradient-to-l from-blue-700 via-black to-cyan-800
+}
+
+.login-text {
+  @apply text-teal-700 font-bold no-underline text-shadow
 }
 
 /* Hire request */

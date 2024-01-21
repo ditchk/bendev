@@ -4,13 +4,14 @@ export const myConfig = {
     projectId: import.meta.env.VITE_APPWRITE_PROJECT_ID,
     databaseId: import.meta.env.VITE_APPWRITE_DATABASE_ID,
     APPWRITEUrl: import.meta.env.VITE_APPWRITE_ENDPOINT_URL,
-    userId: import.meta.env.VITE_APPWRITE_USER_ID,
     StorageId: import.meta.env.VITE_APPWRITE_STORAGE_ID,
     productCollectionId: import.meta.env.VITE_APPWRITE_PRODUCT_COLLECTION_ID,
     messageCollectionId: import.meta.env.VITE_APPWRITE_MESSAGE_COLLECTION_ID,
     projectCollectionId: import.meta.env.VITE_APPWRITE_PROJECT_COLLECTION_ID,
     featuredCollectionId: import.meta.env.VITE_APPWRITE_FEATURED_ID,
     userCollectionId:import.meta.env.VITE_APPWRITE_USER_COLLECTION_ID,
+    blogCollectionIld:import.meta.env.VITE_APPWRITE_BLOG_COLLECTION_ID,
+    saveCollectionId:import.meta.env.VITE_APPWRITE_SAVES_COLLECTION_ID,
     quoteCollectionId:import.meta.env.VITE_APPWRITE_QUOTE_COLLECTION_ID,
     ProductId:import.meta.env.VITE_APPWRITE_PRODUCT_ID
 };

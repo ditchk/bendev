@@ -14,6 +14,8 @@ import AuthLayout from './_auth/AuthLayout'
 import Blogposts from './_root/pages/Blogposts'
 import Privacypoliy from './components/shared/Privacypoliy'
 import Adminpanel from './components/admin/Adminpanel'
+import SignupForm from './_auth/forms/SignupForm'
+import { Toaster } from './components/ui/toaster'
 
 function App() {
   return (
@@ -33,7 +35,7 @@ function App() {
             {/* Login routes */}
             <Route element={<AuthLayout />}>
               <Route path="/auth/signin" element={<SigninForm />} />
-              {/* <Route path="/signup" element={<SignupForm/>} /> */}
+              <Route path="/signup" element={<SignupForm/>} />
             </Route>
             
             
@@ -42,6 +44,7 @@ function App() {
               <Route path="/admin" element={<Adminpanel />} />
             </Route>
         </Routes>
+        <Toaster />
       </main> 
   )
 }

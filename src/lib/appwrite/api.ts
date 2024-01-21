@@ -1,4 +1,4 @@
-import { myConfig, storage } from "./config";
+import { avatars, myConfig, storage } from "./config";
 import { ID, Query } from "appwrite";
 import { databases, account, } from "./config";
 import { NewUser, myNewProject } from "@/types";
@@ -8,15 +8,49 @@ export async function CreateUserAccount(user: NewUser) {
   try {
     const newAccount = await account.create(
       ID.unique(),
-      user.name,
       user.email,
       user.password,
-    )
+      user.name,
+    );
 
-    return newAccount;
+    if(!newAccount) throw Error;
+
+    const avatarUrl = avatars.getInitials(user.name)
+
+    const newUser = await saveUserToDB({
+      accountId: newAccount.$id,
+      name: newAccount.name,
+      email: newAccount.email,
+      username: user.username,
+      imageUrl: avatarUrl
+    })
+
+    return newUser;
   } catch (error) {
     console.log(error)
     return error
+  }
+}
+
+
+export async function saveUserToDB(user: {
+  accountId: string;
+  email: string;
+  name: string;
+  imageUrl: URL;
+  username?: string;
+}) {
+  try {
+    const newUser = await databases.createDocument(
+      myConfig.databaseId,
+      myConfig.userCollectionId,
+      ID.unique(),
+      user,
+    )
+
+    return newUser
+  } catch (error) {
+    console.log(error)
   }
 }
 
