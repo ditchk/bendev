@@ -19,11 +19,14 @@ import { useEffect, useRef } from "react";
 import UploadLoader from "@/components/shared/UploadLoader";
 import { Link, useNavigate } from "react-router-dom";
 import { useSignInAccount } from "@/lib/Queries/QueriesAndMutations";
+import { useToast } from "@/components/ui/use-toast";
 
 
 const SigninForm = () => {
   const { mutateAsync: signInAccount, isPending: isSigningIn } = useSignInAccount()
   const navigate  = useNavigate()
+  const { toast } = useToast()
+
   const form = useForm<z.infer<typeof SigninValidation>>({
     resolver: zodResolver(SigninValidation),
     defaultValues: {
@@ -36,7 +39,16 @@ const SigninForm = () => {
     const user = await signInAccount(values)
 
     if(user) {
+      return toast ({
+        title: "success! redirecting to homepage"
+      }) &&
       navigate ('/')
+    }
+
+    if(!user) {
+      return  toast({
+        title: "Error accessing your account please try again",
+      })
     }
   }
 
@@ -69,9 +81,9 @@ const SigninForm = () => {
           name="email"
           render={({ field }) => (
             <FormItem className="form_item">
-              <FormLabel className="text-slate-500">Email</FormLabel>
+              <FormLabel  className="text-slate-500">email</FormLabel>
               <FormControl>
-                <Input {...field} className="inputBox" type="email"/>
+                <Input {...field} placeholder="please enter your username" className="inputBox" type="email"/>
               </FormControl>
               {/* <FormMessage /> */}
             </FormItem>
@@ -84,7 +96,7 @@ const SigninForm = () => {
             <FormItem className="form_item">
               <FormLabel className="text-slate-500">Password</FormLabel>
               <FormControl>
-                <Input {...field} className="inputBox" type="password"/>
+                <Input {...field} placeholder="secret" className="inputBox" type="password"/>
               </FormControl>
               {/* <FormMessage /> */}
             </FormItem>

@@ -67,7 +67,7 @@ const SignupForm = () => {
     }, [isInView])
 
   return (
-    <div className="flex flex-1 justify-center items-center h-fit">
+    <div className="flex flex-1 justify-center w-full items-center h-fit">
       <Form {...form}>
       <motion.form
           style={{

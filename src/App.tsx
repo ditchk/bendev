@@ -19,9 +19,9 @@ import { Toaster } from './components/ui/toaster'
 
 function App() {
   return (
-      <main className="flex flex-1 relative">
+      <main className="">
         <Routes>
-            <Route element={<RootLayout/>}>
+            <Route element={<RootLayout />}>
                 <Route index element={<Home />} />
                 <Route path="/projects" element={<Projects />} />
                 <Route path="/contact" element={<Contact />} />

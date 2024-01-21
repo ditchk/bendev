@@ -224,9 +224,9 @@ export async function createProject(project: myNewProject) {
     return AllServices
   }
 
-  export async function signInAccount(user: {email:string; password:string}) {
+  export async function signInAccount(user: {email:string; password:string; }) {
     try {
-        const session = await account.createEmailSession(user.email, user.password);
+        const session = await account.createEmailSession(user.email, user.password, );
         
         return session;
     } catch(error) {
