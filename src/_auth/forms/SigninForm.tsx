@@ -59,8 +59,8 @@ const SigninForm = () => {
           }}
           ref={ref} 
         onSubmit={form.handleSubmit(onSubmit)} 
-        className="flex flex-col justify-start items-center h-fit p-2 px-10 md:p-10 shadow-lg shadow-cyan-950 bg-cyan-950 bg-opacity-10 w-auto space-y-3 rounded-md outline outline-1 outline-slate-200">
-        <div className="flex flex-col justify-center items-center h-fit w-fit p-5">
+        className="flex flex-col justify-start items-center h-fit bg-white w-auto space-y-3">
+        <div className="flex flex-col justify-center items-center h-fit w-fit">
           <Link to={'/'}><img src="/assets/images/loader.png" alt="" width={50} /></Link>
           <h1 className="login-text">LOGIN TO USE OUR SITE</h1>
         </div>
@@ -90,7 +90,7 @@ const SigninForm = () => {
             </FormItem>
           )}
         />
-        <Button type="submit" className="w-2/3">
+        <Button type="submit" className="w-full">
         {isSigningIn ? (
                   <UploadLoader />
                 ) : (
