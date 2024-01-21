@@ -6,7 +6,7 @@ const AuthLayout = () => {
 
 
   return (
-    <div className="flex flex-row justify-center items-center w-full h-screen">
+    <div className="flex md:flex-row justify-center items-center w-full h-screen">
       {isAuthenticated ? (
         <Navigate to={'/'} />
       ): (

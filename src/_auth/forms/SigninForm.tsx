@@ -71,10 +71,10 @@ const SigninForm = () => {
           }}
           ref={ref} 
         onSubmit={form.handleSubmit(onSubmit)} 
-        className="flex flex-col justify-start items-center h-fit bg-white w-auto space-y-3">
+        className="flex flex-col justify-start items-center h-fit bg-white w-auto space-y-2">
         <div className="flex flex-col justify-center items-center h-fit w-fit">
           <Link to={'/'}><img src="/assets/images/loader.png" alt="" width={100} /></Link>
-          <h1 className="login-text">Welcome back</h1>
+          <h1 className="login-text">Welcome back! we missed you</h1>
         </div>
         <FormField
           control={form.control}

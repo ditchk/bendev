@@ -77,10 +77,10 @@ const SignupForm = () => {
           }}
           ref={ref} 
         onSubmit={form.handleSubmit(onSubmit)} 
-        className="flex flex-col justify-start items-center h-fit bg-white w-auto space-y-3">
+        className="flex flex-col justify-start items-center h-fit bg-white w-auto space-y-2">
         <div className="flex flex-col justify-center items-center h-fit w-fit">
           <Link to={'/'}><img src="/assets/images/loader.png" alt="" width={100} /></Link>
-          <h1 className="login-text">Join to unlock all features</h1>
+          <h1 className="login-text text-center">Please create an account <br /> to unlock all features</h1>
         </div>
         <FormField
           control={form.control}
