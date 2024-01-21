@@ -325,7 +325,7 @@ nav.scrolled {
 /* Forms */
 
 .inputBox {
-  @apply bg-white text-start text-slate-200 focus-visible:outline-none w-full outline outline-1 outline-slate-400
+  @apply bg-white text-start text-gray-600 focus-visible:outline-none w-full outline outline-1 outline-slate-400
 }
 
 .form_item {

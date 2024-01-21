@@ -102,7 +102,7 @@ const SignupForm = () => {
             <FormItem className="form_item">
               <FormLabel className="text-slate-500">username</FormLabel>
               <FormControl>
-                <Input {...field} className="inputBox" type="name"/>
+                <Input {...field} className="inputBox" type="text"/>
               </FormControl>
               {/* <FormMessage /> */}
             </FormItem>
