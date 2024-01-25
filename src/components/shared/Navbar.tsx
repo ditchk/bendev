@@ -9,7 +9,7 @@ const Navbar = () => {
   const navigate = useNavigate()
 
   const handleClick = () => {
-    navigate('/signup')
+    navigate('/error')
   }
 
   return (
