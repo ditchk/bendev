@@ -9,13 +9,11 @@ import Shop from './_root/pages/Shop'
 import About from './_root/pages/About'
 import CarricullumV from './components/shared/CarricullumV'
 import PrivateRoutes from './lib/utils/PrivateRoutes'
-import SigninForm from './_auth/forms/SigninForm'
-import AuthLayout from './_auth/AuthLayout'
 import Blogposts from './_root/pages/Blogposts'
 import Privacypoliy from './components/shared/Privacypoliy'
 import Adminpanel from './components/admin/Adminpanel'
-import SignupForm from './_auth/forms/SignupForm'
 import { Toaster } from './components/ui/toaster'
+import Unauthorized from './components/404/Unauthorized'
 
 function App() {
   return (
@@ -30,15 +28,8 @@ function App() {
                 <Route path="/shop" element={<Shop />} />
                 <Route path="/mycv" element={<CarricullumV/>} />
                 <Route path="/privacy-policy" element={<Privacypoliy />} />
+                <Route path="/error" element={<Unauthorized />} />
             </Route>
-
-            {/* Login routes */}
-            <Route element={<AuthLayout />}>
-              <Route path="/auth/signin" element={<SigninForm />} />
-              <Route path="/signup" element={<SignupForm/>} />
-            </Route>
-            
-            
             {/* Protected pages */}
             <Route element={<PrivateRoutes />}>
               <Route path="/admin" element={<Adminpanel />} />
