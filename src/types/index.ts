@@ -100,5 +100,5 @@ export type ToastProps = {
 
  export type myBannerAssets = {
   index: number;
-  src: string;
+  Image: string;
  }

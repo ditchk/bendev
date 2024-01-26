@@ -44,7 +44,7 @@ const MobileBanner = () => {
     <div className="MobileBanner">
         {BannerAssets.map((link: myBannerAssets) => {
             return (
-                <img src={link.src} alt="" className="BannerImage" />
+                <img src={link.Image} alt="" className="BannerImage" />
             )
         })}
     </div>
