@@ -66,7 +66,7 @@ const Sidebar = () => {
                <NavLink 
                to={link.route}
                reloadDocument
-               className={`flex flex-row font-sans w-full gap-3 p-1 text-xs text-center text-white outline outline-1 outline-cyan-50 bg-opacity-80 bg-black rounded-md ${isActive && "bg-cyan-950 text-sm"}`}>
+               className={`flex flex-row w-full gap-3 p-1 text-xs font-mono text-center text-white outline outline-1 outline-cyan-50 bg-opacity-80 bg-black rounded-md ${isActive && "bg-cyan-950 text-sm"}`}>
                  {link.label}
              </NavLink>
            </motion.li>

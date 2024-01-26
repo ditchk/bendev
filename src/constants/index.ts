@@ -23,10 +23,6 @@ export const sideBarLinks = [
         label: 'shop',
         route: '/shop'
     },
-    {
-        label: 'Admin',
-        route: '/admin'
-    }
 ];
 
 export const welcomeMessage = [
@@ -174,5 +170,20 @@ export const AboutLinks = [
         Icon: '/assets/',
         skill: 'Mobile app development',
         info: 'Using latest tools like Flutter dev i will deliver to you a beatiful user friendly mobile app for your user to connect with your business easily'
+    }
+]
+
+export const BannerAssets = [
+    {
+        index: 0o1,
+        src:'/assets/images/Branding and Business setup.png'
+    },
+    {
+        index: 0o2,
+        src:'/assets/images/MoneybackGuaranteed.png'
+    },
+    {
+        index: 0o3,
+        src:'/assets/images/Show some love to your business.png'
     }
 ]

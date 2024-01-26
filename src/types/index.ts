@@ -97,3 +97,8 @@ export type ToastProps = {
   progress?: number;
   isPaused?: boolean;
  }
+
+ export type myBannerAssets = {
+  index: number;
+  src: string;
+ }

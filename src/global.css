@@ -499,3 +499,18 @@ nav.scrolled {
 
 /* Footer Css fixes */
 
+
+
+/* BannerCont styles */
+
+.BannerCont {
+  @apply hidden md:flex flex-row justify-center items-center gap-5 w-full h-fit mt-5
+}
+
+.BannerImage {
+  @apply object-contain selection:bg-none md:h-32 lg:h-52 scale-90 md:scale-95 hover:scale-105 duration-500 w-fit rounded-2xl shadow-2xl shadow-teal-500 cursor-pointer
+}
+
+.MobileBanner {
+  @apply flex md:hidden flex-row w-full h-full justify-start items-center overflow-x-scroll p-5 overscroll-x-auto overflow-scroll
+}
