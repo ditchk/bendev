@@ -14,6 +14,7 @@ import Privacypoliy from './components/shared/Privacypoliy'
 import Adminpanel from './components/admin/Adminpanel'
 import { Toaster } from './components/ui/toaster'
 import Unauthorized from './components/404/Unauthorized'
+import CookieConcent from './components/cookie/CookieConcent'
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
             </Route>
         </Routes>
         <Toaster />
+        <CookieConcent />
       </main> 
   )
 }
