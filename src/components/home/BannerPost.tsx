@@ -6,17 +6,19 @@ import { myBannerAssets } from "@/types"
 const BannerPost = () => {
   return (
     <motion.div className="BannerCont"
-        initial={{ scale: 0 }}
-        animate={{ rotate: 0, scale: 1 }}
+        initial={{ scale: 1 }}
+        animate={{ rotate: 0,  scale: 1 }}
         transition={{
-        type: "spring",
-        stiffness: 30,
+        type: "tween",
+        stiffness: 300,
         damping: 10
         }}
     >
         {BannerAssets.map((link: myBannerAssets) => {
             return (
-                <img src={link.Image} alt="" className="BannerImage" />
+                <div className="cont">
+                  <img src={link.Image} alt="" className="BannerImage" />
+                </div>
             )
         })}
     </motion.div>

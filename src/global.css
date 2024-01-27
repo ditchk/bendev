@@ -508,9 +508,13 @@ nav.scrolled {
 }
 
 .BannerImage {
-  @apply object-contain selection:bg-none md:h-32 lg:h-40 scale-95 hover:md:scale-105 hover:scale-100 duration-500 w-fit rounded-2xl shadow-lg md:shadow-2xl md:shadow-teal-500 shadow-teal-500 cursor-pointer
+  @apply object-contain rounded-2xl md:shadow-none shadow-md shadow-cyan-600
 }
 
 .MobileBanner {
-  @apply flex md:hidden flex-row w-full h-full justify-start items-center overflow-x-scroll p-5 overscroll-x-auto overflow-scroll custom-scrollbar
+  @apply flex md:hidden flex-row w-full h-full justify-start items-center gap-2 p-3 overflow-x-scroll overscroll-x-auto overflow-scroll custom-scrollbar
+}
+
+.cont {
+  @apply flex justify-center items-center shadow-2xl shadow-fuchsia-600 rounded-3xl md:h-32 lg:h-40 scale-95 hover:md:scale-105 hover:scale-100 duration-500 w-fit md:shadow-lg md:shadow-teal-500 overflow-hidden cursor-pointer
 }
