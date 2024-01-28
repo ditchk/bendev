@@ -32,10 +32,6 @@ const Services = () => {
         <div className="Line-Down" />
         <h1 className="text_title2 shadow-sm shadow-cyan-600">Revamp your online presence with bswp</h1>
       </div>
-      <div className="flex justify-center w-full h-full mt-24">
-
-        <Button className="custom-button">Choose a service to Get started today!</Button>
-      </div>
       {isLoading && !products ? (
         <ServiceLoader />
       ) : (
