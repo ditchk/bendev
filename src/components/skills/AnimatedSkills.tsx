@@ -44,9 +44,9 @@ function ParallaxText({ baseVelocity = 100 }: ParallaxProps) {
      * switch scrolling directions.
      */
     if (velocityFactor.get() < 0) {
-      directionFactor.current = -5;
-    } else if (velocityFactor.get() > 5) {
-      directionFactor.current = 5;
+      directionFactor.current = -1;
+    } else if (velocityFactor.get() > 1) {
+      directionFactor.current = 1;
     }
 
     moveBy += directionFactor.current * moveBy * velocityFactor.get();
