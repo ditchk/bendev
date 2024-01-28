@@ -1,6 +1,5 @@
 import { BannerAssets } from "@/constants";
 import { myBannerAssets } from "@/types";
-import { Rotate3D } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
 const MobileBanner = () => {
