@@ -16,7 +16,7 @@ const BannerPost = () => {
     >
         {BannerAssets.map((link: myBannerAssets) => {
             return (
-                <div className="cont">
+                <div className="cont" style={{transform: "rotateY(-6.54393deg); rotateX(-0.26516deg)", boxShadow: "rgba(4, 1, 84, 0.25); 6.54393px -0.26516px 16px 0px"}}>
                   <img src={link.Image} alt="" className="BannerImage" />
                 </div>
             )
