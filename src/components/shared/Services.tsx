@@ -4,7 +4,6 @@ import ServiceLoader from "./ServiceLoader";
 import { Models } from "appwrite";
 import { useEffect, useRef } from "react";
 import { useInView } from "framer-motion";
-import { Button } from "../ui/button";
 
 const Services = () => {
 
