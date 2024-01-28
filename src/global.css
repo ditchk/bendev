@@ -518,7 +518,7 @@ nav.scrolled {
 }
 
 .MobileBanner {
-  @apply flex md:hidden flex-row w-full h-full justify-start items-center gap-2 p-3 overflow-x-scroll overscroll-x-auto overflow-scroll
+  @apply flex md:hidden flex-row w-full h-full justify-start items-center gap-2 p-5 overflow-x-scroll overscroll-x-auto overflow-scroll custom-scrollbar
 }
 
 .cont {
