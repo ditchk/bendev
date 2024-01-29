@@ -76,9 +76,6 @@ export default function AnimatedSkills() {
       <ParallaxText baseVelocity={5}>
         <Skills />
       </ParallaxText>
-      <ParallaxText baseVelocity={-5}>
-        <Skills />
-      </ParallaxText>
     </section>
   );
 }
