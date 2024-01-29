@@ -1,4 +1,4 @@
-import { FaReact, FaSlack } from "react-icons/fa";
+import { FaReact } from "react-icons/fa";
 import { TbBrandNextjs } from "react-icons/tb";
 import { FaPhp } from "react-icons/fa6";
 import { BsDatabaseSlash } from "react-icons/bs";
