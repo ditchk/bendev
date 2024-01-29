@@ -177,7 +177,7 @@ nav.scrolled {
 }
 
 .icon_pack {
-  @apply text-4xl text-black rounded-md outline-cyan-100 p-1 opacity-10
+  @apply text-4xl sm:text-6xl text-teal-950 rounded-md opacity-70
 }
 
 .upload_container {

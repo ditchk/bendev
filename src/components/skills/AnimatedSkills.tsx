@@ -72,7 +72,7 @@ function ParallaxText({ baseVelocity = 100 }: ParallaxProps) {
 
 export default function AnimatedSkills() {
   return (
-    <section className="md:hidden block overflow-hidden w-full h-full">
+    <section className="md:hidden block m-3 overflow-hidden w-full h-full">
       <ParallaxText baseVelocity={5}>
         <Skills />
       </ParallaxText>
