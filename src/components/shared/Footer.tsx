@@ -93,7 +93,7 @@ const Footer = () => {
                     <FormItem>
                       <FormLabel className="text_title text-shadow">Subscribe</FormLabel>
                       <FormControl>
-                        <Input placeholder="Enter your email" {...field} className="bg-white" />
+                        <Input placeholder="Enter your email" {...field} className="bg-white text-gray-700" />
                       </FormControl>
                       {/* <FormMessage /> */}
                     </FormItem>
