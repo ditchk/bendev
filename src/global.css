@@ -9,7 +9,38 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
 }
+/* Themes */
 
+body.light {
+  background-color: #fff;
+  color: #2a2929;
+  transition: background-color 1s ease, color 0s ease;
+}
+
+body.dark {
+  background-color: #000000;
+  color: #fff;
+  transition: background-color 1s ease, color 0s ease;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  transition: background-color 0.5s ease;
+}
+
+.navbar-dark {
+  background-color: #000000;
+}
+
+/* .navbar-light {
+  background-color: #fff;
+  opacity: 10;
+  blu
+} */
 
 :root {
   color-scheme: light;
@@ -84,7 +115,7 @@
 }
 
 .logo-text {
-  @apply text-center text-base md:text-lg font-extrabold font-serif text-transparent bg-clip-text bg-gradient-to-br from-cyan-500 via-slate-900 to-cyan-500
+  @apply text-center text-base md:text-lg font-extrabold font-serif text-transparent bg-clip-text bg-gradient-to-br from-cyan-900 to-teal-500
 }
 
 /* mobile menu */
@@ -130,10 +161,7 @@ nav.scrolled {
   @apply justify-center items-center bg-white rounded-md
 }
 .social_icons {
-  @apply text-2xl p-[3px] rounded-md cursor-pointer outline outline-2 outline-slate-500 text-slate-500 hover:scale-105 duration-1000
-}
-.tittl_name {
-  @apply -rotate-90 md:rotate-0 text-shadow animate-typing overflow-hidden whitespace-nowrap pr-5 font-bold text-base md:text-xl font-mono text-transparent bg-clip-text bg-gradient-to-br from-cyan-500 via-black to-cyan-950
+  @apply text-2xl p-[3px] rounded-md cursor-pointer outline outline-2 outline-slate-500 hover:scale-105 duration-1000
 }
 
 .primary_text {
@@ -141,7 +169,7 @@ nav.scrolled {
 }
 
 .paragraph_text {
-  @apply text-xs box-border md:text-sm font-serif w-fit sm:w-fit md:w-full bg-clip-text text-transparent bg-gradient-to-l from-blue-800 via-black to-cyan-700 text-start font-light md:font-normal
+  @apply text-xs box-border md:text-sm font-serif w-fit sm:w-fit md:w-full text-start font-light md:font-normal
 }
 
 .titlle_text {
@@ -160,11 +188,11 @@ nav.scrolled {
 }
 
 .links_footer {
-  @apply text-sm text-start w-full text-slate-500 font-serif hover:text-cyan-600 hover:translate-x-5 duration-300
+  @apply text-sm text-start w-full font-serif hover:text-cyan-600 hover:translate-x-5 duration-300
 }
 
 .links_footer2 {
-  @apply text-sm text-start w-full text-slate-500 font-serif hover:text-cyan-600 hover:scale-95 cursor-context-menu duration-300
+  @apply text-sm text-start w-full font-serif hover:text-cyan-600 hover:scale-95 cursor-context-menu duration-300
 }
 
 .default_Contactcontainer {
@@ -177,7 +205,7 @@ nav.scrolled {
 }
 
 .icon_pack {
-  @apply text-4xl text-teal-950 rounded-md opacity-60
+  @apply text-4xl rounded-md opacity-60
 }
 
 .upload_container {
@@ -255,7 +283,7 @@ nav.scrolled {
 }
 
 .Signup_button {
-  @apply w-fit text-xs font-mono bg-teal-800 h-fit
+  @apply w-fit text-xs font-mono bg-teal-800 h-fit p-3
 }
 
 
@@ -295,7 +323,7 @@ nav.scrolled {
 }
 
 .text_title2 {
-  @apply text-base rounded-full font-bold font-sans border-2 p-2 border-slate-100 text-transparent bg-clip-text bg-gradient-to-l from-blue-700 via-black to-cyan-800
+  @apply text-base rounded-full font-bold font-sans border-2 p-2 border-slate-100 text-transparent bg-clip-text bg-gradient-to-l from-blue-700 via-teal-500 to-cyan-800
 }
 
 .text_title3 {
@@ -413,7 +441,7 @@ nav.scrolled {
 }
 
 .line-style {
-  @apply flex w-14 justify-center bg-slate-400 h-[2px] !important
+  @apply flex w-14 justify-center h-[2px] !important
 }
 
 .Rounde-style {
@@ -421,7 +449,7 @@ nav.scrolled {
 }
 
 .Link-ref {
-  @apply p-1 bg-black mt-5 rounded-lg text-white w-fit font-serif flex !important
+  @apply p-1 mt-5 rounded-lg text-white w-fit font-serif flex !important
 }
 
 
@@ -464,7 +492,7 @@ nav.scrolled {
 }
 
 .ServiceContainer {
-  @apply flex flex-col justify-center gap-2 h-fit w-full bg-white relative outline-2 outline outline-slate-100 p-2 rounded-tr-3xl shadow-sm shadow-black hover:shadow-md hover:shadow-slate-600 duration-1000 !important
+  @apply flex flex-col justify-center gap-2 h-fit w-full relative outline-2 outline outline-slate-100 p-2 rounded-tr-3xl shadow-sm shadow-black hover:shadow-md hover:shadow-slate-600 duration-1000 !important
 }
 
 .Image-Cont {
@@ -476,7 +504,7 @@ nav.scrolled {
 }
 
 .Descript_text {
-  @apply box-border min-h-[150px] sm:min-h-[150px] md:min-h-[170px] lg:min-h-[160px] text-sm font-serif font-thin text-black p-2 m-2 border-t border-slate-100 border-l rounded-tl-xl !important
+  @apply box-border min-h-[150px] sm:min-h-[150px] md:min-h-[170px] lg:min-h-[160px] text-sm font-serif font-thin  p-2 m-2 border-t border-slate-100 border-l rounded-tl-xl !important
 }
 
 .MDclose {
@@ -506,6 +534,50 @@ nav.scrolled {
 /* Footer Css fixes */
 
 
+.FooterBox {
+  @apply flex flex-col shadow-md shadow-slate-100 md:shadow-slate-600 bg-cyan-950 bg-opacity-10 z-0 border-t border-white
+}
+
+.FooterLinksCont {
+  @apply flex flex-col justify-start items-start md:flex-row md:justify-between p-1 md:p-10 mb-10 md:items-center
+}
+
+.FooterListify {
+  @apply flex flex-col list-decimal p-2 rounded-2xl
+}
+
+.FooterLinkBox1 {
+  @apply flex flex-col justify-start items-start p-3 mb-5 shadow-lg rounded-3xl
+}
+
+.FooterLinkBox {
+  @apply flex flex-col justify-start items-start gap-2 p-3
+}
+
+.LinksBox {
+  @apply flex flex-row justify-between gap-10
+}
+
+.FooterListing {
+  @apply flex flex-col justify-start list-disc list-inside
+}
+
+.SubscribeFormBox {
+  @apply flex flex-row justify-start items-center md:justify-center md:items-center gap-2 md:gap-3 space-y-8 w-full
+}
+
+.SubsInput {
+  @apply bg-white text-gray-700
+}
+
+
+.FooterContent {
+  @apply flex flex-row justify-center items-center font-sans text-sm font-semibold
+}
+
+.QA {
+  @apply text-xs italic text-teal-500
+}
 
 /* BannerCont styles */
 
@@ -522,8 +594,11 @@ nav.scrolled {
 }
 
 .cont {
-  @apply flex justify-center items-center shadow-2xl shadow-fuchsia-600 rounded-3xl md:h-32 lg:h-40 scale-95 hover:md:scale-105 hover:scale-100 duration-500 w-fit md:shadow-lg md:shadow-teal-500 overflow-hidden cursor-pointer
+  @apply flex justify-center items-center rounded-3xl md:h-32 lg:h-40 scale-95 hover:md:scale-105 hover:scale-100 duration-500 w-fit outline outline-2 outline-white overflow-hidden cursor-pointer
 }
+
+
+
 
 .card {
   cursor: pointer;
@@ -547,4 +622,20 @@ nav.scrolled {
   color: teal;
   opacity: 0.3;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* THEMES */
+
+.commadMode {
+  @apply flex flex-col justify-center outline-white top-14 left-10 bg-black p-3 m-3 rounded-md
+}
+
+.Button-light {
+  background-color: black;
+  color: white;
+}
+
+.Button-dark {
+  background-color: white;
+  color: #000000;
 }

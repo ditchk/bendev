@@ -42,27 +42,27 @@ const Footer = () => {
     console.log(values)
   }
   return (
-    <footer className="flex flex-col shadow-md shadow-slate-100 md:shadow-slate-600 bg-cyan-950 bg-opacity-10 z-0">
-      <div className="flex flex-col justify-start items-start md:flex-row md:justify-between p-2 md:p-10 mb-10 md:items-center rounded-lg">
-        <div className="flex flex-col justify-start items-start p-5 mb-5 shadow-lg rounded-3xl">
+    <footer className="FooterBox">
+      <div className="FooterLinksCont">
+        <div className="FooterLinkBox1">
           <h3 className="text_title text-shadow mt-4">FAQs</h3>
-          <ul className="flex flex-col text-slate-700 list-decimal p-5 rounded-2xl">
+          <ul className="FooterListify">
             {freqAsked.map((link: myFaqs) => {
               return (
                 <li key={link.question}
                   onClick={handleClik}
                 >
                   <h3 className="links_footer2">{link.question}</h3>
-                  <h3 className=" text-slate-400 text-xs ">{link.answer}</h3>
+                  <h3 className="QA">{link.answer}</h3>
                 </li>
               )
             })}
           </ul>
         </div>
-        <div className="flex flex-col justify-start gap-2">
+        <div className="FooterLinkBox">
           <h1 className="text_title text-shadow">Quick links</h1>
-            <div className="flex flex-row justify-between gap-10" >
-                <ul className="flex flex-col justify-start list-disc list-inside">
+            <div className="LinksBox" >
+                <ul className="FoterListing">
                   {footerLinks.map((link: myFooterLinks) => {
                     return (
                       <li key={link.route} className="links_footer">
@@ -72,7 +72,7 @@ const Footer = () => {
                     )
                   })}
                 </ul>
-                <ul className="flex flex-col list-disc">
+                <ul className="FoterListing">
                   {moreFooterLinks.map((link: myMoreFooterLinks) => {
                     return (
                       <li key={link.name2} className="links_footer">
@@ -85,27 +85,27 @@ const Footer = () => {
             </div>
             <Socials/>
             <Form {...form}>
-              <form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-row justify-start items-center p-2 md:justify-center md:items-center gap-2 md:gap-3 space-y-8 w-full">
+              <form onSubmit={form.handleSubmit(onSubmit)} className="SubscribeFormBox">
                 <FormField
                   control={form.control}
                   name="email"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text_title text-shadow">Subscribe</FormLabel>
+                      <FormLabel>Subscribe</FormLabel>
                       <FormControl>
-                        <Input placeholder="Enter your email" {...field} className="bg-white text-gray-700" />
+                        <Input placeholder="Enter your email" {...field} className="SubsInput" />
                       </FormControl>
                       {/* <FormMessage /> */}
                     </FormItem>
                   )}
                 />
-                <Button type="submit" className="common_btn">Subscribe now!</Button>
+                <Button type="submit" className="Signup_button">Subscribe now!</Button>
               </form>
           </Form>
         </div>
       </div>
       <div className="flex flex-col justify-center items-center border-t border-slate-300">
-        <h1 className="flex flex-row gap-3 justify-center items-center font-sans text-slate-800 text-sm font-bold"> &#169; 2023<img src="/assets/images/footer.banner.png" alt="footer-logo" width={150} /></h1>
+        <h1 className="FooterContent"> &#169; 2023</h1>
       </div>
     </footer>
   )

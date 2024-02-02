@@ -1,6 +1,6 @@
 import { BannerAssets } from "@/constants";
 import { myBannerAssets } from "@/types";
-import { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Imageloader from "../loaders/Imageloader";
 
 const MobileBanner = () => {
@@ -58,13 +58,13 @@ const MobileBanner = () => {
     <div className="MobileBanner">
       {BannerAssets.map((link: myBannerAssets) => {
             return (
-              <>
+              <React.Fragment>
                 {isLoading ? (
                   <Imageloader />
                 ): (
-                  <img src={link.Image} alt="" className="BannerImage" />
+                  <img src={link.Image} alt="" className="BannerImage outline outline-1 outline-white" />
                 )}   
-              </>
+              </React.Fragment>
             )
         })}
     </div>

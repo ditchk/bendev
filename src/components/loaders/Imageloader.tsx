@@ -4,7 +4,7 @@ ring2.register()
 
 const Imageloader = () => {
   return (
-    <div className='flex justify-center items-center w-full min-h-32'>
+    <div className='flex justify-center items-center w-full h-full'>
         <l-ring-2
         size="30"
         stroke="1"
