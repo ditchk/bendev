@@ -62,7 +62,7 @@ const MobileBanner = () => {
                 {isLoading ? (
                   <Imageloader />
                 ): (
-                  <img src={link.Image} alt="" className="BannerImage outline outline-1 outline-white" />
+                  <img src={link.Image} alt="" className="BannerImage outline outline-2 outline-white" />
                 )}   
               </React.Fragment>
             )
