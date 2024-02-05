@@ -33,30 +33,27 @@ function ParallaxText({ baseVelocity = 100 }: ParallaxProps) {
    * have to replace for wrapping that works for you or dynamically
    * calculate
    */
-  const x = useTransform(baseX, (v) => `${wrap(-80, 80, v)}%`);
+  const x = useTransform(baseX, (v) => `${wrap(-20, -45, v)}%`);
 
   const directionFactor = useRef<number>(1);
   useAnimationFrame((_t, delta) => {
     let moveBy = directionFactor.current * baseVelocity * (delta / 1000);
-
-    /**
-     * This is what changes the direction of the scroll once we
-     * switch scrolling directions.
-     */
     if (velocityFactor.get() < 0) {
       directionFactor.current = -1;
-    } else if (velocityFactor.get() > 1) {
+    } else if (velocityFactor.get() > 0) {
       directionFactor.current = 1;
     }
 
     moveBy += directionFactor.current * moveBy * velocityFactor.get();
 
-    baseX.set(baseX.get() * moveBy);
+    baseX.set(baseX.get() + moveBy);
   });
 
+
   return (
-    <div className="flex h-fit w-full shadow-sm shadow-slate-600 p-2 rounded-full animate-in slide-in-from-bottom-40">
-      <motion.div className="scroller" style={{ x }}>
+    <div className="w-full h-fit">
+      <motion.div className="flex flex-col justify-center items-center" style={{ x }}>
+        {/* <h1 className="BoxText">==Expert in leading tech and platforms==</h1> */}
         <Skills />
       </motion.div>
     </div>
@@ -65,8 +62,8 @@ function ParallaxText({ baseVelocity = 100 }: ParallaxProps) {
 
 export default function AnimatedSkills() {
   return (
-    <section className="md:hidden block overflow-hidden w-full h-full">
-      <ParallaxText baseVelocity={5}>
+    <section className="block overflow-hidden w-full h-full">
+      <ParallaxText baseVelocity={1}>
         <Skills />
       </ParallaxText>
     </section>

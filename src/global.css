@@ -86,7 +86,7 @@ body.dark {
 /* common styles */
 
 .custom_container {
-  @apply flex flex-col flex-1 gap-5 justify-center items-center custom-scrollbar overflow-scroll bg-transparent lg:px-2 lg:mx-6 py-2
+  @apply flex flex-col gap-5 justify-center items-center custom-scrollbar overflow-scroll lg:px-2 lg:mx-6 py-2
 }
 
 .custom_Homecontainer {

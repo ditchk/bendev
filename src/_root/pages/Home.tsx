@@ -6,13 +6,13 @@ import Services from "@/components/shared/Services"
 
 const Home = () => {
   return (
-    <>
+    <div className="custom_container">
       {/* <Slider /> */}
       <IconDump />
       <MobileBanner />
       <BannerPost />
       <Services />
-    </>
+    </div>
   )
 }
 

@@ -10,24 +10,24 @@ const Skills = () => {
 
   return (
     <div className="flex flex-col justify-center items-center w-full">
-      <div className="flex flex-grow gap-2">
-        <FaReact />
-        <TbBrandNextjs />
-        <FaPhp />
-        <SiFramer />
-        <SiGit />
-        <SiBlender/>
-        <SiAdobe />
-        <SiAwsamplify />
-        <SiGooglecloud />
-        <MdDeveloperBoard/>
-        <SiAzuredevops/>
-        <SiIbmwatson/>
-        <SiMicrosoft />
-        <SiMicrosoftazure />
-        <SiMongodb />
-        <SiPostgresql />
-        <SiAppwrite />
+      <div className="flex flex-1 gap-2 opacity-80">
+        <FaReact className="text-3xl" />
+        <TbBrandNextjs  className="text-3xl"/>
+        <FaPhp  className="text-3xl"/>
+        <SiFramer  className="text-3xl"/>
+        <SiGit  className="text-3xl"/>
+        <SiBlender className="text-3xl"/>
+        <SiAdobe  className="text-3xl"/>
+        <SiAwsamplify  className="text-3xl"/>
+        <SiGooglecloud  className="text-3xl"/>
+        <MdDeveloperBoard className="text-3xl"/>
+        <SiAzuredevops className="text-3xl"/>
+        <SiIbmwatson className="text-3xl"/>
+        <SiMicrosoft className="text-3xl"/>
+        <SiMicrosoftazure  className="text-3xl"/>
+        <SiMongodb  className="text-3xl"/>
+        <SiPostgresql  className="text-3xl"/>
+        <SiAppwrite  className="text-3xl"/>
       </div>
     </div>
   )
