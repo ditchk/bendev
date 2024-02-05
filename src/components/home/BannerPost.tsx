@@ -15,9 +15,9 @@ const BannerPost = () => {
     >
         {BannerAssets.map((link: myBannerAssets) => {
             return (
-                <div className="cont" key={link.index}>
-                  <img src={link.Image} alt="" className="BannerImage" />
-                </div>
+              <div className="cont" key={link.index}>
+                <img src={link.Image} alt="" className="BannerImage" />
+              </div>
             )
         })}
     </motion.div>

@@ -51,18 +51,11 @@ function ParallaxText({ baseVelocity = 100 }: ParallaxProps) {
 
     moveBy += directionFactor.current * moveBy * velocityFactor.get();
 
-    baseX.set(baseX.get() + moveBy);
+    baseX.set(baseX.get() * moveBy);
   });
 
-  /**
-   * The number of times to repeat the child text should be dynamically calculated
-   * based on the size of the text and viewport. Likewise, the x motion value is
-   * currently wrapped between -20 and -45% - this 25% is derived from the fact
-   * we have four children (100% / 4). This would also want deriving from the
-   * dynamically generated number of children.
-   */
   return (
-    <div className="parallax">
+    <div className="flex h-fit w-full shadow-sm shadow-slate-600 p-2 rounded-full animate-in slide-in-from-bottom-40">
       <motion.div className="scroller" style={{ x }}>
         <Skills />
       </motion.div>

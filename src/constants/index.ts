@@ -192,3 +192,7 @@ export const BannerAssets = [
         
     }
 ]
+
+export const images = [
+    "/assets/images/marketing.svg"
+  ];

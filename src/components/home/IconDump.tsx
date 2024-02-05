@@ -3,18 +3,21 @@ import { CiMicrochip } from "react-icons/ci";
 import { SiGoogleads } from "react-icons/si";
 import { SiAdobecreativecloud } from "react-icons/si";
 import { Button } from "../ui/button";
+import { FaAnglesDown } from "react-icons/fa6";
+import AnimatedSkills from "../skills/AnimatedSkills";
+import { useScroll } from "framer-motion";
 
 
 
 const IconDump = () => {
   return (
-    <section className="flex flex-col w-full h-full">
-        <div className="m-2 ">
-            <h1 className="text-lg md:text-2xl text-black text-center font-serif font-bold text-transparent bg-clip-text bg-gradient-to-br from-violet-500 via-emerald-500 to-red-300">Crafting Digital Masterpieces, One Pixel at a Time</h1>
-        <div className="flex justify-center w-full h-full mt-5">
-          <Button className="custom_button animate-pulse">Talk to me now! use the live chat!</Button>
-        </div>
-        </div>
+    <section className="flex flex-col w-full h-full my-4">
+      <div className="flex flex-col justify-center items-center gap-4">
+      <h1 className="missionText">Crafting Digital Masterpieces, One Pixel at a Time</h1>
+            <Button className="custom_button animate-pulse">Talk to me now! use the live chat!</Button>
+            <FaAnglesDown className="text-xl text-white mt-5 animate-bounce" onClick={useScroll} />
+            <AnimatedSkills />
+      </div>
         <div className="grid grid-cols-6 justify-center md:items-center md:gap-0 gap-10 h-full w-screen opacity-70">
         <div>
             <CiMicrochip className="absolute text-9xl bg-gradient-to-bl from-violet-500 via-emerald-500 rotate-12 to-red-300 rounded-2xl opacity-10" />

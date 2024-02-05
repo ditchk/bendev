@@ -102,3 +102,8 @@ export type ToastProps = {
   index: number;
   Image: string;
  }
+
+ export type IImage = {
+  id: number;
+  url: string;
+ }

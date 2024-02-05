@@ -2,17 +2,17 @@ import BannerPost from "@/components/home/BannerPost"
 import IconDump from "@/components/home/IconDump"
 import MobileBanner from "@/components/home/MobileBanner"
 import Services from "@/components/shared/Services"
-import AnimatedSkills from "@/components/skills/AnimatedSkills"
+import { Slider } from "@/components/sliders/Slider"
 
 const Home = () => {
   return (
-    <div className="custom_container">
+    <>
+      <Slider />
       <IconDump />
       <MobileBanner />
-      <AnimatedSkills />
       <BannerPost />
       <Services />
-    </div>
+    </>
   )
 }
 

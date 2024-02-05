@@ -27,12 +27,12 @@ const RootLayout: React.FC = () => {
           <Homepageloader />
         </div>
       ) : (
-      <div className="flex flex-col w-full h-full">
+      <>
         <Navbar />
         <Sidebar />
         <Outlet />
         <Footer />
-      </div>
+      </>
       )}
     </>
   );
