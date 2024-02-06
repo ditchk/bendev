@@ -1,5 +1,5 @@
-import { BasicServ, PrimiumServ } from '@/constants'
-import { BasicServLink, PrimiumServLink } from '@/types'
+import { PrimiumServ } from '@/constants'
+import { PrimiumServLink } from '@/types'
 import { Button } from '../ui/button'
 import { useNavigate } from 'react-router'
 
