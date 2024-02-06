@@ -17,8 +17,8 @@ const Premium = () => {
     <span className="PackageText">Premium package</span>
     <div className="flex flex-col justify-center items-center p-2">
         <div className="PriceTag">
-            <s className="OriginalHrp">1000$/=</s>
-            <span className="text-3xl font-serif font-bold text-teal-500">800$/=</span>
+            <s className="OriginalHrp">1000$</s>
+            <span className="text-3xl font-serif font-bold text-teal-500">800$</span>
         </div>
         <div className="servicesInBasic">
             <p className="text-sm md:text-lg"><strong>Everything in basic package</strong></p>
