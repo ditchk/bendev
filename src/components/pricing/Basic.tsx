@@ -8,7 +8,7 @@ const Basic = () => {
     const Navigate = useNavigate()
 
     const handleclick = () => {
-        Navigate('https://clients.bensworkspace.app')
+        Navigate('/packages/basic')
     }
 
   return (
