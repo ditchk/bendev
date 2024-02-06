@@ -36,7 +36,7 @@ const Navbar = () => {
     }
   }, [theme]);
   return (
-    <nav id='navbar' className={`flex flex-row justify-between gap-14 w-full shadow-sm shadow-slate-400 bg-cyan-950 border-b border-white bg-opacity-10 backdrop-blur-lg animate-in slide-in-from-top-10 h-max top-0 sticky py-1 px-3 duration-1000 z-50 navbar-${theme}`}>
+    <nav id='navbar' className={`flex flex-row justify-between gap-14 w-full shadow-sm shadow-slate-400 bg-cyan-950 rounded-b-xl border-b border-white bg-opacity-10 backdrop-blur-lg animate-in slide-in-from-top-10 h-max top-0 sticky py-1 px-3 duration-1000 z-50 navbar-${theme}`}>
       <Link 
       to={'/'}
       className="flex flex-row justify-center items-center gap-2"

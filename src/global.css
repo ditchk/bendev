@@ -531,7 +531,7 @@ nav.scrolled {
 
 
 .FooterBox {
-  @apply flex flex-col shadow-md shadow-slate-100 md:shadow-slate-600 bg-cyan-950 bg-opacity-10 z-0 border-t border-white
+  @apply flex flex-col shadow-md shadow-slate-100 md:shadow-slate-600 bg-cyan-950 bg-opacity-10 z-0 border-t-2 border-white rounded-t-xl
 }
 
 .FooterLinksCont {
