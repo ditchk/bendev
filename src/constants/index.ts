@@ -196,3 +196,53 @@ export const BannerAssets = [
 export const images = [
     "/assets/images/marketing.svg"
   ];
+
+  export const BasicServ = [
+
+    {
+        title: "Personal branding including blogs websites and AMP sites"
+    },
+    {
+        title:"Business Setup and branding(Includes webpage design...)"
+    },
+    {
+        title: "Landing page designing and development"
+    },
+    {
+        title: "Mobile app designing and development (Mockup included)"
+    },
+    {
+        title: "Full stack we application maximum 5 pages with SEO"
+    },
+    {
+        title: "Project management"
+    },
+    {
+        title: "Showcase your services with a mordern nextJs wep application (Admin panel included)"
+    }
+
+  ]
+
+  export const PrimiumServ = [
+    {
+        title: "Long term contracts with no hidden fee after an agreement"
+    },
+    {
+        title: "Join or lead a team in your project"
+    },
+    {
+        title: "Customized payment plans according to the complexity of your project",
+    },
+    {
+        title: "24/7 support for any issues that may arise during implementation.",
+    },
+    {
+        title: "A dedicated Client dashboard which will be responsible for communications between you and me."
+    },
+    {
+        title: "One on one consultation before starting work. This will help you understand my approach, methodology and how I can best serve your needs."
+    },
+    {
+        title: "(Only available for premium service) upto 15 pages for your web application."
+    }
+  ]

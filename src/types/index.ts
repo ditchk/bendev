@@ -107,3 +107,11 @@ export type ToastProps = {
   id: number;
   url: string;
  }
+
+ export type BasicServLink = {
+  title: string;
+ }
+
+ export type PrimiumServLink = {
+  title: string;
+ }

@@ -15,6 +15,8 @@ import Adminpanel from './components/admin/Adminpanel'
 import { Toaster } from './components/ui/toaster'
 import Unauthorized from './components/404/Unauthorized'
 import CookieConcent from './components/cookie/CookieConcent'
+import Basic from './components/pricing/Basic'
+import Premium from './components/pricing/Premium'
 
 function App() {
   return (
@@ -35,6 +37,12 @@ function App() {
             <Route element={<PrivateRoutes />}>
               <Route path="/admin" element={<Adminpanel />} />
             </Route>
+
+            <Route>
+              <Route path='/packages/basic' element={<Basic />} />
+              <Route path='/packages/premium' element={<Premium />} />
+            </Route>
+
         </Routes>
         <Toaster />
         <CookieConcent />

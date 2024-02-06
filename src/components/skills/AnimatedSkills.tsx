@@ -39,9 +39,9 @@ function ParallaxText({ baseVelocity = 100 }: ParallaxProps) {
   useAnimationFrame((_t, delta) => {
     let moveBy = directionFactor.current * baseVelocity * (delta / 1000);
     if (velocityFactor.get() < 0) {
-      directionFactor.current = -1;
+      directionFactor.current = -5;
     } else if (velocityFactor.get() > 0) {
-      directionFactor.current = 1;
+      directionFactor.current = 5;
     }
 
     moveBy += directionFactor.current * moveBy * velocityFactor.get();

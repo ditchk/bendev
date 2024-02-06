@@ -16,7 +16,7 @@ const BannerPost = () => {
         {BannerAssets.map((link: myBannerAssets) => {
             return (
               <div className="cont" key={link.index}>
-                <img src={link.Image} alt="" className="BannerImage" />
+                <img src={link.Image} alt="" className="BannerImage" loading="lazy" />
               </div>
             )
         })}

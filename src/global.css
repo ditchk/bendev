@@ -706,3 +706,58 @@ nav.scrolled {
   align-items: center;
   cursor: pointer;
 }
+
+
+/* Packages */
+
+.BasicPackageBox {
+  @apply flex flex-col h-fit p-2 w-full animate-in slide-in-from-left-28 duration-1000 rounded-2xl border-2 shadow-sm shadow-cyan-600
+}
+
+.BasicPackageBox2 {
+  @apply flex flex-col h-fit p-2 w-full animate-in slide-in-from-right-28 duration-1000 rounded-2xl border-2 shadow-sm shadow-cyan-600
+}
+
+.HeadContent {
+  @apply flex flex-col justify-start items-start mt-2 outline outline-1 outline-white p-2 shadow-md rounded-lg mb-5
+}
+
+.PackageText {
+  @apply  shadow-sm text-center shadow-cyan-600 text-shadow p-1 w-full rounded-full
+}
+
+.ExplainedPricing {
+  @apply font-mono text-shadow opacity-90
+}
+
+.OriginalHrp {
+  @apply text-3xl font-serif font-bold opacity-60
+}
+
+.PriceTag {
+  @apply flex flex-row justify-center items-center gap-3 pb-1
+}
+
+.ruleDiv {
+  @apply text-lg font-serif font-bold underline underline-offset-2 text-transparent bg-gradient-to-bl bg-clip-text from-fuchsia-500 via-teal-500 to-purple-500 text-shadow
+}
+
+.listText {
+  @apply text-sm font-sans font-light
+}
+
+.BoxAdsOn {
+  @apply flex flex-col justify-start items-center
+}
+
+.AdsOnList {
+  @apply block text-start list-disc text-sm font-semibold text-gray-800 list-inside
+}
+
+.adssOnTitle {
+  @apply font-bold text-transparent bg-clip-text bg-gradient-to-br from-teal-500 to-red-300
+}
+
+.servicesInBasic {
+  @apply flex flex-col mb-1 p-2
+}
