@@ -24,17 +24,35 @@ body.dark {
 }
 
 
-.navbar {
+/* .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
   transition: background-color 0.5s ease;
-}
+} */
 
 .navbar-dark {
   background-color: #000000;
 }
+
+
+.navbar {
+  /* Your default navbar styles */
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar.visible {
+  transform: translateY(0%);
+}
+
+.navbar.hidden {
+  transform: translateY(-100%);
+}
+
+/* .navbar.hidden {
+  top: -60px;
+} */
 
 /* .navbar-light {
   background-color: #fff;
@@ -531,7 +549,7 @@ nav.scrolled {
 
 
 .FooterBox {
-  @apply flex flex-col shadow-md shadow-slate-100 md:shadow-slate-600 bg-cyan-950 bg-opacity-10 z-0 border-t-2 border-white rounded-t-xl
+  @apply flex flex-col shadow-md shadow-black bg-cyan-950 bg-opacity-10 z-0 border-t-2 border-white rounded-t-xl
 }
 
 .FooterLinksCont {
@@ -543,7 +561,7 @@ nav.scrolled {
 }
 
 .FooterLinkBox1 {
-  @apply flex flex-col justify-start items-start p-3 mb-5 shadow-lg rounded-3xl
+  @apply flex flex-col justify-start items-start p-3 mb-5 shadow-md rounded-3xl
 }
 
 .FooterLinkBox {
@@ -711,11 +729,11 @@ nav.scrolled {
 /* Packages */
 
 .BasicPackageBox {
-  @apply flex flex-col h-fit p-2 w-full animate-in slide-in-from-left-28 duration-1000 rounded-2xl border-2 shadow-sm shadow-cyan-600
+  @apply flex flex-col h-fit p-2 w-full md:w-3/4 animate-in slide-in-from-left-28 duration-1000 rounded-2xl border-2 shadow-sm shadow-cyan-600
 }
 
 .BasicPackageBox2 {
-  @apply flex flex-col h-fit p-2 w-full animate-in slide-in-from-right-28 duration-1000 rounded-2xl border-2 shadow-sm shadow-cyan-600
+  @apply flex flex-col h-fit p-2 w-full md:w-3/4 animate-in bg-teal-700 bg-opacity-5 slide-in-from-right-28 duration-1000 rounded-2xl border-2 shadow-sm shadow-cyan-600
 }
 
 .HeadContent {
@@ -751,7 +769,7 @@ nav.scrolled {
 }
 
 .AdsOnList {
-  @apply block text-start list-disc text-sm font-semibold text-gray-800 list-inside
+  @apply block text-start list-disc text-sm font-semibold text-green-500 list-inside
 }
 
 .adssOnTitle {
