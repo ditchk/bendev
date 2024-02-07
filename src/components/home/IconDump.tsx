@@ -16,7 +16,10 @@ const IconDump = () => {
       <h1 className="missionText">Crafting Digital Masterpieces, One Pixel at a Time</h1>
             <Button className="custom_button animate-pulse">Talk to me now! use the live chat!</Button>
             <FaAnglesDown className="text-xl text-white mt-5 animate-bounce" onClick={useScroll} />
-            <AnimatedSkills />
+            <div className="md:hidden flex flex-col w-full justify-center items-center gap-2">
+              <h1 className="adssOnTitle">Expert in</h1>
+              <AnimatedSkills />
+            </div>
       </div>
         <div className="grid grid-cols-6 justify-center md:items-center md:gap-0 gap-10 h-full w-screen opacity-70">
         <div>

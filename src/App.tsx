@@ -17,6 +17,7 @@ import Unauthorized from './components/404/Unauthorized'
 import CookieConcent from './components/cookie/CookieConcent'
 import Basic from './components/pricing/Basic'
 import Premium from './components/pricing/Premium'
+import Checkoutpage from './components/checkout/Checkoutpage'
 
 function App() {
   return (
@@ -39,8 +40,8 @@ function App() {
             </Route>
 
             <Route>
-              <Route path='/packages/basic' element={<Basic />} />
-              <Route path='/packages/premium' element={<Premium />} />
+              <Route path='/packages/basic' element={<Checkoutpage />} />
+              <Route path='/packages/premium' element={<Checkoutpage />} />
             </Route>
 
         </Routes>

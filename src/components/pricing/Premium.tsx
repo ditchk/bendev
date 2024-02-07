@@ -8,7 +8,7 @@ const Premium = () => {
   const Navigate = useNavigate()
 
   const handleclick = () => {
-      Navigate('//packages/premium')
+      Navigate('/packages/premium')
   }
 
 

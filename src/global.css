@@ -24,22 +24,23 @@ body.dark {
 }
 
 
-/* .navbar {
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
   transition: background-color 0.5s ease;
-} */
+}
 
 .navbar-dark {
   background-color: #000000;
+  opacity: 1;
 }
 
 
 .navbar {
   /* Your default navbar styles */
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.01s ease-in;
 }
 
 .navbar.visible {
@@ -741,7 +742,7 @@ nav.scrolled {
 }
 
 .PackageText {
-  @apply  shadow-sm text-center shadow-cyan-600 text-shadow p-1 w-full rounded-full
+  @apply  shadow-inner text-center shadow-cyan-600 text-shadow p-1 w-full rounded-full
 }
 
 .ExplainedPricing {
@@ -774,6 +775,10 @@ nav.scrolled {
 
 .adssOnTitle {
   @apply font-bold text-transparent bg-clip-text bg-gradient-to-br from-teal-500 to-red-300
+}
+
+.PackText {
+  @apply font-bold text-xl text-transparent text-center bg-clip-text bg-gradient-to-br from-teal-500 to-red-300 capitalize underline underline-offset-2
 }
 
 .servicesInBasic {
