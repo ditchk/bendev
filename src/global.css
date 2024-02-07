@@ -558,7 +558,7 @@ nav.scrolled {
 }
 
 .FooterListify {
-  @apply flex flex-col list-decimal p-2 rounded-2xl
+  @apply flex flex-col list-disc p-2 rounded-2xl
 }
 
 .FooterLinkBox1 {
@@ -574,7 +574,7 @@ nav.scrolled {
 }
 
 .FooterListing {
-  @apply flex flex-col justify-start list-disc list-inside
+  @apply list-item flex-col justify-start list-disc list-outside
 }
 
 .SubscribeFormBox {
@@ -591,7 +591,7 @@ nav.scrolled {
 }
 
 .QA {
-  @apply text-xs italic text-teal-500
+  @apply text-xs italic text-gray-400
 }
 
 /* BannerCont styles */

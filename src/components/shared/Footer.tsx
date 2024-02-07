@@ -62,7 +62,7 @@ const Footer = () => {
         <div className="FooterLinkBox">
           <h1 className="text_title text-shadow">Quick links</h1>
             <div className="LinksBox" >
-                <ul className="FoterListing">
+                <ul className="FooterListing">
                   {footerLinks.map((link: myFooterLinks) => {
                     return (
                       <li key={link.route} className="links_footer">
@@ -72,7 +72,7 @@ const Footer = () => {
                     )
                   })}
                 </ul>
-                <ul className="FoterListing">
+                <ul className="FooterListing">
                   {moreFooterLinks.map((link: myMoreFooterLinks) => {
                     return (
                       <li key={link.name2} className="links_footer">
