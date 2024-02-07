@@ -14,9 +14,6 @@ import Privacypoliy from './components/shared/Privacypoliy'
 import Adminpanel from './components/admin/Adminpanel'
 import { Toaster } from './components/ui/toaster'
 import Unauthorized from './components/404/Unauthorized'
-import CookieConcent from './components/cookie/CookieConcent'
-import Basic from './components/pricing/Basic'
-import Premium from './components/pricing/Premium'
 import Checkoutpage from './components/checkout/Checkoutpage'
 
 function App() {
