@@ -8,8 +8,8 @@ import Services from "@/components/shared/Services"
 const Home = () => {
   return (
     <div className="custom_container"> 
-      <IconDump />
       <MobileBanner />
+      <IconDump />
       <BannerPost />
       <PackagesSect />
       <Services />

@@ -67,7 +67,7 @@ const CheckoutPage = () => {
         className="flex flex-col justify-center items-center h-fit w-full bg-white space-y-2">
         <div className="flex flex-col justify-center items-center h-screen w-full">
           <Link to={'/'}><img src="/assets/images/loader.png" alt="" width={100} /></Link>
-          <h1 className="login-text text-center">Please Launch the live chat to call or chat with me</h1>
+          <h1 className="PackText text-center">Please Launch the live chat to call or chat with me</h1>
         </div>
         </motion.form>
         </Form>
