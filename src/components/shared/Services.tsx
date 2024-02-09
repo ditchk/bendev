@@ -16,7 +16,7 @@ const Services = () => {
       
     }, [isInView])
   return (
-    <div className="MainServiceBox">
+    <div className="MainServiceBox" id="services">
       <div className="primary-Box"
         style={{
           transform: isInView ? "none" : "translateY(50px)",

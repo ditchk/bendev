@@ -14,13 +14,13 @@
 body.light {
   background-color: #fff;
   color: #2a2929;
-  transition: background-color 1s ease, color 0s ease;
+  transition: background-color 0.5s ease, color 0s ease;
 }
 
 body.dark {
   background-color: #000000;
   color: #fff;
-  transition: background-color 1s ease, color 0s ease;
+  transition: background-color 0.5s ease, color 0s ease;
 }
 
 
@@ -105,7 +105,7 @@ body.dark {
 /* common styles */
 
 .custom_container {
-  @apply flex flex-col gap-5 justify-center items-center custom-scrollbar overflow-scroll
+  @apply flex flex-col justify-center items-center custom-scrollbar overflow-scroll
 }
 
 .custom_Homecontainer {
@@ -786,15 +786,15 @@ nav.scrolled {
 }
 
 .Player {
-  @apply flex relative flex-1 justify-start items-center
+  @apply flex relative flex-1 justify-start items-center rounded-b-2xl overflow-hidden shadow-inner animate-in slide-in-from-top-28 duration-500
 }
 
 .video {
-  @apply w-screen z-0 opacity-50
+  @apply w-screen z-0 opacity-60
 }
 
 .PlayerItems {
-  @apply flex flex-row justify-center items-center p-5 absolute w-full h-full outline outline-2 outline-white
+  @apply flex flex-row justify-center items-center p-5 absolute w-full h-full
 }
 
 .BrandName {
@@ -806,5 +806,5 @@ nav.scrolled {
 }
 
 .TextDescription {
-  @apply text-sm md:text-base font-sans text-center
+  @apply text-sm md:text-base font-sans text-center font-semibold text-gray-600
 }
