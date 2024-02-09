@@ -2,8 +2,6 @@ import React, { useState } from 'react'
 import { FaAnglesDown } from "react-icons/fa6";
 import { Button } from '../ui/button';
 
-
-
 interface PlayerProps {
     src: string;
   }
@@ -17,17 +15,23 @@ const Player: React.FC<PlayerProps> = ({ src }) => {
     setShowSection(!showSection);
   };
 
+  document.addEventListener('DOMContentLoaded', () => {
+    const video = document.getElementById('background-video') as HTMLVideoElement;
+    video.play();
+  });
+
   return (
     <div className="Player">
-        <video id="background-video" className="video" preload='auto' height={100} autoPlay muted loop>
+        <video id="background-video" className="video" autoPlay muted loop>
             <source src={src} type="video/mp4"/>
         </video>
         <div className="PlayerItems">
-            <div className="flex flex-col justify-center items-center">
-                <h1 className="BrandName ">WELCOME TO BSWP</h1>
+            <div className="ItemBox-Div">
+                <h1 className="BrandName text-shadow2">WELCOME TO BSWP</h1>
+                <h2 className='BrandName2 text-shadow2'>Home for Modern websites</h2>
                 <p className="TextDescription">We strive to make the best of what we have and create something truly special.</p>
                 <FaAnglesDown className="hidden md:flex text-2xl mt-2 md:mt-10 lg:mt-24 animate-bounce cursor-pointer" onClick={scrollTo} />
-                <Button className="mt-5" onClick={handleClick}>Explore Now</Button>
+                <Button className="buttonPrev" onClick={handleClick}>Explore Now</Button>
             </div>
         </div>
     </div>

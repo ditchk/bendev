@@ -412,7 +412,7 @@ nav.scrolled {
 }
 
 .text-shadow2 {
-  text-shadow: 1px 0px 0.1px teal;
+  text-shadow: 1px 0px 0.1px wheat;
 }
 
 .font-family {
@@ -786,19 +786,23 @@ nav.scrolled {
 }
 
 .Player {
-  @apply flex relative flex-1 justify-start items-center rounded-b-2xl overflow-hidden shadow-inner animate-in slide-in-from-top-28 duration-500
+  @apply flex relative justify-center items-center rounded-b-2xl overflow-hidden shadow-inner
 }
 
 .video {
-  @apply w-screen z-0 opacity-60
+  @apply w-screen z-0 filter grayscale hover:grayscale-0
 }
 
 .PlayerItems {
-  @apply flex flex-row justify-center items-center p-5 absolute w-full h-full
+  @apply flex flex-row justify-center items-center p-5 absolute w-full h-full bg-teal-100 bg-opacity-5
 }
 
 .BrandName {
-  @apply text-2xl md:text-3xl lg:text-5xl font-extrabold text-transparent bg-gradient-to-l bg-clip-text from-teal-600 to-black via-teal-600
+  @apply text-2xl text-center md:text-3xl lg:text-5xl font-extrabold text-transparent bg-gradient-to-l bg-clip-text from-teal-600 to-white via-slate-100
+}
+
+.BrandName2 {
+  @apply text-xl text-center md:text-2xl lg:text-3xl font-extrabold text-transparent bg-gradient-to-l bg-clip-text from-teal-600 to-white via-slate-100
 }
 
 .Tittle {
@@ -806,5 +810,13 @@ nav.scrolled {
 }
 
 .TextDescription {
-  @apply text-sm md:text-base font-sans text-center font-semibold text-gray-600
+  @apply text-xs md:text-base font-sans text-center font-semibold text-gray-100
+}
+
+.buttonPrev {
+  @apply mt-5 bg-transparent outline outline-2 outline-white
+}
+
+.ItemBox-Div {
+  @apply flex flex-col justify-center items-center h-full w-full animate-in slide-in-from-top-28 duration-500 rounded-3xl
 }
