@@ -105,7 +105,7 @@ body.dark {
 /* common styles */
 
 .custom_container {
-  @apply flex flex-col gap-5 justify-center items-center custom-scrollbar overflow-scroll lg:px-2 lg:mx-6 py-2
+  @apply flex flex-col gap-5 justify-center items-center custom-scrollbar overflow-scroll
 }
 
 .custom_Homecontainer {
@@ -783,4 +783,28 @@ nav.scrolled {
 
 .servicesInBasic {
   @apply flex flex-col mb-1 p-2
+}
+
+.Player {
+  @apply flex relative flex-1 justify-start items-center
+}
+
+.video {
+  @apply w-screen z-0 opacity-50
+}
+
+.PlayerItems {
+  @apply flex flex-row justify-center items-center p-5 absolute w-full h-full outline outline-2 outline-white
+}
+
+.BrandName {
+  @apply text-2xl md:text-3xl lg:text-5xl font-extrabold text-transparent bg-gradient-to-l bg-clip-text from-teal-600 to-black via-teal-600
+}
+
+.Tittle {
+  @apply text-xl font-bold
+}
+
+.TextDescription {
+  @apply text-sm md:text-base font-sans text-center
 }
