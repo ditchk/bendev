@@ -790,11 +790,11 @@ nav.scrolled {
 }
 
 .video {
-  @apply w-screen z-0 h-72 filter sepia brightness-50 md:h-screen object-fill
+  @apply w-screen z-0 h-80 filter grayscale brightness-50 blur-sm md:h-screen object-fill
 }
 
 .PlayerItems {
-  @apply flex flex-row justify-center items-center absolute w-full h-full bg-teal-600 bg-opacity-40
+  @apply flex flex-row justify-center items-center absolute w-full h-full bg-teal-900 bg-opacity-40
 }
 
 .BrandName {
@@ -802,7 +802,7 @@ nav.scrolled {
 }
 
 .BrandName2 {
-  @apply text-xl text-center md:text-2xl lg:text-3xl font-extrabold text-transparent bg-gradient-to-l bg-clip-text from-teal-600 to-white via-slate-100
+  @apply text-xl text-center capitalize md:text-2xl lg:text-3xl font-extrabold text-transparent bg-gradient-to-l bg-clip-text from-teal-600 to-white via-slate-100
 }
 
 .Tittle {
