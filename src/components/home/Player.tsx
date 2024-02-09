@@ -22,13 +22,13 @@ const Player: React.FC<PlayerProps> = ({ src }) => {
 
   return (
     <div className="Player">
-        <video id="background-video" className="video" autoPlay muted loop>
+        <video id="background-video" className="video" prefix='auto' autoPlay muted loop>
             <source src={src} type="video/mp4"/>
         </video>
         <div className="PlayerItems">
             <div className="ItemBox-Div">
                 <h1 className="BrandName text-shadow2">WELCOME TO BSWP</h1>
-                <h2 className='BrandName2 text-shadow2'>Home for Modern websites</h2>
+                <h2 className='BrandName2'>Home for Modern websites</h2>
                 <p className="TextDescription">We strive to make the best of what we have and create something truly special.</p>
                 <FaAnglesDown className="hidden md:flex text-2xl mt-2 md:mt-10 lg:mt-24 animate-bounce cursor-pointer" onClick={scrollTo} />
                 <Button className="buttonPrev" onClick={handleClick}>Explore Now</Button>

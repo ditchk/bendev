@@ -786,15 +786,15 @@ nav.scrolled {
 }
 
 .Player {
-  @apply flex relative justify-center items-center rounded-b-2xl overflow-hidden shadow-inner
+  @apply flex relative justify-center items-center rounded-b-3xl overflow-hidden
 }
 
 .video {
-  @apply w-screen z-0 filter grayscale hover:grayscale-0
+  @apply w-screen z-0 h-72 filter sepia brightness-50 md:h-screen object-fill
 }
 
 .PlayerItems {
-  @apply flex flex-row justify-center items-center p-5 absolute w-full h-full bg-teal-100 bg-opacity-5
+  @apply flex flex-row justify-center items-center absolute w-full h-full bg-teal-600 bg-opacity-40
 }
 
 .BrandName {
