@@ -12,7 +12,7 @@ const PackageSelect = () => {
     }
 
   return (
-    <div className='flex flex-col justify-center gap-2 items-center w-full h-screen'>
+    <div className='flex flex-col justify-center gap-2 items-center w-full h-full'>
         <Switch onClick={handleclick} />
         {IsActive ? (
             <Premium />

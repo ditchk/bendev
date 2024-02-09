@@ -59,11 +59,7 @@ const MobileBanner = () => {
       {BannerAssets.map((link: myBannerAssets) => {
             return (
               <React.Fragment>
-                {isLoading ? (
-                  <Imageloader />
-                ): (
-                  <img src={link.Image} alt="" loading="lazy" className="BannerImage outline outline-2 outline-white" />
-                )}   
+                  <img src={link.Image} alt="" loading="lazy" className="BannerImage outline outline-2 outline-white animate-in slide-in-from-left-36" /> 
               </React.Fragment>
             )
         })}
