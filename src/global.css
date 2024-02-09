@@ -790,19 +790,19 @@ nav.scrolled {
 }
 
 .video {
-  @apply w-screen z-0 h-80 filter grayscale brightness-50 blur-sm md:h-screen object-fill
+  @apply w-screen z-0 h-80 filter grayscale brightness-50 md:h-screen object-fill
 }
 
 .PlayerItems {
-  @apply flex flex-row justify-center items-center absolute w-full h-full bg-teal-900 bg-opacity-40
+  @apply flex flex-row justify-center items-center absolute w-full h-full bg-teal-200 bg-opacity-40 backdrop-blur-sm
 }
 
 .BrandName {
-  @apply text-2xl text-center md:text-3xl lg:text-5xl font-extrabold text-transparent bg-gradient-to-l bg-clip-text from-teal-600 to-white via-slate-100
+  @apply text-2xl text-center md:text-3xl lg:text-5xl font-extrabold font-serif text-transparent bg-gradient-to-l bg-clip-text from-teal-600 to-white via-slate-100
 }
 
 .BrandName2 {
-  @apply text-xl text-center capitalize md:text-2xl lg:text-3xl font-extrabold text-transparent bg-gradient-to-l bg-clip-text from-teal-600 to-white via-slate-100
+  @apply text-xl text-center capitalize md:text-2xl lg:text-3xl font-extrabold font-serif text-transparent bg-gradient-to-l bg-clip-text from-teal-600 to-white via-slate-100
 }
 
 .Tittle {
@@ -814,7 +814,7 @@ nav.scrolled {
 }
 
 .buttonPrev {
-  @apply mt-5 bg-transparent outline outline-2 outline-white
+  @apply mt-14 bg-transparent outline outline-2 outline-white
 }
 
 .ItemBox-Div {

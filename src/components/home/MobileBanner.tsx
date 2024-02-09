@@ -1,7 +1,6 @@
 import { BannerAssets } from "@/constants";
 import { myBannerAssets } from "@/types";
 import React, { useEffect, useRef, useState } from "react";
-import Imageloader from "../loaders/Imageloader";
 
 const MobileBanner = () => {
     const [scrollPosition, setScrollPosition] = useState(0);
@@ -42,17 +41,6 @@ const MobileBanner = () => {
         touchDeltaX.current = 0;
       };
 // loaders
-      const [isLoading, setIsLoading] = useState(true);
-
-      useEffect(() => {
-        const loadData = async () => {
-          // Simulate loading data
-          await new Promise((resolve) => setTimeout(resolve, 3000));
-          setIsLoading(false);
-        };
-
-        loadData();
-      }, []);
 
   return (
     <div className="MobileBanner">
