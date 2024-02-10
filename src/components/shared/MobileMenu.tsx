@@ -65,8 +65,8 @@ const toggleMenu = () => {
             )}
       {menuOpen && (
        <motion.ul
-        animate={{ y: 51 }}
-        transition={{type: "tween", delay: 0 }} 
+        animate={{ y: 52 }}
+        transition={{type: "spring", delay: 0 }} 
         className={`menubar ${navbarHidden ? 'navbar hidden' : 'hidden'}`}
        >
        {sideBarLinks.map((link: MyNavLink) => {

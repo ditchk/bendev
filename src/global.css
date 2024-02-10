@@ -601,11 +601,11 @@ nav.scrolled {
 }
 
 .BannerImage {
-  @apply object-cover rounded-2xl md:shadow-none scale-95 md:scale-100 hover:scale-100 h-full duration-700 shadow-lg
+  @apply object-cover rounded-2xl md:shadow-none scale-95 md:scale-100 hover:scale-100 h-full duration-700
 }
 
 .MobileBanner {
-  @apply flex md:hidden flex-row w-full h-full justify-start items-center gap-2 p-5 overflow-x-scroll overscroll-x-auto overflow-scroll custom-scrollbar
+  @apply flex md:hidden flex-row w-full h-full justify-start items-center bg-transparent gap-2 p-5 overflow-x-scroll overscroll-x-auto overflow-scroll custom-scrollbar
 }
 
 .cont {
@@ -786,11 +786,11 @@ nav.scrolled {
 }
 
 .Player {
-  @apply flex relative justify-center items-center rounded-b-3xl overflow-hidden
+  @apply flex relative justify-center items-center overflow-hidden shadow-inner shadow-black
 }
 
 .video {
-  @apply w-screen z-0 h-80 filter grayscale brightness-50 md:h-screen object-fill
+  @apply w-screen z-0 h-80 filter grayscale brightness-50 md:h-fit object-cover bg-transparent opacity-70
 }
 
 .PlayerItems {
@@ -798,11 +798,11 @@ nav.scrolled {
 }
 
 .BrandName {
-  @apply text-2xl text-center md:text-3xl lg:text-5xl font-extrabold font-serif text-transparent bg-gradient-to-l bg-clip-text from-teal-600 to-white via-slate-100
+  @apply text-2xl text-center md:text-3xl lg:text-5xl font-extrabold font-serif text-transparent bg-gradient-to-l bg-clip-text from-teal-600 to-white via-slate-300
 }
 
 .BrandName2 {
-  @apply text-xl text-center capitalize md:text-2xl lg:text-3xl font-extrabold font-serif text-transparent bg-gradient-to-l bg-clip-text from-teal-600 to-white via-slate-100
+  @apply text-xl text-center capitalize md:text-2xl lg:text-3xl font-extrabold font-serif text-transparent bg-gradient-to-l bg-clip-text from-teal-600 to-white via-slate-300
 }
 
 .Tittle {
@@ -814,7 +814,7 @@ nav.scrolled {
 }
 
 .buttonPrev {
-  @apply mt-14 bg-transparent outline outline-2 outline-white
+  @apply bg-transparent outline outline-2 outline-white mt-3
 }
 
 .ItemBox-Div {
