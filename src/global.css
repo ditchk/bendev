@@ -730,11 +730,11 @@ nav.scrolled {
 /* Packages */
 
 .BasicPackageBox {
-  @apply flex flex-col h-fit p-2 w-full md:w-3/4 animate-in slide-in-from-left-28 duration-1000 rounded-2xl border-2 shadow-sm shadow-cyan-600
+  @apply flex flex-col h-fit p-2 w-full md:w-3/4 animate-in slide-in-from-bottom-28 duration-1000 bg-cyan-950 bg-opacity-10 rounded-2xl border-2 shadow-sm shadow-cyan-600
 }
 
 .BasicPackageBox2 {
-  @apply flex flex-col h-fit p-2 w-full md:w-3/4 animate-in bg-teal-700 bg-opacity-5 slide-in-from-right-28 duration-1000 rounded-2xl border-2 shadow-sm shadow-cyan-600
+  @apply flex flex-col h-fit p-2 w-full md:w-3/4 animate-in bg-cyan-950 bg-opacity-20 slide-in-from-bottom-28 duration-1000 rounded-2xl border-2 shadow-sm shadow-cyan-600
 }
 
 .HeadContent {
@@ -742,15 +742,15 @@ nav.scrolled {
 }
 
 .PackageText {
-  @apply  shadow-inner text-center shadow-cyan-600 text-shadow p-1 w-full rounded-full
+  @apply  text-center font-extrabold text-shadow p-1 w-full rounded-full text-teal-800
 }
 
 .ExplainedPricing {
-  @apply font-mono text-shadow opacity-90
+  @apply font-mono text-shadow opacity-90 text-gray-700
 }
 
 .OriginalHrp {
-  @apply text-3xl font-serif font-bold opacity-60
+  @apply text-xl font-serif font-bold opacity-60 text-gray-700
 }
 
 .PriceTag {
@@ -762,7 +762,7 @@ nav.scrolled {
 }
 
 .listText {
-  @apply text-sm font-sans font-light
+  @apply text-sm font-sans font-light text-gray-700
 }
 
 .BoxAdsOn {

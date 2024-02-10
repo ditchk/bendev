@@ -18,10 +18,10 @@ const Premium = () => {
     <div className="flex flex-col justify-center items-center p-2">
         <div className="PriceTag">
             <s className="OriginalHrp">1000$</s>
-            <span className="text-3xl font-serif font-bold text-teal-500">800$</span>
+            <span className="text-2xl font-serif font-bold text-teal-500">800$</span>
         </div>
         <div className="servicesInBasic">
-            <p className="text-sm md:text-lg"><strong>Everything in basic package</strong></p>
+            <p className="text-sm md:text-lg text-gray-700"><strong>Everything in basic package</strong></p>
             {PrimiumServ.map((link: PrimiumServLink) => {
                 return (
                     <li className="listText">{link.title}</li>

@@ -17,10 +17,10 @@ const Basic = () => {
         <div className="flex flex-col justify-center items-center p-2">
             <div className="PriceTag">
                 <s className="OriginalHrp">70$/hr</s>
-                <span className="text-3xl font-serif font-bold text-teal-500">50$/hr</span>
+                <span className="text-2xl font-serif font-bold text-teal-500">50$/hr</span>
             </div>
             <div className="servicesInBasic">
-                <p className="text-sm md:text-lg"><strong>What is included in the basic package?</strong></p>
+                <p className="text-sm md:text-lg text-gray-700"><strong>What is included in the basic package?</strong></p>
                 {BasicServ.map((link: BasicServLink) => {
                     return (
                         <li className="listText">{link.title}</li>
