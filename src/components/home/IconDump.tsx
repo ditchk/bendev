@@ -4,7 +4,6 @@ import { SiGoogleads } from "react-icons/si";
 import { SiAdobecreativecloud } from "react-icons/si";
 import { Button } from "../ui/button";
 import { FaAnglesDown } from "react-icons/fa6";
-import AnimatedSkills from "../skills/AnimatedSkills";
 import { useScroll } from "framer-motion";
 
 
@@ -16,10 +15,6 @@ const IconDump = () => {
       <h1 className="missionText">Crafting Digital Masterpieces, One Pixel at a Time</h1>
             <Button className="custom_button rounded-full animate-bounce">Talk to me now! use the live chat!</Button>
             <FaAnglesDown className="text-xl opacity-20 mt-5 animate-bounce" onClick={useScroll} />
-            <div className="md:hidden flex flex-col w-full justify-center items-center gap-2">
-              <h1 className="adssOnTitle">Expert in</h1>
-              <AnimatedSkills />
-            </div>
       </div>
         <div className="grid grid-cols-6 justify-center md:items-center md:gap-0 gap-10 h-full w-screen opacity-70">
         <div>

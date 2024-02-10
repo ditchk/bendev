@@ -777,7 +777,7 @@ nav.scrolled {
 }
 
 .video {
-  @apply w-screen z-0 h-80 brightness-75 md:h-96 lg:h-screen object-fill sticky
+  @apply w-screen z-0 h-96 brightness-75 md:h-96 lg:h-screen object-fill sticky
 }
 
 .PlayerItems {
