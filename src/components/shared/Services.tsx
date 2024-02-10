@@ -25,11 +25,11 @@ const Services = () => {
         }}
         ref={ref}
       >
-        <h1 className="text_title2 shadow-sm shadow-cyan-600">Hire my expertise today!</h1>
+        <h1 className="text_title2 shadow-sm shadow-cyan-600 text-center">Hire my expertise today!</h1>
         <div className="Styling-Div" />
-        <h1 className="text_title2 shadow-sm shadow-cyan-600">Get more than just a landing page</h1>
+        <h1 className="text_title2 shadow-sm shadow-cyan-600 text-center">Get more than just a landing page</h1>
         <div className="Line-Down" />
-        <h1 className="text_title2 shadow-sm shadow-cyan-600">Revamp your online presence with bswp</h1>
+        <h1 className="text_title2 shadow-sm shadow-cyan-600 text-center">Revamp your online presence with bswp</h1>
       </div>
       {isLoading && !products ? (
         <ServiceLoader />

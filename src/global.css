@@ -11,19 +11,6 @@
 }
 /* Themes */
 
-body.light {
-  background-color: #fff;
-  color: #2a2929;
-  transition: background-color 0.5s ease, color 0s ease;
-}
-
-body.dark {
-  background-color: #000000;
-  color: #fff;
-  transition: background-color 0.5s ease, color 0s ease;
-}
-
-
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -69,7 +56,7 @@ body.dark {
   :root {
     color-scheme: light;
     background-color: white;
-    color: white;
+    color: rgb(36, 36, 36);
   }
 
 
@@ -338,11 +325,11 @@ nav.scrolled {
 }
 
 .text_title2 {
-  @apply text-base rounded-full font-bold font-sans border-2 p-2 border-slate-100 text-transparent bg-clip-text bg-gradient-to-l from-blue-700 via-teal-500 to-cyan-800
+  @apply text-xs lg:text-base rounded-full font-bold font-sans border-2 p-2 border-slate-100 text-transparent bg-clip-text bg-gradient-to-l from-blue-700 via-teal-500 to-cyan-800
 }
 
 .text_title3 {
-  @apply text-base mb-5 font-bold font-sans border-b-2 border-white text-transparent text-center bg-clip-text bg-gradient-to-l from-blue-700 via-black to-cyan-800
+  @apply text-xs lg:text-base mb-5 font-bold font-sans border-b-2 border-white text-transparent text-center bg-clip-text bg-gradient-to-l from-blue-700 via-black to-cyan-800
 }
 
 .text-li {
@@ -475,7 +462,7 @@ nav.scrolled {
 }
 
 .primary-Box {
-  @apply flex flex-col md:flex-row justify-center items-center md:gap-5 mb-5 !important
+  @apply flex flex-col md:flex-row justify-center items-center w-full h-fit md:gap-5 mb-5 !important
 }
 
 .Styling-Div {
@@ -515,11 +502,11 @@ nav.scrolled {
 }
 
 .ImageUrl-sty {
-  @apply flex flex-grow hover:filter hover:grayscale duration-500 cursor-pointer hover:scale-105 w-auto min-h-[10rem] sm:min-h-[12rem] md:min-h-[14rem] lg:min-h-[15rem] rounded-tr-3xl overflow-hidden rounded-bl-3xl !important
+  @apply flex  hover:filter hover:grayscale duration-500 cursor-pointer hover:scale-105 w-auto min-h-[10rem] sm:min-h-[12rem] md:min-h-[14rem] lg:min-h-[15rem] rounded-tr-3xl overflow-hidden rounded-bl-3xl !important
 }
 
 .Descript_text {
-  @apply box-border min-h-[150px] sm:min-h-[150px] md:min-h-[170px] lg:min-h-[160px] text-sm font-serif font-thin  p-2 m-2 border-t border-slate-100 border-l rounded-tl-xl !important
+  @apply box-border min-h-[130px] sm:min-h-[180px] lg:min-h-[160px] text-xs sm:text-sm font-serif font-thin  p-2 m-2 border-t border-slate-100 border-l rounded-tl-xl !important
 }
 
 .MDclose {
