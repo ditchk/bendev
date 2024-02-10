@@ -24,7 +24,7 @@ const Player: React.FC<PlayerProps> = ({ src }) => {
         <video id="background-video" className="video" autoPlay preload='auto' muted loop>
             <source src={src} type="video/mp4"/>
         </video>
-        <div className='flex lg:hidden justify-end mt-72 md:mt-96 bg-white h-8 md:h-10 rounded-t-3xl w-full absolute' />
+        <div className='flex lg:hidden justify-end mt-72 md:mt-96 bg-white h-8 md:h-10 rounded-t-3xl w-full absolute border-t-2 border-teal-100' />
         <div className="PlayerItems">
             <div className="ItemBox-Div">
                 <h1 className="BrandName">WELCOME TO BSWP</h1>

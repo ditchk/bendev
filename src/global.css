@@ -777,7 +777,7 @@ nav.scrolled {
 }
 
 .video {
-  @apply w-screen z-0 h-80 brightness-50 md:h-fit object-cover bg-transparent opacity-70
+  @apply w-screen z-0 h-80 brightness-75 md:h-fit lg:h-screen object-cover bg-transparent opacity-80
 }
 
 .PlayerItems {
@@ -785,11 +785,11 @@ nav.scrolled {
 }
 
 .BrandName {
-  @apply text-2xl text-center md:text-3xl lg:text-5xl font-extrabold font-serif text-transparent bg-gradient-to-l bg-clip-text from-teal-600 to-white via-slate-300
+  @apply text-2xl text-center md:text-3xl lg:text-5xl mb-5 box-border outline outline-2 outline-teal-100 p-2 rounded-3xl font-extrabold font-serif text-transparent bg-gradient-to-l bg-clip-text from-teal-600 to-white via-slate-300
 }
 
 .BrandName2 {
-  @apply text-xl text-center capitalize md:text-2xl lg:text-3xl font-extrabold font-serif text-transparent bg-gradient-to-l bg-clip-text from-teal-600 to-white via-slate-300
+  @apply text-base text-center capitalize md:text-2xl lg:text-3xl font-extrabold font-serif text-transparent bg-gradient-to-l bg-clip-text from-teal-600 to-white via-slate-300
 }
 
 .Tittle {
@@ -797,11 +797,11 @@ nav.scrolled {
 }
 
 .TextDescription {
-  @apply text-xs md:text-base font-sans text-center font-semibold text-gray-100
+  @apply text-xs md:text-base font-sans text-center font-medium text-gray-100
 }
 
 .buttonPrev {
-  @apply bg-transparent outline outline-2 outline-white mt-3
+  @apply bg-transparent outline outline-2 outline-white mt-3 hover:bg-black duration-1000
 }
 
 .ItemBox-Div {
