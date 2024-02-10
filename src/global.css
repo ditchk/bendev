@@ -588,7 +588,7 @@ nav.scrolled {
 }
 
 .BannerImage {
-  @apply object-cover rounded-2xl md:shadow-none scale-95 md:scale-100 hover:scale-100 h-full duration-700
+  @apply object-fill rounded-2xl md:shadow-none md:scale-100 hover:scale-100 h-fit animate-in slide-in-from-top-20 duration-1000
 }
 
 .MobileBanner {

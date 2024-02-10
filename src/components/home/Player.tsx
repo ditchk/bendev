@@ -21,7 +21,7 @@ const Player: React.FC<PlayerProps> = ({ src }) => {
 
   return (
     <div className="Player">
-      <video id="background-video" className="video" autoPlay muted loop>
+      <video id="background-video" className="video" preload='auto' autoPlay muted loop>
         <source src={src} type="video/mp4" />
       </video>
       <div className='flex lg:hidden justify-end mt-72 md:mt-96 bg-white h-8 md:h-14 rounded-t-2xl w-full absolute border-t-2 border-teal-100' />

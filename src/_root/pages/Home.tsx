@@ -9,7 +9,7 @@ import Services from "@/components/shared/Services"
 const Home = () => {
   return (
     <div className="custom_container">
-      <Player src={'https://cloud.appwrite.io/v1/storage/buckets/655777900bd1083e6876/files/65c73324b96b07f97fd9/view?project=655773f801147821ba93&mode=admin'} /> 
+      <Player src={'/assets/videos/welcomev.mp4'} /> 
       <MobileBanner />
       <IconDump />
       <BannerPost />

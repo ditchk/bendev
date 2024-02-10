@@ -1,6 +1,7 @@
 import { BannerAssets } from "@/constants";
 import { myBannerAssets } from "@/types";
 import React, { useEffect, useRef, useState } from "react";
+import Imageloader from "../loaders/Imageloader";
 
 const MobileBanner = () => {
     const [scrollPosition, setScrollPosition] = useState(0);
@@ -41,13 +42,28 @@ const MobileBanner = () => {
         touchDeltaX.current = 0;
       };
 // loaders
+      const [isLoading, setIsLoading] = useState(true);
+
+      useEffect(() => {
+        const loadData = async () => {
+          // Simulate loading data
+          await new Promise((resolve) => setTimeout(resolve, 5000));
+          setIsLoading(false);
+        };
+
+        loadData();
+      }, []);
 
   return (
     <div className="MobileBanner">
-      {BannerAssets.map((link: myBannerAssets) => {
+       {BannerAssets.map((link: myBannerAssets) => {
             return (
               <React.Fragment>
-                  <img src={link.Image} alt="" loading="lazy" className="BannerImage outline outline-2 outline-white animate-in slide-in-from-left-36" /> 
+                {isLoading ? (
+                  <Imageloader />
+                ): (
+                  <img src={link.Image} alt="" loading="lazy" className="BannerImage outline outline-2 outline-white" />
+                )}   
               </React.Fragment>
             )
         })}
