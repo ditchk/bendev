@@ -777,7 +777,7 @@ nav.scrolled {
 }
 
 .video {
-  @apply w-screen z-0 h-72 brightness-75 md:h-fit lg:h-screen object-cover bg-transparent opacity-80
+  @apply w-screen z-0 h-72 brightness-75 md:h-fit lg:h-screen object-cover
 }
 
 .PlayerItems {
@@ -805,5 +805,5 @@ nav.scrolled {
 }
 
 .ItemBox-Div {
-  @apply flex flex-col justify-center items-center h-full w-full animate-in slide-in-from-top-28 duration-500 rounded-3xl
+  @apply flex flex-col justify-center items-center h-fit w-fit p-2 outline outline-2 outline-white animate-in slide-in-from-top-28 bg-cyan-950 bg-opacity-10 backdrop-blur-sm duration-500 rounded-3xl
 }
