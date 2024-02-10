@@ -14,7 +14,7 @@ const IconDump = () => {
     <section className="flex flex-col w-full h-full my-4">
       <div className="flex flex-col justify-center items-center gap-4">
       <h1 className="missionText">Crafting Digital Masterpieces, One Pixel at a Time</h1>
-            <Button className="custom_button animate-pulse">Talk to me now! use the live chat!</Button>
+            <Button className="custom_button rounded-full animate-bounce">Talk to me now! use the live chat!</Button>
             <FaAnglesDown className="text-xl opacity-20 mt-5 animate-bounce" onClick={useScroll} />
             <div className="md:hidden flex flex-col w-full justify-center items-center gap-2">
               <h1 className="adssOnTitle">Expert in</h1>

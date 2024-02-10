@@ -9,9 +9,9 @@ import Services from "@/components/shared/Services"
 const Home = () => {
   return (
     <div className="custom_container">
-      <Player src={'/assets/videos/welcomev.mp4'} /> 
+      <Player src={'/assets/videos/welcomev.mp4'} />
+      <IconDump /> 
       <MobileBanner />
-      <IconDump />
       <BannerPost />
       <PackagesSect />
       <Services />
