@@ -15,7 +15,11 @@ const PackagesSect = () => {
   
   return (
     <div className="packageSection relative" id="section">
-       <div className="ContainerPackage">
+        <div className="ContainerPackage">
+            <h2 className="PackText font-bold mb-4">Choose a Package</h2>
+            <PackageSelect />
+        </div>
+        <div className="ContainerPackage">
           <h1 className="PackageTitleText">Understand Our Pricing</h1>
           <p className="ParagraPhtitle">We offer a wide variety of services. This way we have clearly outline the packages that best suit your needs. 
             We understand we might not mention or cover what you maybe be looking for, 
@@ -31,10 +35,6 @@ const PackagesSect = () => {
               </div>
             )}
        </div>
-        <div className="ContainerPackage">
-            <h2 className="PackText font-bold mb-4">Choose a Package</h2>
-            <PackageSelect />
-        </div>
     </div>
   )
 }
