@@ -773,7 +773,7 @@ nav.scrolled {
 }
 
 .Player {
-  @apply flex relative justify-center items-center overflow-hidden
+  @apply flex relative justify-center items-center overflow-hidden bg-black
 }
 
 .video {
