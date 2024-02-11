@@ -800,11 +800,11 @@ nav.scrolled {
 }
 
 .video {
-  @apply w-screen z-0 h-96 brightness-95 md:h-96 lg:h-screen object-fill sticky
+  @apply w-screen z-0 h-96 brightness-95 md:h-96 lg:h-screen object-cover sticky
 }
 
 .PlayerItems {
-  @apply flex flex-row justify-center items-center absolute w-full h-full
+  @apply flex flex-row justify-center items-center absolute w-full h-full bg-cyan-950 bg-opacity-20
 }
 
 .BrandName {
@@ -828,5 +828,5 @@ nav.scrolled {
 }
 
 .ItemBox-Div {
-  @apply flex flex-col justify-center items-center h-fit w-fit p-2 py-4 md:py-5 lg:py-10 outline outline-1 outline-white animate-in slide-in-from-top-28 bg-cyan-950 bg-opacity-20 duration-500 rounded-xl
+  @apply flex flex-col justify-center items-center h-fit w-fit p-2 py-4 md:py-5 lg:py-10 outline outline-1 outline-white animate-in slide-in-from-top-28 duration-500 rounded-xl
 }
