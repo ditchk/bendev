@@ -828,5 +828,5 @@ nav.scrolled {
 }
 
 .ItemBox-Div {
-  @apply flex flex-col justify-center items-center h-fit w-fit p-2 py-4 md:py-5 lg:py-10 outline outline-1 outline-white animate-in slide-in-from-top-28 duration-500 rounded-xl
+  @apply flex flex-col justify-center items-center h-fit w-fit p-2 py-4 md:py-5 lg:py-10 outline outline-1 outline-white animate-in slide-in-from-top-28 bg-cyan-950 bg-opacity-20 duration-500 rounded-xl
 }
