@@ -107,6 +107,20 @@ const CarricullumV = () => {
                 {'My goal is to satisfy our agreed terms and making it my bsuness to deliver the required milestones in return i ask for a healthy work term to motivate this efforts'}
             </p>
         </div>
+        <div className="primary-Box"
+        style={{
+          transform: isInView ? "none" : "translateY(50px)",
+          opacity: isInView ? 1 : 0,
+          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+        }}
+        ref={ref}
+      >
+        <h1 className="text_title2 shadow-sm shadow-cyan-600 text-center">Hire my expertise today!</h1>
+        <div className="Styling-Div" />
+        <h1 className="text_title2 shadow-sm shadow-cyan-600 text-center">Get more than just a landing page</h1>
+        <div className="Line-Down" />
+        <h1 className="text_title2 shadow-sm shadow-cyan-600 text-center">Revamp your online presence with bswp</h1>
+      </div>
         <Brands />
       </section>
     </div>

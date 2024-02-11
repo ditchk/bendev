@@ -14,8 +14,6 @@ import {
 } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { contactInfo } from "@/types"
-import { contactInformation } from "@/constants"
 import { messageValidation } from "@/lib/validation"
 import { saveMessageToDB } from "@/lib/appwrite/api"
 import { useEffect, useRef, useState } from "react"
@@ -54,16 +52,16 @@ const Contact = () => {
     <div className="default_Container">
       <motion.div 
         style={{
-          transform: isInView ? "none" : "translateX(200px)",
+          transform: isInView ? "none" : "translateY(10px)",
           opacity: isInView ? 1 : 0,
           transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
         }}
         ref={ref}
-        className="flex flex-col justify-center items-start md:flex-row p-5 m-5 rounded-xl w-fit md:gap-10 bg-cyan-950 bg-opacity-10 md:shadow-sm shadow-slate-400 md:my-5 md:rounded-xl outline outline-1 outline-white">
-          <div className="flex flex-col w-full mb-10">
-              <h3 className="primary_text">LETS TALK!</h3>
+        className="flex flex-col justify-center items-start md:flex-row m-2 rounded-xl w-fit md:gap-10 bg-white md:shadow-sm shadow-slate-400 md:my-5 md:rounded-xl outline outline-1 outline-white">
+          <div className="flex flex-col w-full mb-10 p-10">
+              <h3 className="primary_text">Contact us</h3>
               <Form {...form}>
-                <form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-col gap-1 space-y-8 p-2">
+                <form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-col gap-1 space-y-3">
                 <div className="flex flex-row gap-2">
                   <FormField
                       control={form.control}
@@ -71,7 +69,7 @@ const Contact = () => {
                       render={({ field }) => (
                         <FormItem>
                           <FormControl>
-                            <Input placeholder="Your Name" {...field} className="form_inp" />
+                            <Input placeholder="Your Name" {...field} className="form_inp placeholder:text-xs " />
                           </FormControl>
                           <FormMessage />
                         </FormItem>
@@ -83,7 +81,7 @@ const Contact = () => {
                       render={({ field }) => (
                         <FormItem>
                           <FormControl>
-                            <Input placeholder="Enter a valid email" {...field} className="form_inp" />
+                            <Input placeholder="Enter a valid email" {...field} className="form_inp placeholder:text-xs" />
                           </FormControl>
                           <FormMessage />
                         </FormItem>
@@ -96,7 +94,7 @@ const Contact = () => {
                     render={({ field }) => (
                       <FormItem>
                         <FormControl>
-                          <Input placeholder="Enter your phone" {...field} className="form_inp" />
+                          <Input placeholder="Enter your phone" {...field} className="form_inp placeholder:text-xs" />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -108,7 +106,7 @@ const Contact = () => {
                     render={({ field }) => (
                       <FormItem>
                         <FormControl>
-                          <Textarea placeholder="Please lets us know what you have in mind." {...field} className="form_inp focus-visible:outline-none" />
+                          <Textarea placeholder="Please lets us know what you have in mind." {...field} className="form_inp focus-visible:outline-none placeholder:text-xs" />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -128,7 +126,7 @@ const Contact = () => {
                 </form>
               </Form>
             </div>
-            <div className="flex flex-col gap-5 w-full">
+            {/* <div className="flex flex-col gap-5 w-full">
               <h1 className="primary_text">CONTACT INFORMATION</h1>
               <ul className="flex flex-col justify-center items-start gap-2">
                 {contactInformation.map((link: contactInfo) => (
@@ -138,7 +136,7 @@ const Contact = () => {
                   </li>
                 ))}
               </ul>
-            </div>
+            </div> */}
       </motion.div>
     </div>
   )

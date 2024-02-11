@@ -596,7 +596,7 @@ nav.scrolled {
 }
 
 .cont {
-  @apply flex justify-center items-center rounded-3xl md:h-32 lg:h-40 scale-95 hover:md:scale-105 hover:scale-100 duration-500 w-fit outline outline-2 outline-white overflow-hidden cursor-pointer
+  @apply flex justify-center items-center rounded-s-md md:h-32 lg:h-40 scale-95  duration-500 w-fit outline outline-2 outline-white overflow-hidden
 }
 
 
@@ -717,11 +717,11 @@ nav.scrolled {
 /* Packages */
 
 .BasicPackageBox {
-  @apply flex flex-col h-fit p-2 w-full md:w-3/4 animate-in slide-in-from-bottom-28 duration-1000 bg-cyan-950 bg-opacity-10 rounded-2xl border-2 shadow-sm shadow-cyan-600
+  @apply flex flex-col justify-center items-start h-fit p-2 w-full md:max-w-xl min-h-full animate-in slide-in-from-right-14 duration-1000 bg-white rounded-2xl border-2 shadow-sm shadow-cyan-600
 }
 
 .BasicPackageBox2 {
-  @apply flex flex-col h-fit p-2 w-full md:w-3/4 animate-in bg-cyan-950 bg-opacity-20 slide-in-from-bottom-28 duration-1000 rounded-2xl border-2 shadow-sm shadow-cyan-600
+  @apply flex flex-col justify-center items-start h-fit p-2 w-full md:max-w-xl min-h-full animate-in bg-white slide-in-from-left-14 duration-1000 rounded-2xl border-2 shadow-sm shadow-cyan-600
 }
 
 .HeadContent {
@@ -729,7 +729,7 @@ nav.scrolled {
 }
 
 .PackageText {
-  @apply  text-center font-extrabold text-shadow p-1 w-full rounded-full text-teal-800
+  @apply  text-center text-xs font-extrabold text-shadow p-1 w-full rounded-full text-teal-800
 }
 
 .ExplainedPricing {
@@ -749,15 +749,15 @@ nav.scrolled {
 }
 
 .listText {
-  @apply text-sm font-sans font-light text-gray-700
+  @apply text-xs font-sans font-light text-gray-700
 }
 
 .BoxAdsOn {
-  @apply flex flex-col justify-start items-center
+  @apply flex flex-col
 }
 
 .AdsOnList {
-  @apply block text-start list-disc text-sm font-semibold text-green-500 list-inside
+  @apply text-start text-xs list-disc font-semibold text-green-500 list-inside
 }
 
 .adssOnTitle {
@@ -769,8 +769,27 @@ nav.scrolled {
 }
 
 .servicesInBasic {
-  @apply flex flex-col mb-1 p-2
+  @apply flex flex-col h-fit
 }
+
+
+.packageSection {
+  @apply flex flex-col lg:flex-row justify-center items-center gap-5 w-full h-full my-5 p-3 sm:p-4 md:p-5 lg:p-10 outline outline-2 outline-slate-300
+}
+
+.ContainerPackage {
+  @apply flex flex-col justify-center items-center w-full lg:w-1/2
+}
+
+.PackageTitleText {
+  @apply text-lg md:text-xl lg:text-3xl font-extrabold text-gray-500 text-center capitalize underline underline-offset-8 mb-4
+}
+
+.ParagraPhtitle {
+  @apply text-xs sm:text-sm md:text-base font-sans font-light text-center
+}
+
+/* PLayer Section */
 
 .Player {
   @apply flex relative justify-center items-center overflow-hidden bg-black
