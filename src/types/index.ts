@@ -115,3 +115,9 @@ export type ToastProps = {
  export type PrimiumServLink = {
   title: string;
  }
+
+export type dropownCotentLink = {
+  title: string;
+  message: string;
+  path: string;
+}

@@ -246,3 +246,13 @@ export const images = [
         title: "(Only available for premium service) upto 15 pages for your web application."
     }
   ]
+
+
+
+export const dropownCotent = [
+    {
+        title: "We offer a wide variety of services. This way we have clearly outline the packages that best suit your needs",
+        message: "We understand we might not mention or cover what you maybe be intrested in, for this reason we ask you to send us a message on our contact page and we will reach out to you with a solution",
+        path: "/contact"
+    }
+]
