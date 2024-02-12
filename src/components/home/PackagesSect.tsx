@@ -22,9 +22,9 @@ const PackagesSect = () => {
           <div className="flex flex-row justify-between items-center bg-black bg-opacity-10 gap-10 p-2 outline outline-2 outline-slate-300 rounded-full cursor-pointer" onClick={handleClick}>
             <h1 className="PackageTitleText">Understand Our Pricing</h1>
               {!openContainer ? (
-                <FaAngleDown className="bg-black rounded-full text-3xl cursor-pointer outline outline-2 outline-slate-300 text-white text-center" onClick={handleClick}/>
+                <FaAngleDown className="bg-black rounded-full text-xl cursor-pointer outline outline-2 outline-slate-300 text-white text-center" onClick={handleClick}/>
               ) : (
-                <FaAngleUp  className="bg-black rounded-full text-3xl cursor-pointer outline outline-2 outline-slate-300 text-white text-center" onClick={handleClick}/>
+                <FaAngleUp  className="bg-black rounded-full text-xl cursor-pointer outline outline-2 outline-slate-300 text-white text-center" onClick={handleClick}/>
               )}
           </div>
           {openContainer && (
