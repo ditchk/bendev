@@ -23,6 +23,10 @@ export const sideBarLinks = [
         label: 'shop',
         route: '/shop'
     },
+    // {
+    //     label: 'Learn & Earn',
+    //     route: '/opportunities&careers'
+    // },
 ];
 
 export const welcomeMessage = [
@@ -67,12 +71,16 @@ export const moreFooterLinks = [
         route2: '/terms-use'
     },
     {
-        name2: 'about us',
+        name2: 'About us',
         route2: '/about'
     },
     {
         name2: 'where are we located',
         route2: '/contact'
+    },
+    {
+        name2: 'Learn how to earn real money',
+        route2: '/opportunities&careers'
     }
 ];
 

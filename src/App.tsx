@@ -16,6 +16,7 @@ import { Toaster } from './components/ui/toaster'
 import Unauthorized from './components/404/Unauthorized'
 import CookieConcent from './components/cookie/CookieConcent'
 import Checkoutpage from './components/checkout/Checkoutpage'
+import Opportunities from './_root/pages/Opportunities'
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
                 <Route path="/mycv" element={<CarricullumV/>} />
                 <Route path="/privacy-policy" element={<Privacypoliy />} />
                 <Route path="/error" element={<Unauthorized />} />
+                <Route path='/opportunities&careers' element={<Opportunities />} />
             </Route>
             {/* Protected pages */}
             <Route element={<PrivateRoutes />}>

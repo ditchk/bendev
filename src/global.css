@@ -834,3 +834,17 @@ nav.scrolled {
 .ExplainText {
   @apply text-sm text-start font-serif font-extrabold text-gray-500 box-border border-b-2 border-white mb-5
 }
+
+/* Invest $ Learn */
+
+.videoPrev {
+  @apply w-screen z-0 h-96 brightness-95 md:h-96 lg:h-screen object-fill sticky
+}
+
+.VidepPlayer {
+  @apply flex flex-1 justify-center items-center
+}
+
+.Extension {
+  @apply flex lg:hidden justify-end mt-[23.5rem] md:mt-96 bg-white h-10 md:h-14 z-40 rounded-t-3xl w-full absolute border-t-4 border-teal-100
+}
