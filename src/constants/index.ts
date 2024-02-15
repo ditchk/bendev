@@ -23,10 +23,10 @@ export const sideBarLinks = [
         label: 'shop',
         route: '/shop'
     },
-    // {
-    //     label: 'Learn & Earn',
-    //     route: '/opportunities&careers'
-    // },
+    {
+        label: 'Learn & Earn',
+        route: '/opportunities&careers'
+    },
 ];
 
 export const welcomeMessage = [
