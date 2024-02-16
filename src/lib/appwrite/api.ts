@@ -54,6 +54,25 @@ export async function saveUserToDB(user: {
   }
 }
 
+
+export async function saveSubscriberToDB (subscribers: {
+  Email: string;
+}) {
+  try {
+    const newSubscriber = await databases.createDocument (
+      myConfig.databaseId,
+      myConfig.subsCollectionId,
+      ID.unique(),
+      subscribers
+    );
+
+    return newSubscriber
+  }
+  catch (error) {
+    console.log(error)
+  }
+}
+
 export async function saveMessageToDB(messages: {
     email: string;
     name: string;

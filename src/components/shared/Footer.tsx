@@ -1,6 +1,6 @@
 import * as z from "zod"
 import { zodResolver } from "@hookform/resolvers/zod"
-import { useForm } from "react-hook-form"
+import { set, useForm } from "react-hook-form"
 
 import { Button } from "@/components/ui/button"
 import {
@@ -16,30 +16,37 @@ import { footerLinks, freqAsked, moreFooterLinks } from "@/constants"
 import { Link } from "react-router-dom"
 import Socials from "./Socials"
 import { useState } from "react"
+import { saveSubscriberToDB } from "@/lib/appwrite/api"
+import ProjectLoder from "./ProjectLoder"
+import UploadLoader from "./UploadLoader"
+import { toast } from "../ui/use-toast"
 
 
 const Footer = () => {
 
   const [clicked, setIsclicked] = useState(false)
+  const [loading, setLoading] = useState(false)
 
   const handleClik = () => {
     setIsclicked(!clicked)
   }
 
   const formSchema = z.object({
-    email: z.string().min(2, {message: ''}).max(50),
+    Email: z.string().min(2, {message: ''}).max(50),
   })
 
   // 1. Define your form.
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      email: "",
+      Email: "",
     },
   })
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values)
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    const newSubscriber = await saveSubscriberToDB(values)
+    setLoading(true)
+    return newSubscriber && toast
   }
   return (
     <footer className="FooterBox">
@@ -88,7 +95,7 @@ const Footer = () => {
               <form onSubmit={form.handleSubmit(onSubmit)} className="SubscribeFormBox">
                 <FormField
                   control={form.control}
-                  name="email"
+                  name="Email"
                   render={({ field }) => (
                     <FormItem>
                       <FormLabel>Subscribe</FormLabel>
@@ -99,7 +106,13 @@ const Footer = () => {
                     </FormItem>
                   )}
                 />
-                <Button type="submit" className="Signup_button">Subscribe now!</Button>
+                <Button type="submit" className="Signup_button">
+                  {loading ? (
+                    <UploadLoader />
+                  ) : (
+                    "Subscribe Now!"
+                  )}
+                </Button>
               </form>
           </Form>
         </div>

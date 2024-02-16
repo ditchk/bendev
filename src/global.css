@@ -537,11 +537,11 @@ nav.scrolled {
 
 
 .FooterBox {
-  @apply flex flex-col shadow-md shadow-black bg-cyan-950 bg-opacity-10 z-0 border-t-2 border-white rounded-t-xl
+  @apply flex flex-col shadow-md shadow-black bg-white bg-opacity-10 z-0 border-t-2 border-white rounded-t-xl p-2
 }
 
 .FooterLinksCont {
-  @apply flex flex-col justify-start items-start md:flex-row md:justify-between p-1 md:p-10 mb-10 md:items-center
+  @apply flex flex-col justify-start items-start md:flex-row md:justify-between gap-4 p-1 md:p-10 mb-10 md:items-center
 }
 
 .FooterListify {
@@ -561,7 +561,7 @@ nav.scrolled {
 }
 
 .FooterListing {
-  @apply list-item flex-col justify-start list-disc list-outside
+  @apply flex-col justify-start list-disc list-outside
 }
 
 .SubscribeFormBox {

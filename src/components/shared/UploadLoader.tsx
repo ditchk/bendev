@@ -5,7 +5,7 @@ dotStream.register()
 
 function UploadLoader() {
   return (
-    <div className='flex flex-1 justify-center items-center w-10 p-5'>
+    <div className='flex justify-center items-center w-16 p-1'>
         <l-dot-stream
         size="34"
         speed="0.9" 

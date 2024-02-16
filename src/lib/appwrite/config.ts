@@ -13,6 +13,7 @@ export const myConfig = {
     blogCollectionIld:import.meta.env.BES_APPWRITE_BLOG_COLLECTION_ID,
     saveCollectionId:import.meta.env.BES_APPWRITE_SAVES_COLLECTION_ID,
     quoteCollectionId:import.meta.env.BES_APPWRITE_QUOTE_COLLECTION_ID,
+    subsCollectionId:import.meta.env.BES_APPWRITE_SUBS_COLLECTION_ID,
     ProductId:import.meta.env.BES_APPWRITE_PRODUCT_ID
 };
 
