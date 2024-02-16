@@ -1,7 +1,6 @@
 import * as z from "zod"
 import { zodResolver } from "@hookform/resolvers/zod"
-import { set, useForm } from "react-hook-form"
-
+import { useForm } from "react-hook-form"
 import { Button } from "@/components/ui/button"
 import {
   Form,
@@ -17,7 +16,6 @@ import { Link } from "react-router-dom"
 import Socials from "./Socials"
 import { useState } from "react"
 import { saveSubscriberToDB } from "@/lib/appwrite/api"
-import ProjectLoder from "./ProjectLoder"
 import UploadLoader from "./UploadLoader"
 import { toast } from "../ui/use-toast"
 
