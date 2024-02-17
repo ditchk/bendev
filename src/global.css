@@ -121,7 +121,7 @@
 }
 
 .logo-text {
-  @apply text-center text-base md:text-xl font-extrabold font-sans text-transparent bg-clip-text bg-gradient-to-br from-gray-900 to-slate-500
+  @apply text-center text-base md:text-xl font-extrabold font-serif text-transparent bg-clip-text bg-gradient-to-br from-teal-900 to-cyan-500
 }
 
 /* mobile menu */
