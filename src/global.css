@@ -470,7 +470,7 @@ nav.scrolled {
 }
 
 .serviceBox {
-  @apply flex flex-col justify-center h-fit w-full items-center p-5 !important
+  @apply flex flex-col justify-center h-fit w-full items-center p-5 border border-slate-100 !important
 }
 
 .BoxText {
@@ -796,11 +796,11 @@ nav.scrolled {
 /* PLayer Section */
 
 .Player {
-  @apply flex relative justify-center items-center overflow-hidden bg-black 
+  @apply flex relative justify-center items-center overflow-hidden bg-black z-0
 }
 
 .video {
-  @apply w-screen z-0 h-96  brightness-75 md:h-full lg:h-screen object-cover sticky
+  @apply w-screen z-0 h-96  brightness-95 md:h-full lg:h-screen object-cover sticky
 }
 
 .PlayerItems {
