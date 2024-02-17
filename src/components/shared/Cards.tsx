@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Cards = () => {
   return (
     <div className="flex flex-row justify-center items-center gap-1">
