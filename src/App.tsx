@@ -17,6 +17,8 @@ import Unauthorized from './components/404/Unauthorized'
 import CookieConcent from './components/cookie/CookieConcent'
 import Checkoutpage from './components/checkout/Checkoutpage'
 import Opportunities from './_root/pages/Opportunities'
+import Maintainance from './components/maintainance/Maintainance'
+import MaintainanceError from './lib/utils/MaintainanceError'
 
 function App() {
   return (
@@ -24,7 +26,6 @@ function App() {
         <Routes>
             <Route element={<RootLayout />}>
                 <Route index element={<Home />} />
-                <Route path="/projects" element={<Projects />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/blogs" element={<Blogposts />} />
@@ -32,11 +33,18 @@ function App() {
                 <Route path="/mycv" element={<CarricullumV/>} />
                 <Route path="/privacy-policy" element={<Privacypoliy />} />
                 <Route path="/error" element={<Unauthorized />} />
+                <Route path="/maintainance" element={<Maintainance />} />
             </Route>
             {/* Protected pages */}
             <Route element={<PrivateRoutes />}>
               <Route path="/admin" element={<Adminpanel />} />
               <Route path='/opportunities&careers' element={<Opportunities />} />
+            </Route>
+
+            {/* Maintainance Error page */}
+
+            <Route element={<MaintainanceError />}>
+              <Route path="/projects" element={<Projects />} />
             </Route>
 
             <Route>
