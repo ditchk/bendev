@@ -39,7 +39,7 @@ const Navbar = () => {
       to={'/'}
       className="flex flex-row justify-center items-center gap-2"
       >
-        <img src="/assets/images/logo1.png" alt="" width={60} className=''/>
+        <img src="/assets/images/logo.png" alt="" width={50} className='ml-1'/>
         <h1 className="logo-text">Bensworkspace</h1>
       </Link>
       <div className="hidden md:flex flex-row justify-center items-center gap-5">

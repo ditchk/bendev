@@ -33,9 +33,9 @@ const Player: React.FC<PlayerProps> = ({ src }) => {
           <p className="TextDescription">We strive to make the best of what we have <br />and create something truly special.</p>
           <Button className="buttonPrev" onClick={handleClick}>Explore Now</Button>
         </div>
-      </div>
-      <div>
-        <Cards />
+        <div className="Cards">
+          <Cards />
+        </div>
       </div>
     </div>
   )
