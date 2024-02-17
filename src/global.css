@@ -796,7 +796,7 @@ nav.scrolled {
 /* PLayer Section */
 
 .Player {
-  @apply flex relative justify-center items-center overflow-hidden bg-black z-0
+  @apply flex relative justify-center items-center bg-black
 }
 
 .video {
@@ -824,7 +824,7 @@ nav.scrolled {
 }
 
 .buttonPrev {
-  @apply bg-transparent outline outline-2 outline-white mt-3 bg-black bg-opacity-30 duration-1000
+  @apply bg-transparent outline outline-2 outline-white mt-3 bg-black bg-opacity-30 duration-1000 z-40
 }
 
 .ItemBox-Div {
@@ -854,5 +854,5 @@ nav.scrolled {
 }
 
 .H1Crads {
-  @apply box-border flex flex-col justify-center items-center gap-2 bg-black bg-opacity-20 mt-10 md:mt-14 lg:mt-36 min-w-[100px] border border-white text-white p-2 rounded-xl text-xs md:text-sm
+  @apply box-border flex flex-col justify-center items-center gap-2 bg-black bg-opacity-20 mt-10 md:mt-14 lg:mt-36 min-w-[100px] border border-white text-white p-2 rounded-xl text-xs md:text-sm 
 }
