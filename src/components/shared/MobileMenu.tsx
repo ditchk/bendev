@@ -59,13 +59,13 @@ const toggleMenu = () => {
  return (
     <nav className="MobileMenu transition-all" onClick={hideNavbar} onScroll={hideNavbar}>
             {!menuOpen ? (
-              <HiOutlineMenuAlt3 className="text-4xl text-teal-800  bg-transparent rounded-md transition-all duration-1000" onClick={toggleMenu}/>
+              <HiOutlineMenuAlt3 className="text-4xl text-gray-600  bg-transparent rounded-md transition-all duration-1000" onClick={toggleMenu}/>
             ) : (
-              <MdOutlineClose className="text-4xl text-teal-700  bg-transparent bg-opacity-40 rounded-md transition-all duration-1000" onClick={toggleMenu}/>
+              <MdOutlineClose className="text-4xl text-gray-600  bg-transparent bg-opacity-40 rounded-md transition-all duration-1000" onClick={toggleMenu}/>
             )}
       {menuOpen && (
        <motion.ul
-        animate={{ y: 52 }}
+        animate={{ y: 56 }}
         transition={{type: "spring", delay: 0 }} 
         className={`menubar ${navbarHidden ? 'navbar hidden' : 'hidden'}`}
        >

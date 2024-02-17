@@ -121,7 +121,7 @@
 }
 
 .logo-text {
-  @apply text-center text-base md:text-xl font-extrabold font-sans text-transparent bg-clip-text bg-gradient-to-br from-cyan-900 to-teal-500
+  @apply text-center text-base md:text-xl font-extrabold font-sans text-transparent bg-clip-text bg-gradient-to-br from-gray-900 to-slate-500
 }
 
 /* mobile menu */
@@ -167,7 +167,7 @@ nav.scrolled {
   @apply justify-center items-center bg-white rounded-md
 }
 .social_icons {
-  @apply text-2xl p-[3px] text-current rounded-md cursor-pointer outline outline-2 outline-white hover:scale-105 duration-1000
+  @apply text-2xl p-[3px] text-current rounded-md cursor-pointer outline outline-2 outline-slate-200 hover:scale-105 duration-1000
 }
 
 .primary_text {
@@ -800,7 +800,7 @@ nav.scrolled {
 }
 
 .video {
-  @apply w-screen z-0 h-96  brightness-95 md:h-full lg:h-screen object-cover sticky
+  @apply w-screen z-0 h-96  brightness-95 md:h-full lg:h-screen object-cover
 }
 
 .PlayerItems {
@@ -832,7 +832,7 @@ nav.scrolled {
 }
 
 .ExplainText {
-  @apply text-sm text-start font-serif font-extrabold text-gray-500 box-border border-b-2 border-white mb-5
+  @apply text-sm text-start font-serif font-extrabold text-gray-100 box-border border-b-2 border-white mb-5
 }
 
 /* Invest $ Learn */
@@ -854,5 +854,5 @@ nav.scrolled {
 }
 
 .H1Crads {
-  @apply box-border flex flex-col justify-center items-center gap-2 bg-black bg-opacity-20 mt-10 md:mt-14 lg:mt-36 min-w-[100px] border border-white text-white p-2 rounded-xl text-xs md:text-sm 
+  @apply box-border flex flex-col justify-center items-center gap-2 bg-black bg-opacity-20 hover:bg-opacity-30 hover:bg-teal-100 hover:-translate-y-2 duration-1000 mt-10 md:mt-14 lg:mt-36 min-w-[100px] border border-white animate-in slide-in-from-top-10 text-white p-2 rounded-xl text-xs md:text-sm font-sans font-extralight
 }

@@ -28,8 +28,8 @@ const PackagesSect = () => {
               )}
           </div>
           {openContainer && (
-            <div className="flex flex-col justify-center items-center bg-black bg-opacity-10 rounded-2xl p-3 animate-in slide-in-from-bottom-10 top-16 duration-1000 ">
-              <h1 className="ExplainText">We offer a wide variety of services.This way we have clearly outline the packages that best suit your needs</h1>
+            <div className="flex flex-col justify-center items-center bg-black bg-opacity-40 rounded-2xl p-3 animate-in slide-in-from-bottom-10 top-16 duration-1000 ">
+              <h1 className="ExplainText">We offer a wide variety of services.This way we have clearly outlined the packages that best suit your needs</h1>
               <p className="text-xs text-white text-start">We understand we might not mention or cover what you maybe be intrested in, for this reason we ask you to send us a message on our contact page and we will reach out to you with a solution</p>
               <Link to={'/contact'} reloadDocument className="p-2 mt-10 bg-black text-white outline outline-2 outline-white bg-opacity-20 hover:bg-opacity-70">Reach Out!</Link>
             </div>

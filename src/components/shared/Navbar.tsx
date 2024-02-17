@@ -34,12 +34,12 @@ const Navbar = () => {
   //   }
   // }, [theme]);
   return (
-    <nav id='navbar' className={`flex flex-row justify-between gap-14 w-full shadow-sm shadow-gray-300 bg-white border-b-2 border-teal-100 bg-opacity-10 backdrop-blur-lg animate-in slide-in-from-top-10 h-max top-0 sticky py-1 px-3 duration-1000 z-50 navbar-${''}`}>
+    <nav id='navbar' className={`flex flex-row justify-between gap-14 w-full shadow-sm rounded-b-xl shadow-gray-300 bg-white border-b-2 border-teal-100 bg-opacity-10 backdrop-blur-lg animate-in slide-in-from-top-10 h-max top-0 sticky py-1 px-3 duration-1000 z-50 navbar-${''}`}>
       <Link 
       to={'/'}
-      className="flex flex-row justify-center items-center gap-2"
+      className="flex flex-row justify-center items-center"
       >
-        <img src="/assets/images/logo.png" alt="" width={50} className='ml-1'/>
+        <img src="/assets/images/logo1.png" alt="" width={60} className=''/>
         <h1 className="logo-text">Bensworkspace</h1>
       </Link>
       <div className="hidden md:flex flex-row justify-center items-center gap-5">
