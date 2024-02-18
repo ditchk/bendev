@@ -11,42 +11,6 @@
 }
 /* Themes */
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  transition: background-color 0.5s ease;
-}
-
-.navbar-dark {
-  background-color: #000000;
-  opacity: 1;
-}
-
-
-.navbar {
-  /* Your default navbar styles */
-  transition: transform 0.01s ease-in;
-}
-
-.navbar.visible {
-  transform: translateY(0%);
-}
-
-.navbar.hidden {
-  transform: translateY(-100%);
-}
-
-/* .navbar.hidden {
-  top: -60px;
-} */
-
-/* .navbar-light {
-  background-color: #fff;
-  opacity: 10;
-  blu
-} */
 
 :root {
   color-scheme: light;
@@ -87,6 +51,27 @@
     @apply bg-transparent text-current select-none selection:select-none
   }
 }
+
+
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  z-index: 1000;
+  transition: top 0.7s ease-in-out;
+}
+
+.navbar.hide {
+  top: -100px;
+}
+
 
 
 /* common styles */
@@ -167,7 +152,7 @@ nav.scrolled {
   @apply justify-center items-center bg-white rounded-md
 }
 .social_icons {
-  @apply text-2xl p-[3px] text-current rounded-md cursor-pointer outline outline-2 outline-slate-200 hover:scale-105 duration-1000
+  @apply text-2xl p-[3px] text-current rounded-md cursor-pointer outline outline-2 outline-slate-200 text-slate-300 hover:scale-105 duration-1000
 }
 
 .primary_text {
@@ -804,7 +789,7 @@ nav.scrolled {
 }
 
 .PlayerItems {
-  @apply flex flex-row justify-center items-center absolute w-full h-full bg-cyan-950 bg-opacity-10 mb-16 md:mb-24
+  @apply flex flex-row justify-center items-center absolute w-full h-full bg-cyan-950 bg-opacity-10 my-16 md:mb-24
 }
 
 .BrandName {
@@ -828,7 +813,7 @@ nav.scrolled {
 }
 
 .ItemBox-Div {
-  @apply flex flex-col justify-start items-center h-fit w-fit p-2 py-2 md:py-5 lg:py-10  animate-in slide-in-from-top-28 bg-black bg-opacity-20 duration-500 rounded-xl
+  @apply flex flex-col justify-start items-center h-fit w-fit p-2 py-2 lg:py-10  animate-in slide-in-from-top-28 bg-black bg-opacity-20 duration-500 rounded-xl
 }
 
 .ExplainText {
@@ -850,7 +835,7 @@ nav.scrolled {
 }
 
 .Cards {
-  @apply flex flex-row absolute w-screen h-full justify-center items-center mt-60 md:mt-72
+  @apply flex flex-row absolute w-screen h-full justify-center items-center mt-56 md:mt-60
 }
 
 .H1Crads {

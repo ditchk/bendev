@@ -22,7 +22,7 @@ import MaintainanceError from './lib/utils/MaintainanceError'
 
 function App() {
   return (
-      <main className="">
+      <main>
         <Routes>
             <Route element={<RootLayout />}>
                 <Route index element={<Home />} />

@@ -1,3 +1,5 @@
+import { useState, useEffect } from 'react';
+
 export const sideBarLinks = [
     {
         label: 'Home',
@@ -264,3 +266,30 @@ export const dropownCotent = [
         path: "/contact"
     }
 ]
+
+
+export function useScrollDirection(): 'up' | 'down' | null {
+  const [scrollDirection, setScrollDirection] = useState<null | 'up' | 'down'>(null);
+
+  useEffect(() => {
+    let lastScrollTop = 0;
+
+    const handleScroll = () => {
+      const st = window.scrollX || document.documentElement.scrollTop;
+      if (st > lastScrollTop) {
+        setScrollDirection('down');
+      } else {
+        setScrollDirection('up');
+      }
+      lastScrollTop = st <= 0 ? 0 : st;
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  return scrollDirection;
+}
