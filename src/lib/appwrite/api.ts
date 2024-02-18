@@ -271,3 +271,20 @@ export async function getCurrentUser() {
       console.log(error)
   }
 }
+
+export async function SearchDB() {
+  try {
+    const result = await databases.listDocuments(
+      myConfig.databaseId,
+      myConfig.productCollectionId
+      [Query.orderAsc(''), Query.limit(12)]
+    )
+    
+    return result
+  }
+  catch(error) {
+    console.log(error)
+
+    return(error)
+  }
+}

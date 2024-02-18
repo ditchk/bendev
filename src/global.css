@@ -796,11 +796,11 @@ nav.scrolled {
 /* PLayer Section */
 
 .Player {
-  @apply flex relative justify-center items-center bg-black
+  @apply flex relative justify-center items-center bg-black w-full h-full
 }
 
 .video {
-  @apply w-screen z-0 h-96  brightness-95 md:h-full lg:h-screen object-cover
+  @apply z-0 h-96  brightness-95 md:h-full lg:h-screen w-full object-cover
 }
 
 .PlayerItems {
@@ -854,5 +854,5 @@ nav.scrolled {
 }
 
 .H1Crads {
-  @apply box-border flex flex-col justify-center items-center gap-2 bg-black bg-opacity-20 hover:bg-opacity-30 hover:bg-teal-100 hover:-translate-y-2 duration-1000 mt-10 md:mt-14 lg:mt-36 min-w-[100px] border border-white animate-in slide-in-from-top-10 text-white p-2 rounded-xl text-xs md:text-sm font-sans font-extralight
+  @apply box-border flex flex-row justify-center items-center gap-2 bg-black bg-opacity-20 hover:bg-opacity-30 hover:bg-teal-100 hover:-translate-y-2 duration-1000 mt-10 md:mt-14 lg:mt-36 min-w-[100px] border-2 border-white animate-in slide-in-from-top-10 text-white p-2 rounded-xl text-xs md:text-sm font-sans font-extralight
 }
