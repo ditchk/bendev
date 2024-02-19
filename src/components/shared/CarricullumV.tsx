@@ -14,17 +14,31 @@ const CarricullumV = () => {
       }, [isInView])
 
   return (
-    <div className="flex flex-col justify-center items-center mx-2 md:mx-10 bg-opacity-5 outline outline-1 outline-slate-200 my-5">
-      <div className="flex flex-col justify-center items-center outline outline-2 rounded-md rounded-tl-3xl rounded-br-3xl outline-slate-50 m-2 md:p-5 md:px-24 md:pb-5 mb-10 bg-cyan-950 bg-opacity-10 animate-in slide-in-from-right-40 duration-500">
-        <h1 className="text_prim text-shadow">BENSON KIGOCI</h1>
+    <div className="flex flex-col justify-center items-center mx-2 md:mx-10 bg-opacity-5 outline outline-1 outline-slate-200">
+      <div className="flex flex-col justify-center items-center outline outline-2 rounded-md rounded-tl-3xl rounded-br-3xl outline-slate-50 m-2 md:p-5 md:px-24 md:pb-5 mb-10 bg-black animate-in slide-in-from-right-40 duration-500">
+        <h1 className="text_prim">BENSON KIGOCI</h1>
         <h2 className="text_sec mb-5 text-shadow">Full Stack Developer && UI/UX Designer</h2>
+        <div className="primary-Box"
+        style={{
+          transform: isInView ? "none" : "translateY(50px)",
+          opacity: isInView ? 1 : 0,
+          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+        }}
+        ref={ref}
+      >
+        <h1 className="text_title2 shadow-sm shadow-cyan-600 text-center">Hire my expertise today!</h1>
+        <div className="Styling-Div" />
+        <h1 className="text_title2 shadow-sm shadow-cyan-600 text-center">Get more than just a landing page</h1>
+        <div className="Line-Down" />
+        <h1 className="text_title2 shadow-sm shadow-cyan-600 text-center">Revamp your online presence with bswp</h1>
+      </div>
             <h3 className="text_sec text-shadow">
                 Find me on social platforms
             </h3>
             <Socials />
         <div className="flex flex-col justify-center gap-1">
-            <h1 className="flex flex-row justify-center text-center gap-2 font-sans font-normal text-xs mb-1 text-shadow">242 Union st, Rocland MA, United States</h1>
-            <h1 className="flex flex-row justify-center text-center font-normal gap-2 font-sans text-xs mb-6 text-shadow">{'+254712941987'}</h1>
+            <h1 className="flex flex-row justify-center text-center gap-2 font-sans font-normal text-xs mb-1 text-white">242 Union st, Rocland MA, United States</h1>
+            <h1 className="flex flex-row justify-center text-center font-normal gap-2 font-sans text-xs mb-6 text-white">{'+254712941987'}</h1>
             
         </div>
       </div> 
@@ -107,20 +121,7 @@ const CarricullumV = () => {
                 {'My goal is to satisfy our agreed terms and making it my bsuness to deliver the required milestones in return i ask for a healthy work term to motivate this efforts'}
             </p>
         </div>
-        <div className="primary-Box"
-        style={{
-          transform: isInView ? "none" : "translateY(50px)",
-          opacity: isInView ? 1 : 0,
-          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
-        }}
-        ref={ref}
-      >
-        <h1 className="text_title2 shadow-sm shadow-cyan-600 text-center">Hire my expertise today!</h1>
-        <div className="Styling-Div" />
-        <h1 className="text_title2 shadow-sm shadow-cyan-600 text-center">Get more than just a landing page</h1>
-        <div className="Line-Down" />
-        <h1 className="text_title2 shadow-sm shadow-cyan-600 text-center">Revamp your online presence with bswp</h1>
-      </div>
+       
         <Brands />
       </section>
     </div>

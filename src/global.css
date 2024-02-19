@@ -65,12 +65,12 @@
   justify-content: space-between;
   padding: 0 20px;
   z-index: 1000;
-  transition: top 0.5s ease-in-out;
+  transition: top 0.3s ease-in;
 }
 
 .navbar.hide {
   top: -60px;
-  transition-behavior: ease;
+  transition-behavior: ease-out;
 }
 
 
@@ -153,7 +153,7 @@ nav.scrolled {
   @apply justify-center items-center bg-white rounded-md
 }
 .social_icons {
-  @apply text-2xl p-[3px] text-current rounded-md cursor-pointer outline outline-2 outline-slate-200 text-slate-300 hover:scale-105 duration-1000
+  @apply text-2xl p-[3px] rounded-md cursor-pointer hover:scale-105 duration-1000
 }
 
 .primary_text {
@@ -786,7 +786,7 @@ nav.scrolled {
 }
 
 .video {
-  @apply z-0 h-96  brightness-95 md:h-full scale-125 md:scale-100 lg:h-screen w-full object-cover overflow-hidden
+  @apply z-0 h-96  brightness-50 md:h-full scale-125 md:scale-100 lg:h-screen w-full object-cover overflow-hidden
 }
 
 .PlayerItems {
