@@ -10,7 +10,7 @@ const Navbar = () => {
 
 
   return (
-    <nav id='navbar' className={` navbar backdrop-blur-md border-b-2 border-teal-100 shadow-2xl shadow-inherit rounded-b-2xl  ${scrollDirection === 'down' ? 'hide shadow-none' : ''}`}>
+    <nav id='navbar' className={` navbar backdrop-blur-md border-b-2 border-teal-100 shadow-2xl shadow-inherit  ${scrollDirection === 'down' ? 'hide shadow-none' : ''}`}>
       <Link 
       to={'/'}
       className="flex flex-row justify-center items-center gap-2"

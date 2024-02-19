@@ -49,7 +49,7 @@ const Contact = () => {
       }, [isInView])
     
   return (
-    <div className="default_Container">
+    <div className="default_Container mt-12 md:mt-16 lg:mt-24">
       <motion.div 
         style={{
           transform: isInView ? "none" : "translateY(10px)",
