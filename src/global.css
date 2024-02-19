@@ -78,7 +78,7 @@
 /* common styles */
 
 .custom_container {
-  @apply flex flex-col justify-center items-center custom-scrollbar overflow-scroll
+  @apply flex flex-col justify-center items-center custom-scrollbar overflow-scroll scroll-smooth
 }
 
 .custom_Homecontainer {
@@ -782,11 +782,11 @@ nav.scrolled {
 /* PLayer Section */
 
 .Player {
-  @apply flex relative justify-center items-center bg-black w-full h-full
+  @apply flex relative justify-center items-center bg-black w-full h-full overflow-hidden
 }
 
 .video {
-  @apply z-0 h-96  brightness-95 md:h-full lg:h-screen w-full object-cover
+  @apply z-0 h-96  brightness-95 md:h-full scale-125 md:scale-100 lg:h-screen w-full object-cover overflow-hidden
 }
 
 .PlayerItems {
