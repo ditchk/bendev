@@ -65,11 +65,12 @@
   justify-content: space-between;
   padding: 0 20px;
   z-index: 1000;
-  transition: top 0.7s ease-in-out;
+  transition: top 0.5s ease-in-out;
 }
 
 .navbar.hide {
   top: -60px;
+  transition-behavior: ease;
 }
 
 
