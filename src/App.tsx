@@ -34,13 +34,12 @@ function App() {
                 <Route path="/mycv" element={<About/>} />
                 <Route path="/privacy-policy" element={<Privacypoliy />} />
                 <Route path="/error" element={<Unauthorized />} /> 
-                <Route path='/opportunities&careers' element={<Opportunities />} />
                 <Route path="/maintainance" element={<Maintainance />} />
             </Route>
             {/* Protected pages */}
             <Route element={<PrivateRoutes />}>
               <Route path="/admin" element={<Adminpanel />} />
-            
+              <Route path='/opportunities&careers' element={<Opportunities />} />
             </Route>
 
             {/* Maintainance Error page */}
