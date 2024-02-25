@@ -10,7 +10,7 @@ const Navbar = () => {
 
 
   return (
-    <nav id='navbar' className={` navbar backdrop-blur-md shadow-sm shadow-gray-300 px-0  ${scrollDirection === 'down' ? 'hide shadow-none' : ''}`}>
+    <nav id='navbar' className={` navbar bg-white shadow-sm shadow-gray-400 px-0  ${scrollDirection === 'down' ? 'hide shadow-none' : ''}`}>
       <Link 
       to={'/'}
       className="flex flex-row justify-center items-center gap-2"

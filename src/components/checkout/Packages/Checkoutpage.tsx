@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/form"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
-import { useEffect, useRef, useState } from "react"
+import { useEffect, useRef } from "react"
 import { Input } from "../../ui/input";
 import { PackageInfoValidation } from "@/lib/validation";
 import { Textarea } from "../../ui/textarea";
