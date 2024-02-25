@@ -14,10 +14,12 @@ import Adminpanel from './components/admin/Adminpanel'
 import { Toaster } from './components/ui/toaster'
 import Unauthorized from './components/404/Unauthorized'
 import CookieConcent from './components/cookie/CookieConcent'
-import Checkoutpage from './components/checkout/Checkoutpage'
+import Checkoutpage from './components/checkout/Packages/Checkoutpage'
 import Opportunities from './_root/pages/Opportunities'
 import Maintainance from './components/maintainance/Maintainance'
 import MaintainanceError from './lib/utils/MaintainanceError'
+import BasicCheckOut from './components/checkout/Packages/Checkoutpage'
+import CheckoutLayout from './components/checkout/CheckoutLayout'
 
 function App() {
   return (
@@ -31,13 +33,14 @@ function App() {
                 <Route path="/shop" element={<Shop />} />
                 <Route path="/mycv" element={<About/>} />
                 <Route path="/privacy-policy" element={<Privacypoliy />} />
-                <Route path="/error" element={<Unauthorized />} />
+                <Route path="/error" element={<Unauthorized />} /> 
+                <Route path='/opportunities&careers' element={<Opportunities />} />
                 <Route path="/maintainance" element={<Maintainance />} />
             </Route>
             {/* Protected pages */}
             <Route element={<PrivateRoutes />}>
               <Route path="/admin" element={<Adminpanel />} />
-              <Route path='/opportunities&careers' element={<Opportunities />} />
+            
             </Route>
 
             {/* Maintainance Error page */}
@@ -46,8 +49,8 @@ function App() {
               <Route path="/projects" element={<Projects />} />
             </Route>
 
-            <Route>
-              <Route path='/packages/basic' element={<Checkoutpage />} />
+            <Route element={<CheckoutLayout />}>
+              <Route path='/packages/basic' element={<BasicCheckOut />} />
               <Route path='/packages/premium' element={<Checkoutpage />} />
             </Route>
 

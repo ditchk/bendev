@@ -17,6 +17,7 @@ const Services = () => {
     }, [isInView])
   return (
     <div className="MainServiceBox" id="Choose a services">
+      <h1 className="PackText font-bold mb-4">Choose a service</h1>
       {isLoading && !products ? (
         <ServiceLoader />
       ) : (

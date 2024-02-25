@@ -14,15 +14,15 @@ const Premium = () => {
 
   return (
     <div className="BasicPackageBox2">
-    <span className="PackageText">Premium package</span>
+    <span className="PackageText text-yellow-700">Premium package</span>
     <div className="flex flex-col justify-center items-start p-5">
-        <div className="PriceTag">
+        <div className="PriceTag text-slate-200">
             <s className="OriginalHrp">1000$</s>
             <span className="text-2xl font-serif font-bold text-teal-500">800$</span>
         </div>
         <div className="servicesInBasic">
-            <p className="text-sm md:text-lg text-gray-700"><strong>Everything in basic package</strong></p>
-                <ul className="list-disc list-outside">
+            <p className="text-sm md:text-lg text-white"><strong>Everything in basic package</strong></p>
+                <ul className="list-disc list-inside text-white">
                     {PrimiumServ.map((link: PrimiumServLink) => {
                     return (
                         <li className="listText">{link.title}</li>

@@ -5,6 +5,7 @@ import { NavLink, useLocation, } from 'react-router-dom';
 import { HiOutlineMenuAlt3 } from 'react-icons/hi';
 import { motion } from 'framer-motion';
 import { MdOutlineClose } from "react-icons/md";
+import Socials from './Socials';
 
 
 
@@ -59,9 +60,9 @@ const toggleMenu = () => {
  return (
     <nav className="MobileMenu transition-all" onClick={hideNavbar} onScroll={hideNavbar}>
             {!menuOpen ? (
-              <HiOutlineMenuAlt3 className="text-4xl text-teal-600  bg-transparent rounded-md transition-all duration-1000" onClick={toggleMenu}/>
+              <HiOutlineMenuAlt3 className="text-3xl text-slate-600 outline outline-2 rounded-md outline-slate-600 p-1  bg-transparent transition-transform ease-in-out duration-1000" onClick={toggleMenu}/>
             ) : (
-              <MdOutlineClose className="text-4xl text-teal-600  bg-transparent bg-opacity-40 rounded-md transition-all duration-1000" onClick={toggleMenu}/>
+              <MdOutlineClose className="text-3xl text-slate-600 outline outline-2 rounded-md outline-slate-600 p-1  bg-transparent bg-opacity-40 transition-transform ease-in-out duration-1000" onClick={toggleMenu}/>
             )}
       {menuOpen && (
        <motion.ul
@@ -89,9 +90,11 @@ const toggleMenu = () => {
                className={`w-24 text-white outline outline-1 outline-cyan-50 p-1 text-xs text-center bg-opacity-80 bg-black rounded-md ${isActive && "bg-cyan-950 text-sm"}`}>
                  {link.label}
              </NavLink>
+            
            </motion.li>
          )
        })}
+       <Socials />
      </motion.ul>
       )}
       

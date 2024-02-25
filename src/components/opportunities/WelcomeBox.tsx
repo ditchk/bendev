@@ -24,8 +24,7 @@ const Player: React.FC<PlayerProps> = ({ src }) => {
       <video id="background-video" className="videoPrev" preload='auto' autoPlay muted loop>
         <source src={src} type="video/mp4" />
       </video>
-      <div className='Extension' />
-      <div className="PlayerItems">
+      <div className="OppWelcomSec">
         <div className="ItemBox-Div">
           <h1 className="BrandName">Learn and Earn</h1>
             <div className="flex flex-row justify-center items-center gap-4">

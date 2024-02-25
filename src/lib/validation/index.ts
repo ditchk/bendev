@@ -24,3 +24,9 @@ export const projectValidation = z.object({
     file: z.custom<File[]>(),
     projectInfo: z.string().min(2).max(200, { message: "Cannot exceed 200 characters" }),
   })
+
+export const PackageInfoValidation = z.object({
+  name: z.string().min(5, {message: "Please check your input"}).max(100, {message: "Name cannot exceed 100 characters"}),
+  email: z.string().email("Invalid Email"),
+  description: z.string().min(0).max(300,{message:"Description cannot exceed 300 characters"}).optional()
+});

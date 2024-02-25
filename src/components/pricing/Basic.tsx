@@ -13,7 +13,7 @@ const Basic = () => {
 
   return (
     <div className="BasicPackageBox">
-        <span className="PackageText">Basic package</span>
+        <span className={`PackageText`}>Basic package</span>
         <div className="flex flex-col justify-center items-start p-5">
             <div className="PriceTag">
                 <s className="OriginalHrp">70$/hr</s>
