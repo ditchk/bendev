@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { MdArrowDownward, MdArrowUpward } from 'react-icons/md'
 
 const QuestionAnswer = () => {
@@ -9,7 +9,7 @@ const QuestionAnswer = () => {
     }
     
   return (
-    <div>
+    <div onClick={handleClick}>
       {openContainer ? (
         <MdArrowUpward />
       ): (
