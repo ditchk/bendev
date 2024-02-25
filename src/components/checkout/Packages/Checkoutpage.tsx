@@ -61,9 +61,9 @@ const BasicCheckOut = () => {
         className="flex flex-col justify-center items-center h-fit w-full bg-white space-y-2"
       >
         <Link to={'/'}>
-          <img src="/assets/images/logo1.png" alt="" width={50} />
+          <img src="/assets/images/logo1.png" alt="" width={70} />
         </Link>
-        <h2 className="txt-xs font-bold">Basic Package confirmation</h2>
+        <h2 className="txt-xs font-bold text-center">Package confirmation</h2>
         <FormField
             control={form.control}
             name="name"
