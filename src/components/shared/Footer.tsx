@@ -15,15 +15,17 @@ import { footerLinks, freqAsked, moreFooterLinks } from "@/constants"
 import { Link } from "react-router-dom"
 import Socials from "./Socials"
 import { useState } from "react"
-import { saveSubscriberToDB } from "@/lib/appwrite/api"
 import UploadLoader from "./UploadLoader"
-import { toast } from "../ui/use-toast"
+import { useToast } from "../ui/use-toast"
+import { UseSaveSubscriber } from "@/lib/Queries/QueriesAndMutations"
 
 
 const Footer = () => {
 
+  const {mutateAsync: saveSubscriberToDB, isPending: isLoading } =UseSaveSubscriber()
+
   const [clicked, setIsclicked] = useState(false)
-  const [loading, setLoading] = useState(false)
+  const { toast } = useToast()
 
   const handleClik = () => {
     setIsclicked(!clicked)
@@ -43,8 +45,11 @@ const Footer = () => {
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
     const newSubscriber = await saveSubscriberToDB(values)
-    setLoading(true)
-    return newSubscriber && toast
+
+
+    return newSubscriber && toast({
+      title: "Success, You have subscribed to our newsletter!",
+    })
   }
   return (
     <footer className="FooterBox">
@@ -105,7 +110,7 @@ const Footer = () => {
                   )}
                 />
                 <Button type="submit" className="Signup_button">
-                  {loading ? (
+                  {isLoading ? (
                     <UploadLoader />
                   ) : (
                     "Subscribe Now!"

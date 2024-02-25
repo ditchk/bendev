@@ -5,7 +5,7 @@ import {
     useQueryClient,
     // useInfiniteQuery,
  } from '@tanstack/react-query';
-import { CreateUserAccount, OrderSubmission, createProject, getALLServices, getFeaturedProjects, getRecentProducts, getRecentProjects, saveMessageToDB, signInAccount } from '../appwrite/api';
+import { CreateUserAccount, OrderSubmission, createProject, getALLServices, getFeaturedProjects, getRecentProducts, getRecentProjects, saveMessageToDB, saveSubscriberToDB, signInAccount } from '../appwrite/api';
 import { NewUser, myNewProject } from '@/types';
 import { QUERY_KEYS } from './queryKeys';
 
@@ -85,5 +85,14 @@ export const useSignInAccount = () => {
             email: string;
             message: string;
         }) => saveMessageToDB(newMessage)
+    })
+ }
+
+
+ export const UseSaveSubscriber = () => {
+    return useMutation({
+        mutationFn: (newSubscriber : {
+            Email: string
+        }) => saveSubscriberToDB(newSubscriber)
     })
  }
