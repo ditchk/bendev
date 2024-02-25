@@ -9,6 +9,7 @@ export const myConfig = {
     messageCollectionId: import.meta.env.BES_APPWRITE_MESSAGE_COLLECTION_ID,
     projectCollectionId: import.meta.env.BES_APPWRITE_PROJECT_COLLECTION_ID,
     featuredCollectionId: import.meta.env.BES_APPWRITE_FEATURED_ID,
+    orderCollectionId: import.meta.env.BES_APPWRITE_ORDER_COLLECTION_ID,
     userCollectionId:import.meta.env.BES_APPWRITE_USER_COLLECTION_ID,
     blogCollectionIld:import.meta.env.BES_APPWRITE_BLOG_COLLECTION_ID,
     saveCollectionId:import.meta.env.BES_APPWRITE_SAVES_COLLECTION_ID,

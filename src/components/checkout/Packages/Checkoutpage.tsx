@@ -9,34 +9,38 @@ import {
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 import { useEffect, useRef, useState } from "react"
-// import { Link, useNavigate } from "react-router-dom";
-// import { useToast } from "@/components/ui/use-toast";
-// import { useSignInAccount } from "@/lib/Queries/QueriesAndMutations";
 import { Input } from "../../ui/input";
 import { PackageInfoValidation } from "@/lib/validation";
 import { Textarea } from "../../ui/textarea";
 import { Button } from "../../ui/button";
 import { Link } from "react-router-dom";
+import { useAddNewOrder } from "@/lib/Queries/QueriesAndMutations";
+import SubmitLoader from "@/components/loaders/SubmitLoader";
+import { useToast } from "@/components/ui/use-toast";
 
 
 const BasicCheckOut = () => {
-  // const { mutateAsync: signInAccount } = useSignInAccount()
-  // const navigate  = useNavigate()
-  // const { toast } = useToast()
-  const [loading, setLoading] = useState(false)
+
+  const {mutateAsync:  OrderSubmission, isPending : isLoading} = useAddNewOrder()
+  const { toast } = useToast()
 
   const form = useForm<z.infer<typeof PackageInfoValidation>>({
     resolver: zodResolver(PackageInfoValidation),
     defaultValues: {
       name: "",
       email: "",
-      description: "",
+      notes: "",
     },
   })
 
   async function onSubmit(values: z.infer<typeof PackageInfoValidation>) {
-    console.log(values)
-    setLoading(true)
+
+    const newOrder = await OrderSubmission(values);
+
+    return newOrder && toast({
+      title: "Thank you for choosing us: keep an eye on your email inbox",
+      description: "I will be contacting you shortly",
+    })
   }
 
   const ref = useRef(null)
@@ -58,10 +62,10 @@ const BasicCheckOut = () => {
         }}
         ref={ref} 
         onSubmit={form.handleSubmit(onSubmit)} 
-        className="flex flex-col justify-center items-center h-fit w-full bg-white space-y-2"
+        className="flex flex-col justify-center items-center h-fit w-fit p-5 bg-white shadow-md shadow-slate-400 rounded-xl space-y-2"
       >
         <Link to={'/'}>
-          <img src="/assets/images/logo1.png" alt="" width={70} />
+          <img src="/assets/images/logo1.png" alt="" width={100} />
         </Link>
         <h2 className="txt-xs font-bold text-center">Package confirmation</h2>
         <FormField
@@ -71,7 +75,7 @@ const BasicCheckOut = () => {
               <FormItem>
                 <FormLabel>Name</FormLabel>
                 <FormControl>
-                  <Input placeholder="Your Name" {...field} className="shadow-inner shadow-black  w-52 border border-gray1600" />
+                  <Input placeholder="Your Name" {...field} className=" w-72 border border-gray3200" />
                 </FormControl>
                 <FormMessage className="text-xs font-thin text-red-600"/>
               </FormItem>
@@ -84,7 +88,7 @@ const BasicCheckOut = () => {
             <FormItem>
               <FormLabel>Email adress</FormLabel>
               <FormControl>
-                <Input placeholder="Enter your email" {...field} className="shadow-inner shadow-black w-52 border border-gray-100" />
+                <Input placeholder="Enter your email" {...field} className="w-72 border border-gray-300" />
               </FormControl>
               <FormMessage className="text-xs font-thin text-red-600"/>
             </FormItem>
@@ -92,20 +96,21 @@ const BasicCheckOut = () => {
         />
         <FormField
           control={form.control}
-          name="description"
+          name="notes"
           render={({ field }) => (
             <FormItem>
               <FormLabel>Notes</FormLabel>
               <FormControl>
-                <Textarea placeholder="Do you have any notes to add on your order?" {...field} className="shadow-inner shadow-black w-52 border border-gray-100" />
+                <Textarea placeholder="Do you have any notes to add on your order?" {...field} className="w-72 min-h-[140px] max-h-[150px] border border-gray-300" />
               </FormControl>
               <FormMessage className="text-xs font-thin text-red-600"/>
             </FormItem>
           )}
         />
-        <Button type="submit" className="submit">{loading ? (
+        <div className="flex flex-row justify-center items-center">
+        <Button type="submit" className="custom_button">{isLoading ? (
           <div className="flex flex-row justify-center items-center gap-3">
-            <img src="/assets/images/email.png" alt="" width={30}/><h1 className="primary_text">We have recieved your message</h1>
+            <SubmitLoader />
           </div>
         ) : (
           <div>
@@ -114,6 +119,9 @@ const BasicCheckOut = () => {
         )
         
         }</Button>
+        <h3 className="text-2xl font-extrabold text-slate-200">Or</h3>
+        <Link to={'/'} className="custom_button p-2 rounded-md">Homepage</Link>
+        </div>
       </motion.form>
       </Form>
   </div>

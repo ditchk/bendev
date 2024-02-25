@@ -87,7 +87,7 @@ const toggleMenu = () => {
                to={link.route}
                onClick={toggleMenu}
                reloadDocument
-               className={`w-24 text-white outline outline-1 outline-cyan-50 p-1 text-xs text-center bg-opacity-80 bg-black rounded-md ${isActive && "bg-cyan-950 text-sm"}`}>
+               className={`w-24 text-white outline outline-1 outline-cyan-50 p-1 text-xs text-center bg-opacity-80 bg-black rounded-full ${isActive && "bg-cyan-950 text-sm"}`}>
                  {link.label}
              </NavLink>
             

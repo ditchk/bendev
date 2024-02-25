@@ -114,6 +114,28 @@ export async function savInquireToDB (quotes: {
   }
 }
 
+
+export async function OrderSubmission (orders: {
+  name: string;
+  email: string;
+  notes?: string;
+}) {
+  try {
+    const newOrder = await databases.createDocument (
+      myConfig.databaseId,
+      myConfig.orderCollectionId,
+      ID.unique(),
+      orders
+    )
+
+    return newOrder
+  } catch(error) {
+    console.log(error)
+  }
+}
+
+
+
 export async function createProject(project: myNewProject) {
     try {
       
@@ -242,6 +264,8 @@ export async function createProject(project: myNewProject) {
 
     return AllServices
   }
+
+
 
   export async function signInAccount(user: {email:string; password:string; }) {
     try {

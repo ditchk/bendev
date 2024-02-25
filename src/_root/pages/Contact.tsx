@@ -15,14 +15,17 @@ import {
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { messageValidation } from "@/lib/validation"
-import { saveMessageToDB } from "@/lib/appwrite/api"
-import { useEffect, useRef, useState } from "react"
+import { useEffect, useRef } from "react"
 import { hourglass } from 'ldrs'
+import SubmitLoader from "@/components/loaders/SubmitLoader"
+import { useToast } from "@/components/ui/use-toast"
+import { useSaveMessageToDB } from "@/lib/Queries/QueriesAndMutations"
 
-
-const Contact = () => {
   hourglass.register()
-  const [loading, setLoading] = useState(false)
+const Contact = () => {
+
+  const { mutateAsync: saveMessageToDB, isPending: isLoading  } = useSaveMessageToDB()
+  const { toast } = useToast()
 
     // 1. Define your form.
     const form = useForm<z.infer<typeof messageValidation>>({
@@ -37,8 +40,12 @@ const Contact = () => {
   
    async function onSubmit(values: z.infer<typeof messageValidation>) {
       const newMessage = await saveMessageToDB(values)
-      setLoading(true);
-      return newMessage
+      
+
+      return newMessage && toast({
+        title: "Your message has been sent succesfully",
+        description: "We will get back to you shortly",
+      })
     }
 
     const ref = useRef(null)
@@ -50,6 +57,7 @@ const Contact = () => {
     
   return (
     <div className="default_Container mt-12 md:mt-16 lg:mt-24">
+      <h3 className="textHeadline">Contact us</h3>
       <motion.div 
         style={{
           transform: isInView ? "none" : "translateY(10px)",
@@ -57,11 +65,11 @@ const Contact = () => {
           transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
         }}
         ref={ref}
-        className="flex flex-col justify-center items-start md:flex-row m-2 rounded-xl w-fit md:gap-10 bg-white md:shadow-sm shadow-slate-400 md:my-5 md:rounded-xl outline outline-1 outline-white">
+        className="flex flex-col justify-center items-start md:flex-row m-2 rounded-xl w-fit md:gap-10 bg-white shadow shadow-slate-400 md:my-5 md:rounded-xl outline outline-1 outline-white">
           <div className="flex flex-col w-full mb-10 p-10">
-              <h3 className="primary_text">Contact us</h3>
+              
               <Form {...form}>
-                <form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-col gap-1 space-y-3">
+                <form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-col gap-1 space-y-5">
                 <div className="flex flex-row gap-2">
                   <FormField
                       control={form.control}
@@ -106,15 +114,15 @@ const Contact = () => {
                     render={({ field }) => (
                       <FormItem>
                         <FormControl>
-                          <Textarea placeholder="Please lets us know what you have in mind." {...field} className="form_inp focus-visible:outline-none placeholder:text-xs" />
+                          <Textarea placeholder="Please lets us know what you have in mind." {...field} className="form_inp min-h-[140px] max-h-[150px] focus-visible:outline-none placeholder:text-xs" />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
                     )}
                   />
-                  <Button type="submit" className="submit">{loading ? (
+                  <Button type="submit" className="custom_button">{isLoading ? (
                     <div className="flex flex-row justify-center items-center gap-3">
-                      <img src="/assets/images/email.png" alt="" width={30}/><h1 className="primary_text">We have recieved your message</h1>
+                      <SubmitLoader />
                     </div>
                   ) : (
                     <div>
@@ -126,17 +134,6 @@ const Contact = () => {
                 </form>
               </Form>
             </div>
-            {/* <div className="flex flex-col gap-5 w-full">
-              <h1 className="primary_text">CONTACT INFORMATION</h1>
-              <ul className="flex flex-col justify-center items-start gap-2">
-                {contactInformation.map((link: contactInfo) => (
-                  <li className="flex flex-1 gap-5">
-                    <img src={link.imageURL} alt="" width={30} height={30} className="bg-black p-1 rounded-md outline outline-2 object-contain outline-cyan-100 shadow shadow-slate-600"/>
-                    <h2 className="links_footer">{link.content}</h2>
-                  </li>
-                ))}
-              </ul>
-            </div> */}
       </motion.div>
     </div>
   )
