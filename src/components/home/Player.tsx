@@ -29,7 +29,7 @@ const Player: React.FC<PlayerProps> = ({ src }) => {
       <div className='flex xl:hidden justify-end mt-[29rem] lg:mt-[35rem] xl:mt-[37.5rem] bg-white h-16 md:h-14 z-10 rounded-t-3xl w-screen absolute ' />
       <div className="PlayerItems">
         <div className="ItemBox-Div">
-          <h1 className="BrandName">WELCOME TO BSWP</h1>
+          <h1 className="BrandName">Welcome to Bswp</h1>
           <h2 className='BrandName2'>Home for Modern websites</h2>
           <p className="TextDescription">We strive to make the best of what we have <br />and create something truly special.</p>
           <Button className="buttonPrev" onClick={handleClick}>Explore Now</Button>
