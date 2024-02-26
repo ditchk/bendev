@@ -116,7 +116,7 @@
 }
 
 .menubar {
-  @apply flex flex-col pt-2 gap-2 justify-start items-center fixed  
+  @apply flex flex-col pt-2 gap-2 justify-start items-center fixed top-0
   w-full left-0 h-fit rounded-b-3xl p-2 outline-cyan-50  bg-white backdrop-blur-2xl shadow-md
  }
 
@@ -788,7 +788,7 @@ nav.scrolled {
 }
 
 .video {
-  @apply z-0 h-[500px]  brightness-95 scale-125 md:scale-100 lg:h-screen w-full object-cover overflow-hidden
+  @apply z-0 h-[500px]  brightness-95 filter grayscale scale-125 md:scale-100 lg:h-screen w-full object-cover overflow-hidden
 }
 
 .PlayerItems {

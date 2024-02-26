@@ -69,6 +69,7 @@ const toggleMenu = () => {
         animate={{ y: 60 }}
         transition={{type: "spring", delay: 0 }} 
         className={`menubar ${navbarHidden ? 'navbar hidden' : 'hidden'}`}
+        onScroll={hideNavbar}
        >
        {sideBarLinks.map((link: MyNavLink) => {
 
