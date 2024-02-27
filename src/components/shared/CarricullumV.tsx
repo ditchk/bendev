@@ -15,12 +15,12 @@ const CarricullumV = () => {
 
   return (
     <div className="flex flex-col justify-center items-center mx-2 md:mx-10 bg-opacity-5 outline outline-1 outline-slate-200">
-      <div className="flex flex-col justify-center items-center outline outline-2 rounded-md rounded-tl-3xl rounded-br-3xl outline-slate-50 m-2 md:p-5 md:px-24 md:pb-5 mb-10 bg-black animate-in slide-in-from-right-40 duration-500">
+      <div className="flex flex-col justify-center items-center outline outline-2 rounded-md rounded-tl-3xl rounded-br-3xl outline-slate-50 m-2 md:p-5 md:px-24 md:pb-5 mb-10 bg-black bg-opacity-10 animate-in slide-in-from-right-40 duration-500">
         <h1 className="text_prim">BENSON KIGOCI</h1>
         <h2 className="text_sec mb-5 text-shadow">Full Stack Developer && UI/UX Designer</h2>
         <div className="primary-Box"
         style={{
-          transform: isInView ? "none" : "translateY(50px)",
+          transform: isInView ? "none" : "translateX(10px)",
           opacity: isInView ? 1 : 0,
           transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
         }}
