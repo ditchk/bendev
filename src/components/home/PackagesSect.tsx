@@ -23,7 +23,7 @@ const PackagesSect = () => {
             <PackageSelect />
         </div>
         <div className="ContainerExplaPackage relative">
-          <div className="flex flex-row justify-between items-center bg-black w-full bg-opacity-10 gap-10 p-2 outline outline-2 outline-slate-300 rounded-full cursor-pointer" onClick={handleClick}>
+          <div className="flex flex-row justify-between items-center bg-black w-full bg-opacity-10 gap-10 p-2 outline outline-2 outline-slate-100 shadow-md shadow-gray-400 duration-1000 rounded-full cursor-pointer" onClick={handleClick}>
             <h1 className="PackageTitleText">Understand Our Pricing</h1>
               {!openContainer ? (
                 <FaAngleDown className="bg-black rounded-full text-xl cursor-pointer outline outline-2 outline-slate-300 text-white text-center" onClick={handleClick}/>
@@ -40,7 +40,7 @@ const PackagesSect = () => {
           )}
        </div>
        <div className="ContainerExplaPackage relative">
-          <div className="flex flex-row justify-between items-center bg-black w-full bg-opacity-10 gap-10 p-2 outline outline-2 outline-slate-300 rounded-full cursor-pointer" onClick={handleClick2}>
+          <div className="flex flex-row justify-between items-center bg-black w-full bg-opacity-10 gap-10 p-2 outline outline-2 outline-slate-100 duration-1000 shadow-md shadow-gray-400 rounded-full cursor-pointer" onClick={handleClick2}>
             <h1 className="PackageTitleText">Frequently asked questions(FAQs)</h1>
               {!openContainer2 ? (
                 <FaAngleDown className="bg-black rounded-full text-xl cursor-pointer outline outline-2 outline-slate-300 text-white text-center" onClick={handleClick2}/>

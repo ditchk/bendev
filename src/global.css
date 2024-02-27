@@ -705,11 +705,11 @@ nav.scrolled {
 /* Packages */
 
 .BasicPackageBox {
-  @apply flex flex-col justify-center items-start h-fit p-2 w-full md:max-w-xl min-h-full animate-in slide-in-from-bottom-14 duration-1000 bg-white rounded-2xl border-2 shadow-sm shadow-cyan-600
+  @apply flex flex-col justify-center items-start h-fit p-2 w-full md:max-w-xl min-h-full animate-in slide-in-from-bottom-14 duration-1000 bg-white rounded-2xl shadow-md shadow-gray-400 hover:shadow-lg hover:shadow-cyan-600
 }
 
 .BasicPackageBox2 {
-  @apply flex flex-col justify-center items-start h-fit p-2 w-full md:max-w-xl min-h-full animate-in bg-slate-600 slide-in-from-bottom-14 duration-1000 rounded-2xl border-2 shadow-sm shadow-cyan-600
+  @apply flex flex-col justify-center items-start h-fit p-2 w-full md:max-w-xl min-h-full animate-in bg-teal-800 slide-in-from-bottom-14 duration-1000 rounded-2xl shadow-md shadow-gray-400 hover:shadow-lg hover:shadow-cyan-600
 }
 
 .HeadContent {
@@ -788,7 +788,7 @@ nav.scrolled {
 }
 
 .video {
-  @apply z-0 h-[500px]  brightness-95 filter grayscale scale-125 md:scale-100 lg:h-screen w-full object-cover overflow-hidden
+  @apply z-0 h-[500px]  brightness-75 filter grayscale scale-125 md:scale-100 lg:h-screen w-full object-cover overflow-hidden
 }
 
 .PlayerItems {
