@@ -23,12 +23,12 @@ const PackagesSect = () => {
             <PackageSelect />
         </div>
         <div className="ContainerExplaPackage relative">
-          <div className="flex flex-row justify-between items-center bg-gradient-to-br from-black to-teal-500 w-full gap-10 p-2 outline outline-2 outline-slate-100 shadow-md shadow-gray-400 duration-1000 rounded-full cursor-pointer" onClick={handleClick}>
+          <div className="flex flex-row justify-between items-center bg-gradient-to-br from-black to-teal-500 w-full gap-10 p-2 outline outline-2 outline-slate-100 shadow-md shadow-gray-200 duration-1000 rounded-full cursor-pointer" onClick={handleClick}>
             <h1 className="PackageTitleText">Understand Our Pricing</h1>
               {!openContainer ? (
-                <FaAngleDown className="rounded-full text-xl cursor-pointer text-white text-center" onClick={handleClick}/>
+                <FaAngleDown className="rounded-full text-xl cursor-pointer text-white text-center duration-1000 -rotate-90 animate-in" onClick={handleClick}/>
               ) : (
-                <FaAngleUp  className="rounded-full text-xl cursor-pointer text-white text-center" onClick={handleClick}/>
+                <FaAngleUp  className="rounded-full text-xl cursor-pointer text-white text-center duration-1000 rotate-180 animate-in" onClick={handleClick}/>
               )}
           </div>
           {openContainer && (
@@ -40,10 +40,10 @@ const PackagesSect = () => {
           )}
        </div>
        <div className="ContainerExplaPackage relative">
-          <div className="flex flex-row justify-between items-center w-full bg-gradient-to-br from-black to-teal-500 gap-10 p-2 outline outline-2 outline-slate-100 duration-1000 shadow-md shadow-gray-400 rounded-full cursor-pointer" onClick={handleClick2}>
+          <div className="flex flex-row justify-between items-center w-full bg-gradient-to-br from-black to-teal-500 gap-10 p-2 outline outline-2 outline-slate-100 duration-1000 shadow-md shadow-gray-200 rounded-full cursor-pointer" onClick={handleClick2}>
             <h1 className="PackageTitleText">Frequently asked questions(FAQs)</h1>
               {!openContainer2 ? (
-                <FaAngleDown className="rounded-full text-xl cursor-pointer text-white text-center animate-in duration-1000 rotate-180" onClick={handleClick2}/>
+                <FaAngleDown className="rounded-full text-xl cursor-pointer text-white text-center animate-in duration-1000 -rotate-90" onClick={handleClick2}/>
               ) : (
                 <FaAngleUp  className="rounded-full text-xl cursor-pointer text-white text-center animate-in duration-1000 rotate-180" onClick={handleClick2}/>
               )}

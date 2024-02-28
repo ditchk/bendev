@@ -14,14 +14,13 @@ const MobileMenu: React.FC = () => {
  const { pathname } = useLocation();
  const [navbarHidden, setNavbarHidden] = useState(false);
 
-
  const hideNavbar = () => {
   setNavbarHidden(true);
 };
 
 useEffect(() => {
   const handleResize = () => {
-    if (window.innerWidth <= 768) {
+    if (window.innerWidth <= 668) {
       setNavbarHidden(true);
     } else {
       setNavbarHidden(false);
@@ -58,11 +57,11 @@ const toggleMenu = () => {
 };
 
  return (
-    <nav className="MobileMenu transition-all" onClick={hideNavbar} onScroll={hideNavbar}>
+    <nav className="MobileMenu transition-all" onScroll={e => e.preventDefault()}>
             {!menuOpen ? (
-              <HiOutlineMenuAlt3 className="text-4xl text-slate-600 bg-transparent transition-transform ease-in-out duration-1000 animate-out fade-out-70 slide-in-from-bottom-1" onClick={toggleMenu}/>
+              <HiOutlineMenuAlt3 className="text-4xl text-slate-600 bg-transparent transition-transform ease-in-out duration-1000 animate-in zoom-in-50" onClick={toggleMenu}/>
             ) : (
-              <MdOutlineClose className="text-4xl text-slate-600 bg-transparent bg-opacity-40 transition-transform ease-in-out duration-500 animate-in slide-in-from-bottom-1 rotate-90" onClick={toggleMenu}/>
+              <MdOutlineClose className="text-4xl text-slate-600 bg-transparent bg-opacity-40 transition-transform ease-in-out duration-500 animate-in rotate-90" onClick={toggleMenu}/>
             )}
       {menuOpen && (
        <motion.ul
@@ -79,7 +78,7 @@ const toggleMenu = () => {
            <motion.li 
            key={link.label}
            variants={variants}
-           whileHover={{ scale: 1.1 }}
+           whileHover={{ scale: 1.2 }}
            whileTap={{ scale: 0.95 }} 
            className="links"
            onClick={hideNavbar}
@@ -88,7 +87,7 @@ const toggleMenu = () => {
                to={link.route}
                onClick={toggleMenu}
                reloadDocument
-               className={`w-24 text-white outline outline-1 outline-cyan-50 p-1 text-xs text-center bg-opacity-80 bg-black rounded-full ${isActive && "bg-cyan-950 text-sm"}`}>
+               className={`w-24 text-white outline outline-1 outline-cyan-50 p-1 animate-in zoom-in-125 duration-700 text-xs text-center bg-opacity-80 bg-black rounded-full ${isActive && "bg-cyan-950 text-sm"}`}>
                  {link.label}
              </NavLink>
             

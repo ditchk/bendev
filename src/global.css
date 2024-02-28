@@ -55,7 +55,7 @@
 
 
 .navbar {
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
   height: 60px;
@@ -116,12 +116,20 @@
 }
 
 .menubar {
-  @apply flex flex-col pt-2 gap-2 justify-end items-center top-14
-  w-full left-0 h-fit rounded-b-3xl p-2 outline-cyan-50  bg-white animate-in slide-in-from-top-5 duration-500
+  @apply flex flex-col pt-2 gap-2 justify-end items-center top-14 absolute
+  w-full left-0 h-fit rounded-b-3xl p-2 outline-cyan-50 bg-white animate-in slide-in-from-top-5 duration-500
+ }
+
+ .menubar {
+  box-shadow: 0px 5px 4px teal;
  }
 
 .links {
   @apply flex justify-center items-start w-fit h-fit
+}
+
+.links::after:last-child(li).links{
+  @apply animate-in slide-in-from-top-16
 }
 
 /* Navbar/sidebar */
@@ -705,11 +713,11 @@ nav.scrolled {
 /* Packages */
 
 .BasicPackageBox {
-  @apply flex flex-col justify-center items-start h-fit p-2 w-full md:max-w-xl min-h-full animate-in slide-in-from-bottom-14 duration-1000 bg-white rounded-2xl shadow-md shadow-gray-400 hover:shadow-lg hover:shadow-cyan-600
+  @apply flex flex-col justify-center items-start h-fit p-2 w-full md:max-w-xl min-h-full animate-in slide-in-from-bottom-14 duration-1000 bg-white rounded-2xl outline outline-2 outline-slate-200 hover:shadow-lg hover:shadow-cyan-600
 }
 
 .BasicPackageBox2 {
-  @apply flex flex-col justify-center items-start h-fit p-2 w-full md:max-w-xl min-h-full animate-in bg-teal-800 slide-in-from-bottom-14 duration-1000 rounded-2xl shadow-md shadow-gray-400 hover:shadow-lg hover:shadow-cyan-600
+  @apply flex flex-col justify-center items-start h-fit p-2 w-full md:max-w-xl min-h-full animate-in bg-teal-800 slide-in-from-bottom-14 duration-1000 rounded-2xl outline outline-2 outline-slate-200 hover:shadow-lg hover:shadow-cyan-600
 }
 
 .HeadContent {
@@ -788,7 +796,7 @@ nav.scrolled {
 }
 
 .video {
-  @apply z-0 h-[500px]  brightness-50 filter grayscale scale-125 md:scale-100 lg:h-screen w-full object-cover overflow-hidden
+  @apply z-0 h-[500px]  brightness-50 scale-125 md:scale-100 lg:h-screen w-full object-cover overflow-hidden
 }
 
 .PlayerItems {
@@ -812,11 +820,11 @@ nav.scrolled {
 }
 
 .buttonPrev {
-  @apply bg-transparent outline outline-2 outline-white mt-3 bg-black bg-opacity-30 duration-1000 z-40
+  @apply bg-transparent outline-dotted outline-2 outline-white mt-3 bg-black bg-opacity-30 duration-1000 z-40
 }
 
 .ItemBox-Div {
-  @apply flex flex-col justify-start items-center h-fit w-fit p-2 py-2 lg:py-10  animate-in slide-in-from-top-28 bg-black bg-opacity-20 outline outline-1 outline-white duration-500 rounded-xl
+  @apply flex flex-col justify-start items-center h-fit w-fit p-2 py-2 lg:py-10 animate-in zoom-in-150 bg-black bg-opacity-20 duration-500 rounded-xl
 }
 
 .ExplainText {
@@ -842,7 +850,7 @@ nav.scrolled {
 }
 
 .H1Crads {
-  @apply box-border flex flex-row justify-center items-center gap-2 bg-black bg-opacity-20 hover:bg-opacity-30 hover:bg-teal-100 hover:-translate-y-2 duration-1000 mt-10 md:mt-14 lg:mt-36 min-w-[100px] border-2 border-white animate-in slide-in-from-top-10 text-white p-2 rounded-xl text-xs md:text-sm font-sans font-extralight
+  @apply box-border flex-grow flex-row justify-center items-center gap-2 bg-black bg-opacity-20 hover:bg-opacity-30 hover:bg-teal-100 hover:-translate-y-2 duration-1000 mt-10 md:mt-14 lg:mt-36 min-w-[100px] border-2 border-white animate-in slide-in-from-top-10 text-white p-1 rounded-xl text-xs md:text-sm font-sans font-extralight
 }
 
 
