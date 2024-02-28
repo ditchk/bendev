@@ -1,6 +1,6 @@
 function Privacypoliy() {
   return (
-    <div className='flex flex-col justify-center items-center p-10'>
+    <div className='flex flex-col justify-center items-center p-2'>
       <div className="flex flex-col">
         <h1 className="text_title">PRIVACY NOTICE</h1>
         <small className="text-center font-bold text-slate-500">Last updated January 09, 2024</small>

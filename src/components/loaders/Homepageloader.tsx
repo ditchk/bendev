@@ -16,9 +16,9 @@ const Homepageloader = () => {
               stroke-length="0.25"
               bg-opacity="0.2"
               speed="2" 
-              color="teal" 
+              color="transparent" 
             ></l-ring-2>
-          <img src="/assets/images/logo.png" alt="" width={50} className="absolute" />
+          <img src="/assets/images/logo.png" alt="" width={50} className="absolute animate-in scale-150 duration-1000" />
           </div>
         <span className="w-full text-center absolute top-[34rem] text-xs font-mono font-bold text-teal-800 h-fit underline underline-offset-2">Version 2.1.0 bswp &#169; 2023</span>
     </div>

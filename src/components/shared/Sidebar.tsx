@@ -45,11 +45,11 @@ const Sidebar = () => {
     className="hidden md:flex flex-col md:justify-center items-center bg-transparent mt-28 p-1 gap-5 shadow-2xl shadow-fuchsia-400 h-fit w-fit outline outline-2 backdrop-blur-sm outline-white rounded-r-lg fixed z-50 animate-in slide-in-from-left-24 snap-always"
     >
        {!menuOpen ? (
-        <MdClose className="flex justify-end left-10 w-fit bg-gradient-to-t from-red-950 to-cyan-200 p-1 rounded-3xl cursor-pointer text-xl" onClick={toggleMenu} />
+        <CgMenuGridR className="flex justify-end left-10 w-fit bg-gradient-to-t from-cyan-950 to-cyan-200 p-1 rounded-3xl cursor-pointer text-xl animate-in rotate-180 slide-in-from-left-10 duration-1000" onClick={toggleMenu} />
        ) : (
-        <CgMenuGridR onClick={toggleMenu} className="text-2xl text-white rounded-full bg-gradient-to-t from-cyan-950 to-cyan-200 p-1 cursor-pointer"/>
+        <MdClose onClick={toggleMenu} className="text-2xl text-white rounded-full  p-1 cursor-pointer bg-gradient-to-t from-red-950 to-cyan-200 animate-in rotate-180 slide-in-from-left-20 duration-1000"/>
        )}
-     {menuOpen || (
+     {menuOpen && (
          <ul 
           className="flex flex-col gap-2 w-fit p-1 animate-in slide-in-from-left-32"
          >

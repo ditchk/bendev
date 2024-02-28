@@ -18,14 +18,15 @@ const CookieConcent: React.FC = () => {
         buttonText="I accept"
         declineButtonText="I decline"
         onAccept={handleAcceptCookies}
+        setDeclineCookie={true}
         onDecline={Declined}
         acceptOnScroll
         acceptOnScrollPercentage={20}
-        style={{background: "teal", width: "90%", margin: "15px", fontFamily: "sans-serif", fontWeight: "lighter", left: "0", borderRadius: "20px" ,fontSize: "14px", justifyContent: "start", outline: "4px" , outlineColor: "white" , justifySelf: "end", animation: "ease-in-out"}}
-        buttonStyle={{background: "black", color: "white", borderRadius: "10px", padding: "5px 20px"}}
+        style={{background: "linear-gradient(to top left,#304f4f, #1c4646, #22aaaa )",  width: "90%", opacity: "0.98", margin: "10px", fontFamily: "sans-serif", fontWeight: "lighter", fillOpacity: "0.5", left: "0", borderRadius: "10px", fontSize: "12px", justifyContent: "start", justifySelf: "end", animation: "ease-in-out"}}
+        buttonStyle={{background: "transparent", color: "white", borderRadius: "10px", padding: "5px 20px", outline: "0.5px", outlineStyle: "dashed", outlineColor: "white"}}
       >
-        This site uses cookies to improve your experience. Learn more in our{" "}
-        <a href="/privacy-policy" style={{color: "black", fontFamily: "monospace" , fontWeight: "bolder"}}>privacy policy</a>
+        <h2 className="text-xs text-red-400">This site uses cookies to improve your experience. Learn more in our{" "}<a href="/privacy-policy" className="text-xs text-light font-mono text-white">privacy policy</a></h2>
+        
         {hasAcceptedCookies ? (
         <small style={{}}></small>
       ) : (
