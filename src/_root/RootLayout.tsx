@@ -14,7 +14,7 @@ const RootLayout: React.FC = () => {
   useEffect(() => {
     const loadData = async () => {
       // Simulate loading data
-      await new Promise((resolve) => setTimeout(resolve, 2000));
+      await new Promise((resolve) => setTimeout(resolve, 1500));
       setIsLoading(false);
     };
 
