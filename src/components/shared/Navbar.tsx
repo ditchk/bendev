@@ -17,7 +17,7 @@ const Navbar = () => {
       >
         <h1 className="logo-text">Bensworkspace</h1>
       </Link>
-      <div className="hidden md:flex flex-row justify-center items-center gap-5">
+      <div className="hidden md:flex flex-row justify-center items-center gap-5 animate-in slide-in-from-right-20 duration-500">
         <Socials />
         <Link to={'/mycv'} className="Linkme">
           Explore
