@@ -2,9 +2,7 @@ import { Models } from "appwrite"
 import { Button } from "../ui/button"
 
 import { motion, useInView } from 'framer-motion'
-import { useEffect, useRef, useState } from "react"
-import HireRequest from "./HireRequest"
-import { MdClose } from "react-icons/md"
+import { useEffect, useRef } from "react"
 import { useNavigate } from "react-router"
 
 type ServiceBoxProps = {
