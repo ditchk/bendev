@@ -10,7 +10,7 @@ const Navbar = () => {
 
 
   return (
-    <nav id='navbar' className={`navbar bg-white rounded-3xl shadow-md shadow-gray-400 my-2 left-2 md:left-5  ${scrollDirection === 'down' ? 'hide shadow-none' : ''}`}>
+    <nav id='navbar' className={`navbar bg-gradient-to-r from-teal-950 to-teal-800 rounded-3xl shadow-sm shadow-gray-400 my-2 left-1 md:left-5  ${scrollDirection === 'down' ? 'hide shadow-none' : ''}`}>
       <Link 
       to={'/'}
       className="flex flex-row justify-center items-center gap-2"

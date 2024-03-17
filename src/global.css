@@ -56,7 +56,7 @@
 
 .navbar {
   position: sticky;
-  width: 95%;
+  width: 97%;
   top: 0;
   height: 50px;
   display: flex;
@@ -793,7 +793,7 @@ nav.scrolled {
 /* PLayer Section */
 
 .Player {
-  @apply flex relative justify-center items-center bg-black w-full h-full overflow-hidden rounded-t-2xl duration-1000 ease-in-out
+  @apply flex relative justify-center items-center bg-gradient-to-r from-black to-teal-900 w-full h-full overflow-hidden rounded-t-2xl outline-dotted outline-2 outline-teal-900 duration-1000 ease-in-out
 }
 
 .video {
@@ -851,7 +851,7 @@ nav.scrolled {
 }
 
 .H1Crads {
-  @apply box-border flex-col justify-center items-center gap-2 bg-teal-900 bg-opacity-20 hover:bg-opacity-30 hover:bg-teal-100 hover:-translate-y-2 duration-1000 mt-10 md:mt-14 lg:mt-36 min-w-[100px] animate-in slide-in-from-top-10 text-white p-1 rounded-xl text-xs md:text-sm font-sans font-extralight
+  @apply box-border flex-col justify-center items-center gap-2 bg-teal-900 bg-opacity-20 hover:bg-opacity-30 hover:bg-teal-100 hover:-translate-y-2 duration-1000 mt-10 md:mt-14 lg:mt-36 min-w-[100px] animate-in slide-in-from-left-10 text-white p-1 rounded-xl text-xs md:text-sm font-sans font-extralight
 }
 
 
