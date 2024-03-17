@@ -793,7 +793,7 @@ nav.scrolled {
 /* PLayer Section */
 
 .Player {
-  @apply flex relative justify-center items-center bg-gradient-to-r from-black to-teal-900 w-full h-full overflow-hidden rounded-t-2xl outline-dotted outline-2 outline-teal-900 duration-1000 ease-in-out
+  @apply flex relative justify-center items-center bg-gradient-to-r from-black to-teal-900 w-full h-full overflow-hidden rounded-t-2xl duration-1000 ease-in-out
 }
 
 .video {
