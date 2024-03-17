@@ -5,13 +5,13 @@ import { motion, useInView } from 'framer-motion'
 import { useEffect, useRef, useState } from "react"
 import HireRequest from "./HireRequest"
 import { MdClose } from "react-icons/md"
+import { useNavigate } from "react-router"
 
 type ServiceBoxProps = {
     service: Models.Document
 }
 
 const ServicesBox = ({service} : ServiceBoxProps ) => {
-    const [openWindow, setOpenwindow] = useState(false);
     const ref = useRef(null)
     const isInView = useInView(ref)
 
@@ -19,9 +19,11 @@ const ServicesBox = ({service} : ServiceBoxProps ) => {
 
       }, [isInView])
 
-      const handleClick = () => {
-        setOpenwindow(!openWindow)
-      }
+      const Navigate = useNavigate()
+
+        const handleclick = () => {
+            Navigate('/packages/premium')
+        }
 
   return (
     <motion.div 
@@ -45,15 +47,9 @@ const ServicesBox = ({service} : ServiceBoxProps ) => {
                 {service.ProductDescription}
             </p>
             <div className="Button-sect">
-                <Button className="custom_button ml-2" onClick={handleClick}>
+                <Button className="custom_button ml-2" onClick={handleclick}>
                     <small>Get a quote</small>
                 </Button>
-                {openWindow && (
-                    <div className="container">
-                        <MdClose onClick={handleClick} className="MDclose" />
-                        <HireRequest />
-                    </div>
-                )}
                 <Button className="custom_button ml-2">
                     <small className="animate-pulse">Starting at 200$</small>
                 </Button>

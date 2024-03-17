@@ -10,14 +10,14 @@ const Navbar = () => {
 
 
   return (
-    <nav id='navbar' className={`navbar bg-white shadow-sm shadow-gray-400 px-0  ${scrollDirection === 'down' ? 'hide shadow-none' : ''}`}>
+    <nav id='navbar' className={`navbar bg-white rounded-3xl shadow-md shadow-gray-400 my-2 left-2 md:left-5  ${scrollDirection === 'down' ? 'hide shadow-none' : ''}`}>
       <Link 
       to={'/'}
       className="flex flex-row justify-center items-center gap-2"
       >
         <h1 className="logo-text">Bensworkspace</h1>
       </Link>
-      <div className="hidden md:flex flex-row justify-center items-center gap-5 animate-in slide-in-from-right-20 duration-500">
+      <div className="hidden md:flex flex-row justify-center items-center gap-5 px-10 animate-in slide-in-from-right-20 duration-500">
         <Socials />
         <Link to={'/mycv'} className="Linkme">
           Explore
