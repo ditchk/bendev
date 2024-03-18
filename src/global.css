@@ -56,7 +56,7 @@
 
 .navbar {
   position: sticky;
-  width: 97%;
+  width: 98%;
   top: 0;
   height: 50px;
   display: flex;
@@ -108,7 +108,7 @@
 }
 
 .logo-text {
-  @apply text-center text-xl md:text-2xl font-extrabold text-shadow font-family animate-in slide-in-from-left-20 duration-500 text-transparent bg-clip-text bg-gradient-to-l from-green-700 via-yellow-600 to-blue-700
+  @apply text-center text-lg md:text-2xl font-extrabold text-shadow font-family animate-in slide-in-from-left-20 duration-500 text-transparent bg-clip-text bg-gradient-to-l from-green-700 via-yellow-600 to-blue-700
 }
 
 /* mobile menu */
@@ -118,7 +118,7 @@
 
 .menubar {
   @apply flex flex-col pt-2 gap-2 justify-end items-center top-16 absolute
-  w-full left-0 h-fit rounded-3xl p-2 outline-cyan-50 bg-white animate-in slide-in-from-top-5 duration-500
+  w-full left-0 h-fit rounded-3xl p-2 outline-cyan-50 bg-teal-900 bg-opacity-10 backdrop-blur-sm animate-in slide-in-from-top-5 duration-500
  }
 
  .menubar {
@@ -821,7 +821,7 @@ nav.scrolled {
 }
 
 .buttonPrev {
-  @apply bg-transparent outline-dotted outline-2 outline-white mt-3 bg-black bg-opacity-30 duration-1000 z-40
+  @apply bg-transparent outline-dotted outline-1 outline-white mt-3 bg-gradient-to-bl from-black to-teal-400 bg-opacity-30 duration-1000 z-40 rounded-full
 }
 
 .ItemBox-Div {
@@ -851,7 +851,7 @@ nav.scrolled {
 }
 
 .H1Crads {
-  @apply box-border flex-col justify-center items-center gap-2 bg-teal-900 bg-opacity-20 hover:bg-opacity-30 hover:bg-teal-100 hover:-translate-y-2 duration-1000 mt-10 md:mt-14 lg:mt-36 min-w-[100px] animate-in slide-in-from-left-10 text-white p-1 rounded-xl text-xs md:text-sm font-sans font-extralight
+  @apply box-border flex flex-row justify-center items-center gap-2 bg-teal-900 bg-opacity-20 hover:bg-opacity-30 hover:bg-teal-100 hover:-translate-y-2 duration-1000 mt-10 md:mt-14 lg:mt-36 min-w-[100px] animate-in slide-in-from-left-10 text-white p-1 rounded-xl text-xs md:text-sm font-sans font-extralight
 }
 
 
