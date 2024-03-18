@@ -119,8 +119,6 @@ const BasicCheckOut = () => {
         )
         
         }</Button>
-        <h3 className="text-2xl font-extrabold text-slate-200">Or</h3>
-        <Link to={'/'} className="custom_button p-2 rounded-md">Homepage</Link>
         </div>
       </motion.form>
       </Form>

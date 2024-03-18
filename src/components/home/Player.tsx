@@ -25,7 +25,7 @@ const Player: React.FC<PlayerProps> = ({ src }) => {
   const Navigate = useNavigate()
 
   const handleclick = () => {
-      Navigate('/packages/premium')
+      Navigate('/contact')
   }
 
 
@@ -34,7 +34,7 @@ const Player: React.FC<PlayerProps> = ({ src }) => {
       <video id="background-video" className="video" preload='auto' autoPlay muted loop>
         <source src={src} type="video/mp4" />
       </video>
-      <div className='flex xl:hidden justify-end mt-[29rem] lg:mt-[35rem] xl:mt-[37.5rem] bg-white h-16 md:h-14 z-10 rounded-t-3xl w-screen absolute ' />
+      <div className='flex justify-end mt-[29rem] lg:mt-[35rem] xl:mt-[37.5rem] bg-white h-14 md:h-14 z-10 rounded-t-3xl w-screen absolute ' />
       <div className="PlayerItems">
         <div className="ItemBox-Div">
           <h1 className="BrandName">Welcome to Bswp</h1>

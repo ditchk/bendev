@@ -55,10 +55,10 @@
 
 
 .navbar {
-  position: sticky;
+  position: fixed;
   width: 98%;
   top: 0;
-  height: 50px;
+  height: 40px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -66,7 +66,7 @@
   justify-self: center;
   padding: 0 10px;
   z-index: 1000;
-  transition: top 0.3s ease-in;
+  transition: top 0.5s ease-in;
 }
 
 .navbar.hide {
@@ -137,7 +137,7 @@
 
 
 .Linkme {
-  @apply bg-gradient-to-tl from-sky-900 text-sm via-black to-cyan-600 text-white outline outline-1 outline-white justify-evenly rounded-md px-5 p-2 text-justify
+  @apply bg-gradient-to-tl from-sky-900 text-sm via-black to-cyan-600 text-white outline outline-1 outline-white justify-evenly rounded-md px-3 p-1 text-justify
 }
 
 
@@ -793,7 +793,7 @@ nav.scrolled {
 /* PLayer Section */
 
 .Player {
-  @apply flex relative justify-center items-center bg-gradient-to-r from-black to-teal-900 w-full h-full overflow-hidden rounded-t-2xl duration-1000 ease-in-out
+  @apply flex relative justify-center items-center bg-gradient-to-r from-black to-teal-900 w-full h-full overflow-hidden duration-1000 ease-in-out
 }
 
 .video {
@@ -805,7 +805,7 @@ nav.scrolled {
 }
 
 .BrandName {
-  @apply text-2xl text-center capitalize md:text-3xl lg:text-5xl shadow-sm mb-5 p-2 font-extrabold font-serif text-transparent bg-gradient-to-l bg-clip-text from-cyan-700 to-white via-slate-300
+  @apply text-2xl text-center capitalize md:text-3xl lg:text-5xl mb-5 p-2 font-extrabold font-serif text-transparent bg-gradient-to-l bg-clip-text from-cyan-700 to-white via-slate-300
 }
 
 .BrandName2 {
@@ -821,11 +821,11 @@ nav.scrolled {
 }
 
 .buttonPrev {
-  @apply bg-transparent outline-dotted outline-1 outline-white mt-3 bg-gradient-to-bl from-black to-teal-400 bg-opacity-30 duration-1000 z-40 rounded-full
+  @apply bg-transparent outline-dotted outline-2 outline-white mt-3 bg-gradient-to-bl from-black to-teal-400 bg-opacity-30 duration-1000 z-40 rounded-full
 }
 
 .ItemBox-Div {
-  @apply flex flex-col justify-start items-center h-fit w-fit p-2 py-2 lg:py-10 animate-in zoom-in-150 bg-teal-900 bg-opacity-20 duration-500 rounded-xl
+  @apply flex flex-col justify-start items-center h-fit w-fit p-2 py-2 lg:py-10 animate-in zoom-in-150 duration-500 rounded-xl
 }
 
 .ExplainText {

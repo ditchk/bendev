@@ -3,7 +3,7 @@ import CarricullumV from "@/components/shared/CarricullumV"
 const About = () => {
   return (
     <div className="default_container">
-      <div className="custom_container h-full">
+      <div className="custom_container h-full mt-16">
         <CarricullumV />
       </div>
     </div>
