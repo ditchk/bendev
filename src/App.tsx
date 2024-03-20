@@ -37,7 +37,7 @@ function App() {
                 <Route path="/maintainance" element={<Maintainance />} />
             </Route>
             {/* Protected pages */}
-            <Route element={<PrivateRoutes />}>
+            <Route element={<RootLayout />}>
               <Route path="/admin" element={<Adminpanel />} />
               <Route path='/opportunities&careers' element={<Opportunities />} />
             </Route>

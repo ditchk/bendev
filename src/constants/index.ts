@@ -1,3 +1,4 @@
+import { platform } from 'os';
 import { useState, useEffect } from 'react';
 
 export const sideBarLinks = [
@@ -293,3 +294,37 @@ export function useScrollDirection(): 'up' | 'down' | null {
 
   return scrollDirection;
 }
+
+
+export const platformsInfo = [
+    {
+        Title: 'Nexo Holding platform',
+        image: '/assets/images/nexo.jpg',
+        Details: 'Nexo is a comprehensive crypto-backed lending platform that offers impressive earning opportunities for crypto token holders. The platform provides various products and services, including crypto-backed loans, savings accounts, a mobile wallet, and the Nexo Card, ensuring a seamless and secure experience for its users.',
+        Link: '/nexo',
+    },
+    {
+        Title: 'Binance',
+        image: '/assets/images/binance.jpg',
+        Details: 'Nexo is a comprehensive crypto-backed lending platform that offers impressive earning opportunities for crypto token holders. The platform provides various products and services, including crypto-backed loans, savings accounts, a mobile wallet, and the Nexo Card, ensuring a seamless and secure experience for its users.',
+        Link: '/binance',
+    },
+    {
+        Title: 'Blockchain',
+        image: '/assets/images/blockchain.jpg',
+        Details: 'Nexo is a comprehensive crypto-backed lending platform that offers impressive earning opportunities for crypto token holders. The platform provides various products and services, including crypto-backed loans, savings accounts, a mobile wallet, and the Nexo Card, ensuring a seamless and secure experience for its users.',
+        Link: '/blockchain',
+    },
+    {
+        Title: 'Fb trading platforms',
+        image: '/assets/images/fbs.jpg',
+        Details: 'Nexo is a comprehensive crypto-backed lending platform that offers impressive earning opportunities for crypto token holders. The platform provides various products and services, including crypto-backed loans, savings accounts, a mobile wallet, and the Nexo Card, ensuring a seamless and secure experience for its users.',
+        Link: '/fbs',
+    },
+    {
+        Title: 'Xm global trading platform',
+        image: '/assets/images/xmglobal.jpg',
+        Details: 'Nexo is a comprehensive crypto-backed lending platform that offers impressive earning opportunities for crypto token holders. The platform provides various products and services, including crypto-backed loans, savings accounts, a mobile wallet, and the Nexo Card, ensuring a seamless and secure experience for its users.',
+        Link: '/xmglobal',
+    }
+]

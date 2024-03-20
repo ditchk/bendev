@@ -121,3 +121,10 @@ export type dropownCotentLink = {
   message: string;
   path: string;
 }
+
+export type PlatformType = {
+  Title: string;
+  image: string;
+  Details: string;
+  Link: string;
+}

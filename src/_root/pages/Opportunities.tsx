@@ -1,3 +1,4 @@
+import BreakDown from "@/components/opportunities/BreakDown"
 import PartnerPlatforms from "@/components/opportunities/PartnerPlatforms"
 import ReadHowTo from "@/components/opportunities/ReadHowTo"
 import WelcomeBox from "@/components/opportunities/WelcomeBox"
@@ -8,6 +9,7 @@ const Opportunities = () => {
         <WelcomeBox src={'/assets/videos/analysis.mp4'} />
         <PartnerPlatforms />
         <ReadHowTo />
+        <BreakDown />
     </div>
   )
 }

@@ -835,11 +835,11 @@ nav.scrolled {
 /* Invest $ Learn */
 
 .videoPrev {
-  @apply w-screen z-0 h-96 brightness-95 md:h-96 lg:h-screen object-fill sticky
+  @apply w-screen z-0 h-96 md:h-96 lg:h-screen object-fill
 }
 
 .VidepPlayer {
-  @apply flex flex-1 justify-center items-center bg-black
+  @apply flex flex-1 justify-center items-center
 }
 
 .Extension {
@@ -857,8 +857,13 @@ nav.scrolled {
 
 /* OPPORTUNITIES PAGE */
 
+
+.OpSections {
+  @apply flex flex-1 justify-center items-center w-full h-auto m-2
+}
+
 .textHeadline {
-  @apply text-center text-sm sm:text-base md:text-xl lg:text-2xl font-serif font-semibold
+  @apply text-center text-sm sm:text-base md:text-xl lg:text-2xl font-serif font-semibold text-transparent bg-clip-text bg-gradient-to-bl from-black to-teal-600
 }
 
 .HowTosec {
@@ -879,4 +884,16 @@ nav.scrolled {
 
 .HowtoListfy {
   @apply list-disc list-inside ml-10 text-sm font-light text-gray-700
+}
+
+.BreakdownSec {
+  @apply flex flex-col justify-center items-center
+}
+
+.conentDiv {
+  @apply flex flex-col justify-center items-center mx-6 my-4 bg-teal-900 bg-opacity-10 backdrop-blur-sm p-5
+}
+
+.flexContainer {
+  @apply flex flex-col justify-center items-center
 }

@@ -21,7 +21,7 @@ const ReadHowTo = () => {
         </ul>
       </div>
       <div>
-        <img src="/assets/images/trade.png" alt="" />
+        {/* <img src="/assets/images/trade.png" alt="" width={400} className=' filter sepia'/> */}
       </div>
     </section>
   )
