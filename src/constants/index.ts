@@ -1,4 +1,3 @@
-import { platform } from 'os';
 import { useState, useEffect } from 'react';
 
 export const sideBarLinks = [
