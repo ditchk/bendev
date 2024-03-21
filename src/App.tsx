@@ -19,6 +19,7 @@ import Maintainance from './components/maintainance/Maintainance'
 import MaintainanceError from './lib/utils/MaintainanceError'
 import BasicCheckOut from './components/checkout/Packages/Checkoutpage'
 import CheckoutLayout from './components/checkout/CheckoutLayout'
+import PrivateRoutes from './lib/utils/PrivateRoutes'
 
 function App() {
   return (
@@ -36,7 +37,7 @@ function App() {
                 <Route path="/maintainance" element={<Maintainance />} />
             </Route>
             {/* Protected pages */}
-            <Route element={<RootLayout />}>
+            <Route element={<PrivateRoutes />}>
               <Route path="/admin" element={<Adminpanel />} />
               <Route path='/opportunities&careers' element={<Opportunities />} />
             </Route>
