@@ -1,5 +1,6 @@
 import ProjectContainer from "@/components/shared/ProjectContainer";
 import ProjectLoder from "@/components/shared/ProjectLoder";
+import { Button } from "@/components/ui/button";
 import { useGetRecentProjects } from "@/lib/Queries/QueriesAndMutations";
 import { Models } from "appwrite";
 import { motion } from 'framer-motion'
@@ -30,7 +31,14 @@ const { data: projects , isPending: isProjectloading, /*isError: isProjectError*
 
   return (
     <div className="default_Container">
-      <div className="custom_container3">
+      <div className="custom_container3 mt-16">
+        <div className="flex flex-1 justify-center gap-2 my-2">
+          <Button className="custom_button">Github Projects</Button>
+          <Button className="custom_button">Figma Projects</Button>
+          <Button className="custom_button">Framer projects</Button>
+          <Button className="custom_button">Google projects</Button>
+          <Button className="custom_button">Azure Projects</Button>
+        </div>
         {isProjectloading && !projects ? (
           <ProjectLoder />
         ) : (

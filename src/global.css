@@ -58,13 +58,13 @@
   position: fixed;
   width: 98%;
   top: 0;
-  height: 40px;
+  height: 45px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   justify-self: center;
-  padding: 0 10px;
+  padding: 0 16px;
   z-index: 1000;
   transition: top 0.5s ease-in;
 }
@@ -534,7 +534,11 @@ nav.scrolled {
 
 
 .FooterBox {
-  @apply flex flex-col shadow-2xl shadow-slate-400 bg-white bg-opacity-10 z-0 border-t-2 border-white rounded-t-xl p-2
+  @apply flex flex-col bg-white bg-opacity-10 z-0 border-t-2 border-white rounded-t-xl p-2
+}
+
+.FooterBox {
+  box-shadow: 1px 0.5px 10px teal;
 }
 
 .FooterLinksCont {
@@ -793,7 +797,7 @@ nav.scrolled {
 /* PLayer Section */
 
 .Player {
-  @apply flex relative justify-center items-center bg-gradient-to-r from-black to-teal-900 w-full h-full overflow-hidden duration-1000 ease-in-out
+  @apply flex relative justify-center items-center bg-gradient-to-bl from-black via-teal-950 to-teal-900 w-full h-full overflow-hidden duration-1000 ease-in-out
 }
 
 .video {
