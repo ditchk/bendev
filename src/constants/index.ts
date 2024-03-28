@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { SiFigma, SiFramer, SiGit, SiGooglecloud, SiMicrosoftazure } from "react-icons/si";
 
 export const sideBarLinks = [
     {
@@ -326,4 +327,38 @@ export const platformsInfo = [
         Details: 'Nexo is a comprehensive crypto-backed lending platform that offers impressive earning opportunities for crypto token holders. The platform provides various products and services, including crypto-backed loans, savings accounts, a mobile wallet, and the Nexo Card, ensuring a seamless and secure experience for its users.',
         Link: '/xmglobal',
     }
+]
+
+export const ProjectLinks = [
+    {
+        name: 'Github Projects',
+        icon:  typeof SiGit,
+        link: "https://github.com/ditchk",
+        route: '/projects/github',
+    },
+    {
+        name: 'Framer Projects',
+        icon:  typeof SiFigma,
+        link: "https://github.com/ditchk",
+        route: '/projects/figma',
+    },
+    {
+        name: 'Framer Projects',
+        icon:  typeof SiFramer,
+        link: "https://github.com/ditchk",
+        route: '/projects/framer',
+    },
+    {
+        name: 'Google Projects',
+        icon:  typeof SiGooglecloud,
+        link: "https://github.com/ditchk",
+        route: '/projects/framer',
+    },
+    {
+        name: 'Azure Projects',
+        icon:  typeof SiMicrosoftazure,
+        link: "https://github.com/ditchk",
+        route: '/projects/framer',
+    }
+    
 ]

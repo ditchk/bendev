@@ -1,9 +1,11 @@
 import ProjectContainer from "@/components/shared/ProjectContainer";
 import ProjectLoder from "@/components/shared/ProjectLoder";
-import { Button } from "@/components/ui/button";
+import { ProjectLinks } from "@/constants";
 import { useGetRecentProjects } from "@/lib/Queries/QueriesAndMutations";
+import { ProjectLink } from "@/types";
 import { Models } from "appwrite";
 import { motion } from 'framer-motion'
+import { Link } from "react-router-dom";
 
 const Projects = () => {
 const { data: projects , isPending: isProjectloading, /*isError: isProjectError*/ } = useGetRecentProjects();
@@ -31,19 +33,23 @@ const { data: projects , isPending: isProjectloading, /*isError: isProjectError*
 
   return (
     <div className="default_Container">
-      <div className="custom_container3 mt-16">
-        <div className="flex flex-1 justify-center gap-2 my-2">
-          <Button className="custom_button">Github Projects</Button>
-          <Button className="custom_button">Figma Projects</Button>
-          <Button className="custom_button">Framer projects</Button>
-          <Button className="custom_button">Google projects</Button>
-          <Button className="custom_button">Azure Projects</Button>
+      <div className="custom_ProjectBox mt-16">
+        <div className="flex justify-start items-center w-80 gap-2 my-2 p-2">
+         <ul className="flex flex-col gap-2 w-fit p-1 animate-in slide-in-from-left-32">
+          {ProjectLinks.map((link: ProjectLink) => {
+            return (
+              <Link to={link.route} key={link.name} className="custom-btn">
+                <h1>{link.name}</h1>
+              </Link>
+            )
+          })}
+         </ul>
         </div>
         {isProjectloading && !projects ? (
           <ProjectLoder />
         ) : (
           <motion.ul 
-            className="grid  sp:grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3 w-full"
+            className="grid grid-cols-1 sp:grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3 w-full"
             variants={container}
             initial="hidden"
             whileInView="animate"

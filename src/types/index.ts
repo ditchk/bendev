@@ -128,3 +128,10 @@ export type PlatformType = {
   Details: string;
   Link: string;
 }
+
+export type ProjectLink = {
+  name: string;
+  icon: string;
+  link: string;
+  route: string;
+}

@@ -18,6 +18,7 @@ import { useState } from "react"
 import UploadLoader from "./UploadLoader"
 import { useToast } from "../ui/use-toast"
 import { UseSaveSubscriber } from "@/lib/Queries/QueriesAndMutations"
+import Paymentm from "../payment-methods/Paymentm"
 
 
 const Footer = () => {
@@ -121,7 +122,11 @@ const Footer = () => {
         </div>
       </div>
       <div className="flex flex-col justify-center items-center border-t border-slate-300">
-        <h1 className="FooterContent"> &#169; 2023</h1>
+        <h1 className="FooterContent">Bswp &#169; 2023</h1>
+        <div className="flex flex-col justify-center items-center gap-3">
+          {/* <small className=" italic">Accepted here</small> */}
+          <Paymentm />
+        </div>
       </div>
     </footer>
   )

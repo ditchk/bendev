@@ -15,7 +15,7 @@ const ProjectContainer = ({ project }: projectCardProps) => {
           <h1 className="primary-projecttext">{project.ProjectName}</h1>
         </div>
         <p className="project_paragraph">{project.projectInfo}
-          <Button className="custom_button">
+          <Button className="custom-btn">
             View Project
           </Button>
         </p>

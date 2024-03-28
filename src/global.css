@@ -96,7 +96,7 @@
 }
 
 .default_Container {
-  @apply flex flex-col justify-center items-center h-full w-auto
+  @apply flex flex-col justify-center items-center h-full w-auto m-10
 }
 
 .Home_Container {
@@ -809,7 +809,7 @@ nav.scrolled {
 }
 
 .BrandName {
-  @apply text-2xl text-center capitalize md:text-3xl lg:text-5xl mb-5 p-2 font-extrabold font-serif text-transparent bg-gradient-to-l bg-clip-text from-cyan-700 to-white via-slate-300
+  @apply text-2xl text-center capitalize md:text-3xl lg:text-5xl mb-5 p-2 font-extrabold font-serif text-transparent bg-gradient-to-l bg-clip-text from-teal-500 to-white via-slate-300
 }
 
 .BrandName2 {
@@ -825,7 +825,7 @@ nav.scrolled {
 }
 
 .buttonPrev {
-  @apply bg-transparent outline-dotted outline-2 outline-white mt-3 bg-gradient-to-bl from-black to-teal-400 bg-opacity-30 duration-1000 z-40 rounded-full
+  @apply bg-transparent outline-dotted outline-2 outline-white mt-3 bg-opacity-30 duration-1000 z-40 rounded-full
 }
 
 .ItemBox-Div {
@@ -900,4 +900,12 @@ nav.scrolled {
 
 .flexContainer {
   @apply flex flex-col justify-center items-center
+}
+
+.custom-btn {
+  @apply flex rounded-full bg-teal-950 shadow-md shadow-black p-2 gap-2 text-white
+}
+
+.custom_ProjectBox {
+  @apply flex flex-row justify-center items-center gap-2 w-full h-full
 }

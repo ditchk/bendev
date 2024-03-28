@@ -16,10 +16,11 @@ import CookieConcent from './components/cookie/CookieConcent'
 import Checkoutpage from './components/checkout/Packages/Checkoutpage'
 import Opportunities from './_root/pages/Opportunities'
 import Maintainance from './components/maintainance/Maintainance'
-import MaintainanceError from './lib/utils/MaintainanceError'
+// import MaintainanceError from './lib/utils/MaintainanceError'
 import BasicCheckOut from './components/checkout/Packages/Checkoutpage'
 import CheckoutLayout from './components/checkout/CheckoutLayout'
 import PrivateRoutes from './lib/utils/PrivateRoutes'
+import MaintainanceError from './lib/utils/MaintainanceError'
 
 function App() {
   return (
