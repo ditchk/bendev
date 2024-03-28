@@ -1,4 +1,3 @@
-import React from 'react'
 import { SiBitcoinsv,SiWise } from "react-icons/si";
 import { FaPaypal,FaCcMastercard, FaCcVisa ,FaGooglePay  } from "react-icons/fa";
 import { CiBank } from "react-icons/ci";
