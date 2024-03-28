@@ -162,7 +162,7 @@ nav.scrolled {
   @apply justify-center items-center bg-white rounded-md
 }
 .social_icons {
-  @apply text-2xl p-[3px] rounded-md cursor-pointer hover:scale-105 duration-1000 outline-dotted outline-2 outline-teal-900
+  @apply text-xl p-[4px] rounded-md cursor-pointer hover:scale-105 duration-1000 outline outline-2 outline-slate-100
 }
 
 .primary_text {
@@ -575,7 +575,7 @@ nav.scrolled {
 
 
 .FooterContent {
-  @apply flex flex-row justify-center items-center font-sans text-sm font-semibold
+  @apply flex flex-row justify-center items-center font-serif text-sm font-semibold text-transparent bg-clip-text bg-gradient-to-l from-teal-600 to-fuchsia-600
 }
 
 .QA {

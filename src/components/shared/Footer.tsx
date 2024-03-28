@@ -102,7 +102,7 @@ const Footer = () => {
                   name="Email"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Subscribe</FormLabel>
+                      <FormLabel className="text_title text-shadow">Subscribe</FormLabel>
                       <FormControl>
                         <Input placeholder="Enter your email" {...field} className="SubsInput" />
                       </FormControl>
@@ -121,8 +121,8 @@ const Footer = () => {
           </Form>
         </div>
       </div>
-      <div className="flex flex-col justify-center items-center border-t border-slate-300">
-        <h1 className="FooterContent">Bswp &#169; 2023</h1>
+      <div className="flex flex-col gap-3 justify-center items-center border-t border-slate-300">
+        <small className="FooterContent">Bswp &#169; 2023</small>
         <div className="flex flex-col justify-center items-center gap-3">
           {/* <small className=" italic">Accepted here</small> */}
           <Paymentm />
