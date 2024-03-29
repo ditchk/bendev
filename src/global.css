@@ -122,7 +122,7 @@
 
 .menubar {
   @apply flex flex-col pt-2 gap-2 justify-end items-center top-16 absolute
-  w-full left-0 h-fit rounded-3xl p-2 outline-cyan-50 bg-teal-900 bg-opacity-10 backdrop-blur-sm animate-in slide-in-from-top-5 duration-500
+  w-full left-0 h-fit rounded-3xl p-2 outline-cyan-50 bg-white backdrop-blur-xl animate-in slide-in-from-top-5 duration-500
  }
 
  .menubar {
