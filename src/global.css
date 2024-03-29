@@ -96,7 +96,11 @@
 }
 
 .default_Container {
-  @apply flex flex-col justify-center items-center h-full w-auto m-10
+  @apply flex flex-col justify-center items-center h-full w-auto m-2 mb-16
+}
+
+.projectPage {
+  @apply flex flex-1 justify-center items-center h-full w-auto
 }
 
 .Home_Container {
@@ -108,7 +112,7 @@
 }
 
 .logo-text {
-  @apply text-center text-lg md:text-2xl font-extrabold text-shadow font-family animate-in slide-in-from-left-20 duration-500 text-transparent bg-clip-text bg-gradient-to-l from-green-700 via-yellow-600 to-blue-700
+  @apply text-center text-lg md:text-xl text-shadow2 font-semibold font-serif animate-in slide-in-from-left-20 duration-500 text-transparent bg-clip-text bg-gradient-to-l from-fuchsia-700 via-teal-600 to-blue-700
 }
 
 /* mobile menu */
@@ -394,7 +398,7 @@ nav.scrolled {
 }
 
 .text-shadow2 {
-  text-shadow: 1px 0px 0.1px teal;
+  text-shadow: 1px 0px 0.1px rgba(197, 0, 0, 0);
 }
 
 .font-family {
@@ -902,10 +906,12 @@ nav.scrolled {
   @apply flex flex-col justify-center items-center
 }
 
+/* Project page styles */
+
 .custom-btn {
-  @apply flex rounded-full bg-teal-950 shadow-md shadow-black p-2 gap-2 text-white
+  @apply flex justify-center items-center hover:bg-black rounded-full bg-teal-950 shadow-sm shadow-slate-600 w-28 p-2 gap-2 text-white text-xs
 }
 
 .custom_ProjectBox {
-  @apply flex flex-row justify-center items-center gap-2 w-full h-full
+  @apply flex flex-row justify-center items-center gap-3 w-full h-full
 }

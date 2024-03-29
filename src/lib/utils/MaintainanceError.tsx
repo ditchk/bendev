@@ -1,7 +1,7 @@
 import { Outlet, Navigate } from "react-router-dom";
 
 const MaintainanceError = () => {
-    const active = false
+    const active = true
     return active ? <Outlet/> : <Navigate to={'/maintainance'} />
 }
 

@@ -14,8 +14,8 @@ const CarricullumV = () => {
       }, [isInView])
 
   return (
-    <div className="flex flex-col justify-center items-center mx-2 md:mx-10 bg-opacity-5 outline outline-1 outline-slate-200">
-      <div className="flex flex-col justify-center items-center outline outline-2 rounded-md rounded-tl-3xl rounded-br-3xl outline-slate-50 m-2 md:p-5 md:px-24 md:pb-5 mb-10 bg-black bg-opacity-10 animate-in slide-in-from-right-40 duration-500">
+    <div className="flex flex-col justify-center items-center m-2 mx-2 md:mx-10 bg-opacity-5 outline outline-1 outline-slate-200">
+      <div className="flex flex-col justify-center items-center outline outline-2 rounded-md rounded-tl-3xl rounded-br-3xl outline-slate-50 m-2 md:p-5 md:px-24 md:pb-5 mb-10 bg-teal-950 shadow-md bg-opacity-10 animate-in slide-in-from-right-40 duration-500">
         <h1 className="text_prim">BENSON KIGOCI</h1>
         <h2 className="text_sec mb-5 text-shadow">Full Stack Developer && UI/UX Designer</h2>
         <div className="primary-Box"
@@ -45,10 +45,10 @@ const CarricullumV = () => {
       <section>
         <Welcome />
       </section>
-      <section id="roadmap" className="flex flex-1 w-full h-full outline outline-1 outline-slate-100 py-10 md:px-24 p-2">
+      <section id="roadmap" className="flex flex-1 w-full h-full outline outline-1 outline-slate-100 py-4 md:px-24 p-2">
         <div className="flex flex-col justify-start items-start">
             <h1 className="text_title text-shadow">PROFFESSIONAL ROADMAP</h1>
-            <p className="text-xs sm:text-xs md:text-base p-1 md:p-5 rounded-sm font-normal font-sans mb-5">
+            <p className="text-xs sm:text-xs p-1 md:p-5 rounded-sm font-normal font-sans mb-2">
                 {'A Very detail oriented individual. I am the best candidate ready to take on challenges and projects using problem solving and task prioritization skills to help team succeed. Willing to take on any task to support the team and help business succeed. Offers great tech skills and hard skills. '} 
                 {'Excited about being able to do new things and learn more  an better skills. Always doing hard things and with a growth mindset'}
                 {'I like working as a team to ensure that the projects the top expectations from the product managers and also ensure as a team we are meeting what is expected of us. '}
@@ -56,10 +56,10 @@ const CarricullumV = () => {
             </p>
         </div>
       </section>
-      <section id="qualify" className="flex flex-1 w-full h-full py-10 md:px-24 p-3">
+      <section id="qualify" className="flex flex-1 w-full h-full py-4 md:px-24 p-3">
         <div className="flex flex-col justify-start items-start">
             <h1 className="text_title mb-5 text-shadow">QUALIFICATIONS && CERTIFICATIONS</h1>
-            <p className="text-xs md:ml-5 sm:text-xs md:text-base p-1 md:p-10 rounded-sm font-normal font-sans mb-5">
+            <p className="text-xs md:ml-5 sm:text-xs p-1 md:p-10 rounded-sm font-normal font-sans mb-2">
                 <h1 className="font-bold">{'LEARNING HISTORY'}</h1>
                 <ul className="list-disc list-inside">
                     <li>{'2021 - 2022'}
@@ -67,7 +67,7 @@ const CarricullumV = () => {
                             <h1 className="text-li">
                                 {'Certified full Stack Web Developer'}
                             </h1>
-                            <p className="md:px-10 text-xs md:text-base font-sans">
+                            <p className="md:px-10 text-xs font-sans">
                                 {'Having completed a full computer science course through google certifcation platform (Coursera)'}
                                 {'I can confidently solve and manage an assigned responsibilities in an organization. '} 
                                 {'This course enabled me to jumpstart my career as web developer and has inspred me to lern even ondemand skills like...'}
@@ -94,13 +94,13 @@ const CarricullumV = () => {
             </p>
         </div>
       </section>
-      <section className="flex flex-1 w-full h-fit py-10 md:px-24 p-5 outline outline-1 outline-slate-50">
+      <section className="flex flex-1 w-full h-fit py-4 md:px-24 p-5 outline outline-1 outline-slate-50">
         <div className="flex flex-col justify-start items-start">
             <h1 className="text_title mb-5 text-shadow">
                 MY HOBBIES
             </h1>
             <div>
-                <p className="text-xs sm:text-xs md:text-base p-1 md:p-5 rounded-sm font-normal font-sans mb-5">
+                <p className="text-xs sm:text-xs p-1 md:p-5 rounded-sm font-normal font-sans mb-5">
                     {'I love to spend my free time working out. This is a great way to think about my goals and come up with ideas on how to do hard things. '}
                     {'for those who hav choosen this path to be a developer and solve even more complex tasks. its a quite rough jurney and in my opinion bening at the gyms helps me deal with the hard part of it'}
                     {'When i will feel confident about my skills and finances my fisrt thing to exploit would be cruisisng, ever since i was young my dream was to have he freedom to pay for Sh*t'}
@@ -110,12 +110,12 @@ const CarricullumV = () => {
             </div>
         </div>
       </section>
-      <section className="flex flex-col w-full h-fit py-10 md:px-24 p-5 outline outline-1 outline-slate-50">
+      <section className="flex flex-col w-full h-fit py-4 md:px-24 p-5 outline outline-1 outline-slate-50">
         <div className="flex flex-col justify-start items-start">
             <h1 className="text_title mb-5 text-shadow">
                 WHY SHOULD YOU WORK WITH ME?
             </h1>
-            <p className="text-xs md:ml-5 sm:text-xs md:text-base p-1 md:p-5 rounded-sm font-normal font-sans mb-5">
+            <p className="text-xs md:ml-5 sm:text-xs p-1 md:p-5 rounded-sm font-normal font-sans mb-5">
                 {'My ability to learn easily makes me an qualified candidate to top notch companies across the globe.'}
                 {'I can play great role in making sure a company scales even higher without having to overpay in resources since i can work with no supervison remotely and be productive to the end of our agreed contract'}
                 {'My goal is to satisfy our agreed terms and making it my bsuness to deliver the required milestones in return i ask for a healthy work term to motivate this efforts'}

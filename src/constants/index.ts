@@ -352,13 +352,13 @@ export const ProjectLinks = [
         name: 'Google Projects',
         icon:  typeof SiGooglecloud,
         link: "https://github.com/ditchk",
-        route: '/projects/framer',
+        route: '/projects/google',
     },
     {
         name: 'Azure Projects',
         icon:  typeof SiMicrosoftazure,
         link: "https://github.com/ditchk",
-        route: '/projects/framer',
+        route: '/projects/azure',
     }
     
 ]

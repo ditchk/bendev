@@ -1,11 +1,13 @@
 import { Models } from "appwrite"
-import { Button } from "../ui/button"
+import { Link } from "react-router-dom"
 
 type projectCardProps = {
     project: Models.Document
 }
 
 const ProjectContainer = ({ project }: projectCardProps) => {
+
+
 
   return (
     <div className="project_container">
@@ -15,9 +17,9 @@ const ProjectContainer = ({ project }: projectCardProps) => {
           <h1 className="primary-projecttext">{project.ProjectName}</h1>
         </div>
         <p className="project_paragraph">{project.projectInfo}
-          <Button className="custom-btn">
+          <Link className="custom-btn" to={"https://github.com/ditchk/"}>
             View Project
-          </Button>
+          </Link>
         </p>
       </div>
      

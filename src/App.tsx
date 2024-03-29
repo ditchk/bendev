@@ -16,11 +16,10 @@ import CookieConcent from './components/cookie/CookieConcent'
 import Checkoutpage from './components/checkout/Packages/Checkoutpage'
 import Opportunities from './_root/pages/Opportunities'
 import Maintainance from './components/maintainance/Maintainance'
-// import MaintainanceError from './lib/utils/MaintainanceError'
 import BasicCheckOut from './components/checkout/Packages/Checkoutpage'
 import CheckoutLayout from './components/checkout/CheckoutLayout'
 import PrivateRoutes from './lib/utils/PrivateRoutes'
-import MaintainanceError from './lib/utils/MaintainanceError'
+import Error404 from './components/404/Error404'
 
 function App() {
   return (
@@ -45,13 +44,21 @@ function App() {
 
             {/* Maintainance Error page */}
 
-            <Route element={<MaintainanceError />}>
+            <Route element={<RootLayout />}>
               <Route path="/projects" element={<Projects />} />
             </Route>
 
             <Route element={<CheckoutLayout />}>
               <Route path='/packages/basic' element={<BasicCheckOut />} />
               <Route path='/packages/premium' element={<Checkoutpage />} />
+            </Route>
+
+            <Route element={<Error404 />}>
+              <Route path='/projects/github' element={<BasicCheckOut />} />
+              <Route path='/projects/figma' element={<Checkoutpage />} />
+              <Route path='/projects/framer' element={<Checkoutpage />} />
+              <Route path='/projects/google' element={<Checkoutpage />} />
+              <Route path='/projects/azure' element={<Checkoutpage />} />
             </Route>
 
         </Routes>
