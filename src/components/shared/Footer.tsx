@@ -94,7 +94,7 @@ const Footer = () => {
                   })}
                 </ul>
             </div>
-            <Socials/>
+           
             <Form {...form}>
               <form onSubmit={form.handleSubmit(onSubmit)} className="SubscribeFormBox">
                 <FormField
@@ -119,7 +119,11 @@ const Footer = () => {
                 </Button>
               </form>
           </Form>
-        </div>
+          <div className="flex flex-col justify-start items-start w-full h-fit p-2">
+            <small className="text_title text-shadow">follow us</small>
+            <Socials/>
+          </div>
+        </div> 
       </div>
       <div className="flex flex-col gap-3 justify-center items-center border-t border-slate-300">
         <small className="FooterContent">Bswp &#169; 2023</small>
