@@ -829,7 +829,7 @@ nav.scrolled {
 }
 
 .buttonPrev {
-  @apply bg-transparent outline-dotted outline-2 outline-white mt-3 bg-opacity-30 duration-1000 z-40 rounded-full
+  @apply bg-transparent outline-dotted outline-2 outline-white mt-3 bg-opacity-30 shadow-lg shadow-teal-800 animate-pulse duration-1000 z-40 rounded-full
 }
 
 .ItemBox-Div {
