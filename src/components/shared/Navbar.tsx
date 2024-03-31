@@ -15,7 +15,7 @@ const Navbar = () => {
       to={'/'}
       className="flex flex-row justify-center items-center gap-2"
       >
-        <h1 className="logo-text">₰ESWPΘ◉)</h1>
+        <h1 className="logo-text text-shadow">BENSWORKSPACE</h1>
       </Link>
       <div className="hidden md:flex flex-row justify-center items-center gap-5 pr-3 animate-in slide-in-from-right-20 duration-500">
         <Socials />
