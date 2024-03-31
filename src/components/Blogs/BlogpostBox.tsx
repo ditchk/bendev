@@ -14,7 +14,7 @@ const BlogpostBox = ({ blog }: BlogBoxtProps) => {
   return (
     <div className="BlogBox">
         <div className="Blog-Items">
-            <div className="flex flex-1 justify-center items-center w-full h-full">
+            <div className="flex flex-1 justify-center items-center overflow-hidden w-auto h-40">
                 <img src={blog.imageUrl || '/assets/images/broken-image.png'} alt={blog.title} className="Blog-image" />
             </div>
             <Link to={`/blogs/${blog.$id}`}>

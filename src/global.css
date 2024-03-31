@@ -930,7 +930,7 @@ nav.scrolled {
 }
 
 .Blog-image {
-  @apply object-cover aspect-video w-80 h-56 rounded-lg shadow-md
+  @apply object-cover aspect-video w-80 h-56 rounded-lg
 }
 
 .Blog-Title {
