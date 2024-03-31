@@ -10,7 +10,7 @@ const Welcome = () => {
             {welcomeMessage.map((link: myWelcomeMessage) => {
               return (
                 <div className="list-Cont">
-                  <li key={link.title}>
+                  <li key={link.slogan}>
                     <div>
                         <h2 className="paragraph_text">{link.subTitle}</h2>
                         <h3 className="paragraph_text">I have aquired skills that will help your business scale up in this technology era.Using my expertise i will design stunning landing pages/website and even design your ad campaignsfor your business using the latest technology</h3>

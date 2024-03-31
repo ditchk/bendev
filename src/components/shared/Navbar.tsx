@@ -10,7 +10,7 @@ const Navbar = () => {
 
 
   return (
-    <nav id='navbar' className={`navbar bg-black bg-opacity-5 backdrop-blur-sm rounded-2xl shadow-sm shadow-black outline duration-1000 outline-2 outline-white my-2 left-[3.5px] md:left-[10px] lg:left-[14px]  ${scrollDirection === 'down' ? 'hide shadow-none' : ''}`}>
+    <nav id='navbar' className={`navbar bg-white backdrop-blur-sm rounded-2xl shadow-md shadow-gray-600 my-2 left-[3.5px] md:left-[10px] lg:left-[14px]  ${scrollDirection === 'down' ? 'hide shadow-none' : ''}`}>
       <Link 
       to={'/'}
       className="flex flex-row justify-center items-center gap-2"

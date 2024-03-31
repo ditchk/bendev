@@ -21,8 +21,13 @@ import CheckoutLayout from './components/checkout/CheckoutLayout'
 import PrivateRoutes from './lib/utils/PrivateRoutes'
 import Error404 from './components/404/Error404'
 import Blogpage from './components/Blogs/Blogpage'
+import { Models } from 'appwrite'
 
-function App() {
+type LnkProps = {
+  blog: Models.Document
+}
+
+function App({ blog }: LnkProps) {
   return (
       <main>
         <Routes>
@@ -36,7 +41,7 @@ function App() {
                 <Route path="/privacy-policy" element={<Privacypoliy />} />
                 <Route path="/error" element={<Unauthorized />} /> 
                 <Route path="/maintainance" element={<Maintainance />} />
-                <Route path="/blogs/{blog.title}/:id" element={<Blogpage />} />
+                <Route path="/blogs/readingmode" element={<Blogpage blog={blog} />} />
             </Route>
             {/* Protected pages */}
             <Route element={<PrivateRoutes />}>
