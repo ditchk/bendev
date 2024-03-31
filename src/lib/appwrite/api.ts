@@ -312,3 +312,15 @@ export async function SearchDB() {
     return(error)
   }
 }
+
+export async function getRecentBlogs(){
+  const posts = await databases.listDocuments(
+    myConfig.databaseId,
+    myConfig.blogCollectionIld,
+    [Query.orderDesc('$createdAt'), Query.limit(30)]
+  )
+
+  if(!posts) throw Error;
+
+  return posts
+}

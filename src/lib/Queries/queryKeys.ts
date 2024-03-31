@@ -14,7 +14,8 @@ export enum QUERY_KEYS {
     GET_POST_BY_ID = "getPostById",
     GET_FEATURED_PROJECTS = "getFeaturedProjects",
     GET_RECENT_PRODUCTS = "getRecentProducts",
-    GET_ALL_SERVICES = "getALLServices"
+    GET_ALL_SERVICES = "getALLServices",
+    GET_RECENT_BLOGS= "getRecentBlogs"
     // GET_USER_POSTS = "getUserPosts",
     // GET_FILE_PREVIEW = "getFilePreview",
   

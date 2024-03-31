@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 import { SiFigma, SiFramer, SiGit, SiGooglecloud, SiMicrosoftazure } from "react-icons/si";
+import { formatDistance } from 'date-fns';
+
 
 export const sideBarLinks = [
     {
@@ -362,3 +364,12 @@ export const ProjectLinks = [
     }
     
 ]
+
+
+
+export const formatDate = (dateString: string): string => {
+  const inputDate = new Date(dateString);
+  const now = new Date();
+  const diff = formatDistance(inputDate, now, { addSuffix: true });
+  return diff;
+};

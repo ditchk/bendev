@@ -25,6 +25,7 @@
     "appwrite": "^13.0.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
+    "date-fns": "^3.6.0",
     "follow-redirects": "^1.15.6",
     "framer-motion": "^10.16.5",
     "google-map-react": "^2.2.1",
