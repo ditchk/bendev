@@ -2,7 +2,8 @@ import BlogpostBox from "@/components/Blogs/BlogpostBox"
 import PostLoader from "@/components/loaders/PostLoader";
 import { UseGetRecentBlogs } from "@/lib/Queries/QueriesAndMutations";
 import { Models } from "appwrite";
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
+import { useEffect, useRef } from "react";
 
 const Blogposts = () => {
 
@@ -28,6 +29,13 @@ const Blogposts = () => {
       opacity: 1
     }
   };
+
+  const ref = useRef(null)
+    const isInView = useInView(ref)
+
+    useEffect(() => {
+
+      }, [isInView])
 
   return (
     <div className="default_Container">

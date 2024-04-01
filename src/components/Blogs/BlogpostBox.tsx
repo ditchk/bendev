@@ -3,6 +3,8 @@ import Truncate from "../truncate/Truncate"
 import { Link } from "react-router-dom"
 import { formatDate } from "@/constants"
 import TruncateTitle from "../truncate/TruncateTitle"
+import { motion, useInView } from "framer-motion"
+import { useEffect, useRef } from "react"
 
 
 type BlogBoxtProps = {
@@ -11,8 +13,24 @@ type BlogBoxtProps = {
 
 const BlogpostBox = ({ blog }: BlogBoxtProps) => {
 
+    const ref = useRef(null)
+    const isInView = useInView(ref)
+
+    useEffect(() => {
+
+      }, [isInView])
+
   return (
-    <div className="BlogBox">
+    <motion.div 
+    
+        className="BlogBox"
+        style={{
+            transform: isInView ? "none" : "translateY(10px)",
+            opacity: isInView ? 1 : 0,
+            transition: "all 0.5s cubic-bezier(0.7, 0.55, 0.65, 1) 0.5s"
+        }}
+        ref={ref}
+    >
         <div className="Blog-Items">
             <div className="flex flex-1 justify-center items-center overflow-hidden w-auto h-40">
                 <img src={blog.imageUrl || '/assets/images/broken-image.png'} alt={blog.title} className="Blog-image" />
@@ -42,7 +60,7 @@ const BlogpostBox = ({ blog }: BlogBoxtProps) => {
             <p className="CreatedAtText">{formatDate(blog.$createdAt)}</p>
          </div>
         </div>
-    </div>
+    </motion.div>
   )
 }
 

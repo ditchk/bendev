@@ -95,7 +95,7 @@
 }
 
 .default_Container {
-  @apply flex flex-col justify-center items-center h-full w-auto p-2 mb-5 mt-16
+  @apply flex flex-col justify-center items-center h-full w-auto p-1 mb-5 mt-16
 }
 
 .projectPage {
@@ -922,7 +922,7 @@ nav.scrolled {
 }
 
 .BlogBox {
-  @apply flex flex-col justify-center items-center gap-3 bg-white bg-opacity-20 p-5 rounded-xl h-full w-80 lg:w-96 shadow-sm shadow-slate-400 outline-dotted outline-1 outline-teal-200
+  @apply flex flex-col justify-center items-center gap-3 bg-white bg-opacity-20 p-5 rounded-xl h-full w-[350px] lg:w-96 shadow-sm shadow-slate-300 outline outline-1 outline-slate-300
 }
 
 .Blog-Items {
