@@ -48,7 +48,7 @@
  
 @layer base {
   body {
-    @apply bg-white text-current select-none selection:select-none
+    @apply bg-white text-current
   }
 }
 
