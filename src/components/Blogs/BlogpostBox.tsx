@@ -1,7 +1,7 @@
 import { Models } from "appwrite"
 import Truncate from "../truncate/Truncate"
 import { Link } from "react-router-dom"
-import { formatDate } from "@/constants"
+import { multiFormatDateString } from "@/constants"
 import TruncateTitle from "../truncate/TruncateTitle"
 import { motion, useInView } from "framer-motion"
 import { useRef } from "react"
@@ -32,7 +32,7 @@ const BlogpostBox = ({ blog }: BlogBoxtProps) => {
             <div className="flex flex-1 justify-center items-center">
                 <img src={blog.imageUrl || '/assets/images/broken-image.png'} alt={blog.title} className="Blog-image" />
             </div>
-            <Link to={`/blogs/${blog.$id}`}>
+            <Link to={`/en/blogs/${blog.title}/${blog.$id}`}>
                 <TruncateTitle text={blog.title} maxLength={30} />
             </Link>
             <Truncate text={blog.body} maxLength={100} />
@@ -54,7 +54,7 @@ const BlogpostBox = ({ blog }: BlogBoxtProps) => {
             <div>
                 <p className="creatorName">Created by {blog.admin.name}</p>
             </div>
-            <p className="CreatedAtText">{formatDate(blog.$createdAt)}</p>
+            <p className="CreatedAtText">{multiFormatDateString(blog.$createdAt)}</p>
          </div>
         </div>
     </motion.div>

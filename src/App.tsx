@@ -36,7 +36,7 @@ function App() {
                 <Route path="/privacy-policy" element={<Privacypoliy />} />
                 <Route path="/error" element={<Unauthorized />} /> 
                 <Route path="/maintainance" element={<Maintainance />} />
-                <Route path="/blogs/readingmode" element={<Blogpage />} />
+                <Route path='/en/blogs/:title/:id' element={<Blogpage/>} />
             </Route>
             {/* Protected pages */}
             <Route element={<PrivateRoutes />}>

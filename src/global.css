@@ -934,7 +934,7 @@ nav.scrolled {
 }
 
 .Blog-Title {
-  @apply text-base text-start w-full md:w-80 md:text-lg text-transparent bg-clip-text bg-gradient-to-bl from-lime-500 via-fuchsia-600 to-teal-500 font-bold border-dashed border-b border-slate-500 tracking-tight cursor-pointer select-none
+  @apply text-base text-start w-full md:text-lg text-transparent bg-clip-text bg-gradient-to-bl from-lime-500 via-fuchsia-600 to-teal-500 font-bold border-dashed border-b border-slate-500 tracking-tight cursor-pointer select-none
 }
 
 .BlogBody {
@@ -967,4 +967,14 @@ nav.scrolled {
 
 .hashTag {
   @apply text-xs bg-gradient-to-l pr-2 text-white font-serif animate-in slide-in-from-bottom-5 duration-1000 from-black to-teal-500 rounded-xl shadow-sm shadow-slate-300
+}
+
+/* Blog page */
+
+.MainBlogpage {
+  @apply flex flex-col justify-center items-start h-full w-full animate-in slide-in-from-bottom-10 duration-700
+}
+
+.PrimaryBoxBlog {
+  @apply flex flex-col justify-center items-center h-full w-full p-3 md:p-5 gap-10 outline-dashed outline-2 outline-slate-200 rounded-lg shadow-md shadow-slate-300
 }

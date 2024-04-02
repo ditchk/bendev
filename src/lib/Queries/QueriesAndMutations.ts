@@ -5,7 +5,7 @@ import {
     useQueryClient,
     // useInfiniteQuery,
  } from '@tanstack/react-query';
-import { CreateUserAccount, OrderSubmission, createProject, getALLServices, getFeaturedProjects, getRecentBlogs, getRecentProducts, getRecentProjects, saveMessageToDB, saveSubscriberToDB, signInAccount } from '../appwrite/api';
+import { CreateUserAccount, OrderSubmission, createProject, getALLServices, getBlogById, getFeaturedProjects, getRecentBlogs, getRecentProducts, getRecentProjects, saveMessageToDB, saveSubscriberToDB, signInAccount } from '../appwrite/api';
 import { NewUser, myNewProject } from '@/types';
 import { QUERY_KEYS } from './queryKeys';
 
@@ -103,3 +103,11 @@ export const useSignInAccount = () => {
         queryFn: getRecentBlogs
     })
  }
+
+ export const useGetBlogById = (blogId?: string) => {
+    return useQuery({
+      queryKey: [QUERY_KEYS.GET_POST_BY_ID, blogId],
+      queryFn: () => getBlogById(blogId),
+      enabled: !!blogId,
+    });
+  };

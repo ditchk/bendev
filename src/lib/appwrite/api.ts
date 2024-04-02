@@ -324,3 +324,21 @@ export async function getRecentBlogs(){
 
   return posts
 }
+
+export async function getBlogById(blogId?: string) {
+  if (!blogId) throw Error;
+
+  try {
+    const blog = await databases.getDocument(
+      myConfig.databaseId,
+      myConfig.blogCollectionIld,
+      blogId
+    );
+
+    if (!blog) throw Error;
+
+    return blog;
+  } catch (error) {
+    console.log(error);
+  }
+}

@@ -11,7 +11,7 @@ export enum QUERY_KEYS {
     // GET_POSTS = "getPosts",
     GET_INFINITE_POSTS = "getInfinitePosts",
     GET_RECENT_PROJECTS = "getRecentProjects",
-    GET_POST_BY_ID = "getPostById",
+    GET_POST_BY_ID = "getBlogById",
     GET_FEATURED_PROJECTS = "getFeaturedProjects",
     GET_RECENT_PRODUCTS = "getRecentProducts",
     GET_ALL_SERVICES = "getALLServices",
