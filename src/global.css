@@ -125,7 +125,7 @@
  }
 
  .menubar {
-  @apply shadow-lg shadow-slate-800
+  box-shadow: 3px 1px 5px rgb(122, 122, 122)
  }
 
 .links {
@@ -966,7 +966,7 @@ nav.scrolled {
 }
 
 .hashTag {
-  @apply text-xs bg-gradient-to-l pr-2 text-white font-serif animate-in slide-in-from-bottom-5 duration-1000 from-black to-teal-500 rounded-xl shadow-sm shadow-slate-300
+  @apply text-xs bg-gradient-to-l from-black to-teal-500 pr-2 text-white font-serif animate-in slide-in-from-bottom-5 duration-1000  rounded-xl shadow-sm shadow-slate-300
 }
 
 /* Blog page */
@@ -977,4 +977,8 @@ nav.scrolled {
 
 .PrimaryBoxBlog {
   @apply flex flex-col justify-center items-center h-full w-full p-3 md:p-5 gap-10 outline-dashed outline-2 outline-slate-200 rounded-lg shadow-md shadow-slate-300
+}
+
+.BlogLink {
+  @apply w-fit bg-gradient-to-bl from-black to-teal-500 rounded-full p-2 text-white px-4 text-xs font-thin shadow-md shadow-teal-500 outline outline-2 outline-white
 }

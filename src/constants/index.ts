@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { SiFigma, SiFramer, SiGit, SiGooglecloud, SiMicrosoftazure } from "react-icons/si";
-import { formatDistance } from 'date-fns';
 
 
 export const sideBarLinks = [

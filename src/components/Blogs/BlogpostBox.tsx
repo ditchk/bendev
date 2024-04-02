@@ -15,8 +15,7 @@ const BlogpostBox = ({ blog }: BlogBoxtProps) => {
 
     const ref = useRef(null)
     const isInView = useInView(ref)
-
-
+    
   return (
     <motion.div 
     
@@ -35,7 +34,7 @@ const BlogpostBox = ({ blog }: BlogBoxtProps) => {
             <Link to={`/en/blogs/${blog.title}/${blog.$id}`}>
                 <TruncateTitle text={blog.title} maxLength={30} />
             </Link>
-            <Truncate text={blog.body} maxLength={100} />
+            <Truncate text={blog.body} maxLength={150} />
             <ul className="Hastags">
                 {blog.tags.map((tag: string) => (
                     <li className="hashTag">
@@ -43,6 +42,7 @@ const BlogpostBox = ({ blog }: BlogBoxtProps) => {
                     </li>
                 ))}
             </ul>
+            <Link to={`/en/blogs/${blog.title}/${blog.$id}`} reloadDocument className="BlogLink">Read more</Link>
         </div>
         <div className="CReactorInfo">
          <div className="flex flex-col justify-center gap-2 items-start">

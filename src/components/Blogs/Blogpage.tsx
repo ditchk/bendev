@@ -35,7 +35,7 @@ const Blogpage = () => {
             </div>
             <div className="CreatedAt">
               <div>
-                  <p className="creatorName">Created by {blog?.admin.name}</p>
+                  <p className="creatorName">Written by {blog?.admin.name}</p>
               </div>
               <p className="CreatedAtText">{multiFormatDateString(blog?.$createdAt$)}</p>
             </div>
