@@ -42,7 +42,7 @@ const Blogposts = () => {
       <h2 className="BlogpageText">Latest blog posts</h2>
       <div className="Blog-box">
        {isPostLoading && !blogs ? (
-        <PostLoader />
+        <PostLoader /> || <h1>Somthing went wrong</h1>
        ) : (
         <motion.ul 
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center gap-2"
