@@ -30,11 +30,10 @@ const BlogpostBox = ({ blog }: BlogBoxtProps) => {
         <div className="Blog-Items">
             <div className="flex flex-1 justify-center items-center">
                 <img src={blog.imageUrl || '/assets/images/broken-image.png'} alt={blog.title} className="Blog-image" />
-            </div>
+            </div>  
             <Link to={`/en/blogs/${blog.title}/${blog.$id}`}>
                 <TruncateTitle text={blog.title} maxLength={30} />
             </Link>
-            <Truncate text={blog.body} maxLength={150} />
             <ul className="Hastags">
                 {blog.tags.map((tag: string) => (
                     <li className="hashTag">
@@ -42,7 +41,10 @@ const BlogpostBox = ({ blog }: BlogBoxtProps) => {
                     </li>
                 ))}
             </ul>
+            <Truncate text={blog.body} maxLength={150} />
+            
             <Link to={`/en/blogs/${blog.title}/${blog.$id}`} reloadDocument className="BlogLink">Read more</Link>
+         
         </div>
         <div className="CReactorInfo">
          <div className="flex flex-col justify-center gap-2 items-start">

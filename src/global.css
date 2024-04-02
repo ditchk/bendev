@@ -962,7 +962,7 @@ nav.scrolled {
 }
 
 .Hastags {
-  @apply flex flex-row text-xs gap-2 justify-start items-start w-full font-extralight font-serif text-gray-500 rounded-xl p-1 outline-dashed outline-1 outline-teal-400
+  @apply flex flex-row text-xs gap-2 justify-start items-start w-full font-extralight font-serif text-gray-500 rounded-xl p-1
 }
 
 .hashTag {
@@ -972,7 +972,7 @@ nav.scrolled {
 /* Blog page */
 
 .MainBlogpage {
-  @apply flex flex-col justify-center items-start h-full w-full animate-in slide-in-from-bottom-10 duration-700
+  @apply flex flex-col justify-center items-start h-full w-full md:p-5 animate-in slide-in-from-bottom-10 duration-700
 }
 
 .PrimaryBoxBlog {

@@ -13,7 +13,7 @@ const Blogpage = () => {
       {IsBlogLoading ? <PostLoader /> : (
         <div className="MainBlogpage">
           <div className="PrimaryBoxBlog">
-            <div className="flex flex-col justify-center items-start w-full p-2 gap-4">
+            <div className="flex flex-col justify-center items-start w-full p-2 gap-2">
               <img src={blog?.imageUrl} width={500} alt="" className="object-cover rounded-xl aspect-video" />
               <ul className="Hastags">
                 {blog?.tags.map((tag: string) => (
@@ -28,7 +28,7 @@ const Blogpage = () => {
             <p className="BlogBody">{blog?.body}</p>
           </div>
           <div className="CReactorInfo">
-            <div className="flex flex-col justify-center gap-2 items-start">
+            <div className="flex flex-col justify-center gap-1 items-start">
               <Link to={`/profile/${blog?.admin.$id}`} className="ProfileLink">
                   <img src={blog?.admin.imageUrl} alt="" className="rounded-full w-8 h-8 p-1 shadow-inner"/>
               </Link>
