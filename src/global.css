@@ -66,12 +66,12 @@
   justify-self: center;
   padding: 0 16px;
   z-index: 1000;
-  transition: top 0.5s ease-in;
+  transition: top 0.3s ease-in;
 }
 
 .navbar.hide {
   top: -60px;
-  transition-behavior: ease-out;
+  transition-behavior: bottom 0.2s, ease-out;
 }
 
 
@@ -120,7 +120,7 @@
 }
 
 .menubar {
-  @apply flex flex-col pt-2 gap-2 justify-end items-center top-16 absolute
+  @apply flex flex-col pt-2 pb-8 gap-2 justify-end items-center top-16 absolute
   w-full left-0 h-fit rounded-3xl p-2 outline-cyan-50 bg-white animate-in slide-in-from-top-5 duration-500
  }
 
@@ -804,7 +804,7 @@ nav.scrolled {
 }
 
 .video {
-  @apply z-0 h-[500px] filter grayscale brightness-75 scale-125 md:scale-100 lg:h-screen w-full object-cover overflow-hidden 
+  @apply z-0 h-[500px] filter grayscale backdrop-brightness-75 brightness-75 scale-125 md:scale-100 lg:h-screen w-full object-cover overflow-hidden 
 }
 
 .PlayerItems {
@@ -858,7 +858,7 @@ nav.scrolled {
 }
 
 .H1Crads {
-  @apply box-border flex flex-row justify-center items-center shadow-lg shadow-teal-600 gap-2 outline-dashed outline-1 outline-white hover:bg-opacity-30 hover:bg-teal-100 hover:-translate-y-2 duration-1000 mt-10 md:mt-14 lg:mt-36 min-w-[100px] animate-in slide-in-from-left-10 text-white p-1 rounded-xl text-xs md:text-sm font-sans font-extralight
+  @apply box-border flex flex-row justify-center items-center shadow-md shadow-teal-600 gap-2 outline-dashed outline-1 outline-white hover:bg-opacity-30 hover:bg-teal-100 hover:-translate-y-2 duration-1000 mt-10 md:mt-14 lg:mt-36 min-w-[100px] animate-in slide-in-from-left-10 text-white p-1 rounded-xl text-xs md:text-sm font-sans font-extralight
 }
 
 
@@ -930,7 +930,7 @@ nav.scrolled {
 }
 
 .Blog-image {
-  @apply object-cover aspect-video w-96 h-56 rounded-xl outline-dashed outline-1 outline-slate-400 p-1
+  @apply object-cover aspect-video w-96 h-56 rounded-xl outline-dashed outline-1 outline-slate-400 opacity-80 bg-black
 }
 
 .Blog-Title {
@@ -976,7 +976,7 @@ nav.scrolled {
 }
 
 .PrimaryBoxBlog {
-  @apply flex flex-col justify-center items-center h-full w-full p-3 md:p-5 gap-10 outline-dashed outline-2 outline-slate-200 rounded-lg shadow-md shadow-slate-300
+  @apply flex flex-col justify-center items-center h-full w-full p-3 md:p-5 gap-10 outline-dashed outline-2 outline-teal-500 rounded-lg shadow-md shadow-slate-100
 }
 
 .BlogLink {
@@ -984,9 +984,9 @@ nav.scrolled {
 }
 
 .Intro {
-  @apply text-sm text-teal-600 italic underline underline-offset-2
+  @apply text-sm text-teal-500 italic font-serif
 }
 
 .summary {
-  @apply italic text-sm text-red-400
+  @apply italic text-sm text-slate-400
 }

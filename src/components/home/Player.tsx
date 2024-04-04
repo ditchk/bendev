@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Button } from '../ui/button';
 import Cards from '../shared/Cards';
 import { useNavigate } from 'react-router';
+import { Link } from 'react-router-dom';
 
 
 interface PlayerProps {
@@ -25,7 +26,7 @@ const Player: React.FC<PlayerProps> = ({ src }) => {
   const Navigate = useNavigate()
 
   const handleclick = () => {
-      Navigate('/contact')
+      Navigate('/blogs')
   }
 
 
@@ -41,8 +42,8 @@ const Player: React.FC<PlayerProps> = ({ src }) => {
           <h2 className='BrandName2'>Home for Modern websites</h2>
           <p className="TextDescription">We strive to make the best of what we have <br />and create something truly special.</p>
           <div className='flex flex-row justify-center items-center gap-2'>
-          <Button className="buttonPrev" onClick={handleClick}>Explore Now</Button>
-          <Button className="buttonPrev" onClick={handleclick}>Enquire Now</Button>
+            <Link to={'#Choose a services'} className="BlogLink mt-5 z-40" onClick={handleClick}>Explore Now</Link>
+            <Link to={'/blogs'} reloadDocument className="BlogLink mt-5 z-40" onClick={handleclick}>Blog Library</Link>
           </div>
         </div>
         <div className="Cards">

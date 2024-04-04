@@ -59,9 +59,9 @@ const toggleMenu = () => {
  return (
     <nav className="MobileMenu transition-all" onScroll={e => e.preventDefault()}>
             {!menuOpen ? (
-              <HiOutlineMenuAlt3 className="text-3xl text-slate-400 bg-transparent transition-transform ease-in-out duration-1000 animate-in zoom-in-50" onClick={toggleMenu}/>
+              <HiOutlineMenuAlt3 className="text-3xl text-slate-500 bg-transparent transition-transform ease-in-out duration-1000 animate-in zoom-in-50" onClick={toggleMenu}/>
             ) : (
-              <MdOutlineClose className="text-3xl text-red-600 bg-transparent bg-opacity-40 transition-transform ease-in-out duration-500 animate-in rotate-90" onClick={toggleMenu}/>
+              <MdOutlineClose className="text-3xl text-red-400 bg-transparent bg-opacity-40 transition-transform ease-in-out duration-500 animate-in rotate-90" onClick={toggleMenu}/>
             )}
       {menuOpen && (
        <motion.ul

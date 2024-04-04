@@ -384,6 +384,8 @@ export const multiFormatDateString = (timestamp: string = ""): string => {
         return `${Math.floor(diffInDays)} day ago`;
       case Math.floor(diffInDays) > 1 && diffInDays < 30:
         return `${Math.floor(diffInDays)} days ago`;
+      case Math.floor(diffInHours) == 1:
+          return `Today at ${date.toLocaleTimeString()}`;
       case Math.floor(diffInHours) >= 1:
         return `${Math.floor(diffInHours)} hours ago`;
       case Math.floor(diffInMinutes) >= 1:

@@ -1,12 +1,18 @@
 import { useGetBlogById } from "@/lib/Queries/QueriesAndMutations"
-import { useParams } from "react-router"
+import { useNavigate, useParams } from "react-router"
 import PostLoader from "../loaders/PostLoader";
 import { Link } from "react-router-dom";
 import { multiFormatDateString } from "@/constants";
-
 const Blogpage = () => {
   const { id } = useParams()
   const { data: blog, isPending: IsBlogLoading } = useGetBlogById(id || '');
+
+
+  const Navigate = useNavigate()
+
+        const handleclick = () => {
+            Navigate('/blogs')
+        }
 
   return (
     <div className="default_Container">
@@ -43,9 +49,13 @@ const Blogpage = () => {
             </div>
           </div>
           </div>
-      
         </div>
       )}
+
+      <div className="flex flex-row justify-between items-center w-full h-fit md:px-8 my-4">
+        <Link to={'/blogs'} className="BlogLink" reloadDocument onClick={handleclick}>Back to Blogs</Link>
+        <Link to={'/blogs'} className="BlogLink" reloadDocument onClick={handleclick}>Share Blog</Link>
+      </div>
     </div>
   )
 }
