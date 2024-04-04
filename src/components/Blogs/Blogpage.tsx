@@ -25,7 +25,9 @@ const Blogpage = () => {
             </div>
           <div className="flex flex-col gap-10">
             <h1 className="Blog-Title">{blog?.title}</h1>
+            <h2 className="Intro">{blog?.introduction}</h2>
             <p className="BlogBody">{blog?.body}</p>
+            <h3 className="summary">{blog?.summary}</h3>
           </div>
           <div className="CReactorInfo">
             <div className="flex flex-col justify-center gap-1 items-start">

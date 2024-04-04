@@ -934,7 +934,7 @@ nav.scrolled {
 }
 
 .Blog-Title {
-  @apply text-base text-start w-full md:text-lg text-transparent bg-clip-text bg-gradient-to-bl from-lime-500 via-fuchsia-600 to-teal-500 font-bold border-dashed border-b border-slate-500 tracking-tight cursor-pointer select-none
+  @apply text-base text-start w-full md:text-lg text-transparent bg-clip-text bg-gradient-to-bl from-teal-500 via-black to-teal-500 font-bold border-dashed border-b border-slate-500 tracking-tight cursor-pointer select-none
 }
 
 .BlogBody {
@@ -981,4 +981,12 @@ nav.scrolled {
 
 .BlogLink {
   @apply w-fit bg-gradient-to-bl from-black to-teal-500 rounded-full p-2 text-white px-4 text-xs font-thin shadow-md shadow-teal-500 outline outline-2 outline-white
+}
+
+.Intro {
+  @apply text-sm text-teal-600 italic underline underline-offset-2
+}
+
+.summary {
+  @apply italic text-sm text-red-400
 }
