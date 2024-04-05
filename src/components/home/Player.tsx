@@ -41,7 +41,7 @@ const Player: React.FC<PlayerProps> = ({ src }) => {
           <h2 className='BrandName2'>Home for Modern websites</h2>
           <p className="TextDescription">We strive to make the best of what we have <br />and create something truly special.</p>
           <div className='flex flex-row justify-center items-center gap-2'>
-            <Link to={'#Choose a services'} className="BlogLink mt-5 z-40" onClick={handleClick}>Explore Now</Link>
+            <Link to={'#Choose a services'} className="BlogLink mt-5 z-40" onClick={handleClick}>Get Started</Link>
             <Link to={'/blogs'} reloadDocument className="BlogLink mt-5 z-40" onClick={handleclick}>Blog Library</Link>
           </div>
         </div>
