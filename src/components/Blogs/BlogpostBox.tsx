@@ -5,6 +5,8 @@ import { multiFormatDateString } from "@/constants"
 import TruncateTitle from "../truncate/TruncateTitle"
 import { motion, useInView } from "framer-motion"
 import { useRef } from "react"
+import { Input } from "../ui/input"
+import { Button } from "../ui/button"
 
 
 type BlogBoxtProps = {
@@ -42,15 +44,20 @@ const BlogpostBox = ({ blog }: BlogBoxtProps) => {
                 ))}
             </ul>
             <Truncate text={blog.body} maxLength={150} />
-            
-            <Link to={`/en/blogs/${blog.title}/${blog.$id}`} reloadDocument className="BlogLink">Read more</Link>
-         
+            <div className="flex flex-col justify-center items-start gap-3 w-full h-fit">
+                <Link to={`/en/blogs/${blog.title}/${blog.$id}`} reloadDocument className="BlogLink">Read more</Link>
+                <div className="flex flex-row justify-center items-start w-full gap-2">
+                    <Input type="text" placeholder="Add a comment" className="commentSec"></Input>
+                    <Button className="Commenting">Comment</Button>
+                </div>
+            </div>
         </div>
         <div className="CReactorInfo">
-         <div className="flex flex-col justify-center gap-2 items-start">
+         <div className="flex flex-col justify-center w-fit h-fit gap-2 items-start">
             <Link to={`/profile/${blog?.admin.$id}`} className="ProfileLink">
                 <img src={blog?.admin.imageUrl} alt="" className="rounded-full w-8 h-8 p-1 shadow-inner"/>
             </Link>
+            
          </div>
          <div className="CreatedAt">
             <div>

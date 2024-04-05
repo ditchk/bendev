@@ -111,7 +111,7 @@
 }
 
 .logo-text {
-  @apply text-center text-lg md:text-xl text-shadow2 font-semibold font-serif animate-in slide-in-from-left-20 duration-500 text-transparent bg-clip-text bg-gradient-to-l from-fuchsia-700 via-teal-600 to-blue-700
+  @apply text-center text-lg md:text-xl text-shadow2 font-semibold font-serif text-transparent bg-clip-text bg-gradient-to-l from-fuchsia-700 via-teal-600 to-blue-700
 }
 
 /* mobile menu */
@@ -125,7 +125,7 @@
  }
 
  .menubar {
-  box-shadow: 3px 1px 5px rgb(122, 122, 122)
+  box-shadow: 0.1px 1px 5px rgb(122, 122, 122)
  }
 
 .links {
@@ -980,7 +980,7 @@ nav.scrolled {
 }
 
 .BlogLink {
-  @apply w-fit bg-gradient-to-bl from-black to-teal-500 rounded-full p-2 text-white px-4 text-xs font-thin shadow-md shadow-teal-500 outline outline-2 outline-white
+  @apply w-fit bg-gradient-to-bl from-black to-teal-500 rounded-full p-2 text-white px-4 text-xs font-thin shadow-sm shadow-teal-500 outline outline-2 outline-white
 }
 
 .Intro {
@@ -989,4 +989,12 @@ nav.scrolled {
 
 .summary {
   @apply italic text-sm text-slate-400
+}
+
+.commentSec {
+  @apply shadow-inner shadow-teal-500 rounded-none rounded-b-xl rounded-tl-xl
+}
+
+.Commenting {
+  @apply bg-teal-800 rounded-lg
 }
