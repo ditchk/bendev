@@ -106,7 +106,7 @@ export const useSignInAccount = () => {
 
  export const useGetBlogById = (blogId?: string) => {
     return useQuery({
-      queryKey: [QUERY_KEYS.GET_POST_BY_ID, blogId],
+      queryKey: [QUERY_KEYS.GET_BLOG_BY_ID, blogId],
       queryFn: () => getBlogById(blogId),
       enabled: !!blogId,
     });
