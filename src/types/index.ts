@@ -135,3 +135,8 @@ export type ProjectLink = {
   link: string;
   route: string;
 }
+
+export type sideTypes = {
+  id: number;
+  content: string;
+}

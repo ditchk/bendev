@@ -998,3 +998,55 @@ nav.scrolled {
 .Commenting {
   @apply bg-teal-800 rounded-lg
 }
+
+/* Slier */
+
+.example-container {
+  @apply flex relative justify-center items-center h-52 md:h-[20vw] bg-white bg-opacity-10 rounded-xl w-full overflow-hidden mb-4 outline outline-2 outline-slate-400
+}
+
+.next,
+.prev {
+  top: calc(50% - 20px);
+  position: absolute;
+  background: rgb(0, 0, 0);
+  border-radius: 30px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+  z-index: 2;
+}
+
+.next {
+  right: 10px;
+}
+
+.prev {
+  left: 10px;
+  transform: scale(-1);
+}
+
+.slider-image {
+  @apply absolute w-full object-cover h-full opacity-10;
+}
+
+.refresh {
+  padding: 10px;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  width: 20px;
+  height: 20px;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}

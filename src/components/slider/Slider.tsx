@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence, wrap } from "framer-motion";
 import { images } from "@/constants";
+import { FcNext } from "react-icons/fc";
 
 const variants = {
   enter: (direction: number) => {
@@ -34,13 +35,8 @@ const swipePower = (offset: number, velocity: number) => {
   return Math.abs(offset) * velocity;
 };
 
-export const Slider = () => {
+export const Example = () => {
   const [[page, direction], setPage] = useState([0, 0]);
-
-  // We only have 3 images, but we paginate them absolutely (ie 1, 2, 3, 4, 5...) and
-  // then wrap that within 0-2 to find our image ID in the array below. By passing an
-  // absolute page index as the `motion` component's `key` prop, `AnimatePresence` will
-  // detect it as an entirely new image. So you can infinitely paginate as few as 1 images.
   const imageIndex = wrap(0, images.length, page);
 
   const paginate = (newDirection: number) => {
@@ -48,20 +44,20 @@ export const Slider = () => {
   };
 
   return (
-    <div className="image-carousel">
+    <>
       <AnimatePresence initial={false} custom={direction}>
         <motion.img
           key={page}
           src={images[imageIndex]}
+          className="slider-image"
           custom={direction}
           variants={variants}
           initial="enter"
           animate="center"
           exit="exit"
-          className="imga"
           transition={{
-            x: { type: "spring", stiffness: 300, damping: 30 },
-            opacity: { duration: 0.2 }
+            x: { type: "tween", stiffness: 300, damping: 50 },
+            opacity: { duration: 0.01 }
           }}
           drag="x"
           dragConstraints={{ left: 0, right: 0 }}
@@ -78,11 +74,11 @@ export const Slider = () => {
         />
       </AnimatePresence>
       <div className="next" onClick={() => paginate(1)}>
-        {"‣"}
+      <FcNext />
       </div>
       <div className="prev" onClick={() => paginate(-1)}>
-        {"‣"}
+        <FcNext />
       </div>
-    </div>
+    </>
   );
 };

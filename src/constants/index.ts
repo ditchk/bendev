@@ -205,9 +205,37 @@ export const BannerAssets = [
     }
 ]
 
-export const images = [
-    "/assets/images/marketing.svg"
+export const slides = [
+    {
+        id: 1,
+        content: '/assets/images/nextjs.jpg'
+    },
+    {
+        id: 2,
+        content: '/assets/images/bitcoin.jpg'
+    },
+    {
+        id: 3,
+        content: '/assets/images/next-auth.png'
+    },
+    {
+        id: 4,
+        content: '/assets/images/appwrite.png'
+    },
+    {
+        id: 5,
+        content: '/assets/images/SOL breakout.jpg'
+    }
   ];
+
+
+export const images = [
+    "/assets/images/nextjs.jpg",
+    "/assets/images/bitcoin.jpg",
+    "/assets/images/next-auth.png",
+    "/assets/images/appwrite.png",
+    "/assets/images/SOL breakout.jpg"
+]
 
   export const BasicServ = [
 

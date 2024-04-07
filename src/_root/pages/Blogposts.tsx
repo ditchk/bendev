@@ -1,5 +1,6 @@
 import BlogpostBox from "@/components/Blogs/BlogpostBox"
 import PostLoader from "@/components/loaders/PostLoader";
+import { Example } from "@/components/slider/Slider";
 import { UseGetRecentBlogs } from "@/lib/Queries/QueriesAndMutations";
 import { Models } from "appwrite";
 import { motion, useInView } from "framer-motion";
@@ -39,6 +40,10 @@ const Blogposts = () => {
 
   return (
     <div className="default_Container">
+      <div className="example-container">
+        <Example />
+        <h1 className="box-border hidden lg:flex flex-1 w-fit bg-black p-10 bg-opacity-20 backdrop-blur-md rounded-full shadow-teal-400 shadow-sm absolute text-white z-20 text-5xl capitalize font-extrabold text-center">READ OUR BLOGS</h1>
+      </div>
       <h2 className="BlogpageText">Latest blog posts</h2>
       <div className="Blog-box">
        {isPostLoading && !blogs ? (
