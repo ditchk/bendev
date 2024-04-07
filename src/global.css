@@ -56,7 +56,7 @@
 
 .navbar {
   position: fixed;
-  width: 98%;
+  width: 99%;
   top: 0;
   height: 45px;
   display: flex;
@@ -66,7 +66,7 @@
   justify-self: center;
   padding: 0 16px;
   z-index: 1000;
-  transition: top 0.3s ease-in;
+  transition: top 0.5s ease-in;
 }
 
 .navbar.hide {
@@ -1002,7 +1002,7 @@ nav.scrolled {
 /* Slier */
 
 .example-container {
-  @apply flex relative justify-center items-center h-52 md:h-[20vw] bg-white bg-opacity-10 rounded-xl w-full overflow-hidden mb-4 outline outline-2 outline-slate-400
+  @apply flex relative justify-center items-center h-52 md:h-[20vw] bg-white bg-opacity-10 rounded-xl w-[98%] overflow-hidden mb-4 outline outline-2 outline-slate-300
 }
 
 .next,
@@ -1010,7 +1010,8 @@ nav.scrolled {
   top: calc(50% - 20px);
   position: absolute;
   background: rgb(0, 0, 0);
-  border-radius: 30px;
+  outline: outset 4px white;
+  border-radius: 10px;
   width: 40px;
   height: 40px;
   display: flex;
@@ -1019,7 +1020,6 @@ nav.scrolled {
   user-select: none;
   cursor: pointer;
   font-weight: bold;
-  font-size: 18px;
   z-index: 2;
 }
 

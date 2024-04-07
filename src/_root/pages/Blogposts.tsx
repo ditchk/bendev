@@ -42,7 +42,7 @@ const Blogposts = () => {
     <div className="default_Container">
       <div className="example-container">
         <Example />
-        <h1 className="box-border hidden lg:flex flex-1 w-fit bg-black p-10 bg-opacity-20 backdrop-blur-md rounded-full shadow-teal-400 shadow-sm absolute text-white z-20 text-5xl capitalize font-extrabold text-center">READ OUR BLOGS</h1>
+        {/* <h1 className="box-border hidden lg:flex flex-1 w-fit bg-black p-10 bg-opacity-20 backdrop-blur-md rounded-full shadow-teal-400 shadow-sm absolute text-white z-20 text-5xl capitalize font-extrabold text-center">READ OUR BLOGS</h1> */}
       </div>
       <h2 className="BlogpageText">Latest blog posts</h2>
       <div className="Blog-box">
