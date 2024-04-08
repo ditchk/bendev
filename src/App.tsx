@@ -30,18 +30,18 @@ function App() {
                 <Route index element={<Home />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/about" element={<About />} />
+                <Route path="/blogs" element={<Blogposts />} />
                 <Route path="/shop" element={<Shop />} />
                 <Route path="/mycv" element={<About/>} />
                 <Route path="/privacy-policy" element={<Privacypoliy />} />
                 <Route path="/error" element={<Unauthorized />} /> 
                 <Route path="/maintainance" element={<Maintainance />} />
+                <Route path='/en/blogs/:title/:id' element={<Blogpage/>} />
             </Route>
             {/* Protected pages */}
             <Route element={<PrivateRoutes />}>
               <Route path="/admin" element={<Adminpanel />} />
               <Route path='/opportunities&careers' element={<Opportunities />} />
-              <Route path='/en/blogs/:title/:id' element={<Blogpage/>} />
-              <Route path="/blogs" element={<Blogposts />} />
             </Route>
 
             {/* Maintainance Error page */}
