@@ -56,7 +56,6 @@
 
 .navbar {
   position: fixed;
-  width: 99%;
   top: 0;
   height: 45px;
   display: flex;
@@ -1002,7 +1001,7 @@ nav.scrolled {
 /* Slier */
 
 .example-container {
-  @apply flex relative justify-center items-center h-52 md:h-[20vw] bg-white bg-opacity-10 rounded-xl w-[98%] overflow-hidden mb-4 outline outline-2 outline-slate-300
+  @apply flex relative justify-center items-center h-52 md:h-[20vw] lg:h-[30vw] bg-white bg-opacity-10 rounded-xl w-[98%] overflow-hidden mb-4 outline outline-2 outline-slate-300
 }
 
 .next,
