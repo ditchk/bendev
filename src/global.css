@@ -25,6 +25,7 @@
     /* Chrome, Edge, and Safari */
     scroll-behavior: auto;
     scrollbar-color: teal;
+    height: fit-content;
   }
 
 
