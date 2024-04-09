@@ -13,7 +13,7 @@
 
 
 :root {
-  color-scheme: light;
+  color-scheme: auto;
 }
 
 @layer base {
@@ -21,6 +21,10 @@
     color-scheme: light;
     background-color: transparent;
     color: rgb(36, 36, 36);
+    scrollbar-width:  thin; /* Firefox */
+    /* Chrome, Edge, and Safari */
+    scroll-behavior: auto;
+    scrollbar-color: teal;
   }
 
 
@@ -803,7 +807,7 @@ nav.scrolled {
 }
 
 .video {
-  @apply z-0 h-[500px] filter grayscale backdrop-brightness-75 brightness-75 scale-125 md:scale-100 lg:h-screen w-full object-cover overflow-hidden 
+  @apply z-0 h-[500px] md:h-full filter grayscale backdrop-brightness-75 brightness-75 scale-125 md:scale-100 lg:h-full w-full object-cover overflow-hidden 
 }
 
 .PlayerItems {
@@ -853,7 +857,7 @@ nav.scrolled {
 }
 
 .Cards {
-  @apply flex flex-row absolute w-screen h-full justify-center items-center mt-56 md:mt-60 z-0
+  @apply flex flex-row absolute w-screen h-fit justify-center items-center mt-56 md:mt-60 z-0
 }
 
 .H1Crads {
@@ -1001,25 +1005,12 @@ nav.scrolled {
 /* Slier */
 
 .example-container {
-  @apply flex relative justify-center items-center h-52 md:h-[20vw] lg:h-[30vw] bg-white bg-opacity-10 rounded-xl w-[98%] overflow-hidden mb-4 outline outline-2 outline-slate-300
+  @apply flex relative justify-center items-center h-40 md:h-[20vw] lg:h-[30vw] bg-white bg-opacity-10 rounded-xl w-[98%] overflow-hidden mb-4 outline-dashed outline-2 outline-slate-300
 }
 
 .next,
 .prev {
-  top: calc(50% - 20px);
-  position: absolute;
-  background: rgb(0, 0, 0);
-  outline: outset 4px white;
-  border-radius: 10px;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  user-select: none;
-  cursor: pointer;
-  font-weight: bold;
-  z-index: 2;
+  @apply flex rounded-full shadow-2xl shadow-teal-500
 }
 
 .next {
@@ -1038,7 +1029,7 @@ nav.scrolled {
 .refresh {
   padding: 10px;
   position: absolute;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(242, 242, 242, 0.4);
   border-radius: 10px;
   width: 20px;
   height: 20px;

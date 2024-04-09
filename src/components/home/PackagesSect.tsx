@@ -25,7 +25,7 @@ const PackagesSect = () => {
             <PackageSelect />
           </div>
         </div>
-        <div className="flex flex-col md:flex-row justify-center items-center w-full h-full">
+        <div className="flex flex-col justify-center items-center w-full h-full">
           <div className="flex flex-col md:flex-row justify-center gap-5 w-full h-fit">
               <div className="flex flex-row justify-between items-center bg-black bg-opacity-25 outline-dashed outline-2 w-full gap-10 p-2 outline-slate-100 shadow-md shadow-gray-200 duration-1000 rounded-full cursor-pointer" onClick={handleClick}>
                 <h1 className="PackageTitleText">Understand Our Pricing</h1>
@@ -44,8 +44,8 @@ const PackagesSect = () => {
                   )}
               </div>
           </div>
-        
-          <div className="ContainerExplaPackage relative">
+          <div className="flex flex-col justify-center items-center md:flex-row w-full h-full">
+                            <div className="ContainerExplaPackage relative">
               {openContainer && (
                 <div className="flex flex-col justify-center items-center bg-gradient-to-br from-black to-teal-500 rounded-2xl p-3 min-h-[250px] animate-in slide-in-from-bottom-10 top-16 duration-1000 ">
                   <h1 className="ExplainText">We offer a wide variety of services.This way we have clearly outlined the packages that best suit your needs</h1>
@@ -55,7 +55,6 @@ const PackagesSect = () => {
               )}
             </div>
             <div className="ContainerExplaPackage relative">
-            
               {openContainer2 && (
                 <div className="flex flex-col justify-center items-center bg-gradient-to-br from-black to-teal-500 rounded-2xl p-3 min-h-[250px] animate-in slide-in-from-bottom-10 top-16 duration-1000 ">
                   <ul className="list-decimal list-inside text-xs text-slate-200">
@@ -74,8 +73,8 @@ const PackagesSect = () => {
                 </div>
               )}
             </div>
+          </div>
         </div>
-        
     </div>
   )
 }

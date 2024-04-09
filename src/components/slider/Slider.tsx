@@ -13,7 +13,7 @@ const variants = {
   center: {
     zIndex: 1,
     x: 0,
-    opacity: 1
+    opacity: 0.9
   },
   exit: (direction: number) => {
     return {
@@ -56,12 +56,12 @@ export const Example = () => {
           animate="center"
           exit="exit"
           transition={{
-            x: { type: "tween", stiffness: 300, damping: 50 },
-            opacity: { duration: 0.01 }
+            x: { type: "spring", stiffness: 300, damping: 30 },
+            opacity: { duration: 0.1 }
           }}
           drag="x"
           dragConstraints={{ left: 0, right: 0 }}
-          dragElastic={1}
+          dragElastic={10}
           onDragEnd={(_e, { offset, velocity }) => {
             const swipe = swipePower(offset.x, velocity.x);
 
@@ -74,7 +74,7 @@ export const Example = () => {
         />
       </AnimatePresence>
       <div className="next" onClick={() => paginate(1)}>
-      <FcNext />
+        <FcNext />
       </div>
       <div className="prev" onClick={() => paginate(-1)}>
         <FcNext />
