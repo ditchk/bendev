@@ -808,7 +808,7 @@ nav.scrolled {
 }
 
 .video {
-  @apply z-0 h-[400px] md:h-full filter grayscale backdrop-brightness-75 brightness-75 scale-125 md:scale-100 lg:h-full w-full object-cover overflow-hidden 
+  @apply z-0 h-[450px] md:h-full filter grayscale backdrop-brightness-75 brightness-75 scale-125 md:scale-100 lg:h-full w-full object-cover overflow-hidden 
 }
 
 .PlayerItems {
@@ -836,7 +836,7 @@ nav.scrolled {
 }
 
 .ItemBox-Div {
-  @apply flex flex-col justify-start items-center h-fit w-fit p-2 py-2 lg:py-10 animate-in zoom-in-150 duration-500 rounded-xl
+  @apply flex flex-col justify-start items-center h-fit w-fit p-2 py-2 lg:py-10 animate-in slide-in-from-top-10 duration-500 rounded-xl
 }
 
 .ExplainText {
@@ -862,7 +862,7 @@ nav.scrolled {
 }
 
 .H1Crads {
-  @apply box-border flex flex-row justify-center items-center shadow-md shadow-teal-600 gap-2 outline-dashed outline-1 outline-white hover:bg-opacity-30 hover:bg-teal-100 hover:-translate-y-2 duration-1000 mt-10 md:mt-14 lg:mt-36 min-w-[100px] animate-in slide-in-from-left-10 text-white p-1 rounded-xl text-xs md:text-sm font-sans font-extralight
+  @apply box-border flex flex-row justify-center items-center shadow-md shadow-teal-600 gap-2 outline-dashed outline-1 outline-white hover:bg-opacity-30 hover:bg-teal-100 hover:-translate-y-2 duration-1000 mt-10 md:mt-14 lg:mt-36 min-w-[100px] animate-in slide-in-from-top-5 text-white p-1 rounded-xl text-xs md:text-sm font-sans font-extralight
 }
 
 
