@@ -1,5 +1,4 @@
 import BannerPost from "@/components/home/BannerPost"
-import IconDump from "@/components/home/IconDump"
 import MobileBanner from "@/components/home/MobileBanner"
 import MotionIcons from "@/components/home/MotionIcons"
 import PackagesSect from "@/components/home/PackagesSect"
@@ -11,7 +10,7 @@ const Home = () => {
   return (
     <div className="custom_container">
       <Player src={'/assets/videos/welcomev.mp4'} />
-      <IconDump /> 
+      {/* <IconDump />  */}
       <MobileBanner />
       <MotionIcons />
       <BannerPost />
