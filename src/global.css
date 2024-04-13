@@ -825,7 +825,7 @@ nav.scrolled {
 }
 
 .video {
-  @apply z-0 h-[480px] md:h-[480px] filter grayscale backdrop-brightness-75 brightness-75 scale-125 md:scale-100 lg:h-full w-full object-cover overflow-hidden 
+  @apply z-0 h-[450px] md:h-full filter grayscale backdrop-brightness-75 brightness-75 scale-125 md:scale-100 lg:h-full w-full object-cover overflow-hidden 
 }
 
 .PlayerItems {
