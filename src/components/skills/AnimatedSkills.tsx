@@ -33,7 +33,7 @@ function ParallaxText({ baseVelocity = 100 }: ParallaxProps) {
    * have to replace for wrapping that works for you or dynamically
    * calculate
    */
-  const x = useTransform(baseX, (v) => `${wrap(-1, 50, v)}%`);
+  const x = useTransform(baseX, (v) => `${wrap(-20, 50, v)}%`);
 
   const directionFactor = useRef<number>(1);
   useAnimationFrame((_t, delta) => {
@@ -62,7 +62,7 @@ function ParallaxText({ baseVelocity = 100 }: ParallaxProps) {
 export default function AnimatedSkills() {
   return (
     <section className="md:hidden block overflow-hidden w-full h-full">
-      <ParallaxText baseVelocity={10}>
+      <ParallaxText baseVelocity={3}>
         <Skills />
       </ParallaxText>
     </section>
