@@ -592,15 +592,32 @@ nav.scrolled {
 /* BannerCont styles */
 
 .BannerCont {
-  @apply hidden md:flex flex-row justify-center items-center w-full h-fit mt-5 
+  @apply hidden md:flex flex-col justify-center items-center w-full h-fit mt-5 gap-5
+}
+
+.lgBanner {
+  @apply flex flex-row
 }
 
 .BannerImage {
   @apply object-fill rounded-2xl md:shadow-none scale-95 md:scale-100 h-full animate-in slide-in-from-left-20 duration-1000
 }
 
+.BannerImage {
+  box-shadow: 1px 0px 6px black;
+}
+
 .MobileBanner {
-  @apply flex md:hidden flex-row w-full h-full justify-start items-center bg-transparent gap-2 p-5 overflow-x-scroll overscroll-x-auto overflow-scroll custom-scrollbar
+  @apply flex md:hidden flex-col w-full h-full justify-start items-center bg-transparent gap-2 mb-5
+}
+
+.banner {
+  @apply flex flex-row overflow-x-scroll overscroll-x-auto overflow-scroll w-full h-full p-2
+}
+
+.banner {
+  scrollbar-width: thin;
+  scrollbar-color: dark;
 }
 
 .cont {
@@ -804,15 +821,15 @@ nav.scrolled {
 /* PLayer Section */
 
 .Player {
-  @apply flex relative justify-center items-center bg-white w-full h-full overflow-hidden border-b border-slate-200 duration-1000 ease-in-out
+  @apply flex relative justify-center items-center bg-white w-full h-full overflow-hidden duration-1000 ease-in-out
 }
 
 .video {
-  @apply z-0 h-[450px] md:h-full filter grayscale backdrop-brightness-75 brightness-75 scale-125 md:scale-100 lg:h-full w-full object-cover overflow-hidden 
+  @apply z-0 h-[480px] md:h-[480px] filter grayscale backdrop-brightness-75 brightness-75 scale-125 md:scale-100 lg:h-full w-full object-cover overflow-hidden 
 }
 
 .PlayerItems {
-  @apply flex flex-row justify-center items-center absolute w-full h-full my-16 md:mb-24
+  @apply flex flex-row justify-center items-center bg-teal-600 bg-opacity-10 absolute w-full h-full my-16 md:mb-24
 }
 
 .BrandName {
@@ -858,11 +875,11 @@ nav.scrolled {
 }
 
 .Cards {
-  @apply flex flex-row absolute w-screen h-fit justify-center items-center mt-56 md:mt-60 z-0
+  @apply flex absolute w-screen h-fit justify-center items-center mt-56 md:mt-60 z-0
 }
 
 .H1Crads {
-  @apply box-border flex flex-row justify-center items-center shadow-md shadow-teal-600 gap-2 outline-dashed outline-2 outline-white hover:bg-opacity-30 hover:bg-teal-100 hover:-translate-y-2 duration-1000 mt-10 md:mt-14 lg:mt-36 min-w-[100px] animate-in slide-in-from-top-5 text-white p-1 rounded-xl text-xs md:text-sm font-sans font-extralight
+  @apply box-border flex flex-row justify-center items-center gap-2 outline-dashed outline-[1px] shadow-md shadow-slate-800 outline-white hover:bg-opacity-30 hover:bg-teal-100 hover:-translate-y-2 duration-1000 mt-10 md:mt-14 lg:mt-36 min-w-[100px] animate-in slide-in-from-top-5 text-white p-1 rounded-xl text-xs md:text-sm font-sans font-extralight
 }
 
 
@@ -922,11 +939,11 @@ nav.scrolled {
 /* Blogs page Style */
 
 .Blog-box {
-  @apply flex flex-col justify-center items-center h-full w-full
+  @apply flex flex-col justify-center items-center h-full w-full p-1
 }
 
 .BlogBox {
-  @apply flex flex-col justify-center items-center gap-3 bg-white p-3 rounded-xl h-full w-full shadow-sm shadow-slate-300 outline outline-1 outline-slate-300
+  @apply flex flex-col justify-center items-center gap-3 bg-white p-3 rounded-xl h-full w-full shadow-md shadow-slate-300 outline outline-1 outline-slate-200
 }
 
 .Blog-Items {
@@ -934,7 +951,7 @@ nav.scrolled {
 }
 
 .Blog-image {
-  @apply object-cover aspect-video w-96 h-56 rounded-xl outline-dashed outline-1 outline-slate-400 opacity-90 bg-black bg-opacity-70
+  @apply object-cover aspect-video w-full h-56 rounded-xl outline-dashed outline-1 outline-slate-400 opacity-90 bg-black bg-opacity-70
 }
 
 .Blog-Title {
@@ -1006,12 +1023,12 @@ nav.scrolled {
 /* Slier */
 
 .example-container {
-  @apply flex relative justify-center items-center h-40 md:h-[20vw] lg:h-[30vw] bg-white bg-opacity-10 rounded-xl w-[98%] overflow-hidden mb-4 outline-dashed outline-2 outline-slate-300
+  @apply flex relative justify-center items-center h-40 md:h-[20vw] lg:h-[25vw] bg-white shadow-md shadow-slate-500 bg-opacity-10 rounded-xl w-[98%] overflow-hidden mb-4 outline outline-2 outline-slate-300 animate-in slide-in-from-top-20 duration-1000
 }
 
 .next,
 .prev {
-  @apply flex rounded-full shadow-2xl shadow-teal-500
+  @apply flex rounded-full shadow-sm shadow-slate-500 bg-white
 }
 
 .next {

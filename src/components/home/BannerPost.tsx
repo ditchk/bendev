@@ -13,13 +13,17 @@ const BannerPost = () => {
         damping: 10
         }}
     >
-        {BannerAssets.map((link: myBannerAssets) => {
+      <h1 className="adssOnTitle ml-5 mt-2">Best services you get!</h1>
+      <div className="lgBanner">
+         {BannerAssets.map((link: myBannerAssets) => {
             return (
               <div className="cont" key={link.index}>
                 <img src={link.Image} alt="" className="BannerImage" loading="lazy" />
               </div>
             )
-        })}
+          })}
+      </div>
+       
     </motion.div>
   )
 }

@@ -13,7 +13,7 @@ const variants = {
   center: {
     zIndex: 1,
     x: 0,
-    opacity: 0.9
+    opacity: 1
   },
   exit: (direction: number) => {
     return {
@@ -74,10 +74,10 @@ export const Example = () => {
         />
       </AnimatePresence>
       <div className="next" onClick={() => paginate(1)}>
-        <FcNext />
+        <FcNext className="bg-black bg-opacity-5 p-1 text-3xl rounded-full"/>
       </div>
       <div className="prev" onClick={() => paginate(-1)}>
-        <FcNext />
+        <FcNext className="bg-black bg-opacity-5 p-1 text-3xl rounded-full"/>
       </div>
     </>
   );

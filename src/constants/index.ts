@@ -188,19 +188,23 @@ export const AboutLinks = [
 export const BannerAssets = [
     {
         index: 0o1,
-        Image:'/assets/images/Branding and Business setup.png'
+        Image:'/assets/images/Branding and Business setup.png',
+        altText: "Business Setup"
     },
     {
         index: 0o2,
-        Image:'/assets/images/MoneybackGuaranteed.png'
+        Image:'/assets/images/MoneybackGuaranteed.png',
+        altText: "Money Back Guarantee"
     },
     {
         index: 0o3,
-        Image:'/assets/images/Show some love to your business.png'
+        Image:'/assets/images/Show some love to your business.png',
+        altText: "Social Media Promotion",
     },
     {
         index:0o4,
-        Image: '/assets/images/Beunique.png'
+        Image: '/assets/images/Beunique.png',
+        altText: "One of a kind Design",
         
     }
 ]

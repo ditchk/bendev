@@ -2,10 +2,16 @@ import { BannerAssets } from "@/constants";
 import { myBannerAssets } from "@/types";
 import React, { useEffect, useRef, useState } from "react";
 import Imageloader from "../loaders/Imageloader";
+import { useNavigate } from "react-router";
 
 const MobileBanner = () => {
     const [scrollPosition, setScrollPosition] = useState(0);
     const containerRef = useRef<HTMLDivElement>(null);
+    const navigate = useNavigate()
+
+    const handleClick = () => (
+      navigate('/contact')
+    )
 
     useEffect(() => {
         const container = containerRef.current;
@@ -56,17 +62,21 @@ const MobileBanner = () => {
 
   return (
     <div className="MobileBanner">
-       {BannerAssets.map((link: myBannerAssets) => {
+      <h1 className="adssOnTitle ml-5 mt-2">Best services you get!</h1>
+      <div className="banner">
+          {BannerAssets.map((link: myBannerAssets) => {
             return (
               <React.Fragment>
                 {isLoading ? (
                   <Imageloader />
                 ): (
-                  <img src={link.Image} alt="" loading="lazy" className="BannerImage outline outline-2 outline-white" />
+                  <img src={link.Image} onClick={handleClick} alt={link.altText} loading="lazy" className="BannerImage outline outline-2 filter hover:grayscale outline-white cursor-pointer" />
                 )}   
               </React.Fragment>
             )
-        })}
+          })}
+      </div>
+       
     </div>
   )
 }
