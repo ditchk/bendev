@@ -52,7 +52,7 @@ const BasicCheckOut = () => {
 
 
   return (
-    <div className="flex flex-1 justify-center items-center h-screen w-full">
+    <div className="flex justify-center items-center h-screen w-full">
       <Form {...form}>
       <motion.form
         style={{

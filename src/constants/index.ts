@@ -212,7 +212,7 @@ export const BannerAssets = [
 export const slides = [
     {
         id: 1,
-        content: '/assets/images/nextjs.jpg'
+        content: '/assets/images/next-auth.png'
     },
     {
         id: 2,
@@ -220,7 +220,7 @@ export const slides = [
     },
     {
         id: 3,
-        content: '/assets/images/next-auth.png'
+        content: '/assets/images/nextjs.jpg'
     },
     {
         id: 4,
@@ -234,9 +234,9 @@ export const slides = [
 
 
 export const images = [
-    "/assets/images/nextjs.jpg",
-    "/assets/images/bitcoin.jpg",
     "/assets/images/next-auth.png",
+    "/assets/images/bitcoin.jpg",
+    "/assets/images/nextjs.jpg",
     "/assets/images/appwrite.png",
     "/assets/images/SOL breakout.jpg"
 ]

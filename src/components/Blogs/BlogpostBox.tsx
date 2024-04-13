@@ -45,7 +45,7 @@ const BlogpostBox = ({ blog }: BlogBoxtProps) => {
             <Truncate text={blog.body} maxLength={150} />
             <div className="flex flex-row justify-between items-center gap-3 w-full h-fit">
                 <Link to={`/en/blogs/${blog.title}/${blog.$id}`} reloadDocument className="BlogLink">Read more</Link>
-                <BlogStats />
+                <BlogStats blog={blog} />
             </div>
         </div>
         <div className="CReactorInfo">

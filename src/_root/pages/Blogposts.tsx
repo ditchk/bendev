@@ -43,13 +43,13 @@ const Blogposts = () => {
       <div className="example-container">
         <Example />
       </div>
-      <h2 className="BlogpageText">Latest blog posts</h2>
+      <h2 className="BlogpageText">Read Our: Latest blog posts</h2>
       <div className="Blog-box">
        {isPostLoading && !blogs ? (
         <PostLoader /> || <h1>Somthing went wrong</h1>
        ) : (
         <motion.ul 
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center gap-2"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center p-1 md:p-2 lg:p-5 items-center gap-3"
           variants={container}
           initial="hidden"
           whileInView="animate"

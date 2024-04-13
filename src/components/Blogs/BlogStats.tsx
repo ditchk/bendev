@@ -1,32 +1,45 @@
-import { useState } from "react";
-import { useToast } from "../ui/use-toast";
+// BlogPost.js
+import { databases, myConfig } from '@/lib/appwrite/config';
+import { Models } from 'appwrite';
+import { useState } from 'react';
 
+type BlogStatProps = {
+  blog: Models.Document
+}
 
-const BlogStats = () => {
+const BlogStats = ({ blog }: BlogStatProps) => {
+  const [likes, setLikes] = useState(blog.likes || 0);
 
-  const [likes, setLikes] = useState(0)
-  const { toast } = useToast()
-  const user = true
+  const handleLikeClick = async () => {
+    try {
+      const updatedPost = await databases.updateDocument(
+        myConfig.databaseId,
+        myConfig.blogCollectionIld,
+        blog.$id,
+        {
+          likes: likes + 1
+        }
+      );
 
-  const setNewLikes = () => {
-    setLikes( 0 + 1 )
-  }
+      setLikes(updatedPost.likes);
+      return updatedPost
+    } catch (error) {
+      console.error('Error while liking the post: ', error);
+    }
+  };
 
-  if(!user) 
-    toast({
-    title: "Unauthorized action"
-  })
 
   return (
     <div className="flex flex-row justify-center items-center">
+
       <img 
         src="/assets/images/liked.png"
-        alt="" width={20} className="cursor-pointer hover:filter hover:sepia"
-        onClick={setNewLikes} 
+        alt="" width={20} className={`cursor-pointer hover:sepia`}
+        onClick={handleLikeClick} 
         />
         <p className="text-sm">{likes}</p>
     </div>
-  )
-}
+  );
+};
 
-export default BlogStats
+export default BlogStats;
