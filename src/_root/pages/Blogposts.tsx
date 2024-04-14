@@ -40,10 +40,11 @@ const Blogposts = () => {
 
   return (
     <div className="default_Container">
+      <h2 className="BlogpageText">Read Our: Latest blog posts</h2>
       <div className="example-container">
         <Example />
       </div>
-      <h2 className="BlogpageText">Read Our: Latest blog posts</h2>
+      
       <div className="Blog-box">
        {isPostLoading && !blogs ? (
         <PostLoader /> || <h1>Somthing went wrong</h1>

@@ -232,12 +232,22 @@ export const slides = [
     }
   ];
 
+export const category = [
+    {
+        name: "Finance",
+        link: "@"
+    }
+]
+
 
 export const images = [
     "/assets/images/next-auth.png",
+    "/assets/images/chart.jpg",
     "/assets/images/bitcoin.jpg",
+    "/assets/images/Memecoins.png",
     "/assets/images/nextjs.jpg",
     "/assets/images/appwrite.png",
+    "/assets/images/vr-tech.jpg",
     "/assets/images/SOL breakout.jpg"
 ]
 

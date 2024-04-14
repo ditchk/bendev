@@ -49,11 +49,12 @@ const BlogpostBox = ({ blog }: BlogBoxtProps) => {
             </div>
         </div>
         <div className="CReactorInfo">
-         <div className="flex flex-col justify-center w-fit h-fit gap-2 items-start">
+         <div className="flex flex-row justify-center items-center w-fit h-fit gap-2">
             <Link to={`/profile/${blog?.admin.$id}`} className="ProfileLink">
                 <img src={blog?.admin.imageUrl} alt="" className="rounded-full w-8 h-8 p-1 shadow-inner"/>
+                
             </Link>
-            
+            <small className="text-[8px] text-slate-400 font-bold">@{blog.admin.username}</small>
          </div>
          <div className="CreatedAt">
             <div>
