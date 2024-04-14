@@ -245,11 +245,13 @@ export const images = [
     "/assets/images/chart.jpg",
     "/assets/images/bitcoin.jpg",
     "/assets/images/spicychatai.png",
+    "/assets/images/prompt.jpg",
     "/assets/images/nextjs.jpg",
     "/assets/images/appwrite.png",
     "/assets/images/vr-tech.jpg",
     "/assets/images/SOL breakout.jpg"
 ]
+
 
   export const BasicServ = [
 

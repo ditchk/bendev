@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { motion, AnimatePresence, wrap } from "framer-motion";
 import { images } from "@/constants";
-import { FcNext } from "react-icons/fc";
+import { FcNext } from "react-icons/fc"
+
 
 const variants = {
   enter: (direction: number) => {

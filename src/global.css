@@ -1002,7 +1002,7 @@ nav.scrolled {
 }
 
 .BlogLink {
-  @apply w-fit bg-gradient-to-bl from-black to-teal-500 rounded-full p-2 text-white px-4 text-xs font-thin shadow-sm shadow-teal-500 outline outline-2 outline-white
+  @apply w-fit bg-gradient-to-bl from-black to-teal-600 rounded-full p-2 text-white px-4 text-xs font-thin shadow-md shadow-slate-400 outline outline-2 outline-white
 }
 
 .Intro {

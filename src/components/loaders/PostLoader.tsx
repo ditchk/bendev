@@ -9,9 +9,9 @@ lineSpinner.register()
     <div className="flex flex-1 justify-center items-start mt-20 w-full min-h-screen">
         <l-line-spinner
         size="40"
-        stroke="2"
+        stroke="3"
         speed="1.5" 
-        color="black" 
+        color="gray" 
         ></l-line-spinner>
     </div>
   )
