@@ -980,7 +980,7 @@ nav.scrolled {
 }
 
 .BlogpageText {
-  @apply text-base font-bold text-transparent bg-black shadow-sm text-white px-4 rounded-md bg-opacity-80 mb-9 border-t-2 border-slate-300 border-b-2
+  @apply text-base font-bold text-transparent bg-black shadow-sm text-white px-4 animate-in slide-in-from-top-10 duration-1000 rounded-md bg-opacity-80 mb-9 border-t-2 border-slate-300 border-b-2
 }
 
 .Hastags {
