@@ -951,15 +951,19 @@ nav.scrolled {
 }
 
 .Blog-image {
-  @apply object-cover aspect-video w-full h-56 rounded-xl outline-dashed outline-1 outline-slate-400 opacity-90 bg-black bg-opacity-70
+  @apply object-fill aspect-video w-full h-60 opacity-90 bg-black bg-opacity-70 hover:scale-105 filter hover:grayscale duration-1000
 }
 
 .Blog-Title {
   @apply text-base text-start w-full md:text-lg text-transparent bg-clip-text bg-gradient-to-bl from-teal-500 via-black to-teal-500 font-bold border-dashed border-b border-slate-500 tracking-tight cursor-pointer select-none
 }
 
+.Blog-Title2 {
+  @apply text-xs text-start w-full md:text-sm text-transparent bg-clip-text bg-gradient-to-bl from-teal-500 via-black to-teal-500 font-bold tracking-tight cursor-pointer select-none
+}
+
 .BlogBody {
-  @apply text-sm text-gray-400 
+  @apply text-xs text-gray-500 
 }
 
 .CReactorInfo {
@@ -997,7 +1001,7 @@ nav.scrolled {
 }
 
 .PrimaryBoxBlog {
-  @apply flex flex-col justify-center items-center h-full w-full p-3 md:p-5 gap-10 rounded-lg shadow-md shadow-slate-100
+  @apply flex flex-col justify-center items-center h-full w-full p-3 md:p-5 gap-10 rounded-lg shadow-md shadow-slate-400 outline outline-2 outline-slate-300
 }
 
 .BlogLink {
@@ -1005,11 +1009,11 @@ nav.scrolled {
 }
 
 .Intro {
-  @apply text-sm text-teal-500 italic font-serif
+  @apply text-xs text-teal-500 italic font-serif
 }
 
 .summary {
-  @apply italic text-sm text-slate-400
+  @apply italic text-xs text-slate-400
 }
 
 .commentSec {

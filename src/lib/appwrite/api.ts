@@ -325,6 +325,19 @@ export async function getRecentBlogs(){
   return posts
 }
 
+export async function getFeaturedBlogs () {
+  const blogs = await databases.listDocuments(
+    myConfig.databaseId,
+    myConfig.blogCollectionIld,
+    [Query.orderDesc('$createdAt'), Query.limit(4)]
+  )
+
+  if(!blogs) throw Error
+
+  return blogs
+}
+
+
 export async function getBlogById(blogId?: string) {
   if (!blogId) throw Error;
 

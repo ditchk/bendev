@@ -1,14 +1,17 @@
-import { useGetBlogById } from "@/lib/Queries/QueriesAndMutations"
+import { UseGetFeaturedBlogs, useGetBlogById } from "@/lib/Queries/QueriesAndMutations"
 import { useNavigate, useParams } from "react-router"
 import PostLoader from "../loaders/PostLoader";
 import { Link } from "react-router-dom";
-import { multiFormatDateString } from "@/constants";
 import { Input } from "../ui/input";
 import { Button } from "../ui/button";
+import { Models } from "appwrite";
+import Controller from "../loaders/Controller";
+
+
 const Blogpage = () => {
   const { id } = useParams()
   const { data: blog, isPending: IsBlogLoading } = useGetBlogById(id || '');
-
+  const { data: blogs, isPending: isBlogsloading} = UseGetFeaturedBlogs()
 
   const Navigate = useNavigate()
 
@@ -22,7 +25,7 @@ const Blogpage = () => {
         <div className="MainBlogpage">
           <div className="PrimaryBoxBlog">
             <div className="flex flex-col justify-center items-start w-full p-2 gap-2">
-              <img src={blog?.imageUrl} width={500} alt="" className="object-cover rounded-xl aspect-video" />
+              <img src={blog?.imageUrl} alt="" className="object-fill w-1/2 h-96 rounded-xl outline outline-1 outline-slate-300" />
               <ul className="Hastags">
                 {blog?.tags.map((tag: string) => (
                     <li className="hashTag">
@@ -37,30 +40,39 @@ const Blogpage = () => {
             <p className="BlogBody">{blog?.body}</p>
             <h3 className="summary">{blog?.summary}</h3>
           </div>
-       
-          <div className="CReactorInfo">
-            <div className="flex flex-col justify-center gap-1 items-start">
-              <Link to={`/profile/${blog?.admin.$id}`} className="ProfileLink">
-                  <img src={blog?.admin.imageUrl} alt="" className="rounded-full w-8 h-8 p-1 shadow-inner"/>
-              </Link>
-            </div>
-            <div className="CreatedAt">
-              <div>
-                  <p className="creatorName">Written by {blog?.admin.name}</p>
-              </div>
-              <p className="CreatedAtText">{multiFormatDateString(blog?.$createdAt$)}</p>
-            </div>
-          </div>
           <div className="flex flex-row justify-center items-start w-full gap-2">
             <Input type="text" placeholder="Add a comment" className="commentSec"></Input>
             <Button className="Commenting">Comment</Button>
           </div>
+          <div className="flex flex-row items-center w-fit">
+            <Link to={'/blogs'} className="BlogLink" reloadDocument onClick={handleclick}>Back to Blogs</Link>
+          </div>
           </div>
         </div>
       )}
-      <div className="flex flex-row justify-between items-center w-full h-fit md:px-8 my-4">
-        <Link to={'/blogs'} className="BlogLink" reloadDocument onClick={handleclick}>Back to Blogs</Link>
-        <Link to={'/blogs'} className="BlogLink" reloadDocument onClick={handleclick}>Share Blog</Link>
+      
+      <div className="flex flex-col justify-center items-center md:items-start w-full h-full p-1 md:p-8 mt-8 border-t-2 border-slate-300">
+      <h2 className="BlogpageText">Related Blogs:</h2>
+        {isBlogsloading ? (
+          <Controller />
+        ) : <ul className="flex flex-col justify-start items-center gap-5">
+           {blogs?.documents.map((blog: Models.Document) => (
+            
+            <li 
+              key={blog.id}
+              style={{ position: "relative", transformOrigin: "top center" }}
+              className="flex justify-start items-center text-center bg-white shadow-md shadow-slate-400 p-1 rounded-xl outline outline-2 outline-slate-200 w-full h-fit"
+            >
+              <Link to={`/en/blogs/${blog.title}/${blog.$id}`} reloadDocument>
+                <div className="flex flex-row justify-start items-center w-full gap-5">
+                <img src={blog.imageUrl} alt="" width={50} className="rounded-full" />
+                <h3 className="Blog-Title2">{blog.title}</h3>
+              </div>
+              </Link>
+              
+            </li>
+          ))}
+        </ul>}
       </div>
     </div>
   )

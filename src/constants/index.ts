@@ -244,7 +244,7 @@ export const images = [
     "/assets/images/next-auth.png",
     "/assets/images/chart.jpg",
     "/assets/images/bitcoin.jpg",
-    "/assets/images/Memecoins.png",
+    "/assets/images/spicychatai.png",
     "/assets/images/nextjs.jpg",
     "/assets/images/appwrite.png",
     "/assets/images/vr-tech.jpg",
