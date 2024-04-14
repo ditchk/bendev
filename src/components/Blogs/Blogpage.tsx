@@ -25,7 +25,7 @@ const Blogpage = () => {
         <div className="MainBlogpage">
           <div className="PrimaryBoxBlog">
             <div className="flex flex-col justify-center items-start w-full p-2 gap-2">
-              <img src={blog?.imageUrl} alt="" className="object-fill w-1/2 h-96 rounded-xl outline outline-1 outline-slate-300" />
+              <img src={blog?.imageUrl} alt="" className="object-fill w-full md:w-3/4 lg:w-1/2 h-fit md:h-96 rounded-xl outline outline-1 outline-slate-300" />
               <ul className="Hastags">
                 {blog?.tags.map((tag: string) => (
                     <li className="hashTag">

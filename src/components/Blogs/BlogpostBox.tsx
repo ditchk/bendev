@@ -29,7 +29,7 @@ const BlogpostBox = ({ blog }: BlogBoxtProps) => {
         ref={ref}
     >
         <div className="Blog-Items">
-            <div className="flex justify-center items-center overflow-hidden rounded-xl outline outline-1 outline-slate-400">
+            <div className="flex justify-center items-center overflow-hidden aspect-video rounded-xl outline outline-1 outline-slate-300">
                 <img src={blog.imageUrl || '/assets/images/broken-image.png'} alt={blog.title} className="Blog-image" />
             </div>  
             <Link to={`/en/blogs/${blog.title}/${blog.$id}`}>
@@ -49,12 +49,11 @@ const BlogpostBox = ({ blog }: BlogBoxtProps) => {
             </div>
         </div>
         <div className="CReactorInfo">
-         <div className="flex flex-row justify-center items-center w-fit h-fit gap-2">
+         <div className="flex flex-row justify-center items-center w-fit h-fit gap-1">
             <Link to={`/profile/${blog?.admin.$id}`} className="ProfileLink">
-                <img src={blog?.admin.imageUrl} alt="" className="rounded-full w-8 h-8 p-1 shadow-inner"/>
-                
+                <img src={blog?.admin.imageUrl} alt="" className="rounded-full w-8 h-8 p-1 shadow-inner outline outline-2 outline-slate-300"/>
             </Link>
-            <small className="text-[8px] text-slate-400 font-bold">@{blog.admin.username}</small>
+            <small className="text-[8px] text-slate-400 font-serif font-bold">@{blog.admin.username}</small>
          </div>
          <div className="CreatedAt">
             <div>
