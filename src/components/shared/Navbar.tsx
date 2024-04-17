@@ -19,7 +19,7 @@ const Navbar = () => {
       </Link>
       <div className="hidden md:flex flex-row justify-center items-center gap-5 pr-3">
         <Socials />
-        <Link to={'/mycv'} className="Linkme">
+        <Link to={'/about'} className="Linkme">
           Explore
         </Link>
       </div>
