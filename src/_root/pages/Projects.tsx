@@ -1,4 +1,3 @@
-import ProjectP from "@/components/projects/ProjectP";
 import ProjectContainer from "@/components/shared/ProjectContainer";
 import ProjectLoder from "@/components/shared/ProjectLoder";
 import { ProjectLinks } from "@/constants";
@@ -34,7 +33,7 @@ const { data: projects , isPending: isProjectloading, /*isError: isProjectError*
 
   return (
     <div className="default_Container">
-      <ProjectP src={'/assets/videos/grid.mp4'} />
+      {/* <ProjectP src={'/assets/videos/grid.mp4'} /> */}
       <div className="custom_ProjectBox mt-16">
         <div className="hidden lg:flex justify-start items-center w-fit gap-2 my-2 p-2 shadow-2xl rounded-2xl z-30">
          <ul className="flex flex-col gap-2 w-fit p-1 animate-in slide-in-from-left-32">
