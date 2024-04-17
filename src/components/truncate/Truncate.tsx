@@ -15,7 +15,7 @@ const truncate = (text: string, maxLength: number) => {
 const Truncate: React.FC<TruncateProps> = ({ text, maxLength }) => {
   return (
     <div>
-        <p className="BlogBody">{truncate(text, maxLength)}</p>
+        <p className="BlogBody font-thin">{truncate(text, maxLength)}</p>
     </div>
   )
 };

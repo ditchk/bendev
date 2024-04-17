@@ -1,11 +1,11 @@
 import { Models } from "appwrite"
 import Truncate from "../truncate/Truncate"
 import { Link } from "react-router-dom"
-import { multiFormatDateString } from "@/constants"
 import TruncateTitle from "../truncate/TruncateTitle"
 import { motion, useInView } from "framer-motion"
 import { useRef } from "react"
 import BlogStats from "./BlogStats"
+import { formatDate } from "@/lib/utils/utils"
 
 
 type BlogBoxtProps = {
@@ -29,8 +29,8 @@ const BlogpostBox = ({ blog }: BlogBoxtProps) => {
         ref={ref}
     >
         <div className="Blog-Items">
-            <div className="flex justify-center items-center overflow-hidden aspect-video rounded-xl outline outline-1 outline-slate-300">
-                <img src={blog.imageUrl || '/assets/images/broken-image.png'} alt={blog.title} className="Blog-image" />
+            <div className="flex justify-center items-center min-h-42 overflow-hidden aspect-video rounded-xl outline outline-1 outline-slate-300">
+                <img src={blog.imageUrl || '/assets/images/broken-image.png'} width={400} alt={blog.title} className="Blog-image" />
             </div>  
             <Link to={`/en/blogs/${blog.title}/${blog.$id}`}>
                 <TruncateTitle text={blog.title} maxLength={30} />
@@ -42,7 +42,7 @@ const BlogpostBox = ({ blog }: BlogBoxtProps) => {
                     </li>
                 ))}
             </ul>
-            <Truncate text={blog.body} maxLength={150} />
+            <Truncate text={blog.body} maxLength={160} />
             <div className="flex flex-row justify-between items-center gap-3 w-full h-fit">
                 <Link to={`/en/blogs/${blog.title}/${blog.$id}`} reloadDocument className="BlogLink">Read more</Link>
                 <BlogStats blog={blog} />
@@ -59,7 +59,7 @@ const BlogpostBox = ({ blog }: BlogBoxtProps) => {
             <div>
                 <p className="creatorName">Created by {blog.admin.name}</p>
             </div>
-            <p className="CreatedAtText">{multiFormatDateString(blog.$createdAt)}</p>
+            <p className="CreatedAtText">{formatDate(blog.$createdAt)}</p>
          </div>
         </div>
     </motion.div>

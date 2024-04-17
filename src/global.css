@@ -968,11 +968,11 @@ nav.scrolled {
 }
 
 .CreatedAt {
-  @apply flex flex-col justify-center items-center text-gray-400 font-light font-mono text-xs
+  @apply flex flex-col justify-center items-end text-gray-400 font-light font-mono text-xs
 }
 
 .CreatedAtText {
-  @apply font-normal underline underline-offset-2 text-xs text-end capitalize w-full
+  @apply font-serif underline underline-offset-2 text-xs text-end font-extralight capitalize w-full
 }
 
 .creatorName {
