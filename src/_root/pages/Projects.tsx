@@ -1,5 +1,7 @@
+import Error404 from "@/components/404/Error404";
 import ProjectContainer from "@/components/shared/ProjectContainer";
 import ProjectLoder from "@/components/shared/ProjectLoder";
+// import { useToast } from "@/components/ui/use-toast";
 import { ProjectLinks } from "@/constants";
 import { useGetRecentProjects } from "@/lib/Queries/QueriesAndMutations";
 import { ProjectLink } from "@/types";
@@ -8,8 +10,11 @@ import { motion } from 'framer-motion'
 import { Link } from "react-router-dom";
 
 const Projects = () => {
-const { data: projects , isPending: isProjectloading, /*isError: isProjectError*/ } = useGetRecentProjects();
-
+const { data: projects , isPending: isProjectloading, isError: isProjectError } = useGetRecentProjects();
+// const { toast } = useToast()
+if (isProjectError) return (
+  <Error404 />
+)
   const container = {
     hidden: { opacity: 1, scale: 0 },
     visible: {
@@ -33,7 +38,6 @@ const { data: projects , isPending: isProjectloading, /*isError: isProjectError*
 
   return (
     <div className="default_Container">
-      {/* <ProjectP src={'/assets/videos/grid.mp4'} /> */}
       <div className="custom_ProjectBox mt-16">
         <div className="hidden lg:flex justify-start items-center w-fit gap-2 my-2 p-2 shadow-2xl rounded-2xl z-30">
          <ul className="flex flex-col gap-2 w-fit p-1 animate-in slide-in-from-left-32">

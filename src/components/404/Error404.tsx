@@ -2,7 +2,7 @@ import ProjectP from "../projects/ProjectP"
 
 const Error404 = () => {
   return (
-    <div>
+    <div className="h-screen z-0">
        <ProjectP src={'/assets/videos/grid.mp4'} />
     </div>
   )
