@@ -62,12 +62,12 @@ const BasicCheckOut = () => {
         }}
         ref={ref} 
         onSubmit={form.handleSubmit(onSubmit)} 
-        className="flex flex-col justify-center items-center h-fit w-fit p-5 bg-white shadow-md shadow-slate-400 rounded-xl space-y-2"
+        className="flex flex-col justify-center items-center h-fit w-full p-5 m-10 bg-white rounded-xl space-y-2"
       >
         <Link to={'/'}>
           <img src="/assets/images/logo1.png" alt="" width={100} />
         </Link>
-        <h2 className="txt-xs font-bold text-center">Package confirmation</h2>
+        <h2 className="txt-xs font-bold text-center">Package information</h2>
         <FormField
             control={form.control}
             name="name"
@@ -108,7 +108,7 @@ const BasicCheckOut = () => {
           )}
         />
         <div className="flex flex-row justify-center items-center">
-        <Button type="submit" className="custom_button">{isLoading ? (
+        <Button type="submit" className="custom_button rounded-full w-full">{isLoading ? (
           <div className="flex flex-row justify-center items-center gap-3">
             <SubmitLoader />
           </div>
