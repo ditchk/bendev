@@ -9,7 +9,7 @@ const Navbar = () => {
 
 
   return (
-    <nav id='navbar' className={`navbar bg-white animate-in slide-in-from-top-10 duration-1000 shadow-sm shadow-slate-500 border-b border-slate-200 w-full`}>
+    <nav id='navbar' className={`navbar bg-white animate-in slide-in-from-top-10 duration-1000 shadow-sm shadow-slate-400 border-b border-slate-100 w-full`}>
       <Link 
       to={'/'}
       className="flex flex-row justify-center items-center gap-2"
