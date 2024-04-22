@@ -123,7 +123,7 @@
 }
 
 .menubar {
-  @apply flex flex-col py-5 gap-2 justify-start items-center top-[20rem] absolute
+  @apply flex flex-col py-5 gap-2 justify-start items-center top-full absolute
   w-full left-0 h-96 rounded-t-3xl p-2 outline outline-2 outline-slate-300 bg-white shadow-lg shadow-slate-500 animate-in slide-in-from-bottom-40 duration-1000
  }
 
