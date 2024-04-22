@@ -6,6 +6,7 @@ import { HiOutlineMenuAlt3 } from 'react-icons/hi';
 import { motion } from 'framer-motion';
 import { MdOutlineClose } from "react-icons/md";
 import Socials from './Socials';
+// import Socials from './Socials';
 
 
 
@@ -87,7 +88,7 @@ const toggleMenu = () => {
                to={link.route}
                onClick={toggleMenu}
                reloadDocument
-               className={`w-24 text-white outline outline-1 outline-cyan-50 p-1 animate-in zoom-in-125 duration-700 text-xs text-center bg-opacity-80 bg-black rounded-full ${isActive && "bg-gradient-to-tl from-black to-teal-600 text-sm"}`}>
+               className={`w-24 text-white bg-teal-950 outline outline-1 outline-cyan-50 p-1 animate-in zoom-in-125 duration-700 text-xs text-center rounded-full ${isActive && "bg-gradient-to-tl from-black to-teal-600 text-sm scale-110"}`}>
                  {link.label}
              </NavLink>
             

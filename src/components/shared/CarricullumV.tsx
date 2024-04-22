@@ -14,7 +14,7 @@ const CarricullumV = () => {
       }, [isInView])
 
   return (
-    <div className="flex flex-col justify-center items-center m-2 mx-2 md:mx-10 bg-opacity-5">
+    <div className="flex flex-col justify-center items-center mt-10 m-2 mx-2 md:mx-10 bg-opacity-5">
       <div className="flex flex-col justify-center items-center w-[98%] outline outline-2 rounded-md outline-slate-200 p-5 my-5 mb-10 bg-white shadow-md shadow-slate-400 bg-opacity-10 animate-in zoom-in-75 duration-700">
         <h1 className="text_prim">BENSON KIGOCI</h1>
         <h2 className="text_sec mb-5 text-shadow">Full Stack Developer && UI/UX Designer</h2>

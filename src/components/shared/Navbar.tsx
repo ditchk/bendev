@@ -1,16 +1,15 @@
 import { Link } from 'react-router-dom';
 import Socials from './Socials';
 import MobileMenu from './MobileMenu';
-import { useScrollDirection } from '@/constants';
 
 
 const Navbar = () => {
 
-  const scrollDirection = useScrollDirection();
+  // const scrollDirection = useScrollDirection();
 
 
   return (
-    <nav id='navbar' className={`navbar bg-white backdrop-blur-sm rounded-2xl shadow-md shadow-slate-500 animate-in slide-in-from-top-10 duration-1000 outline outline-2 outline-slate-200 my-2 w-[98%] lg:w-[99%] left-[3.5px] md:left-[7.5px] lg:[6.5px]  ${scrollDirection === 'down' ? 'hide shadow-none' : ''}`}>
+    <nav id='navbar' className={`navbar bg-white animate-in slide-in-from-top-10 duration-1000 shadow-sm shadow-slate-500 border-b border-slate-200 w-full`}>
       <Link 
       to={'/'}
       className="flex flex-row justify-center items-center gap-2"
@@ -19,7 +18,7 @@ const Navbar = () => {
       </Link>
       <div className="hidden md:flex flex-row justify-center items-center gap-5 pr-3">
         <Socials />
-        <Link to={'/about'} className="Linkme">
+        <Link to={'/about'} reloadDocument className="Linkme">
           Explore
         </Link>
       </div>

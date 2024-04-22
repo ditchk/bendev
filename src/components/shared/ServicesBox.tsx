@@ -4,6 +4,7 @@ import { Button } from "../ui/button"
 import { motion, useInView } from 'framer-motion'
 import { useEffect, useRef } from "react"
 import { useNavigate } from "react-router"
+import Truncate from "../truncate/Truncate"
 
 type ServiceBoxProps = {
     service: Models.Document
@@ -39,16 +40,14 @@ const ServicesBox = ({service} : ServiceBoxProps ) => {
         </div>
         <div className="ServiceContainer">
             <div className="Image-Cont">
-                <img src={service.imageUrl} loading="lazy" alt={"project Management"} className="ImageUrl-sty"/>
+                <img src={service.imageUrl} loading="lazy" alt={"project Management"} width={350} className="ImageUrl-sty"/>
             </div>
-            <p className="Descript_text">
-                {service.ProductDescription}
-            </p>
+            <Truncate text={service.ProductDescription} maxLength={200} />
             <div className="Button-sect">
-                <Button className="custom_button ml-2" onClick={handleclick}>
+                <Button className="SerViceCtA" onClick={handleclick}>
                     <small>Get a quote</small>
                 </Button>
-                <Button className="custom_button ml-2">
+                <Button className="SerViceCtA">
                     <small className="animate-pulse">Starting at 200$</small>
                 </Button>
             </div>

@@ -27,27 +27,27 @@ const PackagesSect = () => {
         </div>
         <div className="flex flex-col justify-center items-center w-full h-full">
           <div className="flex flex-col md:flex-row justify-center gap-5 w-full h-fit">
-              <div className="flex flex-row justify-between items-center bg-black bg-opacity-25 outline-dashed outline-2 w-full gap-10 p-2 outline-slate-100 shadow-md shadow-gray-200 duration-1000 rounded-full cursor-pointer" onClick={handleClick}>
+              <div className="flex flex-row justify-between items-center mb-2 bg-white outline text-slate-700 hover:text-white outline-2 w-full gap-10 p-2 outline-slate-200 hover:shadow-md hover:bg-teal-950 hover:shadow-slate-500 duration-1000 rounded-full cursor-pointer" onClick={handleClick}>
                 <h1 className="PackageTitleText">Understand Our Pricing</h1>
                   {!openContainer ? (
-                    <FaAngleDown className="rounded-full text-xl cursor-pointer text-white text-center duration-1000 -rotate-90 animate-in" onClick={handleClick}/>
+                    <FaAngleDown className="rounded-full text-xl cursor-pointer text-slate-400 hover:text-white text-center duration-1000 -rotate-90 animate-in" onClick={handleClick}/>
                   ) : (
-                    <FaAngleUp  className="rounded-full text-xl cursor-pointer text-white text-center duration-1000 rotate-180 animate-in" onClick={handleClick}/>
+                    <FaAngleUp  className="rounded-full text-xl cursor-pointer text-slate-400 hover:text-white text-center duration-1000 rotate-180 animate-in" onClick={handleClick}/>
                   )}
               </div> 
-              <div className="flex flex-row justify-between items-center w-full bg-black bg-opacity-25 outline-dashed outline-2 gap-10 p-2 outline-slate-100 duration-1000 shadow-md shadow-gray-200 rounded-full cursor-pointer" onClick={handleClick2}>
+              <div className="flex flex-row justify-between items-center mb-2 w-full bg-white outline text-slate-700 hover:text-white outline-2 gap-10 p-2 outline-slate-200 duration-1000 hover:bg-teal-950 hover:shadow-md hover:shadow-slate-500 rounded-full cursor-pointer" onClick={handleClick2}>
                 <h1 className="PackageTitleText">Frequently asked questions(FAQs)</h1>
                   {!openContainer2 ? (
-                    <FaAngleDown className="rounded-full text-xl cursor-pointer text-white text-center animate-in duration-1000 -rotate-90" onClick={handleClick2}/>
+                    <FaAngleDown className="rounded-full text-xl cursor-pointer text-slate-400 hover:text-white text-center animate-in duration-1000 -rotate-90" onClick={handleClick2}/>
                   ) : (
-                    <FaAngleUp  className="rounded-full text-xl cursor-pointer text-white text-center animate-in duration-1000 rotate-180" onClick={handleClick2}/>
+                    <FaAngleUp  className="rounded-full text-xl cursor-pointer text-slate-400 hover:text-white text-center animate-in duration-1000 rotate-180" onClick={handleClick2}/>
                   )}
               </div>
           </div>
           <div className="flex flex-col justify-center items-center md:flex-row w-full h-full">
                             <div className="ContainerExplaPackage relative">
               {openContainer && (
-                <div className="flex flex-col justify-center items-center bg-gradient-to-br from-black to-teal-500 rounded-2xl p-3 min-h-[250px] animate-in slide-in-from-bottom-10 top-16 duration-1000 ">
+                <div className="flex flex-col justify-center items-center bg-gradient-to-br w-[98%] from-black to-teal-500 rounded-2xl p-3 min-h-[250px] animate-in slide-in-from-bottom-10 top-16 duration-1000 ">
                   <h1 className="ExplainText">We offer a wide variety of services.This way we have clearly outlined the packages that best suit your needs</h1>
                   <p className="text-xs text-white text-start">We understand we might not mention or cover what you maybe be intrested in, for this reason we ask you to send us a message on our contact page and we will reach out to you with a solution</p>
                   <Link to={'/contact'} reloadDocument className="p-2 mt-10 bg-black text-white outline outline-2 outline-white bg-opacity-20 hover:bg-opacity-70">Reach Out!</Link>
@@ -56,7 +56,7 @@ const PackagesSect = () => {
             </div>
             <div className="ContainerExplaPackage relative">
               {openContainer2 && (
-                <div className="flex flex-col justify-center items-center bg-gradient-to-br from-black to-teal-500 rounded-2xl p-3 min-h-[250px] animate-in slide-in-from-bottom-10 top-16 duration-1000 ">
+                <div className="flex flex-col justify-center items-center bg-gradient-to-br w-[98%] from-black to-teal-500 rounded-2xl p-3 min-h-[250px] animate-in slide-in-from-bottom-10 top-16 duration-1000 ">
                   <ul className="list-decimal list-inside text-xs text-slate-200">
                     <li>Do you offer custom services?</li>
                     <li>I cant see the service i'm looking for on the packages provided. Do you offer more services?</li>

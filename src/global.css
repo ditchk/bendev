@@ -61,8 +61,7 @@
 
 .navbar {
   position: fixed;
-  top: 0;
-  height: 45px;
+  height: 50px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -73,10 +72,10 @@
   transition: top 0.5s ease-in;
 }
 
-.navbar.hide {
+/* .navbar.hide {
   top: -60px;
   transition-behavior: bottom 0.2s, ease-out;
-}
+} */
 
 
 
@@ -99,7 +98,7 @@
 }
 
 .default_Container {
-  @apply flex flex-col justify-center items-center h-full w-auto p-1 mb-5 mt-16
+  @apply flex flex-col justify-center items-center h-full w-auto p-1 mb-5 pt-16
 }
 
 .projectPage {
@@ -120,12 +119,12 @@
 
 /* mobile menu */
 .MobileMenu {
-  @apply flex z-20 p-1 w-fit
+  @apply flex z-20 w-full
 }
 
 .menubar {
-  @apply flex flex-col pt-2 pb-8 gap-2 justify-start items-center top-14 absolute
-  w-full left-0 h-fit rounded-3xl p-2 outline outline-2 outline-slate-300 bg-white shadow-md shadow-slate-500 animate-in slide-in-from-bottom-5 duration-500
+  @apply flex flex-col py-5 gap-2 justify-start items-center top-[20rem] absolute
+  w-full left-0 h-96 rounded-t-3xl p-2 outline outline-2 outline-slate-300 bg-white shadow-lg shadow-slate-500 animate-in slide-in-from-bottom-40 duration-1000
  }
 
 
@@ -495,15 +494,19 @@ nav.scrolled {
 }
 
 .ServiceContainer {
-  @apply flex flex-col justify-center gap-2 h-fit w-full relative outline-2 outline outline-slate-100 p-2 rounded-tr-3xl shadow-sm shadow-black hover:shadow-md hover:shadow-slate-600 duration-1000 !important
+  @apply flex flex-col justify-center gap-2 h-fit w-[98%] relative outline-2 outline outline-slate-100 p-2 shadow-sm shadow-black hover:shadow-md hover:shadow-slate-600 duration-1000 !important
 }
 
 .Image-Cont {
-  @apply flex flex-1 justify-center items-center h-fit w-auto rounded-tr-3xl overflow-hidden rounded-bl-3xl outline outline-2 outline-slate-300 !important
+  @apply flex flex-1 justify-center items-center h-fit w-auto rounded-tr-3xl overflow-hidden rounded-bl-3xl outline outline-2 outline-slate-200 !important
 }
 
 .ImageUrl-sty {
-  @apply flex  hover:filter hover:grayscale duration-500 cursor-pointer hover:scale-105 w-auto min-h-[10rem] sm:min-h-[12rem] md:min-h-[14rem] lg:min-h-[15rem] rounded-tr-3xl overflow-hidden rounded-bl-3xl !important
+  @apply  hover:filter hover:grayscale duration-500 cursor-pointer hover:scale-105 rounded-tr-3xl overflow-hidden object-cover aspect-video rounded-bl-3xl !important
+}
+
+.SerViceCtA {
+  @apply bg-teal-950 ml-1 rounded-full text-xs px-3 h-8 outline outline-1 outline-slate-500
 }
 
 .Descript_text {
@@ -808,7 +811,7 @@ nav.scrolled {
 }
 
 .PackageTitleText {
-  @apply text-xs font-semibold text-white text-center capitalize
+  @apply text-xs font-semibold text-center capitalize
 }
 
 .ParagraPhtitle {
@@ -826,7 +829,7 @@ nav.scrolled {
 }
 
 .PlayerItems {
-  @apply flex flex-row justify-center items-center bg-teal-600 bg-opacity-10 absolute w-full h-full my-16 md:mb-24
+  @apply flex flex-row justify-center items-center bg-teal-200 bg-opacity-10 absolute w-full h-full my-16 md:mb-24
 }
 
 .BrandName {
@@ -940,7 +943,7 @@ nav.scrolled {
 }
 
 .BlogBox {
-  @apply flex flex-col justify-center items-center gap-3 bg-white p-3 rounded-xl h-full w-full shadow-lg shadow-slate-400 outline outline-2 outline-slate-200
+  @apply flex flex-col justify-center items-center gap-3 bg-white p-3 rounded-xl h-full w-full shadow-sm shadow-slate-600 outline outline-2 outline-slate-200
 }
 
 .Blog-Items {
@@ -1024,7 +1027,7 @@ nav.scrolled {
 /* Slier */
 
 .example-container {
-  @apply flex relative justify-center items-center h-40 md:h-[20vw] lg:h-[25vw] bg-white shadow-md shadow-slate-500 bg-opacity-10 rounded-xl w-[98%] overflow-hidden mb-4 outline outline-2 outline-slate-300 animate-in slide-in-from-top-20 duration-1000
+  @apply flex relative justify-center items-center h-40 md:h-[20vw] lg:h-[25vw] bg-white shadow-inner shadow-slate-400 bg-opacity-10 rounded-xl w-full overflow-hidden mb-4 outline outline-2 outline-slate-200 animate-in slide-in-from-top-20 duration-1000
 }
 
 .next,
@@ -1042,7 +1045,7 @@ nav.scrolled {
 }
 
 .slider-image {
-  @apply absolute w-full object-cover h-full opacity-10;
+  @apply absolute w-full rounded-2xl object-cover h-full p-1 opacity-10;
 }
 
 .refresh {
