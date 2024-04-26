@@ -61,7 +61,7 @@
 
 .navbar {
   position: fixed;
-  height: 60px;
+  height: 55px;
   display: flex;
   flex-direction: row;
   align-items: center;
