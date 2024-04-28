@@ -745,11 +745,11 @@ nav.scrolled {
 /* Packages */
 
 .BasicPackageBox {
-  @apply flex flex-col justify-center items-start h-fit p-2 w-full md:max-w-xl min-h-full animate-in slide-in-from-bottom-14 duration-1000 bg-white rounded-2xl outline outline-2 outline-slate-200 hover:shadow-lg hover:shadow-cyan-600
+  @apply flex flex-col justify-center items-start h-fit p-2 w-full md:max-w-xl min-h-full animate-in slide-in-from-bottom-14 duration-1000 bg-white rounded-2xl outline outline-2 outline-slate-200 hover:shadow-md hover:shadow-slate-600
 }
 
 .BasicPackageBox2 {
-  @apply flex flex-col justify-center items-start h-fit p-2 w-full md:max-w-xl min-h-full animate-in bg-teal-800 slide-in-from-bottom-14 duration-1000 rounded-2xl outline outline-2 outline-slate-200 hover:shadow-lg hover:shadow-cyan-600
+  @apply flex flex-col justify-center items-start h-fit p-2 w-full md:max-w-xl min-h-full animate-in bg-teal-800 slide-in-from-bottom-14 duration-1000 rounded-2xl outline outline-2 outline-slate-200 hover:shadow-md hover:shadow-slate-600
 }
 
 .HeadContent {

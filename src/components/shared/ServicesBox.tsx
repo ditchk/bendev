@@ -43,7 +43,7 @@ const ServicesBox = ({service} : ServiceBoxProps ) => {
                 <img src={service.imageUrl} loading="lazy" alt={"project Management"} width={350} className="ImageUrl-sty"/>
             </div>
             <Truncate text={service.ProductDescription} maxLength={200} />
-            <div className="Button-sect">
+            <div className="Button-sect mt-5">
                 <Button className="SerViceCtA" onClick={handleclick}>
                     <small>Get a quote</small>
                 </Button>

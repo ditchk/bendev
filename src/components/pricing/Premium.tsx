@@ -53,7 +53,7 @@ const Premium = () => {
                     </li>
                 </ul>
         </div>
-        <Button className="mt-2" onClick={handleclick}>Get Started</Button>
+        <Button className="NavButton mt-2" onClick={handleclick}>Get Started</Button>
     </div>
 </div>
   )

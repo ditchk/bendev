@@ -45,7 +45,7 @@ const CarricullumV = () => {
       <section>
         <Welcome />
       </section>
-      <section id="roadmap" className="flex flex-1 w-full h-full outline outline-1 outline-slate-100 py-4 md:px-24 p-2">
+      <section id="roadmap" className="flex flex-1 w-full h-full outline outline-1 outline-slate-100 py-4 md:px-24 p-3">
         <div className="flex flex-col justify-start items-start">
             <h1 className="text_title text-shadow">PROFFESSIONAL ROADMAP</h1>
             <p className="text-xs sm:text-xs p-1 md:p-5 rounded-sm font-normal font-sans mb-2">
@@ -56,7 +56,7 @@ const CarricullumV = () => {
             </p>
         </div>
       </section>
-      <section id="qualify" className="flex flex-1 w-full h-full py-4 md:px-24 p-3">
+      <section id="qualify" className="flex flex-1 w-full h-full  outline outline-1 outline-slate-100 py-4 md:px-24 p-3">
         <div className="flex flex-col justify-start items-start">
             <h1 className="text_title mb-5 text-shadow">QUALIFICATIONS && CERTIFICATIONS</h1>
             <p className="text-xs md:ml-5 sm:text-xs p-1 md:p-10 rounded-sm font-normal font-sans mb-2">
