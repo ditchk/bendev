@@ -114,7 +114,7 @@
 }
 
 .logo-text {
-  @apply text-center text-lg md:text-xl text-shadow2 font-semibold font-serif text-transparent bg-clip-text bg-gradient-to-l from-fuchsia-700 via-teal-600 to-blue-700
+  @apply text-center text-xl md:text-xl text-shadow2 font-semibold font-serif text-transparent bg-clip-text bg-gradient-to-l from-fuchsia-700 via-teal-600 to-blue-700
 }
 
 /* mobile menu */
@@ -157,12 +157,15 @@ nav.scrolled {
   @apply flex bg-gradient-to-tl w-fit from-sky-900 text-xs via-black outline outline-1 outline-white to-cyan-600 text-white text-center rounded-md h-9 p-2
 }
 
+.NavButton {
+  @apply px-3 touch-pan-right h-8 text-xs bg-gradient-to-bl from-teal-800 via-slate-800 to-teal-950
+}
 
 .outline_btn {
   @apply bg-transparent shadow shadow-slate-400 border border-cyan-300 font-serif font-medium text-white hover:bg-cyan-100 hover:text-black h-12 duration-1000
 }
 .link_side {
-  @apply justify-center items-center bg-white rounded-md
+  @apply justify-center items-center
 }
 .social_icons {
   @apply text-xl p-[4px] rounded-md cursor-pointer hover:scale-105 duration-1000 outline outline-2 outline-slate-100
@@ -825,7 +828,7 @@ nav.scrolled {
 }
 
 .video {
-  @apply z-0 h-[450px] md:h-full filter backdrop-brightness-75 brightness-75 scale-125 md:scale-100 lg:h-full w-full object-cover overflow-hidden 
+  @apply z-0 h-[500px] md:h-[550px] filter grayscale backdrop-brightness-75 brightness-75 scale-125 md:scale-100 lg:h-full w-full object-cover overflow-hidden 
 }
 
 .PlayerItems {
@@ -1027,7 +1030,7 @@ nav.scrolled {
 /* Slier */
 
 .example-container {
-  @apply flex relative justify-center items-center h-40 md:h-[20vw] lg:h-[25vw] bg-white shadow-inner shadow-slate-400 bg-opacity-10 rounded-xl w-full overflow-hidden mb-4 outline outline-2 outline-slate-200 animate-in slide-in-from-top-20 duration-1000
+  @apply flex relative justify-center items-center h-40 md:h-[20vw] lg:h-[25vw] bg-black bg-opacity-10 rounded-xl w-full overflow-hidden mb-4 outline outline-2 outline-slate-200 animate-in slide-in-from-top-20 duration-1000
 }
 
 .next,

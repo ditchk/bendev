@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import Socials from './Socials';
-import MobileMenu from './MobileMenu';
+import { Button } from '../ui/button';
 
 
 const Navbar = () => {
@@ -23,8 +23,8 @@ const Navbar = () => {
         </Link>
       </div>
       <div className="flex flex-row justify-center items-center md:hidden p-0 m-0 w-fit">
-        <MobileMenu />
-        </div>
+        <Button className="NavButton">Get Started</Button>
+      </div>
     </nav>
   )
 }
