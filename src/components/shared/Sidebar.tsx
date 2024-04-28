@@ -47,7 +47,7 @@ const Sidebar = () => {
        {!menuOpen ? (
         <CgMenuGridR className="flex justify-end left-10 w-fit bg-gradient-to-tl from-black to-teal-600 text-white p-1 rounded-3xl cursor-pointer text-xl animate-in rotate-180 slide-in-from-left-10 duration-1000" onClick={toggleMenu} />
        ) : (
-        <MdClose onClick={toggleMenu} className="text-2xl text-white rounded-full  p-1 cursor-pointer bg-gradient-to-t from-red-950 to-cyan-200 animate-in rotate-180 slide-in-from-left-20 duration-1000"/>
+        <MdClose onClick={toggleMenu} className="text-2xl text-white rounded-md absolute justify-end right-0  p-1 cursor-pointer bg-gradient-to-t from-red-950 to-cyan-200 animate-in rotate-180 slide-in-from-left-20 duration-1000"/>
        )}
      {menuOpen && (
          <ul 
