@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import Socials from './Socials';
-import GradientButton from '../gradient/GradientButton';
+import { Button } from '../ui/button';
 
 
 const Navbar = () => {
@@ -23,7 +23,7 @@ const Navbar = () => {
         </Link>
       </div>
       <div className="flex flex-row justify-center items-center md:hidden p-0 m-0 w-fit">
-        <GradientButton />
+        <Button className="NavButton">Get Started</Button>
       </div>
     </nav>
   )
