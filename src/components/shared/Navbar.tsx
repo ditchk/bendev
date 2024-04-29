@@ -1,12 +1,15 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Socials from './Socials';
 import { Button } from '../ui/button';
 
 
 const Navbar = () => {
+  
+  const Navigate = useNavigate()
 
-  // const scrollDirection = useScrollDirection();
-
+  const handleclick = () => {
+      Navigate('/opportunities&careers')
+  }
 
   return (
     <nav id='navbar' className={`navbar bg-white animate-in slide-in-from-top-10 duration-1000 shadow-sm shadow-slate-400 border-b border-slate-100 w-full`}>
@@ -23,7 +26,7 @@ const Navbar = () => {
         </Link>
       </div>
       <div className="flex flex-row justify-center items-center md:hidden p-0 m-0 w-fit">
-        <Button className="NavButton">Start Learning</Button>
+        <Button className="NavButton" onClick={handleclick}>Start Learning</Button>
       </div>
     </nav>
   )
