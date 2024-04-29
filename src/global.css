@@ -158,7 +158,7 @@ nav.scrolled {
 }
 
 .NavButton {
-  @apply px-3 touch-pan-right h-8 text-xs bg-gradient-to-bl from-teal-800 via-slate-800 to-teal-950
+  @apply px-3 touch-pan-right h-8 text-xs bg-gradient-to-bl from-teal-800 via-slate-800 to-teal-950  outline outline-2 outline-white
 }
 
 .outline_btn {
