@@ -2,3 +2,6 @@ Sitemap: https://bensworkspace.app/sitemap.xml
 
 User-agent: *
 Disallow: /api
+allow: /*?*
+Allow: /*/*?$
+Crawl-delay: 10
