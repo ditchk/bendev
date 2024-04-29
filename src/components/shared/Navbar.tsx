@@ -23,7 +23,7 @@ const Navbar = () => {
         </Link>
       </div>
       <div className="flex flex-row justify-center items-center md:hidden p-0 m-0 w-fit">
-        <Button className="NavButton">Get Started</Button>
+        <Button className="NavButton">Start Learning</Button>
       </div>
     </nav>
   )

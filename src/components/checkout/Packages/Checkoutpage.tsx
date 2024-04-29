@@ -13,7 +13,7 @@ import { Input } from "../../ui/input";
 import { PackageInfoValidation } from "@/lib/validation";
 import { Textarea } from "../../ui/textarea";
 import { Button } from "../../ui/button";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useAddNewOrder } from "@/lib/Queries/QueriesAndMutations";
 import SubmitLoader from "@/components/loaders/SubmitLoader";
 import { useToast } from "@/components/ui/use-toast";
@@ -23,7 +23,7 @@ const BasicCheckOut = () => {
 
   const {mutateAsync:  OrderSubmission, isPending : isLoading} = useAddNewOrder()
   const { toast } = useToast()
-
+  const navigate = useNavigate()
   const form = useForm<z.infer<typeof PackageInfoValidation>>({
     resolver: zodResolver(PackageInfoValidation),
     defaultValues: {
@@ -40,7 +40,7 @@ const BasicCheckOut = () => {
     return newOrder && toast({
       title: "Thank you for choosing us: keep an eye on your email inbox",
       description: "I will be contacting you shortly",
-    })
+    }), navigate( "/success")
   }
 
   const ref = useRef(null)

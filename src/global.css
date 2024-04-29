@@ -836,7 +836,7 @@ nav.scrolled {
 }
 
 .BrandName {
-  @apply text-2xl text-center capitalize md:text-3xl lg:text-5xl mb-5 p-2 font-extrabold font-serif text-transparent bg-gradient-to-l bg-clip-text from-teal-500 to-pink-100
+  @apply text-3xl text-center text-shadow capitalize md:text-5xl lg:text-6xl p-2 font-extrabold font-serif text-transparent bg-gradient-to-l bg-clip-text from-teal-500 to-pink-100
 }
 
 .BrandName2 {

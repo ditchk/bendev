@@ -51,7 +51,7 @@ const Sidebar = () => {
        )}
      {menuOpen && (
          <ul 
-          className="flex flex-col gap-2 w-fit p-1 animate-in slide-in-from-left-32"
+          className="flex flex-col gap-2 w-fit p-1 animate-in slide-in-from-left-32 duration-1000"
          >
          {sideBarLinks.map((link: MyNavLink) => {
          const isActive = pathname === link.route;
