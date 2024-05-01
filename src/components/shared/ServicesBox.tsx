@@ -33,21 +33,21 @@ const ServicesBox = ({service} : ServiceBoxProps ) => {
       }}
       ref={ref}
     className="serviceBox">
-        <div>
+        <div className="titleBox">
             <h1 className="BoxText">
                 {service.productTitle}
             </h1>
         </div>
         <div className="ServiceContainer">
             <div className="Image-Cont">
-                <img src={service.imageUrl} loading="lazy" alt={"project Management"} width={350} className="ImageUrl-sty"/>
+                <img src={service.imageUrl} loading="lazy" alt={"project Management"} width={450} className="ImageUrl-sty"/>
             </div>
             <Truncate text={service.ProductDescription} maxLength={200} />
-            <div className="Button-sect mt-5">
-                <Button className="SerViceCtA" onClick={handleclick}>
+            <div className="Button-sect mt-10 mb-2">
+                <Button className="NavButton border-white border-2" onClick={handleclick}>
                     <small>Get a quote</small>
                 </Button>
-                <Button className="SerViceCtA">
+                <Button className="NavButton border-white border-2">
                     <small className="animate-pulse">Starting at 200$</small>
                 </Button>
             </div>

@@ -3,7 +3,7 @@ import MobileBanner from "@/components/home/MobileBanner"
 import MotionIcons from "@/components/home/MotionIcons"
 import PackagesSect from "@/components/home/PackagesSect"
 import Player from "@/components/home/Player"
-import Services from "@/components/shared/Services"
+import ServiceBox from "@/components/shared/Services"
 
 
 const Home = () => {
@@ -15,7 +15,7 @@ const Home = () => {
       <MotionIcons />
       <BannerPost />
       <PackagesSect />
-      <Services />
+      <ServiceBox />
     </div>
   )
 }

@@ -14,7 +14,7 @@ const Premium = () => {
 
   return (
     <div className="BasicPackageBox2">
-    <span className="PackageText text-teal-700">Premium package</span>
+    <span className="PackageText text-transparent bg-clip-text bg-gradient-to-bl from-fuchsia-500 via-black to-red-300 text-shadow">Premium package</span>
     <div className="flex flex-col justify-center items-start p-5">
         <div className="PriceTag text-slate-200">
             <s className="OriginalHrp">1000$</s>

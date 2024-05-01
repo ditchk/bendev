@@ -1,3 +1,4 @@
+// /* eslint-disable react-refresh/only-export-components */
 // import { useNavigate } from "react-router-dom";
 // import { createContext, useContext, useEffect, useState } from "react";
 
@@ -69,15 +70,15 @@
 //   useEffect(() => {
 //     const cookieFallback = localStorage.getItem("cookieFallback");
 //     if (
-//       cookieFallback === "[]" ||
-//       cookieFallback === null ||
+//     //   cookieFallback === "[]" ||
+//     //   cookieFallback === null ||
 //       cookieFallback === undefined
 //     ) {
-//       navigate("/auth/signin");
+//       navigate("/sign-in");
 //     }
 
 //     checkAuthUser();
-//   }, []);
+//   }, [navigate]);
 
 //   const value = {
 //     user,

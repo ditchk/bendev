@@ -13,7 +13,13 @@
 
 
 :root {
-  color-scheme: auto;
+  --background: #ffffff;
+  --text-primary: #333;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text-primary);
 }
 
 @layer base {
@@ -330,7 +336,7 @@ nav.scrolled {
 }
 
 .text_title3 {
-  @apply text-xs lg:text-base mb-5 font-bold font-sans border-b-2 border-white text-transparent text-center bg-clip-text bg-gradient-to-l from-blue-700 via-black to-cyan-800
+  @apply text-xs lg:text-base font-bold font-sans border-b-2 border-white text-transparent text-center bg-clip-text bg-gradient-to-l from-blue-700 via-black to-cyan-800
 }
 
 .text-li {
@@ -471,11 +477,11 @@ nav.scrolled {
 }
 
 .serviceBox {
-  @apply flex flex-col justify-center h-fit w-full items-center p-5 border border-slate-100 !important
+  @apply flex flex-col justify-center h-full w-full items-center p-2 !important
 }
 
 .BoxText {
-  @apply text_title3 text-shadow
+  @apply text_title3 text-shadow text-center
 }
 
 /* S */
@@ -497,7 +503,11 @@ nav.scrolled {
 }
 
 .ServiceContainer {
-  @apply flex flex-col justify-center gap-2 h-fit w-[98%] relative outline-2 outline outline-slate-100 p-2 shadow-sm shadow-black hover:shadow-md hover:shadow-slate-600 duration-1000 !important
+  @apply flex flex-col justify-center gap-2 h-full w-[98%] relative p-2 shadow-md shadow-slate-300 rounded-md hover:shadow-md hover:shadow-teal-600 duration-1000 !important
+}
+
+.titleBox {
+  @apply flex justify-center items-center w-full h-fit shadow-md shadow-slate-400 rounded-md mb-4
 }
 
 .Image-Cont {
@@ -745,11 +755,11 @@ nav.scrolled {
 /* Packages */
 
 .BasicPackageBox {
-  @apply flex flex-col justify-center items-start h-fit p-2 w-full md:max-w-xl min-h-full animate-in slide-in-from-bottom-14 duration-1000 bg-white rounded-2xl outline outline-2 outline-slate-200 hover:shadow-md hover:shadow-slate-600
+  @apply flex flex-col justify-center items-start h-fit p-2 max-w-md md:max-w-sm min-h-full animate-in slide-in-from-bottom-14 duration-1000 bg-white rounded-2xl outline outline-2 outline-slate-200 shadow-md shadow-slate-600
 }
 
 .BasicPackageBox2 {
-  @apply flex flex-col justify-center items-start h-fit p-2 w-full md:max-w-xl min-h-full animate-in bg-teal-800 slide-in-from-bottom-14 duration-1000 rounded-2xl outline outline-2 outline-slate-200 hover:shadow-md hover:shadow-slate-600
+  @apply flex flex-col justify-center items-start h-fit p-2 max-w-md md:max-w-sm min-h-full animate-in bg-teal-950 slide-in-from-bottom-14 duration-1000 rounded-2xl outline outline-2 outline-slate-200 shadow-md  shadow-slate-600
 }
 
 .HeadContent {
@@ -824,11 +834,11 @@ nav.scrolled {
 /* PLayer Section */
 
 .Player {
-  @apply flex relative justify-center items-center bg-white w-full h-full overflow-hidden duration-1000 ease-in-out
+  @apply flex relative justify-center items-center bg-white z-0 w-full max-h-max overflow-hidden duration-1000 ease-in-out
 }
 
 .video {
-  @apply z-0 h-[500px] md:h-[550px] filter grayscale backdrop-brightness-75 brightness-75 scale-125 md:scale-100 lg:h-full w-full object-cover overflow-hidden 
+  @apply h-[500px] md:h-[550px] filter grayscale backdrop-brightness-75 brightness-75 scale-125 md:scale-100 lg:h-full w-full object-cover overflow-hidden 
 }
 
 .PlayerItems {

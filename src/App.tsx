@@ -45,7 +45,6 @@ function App() {
             </Route>
 
             {/* Maintainance Error page */}
-
             <Route element={<RootLayout />}>
               <Route path="/projects" element={<Projects />} />
             </Route>

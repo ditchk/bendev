@@ -53,7 +53,7 @@ export const footerLinks = [
     },
     {
         name: 'blog posts',
-        route: '/blog',
+        route: '/blogs',
     },
     {
         name: 'join us',

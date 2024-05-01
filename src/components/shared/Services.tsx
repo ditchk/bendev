@@ -5,7 +5,7 @@ import { Models } from "appwrite";
 import { useEffect, useRef } from "react";
 import { useInView } from "framer-motion";
 
-const Services = () => {
+const ServiceBox = () => {
 
   const { data: products, isPending: isLoading } = useGetAllServices();
 
@@ -36,4 +36,4 @@ const Services = () => {
   )
 }
 
-export default Services
+export default ServiceBox
