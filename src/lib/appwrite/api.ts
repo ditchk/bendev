@@ -300,7 +300,7 @@ export async function SearchDB() {
   try {
     const result = await databases.listDocuments(
       myConfig.databaseId,
-      myConfig.productCollectionId
+      myConfig.productCollectionId,
       [Query.orderAsc(''), Query.limit(12)]
     )
     
@@ -329,7 +329,7 @@ export async function getFeaturedBlogs () {
   const blogs = await databases.listDocuments(
     myConfig.databaseId,
     myConfig.blogCollectionIld,
-    [Query.orderDesc('$createdAt'), Query.limit(4)]
+    [Query.orderDesc('$createdAt'), Query.limit(8)]
   )
 
   if(!blogs) throw Error

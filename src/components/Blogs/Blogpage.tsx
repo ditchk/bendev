@@ -24,23 +24,27 @@ const Blogpage = () => {
       {IsBlogLoading ? <PostLoader /> : (
         <div className="MainBlogpage">
           <div className="PrimaryBoxBlog">
-            <div className="flex flex-col justify-center items-start w-full h-full md:aspect-video lg:max-h-96 overflow-hidden rounded-xl gap-2 lg:shadow-md shadow-slate-400 lg:outline outline-2 outline-slate-300">
-              <img src={blog?.imageUrl} alt="" className="object-fit w-full md:w-3/4 lg:w-full lg:aspect-video rounded-xl " />
+            <div className="flex flex-col justify-center items-center w-fit h-full md:aspect-video lg:max-h-96 overflow-hidden rounded-xl gap-10 lg:shadow-md shadow-slate-400 lg:outline outline-2 outline-slate-300">
+              <img src={blog?.imageUrl} alt="" className="object-fit w-full md:w-3/4 lg:aspect-video rounded-xl " />
+              
+            </div>
+          <div className="flex flex-col gap-10">
+            <h1 className="Blog-Title">{blog?.title}</h1>
               <ul className="Hastags">
                 {blog?.tags.map((tag: string) => (
                     <li className="hashTag">
                         #{tag}
                     </li>
                 ))}
-            </ul>
-            </div>
-          <div className="flex flex-col gap-10">
-            <h1 className="Blog-Title">{blog?.title}</h1>
+              </ul>
             <h2 className="Intro">{blog?.introduction}</h2>
             <p className="BlogBody">{blog?.body}</p>
             <h3 className="summary">{blog?.summary}</h3>
           </div>
-          <div className="flex flex-row justify-center items-start w-full gap-2">
+          <div className="flex flex-row justify-start items-center w-full gap-2">
+            <Link to={`/profile/${blog?.admin.$id}`} className="ProfileLink">
+                <img src={blog?.admin.imageUrl} alt="" className="rounded-full w-10 h-10 p-1 shadow-inner outline outline-2 outline-slate-300"/>
+            </Link>
             <Input type="text" placeholder="Add a comment" className="commentSec"></Input>
             <Button className="Commenting">Comment</Button>
           </div>

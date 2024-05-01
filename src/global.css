@@ -1030,11 +1030,11 @@ nav.scrolled {
 }
 
 .commentSec {
-  @apply shadow-inner shadow-teal-500 rounded-none rounded-b-xl rounded-tl-xl
+  @apply shadow-inner shadow-teal-500 w-60 rounded-none rounded-b-xl rounded-tl-xl
 }
 
 .Commenting {
-  @apply bg-teal-800 rounded-lg
+  @apply bg-teal-800 rounded-lg hover:bg-teal-950 duration-1000
 }
 
 /* Slier */

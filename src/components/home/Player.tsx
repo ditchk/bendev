@@ -42,7 +42,7 @@ const Player: React.FC<PlayerProps> = ({ src }) => {
           <Cards />
         </div>
       </div>
-      <div className='flex justify-self-end top-[94%] md:top[95%] lg:top-[96%] z-50 absolute w-screen h-14 bg-gradient-to-t from-white 10% via-white border-t border-2 border-white 5% to-teal-950 rounded-t-2xl' />
+      <div className='flex justify-self-end top-[94%] md:top[95%] lg:top-[96%] absolute w-screen h-10 bg-gradient-to-t from-white 10% via-white to-teal-900 border-t border border-white rounded-t-2xl' />
     </div>
   )
 }
