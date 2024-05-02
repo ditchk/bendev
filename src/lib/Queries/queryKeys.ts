@@ -17,7 +17,8 @@ export enum QUERY_KEYS {
     GET_RECENT_PRODUCTS = "getRecentProducts",
     GET_ALL_SERVICES = "getALLServices",
     GET_RECENT_BLOGS= "getRecentBlogs",
-    GET_BLOGS= 'getRecentProjects'
+    // GET_BLOGS= 'getRecentProjects',
+    SEARCH_POSTS= "getSearchPosts"
     // GET_USER_POSTS = "getUserPosts",
     // GET_FILE_PREVIEW = "getFilePreview",
   

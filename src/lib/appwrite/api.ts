@@ -355,3 +355,19 @@ export async function getBlogById(blogId?: string) {
     console.log(error);
   }
 }
+
+export async function searchPosts(searchTerm: string) {
+  try {
+    const posts = await databases.listDocuments(
+      myConfig.databaseId,
+      myConfig.blogCollectionIld,
+      [Query.search("caption", searchTerm)]
+    );
+
+    if (!posts) throw Error;
+
+    return posts;
+  } catch (error) {
+    console.log(error);
+  }
+}

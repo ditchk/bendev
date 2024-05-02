@@ -503,11 +503,11 @@ nav.scrolled {
 }
 
 .ServiceContainer {
-  @apply flex flex-col justify-center gap-2 h-full w-[98%] relative p-2 shadow-md shadow-slate-300 rounded-md hover:shadow-md hover:shadow-teal-600 duration-1000 !important
+  @apply flex flex-col justify-center gap-2 h-full w-[98%] relative hover:-translate-y-2 p-2 cursor-pointer rounded-md hover:shadow-md hover:shadow-teal-600 duration-500 !important
 }
 
 .titleBox {
-  @apply flex justify-center items-center w-full h-fit shadow-md shadow-slate-400 rounded-md mb-4
+  @apply flex justify-center items-center w-full h-fit rounded-full outline outline-2 outline-slate-300 mb-4 bg-transparent backdrop-blur-sm
 }
 
 .Image-Cont {

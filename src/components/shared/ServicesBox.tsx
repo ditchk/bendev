@@ -5,6 +5,7 @@ import { motion, useInView } from 'framer-motion'
 import { useEffect, useRef } from "react"
 import { useNavigate } from "react-router"
 import Truncate from "../truncate/Truncate"
+import { Link } from "react-router-dom"
 
 type ServiceBoxProps = {
     service: Models.Document
@@ -13,7 +14,6 @@ type ServiceBoxProps = {
 const ServicesBox = ({service} : ServiceBoxProps ) => {
     const ref = useRef(null)
     const isInView = useInView(ref)
-
     useEffect(() => {
 
       }, [isInView])
@@ -21,24 +21,34 @@ const ServicesBox = ({service} : ServiceBoxProps ) => {
       const Navigate = useNavigate()
 
         const handleclick = () => {
-            Navigate('/packages/premium')
+         Navigate('/packages/premium')
         }
 
   return (
-    <motion.div 
-    style={{
-        transform: isInView ? "none" : "translateY(10px)",
-        opacity: isInView ? 1 : 0,
-        transition: "all 0.5s cubic-bezier(0.7, 0.55, 0.65, 1) 0.5s"
-      }}
-      ref={ref}
-    className="serviceBox">
-        <div className="titleBox">
+    <div className="serviceBox">
+        <motion.div 
+            style={{
+                transform: isInView ? "none" : "translateX(10px)",
+                opacity: isInView ? 1 : 0,
+                transition: "all 0.5s cubic-bezier(0.7, 0.55, 0.65, 1) 0.5s"
+            }}
+            ref={ref} 
+            // onClick={handleclick}
+            className="titleBox">
             <h1 className="BoxText">
                 {service.productTitle}
             </h1>
-        </div>
-        <div className="ServiceContainer">
+        </motion.div>
+        <Link to={`/services/${service.$id}`} className="w-full">
+            <motion.div
+            style={{
+                transform: isInView ? "none" : "translateX(-10px)",
+                opacity: isInView ? 1 : 0,
+                transition: "all 0.5s cubic-bezier(0.7, 0.55, 0.65, 1) 0.5s"
+              }}
+              ref={ref} 
+              onClick={handleclick}
+            className="ServiceContainer">
             <div className="Image-Cont">
                 <img src={service.imageUrl} loading="lazy" alt={"project Management"} width={450} className="ImageUrl-sty"/>
             </div>
@@ -51,8 +61,9 @@ const ServicesBox = ({service} : ServiceBoxProps ) => {
                     <small className="animate-pulse">Starting at 200$</small>
                 </Button>
             </div>
-        </div>
-    </motion.div>
+         </motion.div>
+        </Link>
+    </div>
   )
 }
 
