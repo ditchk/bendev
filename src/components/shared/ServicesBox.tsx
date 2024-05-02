@@ -3,7 +3,6 @@ import { Button } from "../ui/button"
 
 import { motion, useInView } from 'framer-motion'
 import { useEffect, useRef } from "react"
-import { useNavigate } from "react-router"
 import Truncate from "../truncate/Truncate"
 import { Link } from "react-router-dom"
 
@@ -17,12 +16,6 @@ const ServicesBox = ({service} : ServiceBoxProps ) => {
     useEffect(() => {
 
       }, [isInView])
-
-      const Navigate = useNavigate()
-
-        const handleclick = () => {
-         Navigate('/packages/premium')
-        }
 
   return (
     <div className="serviceBox">
@@ -39,22 +32,21 @@ const ServicesBox = ({service} : ServiceBoxProps ) => {
                 {service.productTitle}
             </h1>
         </motion.div>
-        <Link to={`/services/${service.$id}`} className="w-full">
+        <Link reloadDocument to={`/packages/premium`} className="w-full">
             <motion.div
             style={{
                 transform: isInView ? "none" : "translateX(-10px)",
                 opacity: isInView ? 1 : 0,
                 transition: "all 0.5s cubic-bezier(0.7, 0.55, 0.65, 1) 0.5s"
               }}
-              ref={ref} 
-              onClick={handleclick}
+              ref={ref}
             className="ServiceContainer">
             <div className="Image-Cont">
                 <img src={service.imageUrl} loading="lazy" alt={"project Management"} width={450} className="ImageUrl-sty"/>
             </div>
             <Truncate text={service.ProductDescription} maxLength={200} />
             <div className="Button-sect mt-10 mb-2">
-                <Button className="NavButton border-white border-2" onClick={handleclick}>
+                <Button className="NavButton border-white border-2">
                     <small>Get a quote</small>
                 </Button>
                 <Button className="NavButton border-white border-2">
