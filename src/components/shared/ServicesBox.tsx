@@ -21,7 +21,7 @@ const ServicesBox = ({service} : ServiceBoxProps ) => {
     <div className="serviceBox">
         <motion.div 
             style={{
-                transform: isInView ? "none" : "translateX(10px)",
+                transform: isInView ? "none" : "ZoomIn",
                 opacity: isInView ? 1 : 0,
                 transition: "all 0.5s cubic-bezier(0.7, 0.55, 0.65, 1) 0.5s"
             }}
@@ -35,7 +35,7 @@ const ServicesBox = ({service} : ServiceBoxProps ) => {
         <Link reloadDocument to={`/packages/premium`} className="w-full">
             <motion.div
             style={{
-                transform: isInView ? "none" : "translateX(-10px)",
+                transform: isInView ? "none" : "FadeIn",
                 opacity: isInView ? 1 : 0,
                 transition: "all 0.5s cubic-bezier(0.7, 0.55, 0.65, 1) 0.5s"
               }}
