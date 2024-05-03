@@ -507,11 +507,11 @@ nav.scrolled {
 }
 
 .titleBox {
-  @apply flex justify-center items-center w-full h-fit rounded-full outline outline-2 outline-slate-300 mb-4 bg-transparent backdrop-blur-sm
+  @apply flex justify-center items-center w-full h-fit mb-4
 }
 
 .Image-Cont {
-  @apply flex flex-1 justify-center items-center h-fit w-auto rounded-tr-3xl overflow-hidden rounded-bl-3xl outline outline-2 outline-slate-200 !important
+  @apply flex flex-1 justify-center items-center h-fit w-auto rounded-tr-3xl overflow-hidden rounded-bl-3xl !important
 }
 
 .ImageUrl-sty {
