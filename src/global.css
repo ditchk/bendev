@@ -956,7 +956,7 @@ nav.scrolled {
 }
 
 .BlogBox {
-  @apply flex flex-col justify-center items-center gap-3 bg-white p-3 rounded-xl h-full w-full shadow-sm shadow-slate-600 outline outline-2 outline-slate-200
+  @apply flex flex-col justify-center items-center gap-3 bg-white p-3 h-full w-full outline rounded-lg duration-0 outline-1 outline-slate-300
 }
 
 .Blog-Items {
@@ -964,7 +964,7 @@ nav.scrolled {
 }
 
 .Blog-image {
-  @apply object-fill w-fit bg-black bg-opacity-70 hover:scale-105 filter hover:grayscale duration-1000
+  @apply object-fill w-fit min-h-[350px] bg-black bg-opacity-70 opacity-90 hover:scale-105 filter hover:grayscale duration-1000
 }
 
 .Blog-Title {
@@ -1018,7 +1018,7 @@ nav.scrolled {
 }
 
 .BlogLink {
-  @apply w-fit bg-gradient-to-bl from-black to-teal-600 rounded-full p-2 text-white px-4 text-xs font-thin shadow-md shadow-slate-400 outline outline-2 outline-white
+  @apply w-fit bg-gradient-to-bl from-black to-teal-600 rounded-full p-2 text-white px-4 text-xs font-thin outline outline-2 outline-white
 }
 
 .Intro {
@@ -1040,7 +1040,7 @@ nav.scrolled {
 /* Slier */
 
 .example-container {
-  @apply flex relative justify-center items-center h-40 md:h-[20vw] lg:h-[25vw] bg-black bg-opacity-10 rounded-xl w-full overflow-hidden mb-4 outline outline-2 outline-slate-200 animate-in slide-in-from-top-20 duration-1000
+  @apply flex relative justify-center items-center h-40 md:h-[20vw] lg:h-[25vw] bg-black bg-opacity-10 shadow-inner shadow-slate-400 rounded-xl w-full overflow-hidden mb-4 outline outline-2 outline-slate-200 animate-in slide-in-from-top-20 duration-1000
 }
 
 .next,
