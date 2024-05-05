@@ -42,16 +42,16 @@ const Sidebar = () => {
     onScroll={hiddenNav} 
     animate={{ x: 0 }}
     transition={{ delay: 0 }}   
-    className="flex flex-col md:justify-center items-center bg-transparent mt-24 p-1 gap-5 shadow-2xl shadow-fuchsia-400 h-fit w-fit outline outline-2 backdrop-blur-sm outline-white rounded-r-lg fixed z-50 animate-in slide-in-from-left-24 snap-always"
+    className="flex flex-col md:justify-center items-center bg-transparent mt-24 p-1 gap-5 shadow-2xl shadow-teal-800 h-fit w-fit outline outline-2 backdrop-blur-sm outline-white rounded-r-lg absolute z-50 animate-in slide-in-from-left-24 duration-1000 snap-always"
     >
        {!menuOpen ? (
         <CgMenuGridR className="flex justify-end left-10 w-fit bg-gradient-to-tl from-black to-teal-600 text-white p-1 rounded-3xl cursor-pointer text-xl animate-in rotate-180 slide-in-from-left-10 duration-1000" onClick={toggleMenu} />
        ) : (
-        <MdClose onClick={toggleMenu} className="text-2xl text-white rounded-full right-0  p-1 cursor-pointer border-white bg-gradient-to-t from-red-950 to-cyan-200 animate-in rotate-180 slide-in-from-left-20 duration-1000"/>
+        <MdClose onClick={toggleMenu} className="text-2xl text-red-500 rounded-full right-0  p-1 cursor-pointer border-white bg-white"/>
        )}
      {menuOpen && (
          <ul 
-          className="flex flex-col gap-2 w-fit p-1 animate-in slide-in-from-left-32 duration-1000"
+          className="flex flex-col gap-2 w-fit p-1 animate-in zoom-in-110 duration-1000"
          >
          {sideBarLinks.map((link: MyNavLink) => {
          const isActive = pathname === link.route;

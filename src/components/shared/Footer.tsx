@@ -77,7 +77,7 @@ const Footer = () => {
                   {footerLinks.map((link: myFooterLinks) => {
                     return (
                       <li key={link.route} className="links_footer">
-                        <Link to={link.route}
+                        <Link reloadDocument to={link.route}
                         >{link.name}</Link>
                       </li>
                     )
@@ -87,7 +87,7 @@ const Footer = () => {
                   {moreFooterLinks.map((link: myMoreFooterLinks) => {
                     return (
                       <li key={link.name2} className="links_footer">
-                        <Link to={link.route2}
+                        <Link reloadDocument to={link.route2}
                         >{link.name2}</Link>
                       </li>
                     )

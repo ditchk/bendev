@@ -201,7 +201,7 @@ nav.scrolled {
 }
 
 .links_footer {
-  @apply text-sm text-start w-full font-serif hover:text-cyan-600 hover:translate-x-5 duration-300
+  @apply text-sm text-start w-full font-serif hover:text-cyan-600 hover:translate-x-5 hover:underline duration-700
 }
 
 .links_footer2 {
@@ -554,11 +554,7 @@ nav.scrolled {
 
 
 .FooterBox {
-  @apply flex flex-col bg-white bg-opacity-10 z-0 border-t-2 border-white rounded-t-xl p-2
-}
-
-.FooterBox {
-  box-shadow: 1px 0.5px 5px gray;
+  @apply flex flex-col bg-white bg-opacity-10 z-0 border-t-2 border-slate-200 p-2
 }
 
 .FooterLinksCont {
@@ -570,11 +566,11 @@ nav.scrolled {
 }
 
 .FooterLinkBox1 {
-  @apply flex flex-col justify-start items-start p-3 mb-5 shadow-md rounded-3xl
+  @apply flex flex-col justify-start items-start p-5 mb-5 shadow-md shadow-slate-400 rounded-3xl
 }
 
 .FooterLinkBox {
-  @apply flex flex-col justify-start items-start gap-2 p-3
+  @apply flex flex-col justify-start items-start gap-2 p-3 border-t border-slate-200
 }
 
 .LinksBox {
@@ -625,13 +621,9 @@ nav.scrolled {
 }
 
 .banner {
-  @apply flex flex-row overflow-x-scroll overscroll-x-auto overflow-scroll w-full h-full p-5
+  @apply flex flex-row overflow-x-scroll border border-b border-slate-200 overscroll-x-auto overflow-scroll w-full h-full p-5
 }
 
-.banner {
-  scrollbar-width: thin;
-  scrollbar-color: dark;
-}
 
 .cont {
   @apply flex justify-center items-center rounded-s-md md:h-32 lg:h-40 scale-95  duration-500 w-fit outline outline-2 outline-white overflow-hidden

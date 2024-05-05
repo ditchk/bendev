@@ -28,6 +28,7 @@ const MobileBanner = () => {
             container.removeEventListener('touchend', handleTouchEnd);
           }
         };
+      // eslint-disable-next-line react-hooks/exhaustive-deps
       }, []);
       
       const touchStartX = useRef(0);
