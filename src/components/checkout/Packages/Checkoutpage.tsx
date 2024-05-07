@@ -52,7 +52,7 @@ const BasicCheckOut = () => {
 
 
   return (
-    <div className="flex justify-center items-center h-screen w-full">
+    <div className="flex justify-center items-center h-fit w-full">
       <Form {...form}>
       <motion.form
         style={{
@@ -62,7 +62,7 @@ const BasicCheckOut = () => {
         }}
         ref={ref} 
         onSubmit={form.handleSubmit(onSubmit)} 
-        className="flex flex-col justify-center items-center h-fit w-full p-5 m-10 bg-white rounded-xl space-y-2"
+        className="flex flex-col justify-center items-center h-fit w-full p-5 m-8 md:m-2 bg-white rounded-xl space-y-2"
       >
         <Link to={'/'}>
           <img src="/assets/images/logo1.png" alt="" width={100} />

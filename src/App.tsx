@@ -21,6 +21,7 @@ import CheckoutLayout from './components/checkout/CheckoutLayout'
 import PrivateRoutes from './lib/utils/PrivateRoutes'
 import Error404 from './components/404/Error404'
 import Blogpage from './components/Blogs/Blogpage'
+import SuccesAnime from './components/shared/SuccesAnime'
 
 function App() {
   return (
@@ -52,6 +53,7 @@ function App() {
             <Route element={<CheckoutLayout />}>
               <Route path='/packages/basic' element={<BasicCheckOut />} />
               <Route path='/packages/premium' element={<Checkoutpage />} />
+              <Route path='/success' element={<SuccesAnime />} />
             </Route>
 
             <Route element={<Error404 />}>

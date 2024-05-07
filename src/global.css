@@ -833,6 +833,10 @@ nav.scrolled {
   @apply h-[500px] md:h-[550px] filter grayscale backdrop-brightness-75 brightness-75 scale-125 md:scale-100 lg:h-full w-full object-cover overflow-hidden 
 }
 
+.vide02 {
+  @apply h-[500px] md:h-[550px] scale-125 md:scale-100 lg:h-full w-full object-cover overflow-hidden
+}
+
 .PlayerItems {
   @apply flex flex-row justify-center items-center bg-teal-200 bg-opacity-10 absolute w-full h-full my-16 md:mb-24
 }
