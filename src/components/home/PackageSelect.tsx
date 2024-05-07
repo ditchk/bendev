@@ -5,22 +5,22 @@ import { Switch } from "../ui/switch"
 
 const PackageSelect = () => {
 
-    const [IsActive, setIsActive] =useState(true)
+    const [IsActive, setIsActive] = useState(true)
 
-    const handleclick =() => {
+    const handleclick = () => {
         setIsActive(!IsActive)
     }
 
-  return (
-    <div id="serivices" className='flex flex-col justify-center gap-2z items-center w-full h-full'>
-        <Switch onClick={handleclick} className={`${IsActive && "bg-teal-900 shadow-inner text-black duration-1000 border-2 border-slate-300"}`} />
-        {IsActive ? (
-            <Premium />
-        ): (
-            <Basic />
-        )}
-    </div>
-  )
+    return (
+        <div id="serivices" className='flex flex-col justify-center gap-2 items-center w-full h-full'>
+            <Switch onClick={handleclick} className={`${IsActive && "bg-teal-900 shadow-inner text-black duration-1000 border-2 border-slate-300"}`} />
+            {IsActive ? (
+                <Premium />
+            ) : (
+                <Basic />
+            )}
+        </div>
+    )
 }
 
 export default PackageSelect
