@@ -20,6 +20,8 @@
 body {
   background-color: var(--background);
   color: var(--text-primary);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: italic;
 }
 
 @layer base {
@@ -144,6 +146,9 @@ body {
 
 /* Navbar/sidebar */
 
+.NextLink {
+  -webkit-tap-highlight-color: transparent;
+}
 
 .Linkme {
   @apply bg-gradient-to-tl from-sky-900 text-sm via-black to-cyan-600 text-white outline outline-1 outline-white justify-evenly rounded-md px-3 p-1 text-justify
@@ -165,6 +170,10 @@ nav.scrolled {
 
 .NavButton {
   @apply px-3 touch-pan-right h-8 text-xs bg-gradient-to-bl from-teal-800 via-slate-800 to-teal-950
+}
+
+.NavButton {
+  -webkit-tap-highlight-color: transparent;
 }
 
 .outline_btn {
@@ -503,7 +512,11 @@ nav.scrolled {
 }
 
 .ServiceContainer {
-  @apply flex flex-col justify-center gap-2 h-full w-[98%] relative hover:-translate-y-2 p-2 outline outline-1 outline-slate-300 cursor-pointer rounded-md hover:shadow-md hover:shadow-teal-600 duration-500 !important
+  @apply flex flex-col justify-center gap-2 h-full w-[98%] relative hover:-translate-y-2 p-2 outline outline-1 outline-slate-300 cursor-pointer rounded-md shadow-sm shadow-slate-500 hover:shadow-md hover:shadow-teal-600 duration-500 !important
+}
+
+.serveLink {
+  -webkit-tap-highlight-color: transparent;
 }
 
 .titleBox {
@@ -614,14 +627,15 @@ nav.scrolled {
 
 .BannerImage {
   box-shadow: 1px 0px 6px gray;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .MobileBanner {
-  @apply flex md:hidden flex-col w-full h-full justify-start items-center bg-transparent gap-2 mb-5
+  @apply flex md:hidden flex-col  w-full h-full justify-start items-center bg-transparent gap-2 mb-5
 }
 
 .banner {
-  @apply flex flex-row overflow-x-scroll border border-b border-slate-200 overscroll-x-auto overflow-scroll w-full h-full p-5
+  @apply flex custom-scrollbar flex-row overflow-x-scroll border border-b border-slate-200 overscroll-x-auto overflow-scroll w-full h-full p-2
 }
 
 
@@ -711,6 +725,7 @@ nav.scrolled {
   font-weight: bold;
   font-size: 18px;
   z-index: 2;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .next {
@@ -1017,6 +1032,10 @@ nav.scrolled {
   @apply w-fit bg-gradient-to-bl from-black to-teal-600 rounded-full p-2 text-white px-4 text-xs font-thin outline outline-2 outline-white
 }
 
+.BlogLink {
+  -webkit-tap-highlight-color: transparent;
+}
+
 .Intro {
   @apply text-xs text-teal-500 italic font-serif
 }
@@ -1070,4 +1089,16 @@ nav.scrolled {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+}
+
+.swipe-scrollbar {
+  overflow-x: scroll;
+  display: flex;
+  grid-template-columns: repeat(1, 100%);
+  scroll-snap-type: x mandatory;
+}
+
+.swipe-scrollbar > * {
+  scroll-snap-align: center;
+  width: 100%;
 }

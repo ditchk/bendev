@@ -27,7 +27,7 @@ const PackagesSect = () => {
         </div>
         <div className="flex flex-col justify-center items-center w-full h-full">
           <div className="flex flex-col md:flex-row justify-center gap-5 w-full h-fit">
-              <div className="flex flex-row justify-between items-center mb-2 bg-white outline text-slate-700 hover:text-white outline-2 w-full gap-10 p-2 outline-slate-200 hover:shadow-md hover:bg-teal-950 hover:shadow-slate-500 duration-1000 rounded-full cursor-pointer" onClick={handleClick}>
+              <div className="flex flex-row justify-between items-center mb-2 outline text-white outline-2 w-full gap-10 p-2 outline-slate-300 shadow-md bg-teal-950 shadow-slate-500 duration-1000 rounded-full cursor-pointer" onClick={handleClick}>
                 <h1 className="PackageTitleText">Understand Our Pricing</h1>
                   {!openContainer ? (
                     <FaAngleDown className="rounded-full text-xl cursor-pointer text-slate-400 hover:text-white text-center duration-1000 -rotate-90 animate-in" onClick={handleClick}/>
@@ -35,7 +35,7 @@ const PackagesSect = () => {
                     <FaAngleUp  className="rounded-full text-xl cursor-pointer text-slate-400 hover:text-white text-center duration-1000 rotate-180 animate-in" onClick={handleClick}/>
                   )}
               </div> 
-              <div className="flex flex-row justify-between items-center mb-2 w-full bg-white outline text-slate-700 hover:text-white outline-2 gap-10 p-2 outline-slate-200 duration-1000 hover:bg-teal-950 hover:shadow-md hover:shadow-slate-500 rounded-full cursor-pointer" onClick={handleClick2}>
+              <div className="flex flex-row justify-between items-center mb-2 w-full outline text-white outline-2 gap-10 p-2 outline-slate-200 duration-1000 bg-teal-950 shadow-md shadow-slate-500 rounded-full cursor-pointer" onClick={handleClick2}>
                 <h1 className="PackageTitleText">Frequently asked questions(FAQs)</h1>
                   {!openContainer2 ? (
                     <FaAngleDown className="rounded-full text-xl cursor-pointer text-slate-400 hover:text-white text-center animate-in duration-1000 -rotate-90" onClick={handleClick2}/>

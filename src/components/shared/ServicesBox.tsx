@@ -32,7 +32,7 @@ const ServicesBox = ({service} : ServiceBoxProps ) => {
                 {service.productTitle}
             </h1>
         </motion.div>
-        <Link reloadDocument to={`/packages/premium`} className="w-full">
+        <Link reloadDocument to={`/packages/premium`} className="w-full serveLink">
             <motion.div
             style={{
                 transform: isInView ? "none" : "FadeIn",
