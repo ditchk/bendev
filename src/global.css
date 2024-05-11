@@ -66,6 +66,15 @@ body {
 }
 
 
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: var(--red);
+  transform-origin: 0%;
+}
 
 .navbar {
   position: fixed;
@@ -512,7 +521,7 @@ nav.scrolled {
 }
 
 .ServiceContainer {
-  @apply flex flex-col justify-center gap-2 h-full w-[98%] relative hover:-translate-y-2 p-2 outline outline-1 outline-slate-300 cursor-pointer rounded-md shadow-sm shadow-slate-500 hover:shadow-md hover:shadow-teal-600 duration-500 !important
+  @apply flex flex-col justify-center gap-2 h-full w-[98%] relative hover:-translate-y-2 p-2 outline outline-2 outline-slate-200 cursor-pointer rounded-md hover:shadow-md hover:shadow-teal-600 duration-500 !important
 }
 
 .serveLink {

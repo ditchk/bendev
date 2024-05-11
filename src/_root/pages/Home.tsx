@@ -5,10 +5,11 @@ import PackagesSect from "@/components/home/PackagesSect"
 import Player from "@/components/home/Player"
 import ServiceBox from "@/components/shared/Services"
 
-
 const Home = () => {
+
   return (
     <div className="custom_container">
+      
       <Player src={'/assets/videos/welcomev.mp4'} />
       {/* <IconDump />  */}
       <MobileBanner />

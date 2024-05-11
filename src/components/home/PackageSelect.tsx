@@ -15,9 +15,9 @@ const PackageSelect = () => {
         <div id="serivices" className='flex flex-col justify-center gap-2 items-center w-full h-full'>
             <Switch onClick={handleclick} className={`${IsActive && "bg-teal-900 shadow-inner text-black duration-1000 border-2 border-slate-300"}`} />
             {IsActive ? (
-                <Premium />
-            ) : (
                 <Basic />
+            ) : (
+                <Premium />
             )}
         </div>
     )
