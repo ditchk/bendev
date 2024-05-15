@@ -13,6 +13,7 @@ const CookieConcent: React.FC = () => {
   }
 
   return (
+    <div className="flex w-full h-fit animate-in slide-in-from-bottom-32 duration-1000">
       <CookieConsent
         location="bottom"
         buttonText="I accept"
@@ -36,6 +37,8 @@ const CookieConcent: React.FC = () => {
         <small style={{color: "red"}}></small>
       )}
       </CookieConsent>
+    </div>
+      
   );
 };
 
