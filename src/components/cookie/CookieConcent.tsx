@@ -21,7 +21,10 @@ const CookieConcent: React.FC = () => {
         setDeclineCookie={true}
         onDecline={Declined}
         acceptOnScroll
-        acceptOnScrollPercentage={20}
+        acceptOnScrollPercentage={100}
+        enableDeclineButton
+        expires={2}
+        declineButtonStyle={{background: "transparent", color: "red", borderRadius: "10px", padding: "5px 20px", outline: "0.5px", outlineStyle: "dashed", outlineColor: "red"}} 
         style={{background: "linear-gradient(to top left,#01090a, #02272c, #091f2b )",  width: "90%", opacity: "0.98", margin: "10px", fontFamily: "sans-serif", fontWeight: "lighter", fillOpacity: "0.5", left: "0", borderRadius: "10px", fontSize: "12px", justifyContent: "start", justifySelf: "end", animation: "ease-in-out"}}
         buttonStyle={{background: "transparent", color: "lime", borderRadius: "10px", padding: "5px 20px", outline: "0.5px", outlineStyle: "dashed", outlineColor: "lime"}}
       >
