@@ -1,6 +1,4 @@
 import { Models } from "appwrite"
-
-import { motion } from 'framer-motion'
 import Truncate from "../truncate/Truncate"
 import { Link } from "react-router-dom"
 
@@ -12,14 +10,14 @@ const ServicesBox = ({service} : ServiceBoxProps ) => {
 
   return (
     <div className="serviceBox">
-        <motion.div
+        <div
             // onClick={handleclick}
             className="titleBox">
             <h1 className="BoxText">
                 {service.productTitle}
             </h1>
-        </motion.div>
-            <motion.div
+        </div>
+            <div
                 className="ServiceContainer">
             <div className="Image-Cont">
                 <img src={service.imageUrl} loading="lazy" alt={"project Management"} width={450} className="ImageUrl-sty"/>
@@ -33,7 +31,7 @@ const ServicesBox = ({service} : ServiceBoxProps ) => {
                     <small className="animate-pulse">Starting at 200$</small>
                 </Link>
             </div>
-         </motion.div>
+         </div>
     </div>
   )
 }
