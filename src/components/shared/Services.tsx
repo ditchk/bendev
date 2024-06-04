@@ -17,7 +17,15 @@ const ServiceBox = () => {
     }, [isInView])
     
   return (
-    <div className="MainServiceBox" id="Choose a services">
+    <div 
+      className="MainServiceBox" id="Choose a services"
+      style={{
+        transform: isInView ? "none" : "translateY(10px)",
+        opacity: isInView ? 1 : 0,
+        transition: "all 0.5s cubic-bezier(0.7, 0.55, 0.65, 1) 0.5s"
+      }}
+      ref={ref}
+    >
       <h1 className="PackText font-bold mb-4">Choose a service</h1>
       {isLoading && !products ? (
         <ServiceLoader />

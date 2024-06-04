@@ -495,7 +495,7 @@ nav.scrolled {
 }
 
 .serviceBox {
-  @apply flex flex-col justify-center h-full w-full items-center p-2 !important
+  @apply flex flex-col justify-center h-full w-full items-center p-2 bg-white !important
 }
 
 .BoxText {
@@ -505,7 +505,7 @@ nav.scrolled {
 /* S */
 
 .MainBox {
-  @apply flex flex-1 justify-center items-center h-screen
+  @apply flex flex-1 justify-center items-center min-h-screen
 }
 
 .Box-listify {
@@ -521,7 +521,7 @@ nav.scrolled {
 }
 
 .ServiceContainer {
-  @apply flex flex-col justify-center gap-2 h-full w-[98%] relative hover:-translate-y-2 p-2 outline outline-2 outline-slate-200 cursor-pointer rounded-md hover:shadow-md hover:shadow-teal-600 duration-500 !important
+  @apply flex flex-col justify-center gap-2 h-full w-[98%] bg-white relative hover:-translate-y-2 p-2 outline outline-2 outline-slate-200 cursor-pointer rounded-md hover:shadow-md hover:shadow-teal-600 duration-500 !important
 }
 
 .serveLink {
@@ -854,7 +854,7 @@ nav.scrolled {
 }
 
 .video {
-  @apply h-[500px] md:h-[550px] filter grayscale backdrop-brightness-50 brightness-50 scale-125 md:scale-100 lg:h-full w-full object-cover overflow-hidden 
+  @apply h-[500px] md:h-[550px] backdrop-brightness-50 brightness-50 scale-125 md:scale-100 lg:h-full w-full object-cover overflow-hidden 
 }
 
 .vide02 {
@@ -866,7 +866,7 @@ nav.scrolled {
 }
 
 .BrandName {
-  @apply text-3xl text-center text-shadow capitalize md:text-5xl lg:text-6xl p-2 font-extrabold font-serif text-transparent bg-gradient-to-l bg-clip-text from-teal-500 to-pink-100
+  @apply text-3xl text-center capitalize md:text-5xl lg:text-6xl p-2 font-extrabold font-serif text-transparent bg-gradient-to-l bg-clip-text from-slate-100 to-pink-100
 }
 
 .BrandName2 {

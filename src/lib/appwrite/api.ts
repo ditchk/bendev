@@ -80,7 +80,7 @@ export async function saveMessageToDB(messages: {
     message: string;
 }) {
     try {
-        const newNmessage =await databases.createDocument(
+        const newNmessage = await databases.createDocument(
             myConfig.databaseId,
             myConfig.messageCollectionId,
             ID.unique(),
