@@ -10,9 +10,9 @@ const SubmitLoader = () => {
   return (
     <div>
         <l-mirage
-        size="40"
+        size="50"
         speed="2.5" 
-        color="white" 
+        color="gray" 
         ></l-mirage>
     </div>
   )

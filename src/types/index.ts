@@ -60,7 +60,6 @@ export type IUser = {
   username: string;
   email: string;
   imageUrl: string;
-  bio: string;
 };
 
 export type myNewProject = {
@@ -140,4 +139,12 @@ export type ProjectLink = {
 export type sideTypes = {
   id: number;
   content: string;
+}
+
+export const INITIAL_USER = {
+  id: "",
+  name: "",
+  username: "",
+  email: "",
+  imageUrl: "",
 }

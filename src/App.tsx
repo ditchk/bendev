@@ -22,6 +22,8 @@ import PrivateRoutes from './lib/utils/PrivateRoutes'
 import Error404 from './components/404/Error404'
 import Blogpage from './components/Blogs/Blogpage'
 import SuccesAnime from './components/shared/SuccesAnime'
+import AuthLayout from './_auth/AuthLayout'
+import LoginForm from './_auth/forms/LoginForm'
 
 function App() {
   return (
@@ -43,6 +45,10 @@ function App() {
             <Route element={<PrivateRoutes />}>
               <Route path="/admin" element={<Adminpanel />} />
               <Route path='/opportunities&careers' element={<Opportunities />} />
+            </Route>
+
+            <Route element={<AuthLayout />}>
+              <Route path='/sign-in' element={<LoginForm />} />
             </Route>
 
             {/* Maintainance Error page */}
