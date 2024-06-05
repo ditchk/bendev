@@ -873,7 +873,7 @@ nav.scrolled {
 }
 
 .PlayerItems {
-  @apply flex flex-row justify-center items-center bg-teal-200 bg-opacity-10 absolute w-full h-full my-16 md:mb-24
+  @apply flex flex-row justify-center items-center bg-black bg-opacity-10 absolute w-full h-full my-16 md:mb-24
 }
 
 .BrandName {
