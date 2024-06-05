@@ -861,7 +861,7 @@ nav.scrolled {
 /* PLayer Section */
 
 .Player {
-  @apply flex relative justify-center items-center bg-white z-0 w-full max-h-max overflow-hidden duration-1000 ease-in-out
+  @apply flex relative justify-center items-center bg-black z-0 w-full max-h-max overflow-hidden duration-1000 ease-in-out
 }
 
 .video {
