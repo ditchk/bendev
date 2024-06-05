@@ -25,7 +25,7 @@ const Player: React.FC<PlayerProps> = ({ src }) => {
 
   return (
     <div className="Player">
-      <video id="background-video" className="video" preload='auto' autoPlay muted loop>
+      <video id="background-video" className="video" disableRemotePlayback preload='auto' autoPlay muted loop>
         <source src={src} type="video/mp4" />
       </video>
       <div className="PlayerItems">
