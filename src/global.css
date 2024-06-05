@@ -521,15 +521,15 @@ nav.scrolled {
 }
 
 .ServiceContainer {
-  @apply flex flex-col justify-center gap-2 h-full w-[98%] bg-white relative hover:-translate-y-2 p-2 outline outline-2 outline-slate-200 cursor-pointer rounded-md hover:shadow-md hover:shadow-teal-600 duration-500 !important
+  @apply flex flex-col justify-center gap-2 h-full w-[98%] bg-white relative p-2 outline outline-2 outline-slate-200 rounded-md duration-500 !important
 }
 
 .serveLink {
   -webkit-tap-highlight-color: transparent;
 }
 
-.titleBox {
-  @apply flex justify-center items-center w-full h-fit mb-4
+.DescrIPTBox {
+  @apply flex flex-col justify-center items-start w-full h-fit mb-4
 }
 
 .Image-Cont {
@@ -553,7 +553,11 @@ nav.scrolled {
 }
 
 .Button_sect {
-  @apply flex flex-row justify-start items-center !important
+  @apply flex flex-row justify-start items-center gap-2 !important
+}
+
+.ServLink {
+  @apply outline outline-1 outline-teal-950 px-5 h-10 hover:shadow-md hover:shadow-teal-400
 }
 
 .Div_form {
