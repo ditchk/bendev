@@ -2,6 +2,7 @@ import { PrimiumServ } from '@/constants'
 import { PrimiumServLink } from '@/types'
 import { Button } from '../ui/button'
 import { useNavigate } from 'react-router'
+import { MdOutlineWorkspacePremium } from 'react-icons/md'
 
 const Premium = () => {
 
@@ -14,15 +15,15 @@ const Premium = () => {
 
   return (
     <div className="BasicPackageBox2">
-    <span className="PackageText text-transparent bg-clip-text bg-gradient-to-bl from-fuchsia-500 via-black to-red-300 text-shadow">Premium package</span>
+        <MdOutlineWorkspacePremium className="text-4xl"  />
     <div className="flex flex-col justify-center items-start p-5">
-        <div className="PriceTag text-slate-200">
+        <div className="PriceTag">
             <s className="OriginalHrp">1000$</s>
             <span className="text-2xl font-serif font-bold text-teal-500">800$</span>
         </div>
         <div className="servicesInBasic">
-            <p className="text-sm md:text-lg text-white"><strong>Everything in basic package</strong></p>
-                <ul className="list-disc list-inside text-white">
+            <p className="text-base md:text-lg font-extrabold font-sans text-slate-400">Everything in basic package</p>
+                <ul className="list-disc font-bold">
                     {PrimiumServ.map((link: PrimiumServLink) => {
                     return (
                         <li className="listText">{link.title}</li>

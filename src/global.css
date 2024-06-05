@@ -775,11 +775,11 @@ nav.scrolled {
 /* Packages */
 
 .BasicPackageBox {
-  @apply flex flex-col justify-center items-start h-fit p-2 max-w-md md:max-w-sm min-h-full animate-in slide-in-from-bottom-14 duration-1000 bg-white rounded-2xl outline outline-2 outline-slate-200 shadow-md shadow-slate-600
+  @apply flex flex-col justify-center items-start h-fit p-2 max-w-md md:max-w-sm min-h-full animate-in slide-in-from-bottom-14 duration-1000 bg-white outline outline-2 outline-slate-200
 }
 
 .BasicPackageBox2 {
-  @apply flex flex-col justify-center items-start h-fit p-2 max-w-md md:max-w-sm min-h-full animate-in bg-teal-950 slide-in-from-bottom-14 duration-1000 rounded-2xl outline outline-2 outline-slate-200 shadow-md  shadow-slate-600
+  @apply flex flex-col justify-center items-start h-fit p-2 max-w-md md:max-w-sm min-h-full animate-in slide-in-from-bottom-14 duration-1000 outline outline-2 outline-slate-200 
 }
 
 .HeadContent {
@@ -807,7 +807,7 @@ nav.scrolled {
 }
 
 .listText {
-  @apply text-xs font-sans font-light
+  @apply text-xs font-sans font-bold text-slate-500
 }
 
 .BoxAdsOn {
@@ -830,6 +830,13 @@ nav.scrolled {
   @apply flex flex-col h-fit
 }
 
+.ChoseBtnBOX {
+  @apply flex flex-row justify-center items-center
+}
+
+.ChoseBtn {
+  @apply outline outline-2 outline-white px-5 h-10 focus-within:shadow-md focus-within:shadow-teal-400 focus-within:outline-dashed focus-within:outline-teal-500 duration-1000
+}
 
 .packageSection {
   @apply flex flex-col justify-center items-center gap-5 w-full h-full my-5 p-3 sm:p-4 md:p-5 lg:p-10 outline outline-2 outline-slate-300

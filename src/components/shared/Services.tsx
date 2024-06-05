@@ -3,7 +3,7 @@ import ServicesBox from "./ServicesBox";
 import ServiceLoader from "./ServiceLoader";
 import { Models } from "appwrite";
 import { useEffect, useRef } from "react";
-import { useInView } from "framer-motion";
+import { useInView, motion } from "framer-motion";
 
 const ServiceBox = () => {
 
@@ -17,7 +17,7 @@ const ServiceBox = () => {
     }, [isInView])
     
   return (
-    <div 
+    <motion.div 
       className="MainServiceBox" id="Choose a services"
       style={{
         transform: isInView ? "none" : "translateY(10px)",
@@ -40,7 +40,7 @@ const ServiceBox = () => {
         </ul>
       </div>
       )}
-    </div>
+    </motion.div>
   )
 }
 

@@ -2,6 +2,7 @@ import { BasicServ } from "@/constants"
 import { BasicServLink } from "@/types"
 import { Button } from "../ui/button"
 import { useNavigate } from "react-router"
+import { TbClockHour4 } from "react-icons/tb"
 
 const Basic = () => {
 
@@ -13,14 +14,14 @@ const Basic = () => {
 
   return (
     <div className="BasicPackageBox">
-        <span className={`PackageText text-transparent bg-clip-text bg-gradient-to-bl from-fuchsia-500 via-black to-red-300 text-shadow`}>Basic package</span>
+        <TbClockHour4 className="text-4xl" />
         <div className="flex flex-col justify-center items-start p-5">
             <div className="PriceTag">
                 <s className="OriginalHrp">70$/hr</s>
                 <span className="text-2xl font-serif font-bold text-teal-500">50$/hr</span>
             </div>
             <div className="servicesInBasic">
-                <p className="text-sm md:text-lg text-gray-700"><strong>What is included in the basic package?</strong></p>
+                <p className="text-sm md:text-lg text-gray-500 font-extrabold"><strong>What is included?</strong></p>
                 <ul className="list-decimal list-outside">
                     {BasicServ.map((link: BasicServLink) => {
                         return (
