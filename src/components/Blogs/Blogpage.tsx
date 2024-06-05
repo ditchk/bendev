@@ -24,9 +24,8 @@ const Blogpage = () => {
       {IsBlogLoading ? <PostLoader /> : (
         <div className="MainBlogpage">
           <div className="PrimaryBoxBlog">
-            <div className="flex flex-col justify-center items-center w-fit h-full md:aspect-video lg:max-h-96 overflow-hidden rounded-xl gap-10 lg:shadow-md shadow-slate-400 lg:outline outline-2 outline-slate-300">
-              <img src={blog?.imageUrl} alt="" className="object-fit w-full md:w-3/4 lg:aspect-video rounded-xl " />
-              
+            <div className="BlogPageImageBox">
+              <img src={blog?.imageUrl} alt="" width={400} height={400} className="BlogPageImage" />
             </div>
           <div className="flex flex-col gap-10">
             <h1 className="Blog-Title">{blog?.title}</h1>
@@ -41,7 +40,7 @@ const Blogpage = () => {
             <p className="BlogBody">{blog?.body}</p>
             <h3 className="summary">{blog?.summary}</h3>
           </div>
-          <div className="flex flex-row justify-start items-center w-full gap-2">
+          <div className="flex flex-row justify-center md:justify-start items-center w-full gap-2">
             <Link to={`/profile/${blog?.admin.$id}`} className="ProfileLink">
                 <img src={blog?.admin.imageUrl} alt="" className="rounded-full w-10 h-10 p-1 shadow-inner outline outline-2 outline-slate-300"/>
             </Link>
@@ -69,7 +68,7 @@ const Blogpage = () => {
             >
               <Link to={`/en/blogs/${blog.title}/${blog.$id}`} reloadDocument>
                 <div className="flex flex-row justify-start items-center w-full gap-5">
-                <img src={blog.imageUrl} alt="" width={50} className="rounded-full" />
+                <img src={blog.imageUrl} alt="" width={50} height={50} className="rounded-full h-10 w-12 outline-dashed outline-green-500" />
                 <h3 className="Blog-Title2">{blog.title}</h3>
               </div>
               </Link>

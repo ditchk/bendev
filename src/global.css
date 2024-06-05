@@ -557,7 +557,7 @@ nav.scrolled {
 }
 
 .ServLink {
-  @apply outline outline-1 outline-teal-950 px-5 h-10 hover:shadow-md hover:shadow-teal-400
+  @apply outline outline-1 outline-teal-950 px-5 p-2 h-12 hover:shadow-md hover:shadow-teal-400
 }
 
 .Div_form {
@@ -1041,7 +1041,7 @@ nav.scrolled {
 /* Blog page */
 
 .MainBlogpage {
-  @apply flex flex-col justify-center items-start h-full w-full p-1 md:p-5 animate-in slide-in-from-bottom-10 duration-700
+  @apply flex flex-col justify-center items-start h-full w-full md:p-5 animate-in slide-in-from-bottom-10 duration-700
 }
 
 .PrimaryBoxBlog {
@@ -1065,17 +1065,25 @@ nav.scrolled {
 }
 
 .commentSec {
-  @apply shadow-inner shadow-teal-500 w-60 rounded-none rounded-b-xl rounded-tl-xl
+  @apply shadow-inner shadow-teal-500 w-40 md:w-72 rounded-none rounded-b-xl rounded-tl-xl
 }
 
 .Commenting {
   @apply bg-teal-800 rounded-lg hover:bg-teal-950 duration-1000
 }
 
+.BlogPageImageBox {
+  @apply flex justify-start items-start w-full h-fit lg:max-h-96 p-2 overflow-hidden
+}
+
+.BlogPageImage {
+  @apply object-cover rounded-2xl
+}
+
 /* Slier */
 
 .example-container {
-  @apply flex relative justify-center items-center h-40 md:h-[20vw] lg:h-[25vw] bg-black bg-opacity-10 shadow-inner shadow-slate-400 rounded-xl w-full overflow-hidden mb-4 outline outline-2 outline-slate-200 animate-in slide-in-from-top-20 duration-1000
+  @apply flex relative justify-center items-center h-52 md:h-[20vw] lg:h-[25vw] bg-black bg-opacity-10 shadow-inner shadow-slate-400 rounded-xl w-full overflow-hidden mb-4 outline outline-2 outline-slate-200 animate-in slide-in-from-top-20 duration-1000
 }
 
 .next,
