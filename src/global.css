@@ -354,7 +354,7 @@ nav.scrolled {
 }
 
 .text_title3 {
-  @apply text-xs lg:text-base font-bold font-sans border-b-2 border-white text-transparent text-center bg-clip-text bg-gradient-to-l from-blue-700 via-black to-cyan-800
+  @apply text-xs lg:text-base font-bold font-moon-dance border-b-2 border-white text-transparent text-center bg-clip-text bg-gradient-to-l from-blue-700 via-black to-cyan-800
 }
 
 .text-li {
@@ -499,7 +499,7 @@ nav.scrolled {
 }
 
 .BoxText {
-  @apply text_title3 text-shadow text-center
+  @apply text_title3 text-center
 }
 
 /* S */
@@ -865,7 +865,7 @@ nav.scrolled {
 }
 
 .video {
-  @apply h-[500px] md:h-[550px] opacity-40 brightness-50 scale-125 md:scale-100 lg:h-full w-full object-cover overflow-hidden 
+  @apply h-[550px] opacity-40 brightness-50 scale-125 md:scale-100 lg:h-full w-full object-cover overflow-hidden 
 }
 
 .vide02 {
@@ -923,7 +923,7 @@ nav.scrolled {
 }
 
 .H1Crads {
-  @apply box-border flex flex-row justify-center items-center gap-2 outline-dashed outline-[1px] shadow-md shadow-slate-500 outline-white hover:bg-opacity-30 hover:bg-teal-100 hover:-translate-y-2 duration-1000 mt-10 md:mt-14 lg:mt-36 min-w-[100px] animate-in slide-in-from-top-5 text-white p-1 rounded-xl text-xs md:text-sm font-sans font-extralight
+  @apply box-border flex flex-row justify-center items-center gap-2 outline-dashed outline-[1px] outline-white mt-10 md:mt-14 lg:mt-36 min-w-[100px] animate-in slide-in-from-top-5 text-white p-1 rounded-xl text-xs md:text-sm font-sans font-extralight
 }
 
 

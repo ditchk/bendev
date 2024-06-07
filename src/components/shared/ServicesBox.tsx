@@ -26,7 +26,7 @@ const ServicesBox = ({service} : ServiceBoxProps ) => {
         
         <div className="Button-sect mt-10 mb-2">
             <Link reloadDocument to={'/packages/basic'} className="ServLink">
-                <small>Get a quote</small>
+                <small>Request</small>
             </Link>
             <Link to={''} className="ServLink bg-teal-800 text-white">
                 <small className="animate-pulse">Starting at 200$</small>
