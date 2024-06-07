@@ -56,7 +56,7 @@ function App() {
       <form onSubmit={onSubmit}>
         <div className="ProgressBar">
           {/* {steps} */}
-          step {currentStepIndex + 1} <MdOutlineKeyboardDoubleArrowRight /> of {steps.length}
+          step {currentStepIndex + 1} <MdOutlineKeyboardDoubleArrowRight className="text-3xl text-teal-400" /> of {steps.length}
         </div>
         {step}
         <div

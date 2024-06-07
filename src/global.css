@@ -779,7 +779,7 @@ nav.scrolled {
 }
 
 .BasicPackageBox2 {
-  @apply flex flex-col justify-center items-start h-fit p-2 max-w-md md:max-w-sm min-h-full animate-in slide-in-from-bottom-14 duration-1000 outline outline-2 outline-slate-200 
+  @apply flex flex-col justify-center items-start h-fit p-2 max-w-md md:max-w-sm min-h-full animate-in slide-in-from-bottom-14 duration-1000 outline outline-2 outline-teal-400 
 }
 
 .HeadContent {
@@ -861,11 +861,11 @@ nav.scrolled {
 /* PLayer Section */
 
 .Player {
-  @apply flex relative justify-center items-center bg-black z-0 w-full max-h-max overflow-hidden duration-1000 ease-in-out
+  @apply flex relative justify-center items-center bg-white backdrop-blur-md z-0 w-full max-h-max overflow-hidden duration-1000 ease-in-out delay-150
 }
 
 .video {
-  @apply h-[550px] opacity-40 brightness-50 scale-125 md:scale-100 lg:h-full w-full object-cover overflow-hidden 
+  @apply h-[550px] opacity-20 filter grayscale blur-md scale-125 md:scale-100 lg:h-full w-full object-cover overflow-hidden 
 }
 
 .vide02 {
@@ -873,15 +873,15 @@ nav.scrolled {
 }
 
 .PlayerItems {
-  @apply flex flex-row justify-center items-center bg-black bg-opacity-10 absolute w-full h-full my-16 md:mb-24
+  @apply flex flex-col justify-center items-center bg-transparent backdrop-blur-sm absolute w-full h-full my-16 md:mb-24
 }
 
 .BrandName {
-  @apply text-3xl text-center capitalize md:text-5xl lg:text-6xl p-2 font-extrabold font-moon-dance text-transparent bg-gradient-to-l bg-clip-text from-slate-100 to-pink-100
+  @apply text-3xl text-center capitalize md:text-5xl lg:text-6xl p-2 font-extrabold font-moon-dance text-transparent bg-gradient-to-l bg-clip-text from-slate-600 via-teal-600 to-black
 }
 
 .BrandName2 {
-  @apply text-base text-center capitalize md:text-2xl lg:text-3xl font-extrabold font-serif text-transparent bg-gradient-to-l bg-clip-text from-teal-600 to-pink-100 via-slate-400
+  @apply text-base text-center capitalize md:text-2xl lg:text-3xl font-extrabold font-serif text-transparent bg-gradient-to-l bg-clip-text from-teal-600 to-slate-500 via-slate-400
 }
 
 .Tittle {
@@ -889,7 +889,7 @@ nav.scrolled {
 }
 
 .TextDescription {
-  @apply text-xs md:text-base font-sans text-center font-medium text-gray-100
+  @apply text-xs md:text-base font-sans text-center font-medium text-gray-600
 }
 
 .buttonPrev {
@@ -919,13 +919,20 @@ nav.scrolled {
 }
 
 .Cards {
-  @apply flex absolute w-screen h-fit justify-center items-center mt-56 md:mt-60 z-0
+  @apply flex flex-col h-fit justify-center items-start md:items-center z-0 overflow-x-scroll w-full custom-scrollbar
 }
 
 .H1Crads {
-  @apply box-border flex flex-row justify-center items-center gap-2 outline-dashed outline-[1px] outline-white mt-10 md:mt-14 lg:mt-36 min-w-[100px] animate-in slide-in-from-top-5 text-white p-1 rounded-xl text-xs md:text-sm font-sans font-extralight
+  @apply box-border flex flex-row justify-center items-center gap-2 outline outline-[1px] shadow-md shadow-slate-400 outline-teal-600 min-w-[100px] animate-in slide-in-from-top-5 text-teal-800 font-normal font-mono p-1 text-xs md:text-sm
 }
 
+.TopH1CardBox {
+  @apply flex flex-col justify-center items-center gap-1 mt-8
+}
+
+.HTextCard {
+  @apply text-lg text-center capitalize font-bold font-sans text-slate-400
+}
 
 /* OPPORTUNITIES PAGE */
 
@@ -1049,7 +1056,7 @@ nav.scrolled {
 }
 
 .BlogLink {
-  @apply w-fit bg-gradient-to-bl from-black to-teal-600 rounded-full p-2 text-white px-4 text-xs font-thin outline outline-2 outline-white
+  @apply w-fit p-2 px-4 text-xs font-thin outline outline-2
 }
 
 .BlogLink {
