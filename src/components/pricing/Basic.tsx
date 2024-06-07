@@ -14,7 +14,7 @@ const Basic = () => {
 
   return (
     <div className="BasicPackageBox">
-        <TbClockHour4 className="text-4xl" />
+        <TbClockHour4 className="text-4xl text-gray-600" /> <h4 className="logo-text">Basic hourly</h4>
         <div className="flex flex-col justify-center items-start p-5">
             <div className="PriceTag">
                 <s className="OriginalHrp">50$/hr</s>

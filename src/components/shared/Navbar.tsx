@@ -15,9 +15,10 @@ const Navbar = () => {
     <nav id='navbar' className={`navbar bg-white animate-in slide-in-from-top-10 duration-1000 shadow-sm shadow-slate-400 border-b border-slate-100 w-full`}>
       <Link 
       to={'/'}
-      className="NextLink flex flex-row justify-center items-center gap-2"
+      className="NextLink flex flex-row justify-center items-center gap-1"
       >
-        <h1 className="logo-text text-shadow">BENSWORKSPACE</h1>
+        <img src="/assets/images/logo1.png" width={50} height={50} alt="Logo" />
+        <h4 className="logo-text">Bensworkspace</h4>
       </Link>
       <div className="hidden md:flex flex-row justify-center items-center gap-5 pr-3">
         <Socials />

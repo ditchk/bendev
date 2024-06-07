@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;900&family=Manrope:wght@200;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -131,7 +132,7 @@ body {
 }
 
 .logo-text {
-  @apply text-center text-xl md:text-xl text-shadow2 font-semibold font-serif text-transparent bg-clip-text bg-gradient-to-l from-fuchsia-700 via-teal-600 to-blue-700
+  @apply text-center text-xl md:text-xl font-bold font-moon-dance text-transparent bg-clip-text bg-gradient-to-l from-fuchsia-700 via-teal-600 to-blue-700
 }
 
 /* mobile menu */
@@ -163,7 +164,6 @@ body {
   @apply bg-gradient-to-tl from-sky-900 text-sm via-black to-cyan-600 text-white outline outline-1 outline-white justify-evenly rounded-md px-3 p-1 text-justify
 }
 
-
 nav.scrolled {
   transition-duration: 1s;
   box-shadow: 5px 2px 5px rgb(190, 190, 190);
@@ -178,7 +178,7 @@ nav.scrolled {
 }
 
 .NavButton {
-  @apply px-3 touch-pan-right h-8 text-xs bg-gradient-to-bl from-teal-800 via-slate-800 to-teal-950
+  @apply px-3 touch-pan-right h-8 text-xs bg-gradient-to-bl from-teal-800 via-slate-800 to-teal-950 rounded-none
 }
 
 .NavButton {
@@ -877,7 +877,7 @@ nav.scrolled {
 }
 
 .BrandName {
-  @apply text-3xl text-center capitalize md:text-5xl lg:text-6xl p-2 font-extrabold font-serif text-transparent bg-gradient-to-l bg-clip-text from-slate-100 to-pink-100
+  @apply text-3xl text-center capitalize md:text-5xl lg:text-6xl p-2 font-extrabold font-moon-dance text-transparent bg-gradient-to-l bg-clip-text from-slate-100 to-pink-100
 }
 
 .BrandName2 {

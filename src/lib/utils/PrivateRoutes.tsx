@@ -1,17 +1,28 @@
 import useUserContext from "@/context/useUserContext";
-import { Outlet, Navigate } from "react-router-dom";
+import { useEffect } from "react";
+import { Outlet, Navigate, useNavigate } from "react-router-dom";
 
 const PrivateRoutes = () => {
     const { isAuthenticated }  = useUserContext()
-    return (
+    const navigate = useNavigate()
+
+    useEffect(() => {
+        const cookieFallback = localStorage.getItem("cookieFallback");
+        if (
+          cookieFallback === "[]" ||
+          cookieFallback === null ||
+          cookieFallback === undefined
+        ) navigate("/sign-in");
+    
+      }, [navigate]);
+
+    if(!isAuthenticated) {
+        <Navigate to={'/sign-in'} />
+    } else {
         <>
-            {isAuthenticated ? (
-                <Outlet />
-            ): (
-                <Navigate to={'/sign-in'} />
-            )}
+            <Outlet />
         </>
-    )
+    }
 }
 
 export default PrivateRoutes

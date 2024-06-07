@@ -15,7 +15,7 @@ const Premium = () => {
 
   return (
     <div className="BasicPackageBox2">
-        <MdOutlineWorkspacePremium className="text-4xl"  />
+        <MdOutlineWorkspacePremium className="text-4xl text-teal-500"  /> <h4 className="logo-text">Premium fixed</h4>
     <div className="flex flex-col justify-center items-start p-5">
         <div className="PriceTag">
             <s className="OriginalHrp">1000$</s>
