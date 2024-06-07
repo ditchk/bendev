@@ -17,8 +17,8 @@ const Navbar = () => {
       to={'/'}
       className="NextLink flex flex-row justify-center items-center gap-1"
       >
-        <img src="/assets/images/logo1.png" width={50} height={50} alt="Logo" />
-        <h4 className="logo-text">Bensworkspace</h4>
+        <img src="/assets/images/logo1.png" width={60} height={60} alt="Logo" />
+        <h4 className="logo-text">Bswp</h4>
       </Link>
       <div className="hidden md:flex flex-row justify-center items-center gap-5 pr-3">
         <Socials />
@@ -27,7 +27,8 @@ const Navbar = () => {
         </Link>
       </div>
       <div className="flex flex-row justify-center items-center md:hidden p-0 m-0 w-fit">
-        <Button className="NavButton" onClick={handleclick}>Start Learning</Button>
+        <Button className="NavButton bg-white text-teal-500 outline-teal-500" onClick={handleclick}>Get started</Button>
+        <Button className="NavButton bg-teal-950 outline-slate-500" onClick={handleclick}>Start Learning</Button>
       </div>
     </nav>
   )
