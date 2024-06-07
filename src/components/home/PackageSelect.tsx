@@ -24,10 +24,10 @@ const PackageSelect = () => {
         <div id="serivices" className='flex flex-col justify-center gap-2 items-center w-full h-full'>
               <div className="ChoseBtnBOX">
                 <button  className={`ChoseBtn bg-slate-700 text-white `} onClick={ChoosePack}>
-                    Basic
+                    Hourly
                 </button>
                 <button className={`ChoseBtn bg-teal-700 text-white`} onClick={ChoosePack2}>
-                    Premium
+                    Fixed Budget
                 </button>
             </div>
          {Subscript ? (

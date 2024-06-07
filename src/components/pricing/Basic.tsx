@@ -17,8 +17,8 @@ const Basic = () => {
         <TbClockHour4 className="text-4xl" />
         <div className="flex flex-col justify-center items-start p-5">
             <div className="PriceTag">
-                <s className="OriginalHrp">70$/hr</s>
-                <span className="text-2xl font-serif font-bold text-teal-500">50$/hr</span>
+                <s className="OriginalHrp">50$/hr</s>
+                <span className="text-2xl font-serif font-bold text-teal-500">30$/hr</span>
             </div>
             <div className="servicesInBasic">
                 <p className="text-sm md:text-lg text-gray-500 font-extrabold"><strong>What is included?</strong></p>
