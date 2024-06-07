@@ -14,7 +14,7 @@ const ServicesBox = ({service} : ServiceBoxProps ) => {
         <div
             className="ServiceContainer">
         <div className="Image-Cont">
-            <img src={service.imageUrl} loading="lazy" alt={"project Management"} width={450} className="ImageUrl-sty"/>
+            <img src={service.imageUrl} alt={"project Management"} width={450} className="ImageUrl-sty"/>
         </div>
         <div
             className="DescrIPTBox">

@@ -521,7 +521,7 @@ nav.scrolled {
 }
 
 .ServiceContainer {
-  @apply flex flex-col justify-center gap-2 h-full w-[98%] bg-white relative p-2 outline outline-2 outline-slate-200 rounded-md duration-500 !important
+  @apply flex flex-col justify-center gap-2 h-full w-[98%] bg-white p-2 outline outline-2 outline-slate-200 scroll-smooth !important
 }
 
 .serveLink {
@@ -533,7 +533,7 @@ nav.scrolled {
 }
 
 .Image-Cont {
-  @apply flex flex-1 justify-center items-center h-fit w-auto rounded-tr-3xl overflow-hidden rounded-bl-3xl !important
+  @apply flex justify-center items-center h-fit bg-opacity-40 w-auto rounded-tr-3xl overflow-hidden rounded-bl-3xl !important
 }
 
 .ImageUrl-sty {
@@ -557,7 +557,7 @@ nav.scrolled {
 }
 
 .ServLink {
-  @apply outline outline-1 outline-teal-950 px-5 p-2 h-12 hover:shadow-md hover:shadow-teal-400
+  @apply outline outline-1 outline-teal-300 px-5 p-2 h-12 hover:shadow-md hover:shadow-teal-400
 }
 
 .Div_form {
