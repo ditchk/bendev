@@ -3,7 +3,6 @@ import { AccountForm } from "./AccountForm"
 import { AddressForm } from "./AddressForm"
 import { UserForm } from "./UserForm"
 import { useMultistepForm } from "./useMultiStepForm"
-import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md"
 
 type FormData = {
   firstName: string
@@ -56,9 +55,9 @@ function App() {
       <form onSubmit={onSubmit}>
         <div className="ProgressBar">
           {/* {steps} */}
-          step {currentStepIndex + 1} <MdOutlineKeyboardDoubleArrowRight className="text-3xl text-teal-400" /> of {steps.length}
+          <span className="font-bold mr-2 text-teal-500">Step</span> {currentStepIndex + 1} <span className="font-bold m-2 text-teal-500">of</span> {steps.length}
         </div>
-        {step}
+          {step}
         <div
           style={{
             marginTop: "1rem",
@@ -68,11 +67,11 @@ function App() {
           }}
         >
           {!isFirstStep && (
-            <button type="button" onClick={back}>
+            <button type="button" className="CheckoutFormButton" onClick={back}>
               Back
             </button>
           )}
-          <button type="submit">{isLastStep ? "Finish" : "Next"}</button>
+          <button type="submit" className="CheckoutFormButton">{isLastStep ? "Finish" : "Next"}</button>
         </div>
       </form>
     </div>

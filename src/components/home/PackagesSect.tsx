@@ -19,15 +19,15 @@ const PackagesSect = () => {
           </div>
         </div>
         <div className="flex flex-col justify-center items-center w-full h-full">
-          <div className="flex flex-col md:flex-row justify-center gap-5 w-full h-fit"> 
-              <div className="flex flex-row justify-center items-center mb-2 w-full outline text-slate-400 outline-2 gap-10 p-2 outline-slate-200 focus-within:shadow-md focus-within:shadow-slate-400 duration-1000 bg-white rounded-full cursor-pointer" onClick={handleClick2}>
+          <div className="flex flex-col md:flex-row justify-center w-full h-fit"> 
+              <div className="flex flex-row justify-center items-center mb-2 w-full text-slate-400 outline-2 p-2 bg-gradient-to-l from-teal-800 via-black to-teal-800 cursor-pointer" onClick={handleClick2}>
                 <h1 className="PackageTitleText w-full">Frequently asked questions(FAQs)</h1>
               </div>
           </div>
           <div className="flex flex-col justify-center items-center md:flex-row w-full h-full">
             {openContainer && (
               <div className="ContainerExplaPackage relative">
-                <div className="flex flex-col justify-center items-center bg-gradient-to-br w-[98%] from-slate-400 to-slate-800 rounded-2xl p-3 min-h-[250px] animate-in slide-in-from-bottom-10 top-16 duration-1000 ">
+                <div className="flex flex-col justify-center items-center w-full bg-gradient-to-l from-teal-800 via-black to-teal-800 p-2 min-h-[250px] animate-in slide-in-from-bottom-10 duration-1000 ">
                   <ul className="list-decimal list-inside text-xs text-slate-200">
                     <li>Do you offer custom services?</li>
                     <li>I cant see the service i'm looking for on the packages provided. Do you offer more services?</li>

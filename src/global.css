@@ -354,7 +354,7 @@ nav.scrolled {
 }
 
 .text_title3 {
-  @apply text-xs lg:text-base font-bold font-moon-dance border-b-2 border-white text-transparent text-center bg-clip-text bg-gradient-to-l from-blue-700 via-black to-cyan-800
+  @apply text-xl lg:text-2xl font-bold font-moon-dance border-b-2 border-white text-transparent text-center bg-clip-text bg-gradient-to-l from-blue-700 via-black to-cyan-800
 }
 
 .text-li {
@@ -919,7 +919,7 @@ nav.scrolled {
 }
 
 .Cards {
-  @apply flex flex-col h-fit justify-center items-start md:items-center z-0 overflow-x-scroll w-full custom-scrollbar
+  @apply flex flex-col h-fit justify-center items-start lg:items-center z-0 overflow-x-scroll w-full custom-scrollbar
 }
 
 .H1Crads {
@@ -931,7 +931,7 @@ nav.scrolled {
 }
 
 .HTextCard {
-  @apply text-lg text-center capitalize font-bold font-sans text-slate-400
+  @apply text-lg text-center font-normal font-sans text-slate-400
 }
 
 /* OPPORTUNITIES PAGE */
@@ -1141,11 +1141,11 @@ nav.scrolled {
 /* LoginPage */
 
 .Form_inpt {
-  @apply w-full h-10 bg-white placeholder:text-xs text-slate-500 pl-2 focus-visible:outline-teal-200 focus-visible:scale-105 duration-500 outline outline-1 outline-slate-300
+  @apply w-full h-10 bg-white placeholder:text-xs text-slate-500 pl-2 focus-visible:outline-teal-900 duration-500 outline outline-1 outline-slate-300
 }
 
 .FormLabels {
-  @apply text-sm font-serif
+  @apply text-sm font-serif text-slate-400
 }
 
 .loginForm {
@@ -1163,13 +1163,17 @@ nav.scrolled {
 /* Checkoutpage */
 
 .CheckoutForm {
-  @apply relative flex w-fit h-fit p-5 outline outline-1  outline-slate-300
+  @apply flex justify-center items-center w-full h-fit p-3 outline outline-1  outline-teal-600
 }
 
 .FormWrapperB {
-  @apply flex flex-col
+  @apply flex flex-col bg-teal-950 w-full h-fit p-6 rounded-md
 }
 
 .ProgressBar {
-  @apply flex flex-row justify-center items-center
+  @apply flex flex-row justify-center items-center bg-gradient-to-l from-teal-950 via-black to-teal-900 rounded-lg shadow-inner shadow-black text-white
+}
+
+.CheckoutFormButton {
+  @apply bg-teal-900 text-white outline-white px-5
 }

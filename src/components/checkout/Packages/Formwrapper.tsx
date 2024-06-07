@@ -8,10 +8,10 @@ type FormWrapperProps = {
 export function FormWrapper({ title, children }: FormWrapperProps) {
   return (
     <>
-      <h2 style={{ textAlign: "center", margin: 0, marginBottom: "2rem" }} className=" font-moon-dance text-4xl">
+      <h2 style={{ textAlign: "center", margin: 0, marginBottom: "2rem" }} className=" font-moon-dance text-4xl logo-text">
         {title}
       </h2>
-      <div className="FormWrapperB">
+      <div>
         {children}
       </div>
     </>

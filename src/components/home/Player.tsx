@@ -36,12 +36,12 @@ const Player: React.FC<PlayerProps> = ({ src }) => {
           <p className="TextDescription">We strive to make the best of what we have <br />and create something truly special.</p>
           <div className='flex flex-row justify-center items-center gap-2'>
             <Link to={'#Choose a services'} className="BlogLink mt-5 z-40 bg-black text-white shadow-md" onClick={handleClick}>Get Started</Link>
-            <Link to={'/blogs'} reloadDocument className="BlogLink mt-5 z-40 outline-white text-white bg-teal-600">Blog Library</Link>
+            <Link to={'/blogs'} reloadDocument className="BlogLink mt-5 z-40 outline-white text-white bg-teal-950">Blog Library</Link>
           </div>
         </div>
         <div className="TopH1CardBox">
           <h1 className="HTextCard">Prefered frameworks and projects</h1>
-          <MdOutlineArrowDownward  />
+          <MdOutlineArrowDownward className="animate-bounce text-3xl text-slate-400" />
         </div>
         <div className="Cards">
          

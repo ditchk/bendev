@@ -11,6 +11,9 @@ const Navbar = () => {
       Navigate('/opportunities&careers')
   }
 
+  const handleclick2 = () => {
+    Navigate('/packages/basic')
+  }
   return (
     <nav id='navbar' className={`navbar bg-white animate-in slide-in-from-top-10 duration-1000 shadow-sm shadow-slate-400 border-b border-slate-100 w-full`}>
       <Link 
@@ -27,7 +30,7 @@ const Navbar = () => {
         </Link>
       </div>
       <div className="flex flex-row justify-center items-center md:hidden p-0 m-0 w-fit">
-        <Button className="NavButton bg-white text-teal-500 outline-teal-500" onClick={handleclick}>Get started</Button>
+        <Button className="NavButton bg-white text-teal-500 outline-teal-500" onClick={handleclick2}>Get started</Button>
         <Button className="NavButton bg-teal-950 outline-slate-500" onClick={handleclick}>Start Learning</Button>
       </div>
     </nav>
