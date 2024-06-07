@@ -1163,7 +1163,7 @@ nav.scrolled {
 /* Checkoutpage */
 
 .CheckoutForm {
-  @apply flex justify-center items-center w-full h-fit p-3 outline outline-1  outline-teal-600
+  @apply flex justify-center items-center w-full h-fit p-3 outline outline-1 outline-slate-300 py-10 bg-teal-950 animate-in slide-in-from-top-10 duration-1000
 }
 
 .FormWrapperB {
@@ -1175,5 +1175,5 @@ nav.scrolled {
 }
 
 .CheckoutFormButton {
-  @apply bg-teal-900 text-white outline-white px-5
+  @apply bg-teal-900 text-white outline-white px-5 h-10
 }
