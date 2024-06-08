@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;900&family=Manrope:wght@200;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25+Charted&family=Rubik+Mono+One&family=Stardos+Stencil:wght@400;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -78,7 +79,7 @@ body {
 }
 
 .navbar {
-  position: fixed;
+  position: sticky;
   height: 50px;
   display: flex;
   flex-direction: row;
@@ -132,7 +133,7 @@ body {
 }
 
 .logo-text {
-  @apply text-center text-2xl md:text-2xl font-bold font-moon-dance text-transparent bg-clip-text bg-gradient-to-l from-fuchsia-700 via-teal-600 to-blue-700
+  @apply text-start text-sm md:text-2xl lg:text-2xl font-bold font-Stencils text-transparent bg-clip-text bg-gradient-to-l from-teal-700 via-teal-600 to-black
 }
 
 /* mobile menu */
@@ -155,6 +156,10 @@ body {
 }
 
 /* Navbar/sidebar */
+
+.NextLink {
+  @apply flex justify-center items-center
+}
 
 .NextLink {
   -webkit-tap-highlight-color: transparent;
@@ -630,11 +635,10 @@ nav.scrolled {
 }
 
 .BannerImage {
-  @apply object-fill rounded-2xl md:shadow-none scale-95 md:scale-100 h-full animate-in slide-in-from-left-20 duration-1000
+  @apply object-fill scale-95 md:scale-100 h-full animate-in slide-in-from-left-20 duration-1000
 }
 
 .BannerImage {
-  box-shadow: 1px 0px 6px gray;
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -643,7 +647,7 @@ nav.scrolled {
 }
 
 .banner {
-  @apply flex custom-scrollbar flex-row overflow-x-scroll border border-b border-slate-200 overscroll-x-auto overflow-scroll w-full h-full p-2
+  @apply flex custom-scrollbar flex-row overflow-x-scroll border-b border-slate-200 overscroll-x-auto overflow-scroll w-full h-full p-2
 }
 
 
@@ -856,11 +860,11 @@ nav.scrolled {
 /* PLayer Section */
 
 .Player {
-  @apply flex relative justify-center items-center bg-white backdrop-blur-md z-0 w-full max-h-max overflow-hidden duration-1000 ease-in-out delay-150
+  @apply flex relative justify-center items-center bg-white border-b border-slate-300 backdrop-blur-md z-0 w-full max-h-max overflow-hidden duration-1000 ease-in-out delay-150
 }
 
 .video {
-  @apply h-[500px] md:h-[550px] opacity-20 filter grayscale blur-md scale-125 md:scale-100 lg:h-full w-full object-cover overflow-hidden 
+  @apply h-[500px] md:h-[550px] opacity-40 filter grayscale blur-md scale-125 md:scale-100 w-full object-cover overflow-hidden 
 }
 
 .vide02 {
@@ -868,11 +872,11 @@ nav.scrolled {
 }
 
 .PlayerItems {
-  @apply flex flex-col justify-center items-center bg-transparent backdrop-blur-sm absolute w-full h-full my-16 md:mb-24
+  @apply flex flex-col justify-start items-start bg-transparent backdrop-blur-sm absolute w-full h-full
 }
 
 .BrandName {
-  @apply text-4xl text-center capitalize md:text-6xl lg:text-6xl p-2 font-extrabold font-moon-dance text-transparent bg-gradient-to-l bg-clip-text from-slate-600 via-teal-600 to-black
+  @apply text-5xl text-start capitalize md:text-6xl lg:text-6xl font-Stencils text-transparent bg-gradient-to-l bg-clip-text from-slate-600 via-teal-600 to-black
 }
 
 .BrandName2 {
@@ -884,7 +888,7 @@ nav.scrolled {
 }
 
 .TextDescription {
-  @apply text-xs md:text-base font-sans text-center font-medium text-gray-600
+  @apply text-xs md:text-base font-sans text-start font-medium text-gray-400
 }
 
 .buttonPrev {
@@ -892,7 +896,7 @@ nav.scrolled {
 }
 
 .ItemBox-Div {
-  @apply flex flex-col justify-start items-center h-fit w-fit p-2 py-2 lg:py-10 animate-in slide-in-from-top-10 duration-500 rounded-xl
+  @apply flex flex-col justify-start items-start p-5 h-fit w-fit animate-in slide-in-from-top-10 duration-500 rounded-xl
 }
 
 .ExplainText {
@@ -914,7 +918,7 @@ nav.scrolled {
 }
 
 .Cards {
-  @apply flex flex-col h-fit justify-center items-start lg:items-center z-0 overflow-x-scroll w-full custom-scrollbar
+  @apply flex flex-col h-fit justify-center items-start z-0 overflow-x-scroll md:overscroll-x-none w-full custom-scrollbar
 }
 
 .H1Crads {
@@ -922,11 +926,11 @@ nav.scrolled {
 }
 
 .TopH1CardBox {
-  @apply flex flex-col justify-center items-center gap-1 mt-8
+  @apply flex flex-col justify-center items-start p-5 gap-1
 }
 
 .HTextCard {
-  @apply text-lg text-center font-normal font-sans text-slate-400
+  @apply  text-4xl md:text-5xl lg:text-6xl text-start font-normal font-Stencils text-slate-400
 }
 
 /* OPPORTUNITIES PAGE */
@@ -1158,11 +1162,11 @@ nav.scrolled {
 /* Checkoutpage */
 
 .CheckoutForm {
-  @apply flex justify-center items-center w-full h-fit p-3 bg-white
+  @apply flex justify-center items-center w-full h-fit p-3 bg-teal-950 bg-opacity-10
 }
 
 .FormWrapperB {
-  @apply flex flex-col bg-teal-950 w-full h-fit p-6 rounded-md
+  @apply flex flex-col bg-teal-950 w-full h-fit rounded-md
 }
 
 .ProgressBar {

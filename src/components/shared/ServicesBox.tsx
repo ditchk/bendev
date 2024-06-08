@@ -1,8 +1,6 @@
 import { Models } from "appwrite"
 import Truncate from "../truncate/Truncate"
 import { Link } from "react-router-dom"
-import { useInView } from "framer-motion"
-import { useRef } from "react"
 import Imageloader from "../loaders/Imageloader"
 import { useGetAllServices } from "@/lib/Queries/QueriesAndMutations"
 
@@ -13,18 +11,9 @@ type ServiceBoxProps = {
 const ServicesBox = ({service} : ServiceBoxProps ) => {
     const { isPending: isLoading } = useGetAllServices();
 
-    const ref = useRef(null)
-    const isInView = useInView(ref)
-
   return (
     <div 
         className="ServiceContainer"
-        style={{
-            transform: isInView ? "none" : "translateY(10px)",
-            opacity: isInView ? 1 : 0,
-            transition: "all 0.5s cubic-bezier(0.7, 0.55, 0.65, 1) 0.5s"
-        }}
-        ref={ref}
     >
         <div className="Image-Cont">
             {isLoading ? (
@@ -38,7 +27,6 @@ const ServicesBox = ({service} : ServiceBoxProps ) => {
                     loading="lazy"
                 />
             )}
-            
         </div>
         <div
             className="DescrIPTBox">

@@ -1,5 +1,4 @@
 import { ReactElement, useState } from "react"
-// import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 
 
 export function useMultistepForm(steps: ReactElement[]) {

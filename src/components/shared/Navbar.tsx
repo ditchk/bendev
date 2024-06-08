@@ -15,13 +15,13 @@ const Navbar = () => {
     Navigate('/packages/basic')
   }
   return (
-    <nav id='navbar' className={`navbar bg-white animate-in slide-in-from-top-10 duration-1000 shadow-sm shadow-slate-500 border-b border-slate-100 w-full`}>
+    <nav id='navbar' className="navbar bg-white bg-opacity-20 backdrop-blur-md animate-in slide-in-from-top-10 top-0 duration-1000 border-b border-slate-200 w-full">
       <Link 
       to={'/'}
-      className="NextLink flex flex-row justify-center items-center gap-1"
+      className="NextLink flex flex-row justify-center items-center"
       >
         <img src="/assets/images/logo1.png" width={60} height={60} alt="Logo" />
-        <h4 className="logo-text">Bswp</h4>
+        <h4 className="logo-text">Bswpace</h4>
       </Link>
       <div className="hidden md:flex flex-row justify-center items-center pr-3">
         <Socials />

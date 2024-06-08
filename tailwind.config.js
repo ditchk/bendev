@@ -17,11 +17,13 @@ export const theme = {
       "lg": "1024px",
       "md": "768px",
       "sm": "640px",
-      "xs": "350px"
+      "xs": "350px",
     },
   },
   fontFamily: {
     'moon-dance': ["Moon Dance", "cursive"],
+    'Rubik-mono': ["Rubik Mono One", "monospace"],
+    'Stencils': ["Stardos Stencil", "system-ui"],
     'sans': ['ui-sans-serif', 'system-ui'],
     'serif': ['ui-serif', 'Georgia'],
     'mono': ['ui-monospace', 'SFMono-Regular'],
