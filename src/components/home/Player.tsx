@@ -35,7 +35,7 @@ const Player: React.FC<PlayerProps> = ({ src }) => {
           <h2 className='BrandName2'>Home for Modern websites</h2>
           <p className="TextDescription">We strive to make the best of what we have <br />and create something truly special.</p>
           <div className='flex flex-row justify-center items-center gap-2'>
-            <Link to={'#Choose a services'} className="BlogLink mt-5 z-40 bg-black text-white shadow-md" onClick={handleClick}>Get Started</Link>
+            <Link to={'#Choose a services'} className="BlogLink mt-5 z-40 bg-white text-teal-500 outline-teal-500 shadow-md" onClick={handleClick}>Get Started</Link>
             <Link to={'/blogs'} reloadDocument className="BlogLink mt-5 z-40 outline-white text-white bg-teal-950">Blog Library</Link>
           </div>
         </div>

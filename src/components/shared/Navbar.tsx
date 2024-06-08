@@ -23,15 +23,18 @@ const Navbar = () => {
         <img src="/assets/images/logo1.png" width={60} height={60} alt="Logo" />
         <h4 className="logo-text">Bswp</h4>
       </Link>
-      <div className="hidden md:flex flex-row justify-center items-center gap-5 pr-3">
+      <div className="hidden md:flex flex-row justify-center items-center pr-3">
         <Socials />
-        <Link to={'/about'} reloadDocument className="Linkme">
+        <Link to={'/about'} reloadDocument className="Linkme bg-white text-teal-500 outline-teal-500">
           Explore
+        </Link>
+        <Link to={'/packages/basic'} reloadDocument className="Linkme bg-teal-950 text-white outline-slate-500">
+          Get started
         </Link>
       </div>
       <div className="flex flex-row justify-center items-center md:hidden p-0 m-0 w-fit">
         <Button className="NavButton bg-white text-teal-500 outline-teal-500" onClick={handleclick2}>Get started</Button>
-        <Button className="NavButton bg-teal-950 outline-slate-500" onClick={handleclick}>Start Learning</Button>
+        <Button className="NavButton bg-teal-950 text-white outline-teal-500" onClick={handleclick}>Start Learning</Button>
       </div>
     </nav>
   )

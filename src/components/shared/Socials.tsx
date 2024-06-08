@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 
 const Socials = () => {
   return (
-    <div className="flex flex-col justify-start items-start">
+    <div className="flex flex-col justify-start items-start mr-5">
       <div className="flex flex-row gap-3">
         <Link to={'https://benkigochi5.slack.com/archives/C04SPHHHN4F'}>
           <FaSlack className="social_icons text-red-500 bg-white" />

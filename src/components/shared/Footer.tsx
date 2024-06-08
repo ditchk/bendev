@@ -125,7 +125,7 @@ const Footer = () => {
           </div>
         </div> 
       </div>
-      <div className="flex flex-col gap-3 justify-center items-center bg-teal-950 rounded-md p-2 border-t border-slate-300">
+      <div className="flex flex-col gap-2 justify-center items-center bg-teal-950 rounded-md border border-white">
         <small className="FooterContent">Bswp &#169; 2023</small>
         <div className="flex flex-col justify-center items-center gap-3">
           {/* <small className=" italic">Accepted here</small> */}

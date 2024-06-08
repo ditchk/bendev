@@ -161,7 +161,7 @@ body {
 }
 
 .Linkme {
-  @apply bg-gradient-to-tl from-sky-900 text-sm via-black to-cyan-600 text-white outline outline-1 outline-white justify-evenly rounded-md px-3 p-1 text-justify
+  @apply text-sm outline outline-1 justify-evenly px-4 p-2 text-justify hover:shadow-md hover:shadow-slate-500
 }
 
 nav.scrolled {
@@ -576,7 +576,7 @@ nav.scrolled {
 }
 
 .FooterLinksCont {
-  @apply flex flex-col justify-center items-start w-full md:flex-row md:justify-between gap-4 p-1 md:p-10 mb-10 md:items-center
+  @apply flex flex-col justify-center items-center w-full md:flex-row md:justify-between gap-4 p-1 md:p-10 mb-10 md:items-center
 }
 
 .FooterListify {
@@ -588,7 +588,7 @@ nav.scrolled {
 }
 
 .FooterLinkBox {
-  @apply flex flex-col justify-center items-start gap-2 bg-teal-950 p-3 border rounded-2xl border-slate-200
+  @apply flex flex-col justify-center items-start gap-2 bg-teal-950 p-3 border-2 rounded-2xl border-slate-200
 }
 
 .LinksBox {
@@ -608,7 +608,7 @@ nav.scrolled {
 }
 
 .links_footer2 {
-  @apply text-sm text-start w-full font-serif text-teal-400 hover:scale-95 cursor-context-menu duration-300
+  @apply text-sm text-start w-full font-serif text-white hover:scale-95 cursor-context-menu duration-300
 }
 
 .FooterContent {
