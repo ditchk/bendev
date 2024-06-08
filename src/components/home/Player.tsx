@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import Cards from '../shared/Cards';
 import { Link } from 'react-router-dom';
-import { MdOutlineArrowDownward } from 'react-icons/md';
 
 
 interface PlayerProps {
@@ -41,13 +40,11 @@ const Player: React.FC<PlayerProps> = ({ src }) => {
         </div>
         <div className="TopH1CardBox">
           <h1 className="HTextCard">Prefered frameworks and projects</h1>
-          <MdOutlineArrowDownward className="animate-bounce text-3xl text-slate-400" />
         </div>
         <div className="Cards">
           <Cards />
         </div>
       </div>
-      {/* <div className='flex justify-self-end top-[94%] md:top[95%] lg:top-[96%] absolute w-screen h-10 bg-white border-t border border-slate-200 rounded-t-2xl' /> */}
     </div>
   )
 }
