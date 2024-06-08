@@ -76,7 +76,7 @@ const Player: React.FC<PlayerProps> = ({ src }) => {
           }
         }}
       />
-      <div className="w-screen bg-white h-14 absolute rounded-t-2xl bottom-0 z-10"/>
+      <div className="w-screen bg-white h-24 absolute rounded-t-3xl bottom-0 z-10"/>
     </div>
   )
 }
