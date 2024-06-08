@@ -29,12 +29,11 @@ body {
 @layer base {
   :root {
     color-scheme: light;
-    background-color: transparent;
+    background-color: white;
     color: rgb(36, 36, 36);
-    scrollbar-width:  thin; /* Firefox */
+    scrollbar-width:  thin;
     /* Chrome, Edge, and Safari */
-    scroll-behavior: auto;
-    scrollbar-color: teal;
+    scroll-behavior: smooth;
     height: fit-content;
   }
 
@@ -138,12 +137,11 @@ body {
 
 /* mobile menu */
 .MobileMenu {
-  @apply flex z-20 w-full
+  @apply flex z-20 w-full overflow-scroll
 }
 
 .menubar {
-  @apply flex flex-col py-5 gap-2 justify-start items-center top-28 fixed
-  w-fit left-0 h-fit rounded-r-3xl p-2 outline outline-1 outline-slate-300 bg-white shadow-md shadow-slate-500 animate-in slide-in-from-left-40 duration-1000
+  @apply flex flex-row gap-2 justify-start items-center fixed top-12 overflow-x-scroll p-2 w-full left-0 h-fit bg-white outline outline-1 outline-slate-300 animate-in slide-in-from-left-40 duration-1000
  }
 
 
@@ -635,7 +633,7 @@ nav.scrolled {
 }
 
 .BannerImage {
-  @apply object-fill scale-95 md:scale-100 h-full rounded-md animate-in slide-in-from-left-20 duration-1000
+  @apply object-fill scale-95 md:scale-100 h-full rounded-xl animate-in slide-in-from-left-20 duration-1000 opacity-90
 }
 
 .BannerImage {
@@ -643,7 +641,7 @@ nav.scrolled {
 }
 
 .MobileBanner {
-  @apply flex md:hidden flex-col w-full h-full justify-start items-center bg-white gap-2 mb-5
+  @apply flex md:hidden flex-col w-full h-full justify-start items-center bg-white gap-2 mb-5 pt-5
 }
 
 .banner {
@@ -818,7 +816,7 @@ nav.scrolled {
 }
 
 .adssOnTitle {
-  @apply font-bold text-3xl text-transparent bg-clip-text bg-gradient-to-br from-teal-500 to-red-300
+  @apply font-bold text-2xl text-transparent bg-clip-text bg-gradient-to-br from-teal-500 to-red-300
 }
 
 .PackText {
@@ -868,7 +866,7 @@ nav.scrolled {
 }
 
 .PlayerItems {
-  @apply flex flex-col justify-start items-start bg-transparent animate-in slide-in-from-bottom-10 backdrop-blur-sm duration-500 absolute w-full h-full z-20
+  @apply flex flex-col justify-start items-start bg-white bg-opacity-20 animate-in slide-in-from-bottom-10 backdrop-blur duration-500 absolute w-full h-full z-10
 }
 
 .BrandName {
@@ -930,11 +928,11 @@ nav.scrolled {
 }
 
 .HireTextCard {
-  @apply text-xl font-moon-dance text-white
+  @apply text-xl font-moon-dance text-teal-950
 }
 
 .Grdient {
-  @apply absolute flex h-full w-full bg-gradient-to-t from-teal-950 from-20% to-white to-80% z-10 backdrop-blur-none
+  @apply absolute flex h-full w-full bg-gradient-to-t from-teal-950 from-20% to-white to-80% z-0 backdrop-blur-none
 }
 
 /* OPPORTUNITIES PAGE */

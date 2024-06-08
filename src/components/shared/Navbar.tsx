@@ -1,6 +1,7 @@
 import { Link, useNavigate } from 'react-router-dom';
 import Socials from './Socials';
 import { Button } from '../ui/button';
+// import MobileMenu from './MobileMenu';
 
 
 const Navbar = () => {
@@ -36,6 +37,10 @@ const Navbar = () => {
         <Button className="NavButton bg-white text-teal-500 outline-teal-500" onClick={handleclick2}>Get started</Button>
         <Button className="NavButton bg-teal-950 text-white outline-teal-500" onClick={handleclick}>Start Learning</Button>
       </div>
+      {/* mobile nav */}
+      {/* <div className="absolute flex md:hidden w-full">
+        <MobileMenu />
+      </div> */}
     </nav>
   )
 }

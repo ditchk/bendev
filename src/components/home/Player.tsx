@@ -46,16 +46,16 @@ const Player: React.FC<PlayerProps> = ({ src }) => {
         <div className="Cards">
           <Cards />
         </div>
-        <div className="flex flex-col pl-5 gap-2 justify-start items-start">
+        <div className="flex flex-col pl-5 gap-2 z-20 justify-start items-start">
           <h3 className="HireTextCard">Hire me now through:</h3>
           <div className="flex flex-row gap-3">
-            <Link to={'https://www.upwork.com/fl/bensonk31?s=1017484851352698949'} className="flex flex-row text-lg font-bold outline outline-1 outline-white rounded-full px-5 text-green-500 font-moon-dance justify-center items-center">
+            <Link to={'https://www.upwork.com/fl/bensonk31?s=1017484851352698949'} className="flex flex-row bg-teal-950 bg-opacity-10 backdrop-blur-md text-lg font-bold outline outline-1 outline-white rounded-full px-5 text-green-500 font-moon-dance justify-center items-center">
               <SiUpwork className="text-green-500 text-xl"/>work
             </Link>
-            <Link to={'https://www.fiverr.com/s/bddGlGk'} className="flex flex-row justify-center items-center outline outline-1 outline-white rounded-full px-5">
+            <Link to={'https://www.fiverr.com/s/bddGlGk'} className="flex flex-row justify-center bg-teal-950 bg-opacity-10 backdrop-blur-md items-center outline outline-1 outline-white rounded-full px-5">
               <SiFiverr className="text-black text-4xl"/>
             </Link>
-            <Link to={'https://dribbble.com/benkigochi'} className="flex flex-row font-moon-dance text-pink-600 text-lg outline outline-1 outline-white rounded-full px-5 font-bold justify-center items-center">
+            <Link to={'https://dribbble.com/benkigochi'} className="flex flex-row font-moon-dance bg-teal-950 bg-opacity-10 backdrop-blur-md text-pink-600 text-lg outline outline-1 outline-white rounded-full px-5 font-bold justify-center items-center">
               <FcDribbble className="text-green-700 text-xl"/>ribble
             </Link>
           </div>
@@ -76,7 +76,7 @@ const Player: React.FC<PlayerProps> = ({ src }) => {
           }
         }}
       />
-      <div className="w-screen bg-white h-24 absolute rounded-t-3xl bottom-0 z-10"/>
+      <div className="w-screen bg-white h-10 absolute rounded-t-3xl bottom-0 z-00"/>
     </div>
   )
 }
