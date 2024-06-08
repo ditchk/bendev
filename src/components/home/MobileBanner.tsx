@@ -24,7 +24,8 @@ const MobileBanner = () => {
       }, []);
 
   return (
-    <div className="MobileBanner">
+    <div className="MobileBanner relative">
+      
       <h1 className="adssOnTitle ml-5 mt-2">Services Highlight</h1>
       <span className="text-slate-400 font-moon-dance">Swipe left</span>
       <div className="banner swipe-scrollbar">

@@ -937,10 +937,6 @@ nav.scrolled {
   @apply absolute flex h-full w-full bg-gradient-to-t from-teal-950 from-20% to-white to-80% z-10 backdrop-blur-none
 }
 
-.lowBar {
-  @apply absolute flex bg-white h-10 w-screen z-10 justify-self-end mt-[27rem] md:mt-[30rem] rounded-t-2xl
-}
-
 /* OPPORTUNITIES PAGE */
 
 
