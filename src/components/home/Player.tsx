@@ -76,6 +76,7 @@ const Player: React.FC<PlayerProps> = ({ src }) => {
           }
         }}
       />
+      <div className="lowBar"/>
     </div>
   )
 }

@@ -13,7 +13,7 @@ const BannerPost = () => {
         damping: 10
         }}
     >
-      <h1 className="adssOnTitle ml-5 mt-2">Best services you get!</h1>
+      <h1 className="adssOnTitle ml-5 mt-2">Services Highlight</h1>
       <div className="lgBanner">
          {BannerAssets.map((link: myBannerAssets) => {
             return (
