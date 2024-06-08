@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Cards from '../shared/Cards';
 import { Link } from 'react-router-dom';
+import { SiFiverr, SiUpwork } from 'react-icons/si';
 
 
 interface PlayerProps {
@@ -30,7 +31,7 @@ const Player: React.FC<PlayerProps> = ({ src }) => {
       </video>
       <div className="PlayerItems">
         <div className="ItemBox-Div">
-          <h1 className="BrandName">Bswp-</h1>
+          <h1 className="BrandName">Bswp-Stacks</h1>
           <h2 className='BrandName2'>Home for Modern websites</h2>
           <p className="TextDescription">We strive to make the best of what we have <br />and create something truly special.</p>
           <div className='flex flex-row justify-center items-center gap-2'>
@@ -39,10 +40,21 @@ const Player: React.FC<PlayerProps> = ({ src }) => {
           </div>
         </div>
         <div className="TopH1CardBox">
-          <h1 className="HTextCard">Prefered frameworks and projects</h1>
+          <h3 className="HTextCard">Prefered frameworks and projects</h3>
         </div>
         <div className="Cards">
           <Cards />
+        </div>
+        <div className="flex flex-col pl-5 justify-start">
+          <h3 className="HireTextCard">Hire me now through:</h3>
+          <div className="flex flex-row gap-3">
+            <Link to={'https://www.upwork.com/fl/bensonk31?s=1017484851352698949'} className="flex flex-row text-xl font-bold text-green-500 font-moon-dance justify-center items-center">
+              <SiUpwork className="text-green-500"/>work
+            </Link>
+            <Link to={'https://www.fiverr.com/s/bddGlGk'} className="flex flex-row justify-center items-center">
+              <SiFiverr className="text-green-700 text-5xl"/>
+            </Link>
+          </div>
         </div>
       </div>
     </div>
