@@ -864,11 +864,7 @@ nav.scrolled {
 }
 
 .video {
-  @apply h-[500px] md:h-[550px] opacity-40 filter grayscale blur-md scale-125 md:scale-100 w-full object-cover overflow-hidden 
-}
-
-.vide02 {
-  @apply h-[500px] md:h-[550px] scale-125 md:scale-100 lg:h-full w-full object-cover overflow-hidden
+  @apply h-[450px] md:h-[550px] opacity-40 filter grayscale blur-md scale-125 md:scale-100 w-full object-cover overflow-hidden 
 }
 
 .PlayerItems {
