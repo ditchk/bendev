@@ -872,7 +872,7 @@ nav.scrolled {
 }
 
 .PlayerItems {
-  @apply flex flex-col justify-start items-start bg-transparent backdrop-blur-sm absolute w-full h-full
+  @apply flex flex-col justify-start items-start bg-transparent animate-in slide-in-from-top-10 duration-500 backdrop-blur-sm absolute w-full h-full
 }
 
 .BrandName {
@@ -896,7 +896,7 @@ nav.scrolled {
 }
 
 .ItemBox-Div {
-  @apply flex flex-col justify-start items-start p-5 h-fit w-fit animate-in slide-in-from-top-10 duration-500 rounded-xl
+  @apply flex flex-col justify-start items-start p-5 h-fit w-fit rounded-xl
 }
 
 .ExplainText {
