@@ -55,7 +55,7 @@ const Player: React.FC<PlayerProps> = ({ src }) => {
             <Link to={'https://www.fiverr.com/s/bddGlGk'} className="flex flex-row justify-center items-center">
               <SiFiverr className="text-green-700 text-5xl"/>
             </Link>
-            <Link to={'https://www.fiverr.com/s/bddGlGk'} className="flex flex-row font-moon-dance text-pink-600 text-xl font-bold justify-center items-center">
+            <Link to={'https://dribbble.com/benkigochi'} className="flex flex-row font-moon-dance text-pink-600 text-xl font-bold justify-center items-center">
               <FcDribbble className="text-green-700 text-3xl"/>ribble
             </Link>
           </div>
