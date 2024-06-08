@@ -1,23 +1,44 @@
 import { Models } from "appwrite"
 import Truncate from "../truncate/Truncate"
 import { Link } from "react-router-dom"
+import { useInView } from "framer-motion"
+import { useRef } from "react"
+import Imageloader from "../loaders/Imageloader"
+import { useGetAllServices } from "@/lib/Queries/QueriesAndMutations"
 
 type ServiceBoxProps = {
     service: Models.Document
 }
 
 const ServicesBox = ({service} : ServiceBoxProps ) => {
+    const { isPending: isLoading } = useGetAllServices();
+
+    const ref = useRef(null)
+    const isInView = useInView(ref)
 
   return (
-    <div className="ServiceContainer">
+    <div 
+        className="ServiceContainer"
+        style={{
+            transform: isInView ? "none" : "translateY(10px)",
+            opacity: isInView ? 1 : 0,
+            transition: "all 0.5s cubic-bezier(0.7, 0.55, 0.65, 1) 0.5s"
+        }}
+        ref={ref}
+    >
         <div className="Image-Cont">
-            <img 
-                src={service.imageUrl} 
-                alt={"project Management"} 
-                width={500} 
-                className="ImageUrl-sty"
-                loading="lazy"
-            />
+            {isLoading ? (
+                <Imageloader />
+            ) : (
+                <img 
+                    src={service.imageUrl} 
+                    alt={"project Management"} 
+                    width={500} 
+                    className="ImageUrl-sty"
+                    loading="lazy"
+                />
+            )}
+            
         </div>
         <div
             className="DescrIPTBox">

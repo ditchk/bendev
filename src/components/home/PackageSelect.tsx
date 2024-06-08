@@ -23,10 +23,10 @@ const PackageSelect = () => {
     return (
         <div id="serivices" className='flex flex-col justify-center gap-2 items-center w-full h-full'>
               <div className="ChoseBtnBOX">
-                <button  className={`ChoseBtn bg-slate-700 text-white `} onClick={ChoosePack}>
+                <button  className={`ChoseBtn bg-black text-white `} onClick={ChoosePack}>
                     Hourly
                 </button>
-                <button className={`ChoseBtn bg-teal-700 text-white`} onClick={ChoosePack2}>
+                <button className={`ChoseBtn bg-teal-950 text-white`} onClick={ChoosePack2}>
                     Fixed Budget
                 </button>
             </div>

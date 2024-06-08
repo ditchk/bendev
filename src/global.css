@@ -774,7 +774,7 @@ nav.scrolled {
 }
 
 .BasicPackageBox2 {
-  @apply flex flex-col justify-center items-start h-fit p-2 max-w-md md:max-w-sm min-h-full animate-in slide-in-from-bottom-14 duration-1000 outline outline-2 outline-teal-400 
+  @apply flex flex-col justify-center items-start h-fit p-2 max-w-md md:max-w-sm min-h-full animate-in slide-in-from-bottom-14 duration-1000 outline outline-2 outline-teal-600 
 }
 
 .HeadContent {
@@ -872,7 +872,7 @@ nav.scrolled {
 }
 
 .BrandName {
-  @apply text-3xl text-center capitalize md:text-5xl lg:text-6xl p-2 font-extrabold font-moon-dance text-transparent bg-gradient-to-l bg-clip-text from-slate-600 via-teal-600 to-black
+  @apply text-4xl text-center capitalize md:text-6xl lg:text-6xl p-2 font-extrabold font-moon-dance text-transparent bg-gradient-to-l bg-clip-text from-slate-600 via-teal-600 to-black
 }
 
 .BrandName2 {
@@ -918,7 +918,7 @@ nav.scrolled {
 }
 
 .H1Crads {
-  @apply box-border flex flex-row justify-center items-center gap-2 outline outline-[1px] shadow-md shadow-slate-400 outline-teal-600 min-w-[100px] animate-in slide-in-from-top-5 text-teal-800 font-normal font-mono p-1 text-xs md:text-sm
+  @apply box-border flex flex-row justify-center items-center gap-2 outline outline-[1px] outline-teal-600 min-w-[100px] animate-in slide-in-from-top-5 text-teal-800 font-normal font-mono p-1 text-xs md:text-sm
 }
 
 .TopH1CardBox {
