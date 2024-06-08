@@ -42,7 +42,7 @@ const Sidebar = () => {
     onScroll={hiddenNav} 
     animate={{ x: 0 }}
     transition={{ delay: 0 }}   
-    className="hidden md:flex flex-col md:justify-center items-center bg-teal-950 bg-opacity-30 mt-8 p-2 right-0 gap-5 shadow-2xl shadow-teal-800 h-fit w-fit outline outline-2 backdrop-blur-sm outline-white rounded-l-lg fixed z-50 animate-in slide-in-from-right-24 duration-1000 snap-always"
+    className="flex flex-col md:justify-center items-center bg-teal-950 bg-opacity-30 mt-8 p-2 right-0 gap-5 shadow-2xl shadow-teal-800 h-fit w-fit outline outline-2 backdrop-blur-sm outline-white rounded-l-lg fixed z-50 animate-in slide-in-from-right-24 duration-1000 snap-always"
     >
        {!menuOpen ? (
         <CgMenuGridR className="flex justify-end left-10 w-fit bg-gradient-to-tl from-black to-teal-600 text-white p-1 rounded-3xl cursor-pointer text-xl animate-in rotate-180 slide-in-from-right-10 duration-1000" onClick={toggleMenu} />
