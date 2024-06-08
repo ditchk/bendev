@@ -7,10 +7,10 @@ const CheckoutLayout = () => {
     <>
     <Navbar />
       <div className="flex flex-row justify-center items-center w-full h-full">
-        <div className="hidden lg:flex w-1/2 h-fit overflow-hidden border-r-2 border-slate-300 duration-1000">
+        <div className="hidden lg:flex w-1/2 h-fit overflow-hidden">
             <img src="/assets/images/checkout.jpg" alt="" width={600} />
         </div>
-        <div className="flex flex-col w-full justify-center items-center h-full p-3 mt-10 lg:w-1/2">
+        <div className="flex flex-col w-full justify-center items-center h-fit p-2 md:p-5 mt-12 lg:w-1/2">
             <Outlet />
         </div>
       </div>

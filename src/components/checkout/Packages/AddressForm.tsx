@@ -34,7 +34,7 @@ export function AddressForm({
           <label className="FormLabels" >Description</label>
           <Textarea
             required
-            className="Form_inpt"
+            className="textarea"
             placeholder="Briefly describe your project"
             value={description}
             onChange={e => updateFields({ description: e.target.value })}
@@ -51,7 +51,7 @@ export function AddressForm({
           <label className="FormLabels" >Aditional notes(Optional)</label>
           <Textarea
             required
-            className="Form_inpt"
+            className="textarea"
             value={notes}
             placeholder="Is there anything else you wuld like to add?"
             onChange={e => updateFields({ notes: e.target.value })}

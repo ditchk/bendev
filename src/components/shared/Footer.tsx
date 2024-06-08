@@ -56,7 +56,7 @@ const Footer = () => {
     <footer className="FooterBox">
       <div className="FooterLinksCont">
         <div className="FooterLinkBox1">
-          <h3 className="text_title text-shadow mt-4">FAQs</h3>
+          <h3 className="text_title text-shadow mt-4">Frequently Asked Questions(FAQs)</h3>
           <ul className="FooterListify">
             {freqAsked.map((link: myFaqs) => {
               return (
@@ -120,12 +120,12 @@ const Footer = () => {
               </form>
           </Form>
           <div className="flex flex-col justify-start items-start w-full h-fit p-2">
-            <small className="text_title text-shadow">follow us</small>
+            <small className="text_title text-shadow">Follow us</small>
             <Socials/>
           </div>
         </div> 
       </div>
-      <div className="flex flex-col gap-3 justify-center items-center border-t border-slate-300">
+      <div className="flex flex-col gap-3 justify-center items-center bg-teal-950 rounded-md p-2 border-t border-slate-300">
         <small className="FooterContent">Bswp &#169; 2023</small>
         <div className="flex flex-col justify-center items-center gap-3">
           {/* <small className=" italic">Accepted here</small> */}

@@ -26,6 +26,7 @@ export function UserForm({
           <input
             autoFocus
             className="Form_inpt"
+            placeholder="First Name"
             required
             type="text"
             value={firstName}
@@ -37,6 +38,7 @@ export function UserForm({
           <input
             required
             className="Form_inpt"
+            placeholder="Last Name"
             type="text"
             value={lastName}
             onChange={e => updateFields({ lastName: e.target.value })}
@@ -50,6 +52,7 @@ export function UserForm({
           <input
             required
             className="Form_inpt"
+            placeholder="Your Email"
             type="email"
             value={email}
             onChange={e => updateFields({ email: e.target.value })}
@@ -60,6 +63,7 @@ export function UserForm({
           <input
             required
             className="Form_inpt"
+            placeholder="Valid phone number"
             type="phone"
             value={phone}
             onChange={e => updateFields({ phone: e.target.value })}
