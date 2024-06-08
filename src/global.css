@@ -117,7 +117,7 @@ body {
 }
 
 .default_Container {
-  @apply flex flex-col justify-center items-center h-full w-auto p-1 mb-5 pt-16
+  @apply flex flex-col justify-center items-center h-full w-auto p-1 mb-5
 }
 
 .projectPage {
@@ -635,7 +635,7 @@ nav.scrolled {
 }
 
 .BannerImage {
-  @apply object-fill scale-95 md:scale-100 h-full animate-in slide-in-from-left-20 duration-1000
+  @apply object-fill scale-95 md:scale-100 h-full rounded-md animate-in slide-in-from-left-20 duration-1000
 }
 
 .BannerImage {
@@ -860,7 +860,7 @@ nav.scrolled {
 /* PLayer Section */
 
 .Player {
-  @apply flex relative justify-center items-center bg-white border-b border-slate-300 backdrop-blur-md z-0 w-full max-h-max overflow-hidden duration-1000 ease-in-out delay-150
+  @apply flex relative justify-center items-center bg-transparent border-b border-slate-300 backdrop-blur-md z-0 w-full max-h-max overflow-hidden duration-1000 ease-in-out delay-150
 }
 
 .video {
@@ -868,11 +868,11 @@ nav.scrolled {
 }
 
 .PlayerItems {
-  @apply flex flex-col justify-start items-start bg-transparent animate-in slide-in-from-top-10 duration-500 backdrop-blur-sm absolute w-full h-full
+  @apply flex flex-col justify-start items-start bg-transparent animate-in slide-in-from-top-10 duration-500 backdrop-blur-sm absolute w-full h-full z-10
 }
 
 .BrandName {
-  @apply text-5xl text-start capitalize md:text-6xl lg:text-6xl font-Stencils text-transparent bg-gradient-to-l bg-clip-text from-slate-600 via-teal-600 to-black
+  @apply text-3xl text-start capitalize md:text-6xl lg:text-6xl font-Stencils text-transparent bg-gradient-to-l bg-clip-text from-slate-600 via-teal-600 to-black
 }
 
 .BrandName2 {
@@ -884,7 +884,7 @@ nav.scrolled {
 }
 
 .TextDescription {
-  @apply text-xs md:text-base font-sans text-start font-medium text-gray-400
+  @apply text-xs md:text-base font-sans text-start font-medium text-gray-600
 }
 
 .buttonPrev {
@@ -914,23 +914,27 @@ nav.scrolled {
 }
 
 .Cards {
-  @apply flex flex-col h-fit justify-center items-start z-0 overflow-x-scroll md:overscroll-x-none w-full custom-scrollbar
+  @apply grid grid-cols-3 h-fit justify-center items-start z-0 overflow-x-scroll md:overscroll-x-none w-full custom-scrollbar
 }
 
 .H1Crads {
-  @apply box-border flex flex-row justify-center items-center gap-2 outline outline-[1px] outline-teal-600 min-w-[100px] animate-in slide-in-from-top-5 text-teal-800 font-normal font-mono p-1 text-xs md:text-sm
+  @apply box-border flex flex-row justify-center items-center gap-2 outline outline-[1px] outline-white min-w-[100px] animate-in slide-in-from-top-5 text-white font-normal font-mono p-1 text-xs md:text-sm
 }
 
 .TopH1CardBox {
-  @apply flex flex-col justify-center items-start p-5 gap-1
+  @apply flex flex-col justify-center items-start pl-5 gap-1
 }
 
 .HTextCard {
-  @apply  text-4xl md:text-5xl lg:text-6xl text-start font-normal font-Stencils text-slate-400
+  @apply  text-4xl md:text-5xl lg:text-6xl text-start font-normal font-Stencils text-white
 }
 
 .HireTextCard {
-  @apply text-xl font-moon-dance font-bold
+  @apply text-xl font-moon-dance text-white
+}
+
+.Grdient {
+  @apply absolute h-full w-full bg-gradient-to-t from-teal-900 from-20% to-white to-80% z-0
 }
 
 /* OPPORTUNITIES PAGE */
@@ -1140,7 +1144,7 @@ nav.scrolled {
 /* LoginPage */
 
 .Form_inpt {
-  @apply w-full h-10 bg-white placeholder:text-xs text-slate-500 pl-2 focus-visible:outline-teal-500 duration-500 outline outline-2 outline-teal-600 rounded-sm
+  @apply w-full h-10 bg-white placeholder:text-xs text-slate-500 pl-2 focus-visible:placeholder:text-teal-700 duration-500 outline outline-2 outline-teal-700 rounded-sm
 }
 
 .FormLabels {
@@ -1170,7 +1174,7 @@ nav.scrolled {
 }
 
 .ProgressBar {
-  @apply flex flex-row justify-center items-center bg-gradient-to-l from-teal-950 via-black to-teal-900 rounded-lg shadow-inner shadow-black text-white
+  @apply flex flex-row justify-center items-center w-full px-4 text-teal-950 font-moon-dance text-3xl mb-2
 }
 
 .CheckoutFormButton {

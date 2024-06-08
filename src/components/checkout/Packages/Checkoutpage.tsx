@@ -3,7 +3,6 @@ import { AccountForm } from "./AccountForm"
 import { AddressForm } from "./AddressForm"
 import { UserForm } from "./UserForm"
 import { useMultistepForm } from "./useMultiStepForm"
-import { Link } from "react-router-dom"
 
 type FormData = {
   firstName: string
@@ -54,11 +53,7 @@ function App() {
   return (
     <div className="CheckoutForm">
       <form onSubmit={onSubmit}>
-        <Link to={'/'} className="flex w-full justify-center items-center">
-              <img src="/assets/images/logo1.png" width={100} height={100} alt="Bswp" />
-          </Link>
         <div className="ProgressBar">
-            
           <span className="font-bold mr-2 text-teal-500">Step</span> {currentStepIndex + 1} <span className="font-bold m-2 text-teal-500">of</span> {steps.length}
         </div>
           {step}

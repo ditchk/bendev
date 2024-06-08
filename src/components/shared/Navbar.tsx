@@ -25,7 +25,7 @@ const Navbar = () => {
       </Link>
       <div className="hidden md:flex flex-row justify-center items-center pr-3">
         <Socials />
-        <Link to={'/about'} reloadDocument className="Linkme bg-white text-teal-500 outline-teal-500">
+        <Link to={'/blogs'} reloadDocument className="Linkme bg-white text-teal-500 outline-teal-500">
           Explore
         </Link>
         <Link to={'/packages/basic'} reloadDocument className="Linkme bg-teal-950 text-white outline-slate-500">
