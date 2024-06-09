@@ -69,9 +69,13 @@ export const useSignInAccount = () => {
  export const useAddNewOrder = () => {
     return useMutation({
         mutationFn:(newOrder: {
-            name: string;
-            email: string;
-            notes?: string;
+            FirstName: string
+            LastName: string
+            description: string
+            projectDuration: string
+            notes: string
+            phone: string
+            email: string
         }) => OrderSubmission(newOrder)
     })
  }
