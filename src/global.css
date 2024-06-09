@@ -1150,7 +1150,7 @@ nav.scrolled {
 }
 
 .loginForm {
-  @apply flex flex-col justify-center gap-5 bg-transparent outline outline-2 outline-slate-200 rounded-md items-center w-[80%] md:w-[60%] lg:w-[35%] p-8 h-fit z-10
+  @apply flex flex-col justify-center gap-5 bg-teal-950 bg-opacity-20 outline outline-2 outline-slate-200 rounded-md items-center w-[80%] md:w-[60%] lg:w-[35%] p-8 h-fit z-10
 }
 
 .LoginBtn {
@@ -1164,7 +1164,7 @@ nav.scrolled {
 /* Checkoutpage */
 
 .CheckoutForm {
-  @apply flex justify-center items-center w-full h-fit p-3 bg-teal-950 bg-opacity-10
+  @apply flex justify-center items-center w-full h-fit p-3 bg-teal-950 bg-opacity-20
 }
 
 .FormWrapperB {

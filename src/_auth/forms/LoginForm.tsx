@@ -1,6 +1,6 @@
 import { signInAccount } from "@/lib/appwrite/api";
 import { FormEvent, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 import { motion } from 'framer-motion'
 import { useToast } from "@/components/ui/use-toast";
 import useUserContext from "@/context/useUserContext";
@@ -25,7 +25,6 @@ export default function LoginForm () {
 
             if(session) {
                 setLoading(false)
-                isAuthenticated
                 navigate("/")
             } else {
                 setLoading(false)
@@ -37,12 +36,16 @@ export default function LoginForm () {
            throw Error
         }
     }
+
+    if(isAuthenticated) {
+        <Navigate to={'/'} />
+    }
     return (
         <div className="flex justify-center items-center h-full w-full">
             <motion.form
             onSubmit={login}
             className="loginForm"
-            initial={{ opacity: 0, scale: 0.5 }}
+            initial={{ opacity: 0, scale: 0.6 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
                 duration: 0.8,
@@ -87,7 +90,7 @@ export default function LoginForm () {
             )}
             </button>
         <div>
-            <h3 className="text-xs font-bold text-green-500">Want to join? Contact me using the livechat</h3>
+            <h3 className="text-lg text-center font-bold font-moon-dance text-green-500">Want to join? Contact me using the livechat</h3>
         </div>
         </motion.form>
        

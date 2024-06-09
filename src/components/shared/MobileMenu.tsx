@@ -1,6 +1,6 @@
 import React from 'react';
-import { sideBarLinks, useScrollDirection } from '@/constants';
-import { MyNavLink } from '@/types';
+import { MobileNavLinks, useScrollDirection } from '@/constants';
+import { MyMobileNavLinks } from '@/types';
 import { NavLink, useLocation, } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
@@ -17,20 +17,20 @@ const MobileMenu: React.FC = () => {
         transition={{type: "spring", delay: 0 }} 
         className={`menubar ${navHide ? 'navbar hidden' : 'hidden'}`}
        >
-       {sideBarLinks.map((link: MyNavLink) => {
+       {MobileNavLinks.map((link: MyMobileNavLinks) => {
 
-         const isActive = pathname === link.route;
+         const isActive = pathname === link.path;
 
          return (
            <motion.li 
-           key={link.label}
+           key={link.path}
            className="flex"
            >
                <NavLink 
-               to={link.route}
+               to={link.path}
                reloadDocument
                className={`w-14 text-white bg-teal-950 outline outline-1 outline-cyan-50 p-1 animate-in zoom-in-125 duration-700 text-xs text-center rounded-full ${isActive && "bg-gradient-to-tl from-black to-teal-600 text-sm"}`}>
-                 {link.label}
+                 {link.title}
              </NavLink>
             
            </motion.li>

@@ -21,9 +21,14 @@ export type IContextType = {
 };
 
 export type myFooterLinks = {
-  name: string;
-  route: string
+  title: string;
+  url: string
 };
+
+export type MyMobileNavLinks = {
+  title: string;
+  path: string
+}
 
 export type myFaqs = {
   question: string,

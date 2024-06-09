@@ -6,9 +6,9 @@ const Imageloader = () => {
   return (
     <div className='flex justify-center items-center w-full h-full'>
       <l-dot-pulse
-        size="43"
+        size="35"
         speed="1.3" 
-        color="black" 
+        color="teal" 
       ></l-dot-pulse>
     </div>
   )

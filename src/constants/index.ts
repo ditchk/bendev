@@ -29,6 +29,34 @@ export const sideBarLinks = [
     },
 ];
 
+export const MobileNavLinks = [
+    {
+        title: 'Home',
+        path: '/'
+    },
+    {
+        title: 'Projects',
+        path: '/projects'
+    },
+    {
+        title: 'Contact',
+        path: '/contact'
+    },
+    {
+        title: 'About',
+        path: '/about'
+    },
+    {
+        title: 'Blogs',
+        path: '/blogs'
+    },
+    {
+        title: 'shop',
+        path: '/shop'
+    },
+];
+
+
 export const welcomeMessage = [
     {
         title: "BENSON KIGOCI......",
@@ -40,24 +68,24 @@ export const welcomeMessage = [
 
 export const footerLinks = [
     {
-        name: 'Home',
-        route: '/',
+        title: 'Home',
+        url: '/',
     },
     {
-        name: 'Projects',
-        route: '/projects',
+        title: 'Projects',
+        url: '/projects',
     },
     {
-        name: 'blog posts',
-        route: '/blogs',
+        title: 'blog posts',
+        url: '/blogs',
     },
     {
-        name: 'join us',
-        route: '/codex',
+        title: 'join us',
+        url: '/codex',
     },
     {
-        name: 'hire me',
-        route: '/',
+        title: 'hire me',
+        url: '/',
     }
 ];
 

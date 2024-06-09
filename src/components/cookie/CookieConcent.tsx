@@ -25,11 +25,11 @@ const CookieConcent: React.FC = () => {
         acceptOnScrollPercentage={100}
         enableDeclineButton
         expires={2}
-        declineButtonStyle={{background: "transparent", color: "red", borderRadius: "10px", padding: "5px 20px", outline: "0.5px", outlineStyle: "dashed", outlineColor: "red"}} 
-        style={{background: "linear-gradient(to top left,#01090a, #02272c, #091f2b )",  width: "90%", opacity: "0.98", margin: "10px", fontFamily: "sans-serif", fontWeight: "lighter", fillOpacity: "0.5", left: "0", borderRadius: "10px", fontSize: "12px", justifyContent: "start", justifySelf: "end", animation: "ease-in-out"}}
-        buttonStyle={{background: "transparent", color: "lime", borderRadius: "10px", padding: "5px 20px", outline: "0.5px", outlineStyle: "dashed", outlineColor: "lime"}}
+        declineButtonStyle={{background: "white", color: "gray", borderRadius: "10px", padding: "5px 20px"}} 
+        style={{background: "black",  width: "90%", opacity: "0.9", margin: "2px", fontFamily: "sans-serif", fontWeight: "lighter", fillOpacity: "0.5", left: "0", borderRadius: "10px", fontSize: "12px", justifyContent: "start", justifySelf: "end", animation: "ease-in-out"}}
+        buttonStyle={{background: "teal", color: "white", borderRadius: "10px", padding: "5px 20px"}}
       >
-        <h2 className="text-xs text-lime-400">This site uses cookies to improve your experience. Learn more in our{" "}<a href="/privacy-policy" className="text-xs text-light font-mono text-white">privacy policy</a></h2>
+        <h2 className="text-xs text-white">This site uses cookies to improve your experience. Learn more in our{" "}<a href="/privacy-policy" className="text-xs font-normal underline underline-offset-1 font-mono text-red-500">privacy policy</a></h2>
         
         {hasAcceptedCookies ? (
         <small style={{}}></small>

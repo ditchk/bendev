@@ -17,7 +17,7 @@ const MobileBanner = () => {
       useEffect(() => {
         const loadData = async () => {
           // Simulate loading data
-          await new Promise((resolve) => setTimeout(resolve, 3000));
+          await new Promise((resolve) => setTimeout(resolve, 5000));
           setIsLoading(false);
         };
 
@@ -35,7 +35,7 @@ const MobileBanner = () => {
                 {isLoading ? (
                   <Imageloader />
                 ): (
-                  <img src={link.Image} onClick={handleClick} alt={link.altText} loading="lazy" className="BannerImage cursor-pointer" />
+                  <img key={link.altText} src={link.Image} onClick={handleClick} alt={link.altText} loading="lazy" className="BannerImage cursor-pointer" />
                 )}   
               </React.Fragment>
             )

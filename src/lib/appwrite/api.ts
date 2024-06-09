@@ -116,9 +116,13 @@ export async function savInquireToDB (quotes: {
 
 
 export async function OrderSubmission (orders: {
-  name: string;
-  email: string;
-  notes?: string;
+  FirstName: string
+  LastName: string
+  description: string
+  projectDuration: string
+  notes: string
+  phone: string
+  email: string
 }) {
   try {
     const newOrder = await databases.createDocument (
@@ -275,6 +279,15 @@ export async function createProject(project: myNewProject) {
     } catch(error) {
         console.log(error)
     }
+}
+
+export async function isLoggedIn(): Promise<boolean> {
+  try {
+      const data = await getCurrentUser();
+      return Boolean(data)
+  } catch (error) { /* empty */ }
+
+  return false
 }
 
 export async function getCurrentUser() {

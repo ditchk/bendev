@@ -2,23 +2,23 @@ import { Textarea } from "@/components/ui/textarea"
 import { FormWrapper } from "./Formwrapper"
 
 type AddressData = {
-  name: string
+  projectName: string
   description: string
-  duration: string
+  projectDuration: string
   notes: string
 }
 
-type AddressFormProps = AddressData & {
+type ProjectFormProps = AddressData & {
   updateFields: (fields: Partial<AddressData>) => void
 }
 
-export function AddressForm({
-  name,
+export function Projectdetails({
+  projectName,
   description,
-  duration,
+  projectDuration,
   notes,
   updateFields,
-}: AddressFormProps) {
+}: ProjectFormProps) {
   return (
     <FormWrapper title="Project details">
           <label className="FormLabels" >Project Name</label>
@@ -28,8 +28,8 @@ export function AddressForm({
             required
             placeholder="What are you working on"
             type="text"
-            value={name}
-            onChange={e => updateFields({ name: e.target.value })}
+            value={projectName}
+            onChange={e => updateFields({ projectName: e.target.value })}
           />
           <label className="FormLabels" >Description</label>
           <Textarea
@@ -44,9 +44,9 @@ export function AddressForm({
             required
             className="Form_inpt"
             type="text"
-            value={duration}
+            value={projectDuration}
             placeholder="How long will this project take"
-            onChange={e => updateFields({ duration: e.target.value })}
+            onChange={e => updateFields({ projectDuration: e.target.value })}
           />
           <label className="FormLabels" >Aditional notes(Optional)</label>
           <Textarea

@@ -1,8 +1,8 @@
 import { FormWrapper } from "./Formwrapper"
 
 type UserData = {
-  firstName: string
-  lastName: string
+  FirstName: string
+  LastName: string
   email: string
   phone: string
 }
@@ -12,8 +12,8 @@ type UserFormProps = UserData & {
 }
 
 export function UserForm({
-  firstName,
-  lastName,
+  FirstName,
+  LastName,
   email,
   phone,
   updateFields,
@@ -29,8 +29,8 @@ export function UserForm({
             placeholder="First Name"
             required
             type="text"
-            value={firstName}
-            onChange={e => updateFields({ firstName: e.target.value })}
+            value={FirstName}
+            onChange={e => updateFields({ FirstName: e.target.value })}
           />
         </div>
         <div className="flex flex-col justify-start items-start w-full h-fit">
@@ -40,8 +40,8 @@ export function UserForm({
             className="Form_inpt"
             placeholder="Last Name"
             type="text"
-            value={lastName}
-            onChange={e => updateFields({ lastName: e.target.value })}
+            value={LastName}
+            onChange={e => updateFields({ LastName: e.target.value })}
           />
         </div>
         
@@ -54,6 +54,7 @@ export function UserForm({
             className="Form_inpt"
             placeholder="Your Email"
             type="email"
+            autoSave={email}
             value={email}
             onChange={e => updateFields({ email: e.target.value })}
           />

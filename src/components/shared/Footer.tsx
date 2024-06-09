@@ -76,9 +76,9 @@ const Footer = () => {
                 <ul className="FooterListing">
                   {footerLinks.map((link: myFooterLinks) => {
                     return (
-                      <li key={link.route} className="links_footer">
-                        <Link reloadDocument to={link.route}
-                        >{link.name}</Link>
+                      <li key={link.url} className="links_footer">
+                        <Link reloadDocument to={link.url}
+                        >{link.title}</Link>
                       </li>
                     )
                   })}
