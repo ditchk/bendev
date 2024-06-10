@@ -12,9 +12,7 @@ const ServicesBox = ({service} : ServiceBoxProps ) => {
     const { isPending: isLoading } = useGetAllServices();
 
   return (
-    <div 
-        className="ServiceContainer"
-    >
+    <div className="ServiceContainer">
         <div className="Image-Cont">
             {isLoading ? (
                 <Imageloader />
@@ -28,11 +26,10 @@ const ServicesBox = ({service} : ServiceBoxProps ) => {
                 />
             )}
         </div>
-        <div
-            className="DescrIPTBox">
-            <h1 className="BoxText">
+        <div className="DescrIPTBox">
+            <h4 className="BoxText">
                 {service.productTitle}
-            </h1>
+            </h4>
             <Truncate text={service.ProductDescription} maxLength={200} />
         </div>
         
