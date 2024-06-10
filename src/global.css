@@ -116,7 +116,7 @@ body {
 }
 
 .default_Container {
-  @apply flex flex-col justify-center items-center h-full w-auto p-1 mb-5
+  @apply flex flex-col justify-center items-center h-full bg-white w-auto p-1 mb-5 z-0
 }
 
 .projectPage {
@@ -443,6 +443,9 @@ nav.scrolled {
 
 /* Welcome section Fix on Mac */
 
+.PlayerBox {
+  @apply flex w-full h-fit
+}
 
 .MainWel-Box {
   @apply flex m-2 p-1 rounded-md outline outline-1 outline-slate-300 !important
@@ -480,6 +483,10 @@ nav.scrolled {
 
 
 /* Style fix Home service section */
+
+.serviceBox {
+  @apply flex bg-white w-full h-fit
+}
 
 .MainServiceBox {
   @apply flex flex-col justify-center items-center m-2 md:m-5 !important
@@ -622,7 +629,21 @@ nav.scrolled {
   @apply text-xs italic text-gray-400
 }
 
+/* MotioniCons styles */
+
+.motionIconBox {
+  @apply flex h-fit w-full
+}
+
+.SkillsetDet {
+  @apply flex flex-row justify-center items-center
+}
+
 /* BannerCont styles */
+
+.BannerBox {
+  @apply flex w-full h-fit bg-white py-4
+}
 
 .BannerCont {
   @apply hidden md:flex flex-col justify-center items-center w-full h-fit mt-5 gap-5
@@ -633,7 +654,7 @@ nav.scrolled {
 }
 
 .BannerImage {
-  @apply object-fill scale-95 md:scale-100 h-full rounded-xl animate-in slide-in-from-left-20 duration-1000 opacity-90
+  @apply object-fill scale-95 md:scale-100 h-full rounded-xl animate-in slide-in-from-left-20 duration-1000 opacity-95
 }
 
 .BannerImage {
@@ -641,11 +662,11 @@ nav.scrolled {
 }
 
 .MobileBanner {
-  @apply flex md:hidden flex-col w-full h-full justify-start items-center bg-white gap-2 mb-5 pt-5
+  @apply flex md:hidden flex-col w-full h-full justify-start items-center bg-white gap-2
 }
 
 .banner {
-  @apply flex custom-scrollbar flex-row overflow-x-scroll border-b border-slate-200 overscroll-x-auto overflow-scroll w-full h-full p-2
+  @apply flex custom-scrollbar flex-row overflow-x-scroll overscroll-x-auto overflow-scroll w-full h-full p-2
 }
 
 
@@ -663,22 +684,9 @@ nav.scrolled {
 }
 
 .parallax .scroller {
-  font-weight: 900;
-  text-transform: uppercase;
-  font-size: 40px;
-  display: flex;
-  white-space: nowrap;
-  display: flex;
-  flex-wrap: nowrap;
+  @apply flex w-full
 }
 
-.parallax span {
-  display: block;
-  margin-right: 30px;
-  color: teal;
-  opacity: 0.3;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
 
 /* THEMES */
 
@@ -771,12 +779,19 @@ nav.scrolled {
 
 /* Packages */
 
+.PackageBox {
+  @apply flex bg-white h-fit w-full
+}
+
+.packageSection {
+  @apply flex flex-col justify-center items-center gap-5 w-full h-full my-5 p-3 sm:p-4 md:p-5 lg:p-10 outline outline-2 outline-slate-300
+}
 .BasicPackageBox {
-  @apply flex flex-col justify-center items-start h-fit p-2 max-w-md md:max-w-sm min-h-full animate-in slide-in-from-bottom-14 duration-1000 bg-white outline outline-2 outline-slate-200
+  @apply flex flex-col justify-center items-start h-fit p-2 max-w-md md:max-w-sm min-h-full animate-in slide-in-from-bottom-14 duration-1000 bg-white outline outline-1 outline-teal-950
 }
 
 .BasicPackageBox2 {
-  @apply flex flex-col justify-center items-start h-fit p-2 max-w-md md:max-w-sm min-h-full animate-in slide-in-from-bottom-14 duration-1000 outline outline-2 outline-teal-600 
+  @apply flex flex-col justify-center items-start h-fit p-2 max-w-md md:max-w-sm min-h-full animate-in slide-in-from-bottom-14 duration-1000 outline outline-1 outline-teal-900 
 }
 
 .HeadContent {
@@ -835,9 +850,7 @@ nav.scrolled {
   @apply outline outline-2 outline-white px-5 h-10 focus-within:shadow-md focus-within:shadow-teal-400 focus-within:outline-dashed focus-within:outline-teal-500 duration-1000
 }
 
-.packageSection {
-  @apply flex flex-col justify-center items-center gap-5 w-full h-full my-5 p-3 sm:p-4 md:p-5 lg:p-10 outline outline-2 outline-slate-300
-}
+
 
 .ContainerPackage {
   @apply flex flex-col justify-center items-center w-full lg:w-1/2 
