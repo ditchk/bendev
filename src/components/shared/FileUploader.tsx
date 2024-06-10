@@ -7,6 +7,12 @@ import { Button } from '../ui/button';
     mediaUrl: string;
   };
 
+  interface File {
+    name: string;
+    type: string;
+    size: number;
+  }
+
 const FileUploader = ({fieldChange, /*mediaUrl*/ }: FileUploaderProps) => {
 
     const [file, setFile] = useState<File[]>([])
@@ -20,8 +26,8 @@ const FileUploader = ({fieldChange, /*mediaUrl*/ }: FileUploaderProps) => {
       const {getRootProps, getInputProps} = useDropzone({
         onDrop,
         accept: {
+          'video/*': ['.mp4'],
           'image/*': ['.png', '.jpeg', '.jpg', '.svg', '.psd'],
-          // 'video/*': ['.mp4']
         }
       })
 

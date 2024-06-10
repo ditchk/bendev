@@ -16,7 +16,7 @@ const Navbar = () => {
     Navigate('/packages/basic')
   }
   return (
-    <nav id='navbar' className="navbar bg-white bg-opacity-20 backdrop-blur-lg animate-in slide-in-from-top-10 top-0 duration-1000 border-b border-slate-300 w-full">
+    <nav id='navbar' className="navbar bg-white bg-opacity-20 backdrop-blur-lg shadow-sm shadow-slate-400 animate-in slide-in-from-top-10 top-0 duration-1000 border-b border-slate-200 w-full">
       <Link 
       to={'/'}
       className="NextLink flex flex-row justify-center items-center"
