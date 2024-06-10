@@ -32,7 +32,7 @@ const Blogposts = () => {
   };
 
   const ref = useRef(null)
-    const isInView = useInView(ref)
+  const isInView = useInView(ref)
 
     useEffect(() => {
 

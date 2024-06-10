@@ -19,7 +19,6 @@ const BlogpostBox = ({ blog }: BlogBoxtProps) => {
     
   return (
     <motion.div 
-    
         className="BlogBox"
         style={{
             transform: isInView ? "none" : "translateY(10px)",

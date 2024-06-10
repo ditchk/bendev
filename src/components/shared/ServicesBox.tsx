@@ -3,6 +3,7 @@ import Truncate from "../truncate/Truncate"
 import { Link } from "react-router-dom"
 import Imageloader from "../loaders/Imageloader"
 import { useGetAllServices } from "@/lib/Queries/QueriesAndMutations"
+import { motion } from "framer-motion"
 
 type ServiceBoxProps = {
     service: Models.Document
@@ -12,7 +13,21 @@ const ServicesBox = ({service} : ServiceBoxProps ) => {
     const { isPending: isLoading } = useGetAllServices();
 
   return (
-    <div className="ServiceContainer">
+    <motion.div 
+        className="ServiceContainer"
+        initial={{ opacity: 0.5, scale: 0.9}}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{
+            duration: 0.3,
+            ease: [0, 0.71, 0.2, 1.01],
+            scale: {
+            type: "tween",
+            damping: 5,
+            stiffness: 100,
+            restDelta: 0.001
+            }
+        }}
+    >
         <div className="Image-Cont">
             {isLoading ? (
                 <Imageloader />
@@ -41,7 +56,7 @@ const ServicesBox = ({service} : ServiceBoxProps ) => {
                 <small className="animate-pulse">Starting at 200$</small>
             </Link>
         </div>
-    </div>
+    </motion.div>
   )
 }
 

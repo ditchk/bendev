@@ -523,7 +523,7 @@ nav.scrolled {
 }
 
 .ServiceContainer {
-  @apply flex flex-col justify-center gap-2 h-full w-full bg-white p-2 shadow-md shadow-slate-400 outline outline-1 outline-slate-300 duration-300 rounded-md !important
+  @apply flex relative flex-col justify-center items-start gap-2 h-full w-full bg-white p-2 shadow-sm shadow-slate-100 outline outline-2 outline-gray-300 duration-300 rounded-md !important
 }
 
 .serveLink {
