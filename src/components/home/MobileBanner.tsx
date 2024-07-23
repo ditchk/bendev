@@ -23,12 +23,11 @@ const MobileBanner = () => {
 
         loadData();
       }, []);
-
   return (
     <div className="MobileBanner">
       <h1 className="adssOnTitle ml-5 mt-2">Services Highlight</h1>
       <span className="box-border flex flex-row justify-center items-center w-full text-slate-400 font-moon-dance">Swipe <MdArrowRight className="text-green-500" /></span>
-      <div className="banner swipe-scrollbar">
+      <div id="scrollContainer" className="banner swipe-scrollbar">
           {BannerAssets.map((link: myBannerAssets) => {
             return (
               <React.Fragment>

@@ -135,6 +135,7 @@ body {
   @apply text-start text-sm md:text-2xl lg:text-2xl font-bold font-Stencils text-transparent bg-clip-text bg-gradient-to-l from-teal-700 via-teal-600 to-black
 }
 
+
 /* mobile menu */
 .MobileMenu {
   @apply flex z-20 w-full overflow-scroll
@@ -875,7 +876,7 @@ nav.scrolled {
 }
 
 .video {
-  @apply h-[480px] md:h-[520px] opacity-40 filter grayscale blur-md scale-125 md:scale-100 w-full object-cover overflow-hidden 
+  @apply h-[480px] md:h-[520px] filter grayscale blur-md scale-125 md:scale-100 w-full object-cover overflow-hidden 
 }
 
 .PlayerItems {
